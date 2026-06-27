@@ -1,181 +1,438 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>40/400 Meals | High Protein Recipes</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>40/400 Meals | High Protein Recipes</title>
 
-    <style>
+  <style>
+    :root {
+      --cream: #faf7f2;
+      --chocolate: #2b2118;
+      --orange: #a4571b;
+      --sage: #8fa98b;
+      --soft-sage: #eef4ea;
+      --tan: #e8d8c3;
+      --white: #ffffff;
+    }
 
-        body{
-            margin:0;
-            font-family:Arial, Helvetica, sans-serif;
-            background:#faf8f5;
-            color:#333;
-        }
+    * {
+      box-sizing: border-box;
+    }
 
-        header{
-            background:white;
-            padding:20px 40px;
-            box-shadow:0 2px 10px rgba(0,0,0,.08);
-        }
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      background: var(--cream);
+      color: var(--chocolate);
+      line-height: 1.6;
+    }
 
-        .hero{
-            text-align:center;
-            padding:80px 20px;
-            max-width:900px;
-            margin:auto;
-        }
+    header {
+      background: var(--white);
+      padding: 22px 8%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      box-shadow: 0 4px 20px rgba(43, 33, 24, 0.08);
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
 
-        h1{
-            font-size:64px;
-            margin-bottom:10px;
-        }
+    .logo {
+      font-size: 26px;
+      font-weight: 800;
+      letter-spacing: -1px;
+    }
 
-        h2{
-            font-size:30px;
-            font-weight:normal;
-            color:#666;
-        }
+    nav a {
+      margin-left: 28px;
+      text-decoration: none;
+      color: var(--chocolate);
+      font-weight: 700;
+    }
 
-        .stats{
-            display:flex;
-            justify-content:center;
-            gap:50px;
-            margin:50px 0;
-            flex-wrap:wrap;
-        }
+    .hero {
+      padding: 90px 8%;
+      display: grid;
+      grid-template-columns: 1.1fr 0.9fr;
+      gap: 60px;
+      align-items: center;
+    }
 
-        .stat{
-            background:white;
-            padding:25px;
-            border-radius:15px;
-            width:180px;
-            box-shadow:0 5px 15px rgba(0,0,0,.08);
-        }
+    .badge {
+      display: inline-block;
+      background: var(--soft-sage);
+      color: #4f674d;
+      padding: 10px 18px;
+      border-radius: 999px;
+      font-weight: 800;
+      margin-bottom: 22px;
+    }
 
-        .stat h3{
-            font-size:40px;
-            margin:0;
-            color:#8B4513;
-        }
+    h1 {
+      font-size: clamp(48px, 7vw, 82px);
+      line-height: 0.95;
+      margin: 0 0 24px;
+      letter-spacing: -3px;
+    }
 
-        .button{
-            display:inline-block;
-            margin-top:30px;
-            padding:18px 40px;
-            background:#8B4513;
-            color:white;
-            text-decoration:none;
-            border-radius:50px;
-            font-size:20px;
-            font-weight:bold;
-        }
+    .hero p {
+      font-size: 22px;
+      max-width: 620px;
+      color: #6b5d52;
+      margin-bottom: 34px;
+    }
 
-        section{
-            max-width:1100px;
-            margin:auto;
-            padding:70px 20px;
-        }
+    .buttons {
+      display: flex;
+      gap: 16px;
+      flex-wrap: wrap;
+    }
 
-        .recipes{
-            display:grid;
-            grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-            gap:25px;
-        }
+    .btn {
+      display: inline-block;
+      padding: 16px 30px;
+      border-radius: 999px;
+      text-decoration: none;
+      font-weight: 800;
+      font-size: 17px;
+    }
 
-        .card{
-            background:white;
-            padding:30px;
-            border-radius:15px;
-            box-shadow:0 5px 15px rgba(0,0,0,.08);
-            text-align:center;
-        }
+    .btn-primary {
+      background: var(--orange);
+      color: white;
+    }
 
-        footer{
-            background:#222;
-            color:white;
-            text-align:center;
-            padding:40px;
-            margin-top:60px;
-        }
+    .btn-secondary {
+      background: var(--soft-sage);
+      color: #40543e;
+    }
 
-    </style>
+    .hero-card {
+      background: var(--white);
+      border-radius: 34px;
+      padding: 34px;
+      box-shadow: 0 20px 50px rgba(43, 33, 24, 0.12);
+    }
 
+    .hero-image {
+      min-height: 360px;
+      border-radius: 26px;
+      background:
+        linear-gradient(rgba(43,33,24,0.12), rgba(43,33,24,0.12)),
+        url("https://images.unsplash.com/photo-1490645935967-10de6ba17061?auto=format&fit=crop&w=1200&q=80");
+      background-size: cover;
+      background-position: center;
+    }
+
+    .macro-row {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 14px;
+      margin-top: 18px;
+    }
+
+    .macro {
+      background: var(--cream);
+      padding: 18px;
+      border-radius: 20px;
+      text-align: center;
+    }
+
+    .macro strong {
+      display: block;
+      font-size: 30px;
+      color: var(--orange);
+    }
+
+    section {
+      padding: 70px 8%;
+    }
+
+    .section-title {
+      text-align: center;
+      margin-bottom: 42px;
+    }
+
+    .section-title h2 {
+      font-size: 44px;
+      margin: 0;
+      letter-spacing: -1.5px;
+    }
+
+    .section-title p {
+      color: #74665b;
+      font-size: 18px;
+    }
+
+    .recipes {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 26px;
+    }
+
+    .recipe-card {
+      background: white;
+      border-radius: 28px;
+      overflow: hidden;
+      box-shadow: 0 14px 35px rgba(43, 33, 24, 0.10);
+    }
+
+    .recipe-img {
+      height: 210px;
+      background-size: cover;
+      background-position: center;
+    }
+
+    .recipe-body {
+      padding: 24px;
+    }
+
+    .recipe-body h3 {
+      margin: 0 0 12px;
+      font-size: 24px;
+    }
+
+    .tags {
+      display: flex;
+      gap: 8px;
+      flex-wrap: wrap;
+      margin-top: 16px;
+    }
+
+    .tag {
+      background: var(--soft-sage);
+      color: #4d634a;
+      padding: 7px 11px;
+      border-radius: 999px;
+      font-size: 13px;
+      font-weight: 800;
+    }
+
+    .why {
+      background: var(--soft-sage);
+      border-radius: 34px;
+      padding: 52px;
+      max-width: 1100px;
+      margin: auto;
+    }
+
+    .why-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 22px;
+      margin-top: 30px;
+    }
+
+    .why-item {
+      background: white;
+      padding: 26px;
+      border-radius: 24px;
+    }
+
+    .signup {
+      text-align: center;
+      background: var(--chocolate);
+      color: white;
+      border-radius: 34px;
+      padding: 60px 24px;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    .signup h2 {
+      font-size: 42px;
+      margin: 0 0 12px;
+    }
+
+    .signup p {
+      color: #eadfd5;
+      font-size: 18px;
+    }
+
+    .email-box {
+      margin-top: 28px;
+      display: flex;
+      justify-content: center;
+      gap: 12px;
+      flex-wrap: wrap;
+    }
+
+    .email-box input {
+      padding: 17px 22px;
+      border-radius: 999px;
+      border: none;
+      min-width: 280px;
+      font-size: 16px;
+    }
+
+    .email-box button {
+      padding: 17px 28px;
+      border-radius: 999px;
+      border: none;
+      background: var(--sage);
+      color: white;
+      font-weight: 900;
+      font-size: 16px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 45px 8%;
+      color: #76675c;
+    }
+
+    @media (max-width: 850px) {
+      header {
+        flex-direction: column;
+        gap: 12px;
+      }
+
+      nav a {
+        margin: 0 10px;
+      }
+
+      .hero {
+        grid-template-columns: 1fr;
+        padding-top: 60px;
+      }
+
+      .macro-row {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
 </head>
 
 <body>
 
-<header>
+  <header>
+    <div class="logo">40/400 Meals</div>
+    <nav>
+      <a href="#">Recipes</a>
+      <a href="#">Start Here</a>
+      <a href="#">About</a>
+    </nav>
+  </header>
 
-<h2>40/400 Meals</h2>
+  <main>
+    <section class="hero">
+      <div>
+        <div class="badge">Busy Mom Approved</div>
+        <h1>High protein meals that actually fit real life.</h1>
+        <p>
+          Simple, satisfying recipes built around the 40/400 method:
+          around 40g protein, around 400 calories, and ready fast.
+        </p>
 
-</header>
+        <div class="buttons">
+          <a href="#recipes" class="btn btn-primary">Browse Recipes</a>
+          <a href="#signup" class="btn btn-secondary">Get the Free Meal Guide</a>
+        </div>
+      </div>
 
-<div class="hero">
+      <div class="hero-card">
+        <div class="hero-image"></div>
+        <div class="macro-row">
+          <div class="macro"><strong>40g</strong>Protein</div>
+          <div class="macro"><strong>400</strong>Calories</div>
+          <div class="macro"><strong>10</strong>Minutes</div>
+        </div>
+      </div>
+    </section>
 
-<h1>High Protein Meals</h1>
+    <section id="recipes">
+      <div class="section-title">
+        <h2>Featured Recipes</h2>
+        <p>Fast meals, sweet treats, and family-friendly favorites.</p>
+      </div>
 
-<h2>40g Protein • Around 400 Calories • Ready Fast</h2>
+      <div class="recipes">
+        <article class="recipe-card">
+          <div class="recipe-img" style="background-image:url('https://images.unsplash.com/photo-1606313564200-e75d5e30476c?auto=format&fit=crop&w=900&q=80');"></div>
+          <div class="recipe-body">
+            <h3>Chocolate Protein Mug Cake</h3>
+            <p>A rich, warm dessert with protein power and no oven required.</p>
+            <div class="tags">
+              <span class="tag">40g Protein</span>
+              <span class="tag">400 Calories</span>
+              <span class="tag">3 Minutes</span>
+            </div>
+          </div>
+        </article>
 
-<div class="stats">
+        <article class="recipe-card">
+          <div class="recipe-img" style="background-image:url('https://images.unsplash.com/photo-1604908176997-125f25cc6f3d?auto=format&fit=crop&w=900&q=80');"></div>
+          <div class="recipe-body">
+            <h3>High Protein Taco Bowl</h3>
+            <p>Big flavor, simple ingredients, and a macro-friendly dinner.</p>
+            <div class="tags">
+              <span class="tag">Dinner</span>
+              <span class="tag">Meal Prep</span>
+              <span class="tag">Family Friendly</span>
+            </div>
+          </div>
+        </article>
 
-<div class="stat">
-<h3>40g</h3>
-Protein
-</div>
+        <article class="recipe-card">
+          <div class="recipe-img" style="background-image:url('https://images.unsplash.com/photo-1513104890138-7c749659a591?auto=format&fit=crop&w=900&q=80');"></div>
+          <div class="recipe-body">
+            <h3>BBQ Chicken Pizza Bowl</h3>
+            <p>Pizza cravings, high protein, and weeknight-simple prep.</p>
+            <div class="tags">
+              <span class="tag">Lunch</span>
+              <span class="tag">High Protein</span>
+              <span class="tag">Craving Fix</span>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
 
-<div class="stat">
-<h3>400</h3>
-Calories
-</div>
+    <section>
+      <div class="why">
+        <div class="section-title">
+          <h2>Why 40/400?</h2>
+          <p>Because healthy eating should not require a second job.</p>
+        </div>
 
-<div class="stat">
-<h3>10</h3>
-Minutes
-</div>
+        <div class="why-grid">
+          <div class="why-item">
+            <h3>Protein First</h3>
+            <p>Every recipe is built to help you stay full, strong, and satisfied.</p>
+          </div>
 
-</div>
+          <div class="why-item">
+            <h3>Real Life Fast</h3>
+            <p>Meals designed for busy schedules, hungry kids, and full calendars.</p>
+          </div>
 
-<a href="#" class="button">
-Browse Recipes
-</a>
+          <div class="why-item">
+            <h3>Simple Ingredients</h3>
+            <p>No weird grocery lists. Just practical, repeatable meals.</p>
+          </div>
+        </div>
+      </div>
+    </section>
 
-</div>
+    <section id="signup">
+      <div class="signup">
+        <h2>Get the free 40/400 starter guide.</h2>
+        <p>High-protein meal ideas, simple grocery staples, and easy recipes for busy days.</p>
 
-<section>
+        <div class="email-box">
+          <input type="email" placeholder="Enter your email" />
+          <button>Send Me the Guide</button>
+        </div>
+      </div>
+    </section>
+  </main>
 
-<h2 style="text-align:center;">Featured Recipes</h2>
-
-<div class="recipes">
-
-<div class="card">
-🍫
-<h3>Chocolate Mug Cake</h3>
-</div>
-
-<div class="card">
-🌮
-<h3>Taco Bowl</h3>
-</div>
-
-<div class="card">
-🍕
-<h3>Protein Pizza</h3>
-</div>
-
-</div>
-
-</section>
-
-<footer>
-
-<p>© 2026 40/400 Meals</p>
-
-<p>Powered by Bear OS</p>
-
-</footer>
+  <footer>
+    <p>© 2026 40/400 Meals • Powered by Bear OS</p>
+  </footer>
 
 </body>
-
 </html>
