@@ -4,6 +4,7 @@ import sys
 GENERATORS = [
     "tools/generate_recipe.py",
     "tools/generate_social_content.py",
+    "tools/generate_pinterest.py",
 ]
 
 def run_generator(path):
