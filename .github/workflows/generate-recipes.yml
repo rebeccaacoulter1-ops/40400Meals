@@ -8,6 +8,7 @@ on:
       - "tools/generate_recipe.py"
       - "tools/run_bear_os.py"
       - "tools/generate_social_content.py"
+      - "tools/generate_pinterest.py"
   workflow_dispatch:
 
 permissions:
