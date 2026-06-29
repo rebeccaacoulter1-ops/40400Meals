@@ -18,7 +18,6 @@ if not files:
     quit()
 
 for file in files:
-
     print(f"Sending {file.name}")
 
     with open(file, "rb") as f:
@@ -31,5 +30,14 @@ for file in files:
         method="POST"
     )
 
-    with urllib.request.urlopen(request) as response:
-        print(f"Sent {file.name} ({response.status})")
+    try:
+        with urllib.request.urlopen(request) as response:
+            print(f"Sent {file.name} ({response.status})")
+
+        # Delete the queue file only after Make.com receives it successfully
+        file.unlink()
+        print(f"Removed {file.name} from queue")
+
+    except Exception as e:
+        print(f"Failed to send {file.name}")
+        print(e)
