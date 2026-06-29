@@ -1,5 +1,7 @@
 import json
+import shutil
 from pathlib import Path
+from drive_config import PLATFORM_FOLDERS
 
 RECIPE_FILE = Path("recipes/chocolate-protein-mug-cake.json")
 
@@ -13,11 +15,9 @@ seo = data["seo"]
 
 slug = recipe["slug"]
 
-output_dir = Path("outputs") / slug / "pinterest"
-output_dir.mkdir(parents=True, exist_ok=True)
-
 pin_data = {
     "recipe_id": data["recipe_id"],
+    "platform": "pinterest",
     "title": social["pinterest"]["title"],
     "description": social["pinterest"]["description"],
     "destination_url": social["pinterest"]["destination_url"],
@@ -34,9 +34,19 @@ pin_data = {
     "status": "ready_for_make"
 }
 
-output_file = output_dir / "pinterest.json"
+pinterest_dir = PLATFORM_FOLDERS["pinterest"]
+make_queue_dir = PLATFORM_FOLDERS["make_queue"]
 
-with open(output_file, "w", encoding="utf-8") as f:
+pinterest_dir.mkdir(parents=True, exist_ok=True)
+make_queue_dir.mkdir(parents=True, exist_ok=True)
+
+pinterest_file = pinterest_dir / f"{slug}.json"
+make_queue_file = make_queue_dir / f"{slug}-pinterest.json"
+
+with open(pinterest_file, "w", encoding="utf-8") as f:
     json.dump(pin_data, f, indent=2)
 
-print(f"Pinterest file created: {output_file}")
+shutil.copyfile(pinterest_file, make_queue_file)
+
+print(f"Pinterest file created: {pinterest_file}")
+print(f"Make queue file created: {make_queue_file}")
