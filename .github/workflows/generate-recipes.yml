@@ -6,6 +6,8 @@ on:
       - "recipes/*.json"
       - "templates/recipe-template.html"
       - "tools/generate_recipe.py"
+      - "tools/run_bear_os.py"
+      - "tools/generate_social_content.py"
   workflow_dispatch:
 
 permissions:
@@ -24,16 +26,13 @@ jobs:
         with:
           python-version: "3.11"
 
-      - name: Generate recipe pages
-        run: python tools/generate_recipe.py
-        
-      - name: Generate social content
-        run: python tools/generate_social_content.py
+      - name: Run Bear OS Generator Engine
+        run: python tools/run_bear_os.py
 
       - name: Commit generated pages
         uses: stefanzweifel/git-auto-commit-action@v5
         with:
-          commit_message: Generate recipe pages
+          commit_message: Bear OS generated content
           file_pattern: |
             recipes/*.html
             outputs/**
