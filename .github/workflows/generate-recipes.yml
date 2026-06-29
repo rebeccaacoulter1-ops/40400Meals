@@ -36,4 +36,5 @@ jobs:
           commit_message: Bear OS generated content
           file_pattern: |
             recipes/*.html
-            outputs/**
+            outputs/**/*.txt
+            outputs/**/*.json
