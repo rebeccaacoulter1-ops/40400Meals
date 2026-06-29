@@ -26,9 +26,14 @@ jobs:
 
       - name: Generate recipe pages
         run: python tools/generate_recipe.py
+        
+      - name: Generate social content
+        run: python tools/generate_social_content.py
 
       - name: Commit generated pages
         uses: stefanzweifel/git-auto-commit-action@v5
         with:
           commit_message: Generate recipe pages
-          file_pattern: "recipes/*.html"
+          file_pattern: |
+            recipes/*.html
+            outputs/**
