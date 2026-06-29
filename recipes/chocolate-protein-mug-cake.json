@@ -1,0 +1,241 @@
+{
+  "recipe_id": "0001",
+  "status": "draft",
+  "created_at": "2026-06-29",
+  "updated_at": "2026-06-29",
+
+  "brand": {
+    "name": "40/400 Meals",
+    "method": "40g protein, around 400 calories, ready fast",
+    "audience": "busy moms and high-protein eaters who want simple meals that fit real life"
+  },
+
+  "recipe": {
+    "title": "Chocolate Protein Mug Cake",
+    "safe_title": "chocolate-protein-mug-cake",
+    "slug": "chocolate-protein-mug-cake",
+    "category": "Dessert",
+    "meal_type": ["Dessert", "Snack"],
+    "difficulty": "Easy",
+    "servings": 1,
+
+    "summary": "A warm, chocolatey, high-protein mug cake made in the microwave. It tastes like dessert, fits the 40/400 method, and is ready in minutes.",
+
+    "why_youll_love_it": [
+      "Ready in about 3 minutes",
+      "High in protein and satisfying",
+      "Uses simple grocery store ingredients",
+      "Perfect for sweet cravings",
+      "Easy enough for a busy weeknight"
+    ],
+
+    "times": {
+      "prep_minutes": 2,
+      "cook_minutes": 1,
+      "total_minutes": 3
+    },
+
+    "macros": {
+      "calories": 400,
+      "protein_g": 40,
+      "carbs_g": 34,
+      "fat_g": 12,
+      "fiber_g": null,
+      "sugar_g": null
+    },
+
+    "ingredients": [
+      {
+        "item": "chocolate protein powder",
+        "amount": "1",
+        "unit": "scoop",
+        "notes": "Use a protein powder you like the taste of."
+      },
+      {
+        "item": "oat flour",
+        "amount": "2",
+        "unit": "tablespoons",
+        "notes": "Blended oats also work."
+      },
+      {
+        "item": "cocoa powder",
+        "amount": "1",
+        "unit": "tablespoon",
+        "notes": ""
+      },
+      {
+        "item": "baking powder",
+        "amount": "1/2",
+        "unit": "teaspoon",
+        "notes": ""
+      },
+      {
+        "item": "egg or egg whites",
+        "amount": "1",
+        "unit": "",
+        "notes": "Egg whites will usually lower calories slightly."
+      },
+      {
+        "item": "plain Greek yogurt",
+        "amount": "2",
+        "unit": "tablespoons",
+        "notes": "Helps keep the mug cake moist."
+      },
+      {
+        "item": "milk of choice",
+        "amount": "2-4",
+        "unit": "tablespoons",
+        "notes": "Add more if the batter is too thick."
+      },
+      {
+        "item": "mini chocolate chips",
+        "amount": "optional",
+        "unit": "",
+        "notes": "Optional topping."
+      }
+    ],
+
+    "instructions": [
+      "Spray a microwave-safe mug with nonstick spray.",
+      "Add protein powder, oat flour, cocoa powder, and baking powder to the mug.",
+      "Stir in egg, Greek yogurt, and milk until smooth.",
+      "Microwave for 45 to 75 seconds, depending on your microwave.",
+      "Let it cool for 1 minute before eating. The center should be soft but not raw."
+    ],
+
+    "tips": [
+      "Do not overcook. Protein mug cakes can get dry quickly.",
+      "If the batter looks too thick, add another tablespoon of milk.",
+      "Use a protein powder you already enjoy because the flavor comes through.",
+      "Let the mug cake rest for a minute before eating so the texture sets."
+    ],
+
+    "substitutions": [
+      {
+        "swap": "Oat flour",
+        "with": "Almond flour",
+        "note": "Texture and macros will change."
+      },
+      {
+        "swap": "Greek yogurt",
+        "with": "Cottage cheese blended smooth",
+        "note": "Adds protein and moisture."
+      },
+      {
+        "swap": "Egg",
+        "with": "Egg whites",
+        "note": "Usually lowers calories and fat."
+      }
+    ],
+
+    "storage": {
+      "best_fresh": true,
+      "fridge_days": 1,
+      "freezer_friendly": false,
+      "notes": "This recipe is best eaten fresh right after cooking."
+    },
+
+    "busy_mom_test": {
+      "can_make_tonight": true,
+      "walmart_ingredients": true,
+      "kid_friendly": true,
+      "meal_prep_friendly": false,
+      "freezer_friendly": false,
+      "one_pan_or_less": true,
+      "notes": "This is a strong quick dessert option, but it is not ideal for meal prep."
+    }
+  },
+
+  "images": {
+    "hero_image_url": "",
+    "pinterest_image_url": "",
+    "square_image_url": "",
+    "story_image_url": "",
+    "thumbnail_url": "",
+
+    "image_prompt": "A warm, realistic chocolate protein mug cake in a white ceramic mug on a clean cream marble countertop, soft natural window light, minimal styling, premium food photography, cozy but clean, 45 degree angle, shallow depth of field, no text on image.",
+
+    "alt_text": "Chocolate protein mug cake in a white mug with a rich chocolate texture."
+  },
+
+  "seo": {
+    "meta_title": "Chocolate Protein Mug Cake | 40g Protein, 400 Calories",
+    "meta_description": "Make this quick chocolate protein mug cake with around 40g protein, around 400 calories, and simple ingredients in just minutes.",
+    "keywords": [
+      "chocolate protein mug cake",
+      "high protein dessert",
+      "protein mug cake",
+      "40g protein recipe",
+      "400 calorie dessert",
+      "healthy chocolate mug cake"
+    ],
+    "canonical_url": "https://40400meals.com/recipes/chocolate-protein-mug-cake.html"
+  },
+
+  "social": {
+    "pinterest": {
+      "title": "Chocolate Protein Mug Cake",
+      "description": "This chocolate protein mug cake is warm, rich, high-protein, and ready in minutes. Around 40g protein, around 400 calories, and perfect for sweet cravings.",
+      "destination_url": "https://40400meals.com/recipes/chocolate-protein-mug-cake.html",
+      "hashtags": ["#40400Meals", "#HighProtein", "#ProteinDessert", "#MugCake"]
+    },
+
+    "instagram": {
+      "caption": "Sweet craving but still want to hit your protein goal? This chocolate protein mug cake is warm, rich, and ready in minutes. Around 40g protein, around 400 calories, and no oven required.",
+      "hashtags": ["#40400Meals", "#HighProteinMeals", "#ProteinDessert", "#HealthyDessert"]
+    },
+
+    "facebook": {
+      "caption": "This chocolate protein mug cake is a quick high-protein dessert for busy days. Warm, chocolatey, and ready in minutes."
+    },
+
+    "youtube_short": {
+      "hook": "A chocolate mug cake with 40 grams of protein? Yes, please.",
+      "script": [
+        "Add chocolate protein powder, oat flour, cocoa, and baking powder to a mug.",
+        "Stir in egg, Greek yogurt, and milk.",
+        "Microwave for about one minute.",
+        "You get a warm chocolate mug cake with around 40g protein and 400 calories."
+      ],
+      "cta": "Save this for your next sweet craving."
+    }
+  },
+
+  "email": {
+    "subject": "A 3-minute chocolate mug cake with 40g protein",
+    "preview_text": "This one is for sweet cravings that still fit your goals.",
+    "body_intro": "If you want something warm, chocolatey, and high in protein without baking, this chocolate protein mug cake is the move."
+  },
+
+  "affiliate_products": [
+    {
+      "name": "Chocolate Protein Powder",
+      "type": "ingredient",
+      "url": "",
+      "notes": "Use only after affiliate approval."
+    },
+    {
+      "name": "Microwave-Safe Mug",
+      "type": "equipment",
+      "url": "",
+      "notes": "Optional product recommendation."
+    }
+  ],
+
+  "publishing": {
+    "website_page": {
+      "template": "recipe-template-v1",
+      "output_path": "recipes/chocolate-protein-mug-cake.html",
+      "status": "draft"
+    },
+    "platforms": {
+      "website": false,
+      "pinterest": false,
+      "instagram": false,
+      "facebook": false,
+      "email": false,
+      "youtube": false
+    }
+  }
+}
+
