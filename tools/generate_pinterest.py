@@ -24,6 +24,22 @@ else:
         "platform": "pinterest",
         "template_name": "P01 Classic Recipe v1.0",
         "template_type": "evergreen",
+        "season": "evergreen",
+        "month": None,
+        "recipe_category": "general",
+        "image_style": "bright natural light",
+        "photo_composition": "45-degree angle",
+        "color_mood": "clean",
+        "accent_colors": ["#FFFFFF", "#10B981", "#1F2937"],
+        "text_style": "clean and modern",
+        "overlay_style": "minimal",
+        "icon_style": "minimal",
+        "layout_recommendation": "P01 classic layout",
+        "optimization": {
+            "visual_appeal": "high",
+            "save_potential": "high",
+            "click_potential": "high"
+        },
         "version": "1.0",
         "status": "fallback_template"
     }
@@ -39,7 +55,24 @@ pin_data = {
     "image_alt_text": images["alt_text"],
     "pin_filename": f"{slug}-pinterest-pin.png",
 
-    "canva_template": design_template,
+    "design_brain": {
+        "template_name": design_template.get("template_name"),
+        "template_type": design_template.get("template_type"),
+        "season": design_template.get("season"),
+        "month": design_template.get("month"),
+        "recipe_category": design_template.get("recipe_category"),
+        "image_style": design_template.get("image_style"),
+        "photo_composition": design_template.get("photo_composition"),
+        "color_mood": design_template.get("color_mood"),
+        "accent_colors": design_template.get("accent_colors"),
+        "text_style": design_template.get("text_style"),
+        "overlay_style": design_template.get("overlay_style"),
+        "icon_style": design_template.get("icon_style"),
+        "layout_recommendation": design_template.get("layout_recommendation"),
+        "optimization": design_template.get("optimization"),
+        "version": design_template.get("version"),
+        "status": design_template.get("status")
+    },
 
     "canva_text_overlay": {
         "headline": recipe["title"],
