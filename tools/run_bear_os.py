@@ -7,7 +7,7 @@ GENERATORS = [
     "tools/design_engine.py",
     "tools/generate_pinterest.py",
     "tools/send_to_make.py",
-]]
+]
 
 def run_generator(path):
     print(f"\nRunning {path}...")
