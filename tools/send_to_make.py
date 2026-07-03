@@ -1,8 +1,9 @@
 import json
 import os
-import base64
+import uuid
 import urllib.request
 from pathlib import Path
+
 
 # -----------------------------
 # Environment variables
@@ -37,18 +38,55 @@ def find_pinterest_image(slug):
     return None
 
 
-def encode_image_base64(image_file):
-    with open(image_file, "rb") as f:
-        return base64.b64encode(f.read()).decode("utf-8")
+def build_multipart_payload(payload, image_file):
+    boundary = f"----BearOSBoundary{uuid.uuid4().hex}"
+    body = bytearray()
+
+    def add_field(name, value):
+        body.extend(f"--{boundary}\r\n".encode("utf-8"))
+        body.extend(
+            f'Content-Disposition: form-data; name="{name}"\r\n\r\n'.encode("utf-8")
+        )
+        body.extend(str(value).encode("utf-8"))
+        body.extend(b"\r\n")
+
+    def add_file(field_name, file_path, mime_type):
+        file_name = file_path.name
+        file_data = file_path.read_bytes()
+
+        body.extend(f"--{boundary}\r\n".encode("utf-8"))
+        body.extend(
+            f'Content-Disposition: form-data; name="{field_name}"; filename="{file_name}"\r\n'.encode("utf-8")
+        )
+        body.extend(f"Content-Type: {mime_type}\r\n\r\n".encode("utf-8"))
+        body.extend(file_data)
+        body.extend(b"\r\n")
+
+    for key, value in payload.items():
+        if isinstance(value, (dict, list)):
+            value = json.dumps(value)
+        add_field(key, value)
+
+    if image_file:
+        add_field("image_filename", image_file.name)
+        add_field("image_path", str(image_file))
+        add_field("image_mime_type", "image/png")
+        add_file("pinterest_image", image_file, "image/png")
+
+    body.extend(f"--{boundary}--\r\n".encode("utf-8"))
+
+    content_type = f"multipart/form-data; boundary={boundary}"
+
+    return bytes(body), content_type
 
 
-def send_payload_to_make(payload, file_name):
-    data = json.dumps(payload).encode("utf-8")
+def send_payload_to_make(payload, image_file, file_name):
+    data, content_type = build_multipart_payload(payload, image_file)
 
     request = urllib.request.Request(
         WEBHOOK,
         data=data,
-        headers={"Content-Type": "application/json"},
+        headers={"Content-Type": content_type},
         method="POST"
     )
 
@@ -83,19 +121,13 @@ for file in files:
     image_file = find_pinterest_image(slug)
 
     if image_file:
-        payload["image_filename"] = image_file.name
-        payload["image_path"] = str(image_file)
-        payload["image_base64"] = encode_image_base64(image_file)
-        payload["image_mime_type"] = "image/png"
-
-        print(f"Attached image to payload: {image_file}")
+        print(f"Attached image file to payload: {image_file}")
     else:
         print(f"No Pinterest image found for slug: {slug}")
 
     try:
-        send_payload_to_make(payload, file.name)
+        send_payload_to_make(payload, image_file, file.name)
 
-        # Delete the queue file only after Make.com receives it successfully
         file.unlink()
         print(f"Removed {file.name} from queue")
 
