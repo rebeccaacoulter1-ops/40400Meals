@@ -1,0 +1,39 @@
+{
+  "title": "High Protein Pizza Bowl",
+  "slug": "high-protein-pizza-bowl",
+  "description": "Everything you love about pizza in a protein-packed bowl. Ready in 10 minutes with over 40 grams of protein.",
+  "prep_time": "5 minutes",
+  "cook_time": "5 minutes",
+  "total_time": "10 minutes",
+  "servings": 1,
+  "calories": 405,
+  "protein": 42,
+  "carbs": 14,
+  "fat": 18,
+  "ingredients": [
+    "5 oz lean ground turkey",
+    "1/4 cup reduced-fat mozzarella cheese",
+    "1/4 cup pizza sauce",
+    "12 turkey pepperoni slices",
+    "1/4 cup diced bell peppers",
+    "2 tbsp sliced mushrooms",
+    "1 tsp Italian seasoning"
+  ],
+  "instructions": [
+    "Brown the ground turkey in a skillet over medium heat.",
+    "Stir in the pizza sauce and Italian seasoning.",
+    "Top with peppers, mushrooms, mozzarella, and pepperoni.",
+    "Cover for 2 to 3 minutes until the cheese melts.",
+    "Serve immediately."
+  ],
+  "tags": [
+    "High Protein",
+    "Low Carb",
+    "Quick Dinner",
+    "Meal Prep",
+    "40/400"
+  ],
+  "image": "images/high-protein-pizza-bowl.jpg",
+  "pinterest_title": "High Protein Pizza Bowl | 40g Protein | Ready in 10 Minutes",
+  "pinterest_description": "This High Protein Pizza Bowl delivers over 40 grams of protein in about 400 calories. A quick dinner that satisfies pizza cravings while supporting your goals."
+}
