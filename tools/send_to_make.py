@@ -1,3 +1,4 @@
+import base64
 import json
 import os
 import uuid
@@ -29,13 +30,46 @@ def load_json(path):
         return json.load(f)
 
 
-def find_pinterest_image(slug):
-    image_file = PINTEREST_IMAGE_DIR / f"{slug}-pinterest-pin.png"
+def find_pinterest_image(payload, slug):
+    candidates = []
 
-    if image_file.exists():
-        return image_file
+    image_path = payload.get("image_path")
+    image_filename = payload.get("image_filename") or payload.get("pin_filename")
+
+    if image_path:
+        candidates.append(Path(image_path))
+
+    if image_filename:
+        candidates.append(PINTEREST_IMAGE_DIR / image_filename)
+
+    if slug:
+        candidates.append(PINTEREST_IMAGE_DIR / f"{slug}-pinterest-pin.png")
+
+    for candidate in candidates:
+        if candidate and candidate.exists():
+            return candidate
+
+    matches = list(PINTEREST_IMAGE_DIR.glob("*-pinterest-pin.png"))
+
+    if len(matches) == 1:
+        return matches[0]
 
     return None
+
+
+def add_image_metadata(payload, image_file):
+    if not image_file:
+        return payload
+
+    payload["image_filename"] = image_file.name
+    payload["image_path"] = str(image_file)
+    payload["image_mime_type"] = "image/png"
+
+    if not payload.get("image_base64"):
+        image_bytes = image_file.read_bytes()
+        payload["image_base64"] = base64.b64encode(image_bytes).decode("utf-8")
+
+    return payload
 
 
 def build_multipart_payload(payload, image_file):
@@ -47,6 +81,10 @@ def build_multipart_payload(payload, image_file):
         body.extend(
             f'Content-Disposition: form-data; name="{name}"\r\n\r\n'.encode("utf-8")
         )
+
+        if isinstance(value, (dict, list)):
+            value = json.dumps(value)
+
         body.extend(str(value).encode("utf-8"))
         body.extend(b"\r\n")
 
@@ -63,14 +101,9 @@ def build_multipart_payload(payload, image_file):
         body.extend(b"\r\n")
 
     for key, value in payload.items():
-        if isinstance(value, (dict, list)):
-            value = json.dumps(value)
         add_field(key, value)
 
     if image_file:
-        add_field("image_filename", image_file.name)
-        add_field("image_path", str(image_file))
-        add_field("image_mime_type", "image/png")
         add_file("pinterest_image", image_file, "image/png")
 
     body.extend(f"--{boundary}--\r\n".encode("utf-8"))
@@ -118,10 +151,11 @@ for file in files:
     if not slug:
         slug = file.stem.replace("-pinterest", "")
 
-    image_file = find_pinterest_image(slug)
+    image_file = find_pinterest_image(payload, slug)
 
     if image_file:
         print(f"Attached image file to payload: {image_file}")
+        payload = add_image_metadata(payload, image_file)
     else:
         print(f"No Pinterest image found for slug: {slug}")
 
