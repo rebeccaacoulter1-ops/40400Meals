@@ -41,8 +41,10 @@ jobs:
         uses: stefanzweifel/git-auto-commit-action@v5
         with:
           commit_message: Bear OS generated content
-          file_pattern: |
-            recipes/*.html
-            outputs/**/*.txt
-            outputs/**/*.json
-            outputs/**/*.png
+      file_pattern: |
+          index.html
+          recipes/*.html
+          recipes/*.json
+          outputs/**/*.txt
+          outputs/**/*.json
+          outputs/**/*.png
