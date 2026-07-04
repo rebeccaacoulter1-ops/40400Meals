@@ -7,13 +7,27 @@ from pathlib import Path
 from openai import OpenAI
 from PIL import Image, ImageDraw, ImageFont
 
+
+# -----------------------------
+# OpenAI client
+# -----------------------------
+
 client = OpenAI(api_key=os.environ["OPENAI_API_KEY"])
 
-RECIPE_FILE = Path("recipes/chocolate-protein-mug-cake.json")
+
+# -----------------------------
+# File locations
+# -----------------------------
+
+RECIPES_DIR = Path("recipes")
 DESIGN_FILE = Path("outputs/design/selected_template.json")
 OUTPUT_DIR = Path("outputs/images/pinterest")
 PHOTO_DIR = Path("outputs/images/food_photos")
 
+
+# -----------------------------
+# Load helpers
+# -----------------------------
 
 def load_json(path):
     with open(path, "r", encoding="utf-8") as f:
@@ -56,18 +70,67 @@ def wrap_text(text, font, max_width):
     return lines
 
 
-def build_food_photo_prompt(recipe, design):
-    title = recipe.get("title", "high protein recipe")
-    ingredients = recipe.get("ingredients", [])
+# -----------------------------
+# Recipe normalization
+# -----------------------------
+
+def build_slug(data, recipe_file):
+    if "slug" in data:
+        return data["slug"]
+
+    if "recipe" in data and "slug" in data["recipe"]:
+        return data["recipe"]["slug"]
+
+    return recipe_file.stem
+
+
+def normalize_recipe(data, recipe_file):
+    slug = build_slug(data, recipe_file)
+
+    if "recipe" in data:
+        recipe = data["recipe"]
+
+        return {
+            "slug": slug,
+            "title": recipe.get("title", slug.replace("-", " ").title()),
+            "ingredients": recipe.get("ingredients", []),
+            "protein": recipe.get("macros", {}).get("protein_g", ""),
+            "calories": recipe.get("macros", {}).get("calories", ""),
+        }
+
+    return {
+        "slug": slug,
+        "title": data.get("title", slug.replace("-", " ").title()),
+        "ingredients": data.get("ingredients", []),
+        "protein": data.get("protein", ""),
+        "calories": data.get("calories", ""),
+    }
+
+
+def get_ingredient_names(ingredients):
     ingredient_names = []
 
     for item in ingredients:
         if isinstance(item, dict):
-            ingredient_names.append(item.get("name", ""))
+            name = item.get("item") or item.get("name") or ""
+            amount = item.get("amount", "")
+            unit = item.get("unit", "")
+
+            full_text = f"{amount} {unit} {name}".strip()
+            ingredient_names.append(full_text)
         else:
             ingredient_names.append(str(item))
 
-    ingredient_text = ", ".join([name for name in ingredient_names if name])
+    return ", ".join([name for name in ingredient_names if name])
+
+
+# -----------------------------
+# AI food photo generation
+# -----------------------------
+
+def build_food_photo_prompt(recipe, design):
+    title = recipe["title"]
+    ingredient_text = get_ingredient_names(recipe["ingredients"])
 
     image_style = design.get("image_style", "bright natural light")
     photo_composition = design.get("photo_composition", "45-degree angle")
@@ -102,14 +165,20 @@ Important visual details:
 - Realistic food texture
 - Appetizing but not fake or cartoonish
 
-Create a polished vertical food photo suitable for a premium healthy recipe brand.
+Create a polished square food photo suitable for a premium healthy recipe brand.
 """
     return prompt.strip()
 
 
-def generate_ai_food_photo(recipe, design, slug):
+def generate_ai_food_photo(recipe, design):
     PHOTO_DIR.mkdir(parents=True, exist_ok=True)
+
+    slug = recipe["slug"]
     photo_file = PHOTO_DIR / f"{slug}-food-photo.png"
+
+    if photo_file.exists():
+        print(f"Using existing AI food photo: {photo_file}")
+        return Image.open(photo_file).convert("RGB")
 
     prompt = build_food_photo_prompt(recipe, design)
 
@@ -133,6 +202,10 @@ def generate_ai_food_photo(recipe, design, slug):
     return image
 
 
+# -----------------------------
+# Pinterest pin design
+# -----------------------------
+
 def create_soft_wave_mask(width, height):
     mask = Image.new("L", (width, height), 0)
     draw = ImageDraw.Draw(mask)
@@ -142,8 +215,10 @@ def create_soft_wave_mask(width, height):
 
     for x in range(width + 1):
         y = int(wave_height * 0.5)
+
         if 250 < x < 750:
             y = int(wave_height * 0.9)
+
         points.append((x, y))
 
     polygon = [(0, height)] + points + [(width, height)]
@@ -152,16 +227,18 @@ def create_soft_wave_mask(width, height):
     return mask
 
 
-def create_pinterest_pin():
-    data = load_json(RECIPE_FILE)
-    design = load_json(DESIGN_FILE) if DESIGN_FILE.exists() else {}
-
-    recipe = data["recipe"]
+def create_pinterest_pin(recipe, design):
     slug = recipe["slug"]
     title = recipe["title"]
+    protein = recipe["protein"]
+    calories = recipe["calories"]
 
-    protein = recipe["macros"]["protein_g"]
-    calories = recipe["macros"]["calories"]
+    OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
+    output_file = OUTPUT_DIR / f"{slug}-pinterest-pin.png"
+
+    if output_file.exists():
+        print(f"Pinterest image already exists: {output_file}")
+        return
 
     width = 1000
     height = 1500
@@ -171,7 +248,7 @@ def create_pinterest_pin():
 
     background = Image.new("RGB", (width, height), "#FFFFFF")
 
-    food_image = generate_ai_food_photo(recipe, design, slug)
+    food_image = generate_ai_food_photo(recipe, design)
     food_image = food_image.resize((width, image_area_height), Image.LANCZOS)
     background.paste(food_image, (0, 0))
 
@@ -222,20 +299,39 @@ def create_pinterest_pin():
     brand_y = divider_y + 55
     draw.text((brand_x, brand_y), brand_text, font=brand_font, fill=brand_color)
 
-    tagline_text = "High protein recipes made simple"
+    tagline_text = "High protein, low sugar recipes made simple"
     tagline_bbox = small_font.getbbox(tagline_text)
     tagline_width = tagline_bbox[2] - tagline_bbox[0]
     tagline_x = (width - tagline_width) // 2
     tagline_y = brand_y + 55
     draw.text((tagline_x, tagline_y), tagline_text, font=small_font, fill=macro_color)
 
-    OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
-    output_file = OUTPUT_DIR / f"{slug}-pinterest-pin.png"
-
     background.save(output_file)
 
     print(f"Pinterest image created: {output_file}")
 
 
+# -----------------------------
+# Main process
+# -----------------------------
+
+def main():
+    design = load_json(DESIGN_FILE) if DESIGN_FILE.exists() else {}
+
+    recipe_files = sorted(RECIPES_DIR.glob("*.json"))
+
+    if not recipe_files:
+        print("No recipe JSON files found.")
+        return
+
+    for recipe_file in recipe_files:
+        print(f"\nProcessing image for {recipe_file}")
+
+        data = load_json(recipe_file)
+        recipe = normalize_recipe(data, recipe_file)
+
+        create_pinterest_pin(recipe, design)
+
+
 if __name__ == "__main__":
-    create_pinterest_pin()
+    main()
