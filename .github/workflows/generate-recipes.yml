@@ -37,10 +37,22 @@ jobs:
           MAKE_WEBHOOK_URL: ${{ secrets.MAKE_WEBHOOK_URL }}
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
 
+      - name: Debug generated files
+        run: |
+          echo "===== RECIPES FOLDER ====="
+          ls -la recipes
+          echo ""
+          echo "===== HTML FILES ====="
+          find recipes -name "*.html"
+          echo ""
+          echo "===== GIT STATUS ====="
+          git status
+
       - name: Commit generated pages
         uses: stefanzweifel/git-auto-commit-action@v5
         with:
           commit_message: Bear OS generated content
+          add_options: "-A"
           file_pattern: |
             index.html
             recipes/*.html
@@ -48,4 +60,3 @@ jobs:
             outputs/**/*.txt
             outputs/**/*.json
             outputs/**/*.png
-          add_options: '-A'
