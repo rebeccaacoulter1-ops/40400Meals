@@ -1,0 +1,28 @@
+{
+  "platform": "pinterest",
+  "template_name": "P06 Summer",
+  "template_type": "seasonal",
+  "season": "summer",
+  "month": 7,
+  "recipe_category": "general",
+  "image_style": "bright natural light",
+  "photo_composition": "45-degree angle",
+  "color_mood": "summer",
+  "accent_colors": [
+    "#FFFFFF",
+    "#FFD166",
+    "#06AED5",
+    "#10B981"
+  ],
+  "text_style": "clean and modern",
+  "overlay_style": "minimal",
+  "icon_style": "minimal",
+  "layout_recommendation": "P01 classic layout",
+  "optimization": {
+    "visual_appeal": "high",
+    "save_potential": "high",
+    "click_potential": "high"
+  },
+  "version": "1.0",
+  "status": "design_strategy_ready"
+}

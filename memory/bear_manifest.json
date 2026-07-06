@@ -1,3 +1,32 @@
 {
-  "recipes": {}
+  "recipes": {
+    "high-protein-pizza-bowl": {
+      "created_at_utc": "2026-07-06T14:15:57.322057+00:00",
+      "updated_at_utc": "2026-07-06T14:15:57.322073+00:00",
+      "steps": {
+        "pinterest": {
+          "complete": true,
+          "completed_at_utc": "2026-07-06T14:15:57.322073+00:00",
+          "details": {
+            "destination_url": "https://40400meals.com/recipes/high-protein-pizza-bowl.html",
+            "file_name": "high-protein-pizza-bowl-pinterest.json"
+          }
+        }
+      }
+    },
+    "chocolate-protein-mug-cake": {
+      "created_at_utc": "2026-07-06T14:15:58.098808+00:00",
+      "updated_at_utc": "2026-07-06T14:15:58.098826+00:00",
+      "steps": {
+        "pinterest": {
+          "complete": true,
+          "completed_at_utc": "2026-07-06T14:15:58.098826+00:00",
+          "details": {
+            "destination_url": "https://40400meals.com/recipes/chocolate-protein-mug-cake.html",
+            "file_name": "chocolate-protein-mug-cake-pinterest.json"
+          }
+        }
+      }
+    }
+  }
 }
