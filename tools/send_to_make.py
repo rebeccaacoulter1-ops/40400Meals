@@ -3,6 +3,7 @@ import json
 import os
 import uuid
 import urllib.request
+from datetime import datetime, timezone
 from pathlib import Path
 
 
@@ -19,15 +20,62 @@ WEBHOOK = os.environ["MAKE_WEBHOOK_URL"]
 
 QUEUE = Path("outputs/make_queue")
 PINTEREST_IMAGE_DIR = Path("outputs/images/pinterest")
+PUBLISHED_DIR = Path("outputs/published")
+PINTEREST_SENT_LOG = PUBLISHED_DIR / "pinterest_sent_log.json"
 
 
 # -----------------------------
 # Helper functions
 # -----------------------------
 
-def load_json(path):
+def load_json(path, default=None):
+    if not path.exists():
+        return default
+
     with open(path, "r", encoding="utf-8") as f:
         return json.load(f)
+
+
+def save_json(path, data):
+    path.parent.mkdir(parents=True, exist_ok=True)
+
+    with open(path, "w", encoding="utf-8") as f:
+        json.dump(data, f, indent=2)
+
+
+def load_sent_log():
+    return load_json(PINTEREST_SENT_LOG, default=[])
+
+
+def save_sent_log(sent_log):
+    save_json(PINTEREST_SENT_LOG, sent_log)
+
+
+def build_send_key(payload, slug):
+    recipe_id = payload.get("recipe_id") or slug
+    platform = payload.get("platform", "pinterest")
+    destination_url = payload.get("destination_url", "")
+
+    return f"{platform}|{recipe_id}|{destination_url}"
+
+
+def was_already_sent(sent_log, send_key):
+    return any(entry.get("send_key") == send_key for entry in sent_log)
+
+
+def record_sent(sent_log, send_key, payload, file_name):
+    sent_log.append({
+        "send_key": send_key,
+        "recipe_id": payload.get("recipe_id"),
+        "slug": payload.get("slug"),
+        "platform": payload.get("platform", "pinterest"),
+        "title": payload.get("title"),
+        "destination_url": payload.get("destination_url"),
+        "file_name": file_name,
+        "sent_at_utc": datetime.now(timezone.utc).isoformat()
+    })
+
+    save_sent_log(sent_log)
 
 
 def find_pinterest_image(payload, slug):
@@ -125,47 +173,67 @@ def send_payload_to_make(payload, image_file, file_name):
 
     with urllib.request.urlopen(request) as response:
         print(f"Sent {file_name} ({response.status})")
+        return response.status
 
 
 # -----------------------------
 # Main process
 # -----------------------------
 
-if not QUEUE.exists():
-    print("No make_queue folder found.")
-    quit()
+def main():
+    if not QUEUE.exists():
+        print("No make_queue folder found.")
+        return
 
-files = list(QUEUE.glob("*.json"))
+    files = list(QUEUE.glob("*.json"))
 
-if not files:
-    print("No queue files to send.")
-    quit()
+    if not files:
+        print("No queue files to send.")
+        return
 
-for file in files:
-    print(f"Preparing {file.name}")
+    sent_log = load_sent_log()
 
-    payload = load_json(file)
+    for file in files:
+        print(f"Preparing {file.name}")
 
-    slug = payload.get("slug")
+        payload = load_json(file, default={})
 
-    if not slug:
-        slug = file.stem.replace("-pinterest", "")
+        slug = payload.get("slug")
 
-    image_file = find_pinterest_image(payload, slug)
+        if not slug:
+            slug = file.stem.replace("-pinterest", "")
+            payload["slug"] = slug
 
-    if image_file:
-        print(f"Attached image file to payload: {image_file}")
-        payload = add_image_metadata(payload, image_file)
-    else:
-        print(f"No Pinterest image found for slug: {slug}")
+        send_key = build_send_key(payload, slug)
 
-    try:
-        send_payload_to_make(payload, image_file, file.name)
+        if was_already_sent(sent_log, send_key):
+            print(f"Skipped duplicate Pinterest send: {send_key}")
+            file.unlink()
+            print(f"Removed duplicate queue file: {file.name}")
+            continue
 
-        file.unlink()
-        print(f"Removed {file.name} from queue")
+        image_file = find_pinterest_image(payload, slug)
 
-    
-    except Exception as e:
-        print(f"Failed to send {file.name}")
-        print(e)
+        if image_file:
+            print(f"Attached image file to payload: {image_file}")
+            payload = add_image_metadata(payload, image_file)
+        else:
+            print(f"No Pinterest image found for slug: {slug}")
+
+        try:
+            status = send_payload_to_make(payload, image_file, file.name)
+
+            if 200 <= status < 300:
+                record_sent(sent_log, send_key, payload, file.name)
+
+                file.unlink()
+                print(f"Recorded Pinterest send: {send_key}")
+                print(f"Removed {file.name} from queue")
+
+        except Exception as e:
+            print(f"Failed to send {file.name}")
+            print(e)
+
+
+if __name__ == "__main__":
+    main()
