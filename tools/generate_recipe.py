@@ -166,6 +166,7 @@ recipe_files = sorted(RECIPES_DIR.glob("*.json"))
 if not recipe_files:
     print("No recipe JSON files found.")
     quit()
+    
 
 for recipe_file in recipe_files:
     print(f"Generating page for {recipe_file}")
