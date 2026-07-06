@@ -7,7 +7,8 @@ from pathlib import Path
 # File locations
 # -----------------------------
 
-MANIFEST_FILE = Path("memory/bear_manifest.json")
+REPO_ROOT = Path(__file__).resolve().parents[1]
+MANIFEST_FILE = REPO_ROOT / "memory" / "bear_manifest.json"
 
 
 # -----------------------------
