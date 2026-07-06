@@ -165,6 +165,7 @@ for file in files:
         file.unlink()
         print(f"Removed {file.name} from queue")
 
+    
     except Exception as e:
         print(f"Failed to send {file.name}")
         print(e)
