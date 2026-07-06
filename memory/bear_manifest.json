@@ -27,6 +27,20 @@
           }
         }
       }
+    },
+    "buffalo-chicken-cottage-cheese-bowl": {
+      "created_at_utc": "2026-07-06T14:24:09.284464+00:00",
+      "updated_at_utc": "2026-07-06T14:24:09.284482+00:00",
+      "steps": {
+        "pinterest": {
+          "complete": true,
+          "completed_at_utc": "2026-07-06T14:24:09.284482+00:00",
+          "details": {
+            "destination_url": "https://40400meals.com/recipes/buffalo-chicken-cottage-cheese-bowl.html",
+            "file_name": "buffalo-chicken-cottage-cheese-bowl-pinterest.json"
+          }
+        }
+      }
     }
   }
 }
