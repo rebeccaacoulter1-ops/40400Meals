@@ -1,0 +1,21 @@
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# macOS
+.DS_Store
+
+# VS Code
+.vscode/
+
+# Environment files
+.env
+
+# Python virtual environments
+venv/
+.venv/
+
+# Temporary files
+*.tmp
