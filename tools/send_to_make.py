@@ -3,8 +3,9 @@ import json
 import os
 import uuid
 import urllib.request
-from datetime import datetime, timezone
 from pathlib import Path
+
+from bear_memory import is_step_complete, mark_step_complete
 
 
 # -----------------------------
@@ -20,8 +21,6 @@ WEBHOOK = os.environ["MAKE_WEBHOOK_URL"]
 
 QUEUE = Path("outputs/make_queue")
 PINTEREST_IMAGE_DIR = Path("outputs/images/pinterest")
-PUBLISHED_DIR = Path("outputs/published")
-PINTEREST_SENT_LOG = PUBLISHED_DIR / "pinterest_sent_log.json"
 
 
 # -----------------------------
@@ -34,48 +33,6 @@ def load_json(path, default=None):
 
     with open(path, "r", encoding="utf-8") as f:
         return json.load(f)
-
-
-def save_json(path, data):
-    path.parent.mkdir(parents=True, exist_ok=True)
-
-    with open(path, "w", encoding="utf-8") as f:
-        json.dump(data, f, indent=2)
-
-
-def load_sent_log():
-    return load_json(PINTEREST_SENT_LOG, default=[])
-
-
-def save_sent_log(sent_log):
-    save_json(PINTEREST_SENT_LOG, sent_log)
-
-
-def build_send_key(payload, slug):
-    recipe_id = payload.get("recipe_id") or slug
-    platform = payload.get("platform", "pinterest")
-    destination_url = payload.get("destination_url", "")
-
-    return f"{platform}|{recipe_id}|{destination_url}"
-
-
-def was_already_sent(sent_log, send_key):
-    return any(entry.get("send_key") == send_key for entry in sent_log)
-
-
-def record_sent(sent_log, send_key, payload, file_name):
-    sent_log.append({
-        "send_key": send_key,
-        "recipe_id": payload.get("recipe_id"),
-        "slug": payload.get("slug"),
-        "platform": payload.get("platform", "pinterest"),
-        "title": payload.get("title"),
-        "destination_url": payload.get("destination_url"),
-        "file_name": file_name,
-        "sent_at_utc": datetime.now(timezone.utc).isoformat()
-    })
-
-    save_sent_log(sent_log)
 
 
 def find_pinterest_image(payload, slug):
@@ -191,8 +148,6 @@ def main():
         print("No queue files to send.")
         return
 
-    sent_log = load_sent_log()
-
     for file in files:
         print(f"Preparing {file.name}")
 
@@ -204,10 +159,8 @@ def main():
             slug = file.stem.replace("-pinterest", "")
             payload["slug"] = slug
 
-        send_key = build_send_key(payload, slug)
-
-        if was_already_sent(sent_log, send_key):
-            print(f"Skipped duplicate Pinterest send: {send_key}")
+        if is_step_complete(slug, "pinterest"):
+            print(f"Pinterest already completed for {slug}")
             file.unlink()
             print(f"Removed duplicate queue file: {file.name}")
             continue
@@ -224,10 +177,17 @@ def main():
             status = send_payload_to_make(payload, image_file, file.name)
 
             if 200 <= status < 300:
-                record_sent(sent_log, send_key, payload, file.name)
+                mark_step_complete(
+                    slug,
+                    "pinterest",
+                    {
+                        "destination_url": payload.get("destination_url"),
+                        "file_name": file.name
+                    }
+                )
 
                 file.unlink()
-                print(f"Recorded Pinterest send: {send_key}")
+                print(f"Recorded Pinterest completion in Bear Memory for {slug}")
                 print(f"Removed {file.name} from queue")
 
         except Exception as e:
