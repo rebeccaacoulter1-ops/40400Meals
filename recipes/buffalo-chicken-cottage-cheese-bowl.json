@@ -1,0 +1,70 @@
+{
+  "recipe_id": "buffalo-chicken-cottage-cheese-bowl",
+  "recipe": {
+    "slug": "buffalo-chicken-cottage-cheese-bowl",
+    "title": "Buffalo Chicken Cottage Cheese Bowl",
+    "summary": "A fast, spicy, high-protein bowl with chicken, cottage cheese, buffalo sauce, and crunchy veggies.",
+    "category": "Lunch",
+    "servings": 1,
+    "times": {
+      "prep_minutes": 8,
+      "cook_minutes": 0,
+      "total_minutes": 8
+    },
+    "macros": {
+      "calories": 400,
+      "protein_g": 42,
+      "carbs_g": 18,
+      "fat_g": 16
+    },
+    "ingredients": [
+      "5 oz cooked shredded chicken breast",
+      "1/2 cup low-fat cottage cheese",
+      "2 tablespoons buffalo sauce",
+      "1/2 cup chopped cucumber",
+      "1/2 cup chopped celery",
+      "1/4 cup shredded carrots",
+      "1 tablespoon light ranch",
+      "1 tablespoon crumbled blue cheese, optional"
+    ],
+    "instructions": [
+      "Add cottage cheese to a bowl and spread it as the base.",
+      "Top with shredded chicken and buffalo sauce.",
+      "Add cucumber, celery, carrots, and light ranch.",
+      "Sprinkle with blue cheese if using.",
+      "Mix before eating or enjoy layered."
+    ],
+    "tips": [
+      "Use rotisserie chicken to make this even faster.",
+      "Add extra celery for more crunch without many calories.",
+      "Use Greek yogurt ranch if you want even more protein."
+    ]
+  },
+  "seo": {
+    "meta_title": "Buffalo Chicken Cottage Cheese Bowl | 42g Protein, 400 Calories",
+    "meta_description": "Make this buffalo chicken cottage cheese bowl with 42g protein, around 400 calories, and simple ingredients in under 10 minutes.",
+    "keywords": [
+      "buffalo chicken cottage cheese bowl",
+      "high protein lunch",
+      "40 400 meals",
+      "high protein buffalo chicken"
+    ]
+  },
+  "images": {
+    "hero_image_url": "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?auto=format&fit=crop&w=1200&q=80",
+    "alt_text": "Buffalo chicken cottage cheese bowl with celery, cucumber, carrots, and buffalo sauce."
+  },
+  "social": {
+    "pinterest": {
+      "title": "Buffalo Chicken Cottage Cheese Bowl | 42g Protein | Ready in 8 Minutes",
+      "description": "This buffalo chicken cottage cheese bowl is spicy, crunchy, creamy, and packed with over 40 grams of protein.",
+      "destination_url": "https://40400meals.com/recipes/buffalo-chicken-cottage-cheese-bowl.html",
+      "hashtags": [
+        "#HighProteinMeals",
+        "#BuffaloChicken",
+        "#CottageCheeseRecipes",
+        "#40400Meals"
+      ]
+    }
+  }
+}
