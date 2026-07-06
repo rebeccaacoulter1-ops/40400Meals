@@ -6,6 +6,7 @@ on:
       - "recipes/*.json"
       - "templates/recipe-template.html"
       - "tools/**"
+      - "memory/**"
       - "requirements.txt"
       - ".github/workflows/**"
   workflow_dispatch:
@@ -45,6 +46,9 @@ jobs:
           echo "===== HTML FILES ====="
           find recipes -name "*.html"
           echo ""
+          echo "===== BEAR MEMORY ====="
+          cat memory/bear_manifest.json
+          echo ""
           echo "===== GIT STATUS ====="
           git status
 
@@ -57,6 +61,7 @@ jobs:
             index.html
             recipes/*.html
             recipes/*.json
+            memory/**/*.json
             outputs/**/*.txt
             outputs/**/*.json
             outputs/**/*.png
