@@ -48,3 +48,4 @@ jobs:
             outputs/**/*.txt
             outputs/**/*.json
             outputs/**/*.png
+          add_options: '-A'
