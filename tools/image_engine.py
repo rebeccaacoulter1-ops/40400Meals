@@ -20,7 +20,7 @@ client = OpenAI(api_key=os.environ["OPENAI_API_KEY"])
 # Image prompt version
 # -----------------------------
 
-PROMPT_VERSION = "2.0-photorealistic-exact-ingredients"
+PROMPT_VERSION = "2.1-homemade-natural-imperfect"
 
 
 # -----------------------------
@@ -263,20 +263,21 @@ def build_food_photo_prompt(recipe, design):
 
     image_style = design.get(
         "image_style",
-        "soft natural window light"
+        "soft, slightly uneven natural window light"
     )
     photo_composition = design.get(
         "photo_composition",
-        "natural 45-degree food photography angle"
+        "casual 45-degree angle, handheld feel, not perfectly centered"
     )
     color_mood = design.get(
         "color_mood",
-        "warm neutral"
+        "warm neutral, slightly muted"
     )
 
     prompt = f"""
-Create a genuinely photorealistic editorial food photograph of the finished
-recipe named "{title}".
+Create a photorealistic photo of the finished recipe named "{title}",
+shot the way a home cook would casually photograph dinner on their phone
+or a basic DSLR — NOT a professional food styling shoot.
 
 EXACT ALLOWED INGREDIENTS:
 {ingredient_text}
@@ -295,36 +296,40 @@ INGREDIENT ACCURACY RULES:
   separate pile.
 - Show the completed ready-to-eat recipe, not ingredient preparation or mise
   en place.
-- Do not arrange the ingredients in separated sections unless the recipe
-  directions explicitly require that presentation.
-- The visible food must accurately represent what a person would produce by
-  following the listed recipe.
+
+REALISTIC, IMPERFECT PLATING (important):
+- Ingredients should overlap and blend into each other naturally, the way
+  they actually settle in a bowl — not arranged in clean, separated
+  quadrants or wedges.
+- Sauce should look like it was spooned on by hand: uneven pooling, a few
+  drips down the side of the bowl, some areas with more coverage than others.
+- Vary ingredient piece sizes and edges. Real chopped vegetables are not
+  uniform cubes.
+- Slight realism is good: a few natural crumbs, a tiny sauce smear,
+  uneven sauce coverage, and natural ingredient overlap.
+- The bowl doesn't need to be perfectly full or perfectly centered in frame.
 
 PHOTOREALISM REQUIREMENTS:
-- The result must look like a real photograph taken with a professional DSLR
-  or mirrorless camera.
-- Use believable natural food textures.
-- Include subtle natural imperfections in shape, placement, browning, sauce,
-  crumbs, folds, and ingredient distribution.
-- Use realistic portion sizes.
-- Avoid perfect geometric cuts or overly uniform ingredient shapes.
-- Avoid duplicated textures or repeated identical food pieces.
-- Avoid plastic, waxy, airbrushed, excessively smooth, or excessively glossy
-  surfaces.
-- Use natural color and restrained saturation.
-- Create realistic depth, soft shadows, and gentle background blur.
-- The food should look freshly prepared, homemade, appetizing, and believable.
-- Do not make the image look illustrated, painted, animated, cartoonish,
-  computer-generated, rendered, or like 3D CGI.
+- Must look like an actual unedited photograph, not a rendered or
+  AI-generated image.
+- Lighting should be a little uneven — real kitchens have mixed light
+  sources, minor shadows, and occasional slight overexposure near windows.
+- Avoid glossy, waxy, or airbrushed surfaces on sauces and food — matte,
+  slightly dull highlights read as more real than glassy shine.
+- Avoid oversaturated colors. Real home food photography tends to look
+  slightly desaturated and warm, not vibrant and punchy.
+- Include a visible surface (wood, laminate, or stone counter) with minor
+  imperfections — scratches, water rings, crumbs.
+- Add subtle grain/noise consistent with a phone camera in indoor lighting,
+  not a clean studio sensor.
 
 PHOTOGRAPHY DIRECTION:
 - Lighting: {image_style}
 - Camera composition: {photo_composition}
 - Color mood: {color_mood}
-- Simple real kitchen or stone countertop background
-- Editorial healthy recipe photography
-- Natural plating that a home cook could realistically reproduce
-- Food remains the clear focal point
+- Simple real kitchen counter or table background, mildly cluttered is fine
+- Looks like a photo someone took to text a friend, not an ad
+- Food remains the clear focal point but framing can be slightly imperfect
 
 DO NOT INCLUDE:
 - People
@@ -334,17 +339,14 @@ DO NOT INCLUDE:
 - Labels
 - Packaging
 - Decorative ingredients not in the recipe
-- Utensils covering the food
-- Artificially perfect symmetry
-- Harsh outlines
-- Neon or exaggerated colors
+- Perfectly symmetrical plating
+- Studio-quality glossy lighting
 - Illustration or digital-art styling
 
 Create one square photograph with no text overlay.
 """
 
     return prompt.strip()
-
 
 def generate_ai_food_photo(recipe, design):
     PHOTO_DIR.mkdir(parents=True, exist_ok=True)
@@ -404,7 +406,6 @@ def generate_ai_food_photo(recipe, design):
     print(f"Image metadata created: {metadata_file}")
 
     return image
-
 
 # -----------------------------
 # Pinterest pin design
