@@ -1,0 +1,59 @@
+{
+  "recipe_id": "high-protein-chicken-caesar-wrap",
+  "platform": "pinterest",
+  "title": "Chicken Caesar Wrap | 52g Protein | 380 Calories",
+  "description": "This high-protein chicken Caesar wrap is crisp, satisfying, ready in eight minutes, and packed with 52 grams of protein for approximately 380 calories.",
+  "destination_url": "https://40400meals.com/recipes/high-protein-chicken-caesar-wrap.html",
+  "hashtags": [
+    "#HighProteinLunch",
+    "#ChickenCaesarWrap",
+    "#EasyLunchIdeas",
+    "#40400Meals"
+  ],
+  "image_prompt": "A realistic sliced chicken Caesar wrap filled with grilled chicken, chopped romaine, light Caesar dressing, grated Parmesan, and black pepper.",
+  "image_alt_text": "High-protein chicken Caesar wrap sliced in half with chicken, romaine, Parmesan, and light Caesar dressing.",
+  "pin_filename": "high-protein-chicken-caesar-wrap-pinterest-pin.png",
+  "image_filename": "high-protein-chicken-caesar-wrap-pinterest-pin.png",
+  "image_path": "outputs/images/pinterest/high-protein-chicken-caesar-wrap-pinterest-pin.png",
+  "image_mime_type": "image/png",
+  "design_brain": {
+    "template_name": "P06 Summer",
+    "template_type": "seasonal",
+    "season": "summer",
+    "month": 7,
+    "recipe_category": "general",
+    "image_style": "bright natural light",
+    "photo_composition": "45-degree angle",
+    "color_mood": "summer",
+    "accent_colors": [
+      "#FFFFFF",
+      "#FFD166",
+      "#06AED5",
+      "#10B981"
+    ],
+    "text_style": "clean and modern",
+    "overlay_style": "minimal",
+    "icon_style": "minimal",
+    "layout_recommendation": "P01 classic layout",
+    "optimization": {
+      "visual_appeal": "high",
+      "save_potential": "high",
+      "click_potential": "high"
+    },
+    "version": "1.0",
+    "status": "design_strategy_ready"
+  },
+  "canva_text_overlay": {
+    "headline": "High-Protein Chicken Caesar Wrap",
+    "subheadline": "52g Protein \u2022 380 Calories",
+    "brand": "40/400 Meals"
+  },
+  "seo_keywords": [
+    "high protein chicken Caesar wrap",
+    "chicken wrap under 400 calories",
+    "high protein lunch",
+    "quick chicken Caesar recipe",
+    "40 400 meals"
+  ],
+  "status": "ready_for_make"
+}
