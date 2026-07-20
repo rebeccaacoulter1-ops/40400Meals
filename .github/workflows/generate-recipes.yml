@@ -20,7 +20,7 @@ permissions:
 jobs:
   generate:
     runs-on: ubuntu-latest
-    timeout-minutes: 20
+    timeout-minutes: 25
 
     steps:
       - name: Checkout repository
@@ -36,10 +36,9 @@ jobs:
           python -m pip install --upgrade pip
           pip install -r requirements.txt
 
-      - name: Run Bear OS Generator Engine
+      - name: Generate Bear OS content
         run: python tools/run_bear_os.py
         env:
-          MAKE_WEBHOOK_URL: ${{ secrets.MAKE_WEBHOOK_URL }}
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
 
       - name: Debug generated files
@@ -56,7 +55,7 @@ jobs:
           echo "===== GIT STATUS ====="
           git status
 
-      - name: Commit generated files
+      - name: Commit generated content
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
@@ -65,9 +64,31 @@ jobs:
 
           if git diff --cached --quiet; then
             echo "No generated changes to commit."
+          else
+            git commit -m "Bear OS generated content"
+            git pull --no-rebase -X ours origin main
+            git push origin main
+          fi
+
+      - name: Publish ready Pinterest pins
+        run: python tools/send_to_make.py
+        env:
+          MAKE_WEBHOOK_URL: ${{ secrets.MAKE_WEBHOOK_URL }}
+          SITE_BASE_URL: https://40400meals.com
+
+      - name: Commit Bear publishing state
+        if: always()
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+
+          git add -A -- memory/bear_manifest.json outputs/make_queue
+
+          if git diff --cached --quiet; then
+            echo "No publishing-state changes to commit."
             exit 0
           fi
 
-          git commit -m "Bear OS generated content"
+          git commit -m "Update Bear publishing state"
           git pull --no-rebase -X ours origin main
           git push origin main
