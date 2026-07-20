@@ -14,13 +14,13 @@ concurrency:
   group: bear-os-generator
   cancel-in-progress: false
 
-permissions:
-  contents: write
-
 jobs:
   generate:
     runs-on: ubuntu-latest
-    timeout-minutes: 25
+    timeout-minutes: 20
+
+    permissions:
+      contents: write
 
     steps:
       - name: Checkout repository
@@ -64,11 +64,63 @@ jobs:
 
           if git diff --cached --quiet; then
             echo "No generated changes to commit."
-          else
-            git commit -m "Bear OS generated content"
-            git pull --no-rebase -X ours origin main
-            git push origin main
+            exit 0
           fi
+
+          git commit -m "Bear OS generated content"
+          git pull --no-rebase -X ours origin main
+          git push origin main
+
+  deploy:
+    needs: generate
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+
+    permissions:
+      contents: read
+      pages: write
+      id-token: write
+
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+
+    steps:
+      - name: Checkout latest generated content
+        uses: actions/checkout@v4
+        with:
+          ref: main
+
+      - name: Configure GitHub Pages
+        uses: actions/configure-pages@v5
+
+      - name: Upload GitHub Pages artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: "."
+
+      - name: Deploy GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
+
+  publish:
+    needs: deploy
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+
+    permissions:
+      contents: write
+
+    steps:
+      - name: Checkout deployed content
+        uses: actions/checkout@v4
+        with:
+          ref: main
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
 
       - name: Publish ready Pinterest pins
         run: python tools/send_to_make.py
