@@ -1,45 +1,46 @@
-import base64
 import json
 import os
+import time
 import uuid
 import urllib.request
 from pathlib import Path
 
-from bear_memory import is_step_complete, mark_step_complete
+from bear_memory import (
+    is_step_complete,
+    mark_step_complete,
+    mark_step_failed,
+)
 
-
-# -----------------------------
-# Environment variables
-# -----------------------------
 
 WEBHOOK = os.environ["MAKE_WEBHOOK_URL"]
-
-
-# -----------------------------
-# File locations
-# -----------------------------
+SITE_BASE_URL = os.environ.get(
+    "SITE_BASE_URL",
+    "https://40400meals.com",
+).rstrip("/")
 
 QUEUE = Path("outputs/make_queue")
 PINTEREST_IMAGE_DIR = Path("outputs/images/pinterest")
 
+PUBLIC_IMAGE_WAIT_SECONDS = 180
+PUBLIC_IMAGE_RETRY_SECONDS = 10
 
-# -----------------------------
-# Helper functions
-# -----------------------------
 
 def load_json(path, default=None):
     if not path.exists():
         return default
 
-    with open(path, "r", encoding="utf-8") as f:
-        return json.load(f)
+    with open(path, "r", encoding="utf-8") as file:
+        return json.load(file)
 
 
 def find_pinterest_image(payload, slug):
     candidates = []
 
     image_path = payload.get("image_path")
-    image_filename = payload.get("image_filename") or payload.get("pin_filename")
+    image_filename = (
+        payload.get("image_filename")
+        or payload.get("pin_filename")
+    )
 
     if image_path:
         candidates.append(Path(image_path))
@@ -48,33 +49,61 @@ def find_pinterest_image(payload, slug):
         candidates.append(PINTEREST_IMAGE_DIR / image_filename)
 
     if slug:
-        candidates.append(PINTEREST_IMAGE_DIR / f"{slug}-pinterest-pin.png")
+        candidates.append(
+            PINTEREST_IMAGE_DIR / f"{slug}-pinterest-pin.png"
+        )
 
     for candidate in candidates:
-        if candidate and candidate.exists():
+        if candidate.exists():
             return candidate
-
-    matches = list(PINTEREST_IMAGE_DIR.glob("*-pinterest-pin.png"))
-
-    if len(matches) == 1:
-        return matches[0]
 
     return None
 
 
 def add_image_metadata(payload, image_file):
-    if not image_file:
-        return payload
-
     payload["image_filename"] = image_file.name
     payload["image_path"] = str(image_file)
     payload["image_mime_type"] = "image/png"
-
-    if not payload.get("image_base64"):
-        image_bytes = image_file.read_bytes()
-        payload["image_base64"] = base64.b64encode(image_bytes).decode("utf-8")
+    payload["image_url"] = (
+        f"{SITE_BASE_URL}/{str(image_file).lstrip('/')}"
+    )
 
     return payload
+
+
+def wait_for_public_image(image_url):
+    deadline = time.monotonic() + PUBLIC_IMAGE_WAIT_SECONDS
+
+    while time.monotonic() < deadline:
+        request = urllib.request.Request(
+            image_url,
+            headers={"User-Agent": "BearOS/1.0"},
+            method="HEAD",
+        )
+
+        try:
+            with urllib.request.urlopen(
+                request,
+                timeout=15,
+            ) as response:
+                if 200 <= response.status < 400:
+                    print(
+                        f"Public Pinterest image is ready: {image_url}",
+                        flush=True,
+                    )
+                    return
+        except Exception as error:
+            print(
+                f"Image not live yet: {image_url} ({error})",
+                flush=True,
+            )
+
+        time.sleep(PUBLIC_IMAGE_RETRY_SECONDS)
+
+    raise RuntimeError(
+        "Pinterest image did not become publicly available "
+        f"within {PUBLIC_IMAGE_WAIT_SECONDS} seconds: {image_url}"
+    )
 
 
 def build_multipart_payload(payload, image_file):
@@ -84,7 +113,10 @@ def build_multipart_payload(payload, image_file):
     def add_field(name, value):
         body.extend(f"--{boundary}\r\n".encode("utf-8"))
         body.extend(
-            f'Content-Disposition: form-data; name="{name}"\r\n\r\n'.encode("utf-8")
+            (
+                f'Content-Disposition: form-data; '
+                f'name="{name}"\r\n\r\n'
+            ).encode("utf-8")
         )
 
         if isinstance(value, (dict, list)):
@@ -94,65 +126,74 @@ def build_multipart_payload(payload, image_file):
         body.extend(b"\r\n")
 
     def add_file(field_name, file_path, mime_type):
-        file_name = file_path.name
-        file_data = file_path.read_bytes()
-
         body.extend(f"--{boundary}\r\n".encode("utf-8"))
         body.extend(
-            f'Content-Disposition: form-data; name="{field_name}"; filename="{file_name}"\r\n'.encode("utf-8")
+            (
+                f'Content-Disposition: form-data; '
+                f'name="{field_name}"; '
+                f'filename="{file_path.name}"\r\n'
+            ).encode("utf-8")
         )
-        body.extend(f"Content-Type: {mime_type}\r\n\r\n".encode("utf-8"))
-        body.extend(file_data)
+        body.extend(
+            f"Content-Type: {mime_type}\r\n\r\n".encode("utf-8")
+        )
+        body.extend(file_path.read_bytes())
         body.extend(b"\r\n")
 
     for key, value in payload.items():
         add_field(key, value)
 
-    if image_file:
-        add_file("pinterest_image", image_file, "image/png")
+    add_file("pinterest_image", image_file, "image/png")
 
     body.extend(f"--{boundary}--\r\n".encode("utf-8"))
 
-    content_type = f"multipart/form-data; boundary={boundary}"
-
-    return bytes(body), content_type
+    return (
+        bytes(body),
+        f"multipart/form-data; boundary={boundary}",
+    )
 
 
 def send_payload_to_make(payload, image_file, file_name):
-    data, content_type = build_multipart_payload(payload, image_file)
+    data, content_type = build_multipart_payload(
+        payload,
+        image_file,
+    )
 
     request = urllib.request.Request(
         WEBHOOK,
         data=data,
         headers={"Content-Type": content_type},
-        method="POST"
+        method="POST",
     )
 
-    with urllib.request.urlopen(request) as response:
-        print(f"Sent {file_name} ({response.status})")
+    with urllib.request.urlopen(
+        request,
+        timeout=60,
+    ) as response:
+        print(
+            f"Sent {file_name} to Make ({response.status})",
+            flush=True,
+        )
         return response.status
 
-
-# -----------------------------
-# Main process
-# -----------------------------
 
 def main():
     if not QUEUE.exists():
         print("No make_queue folder found.")
         return
 
-    files = list(QUEUE.glob("*.json"))
+    files = sorted(QUEUE.glob("*.json"))
 
     if not files:
         print("No queue files to send.")
         return
 
+    failures = []
+
     for file in files:
-        print(f"Preparing {file.name}")
+        print(f"Preparing {file.name}", flush=True)
 
         payload = load_json(file, default={})
-
         slug = payload.get("slug")
 
         if not slug:
@@ -160,39 +201,85 @@ def main():
             payload["slug"] = slug
 
         if is_step_complete(slug, "pinterest"):
-            print(f"Pinterest already completed for {slug}")
+            print(
+                f"Pinterest already completed for {slug}",
+                flush=True,
+            )
             file.unlink()
-            print(f"Removed duplicate queue file: {file.name}")
+            print(
+                f"Removed duplicate queue file: {file.name}",
+                flush=True,
+            )
             continue
 
         image_file = find_pinterest_image(payload, slug)
 
-        if image_file:
-            print(f"Attached image file to payload: {image_file}")
-            payload = add_image_metadata(payload, image_file)
-        else:
-            print(f"No Pinterest image found for slug: {slug}")
+        if not image_file:
+            error = (
+                f"No Pinterest image found for recipe: {slug}"
+            )
+            print(error, flush=True)
+            mark_step_failed(slug, "pinterest", error)
+            failures.append(error)
+            continue
+
+        payload = add_image_metadata(payload, image_file)
 
         try:
-            status = send_payload_to_make(payload, image_file, file.name)
+            wait_for_public_image(payload["image_url"])
 
-            if 200 <= status < 300:
-                mark_step_complete(
-                    slug,
-                    "pinterest",
-                    {
-                        "destination_url": payload.get("destination_url"),
-                        "file_name": file.name
-                    }
+            status = send_payload_to_make(
+                payload,
+                image_file,
+                file.name,
+            )
+
+            if not 200 <= status < 300:
+                raise RuntimeError(
+                    f"Make returned HTTP {status}"
                 )
 
-                file.unlink()
-                print(f"Recorded Pinterest completion in Bear Memory for {slug}")
-                print(f"Removed {file.name} from queue")
+            mark_step_complete(
+                slug,
+                "pinterest",
+                {
+                    "destination_url": payload.get(
+                        "destination_url"
+                    ),
+                    "image_url": payload.get("image_url"),
+                    "file_name": file.name,
+                },
+            )
 
-        except Exception as e:
-            print(f"Failed to send {file.name}")
-            print(e)
+            file.unlink()
+
+            print(
+                f"Recorded Pinterest completion for {slug}",
+                flush=True,
+            )
+            print(
+                f"Removed {file.name} from queue",
+                flush=True,
+            )
+
+        except Exception as error:
+            message = f"{slug}: {error}"
+            print(
+                f"Pinterest publishing failed: {message}",
+                flush=True,
+            )
+            mark_step_failed(
+                slug,
+                "pinterest",
+                str(error),
+            )
+            failures.append(message)
+
+    if failures:
+        raise RuntimeError(
+            "Pinterest publishing failed for: "
+            + " | ".join(failures)
+        )
 
 
 if __name__ == "__main__":
