@@ -44,12 +44,16 @@
     },
     "high-protein-chicken-caesar-wrap": {
       "created_at_utc": "2026-07-20T17:16:08.506000+00:00",
-      "updated_at_utc": "2026-07-20T17:16:08.506023+00:00",
+      "updated_at_utc": "2026-07-20T17:22:11.780681+00:00",
       "steps": {
         "pinterest": {
-          "complete": false,
-          "failed_at_utc": "2026-07-20T17:16:08.506023+00:00",
-          "error": "Pinterest image did not become publicly available within 180 seconds: https://40400meals.com/outputs/images/pinterest/high-protein-chicken-caesar-wrap-pinterest-pin.png"
+          "complete": true,
+          "completed_at_utc": "2026-07-20T17:22:11.780681+00:00",
+          "details": {
+            "destination_url": "https://40400meals.com/recipes/high-protein-chicken-caesar-wrap.html",
+            "image_url": "https://40400meals.com/outputs/images/pinterest/high-protein-chicken-caesar-wrap-pinterest-pin.png",
+            "file_name": "high-protein-chicken-caesar-wrap-pinterest.json"
+          }
         }
       }
     }
