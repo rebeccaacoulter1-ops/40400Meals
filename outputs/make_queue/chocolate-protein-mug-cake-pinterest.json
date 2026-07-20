@@ -1,0 +1,60 @@
+{
+  "recipe_id": "0001",
+  "platform": "pinterest",
+  "title": "Chocolate Protein Mug Cake",
+  "description": "This chocolate protein mug cake is warm, rich, high-protein, and ready in minutes. Around 40g protein, around 400 calories, and perfect for sweet cravings.",
+  "destination_url": "https://40400meals.com/recipes/chocolate-protein-mug-cake.html",
+  "hashtags": [
+    "#40400Meals",
+    "#HighProtein",
+    "#ProteinDessert",
+    "#MugCake"
+  ],
+  "image_prompt": "A warm, realistic chocolate protein mug cake in a white ceramic mug on a clean cream marble countertop, soft natural window light, minimal styling, premium food photography, cozy but clean, 45 degree angle, shallow depth of field, no text on image.",
+  "image_alt_text": "Chocolate protein mug cake in a white mug with a rich chocolate texture.",
+  "pin_filename": "chocolate-protein-mug-cake-pinterest-pin.png",
+  "image_filename": "chocolate-protein-mug-cake-pinterest-pin.png",
+  "image_path": "outputs/images/pinterest/chocolate-protein-mug-cake-pinterest-pin.png",
+  "image_mime_type": "image/png",
+  "design_brain": {
+    "template_name": "P06 Summer",
+    "template_type": "seasonal",
+    "season": "summer",
+    "month": 7,
+    "recipe_category": "general",
+    "image_style": "bright natural light",
+    "photo_composition": "45-degree angle",
+    "color_mood": "summer",
+    "accent_colors": [
+      "#FFFFFF",
+      "#FFD166",
+      "#06AED5",
+      "#10B981"
+    ],
+    "text_style": "clean and modern",
+    "overlay_style": "minimal",
+    "icon_style": "minimal",
+    "layout_recommendation": "P01 classic layout",
+    "optimization": {
+      "visual_appeal": "high",
+      "save_potential": "high",
+      "click_potential": "high"
+    },
+    "version": "1.0",
+    "status": "design_strategy_ready"
+  },
+  "canva_text_overlay": {
+    "headline": "Chocolate Protein Mug Cake",
+    "subheadline": "40g Protein \u2022 400 Calories",
+    "brand": "40/400 Meals"
+  },
+  "seo_keywords": [
+    "chocolate protein mug cake",
+    "high protein dessert",
+    "protein mug cake",
+    "40g protein recipe",
+    "400 calorie dessert",
+    "healthy chocolate mug cake"
+  ],
+  "status": "ready_for_make"
+}
