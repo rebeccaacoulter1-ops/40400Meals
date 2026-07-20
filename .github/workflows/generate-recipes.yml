@@ -6,10 +6,13 @@ on:
       - "recipes/*.json"
       - "templates/recipe-template.html"
       - "tools/**"
-      - "memory/**"
       - "requirements.txt"
       - ".github/workflows/**"
   workflow_dispatch:
+
+concurrency:
+  group: bear-os-generator
+  cancel-in-progress: false
 
 permissions:
   contents: write
@@ -17,6 +20,7 @@ permissions:
 jobs:
   generate:
     runs-on: ubuntu-latest
+    timeout-minutes: 20
 
     steps:
       - name: Checkout repository
@@ -56,7 +60,14 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
+
           git add -A
-          git commit -m "Bear OS generated content" || echo "No changes to commit"
-          git pull --rebase origin main
+
+          if git diff --cached --quiet; then
+            echo "No generated changes to commit."
+            exit 0
+          fi
+
+          git commit -m "Bear OS generated content"
+          git pull --no-rebase -X ours origin main
           git push origin main
