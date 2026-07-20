@@ -1,0 +1,57 @@
+{
+  "recipe_id": "high-protein-pizza-bowl",
+  "platform": "pinterest",
+  "title": "High Protein Pizza Bowl | 40g Protein | Ready in 10 Minutes",
+  "description": "This High Protein Pizza Bowl delivers over 40 grams of protein in about 400 calories. A quick dinner that satisfies pizza cravings while supporting your goals.",
+  "destination_url": "https://40400meals.com/recipes/high-protein-pizza-bowl.html",
+  "hashtags": [
+    "#HighProteinRecipes",
+    "#LowSugarRecipes",
+    "#EasyDinner",
+    "#40400Meals"
+  ],
+  "image_prompt": "Premium food blog photography of High Protein Pizza Bowl, bright natural light, clean neutral styling.",
+  "image_alt_text": "High Protein Pizza Bowl",
+  "pin_filename": "high-protein-pizza-bowl-pinterest-pin.png",
+  "image_filename": "high-protein-pizza-bowl-pinterest-pin.png",
+  "image_path": "outputs/images/pinterest/high-protein-pizza-bowl-pinterest-pin.png",
+  "image_mime_type": "image/png",
+  "design_brain": {
+    "template_name": "P06 Summer",
+    "template_type": "seasonal",
+    "season": "summer",
+    "month": 7,
+    "recipe_category": "general",
+    "image_style": "bright natural light",
+    "photo_composition": "45-degree angle",
+    "color_mood": "summer",
+    "accent_colors": [
+      "#FFFFFF",
+      "#FFD166",
+      "#06AED5",
+      "#10B981"
+    ],
+    "text_style": "clean and modern",
+    "overlay_style": "minimal",
+    "icon_style": "minimal",
+    "layout_recommendation": "P01 classic layout",
+    "optimization": {
+      "visual_appeal": "high",
+      "save_potential": "high",
+      "click_potential": "high"
+    },
+    "version": "1.0",
+    "status": "design_strategy_ready"
+  },
+  "canva_text_overlay": {
+    "headline": "High Protein Pizza Bowl",
+    "subheadline": "42g Protein \u2022 405 Calories",
+    "brand": "40/400 Meals"
+  },
+  "seo_keywords": [
+    "high protein recipes",
+    "low sugar recipes",
+    "macro friendly meals"
+  ],
+  "status": "ready_for_make"
+}
