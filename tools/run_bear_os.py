@@ -1,38 +1,49 @@
 import subprocess
 import sys
 
+
 GENERATORS = [
     "tools/generate_recipe.py",
     "tools/generate_social_content.py",
     "tools/design_engine.py",
     "tools/image_engine.py",
     "tools/generate_pinterest.py",
-    "tools/send_to_make.py",
 ]
 
+
 def run_generator(path):
-    print(f"\nRunning {path}...")
-    result = subprocess.run([sys.executable, path], capture_output=True, text=True)
+    print(f"\nRunning {path}...", flush=True)
 
-    if result.stdout:
-        print(result.stdout)
+    try:
+        subprocess.run(
+            [sys.executable, path],
+            check=True,
+            timeout=900,
+        )
+    except subprocess.TimeoutExpired as error:
+        raise RuntimeError(
+            f"{path} exceeded the 15-minute safety limit."
+        ) from error
+    except subprocess.CalledProcessError as error:
+        raise RuntimeError(
+            f"{path} failed with exit code {error.returncode}."
+        ) from error
 
-    if result.stderr:
-        print(result.stderr)
+    print(f"Finished {path}", flush=True)
 
-    if result.returncode != 0:
-        raise RuntimeError(f"{path} failed")
-
-    print(f"Finished {path}")
 
 def main():
-    print("Starting Bear OS Generator Engine...")
+    print("Starting Bear OS Generator Engine...", flush=True)
 
     for generator in GENERATORS:
         run_generator(generator)
 
-    print("\nBear OS Generator Engine complete.")
+    print(
+        "\nBear OS content generation complete. "
+        "Publishing will begin after generated files are committed.",
+        flush=True,
+    )
+
 
 if __name__ == "__main__":
     main()
-
