@@ -42,9 +42,27 @@
     }
 
     .logo {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      color: var(--chocolate);
       font-size: 26px;
       font-weight: 800;
       letter-spacing: -1px;
+      text-decoration: none;
+    }
+
+    .logo-mark {
+      display: grid;
+      width: 52px;
+      height: 52px;
+      place-items: center;
+      border: 2px solid #c98046;
+      border-radius: 50%;
+      background: var(--cream);
+      font-size: 13px;
+      line-height: 1;
+      letter-spacing: -0.8px;
     }
 
     nav a {
@@ -119,13 +137,12 @@
     }
 
     .hero-image {
-      min-height: 360px;
+      display: block;
+      width: 100%;
+      max-height: 560px;
       border-radius: 26px;
-      background:
-        linear-gradient(rgba(43,33,24,0.12), rgba(43,33,24,0.12)),
-        url("https://images.unsplash.com/photo-1490645935967-10de6ba17061?auto=format&fit=crop&w=1200&q=80");
-      background-size: cover;
-      background-position: center;
+      object-fit: cover;
+      object-position: top;
     }
 
     .macro-row {
@@ -179,12 +196,25 @@
       border-radius: 28px;
       overflow: hidden;
       box-shadow: 0 14px 35px rgba(43, 33, 24, 0.10);
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .recipe-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 20px 44px rgba(43, 33, 24, 0.15);
+    }
+
+    .recipe-card > a {
+      color: inherit;
+      text-decoration: none;
     }
 
     .recipe-img {
-      height: 210px;
-      background-size: cover;
-      background-position: center;
+      display: block;
+      width: 100%;
+      aspect-ratio: 2 / 3;
+      object-fit: cover;
+      object-position: top;
     }
 
     .recipe-body {
@@ -253,32 +283,6 @@
       font-size: 18px;
     }
 
-    .email-box {
-      margin-top: 28px;
-      display: flex;
-      justify-content: center;
-      gap: 12px;
-      flex-wrap: wrap;
-    }
-
-    .email-box input {
-      padding: 17px 22px;
-      border-radius: 999px;
-      border: none;
-      min-width: 280px;
-      font-size: 16px;
-    }
-
-    .email-box button {
-      padding: 17px 28px;
-      border-radius: 999px;
-      border: none;
-      background: var(--sage);
-      color: white;
-      font-weight: 900;
-      font-size: 16px;
-    }
-
     footer {
       text-align: center;
       padding: 45px 8%;
@@ -321,10 +325,13 @@
 <body>
 
   <header>
-    <div class="logo">40/400 Meals</div>
+    <a class="logo" href="index.html">
+      <span class="logo-mark">40/400</span>
+      <span>40/400 Meals</span>
+    </a>
     <nav>
       <a href="#recipes">Recipes</a>
-      <a href="#signup">Start Here</a>
+      <a href="#method">Start Here</a>
       <a href="about.html">About</a>
       <a href="contact.html">Contact</a>
     </nav>
@@ -333,25 +340,30 @@
   <main>
     <section class="hero">
       <div>
-        <div class="badge">Busy Mom Approved</div>
-        <h1>High protein meals that actually fit real life.</h1>
+        <div class="badge">High protein. Lower sugar. Real life.</div>
+        <h1>The simple 40/400 way to build a meal.</h1>
         <p>
           Simple, satisfying recipes built around the 40/400 method:
-          around 40g protein, around 400 calories, and ready fast.
+          around 40g protein, about 400 calories, and practical ingredients
+          you can find at a normal grocery store.
         </p>
 
         <div class="buttons">
           <a href="#recipes" class="btn btn-primary">Browse Recipes</a>
-          <a href="#signup" class="btn btn-secondary">Get the Free Meal Guide</a>
+          <a href="#method" class="btn btn-secondary">How 40/400 Works</a>
         </div>
       </div>
 
       <div class="hero-card">
-        <div class="hero-image"></div>
+        <img
+          class="hero-image"
+          src="outputs/images/pinterest/high-protein-chicken-caesar-wrap-pinterest-pin.png"
+          alt="High-Protein Chicken Caesar Wrap 40/400 Meals pin"
+        />
         <div class="macro-row">
           <div class="macro"><strong>40g</strong>Protein</div>
           <div class="macro"><strong>400</strong>Calories</div>
-          <div class="macro"><strong>10</strong>Minutes</div>
+          <div class="macro"><strong>Real</strong>Food</div>
         </div>
       </div>
     </section>
@@ -359,52 +371,58 @@
     <section id="recipes">
       <div class="section-title">
         <h2>Featured Recipes</h2>
-        <p>Fast meals, sweet treats, and family-friendly favorites.</p>
+        <p>The same recipes you discover on Pinterest, ready to cook.</p>
       </div>
 
       <div class="recipes">
         <article class="recipe-card">
-          <div class="recipe-img" style="background-image:url('https://images.unsplash.com/photo-1606313564200-e75d5e30476c?auto=format&fit=crop&w=900&q=80');"></div>
-          <div class="recipe-body">
-            <h3>Chocolate Protein Mug Cake</h3>
-            <p>A rich, warm dessert with protein power and no oven required.</p>
-            <div class="tags">
-              <span class="tag">40g Protein</span>
-              <span class="tag">400 Calories</span>
-              <span class="tag">3 Minutes</span>
+          <a href="recipes/high-protein-chicken-caesar-wrap.html">
+            <img class="recipe-img" src="outputs/images/pinterest/high-protein-chicken-caesar-wrap-pinterest-pin.png" alt="High-Protein Chicken Caesar Wrap" />
+            <div class="recipe-body">
+              <h3>High-Protein Chicken Caesar Wrap</h3>
+              <p>A quick, satisfying wrap made for busy lunches.</p>
+              <div class="tags">
+                <span class="tag">52g Protein</span>
+                <span class="tag">380 Calories</span>
+                <span class="tag">Easy Lunch</span>
+              </div>
             </div>
-          </div>
+          </a>
         </article>
 
         <article class="recipe-card">
-          <div class="recipe-img" style="background-image:url('https://images.unsplash.com/photo-1604908176997-125f25cc6f3d?auto=format&fit=crop&w=900&q=80');"></div>
-          <div class="recipe-body">
-            <h3>High Protein Taco Bowl</h3>
-            <p>Big flavor, simple ingredients, and a macro-friendly dinner.</p>
-            <div class="tags">
-              <span class="tag">Dinner</span>
-              <span class="tag">Meal Prep</span>
-              <span class="tag">Family Friendly</span>
+          <a href="recipes/buffalo-chicken-cottage-cheese-bowl.html">
+            <img class="recipe-img" src="outputs/images/pinterest/buffalo-chicken-cottage-cheese-bowl-pinterest-pin.png" alt="Buffalo Chicken Cottage Cheese Bowl" />
+            <div class="recipe-body">
+              <h3>Buffalo Chicken Cottage Cheese Bowl</h3>
+              <p>Spicy, crunchy, creamy, and packed with protein.</p>
+              <div class="tags">
+                <span class="tag">42g Protein</span>
+                <span class="tag">400 Calories</span>
+                <span class="tag">8 Minutes</span>
+              </div>
             </div>
-          </div>
+          </a>
         </article>
 
         <article class="recipe-card">
-          <div class="recipe-img" style="background-image:url('https://images.unsplash.com/photo-1513104890138-7c749659a591?auto=format&fit=crop&w=900&q=80');"></div>
-          <div class="recipe-body">
-            <h3>BBQ Chicken Pizza Bowl</h3>
-            <p>Pizza cravings, high protein, and weeknight-simple prep.</p>
-            <div class="tags">
-              <span class="tag">Lunch</span>
-              <span class="tag">High Protein</span>
-              <span class="tag">Craving Fix</span>
+          <a href="recipes/chocolate-protein-mug-cake.html">
+            <img class="recipe-img" src="outputs/images/pinterest/chocolate-protein-mug-cake-pinterest-pin.png" alt="Chocolate Protein Mug Cake" />
+            <div class="recipe-body">
+              <h3>Chocolate Protein Mug Cake</h3>
+              <p>A warm chocolate treat with a high-protein twist.</p>
+              <div class="tags">
+                <span class="tag">40g Protein</span>
+                <span class="tag">400 Calories</span>
+                <span class="tag">Sweet Treat</span>
+              </div>
             </div>
-          </div>
+          </a>
         </article>
       </div>
     </section>
 
-    <section>
+    <section id="method">
       <div class="why">
         <div class="section-title">
           <h2>Why 40/400?</h2>
@@ -430,15 +448,11 @@
       </div>
     </section>
 
-    <section id="signup">
+    <section>
       <div class="signup">
-        <h2>Get the free 40/400 starter guide.</h2>
-        <p>High-protein meal ideas, simple grocery staples, and easy recipes for busy days.</p>
-
-        <div class="email-box">
-          <input type="email" placeholder="Enter your email" />
-          <button>Send Me the Guide</button>
-        </div>
+        <h2>Start with one simple recipe.</h2>
+        <p>Choose a meal, follow the steps, and make high-protein eating easier to repeat.</p>
+        <a href="#recipes" class="btn btn-primary">Choose Your First Recipe</a>
       </div>
     </section>
   </main>
