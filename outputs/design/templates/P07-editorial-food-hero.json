@@ -1,0 +1,76 @@
+{
+  "platform": "pinterest",
+  "template_name": "P07 Editorial Food Hero",
+  "template_type": "evergreen",
+  "season": "evergreen",
+  "month": null,
+  "recipe_category": "general",
+
+  "image_style": "full-bleed editorial food photography with the finished dish filling most of the vertical frame",
+
+  "photo_composition": "vertical close-up with generous negative space in the upper third for headline text and the food hero occupying the lower two-thirds",
+
+  "color_mood": "warm editorial neutral",
+
+  "accent_colors": [
+    "#111111",
+    "#FFFFFF",
+    "#E8D0A2"
+  ],
+
+  "text_style": "high-contrast editorial serif with oversized stacked uppercase headline and smaller supporting line",
+
+  "overlay_style": "minimal; black headline directly over a light or softly blurred image area, with optional pale rectangular subheadline strip",
+
+  "icon_style": "none",
+
+  "layout_recommendation": "Top eyebrow line at 8-12% height; oversized two-to-three-line recipe headline from 12-31%; short supporting line around 31-36%; full food image below; narrow brand footer at bottom",
+
+  "headline_rules": {
+    "eyebrow": "Use 2-4 short words such as HIGH PROTEIN, EASY DINNER, or 40/400 MEAL",
+    "main_headline": "Use the shortest recognizable recipe name possible, ideally 2-5 words, uppercase, stacked across 2-3 lines",
+    "supporting_line": "Use one concise benefit or nutrition statement, no more than 8 words",
+    "font_character": "bold editorial serif with strong mobile readability",
+    "alignment": "centered or slightly left-aligned depending on image negative space",
+    "safe_margins": "Keep all text at least 6% from the left and right edges"
+  },
+
+  "image_rules": {
+    "subject_scale": "The finished food should occupy approximately 55-70% of the pin",
+    "background": "Natural tabletop or kitchen setting with subtle texture and shallow depth of field",
+    "negative_space": "Preserve a calm uncluttered upper third for typography",
+    "lighting": "Soft natural side light with appetizing texture and realistic color",
+    "avoid": [
+      "extra ingredients not present in the recipe",
+      "busy props behind the headline",
+      "small distant food",
+      "heavy gradients",
+      "decorative badges"
+    ]
+  },
+
+  "brand_footer": {
+    "enabled": true,
+    "height_percent": 6,
+    "background": "warm neutral sampled from the image or brand palette",
+    "text": "40400MEALS.COM",
+    "text_style": "small uppercase sans serif with generous letter spacing"
+  },
+
+  "optimization": {
+    "visual_appeal": "high",
+    "save_potential": "high",
+    "click_potential": "high",
+    "mobile_readability": "very high",
+    "best_for": [
+      "recognizable comfort foods",
+      "breakfast recipes",
+      "soups and bowls",
+      "desserts",
+      "recipes with strong close-up imagery"
+    ]
+  },
+
+  "version": "1.0",
+  "status": "template_library_ready_not_selected"
+}
