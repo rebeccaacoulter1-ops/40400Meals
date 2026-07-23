@@ -71,6 +71,21 @@
           }
         }
       }
+    },
+    "ground-beef-sweet-potato-bowl": {
+      "created_at_utc": "2026-07-23T19:44:24.718147+00:00",
+      "updated_at_utc": "2026-07-23T19:44:24.718160+00:00",
+      "steps": {
+        "pinterest": {
+          "complete": true,
+          "completed_at_utc": "2026-07-23T19:44:24.718160+00:00",
+          "details": {
+            "destination_url": "https://40400meals.com/recipes/ground-beef-sweet-potato-bowl.html",
+            "image_url": "https://40400meals.com/outputs/images/pinterest/ground-beef-sweet-potato-bowl-pinterest-pin.png",
+            "file_name": "ground-beef-sweet-potato-bowl-pinterest.json"
+          }
+        }
+      }
     }
   }
 }
