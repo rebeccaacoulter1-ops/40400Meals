@@ -1,0 +1,78 @@
+{
+  "recipe_id": "ground-beef-sweet-potato-bowl",
+  "recipe": {
+    "slug": "ground-beef-sweet-potato-bowl",
+    "title": "High-Protein Ground Beef Sweet Potato Bowl",
+    "summary": "A sweet and savory bowl with seasoned lean ground beef, air-fried sweet potato, creamy cottage cheese, avocado, and a tangy sprinkle of Tajín.",
+    "category": "Lunch",
+    "servings": 1,
+    "times": {
+      "prep_minutes": 10,
+      "cook_minutes": 15,
+      "total_minutes": 25
+    },
+    "macros": {
+      "calories": 390,
+      "protein_g": 41,
+      "carbs_g": 22,
+      "fat_g": 15
+    },
+    "ingredients": [
+      "4.5 ounces 96/4 lean ground beef",
+      "1/2 cup Daisy 4% Cottage Cheese",
+      "1/2 cup peeled sweet potato, cut into uneven bite-size cubes",
+      "1/4 teaspoon olive oil",
+      "1 tablespoon avocado, diced into irregular pieces",
+      "Kinder's steak seasoning, to taste",
+      "Salt and black pepper, to taste",
+      "Tajín seasoning, to taste",
+      "1 to 2 tablespoons water"
+    ],
+    "instructions": [
+      "Preheat the air fryer to 390 degrees Fahrenheit.",
+      "Toss the sweet potato cubes with the olive oil, salt, and black pepper.",
+      "Air-fry the sweet potato for 10 to 14 minutes, shaking the basket halfway through, until browned outside and tender inside.",
+      "Meanwhile, cook the ground beef in a nonstick skillet over medium heat, breaking it into naturally uneven crumbles.",
+      "When the beef is mostly browned, season it with Kinder's steak seasoning.",
+      "Add 1 to 2 tablespoons of water and stir until the seasoning coats the beef and the water cooks down.",
+      "Add the ground beef and roasted sweet potato to a bowl.",
+      "Spoon the cottage cheese loosely beside the beef and sweet potato rather than shaping it into a perfect scoop.",
+      "Top with the irregularly diced avocado and a light sprinkle of Tajín."
+    ],
+    "tips": [
+      "Adding the water after the beef begins browning keeps very lean beef moist without preventing browning.",
+      "Cut the sweet potato into slightly uneven pieces for natural texture, but keep them similar enough to cook evenly.",
+      "Measure the olive oil because even a small amount changes the calorie total.",
+      "Nutrition is approximate and may vary by beef, cottage cheese, avocado, and seasoning brands."
+    ]
+  },
+  "seo": {
+    "meta_title": "Ground Beef Sweet Potato Bowl | 41g Protein",
+    "meta_description": "Make this ground beef sweet potato bowl with cottage cheese, avocado, and Tajín for approximately 41g protein and 390 calories.",
+    "keywords": [
+      "ground beef sweet potato bowl",
+      "high protein beef bowl",
+      "cottage cheese beef bowl",
+      "ground beef bowl under 400 calories",
+      "40 400 meals"
+    ]
+  },
+  "images": {
+    "hero_image_url": "https://40400meals.com/outputs/images/food_photos/ground-beef-sweet-potato-bowl-food-photo.png",
+    "image_prompt": "A realistic restaurant-style bowl with naturally crumbled seasoned ground beef, irregularly cut roasted sweet potato, cottage cheese spooned loosely to one side, a few irregular avocado pieces, and a light dusting of Tajín. Natural ingredient overlap, restrained colors, and believable imperfections. No perfect scoops, symmetrical sections, identical cubes, extra garnish, rice, lettuce, tomatoes, onions, cheese, or unlisted ingredients.",
+    "alt_text": "High-protein ground beef and roasted sweet potato bowl with cottage cheese, avocado, and Tajín."
+  },
+  "social": {
+    "pinterest": {
+      "title": "Ground Beef Sweet Potato Bowl | 41g Protein",
+      "description": "This easy ground beef sweet potato bowl combines seasoned lean beef, air-fried sweet potato, creamy cottage cheese, avocado, and Tajín for approximately 41 grams of protein and 390 calories.",
+      "destination_url": "https://40400meals.com/recipes/ground-beef-sweet-potato-bowl.html",
+      "hashtags": [
+        "#HighProteinBowl",
+        "#GroundBeefRecipes",
+        "#SweetPotatoBowl",
+        "#40400Meals"
+      ]
+    }
+  }
+}
