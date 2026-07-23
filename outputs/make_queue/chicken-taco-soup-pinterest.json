@@ -1,0 +1,59 @@
+{
+  "recipe_id": "chicken-taco-soup",
+  "platform": "pinterest",
+  "title": "Chicken Taco Soup | 48g Protein | 390 Calories",
+  "description": "This easy high-protein chicken taco soup combines rotisserie chicken, bone broth, pinto beans, corn, cilantro, and avocado for a hearty meal with approximately 48 grams of protein and 390 calories.",
+  "destination_url": "https://40400meals.com/recipes/chicken-taco-soup.html",
+  "hashtags": [
+    "#HighProteinSoup",
+    "#ChickenTacoSoup",
+    "#RotisserieChickenRecipes",
+    "#40400Meals"
+  ],
+  "image_prompt": "A realistic bowl of hearty chicken taco soup with visible shredded chicken breast, pinto beans, golden corn, tomato-colored broth, fresh cilantro, and thin avocado slices on top. No tortilla chips, cheese, sour cream, tomatoes, onions, jalapenos, or other unlisted ingredients.",
+  "image_alt_text": "High-protein chicken taco soup with shredded chicken, pinto beans, corn, cilantro, and avocado.",
+  "pin_filename": "chicken-taco-soup-pinterest-pin.png",
+  "image_filename": "chicken-taco-soup-pinterest-pin.png",
+  "image_path": "outputs/images/pinterest/chicken-taco-soup-pinterest-pin.png",
+  "image_mime_type": "image/png",
+  "design_brain": {
+    "template_name": "P06 Summer",
+    "template_type": "seasonal",
+    "season": "summer",
+    "month": 7,
+    "recipe_category": "general",
+    "image_style": "bright natural light",
+    "photo_composition": "45-degree angle",
+    "color_mood": "summer",
+    "accent_colors": [
+      "#FFFFFF",
+      "#FFD166",
+      "#06AED5",
+      "#10B981"
+    ],
+    "text_style": "clean and modern",
+    "overlay_style": "minimal",
+    "icon_style": "minimal",
+    "layout_recommendation": "P01 classic layout",
+    "optimization": {
+      "visual_appeal": "high",
+      "save_potential": "high",
+      "click_potential": "high"
+    },
+    "version": "1.0",
+    "status": "design_strategy_ready"
+  },
+  "canva_text_overlay": {
+    "headline": "High-Protein Chicken Taco Soup",
+    "subheadline": "48g Protein \u2022 390 Calories",
+    "brand": "40/400 Meals"
+  },
+  "seo_keywords": [
+    "high protein chicken taco soup",
+    "chicken taco soup under 400 calories",
+    "rotisserie chicken soup",
+    "high protein soup recipe",
+    "40 400 meals"
+  ],
+  "status": "ready_for_make"
+}
