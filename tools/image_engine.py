@@ -20,8 +20,8 @@ client = OpenAI(api_key=os.environ["OPENAI_API_KEY"])
 # Image prompt version
 # -----------------------------
 
-PROMPT_VERSION = "2.1-homemade-natural-imperfect"
-
+PROMPT_VERSION = "2.2-restaurant-human-realism"
+REGENERATE_EXISTING_PHOTOS = False
 
 # -----------------------------
 # File locations
@@ -276,8 +276,10 @@ def build_food_photo_prompt(recipe, design):
 
     prompt = f"""
 Create a photorealistic photo of the finished recipe named "{title}",
-shot the way a home cook would casually photograph dinner on their phone
-or a basic DSLR — NOT a professional food styling shoot.
+photographed like an appealing dish genuinely served at a neighborhood
+restaurant or captured by an experienced food blogger in natural window
+light. Make it appetizing but naturally plated, not commercially styled,
+digitally rendered, airbrushed, or artificially perfect.
 
 EXACT ALLOWED INGREDIENTS:
 {ingredient_text}
@@ -309,6 +311,35 @@ REALISTIC, IMPERFECT PLATING (important):
   uneven sauce coverage, and natural ingredient overlap.
 - The bowl doesn't need to be perfectly full or perfectly centered in frame.
 
+HUMAN FOOD TEXTURE AND ARRANGEMENT RULES:
+- Every visible ingredient must have natural variation in size, shape, color,
+  orientation, and spacing. Avoid repeated patterns that reveal AI generation.
+- Shredded or sliced chicken must have irregular lengths, torn edges, varied
+  thickness, overlapping pieces, and different orientations. Never arrange
+  chicken in matching curls, parallel strips, or symmetrical clusters.
+- Fresh herbs such as cilantro must appear casually torn or roughly chopped,
+  with varied leaf sizes, a few stems, uneven spacing, and natural clumping.
+  Never scatter herbs evenly across the entire dish like confetti.
+- Avocado, when included, must have natural color variation, slightly uneven
+  hand-cut slices, varied thickness, and casual placement. Never create a
+  perfect fan, identical slices, neon-green color, or symmetrical arrangement.
+- Beans, corn, vegetables, and other repeated ingredients must not appear
+  cloned. Vary their size, angle, visibility, spacing, and surface texture.
+- Garnishes should be sparse and slightly irregular. Some areas of the dish
+  should have more garnish than others, and some should have none.
+- Preserve believable cooked textures. Meat should look fibrous, vegetables
+  should have natural wrinkles and edges, and herbs should not look plastic.
+- The final image should feel like a real restaurant plate photographed before
+  someone begins eating, not a computer-generated ideal of the recipe.
+
+AI-PATTERN AVOIDANCE:
+- No perfect radial arrangements, repeated curves, mirrored placement,
+  equal spacing, identical ingredient pieces, or centered garnish patterns.
+- No neon greens, uniformly golden meat, excessive gloss, plastic surfaces,
+  overly crisp edges, or identical highlights.
+- Do not make every ingredient equally visible. Natural food has partial
+  overlap, hidden pieces, mixed textures, and visual randomness.
+    
 PHOTOREALISM REQUIREMENTS:
 - Must look like an actual unedited photograph, not a rendered or
   AI-generated image.
@@ -316,10 +347,12 @@ PHOTOREALISM REQUIREMENTS:
   sources, minor shadows, and occasional slight overexposure near windows.
 - Avoid glossy, waxy, or airbrushed surfaces on sauces and food — matte,
   slightly dull highlights read as more real than glassy shine.
-- Avoid oversaturated colors. Real home food photography tends to look
-  slightly desaturated and warm, not vibrant and punchy.
-- Include a visible surface (wood, laminate, or stone counter) with minor
-  imperfections — scratches, water rings, crumbs.
+- Avoid oversaturated colors. Real restaurant and food-blog photography uses
+  believable ingredient colors, warm tones, and restrained saturation.
+- Include a believable restaurant table, wood surface, or stone countertop
+  with subtle natural texture and minor imperfections.
+- Use realistic photographic detail with gentle grain, natural depth of field,
+  and soft focus falloff rather than artificial edge-to-edge sharpness.
 - Add subtle grain/noise consistent with a phone camera in indoor lighting,
   not a clean studio sensor.
 
@@ -327,8 +360,8 @@ PHOTOGRAPHY DIRECTION:
 - Lighting: {image_style}
 - Camera composition: {photo_composition}
 - Color mood: {color_mood}
-- Simple real kitchen counter or table background, mildly cluttered is fine
-- Looks like a photo someone took to text a friend, not an ad
+- Simple restaurant table or natural food-blog setting without staged clutter
+- Looks like a genuine restaurant or food-blog photograph, not an advertisement
 - Food remains the clear focal point but framing can be slightly imperfect
 
 DO NOT INCLUDE:
@@ -356,6 +389,12 @@ def generate_ai_food_photo(recipe, design):
 
     photo_file = PHOTO_DIR / f"{slug}-food-photo.png"
     metadata_file = PHOTO_METADATA_DIR / f"{slug}-food-photo.json"
+    if photo_file.exists() and not REGENERATE_EXISTING_PHOTOS:
+        print(
+            f"Preserving existing food photo: {photo_file}. "
+            "Set REGENERATE_EXISTING_PHOTOS to True to replace it."
+        )
+        return Image.open(photo_file).convert("RGB")          
 
     prompt = build_food_photo_prompt(recipe, design)
     prompt_hash = create_prompt_hash(prompt)
