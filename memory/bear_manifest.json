@@ -56,6 +56,21 @@
           }
         }
       }
+    },
+    "chicken-taco-soup": {
+      "created_at_utc": "2026-07-23T18:59:53.235630+00:00",
+      "updated_at_utc": "2026-07-23T18:59:53.235650+00:00",
+      "steps": {
+        "pinterest": {
+          "complete": true,
+          "completed_at_utc": "2026-07-23T18:59:53.235650+00:00",
+          "details": {
+            "destination_url": "https://40400meals.com/recipes/chicken-taco-soup.html",
+            "image_url": "https://40400meals.com/outputs/images/pinterest/chicken-taco-soup-pinterest-pin.png",
+            "file_name": "chicken-taco-soup-pinterest.json"
+          }
+        }
+      }
     }
   }
 }
