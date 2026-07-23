@@ -1,0 +1,76 @@
+{
+  "recipe_id": "chicken-taco-soup",
+  "recipe": {
+    "slug": "chicken-taco-soup",
+    "title": "High-Protein Chicken Taco Soup",
+    "summary": "A hearty chicken taco soup made with rotisserie chicken, bone broth, pinto beans, corn, cilantro, and avocado for more than 40 grams of protein in a satisfying 12-ounce bowl.",
+    "category": "Lunch",
+    "servings": 5,
+    "times": {
+      "prep_minutes": 10,
+      "cook_minutes": 15,
+      "total_minutes": 25
+    },
+    "macros": {
+      "calories": 390,
+      "protein_g": 48,
+      "carbs_g": 27,
+      "fat_g": 11
+    },
+    "ingredients": [
+      "32 ounces Simple Truth Organic Chicken Bone Broth",
+      "20 ounces mostly skinless rotisserie chicken breast, shredded",
+      "1 (15-ounce) can pinto beans, drained and rinsed",
+      "1 (15-ounce) can corn, drained",
+      "2 teaspoons Knorr tomato bouillon with chicken flavor",
+      "1 teaspoon granulated garlic",
+      "1 teaspoon paprika",
+      "1 teaspoon ground cumin",
+      "1/2 cup chopped fresh cilantro",
+      "1 medium avocado, thinly sliced and divided among the servings"
+    ],
+    "instructions": [
+      "Pour the chicken bone broth into a large pot over medium heat.",
+      "Stir in the Knorr tomato bouillon, granulated garlic, paprika, and cumin until combined.",
+      "Add the shredded rotisserie chicken, drained pinto beans, and drained corn.",
+      "Bring the soup to a gentle simmer and cook for 10 to 15 minutes, stirring occasionally.",
+      "Stir in the chopped cilantro just before serving.",
+      "Divide the soup into approximately five 12-ounce servings and top each bowl with sliced avocado."
+    ],
+    "tips": [
+      "Use mostly skinless rotisserie chicken breast to keep the calories consistent while maximizing protein.",
+      "Taste the soup before adding salt because the bone broth and tomato bouillon already contain sodium.",
+      "Measure the finished soup into approximately 12-ounce portions for the closest match to the listed nutrition.",
+      "Nutrition is approximate and may vary depending on the rotisserie chicken, bone broth, canned ingredients, and avocado size."
+    ]
+  },
+  "seo": {
+    "meta_title": "High-Protein Chicken Taco Soup | 48g Protein",
+    "meta_description": "Make this easy chicken taco soup with rotisserie chicken, bone broth, beans, corn, cilantro, and avocado for approximately 48g protein and 390 calories.",
+    "keywords": [
+      "high protein chicken taco soup",
+      "chicken taco soup under 400 calories",
+      "rotisserie chicken soup",
+      "high protein soup recipe",
+      "40 400 meals"
+    ]
+  },
+  "images": {
+    "hero_image_url": "https://40400meals.com/outputs/images/food_photos/chicken-taco-soup-food-photo.png",
+    "image_prompt": "A realistic bowl of hearty chicken taco soup with visible shredded chicken breast, pinto beans, golden corn, tomato-colored broth, fresh cilantro, and thin avocado slices on top. No tortilla chips, cheese, sour cream, tomatoes, onions, jalapenos, or other unlisted ingredients.",
+    "alt_text": "High-protein chicken taco soup with shredded chicken, pinto beans, corn, cilantro, and avocado."
+  },
+  "social": {
+    "pinterest": {
+      "title": "Chicken Taco Soup | 48g Protein | 390 Calories",
+      "description": "This easy high-protein chicken taco soup combines rotisserie chicken, bone broth, pinto beans, corn, cilantro, and avocado for a hearty meal with approximately 48 grams of protein and 390 calories.",
+      "destination_url": "https://40400meals.com/recipes/chicken-taco-soup.html",
+      "hashtags": [
+        "#HighProteinSoup",
+        "#ChickenTacoSoup",
+        "#RotisserieChickenRecipes",
+        "#40400Meals"
+      ]
+    }
+  }
+}
