@@ -151,6 +151,12 @@
       margin-top: 36px;
     }
 
+    .story-card p {
+      margin: 0;
+      color: #5f5146;
+      font-size: 18px;
+    }
+
     .button-row {
       display: flex;
       gap: 12px;
@@ -303,6 +309,8 @@
         <p><strong>Total Time:</strong> {{recipe.times.total_minutes}} minutes</p>
         <p><strong>Servings:</strong> {{recipe.servings}}</p>
 
+        {{story_section}}
+
         <div class="recipe-card">
           <h2>Ingredients</h2>
           <ul>
@@ -333,4 +341,3 @@
 
 </body>
 </html>
-
