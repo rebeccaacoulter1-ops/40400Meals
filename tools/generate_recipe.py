@@ -1,4 +1,5 @@
 import json
+from html import escape
 from pathlib import Path
 
 
@@ -8,6 +9,25 @@ from pathlib import Path
 
 RECIPES_DIR = Path("recipes")
 TEMPLATE_FILE = Path("templates/recipe-template.html")
+
+
+# Image-generation directions should never appear in reader-facing recipe copy.
+PROMPT_RESIDUE_PHRASES = (
+    "naturally uneven",
+    "irregularly diced",
+    "diced into irregular pieces",
+    "loosely beside",
+    "rather than shaping it",
+    "perfect scoop",
+    "symmetrical sections",
+    "believable imperfections",
+    "natural ingredient overlap",
+    "restrained colors",
+    "identical cubes",
+    "extra garnish",
+    "unlisted ingredients",
+    "restaurant-style bowl",
+)
 
 
 # -----------------------------
@@ -46,6 +66,7 @@ def normalize_recipe(data, recipe_file):
         return {
             "title": recipe.get("title", slug.replace("-", " ").title()),
             "summary": recipe.get("summary", ""),
+            "story": recipe.get("story", ""),
             "category": recipe.get("category", "High Protein"),
             "protein": recipe.get("macros", {}).get("protein_g", ""),
             "calories": recipe.get("macros", {}).get("calories", ""),
@@ -72,6 +93,7 @@ def normalize_recipe(data, recipe_file):
     return {
         "title": data.get("title", slug.replace("-", " ").title()),
         "summary": data.get("description", ""),
+        "story": data.get("story", ""),
         "category": data.get("tags", ["High Protein"])[0] if data.get("tags") else "High Protein",
         "protein": data.get("protein", ""),
         "calories": data.get("calories", ""),
@@ -97,6 +119,36 @@ def normalize_recipe(data, recipe_file):
     }
 
 
+def validate_reader_facing_copy(recipe, recipe_file):
+    fields = {
+        "summary": [recipe.get("summary", "")],
+        "story": [recipe.get("story", "")],
+        "ingredients": recipe.get("ingredients", []),
+        "instructions": recipe.get("instructions", []),
+        "tips": recipe.get("tips", []),
+    }
+
+    violations = []
+
+    for field_name, values in fields.items():
+        for item_number, value in enumerate(values, start=1):
+            text = str(value).lower()
+
+            for phrase in PROMPT_RESIDUE_PHRASES:
+                if phrase in text:
+                    violations.append(
+                        f"{field_name} item {item_number}: '{phrase}'"
+                    )
+
+    if violations:
+        details = "\n  - ".join(violations)
+        raise ValueError(
+            f"{recipe_file} contains image-prompt language in reader-facing copy.\n"
+            f"Move visual styling directions to images.image_prompt and rewrite the recipe copy.\n"
+            f"  - {details}"
+        )
+
+
 def build_ingredients_html(ingredients):
     lines = []
 
@@ -109,19 +161,35 @@ def build_ingredients_html(ingredients):
         else:
             line = str(ingredient)
 
-        lines.append(f"<li>{line}</li>")
+        lines.append(f"<li>{escape(line)}</li>")
 
     return "\n".join(lines)
 
 
 def build_list_html(items):
-    return "\n".join(f"<li>{item}</li>" for item in items)
+    return "\n".join(f"<li>{escape(str(item))}</li>" for item in items)
+
+
+def build_story_html(story):
+    story = str(story).strip()
+
+    if not story:
+        return ""
+
+    return (
+        '<div class="recipe-card story-card">\n'
+        '  <h2>Behind the Recipe</h2>\n'
+        f'  <p>{escape(story)}</p>\n'
+        '</div>'
+    )
 
 
 def generate_recipe_page(recipe_file):
     data = load_json(recipe_file)
     html = load_template()
     recipe = normalize_recipe(data, recipe_file)
+
+    validate_reader_facing_copy(recipe, recipe_file)
 
     replacements = {
         "{{seo.meta_title}}": recipe["meta_title"],
@@ -140,6 +208,7 @@ def generate_recipe_page(recipe_file):
         "{{images.hero_image_url}}": recipe["hero_image_url"],
         "{{images.alt_text}}": recipe["alt_text"],
         "{{social.pinterest.destination_url}}": recipe["destination_url"],
+        "{{story_section}}": build_story_html(recipe["story"]),
         "{{ingredients_list}}": build_ingredients_html(recipe["ingredients"]),
         "{{instructions_list}}": build_list_html(recipe["instructions"]),
         "{{tips_list}}": build_list_html(recipe["tips"]),
@@ -166,7 +235,7 @@ recipe_files = sorted(RECIPES_DIR.glob("*.json"))
 if not recipe_files:
     print("No recipe JSON files found.")
     quit()
-    
+
 
 for recipe_file in recipe_files:
     print(f"Generating page for {recipe_file}")
