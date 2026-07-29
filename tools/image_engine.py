@@ -2,6 +2,7 @@ import os
 import json
 import base64
 import hashlib
+import shutil
 from io import BytesIO
 from pathlib import Path
 
@@ -18,10 +19,12 @@ client = OpenAI(api_key=os.environ["OPENAI_API_KEY"])
 
 # -----------------------------
 # Image prompt version
+# Keep the prepared-recipe version stable so existing approved food photos
+# are not regenerated merely because packaged-snack support was added.
 # -----------------------------
 
 PROMPT_VERSION = "2.2-restaurant-human-realism"
-REGENERATE_EXISTING_PHOTOS = False
+
 
 # -----------------------------
 # File locations
@@ -141,6 +144,7 @@ def normalize_instructions(instructions):
 
 def normalize_recipe(data, recipe_file):
     slug = build_slug(data, recipe_file)
+    image_settings = data.get("images", {}) or {}
 
     if "recipe" in data:
         recipe = data["recipe"]
@@ -162,6 +166,7 @@ def normalize_recipe(data, recipe_file):
             "instructions": normalize_instructions(instructions),
             "protein": recipe.get("macros", {}).get("protein_g", ""),
             "calories": recipe.get("macros", {}).get("calories", ""),
+            "images": image_settings,
         }
 
     instructions = (
@@ -181,6 +186,7 @@ def normalize_recipe(data, recipe_file):
         "instructions": normalize_instructions(instructions),
         "protein": data.get("protein", ""),
         "calories": data.get("calories", ""),
+        "images": image_settings,
     }
 
 
@@ -209,8 +215,8 @@ def get_ingredient_names(ingredients):
 def get_instruction_text(instructions):
     if not instructions:
         return (
-            "Show the dish fully prepared, assembled, and ready to eat. "
-            "Do not display the ingredients as separate preparation piles."
+            "Show the recipe fully prepared and ready to eat. "
+            "Do not display unrelated ingredients."
         )
 
     numbered_steps = []
@@ -222,7 +228,7 @@ def get_instruction_text(instructions):
 
 
 # -----------------------------
-# Prompt cache helpers
+# Prompt and source cache helpers
 # -----------------------------
 
 def create_prompt_hash(prompt):
@@ -230,11 +236,18 @@ def create_prompt_hash(prompt):
     return hashlib.sha256(content.encode("utf-8")).hexdigest()
 
 
-def photo_cache_is_current(photo_file, metadata_file, prompt_hash):
-    if not photo_file.exists():
-        return False
+def create_file_hash(path):
+    digest = hashlib.sha256()
 
-    if not metadata_file.exists():
+    with open(path, "rb") as f:
+        for chunk in iter(lambda: f.read(1024 * 1024), b""):
+            digest.update(chunk)
+
+    return digest.hexdigest()
+
+
+def photo_cache_is_current(photo_file, metadata_file, source_hash):
+    if not photo_file.exists() or not metadata_file.exists():
         return False
 
     try:
@@ -242,17 +255,79 @@ def photo_cache_is_current(photo_file, metadata_file, prompt_hash):
     except (json.JSONDecodeError, OSError):
         return False
 
-    return (
-        metadata.get("prompt_version") == PROMPT_VERSION
-        and metadata.get("prompt_hash") == prompt_hash
+    return metadata.get("source_hash") == source_hash
+
+
+# -----------------------------
+# Image mode prompts
+# -----------------------------
+
+def build_packaged_snack_prompt(recipe, design):
+    title = recipe["title"]
+    custom_prompt = str(
+        recipe.get("images", {}).get("image_prompt", "")
+    ).strip()
+
+    ingredient_names = get_ingredient_names(recipe["ingredients"])
+    ingredient_text = "\n".join(
+        f"- {ingredient}" for ingredient in ingredient_names
     )
 
+    image_style = design.get(
+        "image_style",
+        "soft, natural window light"
+    )
+    photo_composition = design.get(
+        "photo_composition",
+        "casual 45-degree angle with the products easy to recognize"
+    )
+    color_mood = design.get(
+        "color_mood",
+        "warm, bright, and realistic"
+    )
 
-# -----------------------------
-# AI food photo generation
-# -----------------------------
+    prompt = f"""
+Create one photorealistic square photograph for the packaged high-protein
+snack named "{title}".
 
-def build_food_photo_prompt(recipe, design):
+CUSTOM SCENE DIRECTION:
+{custom_prompt}
+
+EXACT SNACK COMPONENTS:
+{ingredient_text}
+
+PACKAGED-SNACK RULES:
+- This is a grab-and-go snack assortment, not a cooked recipe or mixed dish.
+- Keep each item separate and recognizable.
+- Never turn a wrapped protein bar, chips, puff, protein powder, egg, drink,
+  guacamole cup, or other packaged snack into loose cooked food.
+- When the custom direction says an item remains wrapped, keep it fully sealed
+  in its wrapper.
+- Product packaging, wrappers, labels, and readable brand names are allowed
+  because they are part of the snack being shown.
+- Show the exact number of items requested and no extra food.
+- Do not add fruit, garnish, sauce, crumbs, shredded food, side dishes, or
+  decorative ingredients unless explicitly listed.
+- Do not invent orange puffed food, saucy pasta, shredded chicken, or a bowl
+  of mixed ingredients.
+- The clear protein drink should remain translucent rather than milky.
+
+PHOTOGRAPHY DIRECTION:
+- Lighting: {image_style}
+- Camera composition: {photo_composition}
+- Color mood: {color_mood}
+- Clean home-kitchen setting with a realistic plate or countertop
+- Natural depth of field and believable shadows
+- No added headline, caption, badge, or graphic text overlay
+- No people or hands
+
+Create one square photograph.
+"""
+
+    return prompt.strip()
+
+
+def build_prepared_recipe_prompt(recipe, design):
     title = recipe["title"]
     ingredient_names = get_ingredient_names(recipe["ingredients"])
     ingredient_text = "\n".join(
@@ -299,105 +374,141 @@ INGREDIENT ACCURACY RULES:
 - Show the completed ready-to-eat recipe, not ingredient preparation or mise
   en place.
 
-REALISTIC, IMPERFECT PLATING (important):
-- Ingredients should overlap and blend into each other naturally, the way
-  they actually settle in a bowl — not arranged in clean, separated
-  quadrants or wedges.
-- Sauce should look like it was spooned on by hand: uneven pooling, a few
-  drips down the side of the bowl, some areas with more coverage than others.
-- Vary ingredient piece sizes and edges. Real chopped vegetables are not
-  uniform cubes.
-- Slight realism is good: a few natural crumbs, a tiny sauce smear,
-  uneven sauce coverage, and natural ingredient overlap.
-- The bowl doesn't need to be perfectly full or perfectly centered in frame.
+REALISTIC, IMPERFECT PLATING:
+- Ingredients should overlap and blend naturally rather than sitting in clean,
+  separated quadrants.
+- Sauce should look spooned on by hand with believable, uneven coverage.
+- Vary ingredient piece sizes, edges, spacing, and orientation.
+- Slight realism is good: natural crumbs, a tiny sauce smear, and imperfect
+  centering are acceptable.
+- Avoid repeated patterns, cloned ingredients, symmetry, neon colors, plastic
+  texture, or excessive gloss.
+- Preserve believable cooked textures.
 
-HUMAN FOOD TEXTURE AND ARRANGEMENT RULES:
-- Every visible ingredient must have natural variation in size, shape, color,
-  orientation, and spacing. Avoid repeated patterns that reveal AI generation.
-- Shredded or sliced chicken must have irregular lengths, torn edges, varied
-  thickness, overlapping pieces, and different orientations. Never arrange
-  chicken in matching curls, parallel strips, or symmetrical clusters.
-- Fresh herbs such as cilantro must appear casually torn or roughly chopped,
-  with varied leaf sizes, a few stems, uneven spacing, and natural clumping.
-  Never scatter herbs evenly across the entire dish like confetti.
-- Avocado, when included, must have natural color variation, slightly uneven
-  hand-cut slices, varied thickness, and casual placement. Never create a
-  perfect fan, identical slices, neon-green color, or symmetrical arrangement.
-- Beans, corn, vegetables, and other repeated ingredients must not appear
-  cloned. Vary their size, angle, visibility, spacing, and surface texture.
-- Garnishes should be sparse and slightly irregular. Some areas of the dish
-  should have more garnish than others, and some should have none.
-- Preserve believable cooked textures. Meat should look fibrous, vegetables
-  should have natural wrinkles and edges, and herbs should not look plastic.
-- The final image should feel like a real restaurant plate photographed before
-  someone begins eating, not a computer-generated ideal of the recipe.
-
-AI-PATTERN AVOIDANCE:
-- No perfect radial arrangements, repeated curves, mirrored placement,
-  equal spacing, identical ingredient pieces, or centered garnish patterns.
-- No neon greens, uniformly golden meat, excessive gloss, plastic surfaces,
-  overly crisp edges, or identical highlights.
-- Do not make every ingredient equally visible. Natural food has partial
-  overlap, hidden pieces, mixed textures, and visual randomness.
-    
 PHOTOREALISM REQUIREMENTS:
-- Must look like an actual unedited photograph, not a rendered or
-  AI-generated image.
-- Lighting should be a little uneven — real kitchens have mixed light
-  sources, minor shadows, and occasional slight overexposure near windows.
-- Avoid glossy, waxy, or airbrushed surfaces on sauces and food — matte,
-  slightly dull highlights read as more real than glassy shine.
-- Avoid oversaturated colors. Real restaurant and food-blog photography uses
-  believable ingredient colors, warm tones, and restrained saturation.
-- Include a believable restaurant table, wood surface, or stone countertop
-  with subtle natural texture and minor imperfections.
-- Use realistic photographic detail with gentle grain, natural depth of field,
-  and soft focus falloff rather than artificial edge-to-edge sharpness.
-- Add subtle grain/noise consistent with a phone camera in indoor lighting,
-  not a clean studio sensor.
+- Must look like an actual unedited photograph, not an illustration or render.
+- Use believable ingredient colors, restrained saturation, natural shadows,
+  gentle grain, and realistic depth of field.
+- Include a simple restaurant table, wood surface, or stone countertop with
+  subtle natural texture.
 
 PHOTOGRAPHY DIRECTION:
 - Lighting: {image_style}
 - Camera composition: {photo_composition}
 - Color mood: {color_mood}
-- Simple restaurant table or natural food-blog setting without staged clutter
-- Looks like a genuine restaurant or food-blog photograph, not an advertisement
-- Food remains the clear focal point but framing can be slightly imperfect
-
-DO NOT INCLUDE:
-- People
-- Hands
-- Text
-- Logos
-- Labels
-- Packaging
-- Decorative ingredients not in the recipe
-- Perfectly symmetrical plating
-- Studio-quality glossy lighting
-- Illustration or digital-art styling
+- Food remains the clear focal point
+- No people, hands, text overlay, logos, labels, or packaging
+- No decorative ingredients not included in the recipe
 
 Create one square photograph with no text overlay.
 """
 
     return prompt.strip()
 
+
+def build_food_photo_prompt(recipe, design):
+    image_mode = str(
+        recipe.get("images", {}).get("image_mode", "prepared_recipe")
+    ).strip().lower()
+
+    if image_mode == "packaged_snack":
+        return build_packaged_snack_prompt(recipe, design)
+
+    return build_prepared_recipe_prompt(recipe, design)
+
+
+# -----------------------------
+# Food photo generation
+# -----------------------------
+
+def use_manual_source_photo(recipe, photo_file, metadata_file):
+    image_settings = recipe.get("images", {})
+
+    source_value = str(
+        image_settings.get("source_photo_path", "")
+    ).strip()
+    base64_value = str(
+        image_settings.get("source_photo_base64_path", "")
+    ).strip()
+
+    if not source_value and not base64_value:
+        return None
+
+    if source_value:
+        source_path = Path(source_value)
+
+        if not source_path.exists():
+            raise FileNotFoundError(
+                f"Manual source photo not found for {recipe['slug']}: "
+                f"{source_path}"
+            )
+
+        source_hash = f"manual-file:{create_file_hash(source_path)}"
+
+        if photo_cache_is_current(photo_file, metadata_file, source_hash):
+            print(f"Using current approved source photo: {photo_file}")
+            return Image.open(photo_file).convert("RGB")
+
+        image = Image.open(source_path).convert("RGB")
+        source_label = str(source_path)
+
+    else:
+        source_path = Path(base64_value)
+
+        if not source_path.exists():
+            raise FileNotFoundError(
+                f"Base64 source photo not found for {recipe['slug']}: "
+                f"{source_path}"
+            )
+
+        source_hash = f"manual-base64:{create_file_hash(source_path)}"
+
+        if photo_cache_is_current(photo_file, metadata_file, source_hash):
+            print(f"Using current approved source photo: {photo_file}")
+            return Image.open(photo_file).convert("RGB")
+
+        encoded = source_path.read_text(encoding="utf-8").strip()
+        image_bytes = base64.b64decode(encoded)
+        image = Image.open(BytesIO(image_bytes)).convert("RGB")
+        source_label = str(source_path)
+
+    image.save(photo_file)
+
+    save_json(
+        metadata_file,
+        {
+            "slug": recipe["slug"],
+            "recipe_title": recipe["title"],
+            "image_mode": "manual_source",
+            "source_photo": source_label,
+            "source_hash": source_hash,
+            "photo_file": str(photo_file),
+        }
+    )
+
+    print(f"Approved source photo copied to: {photo_file}")
+    return image
+
+
 def generate_ai_food_photo(recipe, design):
     PHOTO_DIR.mkdir(parents=True, exist_ok=True)
     PHOTO_METADATA_DIR.mkdir(parents=True, exist_ok=True)
 
     slug = recipe["slug"]
-
     photo_file = PHOTO_DIR / f"{slug}-food-photo.png"
     metadata_file = PHOTO_METADATA_DIR / f"{slug}-food-photo.json"
-    if photo_file.exists() and not REGENERATE_EXISTING_PHOTOS:
-        print(
-            f"Preserving existing food photo: {photo_file}. "
-            "Set REGENERATE_EXISTING_PHOTOS to True to replace it."
-        )
-        return Image.open(photo_file).convert("RGB")          
+
+    manual_image = use_manual_source_photo(
+        recipe,
+        photo_file,
+        metadata_file
+    )
+
+    if manual_image is not None:
+        return manual_image
 
     prompt = build_food_photo_prompt(recipe, design)
-    prompt_hash = create_prompt_hash(prompt)
+    prompt_hash = f"prompt:{create_prompt_hash(prompt)}"
 
     if photo_cache_is_current(
         photo_file,
@@ -409,8 +520,8 @@ def generate_ai_food_photo(recipe, design):
 
     if photo_file.exists():
         print(
-            "Existing food photo is stale because the recipe or image "
-            "prompt changed. Regenerating it."
+            "Existing food photo is stale because the recipe image prompt "
+            "or image mode changed. Regenerating it."
         )
     else:
         print("No current food photo found. Generating a new image.")
@@ -435,8 +546,12 @@ def generate_ai_food_photo(recipe, design):
         {
             "slug": slug,
             "recipe_title": recipe["title"],
+            "image_mode": recipe.get("images", {}).get(
+                "image_mode",
+                "prepared_recipe"
+            ),
             "prompt_version": PROMPT_VERSION,
-            "prompt_hash": prompt_hash,
+            "source_hash": prompt_hash,
             "photo_file": str(photo_file),
         }
     )
@@ -445,6 +560,7 @@ def generate_ai_food_photo(recipe, design):
     print(f"Image metadata created: {metadata_file}")
 
     return image
+
 
 # -----------------------------
 # Pinterest pin design
