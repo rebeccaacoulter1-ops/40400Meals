@@ -8,6 +8,7 @@ GENERATORS = [
     "tools/design_engine.py",
     "tools/image_engine.py",
     "tools/generate_pinterest.py",
+    "tools/generate_homepage.py",
 ]
 
 
