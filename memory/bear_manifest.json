@@ -86,6 +86,21 @@
           }
         }
       }
+    },
+    "sour-peach-orange-protein-snack": {
+      "created_at_utc": "2026-07-29T18:20:08.106842+00:00",
+      "updated_at_utc": "2026-07-29T18:20:08.106865+00:00",
+      "steps": {
+        "pinterest": {
+          "complete": true,
+          "completed_at_utc": "2026-07-29T18:20:08.106865+00:00",
+          "details": {
+            "destination_url": "https://40400meals.com/recipes/sour-peach-orange-protein-snack.html",
+            "image_url": "https://40400meals.com/outputs/images/pinterest/sour-peach-orange-protein-snack-pinterest-pin.png",
+            "file_name": "sour-peach-orange-protein-snack-pinterest.json"
+          }
+        }
+      }
     }
   }
 }
