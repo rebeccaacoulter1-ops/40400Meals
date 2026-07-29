@@ -1,0 +1,70 @@
+{
+  "recipe_id": "sour-peach-orange-protein-snack",
+  "recipe": {
+    "slug": "sour-peach-orange-protein-snack",
+    "title": "Sour Peach & Orange Protein Snack",
+    "summary": "A candy-like sour peach protein puff, refreshing orange clear protein, and a hard-boiled egg make a one-minute snack with approximately 42 grams of protein.",
+    "story": "I love keeping a few quick protein picks on hand for the days when I have no time and do not want to think about food. The Sweet Peach Punch Sour Puff satisfies a candy craving, the Tropical Orange clear protein reminds me of an Orange Julius, and the boiled egg adds something savory and filling. Having combinations like this ready makes it much easier to grab something that supports my goals instead of choosing whatever happens to be fastest.",
+    "category": "Snack",
+    "cuisine": "American",
+    "date_published": "2026-07-29",
+    "servings": 1,
+    "times": {
+      "prep_minutes": 1,
+      "cook_minutes": 0,
+      "total_minutes": 1
+    },
+    "macros": {
+      "calories": 310,
+      "protein_g": 42,
+      "carbs_g": 17,
+      "fat_g": 8
+    },
+    "ingredients": [
+      "1 BUILT Sweet Peach Punch Sour Puff",
+      "1 chilled 16-ounce can Clean Simple Eats Tropical Orange Clear Protein Water",
+      "1 large hard-boiled egg"
+    ],
+    "instructions": [
+      "Peel the hard-boiled egg and place it on a plate or in a snack container.",
+      "Add the Sweet Peach Punch Sour Puff.",
+      "Serve with the chilled Tropical Orange clear protein and enjoy."
+    ],
+    "tips": [
+      "Keep hard-boiled eggs prepared in the refrigerator so the entire snack is ready in about one minute.",
+      "The sweet protein puff and orange drink satisfy a candy-like craving, while the egg adds a savory element.",
+      "Product nutrition can change, so use the numbers printed on your packages when tracking.",
+      "Nutrition is approximate and is based on one 150-calorie BUILT Sour Puff, one 90-calorie clear protein water, and one large hard-boiled egg."
+    ]
+  },
+  "seo": {
+    "meta_title": "Sour Peach Protein Snack | 42g Protein",
+    "meta_description": "Pair a sour peach protein puff, orange clear protein, and a hard-boiled egg for a quick snack with approximately 42g protein and 310 calories.",
+    "keywords": [
+      "sour peach protein snack",
+      "high protein snack under 400 calories",
+      "no think protein snack",
+      "built sour puff snack",
+      "orange clear protein snack",
+      "40 400 snacks"
+    ]
+  },
+  "images": {
+    "hero_image_url": "https://40400meals.com/outputs/images/food_photos/sour-peach-orange-protein-snack-food-photo.png",
+    "image_prompt": "A realistic, casual high-protein snack on a bright kitchen counter: one pale peach-colored marshmallow-style protein puff on a small plate, one peeled hard-boiled egg cut in half, and a cold glass of translucent orange protein drink. Natural home lighting, simple everyday presentation, slight crumbs, no readable logos, no fruit, no garnish, and no additional food.",
+    "alt_text": "Sour peach protein puff with a hard-boiled egg and orange clear protein drink."
+  },
+  "social": {
+    "pinterest": {
+      "title": "The No-Think Sweet Snack With 42g Protein",
+      "description": "This easy sweet-and-savory snack pairs a sour peach protein puff, Tropical Orange clear protein, and a hard-boiled egg for approximately 42 grams of protein and 310 calories.",
+      "destination_url": "https://40400meals.com/recipes/sour-peach-orange-protein-snack.html",
+      "hashtags": [
+        "#HighProteinSnack",
+        "#EasyProteinSnack",
+        "#HealthySnackIdeas",
+        "#40400Meals"
+      ]
+    }
+  }
+}
