@@ -1,7 +1,8 @@
 {
   "slug": "high-protein-pizza-bowl",
   "recipe_title": "High Protein Pizza Bowl",
-  "prompt_version": "2.1-homemade-natural-imperfect",
-  "prompt_hash": "3b778abe01ce60b46e4ab809772ee03c427d3bcfc256d336736ffe197372b31f",
+  "image_mode": "prepared_recipe",
+  "prompt_version": "2.2-restaurant-human-realism",
+  "source_hash": "prompt:efc0644eeb21c5e7909f9e80fc2ed3f0b3af3c5c247e2523d5ff077893b4d583",
   "photo_file": "outputs/images/food_photos/high-protein-pizza-bowl-food-photo.png"
 }

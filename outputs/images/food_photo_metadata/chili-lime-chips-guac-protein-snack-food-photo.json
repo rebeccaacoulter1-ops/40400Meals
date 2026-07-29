@@ -1,7 +1,8 @@
 {
   "slug": "chili-lime-chips-guac-protein-snack",
   "recipe_title": "Chili Lime Chips, Guac & Protein Snack",
+  "image_mode": "prepared_recipe",
   "prompt_version": "2.2-restaurant-human-realism",
-  "prompt_hash": "3058d27f00f40e37e5c9ea18a7adc477c3b42841a1ec7f06cde6182e3a975776",
+  "source_hash": "prompt:95967d1796f0ab276a42d216fa809e3fe6711f03f239643fe113e6c08f42e888",
   "photo_file": "outputs/images/food_photos/chili-lime-chips-guac-protein-snack-food-photo.png"
 }
