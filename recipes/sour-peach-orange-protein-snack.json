@@ -3,7 +3,7 @@
   "recipe": {
     "slug": "sour-peach-orange-protein-snack",
     "title": "Sour Peach & Peachy Ring Protein Snack",
-    "summary": "A candy-like sour peach protein puff, refreshing Peachy Ring clear protein, and a hard-boiled egg make an easy one-minute snack with approximately 42 grams of protein.",
+    "summary": "A candy-like sour peach protein puff, refreshing Peachy Ring clear protein, and a hard-boiled egg make an easy two-minute snack with approximately 42 grams of protein.",
     "story": "I love keeping a few quick protein picks on hand for the days when I have no time and do not want to think about food. The Sweet Peach Punch Sour Puff satisfies a candy craving, the Peachy Ring clear protein is light and refreshing, and the boiled egg adds something savory and filling. Having combinations like this ready makes it much easier to grab something that supports my goals instead of choosing whatever happens to be fastest.",
     "category": "Snack",
     "cuisine": "American",
@@ -55,8 +55,10 @@
   },
   "images": {
     "hero_image_url": "https://40400meals.com/outputs/images/food_photos/sour-peach-orange-protein-snack-food-photo.png",
+    "image_mode": "packaged_snack",
     "image_prompt": "A realistic high-protein snack styled in a bright, clean home kitchen. Show one unopened BUILT Sweet Peach Punch Sour Puff still fully inside its original wrapper, placed flat on a small neutral ceramic plate. Place one peeled whole hard-boiled egg beside the wrapped bar on the plate. Beside the plate, show a clear drinking glass filled with translucent peach-orange clear protein drink and ice. In the background, show a standing pink and coral Clean Simple Eats Peachy Ring Clear Protein Powder bag, softly out of focus but recognizable as a protein powder package. Natural window lighting, simple everyday presentation, appetizing and uncluttered. Keep the protein puff completely inside the wrapper. Do not open, cut, unwrap, or alter the bar. Do not show shredded food, saucy food, mixed food, fruit, garnishes, crumbs, extra ingredients, or a messy plate.",
-    "alt_text": "Wrapped sour peach BUILT protein puff with a hard-boiled egg, Peachy Ring clear protein drink, and clear protein powder bag."
+    "alt_text": "Wrapped sour peach BUILT protein puff with a hard-boiled egg, Peachy Ring clear protein drink, and clear protein powder bag.",
+    "source_photo_path": "assets/manual_photos/sour-peach-peachy-ring-snack-approved.jpg"
   },
   "social": {
     "pinterest": {
