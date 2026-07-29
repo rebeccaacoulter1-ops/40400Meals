@@ -1,8 +1,8 @@
 {
   "slug": "sour-peach-orange-protein-snack",
   "recipe_title": "Sour Peach & Peachy Ring Protein Snack",
-  "image_mode": "prepared_recipe",
-  "prompt_version": "2.2-restaurant-human-realism",
-  "source_hash": "prompt:b091b3b9b741be0169075ffd9d752292de8a386c06df0a2d533f80c7e9722acf",
+  "image_mode": "manual_source",
+  "source_photo": "assets/manual_photos/sour-peach-peachy-ring-snack-approved.jpg",
+  "source_hash": "manual-file:0688e105a753f5d1ff7dd5e791230bdb46706140d17637929bf19486d96a27af",
   "photo_file": "outputs/images/food_photos/sour-peach-orange-protein-snack-food-photo.png"
 }
