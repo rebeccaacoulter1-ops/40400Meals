@@ -1,0 +1,82 @@
+{
+  "recipe_id": "quick-costco-salmon-dinner",
+  "recipe": {
+    "slug": "quick-costco-salmon-dinner",
+    "title": "Quick Costco Salmon Dinner",
+    "summary": "A fast salmon dinner with chicken rice, green beans, and a lightly dressed side salad for approximately 40 grams of protein and 405 calories.",
+    "story": "This is the kind of dinner I make when life is busy and I still want a balanced plate without starting from scratch. The salmon does most of the work, while a small portion of chicken rice, plenty of green beans, and a simple side salad make it feel like a complete meal. It is especially useful on sick days, travel days, or nights when cooking needs to stay easy.",
+    "category": "Premade + Mix",
+    "cuisine": "American",
+    "date_published": "2026-07-31",
+    "servings": 1,
+    "times": {
+      "prep_minutes": 5,
+      "cook_minutes": 5,
+      "total_minutes": 10
+    },
+    "macros": {
+      "calories": 405,
+      "protein_g": 40,
+      "carbs_g": 23,
+      "fat_g": 18
+    },
+    "ingredients": [
+      "5.5 ounces cooked Costco salmon",
+      "1/4 cup prepared Knorr Chicken Rice",
+      "1 cup cooked frozen green beans",
+      "2 cups salad greens",
+      "1 teaspoon homemade red-wine vinaigrette"
+    ],
+    "instructions": [
+      "Warm the salmon, chicken rice, and green beans until heated through.",
+      "Measure 5.5 ounces of cooked salmon onto a dinner plate.",
+      "Add 1/4 cup of prepared chicken rice and 1 cup of cooked green beans.",
+      "Place 2 cups of salad greens on the side.",
+      "Drizzle the salad with 1 teaspoon of vinaigrette and serve."
+    ],
+    "tips": [
+      "Use a kitchen scale to measure the salmon after cooking for the most consistent serving.",
+      "Keep the rice portion to 1/4 cup so the meal stays close to the 40/400 target.",
+      "The homemade vinaigrette is made with olive oil, red-wine vinegar, salt, black pepper, and granulated garlic.",
+      "Nutrition is approximate and may vary with the exact salmon, rice preparation, and vinaigrette ratio used."
+    ]
+  },
+  "seo": {
+    "meta_title": "Quick Costco Salmon Dinner | 40g Protein",
+    "meta_description": "Build this quick Costco salmon dinner with chicken rice, green beans, and salad for approximately 40g protein and 405 calories.",
+    "keywords": [
+      "quick Costco salmon dinner",
+      "high protein salmon dinner",
+      "salmon dinner around 400 calories",
+      "premade mix meal",
+      "easy Costco dinner",
+      "40 400 meals"
+    ]
+  },
+  "images": {
+    "hero_image_url": "https://40400meals.com/outputs/images/food_photos/quick-costco-salmon-dinner-food-photo.png",
+    "image_prompt": "A realistic casual dinner plate in a bright home kitchen with one cooked salmon fillet, a small portion of chicken-flavored rice, a generous serving of green beans, and a simple side salad with a very light vinaigrette sheen. Everyday home presentation, natural window light, appetizing but not professionally styled. Show only the listed foods. No lemon, herbs, sauces, bread, extra vegetables, branded packaging, or readable logos.",
+    "alt_text": "Quick salmon dinner with chicken rice, green beans, and a lightly dressed side salad."
+  },
+  "social": {
+    "pinterest": {
+      "title": "Quick Costco Salmon Dinner | 40g Protein",
+      "description": "This easy Costco salmon dinner uses simple premade sides and measured portions for approximately 40 grams of protein and 405 calories.",
+      "destination_url": "https://40400meals.com/recipes/quick-costco-salmon-dinner.html",
+      "hashtags": [
+        "#CostcoMeals",
+        "#HighProteinDinner",
+        "#QuickDinner",
+        "#SalmonDinner",
+        "#40400Meals"
+      ]
+    }
+  },
+  "homepage": {
+    "hidden": false,
+    "priority": 10,
+    "published_at": "2026-07-31T16:45:00-05:00",
+    "summary": "A fast Costco salmon plate with rice, green beans, and salad for approximately 40g protein.",
+    "image_path": "outputs/images/pinterest/quick-costco-salmon-dinner-pinterest-pin.png"
+  }
+}
