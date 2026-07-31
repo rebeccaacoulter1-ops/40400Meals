@@ -131,6 +131,21 @@
           }
         }
       }
+    },
+    "crunchy-high-protein-costco-chicken-caesar-salad": {
+      "created_at_utc": "2026-07-31T21:57:49.740076+00:00",
+      "updated_at_utc": "2026-07-31T21:57:49.740094+00:00",
+      "steps": {
+        "pinterest": {
+          "complete": true,
+          "completed_at_utc": "2026-07-31T21:57:49.740094+00:00",
+          "details": {
+            "destination_url": "https://40400meals.com/recipes/crunchy-high-protein-costco-chicken-caesar-salad.html",
+            "image_url": "https://40400meals.com/outputs/images/pinterest/crunchy-high-protein-costco-chicken-caesar-salad-pinterest-pin.png",
+            "file_name": "crunchy-high-protein-costco-chicken-caesar-salad-pinterest.json"
+          }
+        }
+      }
     }
   }
 }
