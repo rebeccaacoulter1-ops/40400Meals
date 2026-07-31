@@ -1,0 +1,86 @@
+{
+  "recipe_id": "crunchy-high-protein-costco-chicken-caesar-salad",
+  "recipe": {
+    "slug": "crunchy-high-protein-costco-chicken-caesar-salad",
+    "title": "Crunchy High-Protein Costco Chicken Caesar Salad",
+    "summary": "A five-minute Costco Caesar salad upgrade with grilled chicken, Parmesan Whisps, and roasted edamame for approximately 41 grams of protein and 390 calories.",
+    "story": "This is a quick meal for the days when I want something fresh and crunchy but have no interest in cooking. I skip the croutons from the salad kit and replace them with Parmesan Whisps and roasted edamame. That keeps the crunch while adding more protein and fiber, and the individual grilled chicken pack makes the serving simple.",
+    "category": "Premade + Mix",
+    "cuisine": "American",
+    "date_published": "2026-07-31",
+    "servings": 1,
+    "times": {
+      "prep_minutes": 5,
+      "cook_minutes": 0,
+      "total_minutes": 5
+    },
+    "macros": {
+      "calories": 390,
+      "protein_g": 41,
+      "carbs_g": 14,
+      "fat_g": 19
+    },
+    "ingredients": [
+      "2 cups romaine lettuce from a Costco Caesar salad kit",
+      "1 Fresh Additions grilled chicken breast pack, 3.2 ounces",
+      "2 teaspoons Caesar dressing from the salad kit",
+      "1 tablespoon Parmesan cheese from the salad kit",
+      "2/3 serving Whisps Parmesan Cheese Crisps, about 19 grams, lightly crushed",
+      "1/2 serving The Only Bean Sea Salt Crunchy Roasted Edamame, about 15 grams",
+      "Croutons from the salad kit, omitted"
+    ],
+    "instructions": [
+      "Add the romaine to a large bowl.",
+      "Toss the romaine with 2 teaspoons of Caesar dressing and 1 tablespoon of Parmesan from the kit.",
+      "Add the full pack of grilled chicken.",
+      "Top with the crushed Parmesan Whisps and roasted edamame.",
+      "Leave out the packaged croutons and serve immediately."
+    ],
+    "tips": [
+      "Measure the dressing instead of pouring directly from the packet because Caesar dressing adds calories quickly.",
+      "Crush the Whisps just before serving so they stay crisp.",
+      "The roasted edamame adds extra crunch, protein, and fiber in place of traditional croutons.",
+      "Product nutrition can change, so compare these amounts with the labels on your exact Costco products before tracking.",
+      "Nutrition is approximate and may vary by salad kit and current product formulation."
+    ]
+  },
+  "seo": {
+    "meta_title": "Costco Chicken Caesar Salad | 41g Protein",
+    "meta_description": "Upgrade a Costco Caesar salad kit with grilled chicken, Parmesan Whisps, and roasted edamame for about 41g protein and 390 calories.",
+    "keywords": [
+      "Costco chicken Caesar salad",
+      "high protein Caesar salad",
+      "Costco salad kit meal",
+      "quick premade high protein meal",
+      "roasted edamame salad",
+      "Parmesan Whisps salad",
+      "40 400 meals"
+    ]
+  },
+  "images": {
+    "hero_image_url": "https://40400meals.com/outputs/images/food_photos/crunchy-high-protein-costco-chicken-caesar-salad-food-photo.png",
+    "image_prompt": "A realistic large bowl of Caesar salad in a bright home kitchen with chopped romaine, grilled chicken breast bites, a light coating of Caesar dressing, small Parmesan shavings, crushed Parmesan cheese crisps, and visible roasted edamame scattered over the top. Casual everyday presentation, natural window light, fresh and crunchy appearance. No bread croutons, tomatoes, bacon, avocado, lemon, extra garnish, branded packaging, or readable logos.",
+    "alt_text": "High-protein chicken Caesar salad topped with Parmesan crisps and crunchy roasted edamame."
+  },
+  "social": {
+    "pinterest": {
+      "title": "5-Minute Costco Chicken Caesar Salad | 41g Protein",
+      "description": "Turn a Costco Caesar salad kit into a crunchy high-protein meal with grilled chicken, Parmesan Whisps, and roasted edamame for approximately 41 grams of protein and 390 calories.",
+      "destination_url": "https://40400meals.com/recipes/crunchy-high-protein-costco-chicken-caesar-salad.html",
+      "hashtags": [
+        "#CostcoMeals",
+        "#ChickenCaesarSalad",
+        "#HighProteinLunch",
+        "#QuickMeals",
+        "#40400Meals"
+      ]
+    }
+  },
+  "homepage": {
+    "hidden": false,
+    "priority": 20,
+    "published_at": "2026-07-31T16:50:00-05:00",
+    "summary": "A five-minute Costco Caesar upgrade with chicken, Parmesan crisps, and crunchy roasted edamame.",
+    "image_path": "outputs/images/pinterest/crunchy-high-protein-costco-chicken-caesar-salad-pinterest-pin.png"
+  }
+}
