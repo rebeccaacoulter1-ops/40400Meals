@@ -116,6 +116,21 @@
           }
         }
       }
+    },
+    "quick-costco-salmon-dinner": {
+      "created_at_utc": "2026-07-31T21:55:19.442317+00:00",
+      "updated_at_utc": "2026-07-31T21:55:19.442332+00:00",
+      "steps": {
+        "pinterest": {
+          "complete": true,
+          "completed_at_utc": "2026-07-31T21:55:19.442332+00:00",
+          "details": {
+            "destination_url": "https://40400meals.com/recipes/quick-costco-salmon-dinner.html",
+            "image_url": "https://40400meals.com/outputs/images/pinterest/quick-costco-salmon-dinner-pinterest-pin.png",
+            "file_name": "quick-costco-salmon-dinner-pinterest.json"
+          }
+        }
+      }
     }
   }
 }
