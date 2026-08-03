@@ -146,6 +146,21 @@
           }
         }
       }
+    },
+    "steakhouse-filet-loaded-baked-potato": {
+      "created_at_utc": "2026-08-03T18:33:29.164879+00:00",
+      "updated_at_utc": "2026-08-03T18:33:29.164897+00:00",
+      "steps": {
+        "pinterest": {
+          "complete": true,
+          "completed_at_utc": "2026-08-03T18:33:29.164897+00:00",
+          "details": {
+            "destination_url": "https://40400meals.com/recipes/steakhouse-filet-loaded-baked-potato.html",
+            "image_url": "https://40400meals.com/outputs/images/pinterest/steakhouse-filet-loaded-baked-potato-pinterest-pin.png",
+            "file_name": "steakhouse-filet-loaded-baked-potato-pinterest.json"
+          }
+        }
+      }
     }
   }
 }
