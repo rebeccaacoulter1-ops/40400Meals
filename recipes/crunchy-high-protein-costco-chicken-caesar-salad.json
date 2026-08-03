@@ -59,6 +59,7 @@
   },
   "images": {
     "hero_image_url": "https://40400meals.com/outputs/images/food_photos/crunchy-high-protein-costco-chicken-caesar-salad-food-photo.png",
+    "source_photo_path": "assets/source-photos/crunchy-costco-chicken-caesar-salad-food-photo.png",
     "image_prompt": "A realistic large bowl of Caesar salad in a bright home kitchen with chopped romaine, grilled chicken breast bites, a light coating of Caesar dressing, small Parmesan shavings, crushed Parmesan cheese crisps, and visible roasted edamame scattered over the top. Casual everyday presentation, natural window light, fresh and crunchy appearance. No bread croutons, tomatoes, bacon, avocado, lemon, extra garnish, branded packaging, or readable logos.",
     "alt_text": "High-protein chicken Caesar salad topped with Parmesan crisps and crunchy roasted edamame."
   },
@@ -81,6 +82,6 @@
     "priority": 20,
     "published_at": "2026-07-31T16:50:00-05:00",
     "summary": "A five-minute Costco Caesar upgrade with chicken, Parmesan crisps, and crunchy roasted edamame.",
-    "image_path": "outputs/images/pinterest/crunchy-high-protein-costco-chicken-caesar-salad-pinterest-pin.png"
+    "image_path": "outputs/images/food_photos/crunchy-high-protein-costco-chicken-caesar-salad-food-photo.png"
   }
 }
