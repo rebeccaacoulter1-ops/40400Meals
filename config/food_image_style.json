@@ -1,0 +1,60 @@
+{
+  "brand": "40/400 Meals",
+  "visual_goal": "Realistic, approachable food photography that looks homemade, taste-tested, and genuinely served rather than digitally rendered.",
+  "prompt_version": "1.0",
+  "required_style": [
+    "Use soft natural window light with believable shadows.",
+    "Use casual, imperfect plating rather than commercial food styling.",
+    "Vary ingredient sizes, shapes, edges, spacing, and orientation.",
+    "Allow ingredients to overlap, hide partially, and sit naturally in the dish.",
+    "Use realistic portions that match one serving of the written recipe.",
+    "Keep colors restrained, textures believable, and saturation natural.",
+    "Use a simple wood table, neutral counter, or everyday kitchen setting.",
+    "Make the image feel like a strong real phone or food-blog photograph."
+  ],
+  "avoid": [
+    "Perfect symmetry or centered geometric placement.",
+    "Evenly spaced toppings or repeated ingredient patterns.",
+    "Identical chicken cubes, vegetables, crisps, or garnish pieces.",
+    "Plastic-looking lettuce, rubbery meat, excessive gloss, or airbrushed textures.",
+    "Overfilled bowls or unrealistic ingredient quantities.",
+    "Ingredients, garnish, sauces, sides, or decorations not listed in the recipe.",
+    "Text, nutrition labels, logos, borders, badges, or interface elements inside the food photograph.",
+    "An overly polished advertisement or studio-rendered appearance."
+  ],
+  "composition": {
+    "preferred_camera_angles": [
+      "casual 45-degree angle",
+      "natural overhead angle"
+    ],
+    "centering": "Slightly imperfect framing is preferred. Do not center every object precisely.",
+    "depth_of_field": "Natural and restrained. Keep the meal clear without artificial blur.",
+    "background": "Simple, warm, and believable with no unrelated food or decorative clutter."
+  },
+  "ingredient_accuracy": {
+    "priority": "critical",
+    "use_only_listed_ingredients": true,
+    "use_product_reference_images_when_available": true,
+    "do_not_copy_packaging_into_finished_food_photo": true,
+    "do_not_invent_common_recipe_ingredients": true
+  },
+  "realism_details": [
+    "A few natural crumbs, a lightly broken crisp, uneven dressing coverage, or a small sauce smear are acceptable.",
+    "Some ingredients should be partially hidden or overlapping.",
+    "Do not force every ingredient to face the camera.",
+    "Do not make every ingredient equally visible.",
+    "Food should look freshly prepared and edible, not sculpted."
+  ],
+  "output_rules": {
+    "generate_food_photo_only": true,
+    "add_website_text_with_code": true,
+    "add_pinterest_text_with_template": true,
+    "allow_text_inside_generated_photo": false,
+    "allow_fake_social_icons_inside_generated_photo": false
+  },
+  "cost_control": {
+    "default_provider": "current configured image provider",
+    "premium_provider_policy": "Use a premium image model only after repeated failures or for an important revenue-driving hero image.",
+    "prefer_approved_manual_photo_when_available": true
+  }
+}
