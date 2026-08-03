@@ -1,9 +1,9 @@
 {
   "platform": "pinterest",
-  "template_name": "P06 Summer",
-  "template_type": "seasonal",
+  "template_name": "P01 Classic Recipe v1.0",
+  "template_type": "evergreen",
   "season": "summer",
-  "month": 7,
+  "month": 8,
   "recipe_category": "general",
   "image_style": "bright natural light",
   "photo_composition": "45-degree angle",
