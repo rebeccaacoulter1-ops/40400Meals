@@ -1,0 +1,116 @@
+{
+  "recipe_id": "one-pot-chicken-broccoli-alfredo-protein-penne",
+  "recipe": {
+    "slug": "one-pot-chicken-broccoli-alfredo-protein-penne",
+    "title": "One-Pot Chicken Broccoli Alfredo Protein Penne",
+    "summary": "Creamy protein penne cooked directly in chicken bone broth with broccoli, Parmesan, garlic, heavy cream, and tender chicken for approximately 43 grams of protein and 390 calories per serving.",
+    "story": "My kids love this one because it tastes like creamy chicken Alfredo, but it is still simple enough for a normal weeknight. The chicken cooks first in the same pot, then the pasta cooks in chicken bone broth until the liquid is absorbed. A small amount of heavy cream and Parmesan finishes the sauce without needing a separate pot.",
+    "category": "One-Pot Dinner",
+    "cuisine": "Italian-American",
+    "date_published": "2026-08-03",
+    "servings": 5,
+    "times": {
+      "prep_minutes": 10,
+      "cook_minutes": 25,
+      "total_minutes": 35
+    },
+    "macros": {
+      "calories": 390,
+      "protein_g": 43,
+      "carbs_g": 35,
+      "fat_g": 10
+    },
+    "ingredients": [
+      "20 ounces raw boneless skinless chicken breast, cut into bite-size pieces",
+      "Nonstick cooking spray",
+      "8 ounces dry protein penne, such as Barilla Protein+",
+      "3 cups chicken bone broth, such as Kirkland Signature",
+      "2.5 cups broccoli florets, chopped into small bite-size pieces",
+      "3 tablespoons heavy cream",
+      "1/3 cup finely grated Parmesan cheese",
+      "1 teaspoon minced garlic",
+      "1/2 teaspoon granulated garlic",
+      "1/2 teaspoon salt, plus more to taste",
+      "1/2 teaspoon black pepper, plus more to taste"
+    ],
+    "instructions": [
+      "Heat a large deep skillet or Dutch oven over medium-high heat and coat it lightly with nonstick cooking spray.",
+      "Season the chicken with half of the salt, half of the black pepper, and the granulated garlic. Cook until browned and fully cooked, then transfer the chicken to a clean bowl and set it aside.",
+      "Lower the heat to medium. Add the minced garlic to the same pot and cook for about 30 seconds.",
+      "Pour in the chicken bone broth and stir up the browned bits from the bottom of the pot.",
+      "Add the dry protein penne. Bring it to a gentle boil, then reduce to a steady simmer and cook uncovered, stirring frequently so the pasta cooks evenly and does not stick.",
+      "Add the broccoli during the final 4 to 5 minutes of the pasta's cooking time.",
+      "When the pasta is tender and nearly all of the broth has been absorbed, reduce the heat to low and stir in the heavy cream and Parmesan until the sauce becomes creamy.",
+      "Return the chicken and any juices from the bowl to the pot. Stir until the chicken is hot, then season with the remaining salt and black pepper.",
+      "Remove the pot from the heat and let the pasta rest for 2 to 3 minutes before dividing it into 5 equal servings."
+    ],
+    "tips": [
+      "Use a wide pot and stir often because protein pasta can stick while it absorbs the broth.",
+      "If the pasta needs more liquid before it is tender, add water 2 tablespoons at a time rather than adding more cream.",
+      "Cut the broccoli into small pieces so it cooks during the final few minutes without becoming mushy.",
+      "The sauce thickens as it rests, so remove the pot from the heat while it still looks slightly loose.",
+      "Nutrition is approximate and will vary with the protein pasta, bone broth, Parmesan, and chicken brands used."
+    ]
+  },
+  "seo": {
+    "meta_title": "One-Pot High-Protein Chicken Broccoli Alfredo",
+    "meta_description": "Creamy chicken broccoli Alfredo protein penne cooked in one pot with bone broth for about 43g protein and 390 calories per serving.",
+    "keywords": [
+      "high protein chicken Alfredo",
+      "one pot protein pasta",
+      "chicken broccoli Alfredo",
+      "bone broth pasta",
+      "protein penne recipe",
+      "family friendly high protein dinner",
+      "40 400 meals"
+    ]
+  },
+  "images": {
+    "hero_image_url": "https://40400meals.com/outputs/images/food_photos/one-pot-chicken-broccoli-alfredo-protein-penne-food-photo.png",
+    "image_prompt": "A realistic shallow bowl of creamy penne Alfredo with bite-size chicken breast and broccoli mixed throughout. The sauce lightly coats the pasta and looks creamy from Parmesan and a small amount of heavy cream. Natural window light, casual family dinner presentation, believable portions. No parsley, red pepper flakes, bread, extra cheese garnish, lemon, tomatoes, or unrelated ingredients.",
+    "alt_text": "Creamy one-pot chicken broccoli Alfredo protein penne."
+  },
+  "social": {
+    "pinterest": {
+      "title": "One-Pot Chicken Broccoli Alfredo | 43g Protein",
+      "description": "Creamy chicken broccoli Alfredo made with protein penne and chicken bone broth in one pot. Each serving has approximately 43 grams of protein and 390 calories.",
+      "destination_url": "https://40400meals.com/recipes/one-pot-chicken-broccoli-alfredo-protein-penne.html",
+      "hashtags": [
+        "#OnePotPasta",
+        "#ChickenAlfredo",
+        "#HighProteinDinner",
+        "#FamilyDinner",
+        "#40400Meals"
+      ]
+    },
+    "instagram": {
+      "caption": "Creamy chicken broccoli Alfredo, but make it one pot and high protein. The pasta cooks right in chicken bone broth, then a little heavy cream and Parmesan finish the sauce.",
+      "hashtags": [
+        "#OnePotDinner",
+        "#HighProteinPasta",
+        "#ChickenAlfredo",
+        "#40400Meals"
+      ]
+    },
+    "facebook": {
+      "caption": "New family-friendly 40/400 meal: one-pot chicken broccoli Alfredo protein penne with about 43 grams of protein and 390 calories per serving."
+    },
+    "youtube_short": {
+      "hook": "This creamy chicken Alfredo cooks in one pot and still fits the 40/400 method.",
+      "script": [
+        "Cook the chicken first, then move it to a bowl.",
+        "Cook protein penne directly in chicken bone broth until the broth is absorbed.",
+        "Add broccoli near the end, then stir in a little heavy cream and Parmesan.",
+        "Fold the chicken back in and dinner is done."
+      ],
+      "cta": "Get the full one-pot recipe at 40400Meals.com."
+    }
+  },
+  "homepage": {
+    "hidden": false,
+    "priority": 32,
+    "published_at": "2026-08-03T13:00:00-05:00",
+    "summary": "Creamy one-pot protein penne with chicken, broccoli, bone broth, Parmesan, and garlic.",
+    "image_path": "outputs/images/pinterest/one-pot-chicken-broccoli-alfredo-protein-penne-pinterest-pin.png"
+  }
+}
