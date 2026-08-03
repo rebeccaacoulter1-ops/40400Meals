@@ -161,6 +161,21 @@
           }
         }
       }
+    },
+    "one-pot-chicken-broccoli-alfredo-protein-penne": {
+      "created_at_utc": "2026-08-03T18:36:00.230255+00:00",
+      "updated_at_utc": "2026-08-03T18:36:00.230275+00:00",
+      "steps": {
+        "pinterest": {
+          "complete": true,
+          "completed_at_utc": "2026-08-03T18:36:00.230275+00:00",
+          "details": {
+            "destination_url": "https://40400meals.com/recipes/one-pot-chicken-broccoli-alfredo-protein-penne.html",
+            "image_url": "https://40400meals.com/outputs/images/pinterest/one-pot-chicken-broccoli-alfredo-protein-penne-pinterest-pin.png",
+            "file_name": "one-pot-chicken-broccoli-alfredo-protein-penne-pinterest.json"
+          }
+        }
+      }
     }
   }
 }
