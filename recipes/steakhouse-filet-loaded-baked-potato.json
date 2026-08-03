@@ -1,0 +1,108 @@
+{
+  "recipe_id": "steakhouse-filet-loaded-baked-potato",
+  "recipe": {
+    "slug": "steakhouse-filet-loaded-baked-potato",
+    "title": "Steakhouse Filet & Loaded Baked Potato",
+    "summary": "Tender filet marinated with soy sauce and Kinder's steak seasoning, served with a Greek-yogurt loaded baked potato and seasoned broccoli for about 40 grams of protein and 400 calories.",
+    "story": "This is my lighter steakhouse dinner for nights when I want a really good filet without turning dinner into an all-day project. The soy sauce and Kinder's steak seasoning give the filet plenty of flavor, while plain nonfat Greek yogurt makes the baked potato creamy without needing a heavy topping.",
+    "category": "Dinner",
+    "cuisine": "American",
+    "date_published": "2026-08-03",
+    "servings": 1,
+    "times": {
+      "prep_minutes": 10,
+      "cook_minutes": 25,
+      "total_minutes": 35
+    },
+    "macros": {
+      "calories": 400,
+      "protein_g": 42,
+      "carbs_g": 30,
+      "fat_g": 11
+    },
+    "ingredients": [
+      "3.5 ounces cooked filet mignon",
+      "1 tablespoon soy sauce",
+      "Kinder's steak seasoning, to taste",
+      "100 grams baked potato",
+      "1/4 cup plain nonfat Greek yogurt, such as Kirkland or Chobani",
+      "1/2 teaspoon butter",
+      "100 grams broccoli florets, about 1 heaping cup",
+      "Salt and black pepper, to taste"
+    ],
+    "instructions": [
+      "Marinate the filet with the soy sauce and Kinder's steak seasoning while the oven or grill heats.",
+      "Bake the potato until tender, then weigh out a 100-gram portion for the plate.",
+      "Grill or pan-sear the filet to your preferred doneness. Let it rest for 5 minutes, then portion 3.5 ounces cooked.",
+      "Steam or roast the broccoli until crisp-tender and season with salt and black pepper.",
+      "Split the baked potato and top it with the butter, plain nonfat Greek yogurt, salt, and black pepper.",
+      "Serve the filet with the loaded baked potato and broccoli."
+    ],
+    "tips": [
+      "Weigh the filet after cooking for the closest match to the listed nutrition.",
+      "A small potato portion leaves enough room for butter and Greek yogurt while keeping the full plate near 400 calories.",
+      "Marinating time can be as short as 10 minutes or up to several hours in the refrigerator.",
+      "Nutrition is approximate and will vary with the filet's trimming, the soy sauce, and the exact yogurt used."
+    ]
+  },
+  "seo": {
+    "meta_title": "40/400 Filet and Loaded Baked Potato Dinner",
+    "meta_description": "A steakhouse-style filet dinner with a Greek-yogurt loaded baked potato and broccoli for about 42g protein and 400 calories.",
+    "keywords": [
+      "high protein filet dinner",
+      "filet mignon baked potato",
+      "400 calorie steak dinner",
+      "healthy steakhouse dinner",
+      "Greek yogurt baked potato",
+      "40 400 meals"
+    ]
+  },
+  "images": {
+    "hero_image_url": "https://40400meals.com/outputs/images/food_photos/steakhouse-filet-loaded-baked-potato-food-photo.png",
+    "image_prompt": "A realistic steakhouse-style dinner plate with a small tender filet mignon, a modest baked potato split and topped with a little butter and plain Greek yogurt, and a generous serving of seasoned broccoli. Natural window light, warm home dining table, appetizing but realistic portions. No extra sauces, bread, herbs, onions, bacon, shredded cheese, or garnish.",
+    "alt_text": "Filet mignon served with a Greek-yogurt loaded baked potato and broccoli."
+  },
+  "social": {
+    "pinterest": {
+      "title": "Filet & Loaded Baked Potato | 42g Protein",
+      "description": "A steakhouse-style filet dinner with a Greek-yogurt loaded baked potato and broccoli for approximately 42 grams of protein and 400 calories.",
+      "destination_url": "https://40400meals.com/recipes/steakhouse-filet-loaded-baked-potato.html",
+      "hashtags": [
+        "#FiletMignon",
+        "#HighProteinDinner",
+        "#SteakDinner",
+        "#MacroFriendlyMeals",
+        "#40400Meals"
+      ]
+    },
+    "instagram": {
+      "caption": "Steakhouse dinner without the steakhouse calorie bomb. Filet, a Greek-yogurt loaded baked potato, and broccoli for about 42g protein and 400 calories.",
+      "hashtags": [
+        "#HighProteinDinner",
+        "#FiletMignon",
+        "#MacroFriendly",
+        "#40400Meals"
+      ]
+    },
+    "facebook": {
+      "caption": "New 40/400 dinner: tender filet with a Greek-yogurt loaded baked potato and broccoli for about 42 grams of protein and 400 calories."
+    },
+    "youtube_short": {
+      "hook": "Think steak and a loaded baked potato cannot fit into 400 calories?",
+      "script": [
+        "Marinate a filet with soy sauce and Kinder's steak seasoning.",
+        "Serve 3.5 ounces cooked with a 100-gram baked potato.",
+        "Use a little butter and plain Greek yogurt for the creamy topping.",
+        "Add broccoli and you have a full steakhouse-style 40/400 dinner."
+      ],
+      "cta": "Get the exact portions at 40400Meals.com."
+    }
+  },
+  "homepage": {
+    "hidden": false,
+    "priority": 31,
+    "published_at": "2026-08-03T12:55:00-05:00",
+    "summary": "A steakhouse-style filet plate with a Greek-yogurt loaded baked potato and broccoli.",
+    "image_path": "outputs/images/pinterest/steakhouse-filet-loaded-baked-potato-pinterest-pin.png"
+  }
+}
