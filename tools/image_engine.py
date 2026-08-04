@@ -566,6 +566,18 @@ def generate_ai_food_photo(recipe, design):
 # Pinterest pin design
 # -----------------------------
 
+BRAND_COLORS = {
+    "cream": "#FBF8F1",
+    "paper": "#FFFDF8",
+    "ink": "#28322D",
+    "muted": "#68716C",
+    "sage": "#DCE7DF",
+    "sage_dark": "#315F50",
+    "sand": "#E8DED1",
+    "terracotta": "#B86F4C",
+}
+
+
 def create_soft_wave_mask(width, height):
     mask = Image.new("L", (width, height), 0)
     draw = ImageDraw.Draw(mask)
@@ -587,152 +599,459 @@ def create_soft_wave_mask(width, height):
     return mask
 
 
-def create_pinterest_pin(recipe, design):
-    slug = recipe["slug"]
-    title = recipe["title"]
-    protein = recipe["protein"]
-    calories = recipe["calories"]
+def normalize_pin_template(value):
+    template = str(value or "").strip().lower()
+    aliases = {
+        "p01": "classic",
+        "p01 classic": "classic",
+        "p01 classic recipe v1.0": "classic",
+        "classic recipe": "classic",
+        "p02": "food_first",
+        "food first": "food_first",
+        "food-first": "food_first",
+        "p03": "editorial",
+        "clean editorial": "editorial",
+        "clean-editorial": "editorial",
+        "p04": "mug_series",
+        "mug series": "mug_series",
+        "mug-series": "mug_series",
+    }
 
-    OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
+    return aliases.get(template, template)
 
-    output_file = OUTPUT_DIR / f"{slug}-pinterest-pin.png"
 
+def choose_pin_template(recipe, design):
+    image_settings = recipe.get("images", {})
+
+    requested = (
+        image_settings.get("pin_template")
+        or image_settings.get("pinterest_template")
+        or ""
+    )
+
+    requested = normalize_pin_template(requested)
+
+    if requested in {"classic", "food_first", "editorial", "mug_series"}:
+        return requested
+
+    design_template = normalize_pin_template(
+        design.get("template_name", "")
+    )
+
+    if design_template in {"food_first", "editorial", "mug_series"}:
+        return design_template
+
+    # Existing recipes stay on the approved classic layout unless their
+    # recipe JSON explicitly opts into a new template.
+    return "classic"
+
+
+def fit_title(text, max_width, max_lines, start_size, min_size=42):
+    for size in range(start_size, min_size - 1, -2):
+        font = get_font(size, bold=True)
+        lines = wrap_text(text, font, max_width)
+
+        if len(lines) <= max_lines:
+            return font, lines
+
+    font = get_font(min_size, bold=True)
+    return font, wrap_text(text, font, max_width)[:max_lines]
+
+
+def draw_centered_lines(
+    draw,
+    lines,
+    font,
+    width,
+    start_y,
+    fill,
+    line_gap=12,
+):
+    y = start_y
+    bbox = font.getbbox("Ag")
+    line_height = bbox[3] - bbox[1]
+
+    for line in lines:
+        line_bbox = font.getbbox(line)
+        line_width = line_bbox[2] - line_bbox[0]
+        x = (width - line_width) // 2
+        draw.text((x, y), line, font=font, fill=fill)
+        y += line_height + line_gap
+
+    return y
+
+
+def draw_left_lines(
+    draw,
+    lines,
+    font,
+    x,
+    start_y,
+    fill,
+    line_gap=10,
+):
+    y = start_y
+    bbox = font.getbbox("Ag")
+    line_height = bbox[3] - bbox[1]
+
+    for line in lines:
+        draw.text((x, y), line, font=font, fill=fill)
+        y += line_height + line_gap
+
+    return y
+
+
+def draw_macro_pill(
+    draw,
+    box,
+    label,
+    value,
+    fill,
+    text_color,
+):
+    x1, y1, x2, y2 = box
+    draw.rounded_rectangle(box, radius=28, fill=fill)
+
+    label_font = get_font(23, bold=True)
+    value_font = get_font(34, bold=True)
+
+    label_bbox = label_font.getbbox(label)
+    label_width = label_bbox[2] - label_bbox[0]
+    value_bbox = value_font.getbbox(value)
+    value_width = value_bbox[2] - value_bbox[0]
+
+    center_x = (x1 + x2) // 2
+    draw.text(
+        (center_x - label_width // 2, y1 + 17),
+        label,
+        font=label_font,
+        fill=text_color,
+    )
+    draw.text(
+        (center_x - value_width // 2, y1 + 50),
+        value,
+        font=value_font,
+        fill=text_color,
+    )
+
+
+def render_classic_pin(food_image, recipe):
     width = 1000
     height = 1500
-
     image_area_height = 900
     text_area_height = height - image_area_height
 
-    background = Image.new(
-        "RGB",
-        (width, height),
-        "#FFFFFF"
-    )
+    background = Image.new("RGB", (width, height), "#FFFFFF")
 
-    food_image = generate_ai_food_photo(recipe, design)
-
-    food_image = ImageOps.fit(
+    fitted_photo = ImageOps.fit(
         food_image,
         (width, image_area_height),
         method=Image.Resampling.LANCZOS,
         centering=(0.5, 0.5),
     )
-
-    background.paste(food_image, (0, 0))
+    background.paste(fitted_photo, (0, 0))
 
     text_panel = Image.new(
         "RGB",
         (width, text_area_height + 80),
-        "#FFFDF8"
+        BRAND_COLORS["paper"],
     )
-
     wave_mask = create_soft_wave_mask(
         width,
-        text_area_height + 80
+        text_area_height + 80,
     )
-
     background.paste(
         text_panel,
         (0, image_area_height - 80),
-        wave_mask
+        wave_mask,
     )
 
     draw = ImageDraw.Draw(background)
-
-    title_font = get_font(82, bold=True)
-    macro_font = get_font(36)
-    brand_font = get_font(34)
-    small_font = get_font(28)
-
-    title_color = "#4F4843"
-    macro_color = "#6B625C"
-    brand_color = "#4F4843"
-    accent_color = "#C8B6A6"
-
-    title_lines = wrap_text(
-        title,
-        title_font,
-        880
+    title_font, title_lines = fit_title(
+        recipe["title"],
+        max_width=880,
+        max_lines=4,
+        start_size=82,
+        min_size=54,
     )
 
-    title_y = image_area_height + 35
-    line_spacing = 10
+    title_y = draw_centered_lines(
+        draw,
+        title_lines,
+        title_font,
+        width,
+        image_area_height + 35,
+        BRAND_COLORS["ink"],
+        line_gap=10,
+    )
 
-    for line in title_lines:
-        bbox = title_font.getbbox(line)
-        line_width = bbox[2] - bbox[0]
-        x = (width - line_width) // 2
-
-        draw.text(
-            (x, title_y),
-            line,
-            font=title_font,
-            fill=title_color
-        )
-
-        title_y += 92 + line_spacing
-
-    macro_text = f"{protein}g Protein  •  {calories} Calories"
+    macro_font = get_font(36)
+    macro_text = (
+        f'{recipe["protein"]}g Protein  •  '
+        f'{recipe["calories"]} Calories'
+    )
     macro_bbox = macro_font.getbbox(macro_text)
     macro_width = macro_bbox[2] - macro_bbox[0]
-    macro_x = (width - macro_width) // 2
-    macro_y = title_y + 25
+    macro_y = title_y + 18
 
     draw.text(
-        (macro_x, macro_y),
+        ((width - macro_width) // 2, macro_y),
         macro_text,
         font=macro_font,
-        fill=macro_color
+        fill=BRAND_COLORS["muted"],
     )
 
     divider_y = macro_y + 90
-
     draw.line(
         (330, divider_y, 455, divider_y),
-        fill=accent_color,
-        width=3
+        fill=BRAND_COLORS["sand"],
+        width=3,
     )
-
     draw.ellipse(
         (485, divider_y - 18, 515, divider_y + 12),
-        fill=accent_color
+        fill=BRAND_COLORS["sand"],
     )
-
     draw.line(
         (545, divider_y, 670, divider_y),
-        fill=accent_color,
-        width=3
+        fill=BRAND_COLORS["sand"],
+        width=3,
     )
 
+    brand_font = get_font(34)
     brand_text = "40/400 Meals"
     brand_bbox = brand_font.getbbox(brand_text)
     brand_width = brand_bbox[2] - brand_bbox[0]
-    brand_x = (width - brand_width) // 2
     brand_y = divider_y + 55
-
     draw.text(
-        (brand_x, brand_y),
+        ((width - brand_width) // 2, brand_y),
         brand_text,
         font=brand_font,
-        fill=brand_color
+        fill=BRAND_COLORS["ink"],
     )
 
-    tagline_text = "High protein, low sugar recipes made simple"
-    tagline_bbox = small_font.getbbox(tagline_text)
+    small_font = get_font(28)
+    tagline = "High protein, low sugar recipes made simple"
+    tagline_bbox = small_font.getbbox(tagline)
     tagline_width = tagline_bbox[2] - tagline_bbox[0]
-    tagline_x = (width - tagline_width) // 2
-    tagline_y = brand_y + 55
-
     draw.text(
-        (tagline_x, tagline_y),
-        tagline_text,
+        ((width - tagline_width) // 2, brand_y + 55),
+        tagline,
         font=small_font,
-        fill=macro_color
+        fill=BRAND_COLORS["muted"],
     )
+
+    return background
+
+
+def render_food_first_pin(food_image, recipe):
+    width = 1000
+    height = 1500
+    image_height = 1030
+
+    background = Image.new(
+        "RGB",
+        (width, height),
+        BRAND_COLORS["cream"],
+    )
+    fitted_photo = ImageOps.fit(
+        food_image,
+        (width, image_height),
+        method=Image.Resampling.LANCZOS,
+        centering=(0.5, 0.5),
+    )
+    background.paste(fitted_photo, (0, 0))
+
+    draw = ImageDraw.Draw(background)
+    draw.rectangle(
+        (0, image_height, width, image_height + 8),
+        fill=BRAND_COLORS["terracotta"],
+    )
+
+    label_font = get_font(23, bold=True)
+    draw.text(
+        (62, 1068),
+        "40/400 MEALS",
+        font=label_font,
+        fill=BRAND_COLORS["sage_dark"],
+    )
+
+    draw_macro_pill(
+        draw,
+        (515, 1052, 710, 1140),
+        "PROTEIN",
+        f'{recipe["protein"]}g',
+        BRAND_COLORS["sage"],
+        BRAND_COLORS["ink"],
+    )
+    draw_macro_pill(
+        draw,
+        (730, 1052, 938, 1140),
+        "CALORIES",
+        str(recipe["calories"]),
+        BRAND_COLORS["sand"],
+        BRAND_COLORS["ink"],
+    )
+
+    title_font, title_lines = fit_title(
+        recipe["title"],
+        max_width=875,
+        max_lines=3,
+        start_size=72,
+        min_size=50,
+    )
+    title_end_y = draw_left_lines(
+        draw,
+        title_lines,
+        title_font,
+        62,
+        1180,
+        BRAND_COLORS["ink"],
+        line_gap=9,
+    )
+
+    small_font = get_font(25)
+    tagline_y = min(title_end_y + 18, 1445)
+    draw.text(
+        (62, tagline_y),
+        "High protein. Real food. Made simple.",
+        font=small_font,
+        fill=BRAND_COLORS["muted"],
+    )
+
+    return background
+
+
+def render_editorial_pin(food_image, recipe, mug_series=False):
+    width = 1000
+    height = 1500
+
+    fitted_photo = ImageOps.fit(
+        food_image,
+        (width, height),
+        method=Image.Resampling.LANCZOS,
+        centering=(0.5, 0.48),
+    ).convert("RGBA")
+
+    overlay = Image.new("RGBA", (width, height), (0, 0, 0, 0))
+    overlay_draw = ImageDraw.Draw(overlay)
+
+    overlay_draw.rounded_rectangle(
+        (55, 865, 945, 1435),
+        radius=46,
+        fill=(251, 248, 241, 244),
+    )
+    overlay_draw.rounded_rectangle(
+        (82, 902, 315, 960),
+        radius=28,
+        fill=(
+            49,
+            95,
+            80,
+            255,
+        ),
+    )
+
+    background = Image.alpha_composite(fitted_photo, overlay)
+    draw = ImageDraw.Draw(background)
+
+    badge_font = get_font(22, bold=True)
+    badge_text = "MUG SERIES" if mug_series else "40/400 MEALS"
+    badge_bbox = badge_font.getbbox(badge_text)
+    badge_width = badge_bbox[2] - badge_bbox[0]
+    draw.text(
+        (198 - badge_width // 2, 920),
+        badge_text,
+        font=badge_font,
+        fill="#FFFFFF",
+    )
+
+    title_font, title_lines = fit_title(
+        recipe["title"],
+        max_width=810,
+        max_lines=3,
+        start_size=76,
+        min_size=50,
+    )
+    title_end_y = draw_left_lines(
+        draw,
+        title_lines,
+        title_font,
+        92,
+        990,
+        BRAND_COLORS["ink"],
+        line_gap=10,
+    )
+
+    macro_y = min(title_end_y + 28, 1280)
+    draw_macro_pill(
+        draw,
+        (92, macro_y, 440, macro_y + 102),
+        "PROTEIN",
+        f'{recipe["protein"]}g',
+        BRAND_COLORS["sage"],
+        BRAND_COLORS["ink"],
+    )
+    draw_macro_pill(
+        draw,
+        (462, macro_y, 850, macro_y + 102),
+        "CALORIES",
+        str(recipe["calories"]),
+        BRAND_COLORS["sand"],
+        BRAND_COLORS["ink"],
+    )
+
+    brand_font = get_font(27, bold=True)
+    footer_y = macro_y + 130
+    draw.text(
+        (92, footer_y),
+        "40/400 Meals",
+        font=brand_font,
+        fill=BRAND_COLORS["sage_dark"],
+    )
+
+    tagline_font = get_font(23)
+    draw.text(
+        (320, footer_y + 2),
+        "High-protein recipes made simple",
+        font=tagline_font,
+        fill=BRAND_COLORS["muted"],
+    )
+
+    return background.convert("RGB")
+
+
+def create_pinterest_pin(recipe, design):
+    slug = recipe["slug"]
+
+    OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
+    output_file = OUTPUT_DIR / f"{slug}-pinterest-pin.png"
+
+    food_image = generate_ai_food_photo(recipe, design)
+    template = choose_pin_template(recipe, design)
+
+    if template == "food_first":
+        background = render_food_first_pin(food_image, recipe)
+    elif template == "editorial":
+        background = render_editorial_pin(
+            food_image,
+            recipe,
+            mug_series=False,
+        )
+    elif template == "mug_series":
+        background = render_editorial_pin(
+            food_image,
+            recipe,
+            mug_series=True,
+        )
+    else:
+        background = render_classic_pin(food_image, recipe)
 
     background.save(output_file)
 
-    print(f"Pinterest image created or refreshed: {output_file}")
+    print(
+        f"Pinterest image created or refreshed: {output_file} "
+        f"(template: {template})"
+    )
 
 
 # -----------------------------
