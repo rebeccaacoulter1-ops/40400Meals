@@ -176,6 +176,36 @@
           }
         }
       }
+    },
+    "creamy-greek-chicken-bowl": {
+      "created_at_utc": "2026-08-07T17:08:49.356276+00:00",
+      "updated_at_utc": "2026-08-07T17:08:49.356297+00:00",
+      "steps": {
+        "pinterest": {
+          "complete": true,
+          "completed_at_utc": "2026-08-07T17:08:49.356297+00:00",
+          "details": {
+            "destination_url": "https://40400meals.com/recipes/creamy-greek-chicken-bowl.html",
+            "image_url": "https://40400meals.com/outputs/images/pinterest/creamy-greek-chicken-bowl-pinterest-pin.png",
+            "file_name": "creamy-greek-chicken-bowl-pinterest.json"
+          }
+        }
+      }
+    },
+    "creamy-salsa-taco-salad-bowl": {
+      "created_at_utc": "2026-08-07T17:08:49.703519+00:00",
+      "updated_at_utc": "2026-08-07T17:08:49.703537+00:00",
+      "steps": {
+        "pinterest": {
+          "complete": true,
+          "completed_at_utc": "2026-08-07T17:08:49.703537+00:00",
+          "details": {
+            "destination_url": "https://40400meals.com/recipes/creamy-salsa-taco-salad-bowl.html",
+            "image_url": "https://40400meals.com/outputs/images/pinterest/creamy-salsa-taco-salad-bowl-pinterest-pin.png",
+            "file_name": "creamy-salsa-taco-salad-bowl-pinterest.json"
+          }
+        }
+      }
     }
   }
 }
