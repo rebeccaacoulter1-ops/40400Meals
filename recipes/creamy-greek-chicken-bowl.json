@@ -1,0 +1,93 @@
+{
+  "recipe_id": "creamy-greek-chicken-bowl",
+  "recipe": {
+    "slug": "creamy-greek-chicken-bowl",
+    "title": "Creamy Greek Chicken Bowl",
+    "summary": "A fast Costco-friendly Greek chicken bowl with grilled chicken, crisp vegetables, feta, Kalamata olives, and a creamy homemade Greek yogurt dressing for approximately 44 grams of protein and 400 calories.",
+    "story": "This is one of those bowls I make by feel because the ingredients are simple and the flavors do the work. A full pack of grilled chicken makes the protein easy, and the creamy Greek dressing comes together with nonfat Greek yogurt, red wine vinegar, a tiny bit of olive oil, and Cavender's Greek seasoning. It tastes like a real lunch, not a diet meal, and most of the ingredients are useful for other meals too.",
+    "category": "Bowls",
+    "cuisine": "Mediterranean",
+    "date_published": "2026-08-07",
+    "servings": 1,
+    "times": {
+      "prep_minutes": 10,
+      "cook_minutes": 0,
+      "total_minutes": 10
+    },
+    "macros": {
+      "calories": 400,
+      "protein_g": 44,
+      "carbs_g": 20,
+      "fat_g": 16
+    },
+    "ingredients": [
+      "1 Fresh Additions fully cooked chicken breast bites pack, 100 grams",
+      "2 cups leafy green lettuce",
+      "1/2 cup chopped cucumber",
+      "1/2 cup chopped tomatoes",
+      "2 tablespoons thinly sliced red onion",
+      "4 Mezzetta pitted Greek Kalamata olives, sliced",
+      "1 ounce President crumbled feta cheese",
+      "1/2 cup Kirkland Signature Organic plain nonfat Greek yogurt",
+      "2 teaspoons red wine vinegar",
+      "1/2 teaspoon olive oil",
+      "1/2 teaspoon Cavender's All Purpose Greek Seasoning",
+      "1 to 2 teaspoons water, as needed to thin the dressing"
+    ],
+    "instructions": [
+      "Add the leafy greens to a large bowl and top with the cucumber, tomatoes, red onion, Kalamata olives, feta, and the full pack of grilled chicken breast bites.",
+      "In a small bowl, stir together the Greek yogurt, red wine vinegar, olive oil, and Cavender's Greek seasoning until creamy.",
+      "Add 1 to 2 teaspoons of water if needed to thin the dressing to your preferred consistency.",
+      "Spoon the creamy Greek dressing over the bowl, toss lightly, and serve."
+    ],
+    "tips": [
+      "The full individual chicken pack keeps the portion simple and makes this an easy workday lunch.",
+      "Start with a small amount of water in the dressing and add more only if needed.",
+      "The tiny amount of olive oil adds flavor and richness without taking over the calorie budget.",
+      "Nutrition is approximate and may vary with current product labels and the exact vegetables used."
+    ]
+  },
+  "seo": {
+    "meta_title": "Creamy Greek Chicken Bowl | 44g Protein",
+    "meta_description": "Make a fast Costco-friendly Greek chicken bowl with grilled chicken, feta, olives, crisp vegetables, and creamy Greek yogurt dressing for about 44g protein and 400 calories.",
+    "keywords": [
+      "Greek chicken bowl",
+      "high protein Greek salad",
+      "Costco chicken bowl",
+      "creamy Greek yogurt dressing",
+      "high protein lunch bowl",
+      "40 400 meals"
+    ]
+  },
+  "images": {
+    "hero_image_url": "https://40400meals.com/outputs/images/food_photos/creamy-greek-chicken-bowl-food-photo.png",
+    "pinterest_image_url": "",
+    "square_image_url": "",
+    "story_image_url": "",
+    "thumbnail_url": "",
+    "pin_template": "food_first",
+    "image_prompt": "A realistic fresh Greek chicken salad bowl with leafy greens, grilled chicken breast bites, chopped cucumber, tomatoes, thin red onion, Kalamata olives, crumbled feta, and a creamy pale Greek yogurt dressing. Natural home-kitchen food photography, no pita, lemon, hummus, extra herbs, packaging, or readable logos.",
+    "alt_text": "Creamy Greek chicken bowl with grilled chicken, cucumber, tomatoes, red onion, Kalamata olives, feta, and Greek yogurt dressing."
+  },
+  "social": {
+    "pinterest": {
+      "title": "Creamy Greek Chicken Bowl | 44g Protein",
+      "description": "This easy Greek chicken bowl uses Costco grilled chicken, crisp vegetables, feta, Kalamata olives, and a creamy homemade Greek yogurt dressing for approximately 44 grams of protein and 400 calories.",
+      "destination_url": "https://40400meals.com/recipes/creamy-greek-chicken-bowl.html",
+      "hashtags": [
+        "#GreekChickenBowl",
+        "#HighProteinLunch",
+        "#CostcoMeals",
+        "#HealthyBowls",
+        "#40400Meals"
+      ]
+    }
+  },
+  "homepage": {
+    "hidden": false,
+    "priority": 21,
+    "published_at": "2026-08-07T11:58:00-05:00",
+    "summary": "Costco grilled chicken, crisp vegetables, feta, olives, and a creamy Greek yogurt dressing in one fast high-protein bowl.",
+    "image_path": "outputs/images/food_photos/creamy-greek-chicken-bowl-food-photo.png"
+  }
+}

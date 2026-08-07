@@ -1,0 +1,93 @@
+{
+  "recipe_id": "creamy-salsa-taco-salad-bowl",
+  "recipe": {
+    "slug": "creamy-salsa-taco-salad-bowl",
+    "title": "Creamy Salsa Taco Salad Bowl",
+    "summary": "A high-protein taco salad with lean seasoned ground beef, a Costco Chipotle Ranch salad kit, fresh vegetables, avocado, cilantro, and a creamy cottage cheese salsa dressing for approximately 40 grams of protein and 405 calories.",
+    "story": "This bowl starts with a shortcut I already like: the Costco Chipotle Ranch chopped salad kit. I skip the ranch packet and tortilla strips, then add lean taco-seasoned beef, tomatoes, red onion, avocado, and cilantro. The dressing is the part that makes it different: blend Daisy 4% cottage cheese until completely smooth, then stir in your favorite salsa for a creamy savory dressing with extra protein.",
+    "category": "Bowls",
+    "cuisine": "Mexican-inspired",
+    "date_published": "2026-08-07",
+    "servings": 1,
+    "times": {
+      "prep_minutes": 10,
+      "cook_minutes": 8,
+      "total_minutes": 18
+    },
+    "macros": {
+      "calories": 405,
+      "protein_g": 40,
+      "carbs_g": 20,
+      "fat_g": 18
+    },
+    "ingredients": [
+      "4 ounces 93/7 lean ground beef, weighed raw",
+      "1 cup Taylor Farms Chipotle Ranch Chopped Salad Kit, prepared without the ranch dressing or tortilla strips",
+      "1/2 cup chopped tomatoes",
+      "2 tablespoons chopped red onion",
+      "1 tablespoon diced avocado",
+      "2 tablespoons chopped fresh cilantro",
+      "1/2 cup Daisy 4% cottage cheese",
+      "2 tablespoons Texas Texas salsa",
+      "1 teaspoon McCormick taco seasoning",
+      "2 to 4 tablespoons water, as needed for the lean ground beef"
+    ],
+    "instructions": [
+      "Cook the ground beef in a skillet over medium-high heat, breaking it into small crumbles as it browns.",
+      "Sprinkle the beef with the taco seasoning. If the lean beef looks dry, add 2 to 4 tablespoons of water and continue cooking until the seasoning coats the beef and most of the water has cooked away.",
+      "Blend the cottage cheese until completely smooth, then stir in the salsa with a fork to make the creamy salsa dressing.",
+      "Add the Chipotle Ranch salad mix to a large bowl, leaving out the ranch dressing and tortilla strips.",
+      "Top with the seasoned beef, tomatoes, red onion, avocado, and cilantro.",
+      "Spoon the creamy salsa dressing over the salad, toss lightly, and serve."
+    ],
+    "tips": [
+      "A splash of water helps very lean ground beef stay juicy without adding extra oil.",
+      "Blend the cottage cheese by itself first so the dressing turns smooth and creamy, then stir in the salsa.",
+      "Leaving out the packaged ranch and tortilla strips creates room for the homemade high-protein dressing and avocado.",
+      "Nutrition is approximate and may vary with current salad kit, beef, cottage cheese, and salsa labels."
+    ]
+  },
+  "seo": {
+    "meta_title": "Creamy Salsa Taco Salad Bowl | 40g Protein",
+    "meta_description": "Make a high-protein taco salad with lean beef, Costco Chipotle Ranch salad mix, avocado, vegetables, and creamy cottage cheese salsa dressing for about 40g protein and 405 calories.",
+    "keywords": [
+      "high protein taco salad",
+      "creamy salsa taco salad",
+      "cottage cheese salsa dressing",
+      "Costco Chipotle Ranch salad kit",
+      "ground beef taco bowl",
+      "40 400 meals"
+    ]
+  },
+  "images": {
+    "hero_image_url": "https://40400meals.com/outputs/images/food_photos/creamy-salsa-taco-salad-bowl-food-photo.png",
+    "pinterest_image_url": "",
+    "square_image_url": "",
+    "story_image_url": "",
+    "thumbnail_url": "",
+    "pin_template": "food_first",
+    "image_prompt": "A realistic taco salad bowl with chopped salad greens, lean taco-seasoned ground beef, tomatoes, red onion, a small amount of diced avocado, cilantro, and creamy pale-orange cottage cheese salsa dressing. Natural home-kitchen food photography, no tortilla strips, ranch dressing, sour cream, lime wedges, jalapenos, packaging, or readable logos.",
+    "alt_text": "Creamy salsa taco salad bowl with lean ground beef, tomatoes, red onion, avocado, cilantro, and cottage cheese salsa dressing."
+  },
+  "social": {
+    "pinterest": {
+      "title": "Creamy Salsa Taco Salad Bowl | 40g Protein",
+      "description": "Skip the ranch packet and turn a Costco Chipotle Ranch salad kit into a high-protein taco salad with lean ground beef and a creamy cottage cheese salsa dressing for approximately 40 grams of protein and 405 calories.",
+      "destination_url": "https://40400meals.com/recipes/creamy-salsa-taco-salad-bowl.html",
+      "hashtags": [
+        "#TacoSalad",
+        "#HighProteinMeals",
+        "#CottageCheeseRecipes",
+        "#CostcoMeals",
+        "#40400Meals"
+      ]
+    }
+  },
+  "homepage": {
+    "hidden": false,
+    "priority": 22,
+    "published_at": "2026-08-07T11:59:00-05:00",
+    "summary": "Lean taco beef, a Costco salad shortcut, fresh toppings, and creamy cottage cheese salsa dressing in one high-protein bowl.",
+    "image_path": "outputs/images/food_photos/creamy-salsa-taco-salad-bowl-food-photo.png"
+  }
+}
