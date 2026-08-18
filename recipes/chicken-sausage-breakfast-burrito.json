@@ -1,0 +1,81 @@
+{
+  "recipe_id": "chicken-sausage-breakfast-burrito",
+  "recipe": {
+    "slug": "chicken-sausage-breakfast-burrito",
+    "title": "Chicken Sausage Breakfast Burrito",
+    "summary": "A quick high-protein breakfast burrito with egg whites, chicken breakfast sausage, reduced-fat cheddar, and creamy guacamole in a Mission Carb Balance tortilla.",
+    "story": "This is built for a fast breakfast that still feels filling. Cooking the chicken sausage first leaves just enough rendered fat in the skillet for the egg whites, so there is no need to add butter or oil.",
+    "category": "Breakfast",
+    "cuisine": "American",
+    "date_published": "2026-08-18",
+    "servings": 1,
+    "times": {
+      "prep_minutes": 5,
+      "cook_minutes": 8,
+      "total_minutes": 13
+    },
+    "macros": {
+      "calories": 375,
+      "protein_g": 42,
+      "carbs_g": 24,
+      "fat_g": 17
+    },
+    "ingredients": [
+      "1 Mission Carb Balance Soft Taco Flour Tortilla",
+      "3/4 cup Simple Truth Liquid Egg Whites",
+      "3 Amylu Breakfast Time Mini Chicken Sausage Links, sliced",
+      "2 tablespoons reduced-fat shredded cheddar cheese",
+      "1 Kirkland Signature guacamole mini cup, 70 grams",
+      "Salt and black pepper, to taste"
+    ],
+    "instructions": [
+      "Heat a nonstick skillet over medium heat.",
+      "Add the sliced chicken sausage and cook until warmed through and lightly browned.",
+      "Leave the sausage and any rendered fat in the skillet. Pour in the liquid egg whites, season with salt and pepper, and scramble until just set.",
+      "Sprinkle the reduced-fat cheddar over the eggs and allow it to melt.",
+      "Warm the tortilla just until soft and pliable.",
+      "Fill the tortilla with the sausage-and-egg mixture, add the full guacamole cup, fold into a burrito, and serve immediately."
+    ],
+    "tips": [
+      "Cook the sausage first so its rendered fat lightly coats the skillet and no added cooking oil is needed.",
+      "Warm the Carb Balance tortilla only until pliable to reduce the chance of tearing.",
+      "Nutrition is approximate and may vary by tortilla, cheese, sausage, and guacamole package."
+    ]
+  },
+  "seo": {
+    "meta_title": "Chicken Sausage Breakfast Burrito | 42g Protein",
+    "meta_description": "Make this easy chicken sausage breakfast burrito with egg whites, cheddar, and guacamole for approximately 42g protein and 375 calories.",
+    "keywords": [
+      "high protein breakfast burrito",
+      "egg white breakfast burrito",
+      "chicken sausage breakfast",
+      "breakfast under 400 calories",
+      "40 400 meals"
+    ]
+  },
+  "images": {
+    "hero_image_url": "https://40400meals.com/outputs/images/food_photos/chicken-sausage-breakfast-burrito-food-photo.png",
+    "image_prompt": "A realistic breakfast burrito on a clean neutral plate, slightly open to show fluffy scrambled egg whites, browned sliced chicken breakfast sausage, melted cheddar, and creamy guacamole. Soft flour tortilla, realistic home-cooked portion, warm natural light, appetizing but not overstyled. No salsa, beans, whole eggs, potatoes, or other unlisted ingredients.",
+    "alt_text": "High-protein chicken sausage breakfast burrito with egg whites, cheddar, and guacamole."
+  },
+  "social": {
+    "pinterest": {
+      "title": "Chicken Sausage Breakfast Burrito | 42g Protein | 375 Calories",
+      "description": "This easy high-protein breakfast burrito combines egg whites, Amylu chicken sausage, reduced-fat cheddar, and guacamole in a Mission Carb Balance tortilla for approximately 42 grams of protein and 375 calories.",
+      "destination_url": "https://40400meals.com/recipes/chicken-sausage-breakfast-burrito.html",
+      "hashtags": [
+        "#HighProteinBreakfast",
+        "#BreakfastBurrito",
+        "#EggWhiteRecipes",
+        "#40400Meals"
+      ]
+    }
+  },
+  "homepage": {
+    "hidden": false,
+    "priority": 21,
+    "published_at": "2026-08-18T13:01:00-05:00",
+    "summary": "A quick breakfast burrito with egg whites, chicken sausage, cheddar, and guacamole.",
+    "image_path": "outputs/images/food_photos/chicken-sausage-breakfast-burrito-food-photo.png"
+  }
+}

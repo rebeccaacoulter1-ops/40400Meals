@@ -1,0 +1,77 @@
+{
+  "recipe_id": "pineapple-cottage-cheese-strawberry-cheesecake-shake",
+  "recipe": {
+    "slug": "pineapple-cottage-cheese-strawberry-cheesecake-shake",
+    "title": "Pineapple Cottage Cheese Bowl + Strawberry Cheesecake Shake",
+    "summary": "A five-minute cottage cheese and pineapple bowl paired with a creamy strawberry cheesecake protein shake.",
+    "story": "This is a no-cook breakfast for mornings when speed matters. The cottage cheese and pineapple stay simple, while the strawberry cheesecake shake adds enough protein to turn the combination into a full 40/400 meal.",
+    "category": "Breakfast",
+    "cuisine": "American",
+    "date_published": "2026-08-18",
+    "servings": 1,
+    "times": {
+      "prep_minutes": 5,
+      "cook_minutes": 0,
+      "total_minutes": 5
+    },
+    "macros": {
+      "calories": 355,
+      "protein_g": 42,
+      "carbs_g": 29,
+      "fat_g": 12
+    },
+    "ingredients": [
+      "3/4 cup Daisy 4% Cottage Cheese",
+      "1/2 cup Dole pineapple, drained",
+      "1 scoop Clean Simple Eats Strawberry Cheesecake Protein Powder",
+      "1 cup unsweetened almond milk",
+      "Ice, as needed"
+    ],
+    "instructions": [
+      "Spoon the cottage cheese into a bowl and top with the drained pineapple.",
+      "Blend the Strawberry Cheesecake protein powder, unsweetened almond milk, and ice until smooth.",
+      "Serve the cottage cheese bowl and protein shake together."
+    ],
+    "tips": [
+      "Drain the pineapple before measuring for the closest match to the listed nutrition.",
+      "Use unsweetened almond milk to leave more room under 400 calories.",
+      "Nutrition is approximate and may vary by almond milk and protein powder formulation."
+    ]
+  },
+  "seo": {
+    "meta_title": "Pineapple Cottage Cheese + Protein Shake | 42g Protein",
+    "meta_description": "Pair pineapple cottage cheese with a strawberry cheesecake protein shake for an easy breakfast with approximately 42g protein and 355 calories.",
+    "keywords": [
+      "cottage cheese pineapple breakfast",
+      "strawberry cheesecake protein shake",
+      "high protein no cook breakfast",
+      "cottage cheese breakfast",
+      "40 400 meals"
+    ]
+  },
+  "images": {
+    "hero_image_url": "https://40400meals.com/outputs/images/food_photos/pineapple-cottage-cheese-strawberry-cheesecake-shake-food-photo.png",
+    "image_prompt": "A realistic quick high-protein breakfast on a clean light surface. A small bowl of creamy cottage cheese topped with bright golden pineapple chunks sits beside a cold pale-pink strawberry cheesecake protein shake in a clear glass with visible condensation. Realistic portions, soft natural daylight, no berries, granola, nuts, or other unlisted ingredients.",
+    "alt_text": "Cottage cheese topped with pineapple beside a strawberry cheesecake protein shake."
+  },
+  "social": {
+    "pinterest": {
+      "title": "Pineapple Cottage Cheese + Shake | 42g Protein | 355 Calories",
+      "description": "This five-minute breakfast pairs Daisy cottage cheese and pineapple with a Clean Simple Eats Strawberry Cheesecake protein shake for approximately 42 grams of protein and 355 calories.",
+      "destination_url": "https://40400meals.com/recipes/pineapple-cottage-cheese-strawberry-cheesecake-shake.html",
+      "hashtags": [
+        "#CottageCheeseBreakfast",
+        "#ProteinShake",
+        "#HighProteinBreakfast",
+        "#40400Meals"
+      ]
+    }
+  },
+  "homepage": {
+    "hidden": false,
+    "priority": 23,
+    "published_at": "2026-08-18T13:01:00-05:00",
+    "summary": "Pineapple cottage cheese paired with a creamy strawberry cheesecake protein shake.",
+    "image_path": "outputs/images/food_photos/pineapple-cottage-cheese-strawberry-cheesecake-shake-food-photo.png"
+  }
+}

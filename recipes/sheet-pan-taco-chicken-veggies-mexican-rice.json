@@ -1,0 +1,84 @@
+{
+  "recipe_id": "sheet-pan-taco-chicken-veggies-mexican-rice",
+  "recipe": {
+    "slug": "sheet-pan-taco-chicken-veggies-mexican-rice",
+    "title": "Sheet-Pan Taco Chicken & Veggies with Bone Broth Mexican Rice",
+    "summary": "Taco-seasoned sheet-pan chicken with roasted red and green peppers, onions, and flavorful Mexican rice cooked with chicken bone broth.",
+    "story": "This is designed as a family-size sheet-pan dinner with a clear 40/400 serving guide. The chicken and vegetables roast together while the Mexican rice cooks with bone broth instead of water for extra flavor and protein.",
+    "category": "Dinner",
+    "cuisine": "Mexican-Inspired",
+    "date_published": "2026-08-18",
+    "servings": 4,
+    "times": {
+      "prep_minutes": 15,
+      "cook_minutes": 22,
+      "total_minutes": 37
+    },
+    "macros": {
+      "calories": 405,
+      "protein_g": 44,
+      "carbs_g": 31,
+      "fat_g": 12
+    },
+    "ingredients": [
+      "1 1/2 pounds boneless skinless chicken breast, sliced lengthwise into strips",
+      "2 red bell peppers, sliced",
+      "2 green bell peppers, sliced",
+      "1 large yellow onion, sliced",
+      "1 tablespoon minced garlic",
+      "1 packet McCormick Original Taco Seasoning",
+      "2 tablespoons Simple Truth Organic Extra Virgin Olive Oil",
+      "1 package Knorr Mexican Rice",
+      "1 1/2 cups chicken bone broth"
+    ],
+    "instructions": [
+      "Preheat the oven to 425°F.",
+      "Add the chicken, red and green bell peppers, onion, and garlic to a large sheet pan.",
+      "Drizzle with the olive oil, sprinkle with the taco seasoning, and toss until evenly coated.",
+      "Spread into an even layer and roast for 18 to 22 minutes, tossing the vegetables halfway through, until the chicken reaches 165°F internally.",
+      "Meanwhile, prepare the Knorr Mexican Rice according to package directions using 1 1/2 cups chicken bone broth instead of water and omitting the oil called for on the package.",
+      "For each serving, plate approximately 4 1/2 ounces cooked chicken, 4 ounces cooked peppers and onions, and 1/2 cup prepared bone-broth Mexican rice."
+    ],
+    "tips": [
+      "Weigh the cooked chicken and vegetables for the closest match to the listed serving macros.",
+      "Use chicken bone broth in place of the Knorr package water and omit the package oil.",
+      "Nutrition is approximate and may vary with cooking yield and exact vegetable sizes."
+    ]
+  },
+  "seo": {
+    "meta_title": "Sheet-Pan Taco Chicken & Mexican Rice | 44g Protein",
+    "meta_description": "Make sheet-pan taco chicken with roasted peppers and bone-broth Mexican rice for approximately 44g protein and 405 calories per serving.",
+    "keywords": [
+      "sheet pan taco chicken",
+      "Mexican rice chicken bowl",
+      "high protein sheet pan dinner",
+      "bone broth Mexican rice",
+      "40 400 meals"
+    ]
+  },
+  "images": {
+    "hero_image_url": "https://40400meals.com/outputs/images/food_photos/sheet-pan-taco-chicken-veggies-mexican-rice-food-photo.png",
+    "image_prompt": "A realistic high-protein dinner bowl with sliced taco-seasoned chicken breast, roasted red and green bell peppers, and yellow onion with lightly browned caramelized edges. Serve beside approximately 1/2 cup Mexican-style seasoned rice made from long-grain rice and thin vermicelli. IMPORTANT: the rice must visually resemble the rice shown on a classic Knorr Mexican Rice package: warm golden-orange to tan seasoned rice, distinct long-grain rice mixed with visible short toasted vermicelli pieces, and tiny flecks of tomato, red pepper, parsley, and seasoning. The rice should look moist, fluffy, and lightly glossy. It must not look like plain brown rice, white rice, or Spanish rice with large tomato chunks. No avocado, cheese, sour cream, tortillas, or other unlisted ingredients.",
+    "alt_text": "Sheet-pan taco chicken with roasted red and green peppers and golden Mexican rice with vermicelli."
+  },
+  "social": {
+    "pinterest": {
+      "title": "Sheet-Pan Taco Chicken & Mexican Rice | 44g Protein",
+      "description": "Taco-seasoned chicken, roasted peppers and onions, and Knorr-style Mexican rice cooked with chicken bone broth make this family dinner with approximately 44 grams of protein per serving.",
+      "destination_url": "https://40400meals.com/recipes/sheet-pan-taco-chicken-veggies-mexican-rice.html",
+      "hashtags": [
+        "#SheetPanChicken",
+        "#HighProteinDinner",
+        "#MexicanRice",
+        "#40400Meals"
+      ]
+    }
+  },
+  "homepage": {
+    "hidden": false,
+    "priority": 24,
+    "published_at": "2026-08-18T13:01:00-05:00",
+    "summary": "Sheet-pan taco chicken and roasted vegetables with flavorful bone-broth Mexican rice.",
+    "image_path": "outputs/images/food_photos/sheet-pan-taco-chicken-veggies-mexican-rice-food-photo.png"
+  }
+}

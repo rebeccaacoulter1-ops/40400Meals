@@ -1,0 +1,91 @@
+{
+  "recipe_id": "italian-stuffed-peppers-protein-mashed-potatoes",
+  "recipe": {
+    "slug": "italian-stuffed-peppers-protein-mashed-potatoes",
+    "title": "Italian Stuffed Peppers with Creamy Protein Mashed Potatoes",
+    "summary": "Red and green bell peppers stuffed with a savory beef-and-chicken Italian filling, topped with mozzarella, and served with creamy Greek-yogurt mashed potatoes.",
+    "story": "This is comfort food built to fit the 40/400 method. Mixing lean beef with ground chicken keeps the filling flavorful while leaving enough room for mozzarella and a real serving of creamy mashed potatoes.",
+    "category": "Dinner",
+    "cuisine": "Italian-Inspired",
+    "date_published": "2026-08-18",
+    "servings": 4,
+    "times": {
+      "prep_minutes": 20,
+      "cook_minutes": 40,
+      "total_minutes": 60
+    },
+    "macros": {
+      "calories": 380,
+      "protein_g": 45,
+      "carbs_g": 28,
+      "fat_g": 12
+    },
+    "ingredients": [
+      "2 large red bell peppers",
+      "2 large green bell peppers",
+      "12 ounces 96% lean ground beef",
+      "12 ounces Perdue Ground Chicken Breast",
+      "1 cup Simple Truth Organic No Sugar Added Tomato Basil Pasta Sauce",
+      "1/2 cup Kroger Part-Skim Shredded Mozzarella",
+      "2 teaspoons minced garlic",
+      "1 teaspoon Italian seasoning",
+      "Salt and black pepper, to taste",
+      "2 medium Kroger Gold potatoes, about 296 grams total, peeled if desired and cubed",
+      "1/2 cup Oikos Triple Zero Plain Greek Yogurt",
+      "1/4 to 1/2 cup chicken bone broth",
+      "1 teaspoon minced garlic for the mashed potatoes"
+    ],
+    "instructions": [
+      "Preheat the oven to 375°F.",
+      "Cut the red and green bell peppers in half lengthwise and remove the seeds and membranes. Arrange the eight halves cut-side up in a baking dish.",
+      "Cook the ground beef and ground chicken together in a large skillet over medium-high heat, breaking the meat apart as it browns.",
+      "Add 2 teaspoons garlic, Italian seasoning, salt, and pepper. Stir in the tomato basil sauce and cook for 2 to 3 minutes.",
+      "Divide the meat mixture evenly among the eight pepper halves and sprinkle the mozzarella evenly over the tops.",
+      "Cover loosely with foil and bake for about 25 minutes. Remove the foil and bake another 10 to 15 minutes, until the peppers are tender and the cheese is melted.",
+      "While the peppers bake, boil the potatoes until fork-tender and drain well.",
+      "Mash the potatoes with the Greek yogurt and 1 teaspoon garlic. Add warm chicken bone broth gradually until creamy, then season with salt and pepper.",
+      "For each serving, plate one red stuffed pepper half, one green stuffed pepper half, and one-quarter of the creamy mashed potatoes."
+    ],
+    "tips": [
+      "Using half lean beef and half ground chicken keeps the filling rich while improving the protein-to-calorie ratio.",
+      "Add the bone broth to the mashed potatoes gradually so they stay creamy rather than loose.",
+      "Nutrition is approximate and should be rechecked against the exact 96% lean beef package used."
+    ]
+  },
+  "seo": {
+    "meta_title": "Italian Stuffed Peppers + Protein Mashed Potatoes | 45g Protein",
+    "meta_description": "Make Italian stuffed red and green peppers with beef, chicken, mozzarella, and creamy protein mashed potatoes for approximately 45g protein and 380 calories.",
+    "keywords": [
+      "Italian stuffed peppers",
+      "high protein stuffed peppers",
+      "protein mashed potatoes",
+      "beef chicken stuffed peppers",
+      "40 400 meals"
+    ]
+  },
+  "images": {
+    "hero_image_url": "https://40400meals.com/outputs/images/food_photos/italian-stuffed-peppers-protein-mashed-potatoes-food-photo.png",
+    "image_prompt": "A realistic comfort-food dinner on a warm neutral stoneware plate. Show exactly two stuffed bell pepper halves per serving: one red half and one green half. Each pepper is generously filled with a saucy ground beef-and-chicken Italian tomato filling and topped with melted lightly browned mozzarella. Beside the peppers is a creamy scoop of mashed gold potatoes with subtle black pepper and a light herb garnish. The peppers should look roasted and tender but still hold their shape. No rice, breadcrumbs, corn, beans, or other unlisted ingredients. Warm natural light and cozy home-cooked appearance.",
+    "alt_text": "Italian stuffed red and green peppers with melted mozzarella and creamy protein mashed potatoes."
+  },
+  "social": {
+    "pinterest": {
+      "title": "Italian Stuffed Peppers + Mashed Potatoes | 45g Protein",
+      "description": "These Italian stuffed peppers combine lean beef and ground chicken with tomato basil sauce and mozzarella, plus creamy Greek-yogurt mashed potatoes for approximately 45 grams of protein and 380 calories.",
+      "destination_url": "https://40400meals.com/recipes/italian-stuffed-peppers-protein-mashed-potatoes.html",
+      "hashtags": [
+        "#StuffedPeppers",
+        "#HighProteinDinner",
+        "#ComfortFood",
+        "#40400Meals"
+      ]
+    }
+  },
+  "homepage": {
+    "hidden": false,
+    "priority": 25,
+    "published_at": "2026-08-18T13:01:00-05:00",
+    "summary": "Italian stuffed red and green peppers with creamy high-protein mashed potatoes.",
+    "image_path": "outputs/images/food_photos/italian-stuffed-peppers-protein-mashed-potatoes-food-photo.png"
+  }
+}
