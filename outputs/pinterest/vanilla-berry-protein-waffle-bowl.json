@@ -1,0 +1,59 @@
+{
+  "recipe_id": "vanilla-berry-protein-waffle-bowl",
+  "platform": "pinterest",
+  "title": "Vanilla Berry Protein Waffle Bowl | 43g Protein | 383 Calories",
+  "description": "Creamy vanilla protein yogurt, fresh strawberries, and four warm Eggo Protein waffle halves make this easy breakfast with approximately 43 grams of protein and 383 calories.",
+  "destination_url": "https://40400meals.com/recipes/vanilla-berry-protein-waffle-bowl.html",
+  "hashtags": [
+    "#ProteinWaffles",
+    "#GreekYogurtBowl",
+    "#HighProteinBreakfast",
+    "#40400Meals"
+  ],
+  "image_prompt": "A realistic high-protein breakfast bowl filled with thick creamy vanilla Greek yogurt and topped only with sliced fresh strawberries. Beside and partly tucked into the bowl are exactly four warm golden waffle half-circles made by cutting two round waffles in half. The waffle pieces must retain rounded outer edges and clearly look like halves of circular waffles, not sticks, rectangles, or wedges. No blueberries, hemp hearts, syrup, or other unlisted ingredients. Bright clean natural food photography with soft daylight.",
+  "image_alt_text": "Vanilla protein Greek yogurt bowl with strawberries and four round-edged waffle halves.",
+  "pin_filename": "vanilla-berry-protein-waffle-bowl-pinterest-pin.png",
+  "image_filename": "vanilla-berry-protein-waffle-bowl-pinterest-pin.png",
+  "image_path": "outputs/images/pinterest/vanilla-berry-protein-waffle-bowl-pinterest-pin.png",
+  "image_mime_type": "image/png",
+  "design_brain": {
+    "template_name": "P01 Classic Recipe v1.0",
+    "template_type": "evergreen",
+    "season": "summer",
+    "month": 8,
+    "recipe_category": "general",
+    "image_style": "bright natural light",
+    "photo_composition": "45-degree angle",
+    "color_mood": "summer",
+    "accent_colors": [
+      "#FFFFFF",
+      "#FFD166",
+      "#06AED5",
+      "#10B981"
+    ],
+    "text_style": "clean and modern",
+    "overlay_style": "minimal",
+    "icon_style": "minimal",
+    "layout_recommendation": "P01 classic layout",
+    "optimization": {
+      "visual_appeal": "high",
+      "save_potential": "high",
+      "click_potential": "high"
+    },
+    "version": "1.0",
+    "status": "design_strategy_ready"
+  },
+  "canva_text_overlay": {
+    "headline": "Vanilla Berry Protein Waffle Bowl",
+    "subheadline": "43g Protein \u2022 383 Calories",
+    "brand": "40/400 Meals"
+  },
+  "seo_keywords": [
+    "protein waffle bowl",
+    "Greek yogurt waffle breakfast",
+    "Eggo protein waffles",
+    "high protein yogurt bowl",
+    "40 400 meals"
+  ],
+  "status": "ready_for_make"
+}
