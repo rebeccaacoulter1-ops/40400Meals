@@ -206,6 +206,81 @@
           }
         }
       }
+    },
+    "chicken-sausage-breakfast-burrito": {
+      "created_at_utc": "2026-08-18T18:15:05.855787+00:00",
+      "updated_at_utc": "2026-08-18T18:15:05.855810+00:00",
+      "steps": {
+        "pinterest": {
+          "complete": true,
+          "completed_at_utc": "2026-08-18T18:15:05.855810+00:00",
+          "details": {
+            "destination_url": "https://40400meals.com/recipes/chicken-sausage-breakfast-burrito.html",
+            "image_url": "https://40400meals.com/outputs/images/pinterest/chicken-sausage-breakfast-burrito-pinterest-pin.png",
+            "file_name": "chicken-sausage-breakfast-burrito-pinterest.json"
+          }
+        }
+      }
+    },
+    "italian-stuffed-peppers-protein-mashed-potatoes": {
+      "created_at_utc": "2026-08-18T18:15:07.548943+00:00",
+      "updated_at_utc": "2026-08-18T18:15:07.549070+00:00",
+      "steps": {
+        "pinterest": {
+          "complete": true,
+          "completed_at_utc": "2026-08-18T18:15:07.549070+00:00",
+          "details": {
+            "destination_url": "https://40400meals.com/recipes/italian-stuffed-peppers-protein-mashed-potatoes.html",
+            "image_url": "https://40400meals.com/outputs/images/pinterest/italian-stuffed-peppers-protein-mashed-potatoes-pinterest-pin.png",
+            "file_name": "italian-stuffed-peppers-protein-mashed-potatoes-pinterest.json"
+          }
+        }
+      }
+    },
+    "pineapple-cottage-cheese-strawberry-cheesecake-shake": {
+      "created_at_utc": "2026-08-18T18:15:08.549927+00:00",
+      "updated_at_utc": "2026-08-18T18:15:08.549944+00:00",
+      "steps": {
+        "pinterest": {
+          "complete": true,
+          "completed_at_utc": "2026-08-18T18:15:08.549944+00:00",
+          "details": {
+            "destination_url": "https://40400meals.com/recipes/pineapple-cottage-cheese-strawberry-cheesecake-shake.html",
+            "image_url": "https://40400meals.com/outputs/images/pinterest/pineapple-cottage-cheese-strawberry-cheesecake-shake-pinterest-pin.png",
+            "file_name": "pineapple-cottage-cheese-strawberry-cheesecake-shake-pinterest.json"
+          }
+        }
+      }
+    },
+    "sheet-pan-taco-chicken-veggies-mexican-rice": {
+      "created_at_utc": "2026-08-18T18:15:09.283101+00:00",
+      "updated_at_utc": "2026-08-18T18:15:09.283121+00:00",
+      "steps": {
+        "pinterest": {
+          "complete": true,
+          "completed_at_utc": "2026-08-18T18:15:09.283121+00:00",
+          "details": {
+            "destination_url": "https://40400meals.com/recipes/sheet-pan-taco-chicken-veggies-mexican-rice.html",
+            "image_url": "https://40400meals.com/outputs/images/pinterest/sheet-pan-taco-chicken-veggies-mexican-rice-pinterest-pin.png",
+            "file_name": "sheet-pan-taco-chicken-veggies-mexican-rice-pinterest.json"
+          }
+        }
+      }
+    },
+    "vanilla-berry-protein-waffle-bowl": {
+      "created_at_utc": "2026-08-18T18:15:10.594813+00:00",
+      "updated_at_utc": "2026-08-18T18:15:10.594830+00:00",
+      "steps": {
+        "pinterest": {
+          "complete": true,
+          "completed_at_utc": "2026-08-18T18:15:10.594830+00:00",
+          "details": {
+            "destination_url": "https://40400meals.com/recipes/vanilla-berry-protein-waffle-bowl.html",
+            "image_url": "https://40400meals.com/outputs/images/pinterest/vanilla-berry-protein-waffle-bowl-pinterest-pin.png",
+            "file_name": "vanilla-berry-protein-waffle-bowl-pinterest.json"
+          }
+        }
+      }
     }
   }
 }
