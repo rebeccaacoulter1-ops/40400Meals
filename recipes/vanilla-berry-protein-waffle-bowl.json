@@ -3,8 +3,8 @@
   "recipe": {
     "slug": "vanilla-berry-protein-waffle-bowl",
     "title": "Vanilla Berry Protein Waffle Bowl",
-    "summary": "Creamy vanilla protein yogurt topped with fresh strawberries and served with four warm waffle half-circles for dipping.",
-    "story": "This is the kind of breakfast that feels fun without requiring any real cooking. The protein powder turns the yogurt into a thicker vanilla dip, and cutting two round waffles in half keeps the serving easy to dip.",
+    "summary": "Creamy vanilla protein yogurt topped with fresh strawberries and served with two warm protein waffles on the side.",
+    "story": "This is the kind of breakfast that feels fun without requiring any real cooking. The protein powder turns the yogurt into a thicker vanilla dip, and the two warm protein waffles make it easy to scoop and dip.",
     "category": "Breakfast",
     "cuisine": "American",
     "date_published": "2026-08-18",
@@ -30,18 +30,16 @@
       "Toast the waffles according to package directions.",
       "Stir the protein powder into the Greek yogurt until smooth and creamy.",
       "Top the yogurt with the sliced strawberries.",
-      "Cut each round waffle in half to make four half-circle waffle pieces.",
-      "Serve the warm waffle halves alongside the yogurt bowl for dipping."
+      "Serve the two warm whole waffles alongside the yogurt bowl for dipping."
     ],
     "tips": [
-      "Cut each waffle once through the center so all four pieces keep a rounded outer edge.",
-      "Do not cut the waffles into sticks.",
+      "Serve the waffles whole beside the yogurt bowl for a simple, realistic one-serving presentation.",
       "Nutrition is approximate and may vary by yogurt and protein powder formulation."
     ]
   },
   "seo": {
     "meta_title": "Vanilla Berry Protein Waffle Bowl | 43g Protein",
-    "meta_description": "Try this vanilla berry protein waffle bowl with Greek yogurt, strawberries, and warm waffle halves for approximately 43g protein and 383 calories.",
+    "meta_description": "Try this vanilla berry protein waffle bowl with Greek yogurt, strawberries, and two warm protein waffles for approximately 43g protein and 383 calories.",
     "keywords": [
       "protein waffle bowl",
       "Greek yogurt waffle breakfast",
@@ -52,13 +50,13 @@
   },
   "images": {
     "hero_image_url": "https://40400meals.com/outputs/images/food_photos/vanilla-berry-protein-waffle-bowl-food-photo.png",
-    "image_prompt": "A realistic high-protein breakfast bowl filled with thick creamy vanilla Greek yogurt and topped only with sliced fresh strawberries. Beside and partly tucked into the bowl are exactly four warm golden waffle half-circles made by cutting two round waffles in half. The waffle pieces must retain rounded outer edges and clearly look like halves of circular waffles, not sticks, rectangles, or wedges. No blueberries, hemp hearts, syrup, or other unlisted ingredients. Bright clean natural food photography with soft daylight.",
-    "alt_text": "Vanilla protein Greek yogurt bowl with strawberries and four round-edged waffle halves."
+    "image_prompt": "A realistic high-protein breakfast on a light neutral plate in a bright home kitchen. One small bowl filled with creamy vanilla Greek yogurt topped only with fresh sliced strawberries. Exactly two whole round golden toaster waffles are placed beside the yogurt bowl, fully visible and uncut. The waffles should look like standard round Eggo Protein waffles with natural toaster browning. Show exactly two waffles, not halves, quarters, wedges, or waffle sticks. No blueberries, syrup, butter, powdered sugar, granola, hemp hearts, mint, extra fruit, branded packaging, text, or logos. Natural window light, casual everyday food photography, realistic portions, slightly imperfect homemade presentation.",
+    "alt_text": "Vanilla protein Greek yogurt bowl with strawberries and two whole protein waffles."
   },
   "social": {
     "pinterest": {
       "title": "Vanilla Berry Protein Waffle Bowl | 43g Protein | 383 Calories",
-      "description": "Creamy vanilla protein yogurt, fresh strawberries, and four warm Eggo Protein waffle halves make this easy breakfast with approximately 43 grams of protein and 383 calories.",
+      "description": "Creamy vanilla protein yogurt, fresh strawberries, and two warm Eggo Protein waffles make this easy breakfast with approximately 43 grams of protein and 383 calories.",
       "destination_url": "https://40400meals.com/recipes/vanilla-berry-protein-waffle-bowl.html",
       "hashtags": [
         "#ProteinWaffles",
@@ -72,7 +70,7 @@
     "hidden": false,
     "priority": 22,
     "published_at": "2026-08-18T13:01:00-05:00",
-    "summary": "Vanilla protein yogurt with strawberries and four warm round-edged waffle halves.",
+    "summary": "Vanilla protein yogurt with strawberries and two warm whole protein waffles.",
     "image_path": "outputs/images/food_photos/vanilla-berry-protein-waffle-bowl-food-photo.png"
   }
 }
