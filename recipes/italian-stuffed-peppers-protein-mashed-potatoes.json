@@ -65,8 +65,8 @@
   },
   "images": {
     "hero_image_url": "https://40400meals.com/outputs/images/food_photos/italian-stuffed-peppers-protein-mashed-potatoes-food-photo.png",
-    "image_prompt": "A realistic comfort-food dinner on a warm neutral stoneware plate. Show exactly two stuffed bell pepper halves per serving: one red half and one green half. Each pepper is generously filled with a saucy ground beef-and-chicken Italian tomato filling and topped with melted lightly browned mozzarella. Beside the peppers is a creamy scoop of mashed gold potatoes with subtle black pepper and a light herb garnish. The peppers should look roasted and tender but still hold their shape. No rice, breadcrumbs, corn, beans, or other unlisted ingredients. Warm natural light and cozy home-cooked appearance.",
-    "alt_text": "Italian stuffed red and green peppers with melted mozzarella and creamy protein mashed potatoes."
+    "image_prompt": "A realistic single-serving comfort-food dinner on a warm neutral stoneware plate in a bright home kitchen. Show exactly two stuffed bell pepper halves total and no additional pepper halves anywhere in the image: exactly one red bell pepper half and exactly one green bell pepper half. Each pepper half is generously filled with the saucy ground beef-and-chicken Italian tomato filling and topped with melted, lightly browned mozzarella. Beside the two peppers is exactly one realistic single-serving scoop of creamy mashed gold potatoes. The mashed potatoes should look homemade, creamy, and naturally spooned onto the plate. The peppers should look roasted and tender but still hold their shape. The image must visually represent one recipe serving only. No extra peppers in the background, no family-size platter, no rice, breadcrumbs, corn, beans, pasta, salad, bread, vegetables, garnish, branded packaging, text, or logos. Natural window light, realistic portions, casual homemade presentation, slightly imperfect and not overly styled.",
+    "alt_text": "One red and one green Italian stuffed pepper half with melted mozzarella and a serving of creamy protein mashed potatoes."
   },
   "social": {
     "pinterest": {
