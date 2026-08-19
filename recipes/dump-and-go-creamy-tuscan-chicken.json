@@ -2,76 +2,82 @@
   "recipe_id": "dump-and-go-creamy-tuscan-chicken",
   "recipe": {
     "slug": "dump-and-go-creamy-tuscan-chicken",
-    "title": "Dump-and-Go Crockpot Creamy Tuscan Chicken",
-    "summary": "Tender slow-cooked chicken with sun-dried tomatoes, spinach, Parmesan, and a creamy Greek-yogurt sauce for approximately 52 grams of protein and 355 calories.",
-    "story": "The chicken and seasonings cook all day without any stovetop preparation. Greek yogurt, Parmesan, and spinach go in after the heat is lowered so the sauce stays creamy instead of separating.",
+    "title": "Creamy Tuscan Chicken Protein Pasta",
+    "summary": "Dump-and-go Tuscan chicken with cottage cheese, cream cheese, spinach, Parmesan, sun-dried tomatoes, and protein penne for approximately 44 grams of protein and 395 calories.",
+    "story": "The chicken and creamy sauce cook all day without stovetop preparation. At night, Barilla Protein+ Penne cooks in chicken bone broth using a no-drain method, then gets folded into the creamy Tuscan chicken.",
     "category": "Slow Cooker Dinner",
     "cuisine": "Italian-Inspired",
     "date_published": "2026-08-19",
     "servings": 6,
+    "serving_size": "11 ounces",
     "times": {
       "prep_minutes": 5,
       "cook_minutes": 480,
       "total_minutes": 495
     },
     "macros": {
-      "calories": 355,
-      "protein_g": 52,
-      "carbs_g": 11,
+      "calories": 395,
+      "protein_g": 44,
+      "carbs_g": 35,
       "fat_g": 10
     },
     "ingredients": [
-      "36 ounces raw boneless skinless chicken breast",
-      "1 cup chicken bone broth",
-      "2 ounces dry-packed sun-dried tomatoes, thinly sliced",
+      "2 pounds raw boneless skinless chicken breast",
+      "3/4 cup Daisy 4% Cottage Cheese",
+      "2 ounces Philadelphia 1/3 Less Fat Cream Cheese, cut into small pieces",
+      "3 cups Simple Truth Organic Chicken Bone Broth, divided",
+      "2 ounces Bella Sun Luci Julienne-Cut Dry-Packed Sun-Dried Tomatoes",
       "1 teaspoon Italian seasoning",
       "1 teaspoon granulated garlic",
       "1/2 teaspoon onion powder",
       "1/2 teaspoon salt",
       "1/4 teaspoon black pepper",
-      "1 1/2 cups nonfat plain Greek yogurt, at room temperature",
-      "4 ounces reduced-fat cream cheese, softened and cubed",
-      "1/2 cup finely grated Parmesan cheese",
-      "5 ounces baby spinach"
+      "8 ounces dry Barilla Protein+ Penne",
+      "5 ounces baby spinach",
+      "1/4 cup BelGioioso Freshly Grated Parmesan Cheese"
     ],
     "instructions": [
-      "In the morning, place the chicken in a 6-quart slow cooker.",
-      "Add the bone broth, sun-dried tomatoes, Italian seasoning, granulated garlic, onion powder, salt, and black pepper.",
-      "Cover and cook on LOW for 7 to 8 hours, until the chicken reaches 165°F and is tender.",
-      "At night, transfer the chicken to a plate and switch the slow cooker to WARM.",
-      "Whisk the softened cream cheese into the hot cooking liquid until smooth, then stir in the spinach until wilted.",
-      "Place the Greek yogurt in a bowl and whisk in 1/2 cup of the warm sauce a little at a time. Stir the tempered yogurt and Parmesan into the slow cooker. Do not boil.",
-      "Slice or shred the chicken, return it to the sauce, and divide into 6 equal servings."
+      "In the morning, place the chicken breasts in the bottom of a 6-quart crockpot.",
+      "Spread the Daisy cottage cheese over the chicken, then add the pieces of cream cheese.",
+      "Pour 1 cup of chicken bone broth around the chicken. Add the sun-dried tomatoes and sprinkle the Italian seasoning, granulated garlic, onion powder, salt, and black pepper over everything.",
+      "Cover and cook on LOW for 7 to 8 hours, until the chicken reaches 165°F and shreds easily.",
+      "At night, bring the remaining 2 cups of chicken bone broth to a boil in a medium saucepan. Add the Barilla Protein+ Penne and reduce to a steady simmer.",
+      "Cook uncovered for 8 to 10 minutes, stirring frequently, until the pasta is al dente and nearly all the broth has been absorbed. If the broth is absorbed before the pasta is tender, add water 2 tablespoons at a time. Remove from the heat and rest for 2 minutes.",
+      "Shred the chicken directly in the crockpot.",
+      "Stir the shredded chicken and contents of the crockpot together until the sauce looks creamy.",
+      "Add the baby spinach, cover, and let it wilt for about 5 minutes.",
+      "Stir in the BelGioioso Parmesan, then fold in the cooked protein penne.",
+      "Divide the finished meal into six 11-ounce servings."
     ],
     "tips": [
-      "Use dry-packed sun-dried tomatoes. Oil-packed tomatoes add substantially more calories unless they are drained and measured carefully.",
-      "Bring the Greek yogurt close to room temperature and temper it with warm sauce to reduce curdling.",
-      "Do not add the yogurt in the morning because dairy can separate during a long cook.",
-      "Serve as written or add a separately measured vegetable. Pasta, rice, or bread would increase the listed calories.",
-      "Nutrition is approximate and varies by brand."
+      "Use refrigerated or completely thawed chicken for safe slow-cooker cooking.",
+      "The dry-packed tomatoes soften in the cottage-cheese and broth sauce during the long cook.",
+      "Stir the pasta frequently because Protein+ pasta can stick during no-drain cooking.",
+      "If the finished sauce is too thick, stir in water or broth 1 tablespoon at a time.",
+      "Nutrition is approximate and varies with chicken and product labels."
     ]
   },
   "seo": {
-    "meta_title": "Dump-and-Go Creamy Tuscan Chicken | 52g Protein",
-    "meta_description": "Crockpot creamy Tuscan chicken with spinach, sun-dried tomatoes, Greek yogurt, and Parmesan for about 52g protein and 355 calories.",
+    "meta_title": "Creamy Tuscan Chicken Protein Pasta | 44g Protein",
+    "meta_description": "Dump-and-go creamy Tuscan chicken with Barilla Protein+ Penne, Daisy cottage cheese, spinach, Parmesan, and sun-dried tomatoes.",
     "keywords": [
-      "dump and go Tuscan chicken",
-      "healthy creamy crockpot chicken",
-      "high protein slow cooker chicken",
-      "crockpot dinner under 400 calories",
-      "Greek yogurt Tuscan chicken",
+      "creamy Tuscan chicken protein pasta",
+      "dump and go crockpot pasta",
+      "high protein slow cooker dinner",
+      "cottage cheese Tuscan chicken",
+      "Barilla Protein Plus recipe",
       "40 400 meals"
     ]
   },
   "images": {
     "hero_image_url": "https://40400meals.com/outputs/images/food_photos/dump-and-go-creamy-tuscan-chicken-food-photo.png",
-    "image_prompt": "A realistic shallow white bowl of tender sliced chicken breast coated in a light creamy sauce with visible wilted baby spinach and thin strips of sun-dried tomato. The sauce looks silky and lightly Parmesan-speckled. Natural window light, cozy weeknight dinner. No pasta, rice, bread, parsley, basil, extra cheese garnish, red pepper flakes, or unlisted ingredients.",
-    "alt_text": "Creamy crockpot Tuscan chicken with spinach and sun-dried tomatoes."
+    "image_prompt": "A realistic shallow bowl containing creamy Tuscan chicken protein penne. Tender shredded chicken, penne pasta, wilted baby spinach, and julienne-cut sun-dried tomatoes are coated in a light creamy Parmesan sauce. Show a believable 11-ounce serving with natural window light and a cozy weeknight presentation. No bread, parsley, basil, red pepper flakes, extra Parmesan garnish, tomatoes beyond the sun-dried tomatoes, or unlisted ingredients.",
+    "alt_text": "Creamy Tuscan chicken protein penne with spinach and sun-dried tomatoes."
   },
   "social": {
     "pinterest": {
-      "title": "Creamy Crockpot Tuscan Chicken | 52g Protein",
-      "description": "A true dump-and-go Tuscan chicken dinner. Let the chicken cook all day, then stir in spinach, Greek yogurt, cream cheese, and Parmesan at night. About 52g protein and 355 calories.",
+      "title": "Creamy Tuscan Chicken Protein Pasta | 44g Protein",
+      "description": "A true dump-and-go Tuscan chicken dinner finished with protein penne cooked in bone broth. Each 11-ounce serving has approximately 44g protein and 395 calories.",
       "destination_url": "https://40400meals.com/recipes/dump-and-go-creamy-tuscan-chicken.html",
       "hashtags": [
         "#CrockpotMeals",
@@ -81,7 +87,7 @@
       ]
     },
     "instagram": {
-      "caption": "A true dump-and-go Tuscan chicken dinner. Let the chicken cook all day, then stir in spinach, Greek yogurt, cream cheese, and Parmesan at night. About 52g protein and 355 calories.",
+      "caption": "A true dump-and-go Tuscan chicken dinner finished with protein penne cooked in bone broth. Each 11-ounce serving has approximately 44g protein and 395 calories.",
       "hashtags": [
         "#CrockpotDinner",
         "#HighProteinMeals",
@@ -90,24 +96,14 @@
       ]
     },
     "facebook": {
-      "caption": "A true dump-and-go Tuscan chicken dinner. Let the chicken cook all day, then stir in spinach, Greek yogurt, cream cheese, and Parmesan at night. About 52g protein and 355 calories."
-    },
-    "youtube_short": {
-      "hook": "This dump-and-go crockpot dinner has 52 grams of protein for about 355 calories.",
-      "script": [
-        "Add the morning ingredients directly to the slow cooker.",
-        "Cook on LOW while you are away.",
-        "Finish the recipe when you get home.",
-        "Divide into six equal servings and enjoy."
-      ],
-      "cta": "Get the full recipe at 40400Meals.com."
+      "caption": "A true dump-and-go Tuscan chicken dinner finished with protein penne cooked in bone broth. Each 11-ounce serving has approximately 44g protein and 395 calories."
     }
   },
   "homepage": {
     "hidden": false,
     "priority": 41,
     "published_at": "2026-08-19T14:00:00-05:00",
-    "summary": "Tender slow-cooked chicken with sun-dried tomatoes, spinach, Parmesan, and a creamy Greek-yogurt sauce for approximately 52 grams of protein and 355 calories.",
+    "summary": "Dump-and-go Tuscan chicken with cottage cheese, cream cheese, spinach, Parmesan, sun-dried tomatoes, and protein penne for approximately 44 grams of protein and 395 calories.",
     "image_path": "outputs/images/pinterest/dump-and-go-creamy-tuscan-chicken-pinterest-pin.png"
   }
 }

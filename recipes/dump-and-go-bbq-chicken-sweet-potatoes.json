@@ -3,58 +3,60 @@
   "recipe": {
     "slug": "dump-and-go-bbq-chicken-sweet-potatoes",
     "title": "Dump-and-Go Crockpot BBQ Chicken Sweet Potatoes",
-    "summary": "Tender pulled barbecue chicken served over slow-cooked sweet potatoes with a cool, crunchy Greek-yogurt slaw for approximately 43 grams of protein and 390 calories.",
-    "story": "The chicken and whole sweet potatoes cook together without any morning stovetop work. At night, shred the chicken and stir together a quick slaw while the crockpot keeps everything warm.",
+    "summary": "Pulled sweet-and-smoky BBQ chicken served over a crockpot sweet potato with tangy Greek-yogurt slaw for approximately 42 grams of protein and 380 calories.",
+    "story": "The chicken and foil-wrapped sweet potatoes cook together all day. At night, shred the chicken and stir together a quick slaw while the crockpot keeps dinner warm.",
     "category": "Slow Cooker Dinner",
     "cuisine": "American",
     "date_published": "2026-08-19",
     "servings": 6,
+    "serving_size": "One 5-ounce sweet potato with approximately 6 ounces BBQ chicken and 3/4 cup slaw",
     "times": {
       "prep_minutes": 5,
       "cook_minutes": 480,
       "total_minutes": 495
     },
     "macros": {
-      "calories": 390,
-      "protein_g": 43,
-      "carbs_g": 46,
-      "fat_g": 5
+      "calories": 380,
+      "protein_g": 42,
+      "carbs_g": 45,
+      "fat_g": 6
     },
     "ingredients": [
-      "36 ounces raw boneless skinless chicken breast",
-      "1 cup no-sugar-added barbecue sauce",
-      "1/2 cup chicken bone broth",
+      "2 pounds raw boneless skinless chicken breast",
+      "1 cup Ray's No Sugar Added Sweet & Smoky BBQ Sauce",
+      "1/2 cup Simple Truth Organic Chicken Bone Broth",
       "1 teaspoon smoked paprika",
       "1 teaspoon granulated garlic",
       "1/2 teaspoon onion powder",
-      "6 small sweet potatoes, about 5 ounces each, scrubbed and dried",
+      "6 small sweet potatoes, approximately 5 ounces each, scrubbed and dried",
       "4 cups bagged plain coleslaw mix",
-      "3/4 cup nonfat plain Greek yogurt",
+      "3/4 cup Chobani Nonfat Plain Greek Yogurt",
       "2 tablespoons apple cider vinegar",
-      "1 teaspoon zero-calorie sweetener",
+      "1 teaspoon stevia zero-calorie sweetener",
       "1/4 teaspoon salt",
       "1/4 teaspoon black pepper"
     ],
     "instructions": [
-      "In the morning, place the chicken in the bottom of a 6-quart slow cooker.",
-      "Pour the barbecue sauce and bone broth over the chicken, then sprinkle with smoked paprika, granulated garlic, and onion powder.",
+      "In the morning, place the chicken breasts in the bottom of a 6-quart crockpot.",
+      "Pour the Ray's barbecue sauce and chicken bone broth over the chicken. Sprinkle with smoked paprika, granulated garlic, and onion powder.",
       "Wrap each clean, dry sweet potato tightly in foil and arrange the packets above the chicken without pressing them into the sauce.",
       "Cover and cook on LOW for 7 to 8 hours, until the chicken reaches 165°F, shreds easily, and the sweet potatoes are tender when pierced.",
-      "At night, carefully remove the hot sweet potatoes. Shred the chicken directly in the sauce.",
-      "In a large bowl, stir together the Greek yogurt, apple cider vinegar, sweetener, salt, and black pepper. Toss with the bagged coleslaw mix.",
-      "Split one sweet potato per serving and top evenly with the pulled BBQ chicken and slaw."
+      "At night, carefully remove the hot sweet potatoes and shred the chicken directly in the crockpot.",
+      "Stir the shredded chicken and contents of the crockpot together until evenly coated.",
+      "In a large bowl, stir together the Chobani Greek yogurt, apple cider vinegar, stevia, salt, and black pepper. Toss with the coleslaw mix.",
+      "Split one sweet potato per serving and top with approximately 6 ounces BBQ chicken and 3/4 cup slaw."
     ],
     "tips": [
       "Choose sweet potatoes close to 5 ounces each so they cook evenly and match the listed nutrition.",
-      "Keep the wrapped potatoes on top of the chicken so they steam without sitting in the barbecue sauce.",
-      "Use no-sugar-added barbecue sauce. Traditional sauces can add considerably more calories and sugar.",
-      "If the potatoes are much larger than 5 ounces, they may need extra cooking time and will change the per-serving calories.",
-      "Nutrition is approximate and varies by barbecue sauce, chicken, sweet potato size, and yogurt brand."
+      "Keep the foil-wrapped potatoes on top of the chicken so they steam without sitting in the barbecue sauce.",
+      "Use Ray's No Sugar Added Sweet & Smoky sauce to keep the meal below 400 calories.",
+      "If the potatoes are much larger than 5 ounces, they may require more cooking time and will change the calories.",
+      "Nutrition is approximate and varies by chicken, sweet potato size, and product labels."
     ]
   },
   "seo": {
-    "meta_title": "Crockpot BBQ Chicken Sweet Potatoes | 43g Protein",
-    "meta_description": "Dump-and-go crockpot BBQ chicken over sweet potatoes with Greek-yogurt slaw for about 43g protein and 390 calories per serving.",
+    "meta_title": "Crockpot BBQ Chicken Sweet Potatoes | 42g Protein",
+    "meta_description": "Dump-and-go Ray's sweet-and-smoky BBQ chicken over crockpot sweet potatoes with Greek-yogurt slaw for about 42g protein and 380 calories.",
     "keywords": [
       "crockpot BBQ chicken sweet potatoes",
       "dump and go crockpot dinner",
@@ -66,13 +68,13 @@
   },
   "images": {
     "hero_image_url": "https://40400meals.com/outputs/images/food_photos/dump-and-go-bbq-chicken-sweet-potatoes-food-photo.png",
-    "image_prompt": "A realistic split roasted sweet potato topped with saucy shredded barbecue chicken and a modest mound of creamy crunchy cabbage slaw. The plate shows one complete serving with natural window light and a casual family-dinner look. No green onions, parsley, pickles, cheese, extra barbecue drizzle, corn, baked beans, bread, or unlisted garnishes.",
-    "alt_text": "Crockpot pulled BBQ chicken over a sweet potato with Greek-yogurt slaw."
+    "image_prompt": "A realistic split cooked sweet potato topped with a generous mound of saucy shredded sweet-and-smoky barbecue chicken and approximately 3/4 cup creamy crunchy cabbage slaw. Show one complete believable serving on a simple plate with natural window light. No green onions, parsley, pickles, cheese, extra barbecue drizzle, corn, baked beans, bread, or unlisted garnishes.",
+    "alt_text": "Crockpot sweet-and-smoky BBQ chicken over a sweet potato with Greek-yogurt slaw."
   },
   "social": {
     "pinterest": {
-      "title": "Crockpot BBQ Chicken Sweet Potatoes | 43g Protein",
-      "description": "Cook the BBQ chicken and whole sweet potatoes together all day, then add a quick Greek-yogurt slaw at night. Approximately 43g protein and 390 calories.",
+      "title": "Crockpot BBQ Chicken Sweet Potatoes | 42g Protein",
+      "description": "Cook Ray's sweet-and-smoky BBQ chicken and whole sweet potatoes together all day, then add a quick Greek-yogurt slaw at night.",
       "destination_url": "https://40400meals.com/recipes/dump-and-go-bbq-chicken-sweet-potatoes.html",
       "hashtags": [
         "#CrockpotMeals",
@@ -82,7 +84,7 @@
       ]
     },
     "instagram": {
-      "caption": "Cook the BBQ chicken and whole sweet potatoes together all day, then add a quick Greek-yogurt slaw at night. Approximately 43g protein and 390 calories.",
+      "caption": "Cook Ray's sweet-and-smoky BBQ chicken and whole sweet potatoes together all day, then add a quick Greek-yogurt slaw at night.",
       "hashtags": [
         "#CrockpotDinner",
         "#HighProteinMeals",
@@ -91,24 +93,14 @@
       ]
     },
     "facebook": {
-      "caption": "Cook the BBQ chicken and whole sweet potatoes together all day, then add a quick Greek-yogurt slaw at night. Approximately 43g protein and 390 calories."
-    },
-    "youtube_short": {
-      "hook": "This dump-and-go crockpot dinner has 43 grams of protein for about 390 calories.",
-      "script": [
-        "Add the morning ingredients directly to the slow cooker.",
-        "Cook on LOW while you are away.",
-        "Finish the recipe when you get home.",
-        "Divide into six equal servings and enjoy."
-      ],
-      "cta": "Get the full recipe at 40400Meals.com."
+      "caption": "Cook Ray's sweet-and-smoky BBQ chicken and whole sweet potatoes together all day, then add a quick Greek-yogurt slaw at night."
     }
   },
   "homepage": {
     "hidden": false,
     "priority": 44,
     "published_at": "2026-08-19T17:00:00-05:00",
-    "summary": "Tender pulled barbecue chicken served over slow-cooked sweet potatoes with a cool, crunchy Greek-yogurt slaw for approximately 43 grams of protein and 390 calories.",
+    "summary": "Pulled sweet-and-smoky BBQ chicken served over a crockpot sweet potato with tangy Greek-yogurt slaw for approximately 42 grams of protein and 380 calories.",
     "image_path": "outputs/images/pinterest/dump-and-go-bbq-chicken-sweet-potatoes-pinterest-pin.png"
   }
 }

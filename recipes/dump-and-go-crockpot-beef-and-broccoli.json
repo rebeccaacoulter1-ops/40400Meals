@@ -3,76 +3,79 @@
   "recipe": {
     "slug": "dump-and-go-crockpot-beef-and-broccoli",
     "title": "Dump-and-Go Crockpot Beef and Broccoli",
-    "summary": "Tender slow-cooked lean beef with broccoli, a savory garlic-ginger sauce, and a modest portion of rice for approximately 42 grams of protein and 375 calories.",
-    "story": "There is no browning or skillet work before leaving the house. The beef cooks directly in the sauce, while the broccoli and quick rice wait until evening so they stay fresh instead of turning to mush.",
+    "summary": "Tender crockpot beef and broccoli with a savory garlic-ginger sauce and a jasmine-rice cauliflower medley for approximately 40 grams of protein and 380 calories.",
+    "story": "Pre-sliced beef makes the morning genuinely dump-and-go. At night, frozen broccoli cooks in the thickened sauce while a frozen jasmine-rice and cauliflower-rice medley heats in the microwave.",
     "category": "Slow Cooker Dinner",
     "cuisine": "Asian-Inspired",
     "date_published": "2026-08-19",
     "servings": 6,
+    "serving_size": "Approximately 12 ounces, including 3/4 cup rice medley",
     "times": {
       "prep_minutes": 5,
       "cook_minutes": 480,
       "total_minutes": 495
     },
     "macros": {
-      "calories": 375,
-      "protein_g": 42,
-      "carbs_g": 35,
-      "fat_g": 8
+      "calories": 380,
+      "protein_g": 40,
+      "carbs_g": 31,
+      "fat_g": 10
     },
     "ingredients": [
-      "32 ounces raw lean top sirloin, sliced thinly against the grain",
-      "1 cup beef bone broth",
-      "1/2 cup reduced-sodium soy sauce",
-      "2 tablespoons brown-sugar-style zero-calorie sweetener",
-      "1 tablespoon rice vinegar",
-      "1 tablespoon sesame oil",
+      "2 pounds pre-sliced beef stir-fry strips",
+      "1 cup Simple Truth Organic Beef Bone Broth",
+      "1/2 cup Kikkoman Less Sodium Soy Sauce",
+      "2 tablespoons stevia brown-sugar substitute",
+      "1 tablespoon Marukan Rice Vinegar",
+      "1 tablespoon Shirakiku 100% Pure Sesame Oil",
       "2 teaspoons minced garlic",
       "1 teaspoon ground ginger",
       "1/4 teaspoon black pepper",
-      "6 cups broccoli florets",
       "2 tablespoons cornstarch",
       "2 tablespoons cold water",
-      "1 1/2 cups cooked white rice"
+      "1 (12.6-ounce) bag Birds Eye Baby Broccoli Florets",
+      "1 (10-ounce) bag Birds Eye Steamfresh Original Riced Cauliflower",
+      "1 (10-ounce) pouch Kroger Classic Grains Jasmine Rice from the freezer section"
     ],
     "instructions": [
-      "In the morning, place the sliced raw beef in a 6-quart slow cooker.",
-      "Add the beef bone broth, soy sauce, sweetener, rice vinegar, sesame oil, minced garlic, ground ginger, and black pepper.",
+      "In the morning, place the pre-sliced beef stir-fry strips in a 6-quart crockpot.",
+      "Add the beef bone broth, Kikkoman soy sauce, stevia brown-sugar substitute, Marukan rice vinegar, Shirakiku sesame oil, minced garlic, ground ginger, and black pepper. Stir to coat the beef.",
       "Cover and cook on LOW for 7 to 8 hours, until the beef is tender.",
-      "At night, whisk the cornstarch and cold water together until smooth. Stir the slurry into the slow cooker.",
-      "Add the broccoli florets, cover, and cook on HIGH for 20 to 30 minutes, until the broccoli is crisp-tender and the sauce has thickened.",
-      "Prepare or reheat 1 1/2 cups of cooked rice while the broccoli finishes.",
-      "Divide the rice and beef-and-broccoli mixture evenly among 6 bowls."
+      "At night, whisk the cornstarch and cold water together until smooth, then stir the slurry into the crockpot.",
+      "Add the frozen Birds Eye broccoli, cover, and cook on HIGH for 20 to 30 minutes, until the broccoli is tender and the sauce thickens.",
+      "Cook the Birds Eye riced cauliflower and one Kroger frozen jasmine-rice pouch according to their package directions.",
+      "Combine the cooked jasmine rice and cauliflower rice to make the rice medley.",
+      "Divide the beef-and-broccoli mixture among six bowls and serve each with approximately 3/4 cup rice medley."
     ],
     "tips": [
-      "Ask the butcher for thinly sliced top sirloin or slice it the night before to keep morning preparation truly dump-and-go.",
-      "Do not add the broccoli in the morning. Eight hours of cooking will make it very soft.",
-      "Use a zero-calorie brown-sugar-style sweetener to keep the meal below 400 calories.",
-      "Measure the finished rice carefully because extra rice changes the calories quickly.",
-      "Nutrition is approximate and varies by beef leanness and product brands."
+      "Pre-sliced beef keeps morning preparation under five minutes.",
+      "Do not add the broccoli in the morning because it will become too soft during an all-day cook.",
+      "The Kroger rice package contains two pouches; use one 10-ounce pouch for this recipe.",
+      "Measure the sesame oil because one tablespoon contributes 120 to 130 calories to the batch.",
+      "Nutrition is approximate and varies by the leanness of the beef and product labels."
     ]
   },
   "seo": {
-    "meta_title": "Dump-and-Go Crockpot Beef and Broccoli | 42g Protein",
-    "meta_description": "No-browning crockpot beef and broccoli with a savory garlic-ginger sauce and rice for about 42g protein and 375 calories per serving.",
+    "meta_title": "Dump-and-Go Crockpot Beef and Broccoli | 40g Protein",
+    "meta_description": "No-browning crockpot beef and broccoli with Kikkoman soy sauce and a jasmine-rice cauliflower medley for about 40g protein and 380 calories.",
     "keywords": [
       "dump and go beef and broccoli",
       "crockpot beef and broccoli",
       "no browning slow cooker beef",
       "high protein crockpot dinner",
-      "healthy beef dinner under 400 calories",
+      "cauliflower jasmine rice medley",
       "40 400 meals"
     ]
   },
   "images": {
     "hero_image_url": "https://40400meals.com/outputs/images/food_photos/dump-and-go-crockpot-beef-and-broccoli-food-photo.png",
-    "image_prompt": "A realistic bowl containing tender thin slices of beef in a glossy brown garlic-ginger sauce with bright crisp-tender broccoli florets and a small measured mound of white rice. Natural window light, casual takeout-inspired presentation, believable portion. No sesame seed garnish, green onions, carrots, peppers, chopsticks, extra sauce bowls, or unlisted ingredients.",
-    "alt_text": "Crockpot beef and broccoli with a small portion of white rice."
+    "image_prompt": "A realistic dinner bowl with tender thin beef strips and bright broccoli florets coated in a glossy brown garlic-ginger sauce. Beside the beef is a fluffy medley of white jasmine rice and finely riced cauliflower, approximately 3/4 cup. Show a believable approximately 12-ounce serving with natural window light. No sesame seeds, green onions, carrots, peppers, chopsticks, extra sauce bowls, or unlisted garnishes.",
+    "alt_text": "Crockpot beef and broccoli with a jasmine-rice cauliflower medley."
   },
   "social": {
     "pinterest": {
-      "title": "Dump-and-Go Beef and Broccoli | 42g Protein",
-      "description": "No browning required. Dump the beef and sauce into the crockpot in the morning, then add broccoli and rice at night. Approximately 42g protein and 375 calories.",
+      "title": "Dump-and-Go Beef and Broccoli | 40g Protein",
+      "description": "No browning required. Crockpot beef and broccoli with a satisfying jasmine-rice and cauliflower-rice medley for approximately 40g protein and 380 calories.",
       "destination_url": "https://40400meals.com/recipes/dump-and-go-crockpot-beef-and-broccoli.html",
       "hashtags": [
         "#CrockpotMeals",
@@ -82,7 +85,7 @@
       ]
     },
     "instagram": {
-      "caption": "No browning required. Dump the beef and sauce into the crockpot in the morning, then add broccoli and rice at night. Approximately 42g protein and 375 calories.",
+      "caption": "No browning required. Crockpot beef and broccoli with a satisfying jasmine-rice and cauliflower-rice medley for approximately 40g protein and 380 calories.",
       "hashtags": [
         "#CrockpotDinner",
         "#HighProteinMeals",
@@ -91,24 +94,14 @@
       ]
     },
     "facebook": {
-      "caption": "No browning required. Dump the beef and sauce into the crockpot in the morning, then add broccoli and rice at night. Approximately 42g protein and 375 calories."
-    },
-    "youtube_short": {
-      "hook": "This dump-and-go crockpot dinner has 42 grams of protein for about 375 calories.",
-      "script": [
-        "Add the morning ingredients directly to the slow cooker.",
-        "Cook on LOW while you are away.",
-        "Finish the recipe when you get home.",
-        "Divide into six equal servings and enjoy."
-      ],
-      "cta": "Get the full recipe at 40400Meals.com."
+      "caption": "No browning required. Crockpot beef and broccoli with a satisfying jasmine-rice and cauliflower-rice medley for approximately 40g protein and 380 calories."
     }
   },
   "homepage": {
     "hidden": false,
     "priority": 42,
     "published_at": "2026-08-19T15:00:00-05:00",
-    "summary": "Tender slow-cooked lean beef with broccoli, a savory garlic-ginger sauce, and a modest portion of rice for approximately 42 grams of protein and 375 calories.",
+    "summary": "Tender crockpot beef and broccoli with a savory garlic-ginger sauce and a jasmine-rice cauliflower medley for approximately 40 grams of protein and 380 calories.",
     "image_path": "outputs/images/pinterest/dump-and-go-crockpot-beef-and-broccoli-pinterest-pin.png"
   }
 }
