@@ -1,0 +1,62 @@
+{
+  "recipe_id": "sour-peach-orange-protein-snack",
+  "platform": "pinterest",
+  "title": "The No-Think Peach Snack With 42g Protein",
+  "description": "This easy sweet-and-savory snack pairs a BUILT Sweet Peach Punch Sour Puff, Peachy Ring clear protein, and a hard-boiled egg for approximately 42 grams of protein and 320 calories.",
+  "destination_url": "https://40400meals.com/recipes/sour-peach-orange-protein-snack.html",
+  "hashtags": [
+    "#HighProteinSnack",
+    "#EasyProteinSnack",
+    "#HealthySnackIdeas",
+    "#ClearProtein",
+    "#40400Meals"
+  ],
+  "image_prompt": "A realistic high-protein snack styled in a bright, clean home kitchen. Show one unopened BUILT Sweet Peach Punch Sour Puff still fully inside its original wrapper, placed flat on a small neutral ceramic plate. Place one peeled whole hard-boiled egg beside the wrapped bar on the plate. Beside the plate, show a clear drinking glass filled with translucent peach-orange clear protein drink and ice. In the background, show a standing pink and coral Clean Simple Eats Peachy Ring Clear Protein Powder bag, softly out of focus but recognizable as a protein powder package. Natural window lighting, simple everyday presentation, appetizing and uncluttered. Keep the protein puff completely inside the wrapper. Do not open, cut, unwrap, or alter the bar. Do not show shredded food, saucy food, mixed food, fruit, garnishes, crumbs, extra ingredients, or a messy plate.",
+  "image_alt_text": "Wrapped sour peach BUILT protein puff with a hard-boiled egg, Peachy Ring clear protein drink, and clear protein powder bag.",
+  "pin_filename": "sour-peach-orange-protein-snack-pinterest-pin.png",
+  "image_filename": "sour-peach-orange-protein-snack-pinterest-pin.png",
+  "image_path": "outputs/images/pinterest/sour-peach-orange-protein-snack-pinterest-pin.png",
+  "image_mime_type": "image/png",
+  "design_brain": {
+    "template_name": "P01 Classic Recipe v1.0",
+    "template_type": "evergreen",
+    "season": "summer",
+    "month": 8,
+    "recipe_category": "general",
+    "image_style": "bright natural light",
+    "photo_composition": "45-degree angle",
+    "color_mood": "summer",
+    "accent_colors": [
+      "#FFFFFF",
+      "#FFD166",
+      "#06AED5",
+      "#10B981"
+    ],
+    "text_style": "clean and modern",
+    "overlay_style": "minimal",
+    "icon_style": "minimal",
+    "layout_recommendation": "P01 classic layout",
+    "optimization": {
+      "visual_appeal": "high",
+      "save_potential": "high",
+      "click_potential": "high"
+    },
+    "version": "1.0",
+    "status": "design_strategy_ready"
+  },
+  "canva_text_overlay": {
+    "headline": "Sour Peach & Peachy Ring Protein Snack",
+    "subheadline": "42g Protein \u2022 320 Calories",
+    "brand": "40/400 Meals"
+  },
+  "seo_keywords": [
+    "sour peach protein snack",
+    "peachy ring clear protein snack",
+    "high protein snack under 400 calories",
+    "no think protein snack",
+    "built sour puff snack",
+    "clean simple eats clear protein",
+    "40 400 snacks"
+  ],
+  "status": "ready_for_make"
+}
