@@ -1,0 +1,114 @@
+{
+  "recipe_id": "dump-and-go-white-chicken-chili",
+  "recipe": {
+    "slug": "dump-and-go-white-chicken-chili",
+    "title": "Dump-and-Go Crockpot White Chicken Chili",
+    "summary": "Creamy white chicken chili with tender chicken breast, white beans, green chiles, corn, bone broth, and Greek yogurt for approximately 51 grams of protein and 350 calories.",
+    "story": "This chili is designed for a busy morning. The chicken, cans, broth, and seasonings go straight into the crockpot, while the creamy ingredients are stirred in only after the chicken is cooked and shredded.",
+    "category": "Slow Cooker Dinner",
+    "cuisine": "Southwestern",
+    "date_published": "2026-08-19",
+    "servings": 6,
+    "times": {
+      "prep_minutes": 5,
+      "cook_minutes": 480,
+      "total_minutes": 495
+    },
+    "macros": {
+      "calories": 350,
+      "protein_g": 51,
+      "carbs_g": 29,
+      "fat_g": 5
+    },
+    "ingredients": [
+      "36 ounces raw boneless skinless chicken breast",
+      "1 (15-ounce) can cannellini beans, drained and rinsed",
+      "1 cup frozen corn",
+      "2 (4-ounce) cans diced green chiles",
+      "2 cups chicken bone broth",
+      "2 teaspoons ground cumin",
+      "1 teaspoon granulated garlic",
+      "1/2 teaspoon onion powder",
+      "1/2 teaspoon dried oregano",
+      "1/2 teaspoon salt",
+      "1/4 teaspoon black pepper",
+      "1 cup nonfat plain Greek yogurt, at room temperature",
+      "2 ounces reduced-fat cream cheese, softened"
+    ],
+    "instructions": [
+      "In the morning, place the chicken in a 6-quart slow cooker.",
+      "Add the drained beans, frozen corn, diced green chiles, bone broth, cumin, granulated garlic, onion powder, oregano, salt, and black pepper.",
+      "Cover and cook on LOW for 7 to 8 hours, until the chicken reaches 165°F and shreds easily.",
+      "At night, remove the chicken, shred it, and return it to the slow cooker. Switch the slow cooker to WARM.",
+      "Whisk the softened cream cheese into the hot chili until smooth.",
+      "Place the Greek yogurt in a bowl and gradually whisk in about 1/2 cup of hot broth. Stir the tempered yogurt into the chili without allowing it to boil.",
+      "Divide the chili evenly among 6 bowls."
+    ],
+    "tips": [
+      "Do not add the Greek yogurt or cream cheese in the morning because long cooking can make dairy separate.",
+      "Cannellini or great northern beans both work. Drain and rinse them before adding.",
+      "For a thicker chili, mash a small portion of the beans against the side of the slow cooker before adding the dairy.",
+      "Taste before adding extra salt because bone broth and canned chiles vary in sodium.",
+      "Nutrition is approximate and varies by brand."
+    ]
+  },
+  "seo": {
+    "meta_title": "Dump-and-Go White Chicken Chili | 51g Protein",
+    "meta_description": "Easy creamy crockpot white chicken chili with beans, green chiles, corn, and Greek yogurt for about 51g protein and 350 calories.",
+    "keywords": [
+      "dump and go white chicken chili",
+      "healthy crockpot white chicken chili",
+      "high protein slow cooker chili",
+      "easy chicken chili under 400 calories",
+      "Greek yogurt white chicken chili",
+      "40 400 meals"
+    ]
+  },
+  "images": {
+    "hero_image_url": "https://40400meals.com/outputs/images/food_photos/dump-and-go-white-chicken-chili-food-photo.png",
+    "image_prompt": "A realistic bowl of thick creamy white chicken chili with visible shredded chicken breast, cannellini beans, golden corn, and small pieces of mild green chile. The broth is pale and creamy but not heavy. Natural window light, cozy family dinner. No cilantro, avocado, tortilla chips, shredded cheese, jalapeno slices, lime, sour cream dollop, onions, or unlisted garnishes.",
+    "alt_text": "Creamy crockpot white chicken chili with beans, corn, and green chiles."
+  },
+  "social": {
+    "pinterest": {
+      "title": "Dump-and-Go White Chicken Chili | 51g Protein",
+      "description": "Add the chicken, beans, corn, chiles, broth, and seasonings in the morning. Finish it creamy at night for approximately 51g protein and 350 calories.",
+      "destination_url": "https://40400meals.com/recipes/dump-and-go-white-chicken-chili.html",
+      "hashtags": [
+        "#CrockpotMeals",
+        "#HighProteinDinner",
+        "#DumpAndGoMeals",
+        "#40400Meals"
+      ]
+    },
+    "instagram": {
+      "caption": "Add the chicken, beans, corn, chiles, broth, and seasonings in the morning. Finish it creamy at night for approximately 51g protein and 350 calories.",
+      "hashtags": [
+        "#CrockpotDinner",
+        "#HighProteinMeals",
+        "#DumpAndGo",
+        "#40400Meals"
+      ]
+    },
+    "facebook": {
+      "caption": "Add the chicken, beans, corn, chiles, broth, and seasonings in the morning. Finish it creamy at night for approximately 51g protein and 350 calories."
+    },
+    "youtube_short": {
+      "hook": "This dump-and-go crockpot dinner has 51 grams of protein for about 350 calories.",
+      "script": [
+        "Add the morning ingredients directly to the slow cooker.",
+        "Cook on LOW while you are away.",
+        "Finish the recipe when you get home.",
+        "Divide into six equal servings and enjoy."
+      ],
+      "cta": "Get the full recipe at 40400Meals.com."
+    }
+  },
+  "homepage": {
+    "hidden": false,
+    "priority": 43,
+    "published_at": "2026-08-19T16:00:00-05:00",
+    "summary": "Creamy white chicken chili with tender chicken breast, white beans, green chiles, corn, bone broth, and Greek yogurt for approximately 51 grams of protein and 350 calories.",
+    "image_path": "outputs/images/pinterest/dump-and-go-white-chicken-chili-pinterest-pin.png"
+  }
+}

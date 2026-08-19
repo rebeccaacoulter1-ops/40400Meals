@@ -1,0 +1,110 @@
+{
+  "recipe_id": "dump-and-go-salsa-verde-chicken-bowls",
+  "recipe": {
+    "slug": "dump-and-go-salsa-verde-chicken-bowls",
+    "title": "Dump-and-Go Crockpot Salsa Verde Chicken Bowls",
+    "summary": "Tender salsa verde chicken with black beans, corn, cauliflower rice, and cool Greek yogurt for approximately 50 grams of protein and 370 calories per serving.",
+    "story": "This is built for mornings when dinner needs to take care of itself. Everything for the chicken goes straight into the slow cooker, and the cauliflower rice and Greek yogurt are added when it is time to eat.",
+    "category": "Slow Cooker Dinner",
+    "cuisine": "Mexican-Inspired",
+    "date_published": "2026-08-19",
+    "servings": 6,
+    "times": {
+      "prep_minutes": 5,
+      "cook_minutes": 480,
+      "total_minutes": 495
+    },
+    "macros": {
+      "calories": 370,
+      "protein_g": 50,
+      "carbs_g": 30,
+      "fat_g": 5
+    },
+    "ingredients": [
+      "36 ounces raw boneless skinless chicken breast",
+      "1 (16-ounce) jar salsa verde",
+      "1 (15-ounce) can black beans, drained and rinsed",
+      "1 (15-ounce) can corn, drained",
+      "1 teaspoon ground cumin",
+      "1 teaspoon granulated garlic",
+      "1/2 teaspoon onion powder",
+      "1/2 teaspoon salt",
+      "24 ounces frozen cauliflower rice",
+      "1 cup nonfat plain Greek yogurt"
+    ],
+    "instructions": [
+      "In the morning, place the chicken breast in a 6-quart slow cooker.",
+      "Pour the salsa verde over the chicken, then add the drained black beans, drained corn, cumin, granulated garlic, onion powder, and salt. Do not stir the raw chicken with the other ingredients.",
+      "Cover and cook on LOW for 7 to 8 hours, until the chicken reaches 165°F and shreds easily.",
+      "At night, shred the chicken directly in the slow cooker and stir everything together.",
+      "Cook the frozen cauliflower rice according to its package directions.",
+      "Divide the cauliflower rice and salsa verde chicken mixture evenly among 6 bowls. Top each serving with an equal portion of Greek yogurt."
+    ],
+    "tips": [
+      "Use refrigerated or freshly thawed chicken, never frozen chicken, for safe slow-cooker cooking.",
+      "Jarred salsa verde keeps the morning preparation under five minutes.",
+      "If your slow cooker runs hot, begin checking the chicken at 6 hours.",
+      "Divide both the chicken mixture and toppings evenly for the closest match to the listed nutrition.",
+      "Nutrition is approximate and varies by brand."
+    ]
+  },
+  "seo": {
+    "meta_title": "Dump-and-Go Salsa Verde Chicken Bowls | 50g Protein",
+    "meta_description": "Easy crockpot salsa verde chicken bowls with black beans, corn, cauliflower rice, and Greek yogurt for about 50g protein and 370 calories.",
+    "keywords": [
+      "dump and go crockpot chicken",
+      "salsa verde chicken bowls",
+      "high protein slow cooker dinner",
+      "healthy crockpot chicken recipe",
+      "crockpot meal under 400 calories",
+      "40 400 meals"
+    ]
+  },
+  "images": {
+    "hero_image_url": "https://40400meals.com/outputs/images/food_photos/dump-and-go-salsa-verde-chicken-bowls-food-photo.png",
+    "image_prompt": "A realistic shallow bowl with fluffy cauliflower rice topped with shredded salsa verde chicken, black beans, golden corn, and one neat spoonful of plain Greek yogurt. Bright green salsa lightly coats the chicken. Natural window light, casual weeknight dinner, believable portion. No avocado, cheese, tortilla chips, cilantro, lime, tomatoes, onions, jalapenos, or unlisted garnishes.",
+    "alt_text": "Crockpot salsa verde chicken bowl with black beans, corn, cauliflower rice, and Greek yogurt."
+  },
+  "social": {
+    "pinterest": {
+      "title": "Dump-and-Go Salsa Verde Chicken | 50g Protein",
+      "description": "Start this salsa verde chicken in five minutes, let the crockpot handle dinner, then serve it with cauliflower rice and Greek yogurt. Approximately 50g protein and 370 calories per serving.",
+      "destination_url": "https://40400meals.com/recipes/dump-and-go-salsa-verde-chicken-bowls.html",
+      "hashtags": [
+        "#CrockpotMeals",
+        "#HighProteinDinner",
+        "#DumpAndGoMeals",
+        "#40400Meals"
+      ]
+    },
+    "instagram": {
+      "caption": "Start this salsa verde chicken in five minutes, let the crockpot handle dinner, then serve it with cauliflower rice and Greek yogurt. Approximately 50g protein and 370 calories per serving.",
+      "hashtags": [
+        "#CrockpotDinner",
+        "#HighProteinMeals",
+        "#DumpAndGo",
+        "#40400Meals"
+      ]
+    },
+    "facebook": {
+      "caption": "Start this salsa verde chicken in five minutes, let the crockpot handle dinner, then serve it with cauliflower rice and Greek yogurt. Approximately 50g protein and 370 calories per serving."
+    },
+    "youtube_short": {
+      "hook": "This dump-and-go crockpot dinner has 50 grams of protein for about 370 calories.",
+      "script": [
+        "Add the morning ingredients directly to the slow cooker.",
+        "Cook on LOW while you are away.",
+        "Finish the recipe when you get home.",
+        "Divide into six equal servings and enjoy."
+      ],
+      "cta": "Get the full recipe at 40400Meals.com."
+    }
+  },
+  "homepage": {
+    "hidden": false,
+    "priority": 40,
+    "published_at": "2026-08-19T13:00:00-05:00",
+    "summary": "Tender salsa verde chicken with black beans, corn, cauliflower rice, and cool Greek yogurt for approximately 50 grams of protein and 370 calories per serving.",
+    "image_path": "outputs/images/pinterest/dump-and-go-salsa-verde-chicken-bowls-pinterest-pin.png"
+  }
+}

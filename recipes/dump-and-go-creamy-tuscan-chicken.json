@@ -1,0 +1,113 @@
+{
+  "recipe_id": "dump-and-go-creamy-tuscan-chicken",
+  "recipe": {
+    "slug": "dump-and-go-creamy-tuscan-chicken",
+    "title": "Dump-and-Go Crockpot Creamy Tuscan Chicken",
+    "summary": "Tender slow-cooked chicken with sun-dried tomatoes, spinach, Parmesan, and a creamy Greek-yogurt sauce for approximately 52 grams of protein and 355 calories.",
+    "story": "The chicken and seasonings cook all day without any stovetop preparation. Greek yogurt, Parmesan, and spinach go in after the heat is lowered so the sauce stays creamy instead of separating.",
+    "category": "Slow Cooker Dinner",
+    "cuisine": "Italian-Inspired",
+    "date_published": "2026-08-19",
+    "servings": 6,
+    "times": {
+      "prep_minutes": 5,
+      "cook_minutes": 480,
+      "total_minutes": 495
+    },
+    "macros": {
+      "calories": 355,
+      "protein_g": 52,
+      "carbs_g": 11,
+      "fat_g": 10
+    },
+    "ingredients": [
+      "36 ounces raw boneless skinless chicken breast",
+      "1 cup chicken bone broth",
+      "2 ounces dry-packed sun-dried tomatoes, thinly sliced",
+      "1 teaspoon Italian seasoning",
+      "1 teaspoon granulated garlic",
+      "1/2 teaspoon onion powder",
+      "1/2 teaspoon salt",
+      "1/4 teaspoon black pepper",
+      "1 1/2 cups nonfat plain Greek yogurt, at room temperature",
+      "4 ounces reduced-fat cream cheese, softened and cubed",
+      "1/2 cup finely grated Parmesan cheese",
+      "5 ounces baby spinach"
+    ],
+    "instructions": [
+      "In the morning, place the chicken in a 6-quart slow cooker.",
+      "Add the bone broth, sun-dried tomatoes, Italian seasoning, granulated garlic, onion powder, salt, and black pepper.",
+      "Cover and cook on LOW for 7 to 8 hours, until the chicken reaches 165°F and is tender.",
+      "At night, transfer the chicken to a plate and switch the slow cooker to WARM.",
+      "Whisk the softened cream cheese into the hot cooking liquid until smooth, then stir in the spinach until wilted.",
+      "Place the Greek yogurt in a bowl and whisk in 1/2 cup of the warm sauce a little at a time. Stir the tempered yogurt and Parmesan into the slow cooker. Do not boil.",
+      "Slice or shred the chicken, return it to the sauce, and divide into 6 equal servings."
+    ],
+    "tips": [
+      "Use dry-packed sun-dried tomatoes. Oil-packed tomatoes add substantially more calories unless they are drained and measured carefully.",
+      "Bring the Greek yogurt close to room temperature and temper it with warm sauce to reduce curdling.",
+      "Do not add the yogurt in the morning because dairy can separate during a long cook.",
+      "Serve as written or add a separately measured vegetable. Pasta, rice, or bread would increase the listed calories.",
+      "Nutrition is approximate and varies by brand."
+    ]
+  },
+  "seo": {
+    "meta_title": "Dump-and-Go Creamy Tuscan Chicken | 52g Protein",
+    "meta_description": "Crockpot creamy Tuscan chicken with spinach, sun-dried tomatoes, Greek yogurt, and Parmesan for about 52g protein and 355 calories.",
+    "keywords": [
+      "dump and go Tuscan chicken",
+      "healthy creamy crockpot chicken",
+      "high protein slow cooker chicken",
+      "crockpot dinner under 400 calories",
+      "Greek yogurt Tuscan chicken",
+      "40 400 meals"
+    ]
+  },
+  "images": {
+    "hero_image_url": "https://40400meals.com/outputs/images/food_photos/dump-and-go-creamy-tuscan-chicken-food-photo.png",
+    "image_prompt": "A realistic shallow white bowl of tender sliced chicken breast coated in a light creamy sauce with visible wilted baby spinach and thin strips of sun-dried tomato. The sauce looks silky and lightly Parmesan-speckled. Natural window light, cozy weeknight dinner. No pasta, rice, bread, parsley, basil, extra cheese garnish, red pepper flakes, or unlisted ingredients.",
+    "alt_text": "Creamy crockpot Tuscan chicken with spinach and sun-dried tomatoes."
+  },
+  "social": {
+    "pinterest": {
+      "title": "Creamy Crockpot Tuscan Chicken | 52g Protein",
+      "description": "A true dump-and-go Tuscan chicken dinner. Let the chicken cook all day, then stir in spinach, Greek yogurt, cream cheese, and Parmesan at night. About 52g protein and 355 calories.",
+      "destination_url": "https://40400meals.com/recipes/dump-and-go-creamy-tuscan-chicken.html",
+      "hashtags": [
+        "#CrockpotMeals",
+        "#HighProteinDinner",
+        "#DumpAndGoMeals",
+        "#40400Meals"
+      ]
+    },
+    "instagram": {
+      "caption": "A true dump-and-go Tuscan chicken dinner. Let the chicken cook all day, then stir in spinach, Greek yogurt, cream cheese, and Parmesan at night. About 52g protein and 355 calories.",
+      "hashtags": [
+        "#CrockpotDinner",
+        "#HighProteinMeals",
+        "#DumpAndGo",
+        "#40400Meals"
+      ]
+    },
+    "facebook": {
+      "caption": "A true dump-and-go Tuscan chicken dinner. Let the chicken cook all day, then stir in spinach, Greek yogurt, cream cheese, and Parmesan at night. About 52g protein and 355 calories."
+    },
+    "youtube_short": {
+      "hook": "This dump-and-go crockpot dinner has 52 grams of protein for about 355 calories.",
+      "script": [
+        "Add the morning ingredients directly to the slow cooker.",
+        "Cook on LOW while you are away.",
+        "Finish the recipe when you get home.",
+        "Divide into six equal servings and enjoy."
+      ],
+      "cta": "Get the full recipe at 40400Meals.com."
+    }
+  },
+  "homepage": {
+    "hidden": false,
+    "priority": 41,
+    "published_at": "2026-08-19T14:00:00-05:00",
+    "summary": "Tender slow-cooked chicken with sun-dried tomatoes, spinach, Parmesan, and a creamy Greek-yogurt sauce for approximately 52 grams of protein and 355 calories.",
+    "image_path": "outputs/images/pinterest/dump-and-go-creamy-tuscan-chicken-pinterest-pin.png"
+  }
+}

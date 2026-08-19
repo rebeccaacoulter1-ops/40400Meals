@@ -1,0 +1,114 @@
+{
+  "recipe_id": "dump-and-go-crockpot-beef-and-broccoli",
+  "recipe": {
+    "slug": "dump-and-go-crockpot-beef-and-broccoli",
+    "title": "Dump-and-Go Crockpot Beef and Broccoli",
+    "summary": "Tender slow-cooked lean beef with broccoli, a savory garlic-ginger sauce, and a modest portion of rice for approximately 42 grams of protein and 375 calories.",
+    "story": "There is no browning or skillet work before leaving the house. The beef cooks directly in the sauce, while the broccoli and quick rice wait until evening so they stay fresh instead of turning to mush.",
+    "category": "Slow Cooker Dinner",
+    "cuisine": "Asian-Inspired",
+    "date_published": "2026-08-19",
+    "servings": 6,
+    "times": {
+      "prep_minutes": 5,
+      "cook_minutes": 480,
+      "total_minutes": 495
+    },
+    "macros": {
+      "calories": 375,
+      "protein_g": 42,
+      "carbs_g": 35,
+      "fat_g": 8
+    },
+    "ingredients": [
+      "32 ounces raw lean top sirloin, sliced thinly against the grain",
+      "1 cup beef bone broth",
+      "1/2 cup reduced-sodium soy sauce",
+      "2 tablespoons brown-sugar-style zero-calorie sweetener",
+      "1 tablespoon rice vinegar",
+      "1 tablespoon sesame oil",
+      "2 teaspoons minced garlic",
+      "1 teaspoon ground ginger",
+      "1/4 teaspoon black pepper",
+      "6 cups broccoli florets",
+      "2 tablespoons cornstarch",
+      "2 tablespoons cold water",
+      "1 1/2 cups cooked white rice"
+    ],
+    "instructions": [
+      "In the morning, place the sliced raw beef in a 6-quart slow cooker.",
+      "Add the beef bone broth, soy sauce, sweetener, rice vinegar, sesame oil, minced garlic, ground ginger, and black pepper.",
+      "Cover and cook on LOW for 7 to 8 hours, until the beef is tender.",
+      "At night, whisk the cornstarch and cold water together until smooth. Stir the slurry into the slow cooker.",
+      "Add the broccoli florets, cover, and cook on HIGH for 20 to 30 minutes, until the broccoli is crisp-tender and the sauce has thickened.",
+      "Prepare or reheat 1 1/2 cups of cooked rice while the broccoli finishes.",
+      "Divide the rice and beef-and-broccoli mixture evenly among 6 bowls."
+    ],
+    "tips": [
+      "Ask the butcher for thinly sliced top sirloin or slice it the night before to keep morning preparation truly dump-and-go.",
+      "Do not add the broccoli in the morning. Eight hours of cooking will make it very soft.",
+      "Use a zero-calorie brown-sugar-style sweetener to keep the meal below 400 calories.",
+      "Measure the finished rice carefully because extra rice changes the calories quickly.",
+      "Nutrition is approximate and varies by beef leanness and product brands."
+    ]
+  },
+  "seo": {
+    "meta_title": "Dump-and-Go Crockpot Beef and Broccoli | 42g Protein",
+    "meta_description": "No-browning crockpot beef and broccoli with a savory garlic-ginger sauce and rice for about 42g protein and 375 calories per serving.",
+    "keywords": [
+      "dump and go beef and broccoli",
+      "crockpot beef and broccoli",
+      "no browning slow cooker beef",
+      "high protein crockpot dinner",
+      "healthy beef dinner under 400 calories",
+      "40 400 meals"
+    ]
+  },
+  "images": {
+    "hero_image_url": "https://40400meals.com/outputs/images/food_photos/dump-and-go-crockpot-beef-and-broccoli-food-photo.png",
+    "image_prompt": "A realistic bowl containing tender thin slices of beef in a glossy brown garlic-ginger sauce with bright crisp-tender broccoli florets and a small measured mound of white rice. Natural window light, casual takeout-inspired presentation, believable portion. No sesame seed garnish, green onions, carrots, peppers, chopsticks, extra sauce bowls, or unlisted ingredients.",
+    "alt_text": "Crockpot beef and broccoli with a small portion of white rice."
+  },
+  "social": {
+    "pinterest": {
+      "title": "Dump-and-Go Beef and Broccoli | 42g Protein",
+      "description": "No browning required. Dump the beef and sauce into the crockpot in the morning, then add broccoli and rice at night. Approximately 42g protein and 375 calories.",
+      "destination_url": "https://40400meals.com/recipes/dump-and-go-crockpot-beef-and-broccoli.html",
+      "hashtags": [
+        "#CrockpotMeals",
+        "#HighProteinDinner",
+        "#DumpAndGoMeals",
+        "#40400Meals"
+      ]
+    },
+    "instagram": {
+      "caption": "No browning required. Dump the beef and sauce into the crockpot in the morning, then add broccoli and rice at night. Approximately 42g protein and 375 calories.",
+      "hashtags": [
+        "#CrockpotDinner",
+        "#HighProteinMeals",
+        "#DumpAndGo",
+        "#40400Meals"
+      ]
+    },
+    "facebook": {
+      "caption": "No browning required. Dump the beef and sauce into the crockpot in the morning, then add broccoli and rice at night. Approximately 42g protein and 375 calories."
+    },
+    "youtube_short": {
+      "hook": "This dump-and-go crockpot dinner has 42 grams of protein for about 375 calories.",
+      "script": [
+        "Add the morning ingredients directly to the slow cooker.",
+        "Cook on LOW while you are away.",
+        "Finish the recipe when you get home.",
+        "Divide into six equal servings and enjoy."
+      ],
+      "cta": "Get the full recipe at 40400Meals.com."
+    }
+  },
+  "homepage": {
+    "hidden": false,
+    "priority": 42,
+    "published_at": "2026-08-19T15:00:00-05:00",
+    "summary": "Tender slow-cooked lean beef with broccoli, a savory garlic-ginger sauce, and a modest portion of rice for approximately 42 grams of protein and 375 calories.",
+    "image_path": "outputs/images/pinterest/dump-and-go-crockpot-beef-and-broccoli-pinterest-pin.png"
+  }
+}
