@@ -3,6 +3,8 @@ import json
 import base64
 import hashlib
 import shutil
+import time
+from concurrent.futures import ThreadPoolExecutor, as_completed
 from io import BytesIO
 from pathlib import Path
 
@@ -14,7 +16,11 @@ from PIL import Image, ImageDraw, ImageFont, ImageOps
 # OpenAI client
 # -----------------------------
 
-client = OpenAI(api_key=os.environ["OPENAI_API_KEY"])
+client = OpenAI(
+    api_key=os.environ["OPENAI_API_KEY"],
+    timeout=300.0,
+    max_retries=1,
+)
 
 
 # -----------------------------
@@ -208,6 +214,7 @@ def normalize_recipe(data, recipe_file):
             "protein": recipe.get("macros", {}).get("protein_g", ""),
             "calories": recipe.get("macros", {}).get("calories", ""),
             "images": image_settings,
+            "_source_file": str(recipe_file),
         }
 
     instructions = (
@@ -228,6 +235,7 @@ def normalize_recipe(data, recipe_file):
         "protein": data.get("protein", ""),
         "calories": data.get("calories", ""),
         "images": image_settings,
+        "_source_file": str(recipe_file),
     }
 
 
@@ -549,6 +557,33 @@ def use_manual_source_photo(recipe, photo_file, metadata_file):
     return image
 
 
+def clear_regenerate_flag(recipe):
+    """Make regenerate_image a one-shot switch after a successful refresh."""
+    source_file = Path(recipe["_source_file"])
+    data = load_json(source_file)
+    image_settings = data.get("images", {}) or {}
+
+    if image_settings.pop("regenerate_image", None) is not None:
+        data["images"] = image_settings
+        save_json(source_file, data)
+        print(
+            f'[CACHE] Cleared regenerate_image for {recipe["slug"]}',
+            flush=True,
+        )
+
+
+def ai_photo_is_required(recipe):
+    slug = recipe["slug"]
+    photo_file = PHOTO_DIR / f"{slug}-food-photo.png"
+    image_settings = recipe.get("images", {})
+    has_manual_source = bool(
+        str(image_settings.get("source_photo_path", "")).strip()
+        or str(image_settings.get("source_photo_base64_path", "")).strip()
+    )
+    force_regenerate = image_settings.get("regenerate_image") is True
+    return not has_manual_source and (force_regenerate or not photo_file.exists())
+
+
 def generate_ai_food_photo(recipe, design):
     PHOTO_DIR.mkdir(parents=True, exist_ok=True)
     PHOTO_METADATA_DIR.mkdir(parents=True, exist_ok=True)
@@ -566,16 +601,17 @@ def generate_ai_food_photo(recipe, design):
     if manual_image is not None:
         return manual_image
 
+    force_regenerate = recipe.get("images", {}).get("regenerate_image") is True
+
+    if photo_file.exists() and not force_regenerate:
+        print(
+            f"[CACHE] Reusing approved photo for {slug}",
+            flush=True,
+        )
+        return Image.open(photo_file).convert("RGB")
+
     prompt = build_food_photo_prompt(recipe, design)
     prompt_hash = f"prompt:{create_prompt_hash(prompt)}"
-
-    if photo_cache_is_current(
-        photo_file,
-        metadata_file,
-        prompt_hash
-    ):
-        print(f"Using current AI food photo: {photo_file}")
-        return Image.open(photo_file).convert("RGB")
 
     if photo_file.exists():
         print(
@@ -585,8 +621,11 @@ def generate_ai_food_photo(recipe, design):
     else:
         print("No current food photo found. Generating a new image.")
 
-    print("Generating photorealistic AI food photo...")
-    print(prompt)
+    reason = "requested refresh" if force_regenerate else "new recipe"
+    print(
+        f"[GENERATE] {slug}: starting ({reason})",
+        flush=True,
+    )
 
     response = client.images.generate(
         model="gpt-image-1",
@@ -615,8 +654,11 @@ def generate_ai_food_photo(recipe, design):
         }
     )
 
-    print(f"AI food photo created: {photo_file}")
-    print(f"Image metadata created: {metadata_file}")
+    if force_regenerate:
+        clear_regenerate_flag(recipe)
+
+    print(f"[GENERATE] {slug}: photo saved to {photo_file}", flush=True)
+    print(f"[GENERATE] {slug}: metadata saved to {metadata_file}", flush=True)
 
     return image
 
@@ -1117,22 +1159,85 @@ def create_pinterest_pin(recipe, design):
 # Main process
 # -----------------------------
 
-def main():
-    design = load_json(DESIGN_FILE) if DESIGN_FILE.exists() else {}
+def process_recipe_image(recipe, design):
+    slug = recipe["slug"]
+    started = time.monotonic()
+    print(f"[START] {slug}", flush=True)
 
+    try:
+        create_pinterest_pin(recipe, design)
+    except Exception:
+        elapsed = time.monotonic() - started
+        print(f"[FAIL] {slug} after {elapsed:.1f}s", flush=True)
+        raise
+
+    elapsed = time.monotonic() - started
+    print(f"[DONE] {slug} in {elapsed:.1f}s", flush=True)
+    return slug, elapsed
+
+
+def main():
+    engine_started = time.monotonic()
+    design = load_json(DESIGN_FILE) if DESIGN_FILE.exists() else {}
     recipe_files = sorted(RECIPES_DIR.glob("*.json"))
 
     if not recipe_files:
-        print("No recipe JSON files found.")
+        print("No recipe JSON files found.", flush=True)
         return
 
-    for recipe_file in recipe_files:
-        print(f"\nProcessing image for {recipe_file}")
+    recipes = [
+        normalize_recipe(load_json(recipe_file), recipe_file)
+        for recipe_file in recipe_files
+    ]
+    generation_count = sum(ai_photo_is_required(recipe) for recipe in recipes)
+    reuse_count = len(recipes) - generation_count
 
-        data = load_json(recipe_file)
-        recipe = normalize_recipe(data, recipe_file)
+    print(
+        f"[PLAN] {len(recipes)} recipes scanned | "
+        f"{reuse_count} approved/manual photos reusable | "
+        f"{generation_count} AI photos required",
+        flush=True,
+    )
+    print("[PLAN] Processing with at most 3 concurrent workers", flush=True)
 
-        create_pinterest_pin(recipe, design)
+    failures = []
+
+    with ThreadPoolExecutor(max_workers=3) as executor:
+        future_to_slug = {
+            executor.submit(process_recipe_image, recipe, design): recipe["slug"]
+            for recipe in recipes
+        }
+
+        for future in as_completed(future_to_slug):
+            slug = future_to_slug[future]
+
+            try:
+                future.result()
+            except Exception as error:
+                failures.append((slug, str(error)))
+
+    total_elapsed = time.monotonic() - engine_started
+
+    if failures:
+        print(
+            f"[SUMMARY] FAILED after {total_elapsed:.1f}s | "
+            f"{len(failures)} recipe(s) failed",
+            flush=True,
+        )
+
+        for slug, error in failures:
+            print(f"[SUMMARY] {slug}: {error}", flush=True)
+
+        raise RuntimeError(
+            f"Image generation failed for {len(failures)} recipe(s)."
+        )
+
+    print(
+        f"[SUMMARY] COMPLETE in {total_elapsed:.1f}s | "
+        f"{generation_count} AI photos requested | "
+        f"{reuse_count} approved/manual photos reused",
+        flush=True,
+    )
 
 
 if __name__ == "__main__":
