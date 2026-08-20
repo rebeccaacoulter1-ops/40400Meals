@@ -1,0 +1,48 @@
+{
+  "recipe_id": "honey-mustard-chicken-crunch-wrap",
+  "recipe": {
+    "slug": "honey-mustard-chicken-crunch-wrap",
+    "title": "Honey Mustard BBQ Chicken Crunch Wrap",
+    "summary": "A crispy chicken wrap with smoky BBQ protein chips, romaine, and creamy honey mustard for approximately 44 grams of protein and 400 calories.",
+    "story": "This wrap combines crispy Realgood chicken nuggets with creamy-sweet honey mustard, fresh romaine, and smoky Quest BBQ chips for the kind of satisfying crunch you would expect from a restaurant chicken wrap.",
+    "category": "Quick High-Protein Lunch",
+    "cuisine": "American",
+    "date_published": "2026-08-20",
+    "servings": 1,
+    "serving_size": "1 large wrap",
+    "times": {"prep_minutes": 10, "cook_minutes": 0, "total_minutes": 10},
+    "macros": {"calories": 400, "protein_g": 44, "carbs_g": 33, "fat_g": 12},
+    "ingredients": [
+      "4 ounces Realgood Foods Lightly Breaded Chicken Breast Nuggets, cooked according to package directions and chopped",
+      "1 Ole Xtreme Wellness High Fiber Large Wrap",
+      "1 cup chopped romaine lettuce",
+      "1/2 bag Quest Original Style BBQ Protein Chips, lightly crushed",
+      "3 tablespoons Chobani Nonfat Plain Greek Yogurt",
+      "2 teaspoons yellow mustard",
+      "1/2 teaspoon honey",
+      "1/4 teaspoon garlic powder",
+      "Pinch of salt and black pepper"
+    ],
+    "instructions": [
+      "Stir together the Greek yogurt, mustard, honey, garlic powder, salt, and pepper in a small bowl.",
+      "Add the chopped chicken and toss until evenly coated.",
+      "Lay the wrap flat and arrange the romaine down the center.",
+      "Top with the honey mustard chicken and lightly crushed Quest BBQ Protein Chips.",
+      "Fold in the sides, roll tightly, and slice in half."
+    ],
+    "tips": [
+      "Air-fry the Realgood chicken nuggets so the breading stays crisp inside the wrap.",
+      "Add the Quest chips immediately before rolling so they retain their crunch.",
+      "Pack the sauce, chicken, and chips separately if preparing more than a few hours ahead.",
+      "Nutrition is approximate and varies slightly by product label and measured portion."
+    ]
+  },
+  "seo": {"meta_title": "Honey Mustard BBQ Chicken Crunch Wrap | 44g Protein", "meta_description": "Crispy Realgood chicken wrap with creamy honey mustard, romaine, and Quest BBQ protein chips. Approximately 44g protein and 400 calories.", "keywords": ["high protein chicken wrap", "honey mustard BBQ chicken wrap", "Realgood chicken nugget wrap", "Quest protein chip wrap", "40 400 meals"]},
+  "images": {"hero_image_url": "https://40400meals.com/outputs/images/food_photos/honey-mustard-chicken-crunch-wrap-food-photo.png", "image_prompt": "A premium food-blog editorial photograph of one flour tortilla wrap sliced diagonally into two halves, filled with chopped crispy lightly breaded chicken chunks coated in creamy honey mustard, chopped romaine lettuce, and visibly crunchy irregular pieces of BBQ protein chips. The cut edge is the hero and the chicken breading and chips remain visibly crisp. No cucumber or cheese.", "alt_text": "Honey mustard BBQ chicken crunch wrap halves with crispy chicken, romaine, and BBQ protein chips."},
+  "social": {
+    "pinterest": {"title": "Honey Mustard BBQ Chicken Crunch Wrap | 44g Protein", "description": "Crispy Realgood chicken, creamy honey mustard, romaine, and smoky Quest BBQ chips in one satisfying wrap. Approximately 44g protein and 400 calories.", "destination_url": "https://40400meals.com/recipes/honey-mustard-chicken-crunch-wrap.html", "hashtags": ["#HighProteinLunch", "#ChickenWrap", "#QuestChips", "#40400Meals"]},
+    "instagram": {"caption": "Crispy chicken and smoky BBQ crunch meet creamy honey mustard in this wrap with approximately 44g protein and 400 calories.", "hashtags": ["#HighProteinLunch", "#EasyMeals", "#40400Meals"]},
+    "facebook": {"caption": "This crispy honey mustard BBQ chicken crunch wrap has approximately 44g protein and 400 calories."}
+  },
+  "homepage": {"hidden": false, "priority": 46, "published_at": "2026-08-20T11:00:00-05:00", "summary": "Crispy Realgood chicken, romaine, creamy honey mustard, and smoky Quest BBQ chips for approximately 44 grams of protein.", "image_path": "outputs/images/pinterest/honey-mustard-chicken-crunch-wrap-pinterest-pin.png"}
+}

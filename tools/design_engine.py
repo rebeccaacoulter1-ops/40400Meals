@@ -84,8 +84,8 @@ CATEGORY_STYLES = {
         "energy": "quick and easy",
     },
     "general": {
-        "image_style": "bright natural light",
-        "photo_composition": "45-degree angle",
+        "image_style": "soft indirect premium food-blog window light",
+        "photo_composition": "tight premium food-blog editorial angle",
         "text_style": "clean and modern",
         "overlay_style": "minimal",
         "energy": "healthy and trustworthy",
@@ -116,7 +116,7 @@ def choose_design_strategy(platform="pinterest"):
         "recipe_category": recipe_category,
         "image_style": category_style["image_style"],
         "photo_composition": category_style["photo_composition"],
-        "color_mood": season,
+        "color_mood": "warm rich premium recipe-blog color with natural variation",
         "accent_colors": palette,
         "text_style": category_style["text_style"],
         "overlay_style": category_style["overlay_style"],
@@ -127,7 +127,7 @@ def choose_design_strategy(platform="pinterest"):
             "save_potential": "high",
             "click_potential": "high",
         },
-        "version": "1.0",
+        "version": "2.5",
         "status": "design_strategy_ready",
     }
 

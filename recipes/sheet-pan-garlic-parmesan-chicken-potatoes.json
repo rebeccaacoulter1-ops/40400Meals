@@ -1,0 +1,54 @@
+{
+  "recipe_id": "sheet-pan-garlic-parmesan-chicken-potatoes",
+  "recipe": {
+    "slug": "sheet-pan-garlic-parmesan-chicken-potatoes",
+    "title": "Sheet-Pan Garlic Parmesan Chicken & Potatoes",
+    "summary": "Roasted garlic-Parmesan chicken, baby potatoes, zucchini, and yellow squash make an easy family dinner with 45 grams of protein and 400 calories.",
+    "story": "Everything roasts on one pan, the potatoes get browned edges, and the Parmesan lands on both the chicken and vegetables. It is simple enough for a weeknight and normal enough that the kids will not stare at it like it came from another planet.",
+    "category": "Sheet-Pan Dinner",
+    "cuisine": "American",
+    "date_published": "2026-08-20",
+    "servings": 4,
+    "serving_size": "4.5 ounces cooked chicken, 4 ounces potatoes, 3 ounces squash, and 1.5 tablespoons Parmesan",
+    "times": {"prep_minutes": 10, "cook_minutes": 30, "total_minutes": 40},
+    "macros": {"calories": 400, "protein_g": 45, "carbs_g": 35, "fat_g": 10},
+    "ingredients": [
+      "1 1/2 pounds raw boneless skinless chicken breast, cut into large bite-size pieces",
+      "1 pound baby gold potatoes, quartered",
+      "6 ounces zucchini, cut into 3/4-inch half-moons",
+      "6 ounces yellow squash, cut into 3/4-inch half-moons",
+      "6 tablespoons freshly grated Parmesan cheese",
+      "1 tablespoon olive oil",
+      "1 tablespoon granulated garlic",
+      "1 tablespoon onion powder",
+      "1/2 tablespoon Italian seasoning",
+      "1 teaspoon salt",
+      "1 teaspoon black pepper",
+      "Nonstick cooking spray"
+    ],
+    "instructions": [
+      "Heat the oven to 425°F and coat a large rimmed sheet pan with cooking spray.",
+      "Toss the potatoes with half of the olive oil, half of the garlic, half of the Italian seasoning, and a pinch of the salt and pepper.",
+      "Spread the potatoes on the pan and roast for 15 minutes.",
+      "Meanwhile, toss the chicken, zucchini, and yellow squash with the remaining olive oil, garlic, Italian seasoning, onion powder, salt, and pepper.",
+      "Turn the potatoes, then add the chicken and squash to the pan in an even layer, placing as much squash cut-side down as possible.",
+      "Roast for 12 to 15 minutes, until the chicken reaches 165°F, the squash is browned at the edges, and the potatoes are tender.",
+      "Sprinkle the Parmesan over the hot pan and return it to the oven for 2 minutes.",
+      "Divide into four servings, with 4.5 ounces cooked chicken, 4 ounces potatoes, 3 ounces squash, and 1.5 tablespoons Parmesan in each serving."
+    ],
+    "tips": [
+      "Keep the chicken pieces fairly large so they do not dry out before the potatoes finish.",
+      "Use two pans if the ingredients are crowded; space creates browned edges instead of steam.",
+      "Cut the zucchini and yellow squash into thick 3/4-inch half-moons so they brown without becoming mushy.",
+      "Nutrition is approximate and varies with chicken and Parmesan brand."
+    ]
+  },
+  "seo": {"meta_title": "Sheet-Pan Garlic Parmesan Chicken | 45g Protein", "meta_description": "Easy garlic Parmesan chicken, potatoes, zucchini, and yellow squash roasted on one pan. 45g protein and 400 calories.", "keywords": ["sheet pan garlic parmesan chicken", "high protein sheet pan dinner", "chicken potatoes squash", "family meal prep recipe", "40 400 meals"]},
+  "images": {"hero_image_url": "https://40400meals.com/outputs/images/food_photos/sheet-pan-garlic-parmesan-chicken-potatoes-food-photo.png", "image_prompt": "A premium food-blog editorial plate of roasted bite-size garlic-Parmesan chicken breast, quartered baby gold potatoes with browned cut edges, thick half-moons of zucchini, and yellow squash with caramelized edges. A light, natural coating of grated Parmesan clings to the food. One believable serving with warm indirect natural light and realistic human-made variation.", "alt_text": "Sheet-pan garlic Parmesan chicken with roasted baby potatoes, zucchini, and yellow squash."},
+  "social": {
+    "pinterest": {"title": "Sheet-Pan Garlic Parmesan Chicken | 45g Protein", "description": "One pan, family-friendly ingredients, and 45g protein for 400 calories. Garlic Parmesan chicken with roasted potatoes, zucchini, and yellow squash.", "destination_url": "https://40400meals.com/recipes/sheet-pan-garlic-parmesan-chicken-potatoes.html", "hashtags": ["#SheetPanDinner", "#HighProteinDinner", "#ChickenRecipes", "#40400Meals"]},
+    "instagram": {"caption": "Garlic Parmesan chicken, golden potatoes, zucchini, and yellow squash on one pan. 45g protein and 400 calories.", "hashtags": ["#SheetPanDinner", "#HighProteinMeals", "#40400Meals"]},
+    "facebook": {"caption": "This family-friendly sheet-pan garlic Parmesan chicken dinner has 45g protein and 400 calories per serving."}
+  },
+  "homepage": {"hidden": false, "priority": 49, "published_at": "2026-08-20T14:00:00-05:00", "summary": "Roasted garlic-Parmesan chicken, baby potatoes, zucchini, and yellow squash with 45 grams of protein and 400 calories.", "image_path": "outputs/images/pinterest/sheet-pan-garlic-parmesan-chicken-potatoes-pinterest-pin.png"}
+}

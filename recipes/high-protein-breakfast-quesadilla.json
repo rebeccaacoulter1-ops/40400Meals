@@ -1,0 +1,57 @@
+{
+  "recipe_id": "high-protein-breakfast-quesadilla",
+  "recipe": {
+    "slug": "high-protein-breakfast-quesadilla",
+    "title": "High-Protein Breakfast Quesadilla",
+    "summary": "A crisp breakfast quesadilla stuffed with eggs, chicken sausage, cottage cheese, and cheddar for approximately 44 grams of protein and 395 calories.",
+    "story": "This is the kind of breakfast that actually holds you until lunch. Blended cottage cheese makes the eggs creamy, while chicken sausage and a crisp tortilla make it feel like a real breakfast instead of a sad little protein project.",
+    "category": "High-Protein Breakfast",
+    "cuisine": "American",
+    "date_published": "2026-08-20",
+    "servings": 1,
+    "serving_size": "1 quesadilla",
+    "times": {"prep_minutes": 5, "cook_minutes": 10, "total_minutes": 15},
+    "macros": {"calories": 395, "protein_g": 44, "carbs_g": 23, "fat_g": 16},
+    "ingredients": [
+      "1 large egg",
+      "1/2 cup Simple Truth Organic Cage Free 100% Liquid Egg Whites",
+      "1/4 cup Daisy 4% Cottage Cheese",
+      "2 Amylu Chicken Breakfast Sausage Links from the Costco club pack, chopped",
+      "1 Mission Carb Balance Soft Taco Flour Tortilla",
+      "2 tablespoons shredded reduced-fat cheddar cheese",
+      "1/4 teaspoon garlic powder",
+      "Pinch of salt and black pepper",
+      "Nonstick cooking spray"
+    ],
+    "instructions": [
+      "Blend the egg, egg whites, cottage cheese, garlic powder, salt, and pepper until mostly smooth.",
+      "Coat a nonstick skillet with cooking spray and place it over medium heat.",
+      "Add the chopped chicken sausage and cook for 2 minutes, until warmed and lightly browned.",
+      "Pour in the egg mixture and gently scramble until just set, 3 to 4 minutes. Transfer to a plate.",
+      "Place the tortilla in the skillet. Spoon the egg and sausage mixture over one half, sprinkle with cheddar, and fold the tortilla over.",
+      "Cook for 2 to 3 minutes per side, pressing gently, until crisp and the cheese has melted.",
+      "Rest for 1 minute, then cut into three wedges."
+    ],
+    "tips": [
+      "Keep the heat at medium so the tortilla crisps without burning.",
+      "The filling can be made the night before and reheated before assembling.",
+      "Nutrition is approximate and varies by sausage, tortilla, cottage cheese, and cheddar brand."
+    ]
+  },
+  "seo": {
+    "meta_title": "High-Protein Breakfast Quesadilla | 44g Protein",
+    "meta_description": "Easy breakfast quesadilla with eggs, Amylu chicken sausage, Daisy cottage cheese, and cheddar. Approximately 44g protein and 395 calories.",
+    "keywords": ["high protein breakfast quesadilla", "cottage cheese egg quesadilla", "chicken sausage breakfast", "macro friendly breakfast", "40 400 meals"]
+  },
+  "images": {
+    "hero_image_url": "https://40400meals.com/outputs/images/food_photos/high-protein-breakfast-quesadilla-food-photo.png",
+    "image_prompt": "A realistic homemade breakfast quesadilla cut into three wedges, showing soft scrambled egg, small browned pieces of chicken breakfast sausage, and lightly melted cheddar inside a crisp flour tortilla. One complete quesadilla serving on a simple ceramic plate.",
+    "alt_text": "Breakfast quesadilla wedges filled with egg, chicken sausage, cottage cheese, and cheddar."
+  },
+  "social": {
+    "pinterest": {"title": "High-Protein Breakfast Quesadilla | 44g Protein", "description": "Crisp, cheesy, and ready in 15 minutes. This easy breakfast quesadilla delivers approximately 44g protein for 395 calories.", "destination_url": "https://40400meals.com/recipes/high-protein-breakfast-quesadilla.html", "hashtags": ["#HighProteinBreakfast", "#BreakfastQuesadilla", "#EasyBreakfast", "#40400Meals"]},
+    "instagram": {"caption": "A crisp breakfast quesadilla with eggs, Amylu chicken sausage, Daisy cottage cheese, and cheddar. Approximately 44g protein and 395 calories.", "hashtags": ["#HighProteinBreakfast", "#MacroFriendly", "#40400Meals"]},
+    "facebook": {"caption": "This 15-minute breakfast quesadilla has approximately 44g protein and 395 calories, with eggs, Amylu chicken sausage, Daisy cottage cheese, and cheddar."}
+  },
+  "homepage": {"hidden": false, "priority": 45, "published_at": "2026-08-20T10:00:00-05:00", "summary": "Crisp breakfast quesadilla with eggs, Amylu chicken sausage, Daisy cottage cheese, and cheddar for approximately 44 grams of protein.", "image_path": "outputs/images/pinterest/high-protein-breakfast-quesadilla-pinterest-pin.png"}
+}

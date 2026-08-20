@@ -1,34 +1,42 @@
 {
   "brand": "40/400 Meals",
-  "visual_goal": "Realistic, approachable food photography that looks homemade, taste-tested, and genuinely served rather than digitally rendered.",
-  "prompt_version": "1.0",
+  "visual_goal": "Premium food-blog editorial photography with indirect natural light, intentional food architecture, craveable close-up texture, and believable human variation.",
+  "prompt_version": "2.5",
   "required_style": [
-    "Use soft natural window light with believable shadows.",
-    "Use casual, imperfect plating rather than commercial food styling.",
+    "Use soft directional restaurant window light with shaped, believable shadows rather than flat even illumination.",
+    "Use intentional premium food-blog styling with subtle human variation.",
     "Vary ingredient sizes, shapes, edges, spacing, and orientation.",
     "Allow ingredients to overlap, hide partially, and sit naturally in the dish.",
     "Use realistic portions that match one serving of the written recipe.",
-    "Keep colors restrained, textures believable, and saturation natural.",
-    "Use a simple wood table, neutral counter, or everyday kitchen setting.",
-    "Make the image feel like a strong real phone or food-blog photograph."
+    "Use rich, appetizing, controlled color with variation within each ingredient; avoid uniformly vivid greens, reds, yellows, or golden browning.",
+    "Allow natural cooked color variation, including paler interiors, darker edges, soft spots, and uneven seasoning.",
+    "Use a clean restaurant wood table, warm refined tabletop, or matte neutral stone surface.",
+    "Make the image feel like a polished premium recipe-blog hero photograph rather than a restaurant menu image.",
+    "Build natural height and dimension and choose one craveable cut edge, melty section, saucy area, or textured surface as the visual hero.",
+    "Use a tighter crop and gentle optical background softness so the food texture carries the image.",
+    "Allow at most one restrained neutral linen or simple utensil as a softly out-of-focus styling element when it improves the composition.",
+    "Vary camera angle, light direction, surface, crop, plate position, and background from one recipe to the next."
   ],
   "avoid": [
     "Perfect symmetry or centered geometric placement.",
-    "Evenly spaced toppings or repeated ingredient patterns.",
+    "Evenly spaced toppings, equal-size ingredient sections, clean food-category boundaries, or repeated ingredient patterns.",
     "Identical chicken cubes, vegetables, crisps, or garnish pieces.",
     "Plastic-looking lettuce, rubbery meat, excessive gloss, or airbrushed textures.",
     "Overfilled bowls or unrealistic ingredient quantities.",
     "Ingredients, garnish, sauces, sides, or decorations not listed in the recipe.",
     "Text, nutrition labels, logos, borders, badges, or interface elements inside the food photograph.",
-    "An overly polished advertisement or studio-rendered appearance."
+    "An overly polished advertisement or studio-rendered appearance.",
+    "HDR, excessive clarity, edge sharpening, heavy color grading, or uniformly crisp focus.",
+    "Every ingredient facing the camera or receiving equal visual emphasis.",
+    "The same centered bowl, 45-degree camera angle, lighting direction, and wood-table setup across every recipe."
   ],
   "composition": {
     "preferred_camera_angles": [
       "casual 45-degree angle",
       "natural overhead angle"
     ],
-    "centering": "Slightly imperfect framing is preferred. Do not center every object precisely.",
-    "depth_of_field": "Natural and restrained. Keep the meal clear without artificial blur.",
+    "centering": "Use off-center placement, slight rotation, and occasional natural edge cropping. Do not center every object precisely.",
+    "depth_of_field": "Natural and restrained, with tiny phone-camera focus falloff rather than uniformly crisp food from front to back.",
     "background": "Simple, warm, and believable with no unrelated food or decorative clutter."
   },
   "ingredient_accuracy": {
@@ -39,11 +47,13 @@
     "do_not_invent_common_recipe_ingredients": true
   },
   "realism_details": [
-    "A few natural crumbs, a lightly broken crisp, uneven dressing coverage, or a small sauce smear are acceptable.",
+    "A lightly broken crisp, gently uneven dressing coverage, a relaxed fold, or one irregular edge is acceptable while the plate remains clean.",
     "Some ingredients should be partially hidden or overlapping.",
     "Do not force every ingredient to face the camera.",
     "Do not make every ingredient equally visible.",
-    "Food should look freshly prepared and edible, not sculpted."
+    "Food should look freshly prepared and edible, not sculpted.",
+    "Ingredient categories may touch, overlap, blend at the edges, and partially cover one another.",
+    "Pieces of the same ingredient should show believable differences in size, doneness, color, moisture, and orientation."
   ],
   "output_rules": {
     "generate_food_photo_only": true,

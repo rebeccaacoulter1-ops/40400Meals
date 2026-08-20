@@ -1,0 +1,55 @@
+{
+  "recipe_id": "loaded-cheeseburger-protein-bowl",
+  "recipe": {
+    "slug": "loaded-cheeseburger-protein-bowl",
+    "title": "Loaded Cheeseburger Protein Bowl",
+    "summary": "Seasoned lean beef, crispy crinkle fries, cheddar, pickles, lettuce, tomato, and burger sauce for approximately 42 grams of protein and 405 calories.",
+    "story": "All the best parts of a loaded cheeseburger land in one fork-friendly bowl. Air-fried crinkle fries keep it satisfying, while a Greek-yogurt burger sauce brings the drive-through flavor without turning dinner into a calorie ambush.",
+    "category": "High-Protein Dinner",
+    "cuisine": "American",
+    "date_published": "2026-08-20",
+    "servings": 1,
+    "serving_size": "1 bowl",
+    "times": {"prep_minutes": 10, "cook_minutes": 20, "total_minutes": 30},
+    "macros": {"calories": 405, "protein_g": 42, "carbs_g": 35, "fat_g": 14},
+    "ingredients": [
+      "5 ounces raw 96% lean ground beef",
+      "3 ounces Simple Truth Crinkle-Cut Frozen French Fries",
+      "1 1/2 cups chopped romaine lettuce",
+      "1/2 cup chopped tomato",
+      "1/4 cup dill pickle chips",
+      "2 tablespoons shredded reduced-fat cheddar cheese",
+      "2 tablespoons nonfat plain Greek yogurt",
+      "1 teaspoon ketchup",
+      "1 teaspoon yellow mustard",
+      "1/2 teaspoon dill pickle juice",
+      "1/4 teaspoon smoked paprika",
+      "1/2 teaspoon garlic powder, divided",
+      "1/4 teaspoon onion powder",
+      "Salt and black pepper",
+      "Nonstick cooking spray"
+    ],
+    "instructions": [
+      "Preheat the air fryer according to its manufacturer instructions.",
+      "Air-fry the Simple Truth crinkle fries without added oil according to the package directions, shaking the basket halfway through, until crisp and golden.",
+      "Meanwhile, cook the ground beef in a nonstick skillet over medium-high heat with half of the garlic powder, the onion powder, salt, and pepper. Break it into crumbles and cook until no pink remains.",
+      "Stir together the Greek yogurt, ketchup, mustard, pickle juice, smoked paprika, and the remaining garlic powder to make the burger sauce.",
+      "Arrange the romaine, tomato, pickles, crispy crinkle fries, and cooked beef in a bowl.",
+      "Sprinkle with cheddar and drizzle with the burger sauce."
+    ],
+    "tips": [
+      "Weigh the frozen fries before cooking for the most consistent serving and nutrition estimate.",
+      "Keep the sauce and hot ingredients separate for meal prep, then assemble after reheating.",
+      "The pickle juice thins the yogurt and gives the sauce a tangy, Big Mac-style burger flavor without mayonnaise.",
+      "Nutrition is approximate and varies by beef, cheese, ketchup, and yogurt brand."
+    ]
+  },
+  "seo": {"meta_title": "Loaded Cheeseburger Protein Bowl | 42g Protein", "meta_description": "Lean beef cheeseburger bowl with crispy crinkle fries, pickles, cheddar, and Greek yogurt burger sauce. About 42g protein.", "keywords": ["cheeseburger protein bowl", "healthy burger bowl with fries", "high protein ground beef dinner", "macro friendly dinner", "40 400 meals"]},
+  "images": {"hero_image_url": "https://40400meals.com/outputs/images/food_photos/loaded-cheeseburger-protein-bowl-food-photo.png", "image_prompt": "A premium food-blog editorial photograph of a loaded cheeseburger bowl with crumbled lean ground beef, crispy golden crinkle-cut fries, chopped romaine, chopped tomato, dill pickle chips, a modest sprinkle of cheddar, and a light drizzle of pale burger sauce. The crispy fries and browned beef are the hero textures. One believable serving in a shallow bowl.", "alt_text": "Loaded cheeseburger bowl with lean beef, crinkle fries, pickles, lettuce, tomato, cheddar, and burger sauce."},
+  "social": {
+    "pinterest": {"title": "Loaded Cheeseburger Protein Bowl | 42g Protein", "description": "Burger night, bowl style. Lean beef, crispy potatoes, pickles, cheddar, and creamy burger sauce deliver approximately 42g protein for 405 calories.", "destination_url": "https://40400meals.com/recipes/loaded-cheeseburger-protein-bowl.html", "hashtags": ["#BurgerBowl", "#HighProteinDinner", "#GroundBeefRecipes", "#40400Meals"]},
+    "instagram": {"caption": "A loaded cheeseburger bowl with crispy potatoes, pickles, cheddar, and burger sauce. Approximately 42g protein and 405 calories.", "hashtags": ["#BurgerBowl", "#HighProteinMeals", "#40400Meals"]},
+    "facebook": {"caption": "All the cheeseburger flavor, plus crispy potatoes, in one approximately 405-calorie bowl with 42g protein."}
+  },
+  "homepage": {"hidden": false, "priority": 47, "published_at": "2026-08-20T12:00:00-05:00", "summary": "Lean beef, crispy crinkle fries, cheddar, pickles, lettuce, tomato, and burger sauce for approximately 42 grams of protein.", "image_path": "outputs/images/pinterest/loaded-cheeseburger-protein-bowl-pinterest-pin.png"}
+}

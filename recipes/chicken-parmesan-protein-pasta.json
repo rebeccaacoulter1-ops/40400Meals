@@ -1,0 +1,54 @@
+{
+  "recipe_id": "chicken-parmesan-protein-pasta",
+  "recipe": {
+    "slug": "chicken-parmesan-protein-pasta",
+    "title": "Crispy Chicken Parmesan Protein Spaghetti",
+    "summary": "A crispy Realgood chicken fillet with melted mozzarella and Parmesan served over protein spaghetti and tomato-basil sauce for 41 grams of protein and 455 calories.",
+    "story": "This is chicken Parmesan on a Tuesday-night timetable. A ready-to-air-fry Realgood chicken fillet supplies the crispy coating, while Barilla Protein+ Spaghetti cooks directly in chicken bone broth for more flavor and no draining.",
+    "category": "High-Protein Dinner",
+    "cuisine": "Italian-American",
+    "date_published": "2026-08-20",
+    "servings": 4,
+    "serving_size": "1 chicken fillet, 3.75 ounces cooked spaghetti, and 1/2 cup tomato-basil sauce",
+    "times": {"prep_minutes": 10, "cook_minutes": 25, "total_minutes": 35},
+    "macros": {"calories": 455, "protein_g": 41, "carbs_g": 49, "fat_g": 13},
+    "ingredients": [
+      "4 Realgood Foods Lightly Breaded Chicken Breast Fillets",
+      "6 ounces dry Barilla Protein+ Spaghetti",
+      "2 cups Simple Truth chicken bone broth, plus more if needed",
+      "2 cups Simple Truth Organic No Sugar Added Tomato Basil Pasta Sauce",
+      "1/2 cup shredded part-skim mozzarella cheese",
+      "2 tablespoons freshly grated Parmesan cheese",
+      "1 teaspoon Italian seasoning",
+      "1 tablespoon granulated garlic",
+      "1 tablespoon onion powder",
+      "1/2 teaspoon salt",
+      "1/4 teaspoon black pepper",
+      "Nonstick cooking spray"
+    ],
+    "instructions": [
+      "Heat the air fryer or oven according to the Realgood chicken package directions.",
+      "Arrange the four chicken fillets in a single layer and begin cooking them according to the package directions.",
+      "Place the dry spaghetti in a wide, deep skillet and pour in 2 cups chicken bone broth. Add the garlic, onion powder, Italian seasoning, salt, and pepper.",
+      "Bring the broth to a gentle boil, then reduce to a simmer. Cook uncovered for 9 to 11 minutes, stirring frequently so the spaghetti does not stick. If the liquid absorbs before the pasta is tender, add more bone broth 2 tablespoons at a time.",
+      "Warm the tomato-basil sauce separately over medium-low heat.",
+      "Two minutes before the chicken is finished, pull out the air-fryer basket or baking sheet. Sprinkle each fillet with 2 tablespoons mozzarella and 1/2 tablespoon Parmesan.",
+      "Return the chicken for the final 2 minutes, until the cheese is melted and the chicken reaches 165°F.",
+      "Divide the cooked spaghetti into four 3.75-ounce portions. Spoon 1/2 cup warm tomato-basil sauce over each portion, then place one crispy cheese-topped chicken fillet on top. Serve immediately."
+    ],
+    "tips": [
+      "Keep the tomato-basil sauce on the spaghetti rather than the chicken so the breading stays crisp.",
+      "Use a food scale after cooking to portion 3.75 ounces of spaghetti per serving.",
+      "Use Simple Truth chicken bone broth and Organic No Sugar Added Tomato Basil Pasta Sauce for the listed nutrition.",
+      "Nutrition varies with the exact product labels and the amount of bone broth absorbed."
+    ]
+  },
+  "seo": {"meta_title": "Crispy Chicken Parmesan Spaghetti | 41g Protein", "meta_description": "Crispy Realgood chicken Parmesan with Barilla Protein+ Spaghetti, tomato-basil sauce, mozzarella, and Parmesan. 41g protein and 455 calories.", "keywords": ["chicken parmesan protein spaghetti", "high protein chicken parmesan", "Barilla Protein Plus spaghetti recipe", "Realgood chicken fillet recipe", "40 400 meals"]},
+  "images": {"hero_image_url": "https://40400meals.com/outputs/images/food_photos/chicken-parmesan-protein-pasta-food-photo.png", "image_prompt": "A premium food-blog editorial photograph of one whole crispy lightly breaded chicken breast fillet topped directly with melted mozzarella and grated Parmesan, resting over Barilla Protein+ Spaghetti coated in red tomato-basil sauce. Keep the red sauce on the spaghetti and off the crisp chicken breading. The golden chicken cutlet and melted cheese are the hero textures. One believable restaurant-style serving in a shallow pasta bowl.", "alt_text": "Crispy cheese-topped chicken Parmesan fillet over tomato-basil protein spaghetti."},
+  "social": {
+    "pinterest": {"title": "Crispy Chicken Parmesan Spaghetti | 41g Protein", "description": "Crispy Realgood chicken with melted cheese over tomato-basil protein spaghetti. 41g protein and 455 calories per serving.", "destination_url": "https://40400meals.com/recipes/chicken-parmesan-protein-pasta.html", "hashtags": ["#HighProteinPasta", "#ChickenParmesan", "#EasyDinner", "#40400Meals"]},
+    "instagram": {"caption": "Crispy chicken Parmesan with melted cheese over tomato-basil protein spaghetti. 41g protein and 455 calories per serving.", "hashtags": ["#HighProteinPasta", "#EasyDinner", "#40400Meals"]},
+    "facebook": {"caption": "This shortcut crispy chicken Parmesan protein spaghetti has 41g protein and 455 calories per serving."}
+  },
+  "homepage": {"hidden": false, "priority": 48, "published_at": "2026-08-20T13:00:00-05:00", "summary": "Crispy cheese-topped chicken Parmesan over tomato-basil protein spaghetti with 41 grams of protein.", "image_path": "outputs/images/pinterest/chicken-parmesan-protein-pasta-pinterest-pin.png"}
+}

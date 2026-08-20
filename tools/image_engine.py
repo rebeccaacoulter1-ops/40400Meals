@@ -23,7 +23,7 @@ client = OpenAI(api_key=os.environ["OPENAI_API_KEY"])
 # are not regenerated merely because packaged-snack support was added.
 # -----------------------------
 
-PROMPT_VERSION = "2.2-restaurant-human-realism"
+PROMPT_VERSION = "2.5-premium-food-blog-editorial"
 
 
 # -----------------------------
@@ -32,6 +32,7 @@ PROMPT_VERSION = "2.2-restaurant-human-realism"
 
 RECIPES_DIR = Path("recipes")
 DESIGN_FILE = Path("outputs/design/selected_template.json")
+STYLE_FILE = Path("config/food_image_style.json")
 OUTPUT_DIR = Path("outputs/images/pinterest")
 PHOTO_DIR = Path("outputs/images/food_photos")
 PHOTO_METADATA_DIR = Path("outputs/images/food_photo_metadata")
@@ -51,6 +52,46 @@ def save_json(path, data):
 
     with open(path, "w", encoding="utf-8") as f:
         json.dump(data, f, indent=2)
+
+
+def load_photo_style():
+    if not STYLE_FILE.exists():
+        return {}
+
+    return load_json(STYLE_FILE)
+
+
+def choose_human_photo_direction(slug):
+    """Vary repeatable photo details so the recipe grid does not look cloned."""
+    digest = hashlib.sha256(slug.encode("utf-8")).digest()
+
+    camera_angles = [
+        "polished 45-degree editorial food-photography angle",
+        "refined overhead editorial angle with natural asymmetry",
+        "low three-quarter restaurant-table angle",
+    ]
+    light_directions = [
+        "soft diffused restaurant window light entering from the left",
+        "warm directional window light entering from the right",
+        "diffused backlight from a restaurant window with gentle side fill",
+    ]
+    surfaces = [
+        "a clean medium-tone restaurant wood table",
+        "a refined warm neutral tabletop",
+        "a matte neutral stone restaurant table",
+    ]
+    framing = [
+        "plate slightly left of center with intentional negative space",
+        "bowl slightly right of center with balanced breathing room",
+        "close editorial framing with the dish subtly angled to the camera",
+    ]
+
+    return {
+        "camera_angle": camera_angles[digest[0] % len(camera_angles)],
+        "lighting": light_directions[digest[1] % len(light_directions)],
+        "surface": surfaces[digest[2] % len(surfaces)],
+        "framing": framing[digest[3] % len(framing)],
+    }
 
 
 def get_font(size, bold=False):
@@ -336,25 +377,22 @@ def build_prepared_recipe_prompt(recipe, design):
 
     instruction_text = get_instruction_text(recipe["instructions"])
 
-    image_style = design.get(
-        "image_style",
-        "soft, slightly uneven natural window light"
+    style = load_photo_style()
+    direction = choose_human_photo_direction(recipe["slug"])
+    required_style = "\n".join(
+        f"- {item}" for item in style.get("required_style", [])
     )
-    photo_composition = design.get(
-        "photo_composition",
-        "casual 45-degree angle, handheld feel, not perfectly centered"
-    )
-    color_mood = design.get(
-        "color_mood",
-        "warm neutral, slightly muted"
+    avoid_style = "\n".join(
+        f"- {item}" for item in style.get("avoid", [])
     )
 
     prompt = f"""
-Create a photorealistic photo of the finished recipe named "{title}",
-photographed like an appealing dish genuinely served at a neighborhood
-restaurant or captured by an experienced food blogger in natural window
-light. Make it appetizing but naturally plated, not commercially styled,
-digitally rendered, airbrushed, or artificially perfect.
+Create a photorealistic premium food-blog editorial photo of the finished
+recipe named "{title}". Capture it like a skilled recipe photographer using
+indirect natural window light, deliberate food architecture, rich close-up
+texture, and a clear appetizing focal point. Make it beautifully and
+intentionally styled, but not digitally rendered, airbrushed, sterile, or
+artificially perfect.
 
 EXACT ALLOWED INGREDIENTS:
 {ingredient_text}
@@ -377,28 +415,49 @@ INGREDIENT ACCURACY RULES:
 REALISTIC, IMPERFECT PLATING:
 - Ingredients should overlap and blend naturally rather than sitting in clean,
   separated quadrants.
+- Do not arrange every food category in its own tidy, equally sized section.
+- Let some ingredients be partly covered, turned away, cut unevenly, or less
+  visible than others. Not every ingredient needs to be showcased.
 - Sauce should look spooned on by hand with believable, uneven coverage.
 - Vary ingredient piece sizes, edges, spacing, and orientation.
-- Slight realism is good: natural crumbs, a tiny sauce smear, and imperfect
-  centering are acceptable.
+- Keep the plate clean and appealing while retaining subtle human variation:
+  one irregular edge, a naturally relaxed fold, or gently uneven sauce coverage.
+- Build height and dimension naturally when the dish allows it. Select one
+  appetizing cut edge, saucy area, melty section, or textured surface as the
+  hero detail rather than making every part compete equally.
+- Allow believable cooked color variation within the same ingredient: some
+  browned edges, paler interior pieces, softer vegetables, and uneven seasoning.
 - Avoid repeated patterns, cloned ingredients, symmetry, neon colors, plastic
   texture, or excessive gloss.
 - Preserve believable cooked textures.
 
 PHOTOREALISM REQUIREMENTS:
 - Must look like an actual unedited photograph, not an illustration or render.
-- Use believable ingredient colors, restrained saturation, natural shadows,
-  gentle grain, and realistic depth of field.
-- Include a simple restaurant table, wood surface, or stone countertop with
-  subtle natural texture.
+- Use rich but true-to-life ingredient colors. Keep saturation controlled,
+  highlights gentle, white balance natural, and contrast polished but moderate.
+  Do not make greens uniformly vivid or reds uniformly bright.
+- Use realistic professional-camera detail, natural lens perspective, and
+  gentle optical depth of field. Do not apply HDR, excessive clarity, edge
+  sharpening, plastic smoothing, or heavy advertising-style retouching.
+- Background surface: {direction["surface"]}.
+- Allow at most one restrained neutral styling element, such as a softly folded
+  linen napkin or simple utensil, placed partly out of focus and never covering
+  the food. Do not add styling props when they make the scene feel crowded.
 
 PHOTOGRAPHY DIRECTION:
-- Lighting: {image_style}
-- Camera composition: {photo_composition}
-- Color mood: {color_mood}
+- Lighting: {direction["lighting"]}; avoid even front lighting.
+- Camera composition: {direction["camera_angle"]}.
+- Framing: {direction["framing"]}.
+- Color mood: warm, appetizing restaurant-editorial color that remains natural.
 - Food remains the clear focal point
 - No people, hands, text overlay, logos, labels, or packaging
 - No decorative ingredients not included in the recipe
+
+GLOBAL 40/400 PHOTO STYLE:
+{required_style}
+
+AVOID:
+{avoid_style}
 
 Create one square photograph with no text overlay.
 """
