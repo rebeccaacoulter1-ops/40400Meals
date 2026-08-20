@@ -356,6 +356,81 @@
           }
         }
       }
+    },
+    "chicken-parmesan-protein-pasta": {
+      "created_at_utc": "2026-08-20T17:11:56.591451+00:00",
+      "updated_at_utc": "2026-08-20T17:11:56.591468+00:00",
+      "steps": {
+        "pinterest": {
+          "complete": true,
+          "completed_at_utc": "2026-08-20T17:11:56.591468+00:00",
+          "details": {
+            "destination_url": "https://40400meals.com/recipes/chicken-parmesan-protein-pasta.html",
+            "image_url": "https://40400meals.com/outputs/images/pinterest/chicken-parmesan-protein-pasta-pinterest-pin.png",
+            "file_name": "chicken-parmesan-protein-pasta-pinterest.json"
+          }
+        }
+      }
+    },
+    "high-protein-breakfast-quesadilla": {
+      "created_at_utc": "2026-08-20T17:11:57.061833+00:00",
+      "updated_at_utc": "2026-08-20T17:11:57.061848+00:00",
+      "steps": {
+        "pinterest": {
+          "complete": true,
+          "completed_at_utc": "2026-08-20T17:11:57.061848+00:00",
+          "details": {
+            "destination_url": "https://40400meals.com/recipes/high-protein-breakfast-quesadilla.html",
+            "image_url": "https://40400meals.com/outputs/images/pinterest/high-protein-breakfast-quesadilla-pinterest-pin.png",
+            "file_name": "high-protein-breakfast-quesadilla-pinterest.json"
+          }
+        }
+      }
+    },
+    "honey-mustard-chicken-crunch-wrap": {
+      "created_at_utc": "2026-08-20T17:11:57.511510+00:00",
+      "updated_at_utc": "2026-08-20T17:11:57.511526+00:00",
+      "steps": {
+        "pinterest": {
+          "complete": true,
+          "completed_at_utc": "2026-08-20T17:11:57.511526+00:00",
+          "details": {
+            "destination_url": "https://40400meals.com/recipes/honey-mustard-chicken-crunch-wrap.html",
+            "image_url": "https://40400meals.com/outputs/images/pinterest/honey-mustard-chicken-crunch-wrap-pinterest-pin.png",
+            "file_name": "honey-mustard-chicken-crunch-wrap-pinterest.json"
+          }
+        }
+      }
+    },
+    "loaded-cheeseburger-protein-bowl": {
+      "created_at_utc": "2026-08-20T17:11:58.040799+00:00",
+      "updated_at_utc": "2026-08-20T17:11:58.040814+00:00",
+      "steps": {
+        "pinterest": {
+          "complete": true,
+          "completed_at_utc": "2026-08-20T17:11:58.040814+00:00",
+          "details": {
+            "destination_url": "https://40400meals.com/recipes/loaded-cheeseburger-protein-bowl.html",
+            "image_url": "https://40400meals.com/outputs/images/pinterest/loaded-cheeseburger-protein-bowl-pinterest-pin.png",
+            "file_name": "loaded-cheeseburger-protein-bowl-pinterest.json"
+          }
+        }
+      }
+    },
+    "sheet-pan-garlic-parmesan-chicken-potatoes": {
+      "created_at_utc": "2026-08-20T17:11:58.540107+00:00",
+      "updated_at_utc": "2026-08-20T17:11:58.540124+00:00",
+      "steps": {
+        "pinterest": {
+          "complete": true,
+          "completed_at_utc": "2026-08-20T17:11:58.540124+00:00",
+          "details": {
+            "destination_url": "https://40400meals.com/recipes/sheet-pan-garlic-parmesan-chicken-potatoes.html",
+            "image_url": "https://40400meals.com/outputs/images/pinterest/sheet-pan-garlic-parmesan-chicken-potatoes-pinterest-pin.png",
+            "file_name": "sheet-pan-garlic-parmesan-chicken-potatoes-pinterest.json"
+          }
+        }
+      }
     }
   }
 }
