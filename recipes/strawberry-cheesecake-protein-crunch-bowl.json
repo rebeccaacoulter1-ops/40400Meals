@@ -1,0 +1,18 @@
+{
+  "recipe_id": "strawberry-cheesecake-protein-crunch-bowl",
+  "recipe": {
+    "slug": "strawberry-cheesecake-protein-crunch-bowl", "title": "Strawberry Cheesecake Protein Crunch Bowl",
+    "summary": "Creamy strawberry-cheesecake protein yogurt topped with fresh strawberries and crunchy graham cracker.",
+    "story": "One scoop of strawberry cheesecake protein turns plain Greek yogurt into a five-minute dessert-style bowl without pudding mix or cottage cheese.",
+    "category": "High-Protein Snack", "cuisine": "American", "date_published": "2026-08-21", "servings": 1, "serving_size": "1 protein crunch bowl",
+    "times": {"prep_minutes": 5, "cook_minutes": 0, "total_minutes": 5},
+    "macros": {"calories": 340, "protein_g": 42, "carbs_g": 38, "fat_g": 3},
+    "ingredients": ["1 cup Chobani Nonfat Plain Greek Yogurt", "1 scoop Clean Simple Eats Strawberry Cheesecake Protein Powder", "2 tablespoons water", "1 cup sliced fresh strawberries", "1 full Honey Maid Graham Cracker sheet, crushed"],
+    "instructions": ["Stir or blend the Greek yogurt, protein powder, and water until completely smooth.", "Spoon the cheesecake mixture into a bowl.", "Top with the sliced strawberries.", "Crush the graham cracker over the bowl immediately before serving."],
+    "tips": ["For meal prep, store the graham cracker separately and add it immediately before serving.", "Nutrition varies by yogurt, protein powder, and graham cracker brand."]
+  },
+  "seo": {"meta_title": "Strawberry Cheesecake Protein Bowl | 42g Protein", "meta_description": "Five-minute strawberry cheesecake protein yogurt bowl with fresh berries and graham cracker crunch. 42g protein.", "keywords": ["strawberry cheesecake protein bowl", "high protein dessert", "protein yogurt bowl", "clean simple eats recipe", "40 400 meals"]},
+  "images": {"hero_image_url": "https://40400meals.com/outputs/images/food_photos/strawberry-cheesecake-protein-crunch-bowl-food-photo.png", "image_prompt": "Premium food-blog editorial bowl of thick pale-pink strawberry cheesecake protein yogurt topped with fresh sliced strawberries and a visible layer of crushed honey graham cracker. Bright natural light, realistic creamy texture, and simple homemade presentation.", "alt_text": "Strawberry cheesecake protein yogurt bowl with sliced strawberries and graham cracker crunch."},
+  "social": {"pinterest": {"title": "Strawberry Cheesecake Protein Bowl | 42g Protein", "description": "Creamy strawberry cheesecake protein yogurt, fresh berries, and graham cracker crunch in five minutes.", "destination_url": "https://40400meals.com/recipes/strawberry-cheesecake-protein-crunch-bowl.html", "hashtags": ["#ProteinDessert", "#YogurtBowl", "#HighProteinSnack", "#40400Meals"]}, "instagram": {"caption": "Strawberry cheesecake protein yogurt with fresh berries and graham crunch. 42g protein.", "hashtags": ["#ProteinDessert", "#HighProteinSnack", "#40400Meals"]}, "facebook": {"caption": "This five-minute strawberry cheesecake protein crunch bowl has 42g protein and no pudding mix."}},
+  "homepage": {"hidden": false, "priority": 54, "published_at": "2026-08-21T13:00:00-05:00", "summary": "Strawberry cheesecake protein yogurt with berries and graham cracker crunch.", "image_path": "outputs/images/pinterest/strawberry-cheesecake-protein-crunch-bowl-pinterest-pin.png"}
+}
