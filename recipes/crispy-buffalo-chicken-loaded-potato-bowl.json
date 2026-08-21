@@ -1,0 +1,20 @@
+{
+  "recipe_id": "crispy-buffalo-chicken-loaded-potato-bowl",
+  "recipe": {
+    "slug": "crispy-buffalo-chicken-loaded-potato-bowl",
+    "title": "Crispy Buffalo Chicken Loaded Potato Bowl",
+    "summary": "Crispy potatoes and buffalo chicken finished with smooth cottage-cheese ranch, cheddar, celery, and green onion.",
+    "story": "This bowl has everything a loaded buffalo chicken plate should have: crisp potatoes, spicy chicken, creamy ranch, melted cheese, and fresh crunch.",
+    "category": "High-Protein Bowl", "cuisine": "American", "date_published": "2026-08-21", "servings": 1,
+    "serving_size": "1 loaded potato bowl",
+    "times": {"prep_minutes": 5, "cook_minutes": 15, "total_minutes": 20},
+    "macros": {"calories": 400, "protein_g": 42, "carbs_g": 35, "fat_g": 14},
+    "ingredients": ["3/4 cup Simply Potatoes Diced Potatoes", "4 ounces Realgood Lightly Breaded Chicken Strips", "1/2 cup Daisy 4% Cottage Cheese", "1 teaspoon dry ranch seasoning", "1 tablespoon water", "1 tablespoon buffalo sauce", "2 tablespoons reduced-fat shredded cheddar cheese", "2 tablespoons finely diced celery", "1 tablespoon sliced green onion", "1/2 teaspoon garlic powder", "Salt and pepper to taste", "Nonstick cooking spray"],
+    "instructions": ["Preheat the air fryer to 400°F.", "Place the diced potatoes in the air-fryer basket. Lightly coat them with cooking spray and season with the garlic powder, salt, and pepper.", "Air-fry the potatoes for 12 to 15 minutes, shaking the basket halfway through, until browned and crispy.", "Cook the chicken strips according to the air-fryer directions on the package. Cut the cooked chicken into bite-sized pieces and toss with the buffalo sauce.", "Blend the cottage cheese, ranch seasoning, and water until completely smooth and pourable.", "Place the crispy potatoes in a bowl. Add the buffalo chicken and sprinkle the cheddar over the hot chicken.", "Spoon the blended cottage-cheese ranch over the bowl. Finish with the celery and green onion."],
+    "tips": ["Add the cottage-cheese ranch after cooking so it stays cool and creamy.", "Nutrition varies by chicken, ranch seasoning, buffalo sauce, and cheddar brand."]
+  },
+  "seo": {"meta_title": "Buffalo Chicken Loaded Potato Bowl | 42g Protein", "meta_description": "Crispy buffalo chicken and potatoes with blended cottage-cheese ranch. An easy high-protein meal with 42g protein.", "keywords": ["buffalo chicken potato bowl", "high protein potato bowl", "cottage cheese ranch", "easy air fryer dinner", "40 400 meals"]},
+  "images": {"hero_image_url": "https://40400meals.com/outputs/images/food_photos/crispy-buffalo-chicken-loaded-potato-bowl-food-photo.png", "image_prompt": "Premium food-blog editorial bowl with crisp golden diced potatoes, bite-size crispy buffalo chicken, a creamy white cottage-cheese ranch drizzle, a small amount of melted cheddar, diced celery, and sliced green onion. Realistic homemade texture and warm natural light.", "alt_text": "Buffalo chicken loaded potato bowl with cottage-cheese ranch, cheddar, celery, and green onion."},
+  "social": {"pinterest": {"title": "Crispy Buffalo Chicken Potato Bowl | 42g Protein", "description": "Crispy potatoes, buffalo chicken, and creamy blended cottage-cheese ranch in one satisfying high-protein bowl.", "destination_url": "https://40400meals.com/recipes/crispy-buffalo-chicken-loaded-potato-bowl.html", "hashtags": ["#BuffaloChicken", "#HighProteinMeals", "#AirFryerRecipes", "#40400Meals"]}, "instagram": {"caption": "Crispy buffalo chicken and potatoes with smooth cottage-cheese ranch. 42g protein and 400 calories.", "hashtags": ["#HighProteinMeals", "#BuffaloChicken", "#40400Meals"]}, "facebook": {"caption": "This crispy buffalo chicken loaded potato bowl has 42g protein and a creamy cottage-cheese ranch topping."}},
+  "homepage": {"hidden": false, "priority": 50, "published_at": "2026-08-21T09:00:00-05:00", "summary": "Crispy buffalo chicken and potatoes with blended cottage-cheese ranch.", "image_path": "outputs/images/pinterest/crispy-buffalo-chicken-loaded-potato-bowl-pinterest-pin.png"}
+}
