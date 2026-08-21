@@ -100,6 +100,66 @@ def choose_human_photo_direction(slug):
     }
 
 
+def choose_presentation_template(recipe, style):
+    """Choose a stable, recipe-appropriate serving vessel for new photos."""
+    image_settings = recipe.get("images", {}) or {}
+    requested = str(
+        image_settings.get("presentation_template", "")
+    ).strip()
+
+    rotation = style.get("presentation_rotation", {}) or {}
+    templates = rotation.get("templates", {}) or {}
+
+    if requested:
+        return templates.get(requested, requested)
+
+    if not rotation.get("enabled", False):
+        return ""
+
+    start_date = str(
+        rotation.get("apply_to_recipes_published_on_or_after", "")
+    ).strip()
+    published_date = str(recipe.get("date_published", "")).strip()
+
+    # Preserve the prompt hash and cached image for every approved legacy photo.
+    if start_date and (not published_date or published_date < start_date):
+        return ""
+
+    text = " ".join(
+        [
+            str(recipe.get("title", "")),
+            str(recipe.get("category", "")),
+        ]
+    ).lower()
+
+    if any(word in text for word in ("soup", "chili", "stew")):
+        group_name = "soup_or_chili"
+    elif any(word in text for word in ("wrap", "burrito", "quesadilla", "sandwich")):
+        group_name = "handheld"
+    elif any(word in text for word in ("pasta", "spaghetti", "penne", "alfredo")):
+        group_name = "pasta"
+    elif any(word in text for word in ("skillet", "steak bites")):
+        group_name = "skillet"
+    elif any(word in text for word in ("sheet-pan", "sheet pan", "baked", "casserole")):
+        group_name = "baked"
+    elif any(word in text for word in ("dessert", "cheesecake", "yogurt", "parfait", "mug cake", "shake")):
+        group_name = "dessert"
+    elif "bowl" in text:
+        group_name = "bowl"
+    else:
+        group_name = "general"
+
+    groups = rotation.get("groups", {}) or {}
+    choices = groups.get(group_name) or groups.get("general") or []
+
+    if not choices:
+        return ""
+
+    digest = hashlib.sha256(recipe["slug"].encode("utf-8")).digest()
+    template_name = choices[digest[4] % len(choices)]
+    return templates.get(template_name, "")
+
+
 def get_font(size, bold=False):
     font_paths = [
         (
@@ -214,6 +274,8 @@ def normalize_recipe(data, recipe_file):
             "protein": recipe.get("macros", {}).get("protein_g", ""),
             "calories": recipe.get("macros", {}).get("calories", ""),
             "images": image_settings,
+            "category": recipe.get("category", ""),
+            "date_published": recipe.get("date_published", ""),
             "_source_file": str(recipe_file),
         }
 
@@ -235,6 +297,8 @@ def normalize_recipe(data, recipe_file):
         "protein": data.get("protein", ""),
         "calories": data.get("calories", ""),
         "images": image_settings,
+        "category": data.get("category", ""),
+        "date_published": data.get("date_published", ""),
         "_source_file": str(recipe_file),
     }
 
@@ -387,6 +451,12 @@ def build_prepared_recipe_prompt(recipe, design):
 
     style = load_photo_style()
     direction = choose_human_photo_direction(recipe["slug"])
+    presentation = choose_presentation_template(recipe, style)
+    presentation_direction = (
+        f'- Serving vessel and presentation: {presentation}'
+        if presentation
+        else ""
+    )
     required_style = "\n".join(
         f"- {item}" for item in style.get("required_style", [])
     )
@@ -456,6 +526,7 @@ PHOTOGRAPHY DIRECTION:
 - Lighting: {direction["lighting"]}; avoid even front lighting.
 - Camera composition: {direction["camera_angle"]}.
 - Framing: {direction["framing"]}.
+{presentation_direction}
 - Color mood: warm, appetizing restaurant-editorial color that remains natural.
 - Food remains the clear focal point
 - No people, hands, text overlay, logos, labels, or packaging
