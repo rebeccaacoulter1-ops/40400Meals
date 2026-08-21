@@ -431,6 +431,81 @@
           }
         }
       }
+    },
+    "creamy-chicken-poblano-skillet": {
+      "created_at_utc": "2026-08-21T18:40:10.899408+00:00",
+      "updated_at_utc": "2026-08-21T18:40:10.899425+00:00",
+      "steps": {
+        "pinterest": {
+          "complete": true,
+          "completed_at_utc": "2026-08-21T18:40:10.899425+00:00",
+          "details": {
+            "destination_url": "https://40400meals.com/recipes/creamy-chicken-poblano-skillet.html",
+            "image_url": "https://40400meals.com/outputs/images/pinterest/creamy-chicken-poblano-skillet-pinterest-pin.png",
+            "file_name": "creamy-chicken-poblano-skillet-pinterest.json"
+          }
+        }
+      }
+    },
+    "crispy-buffalo-chicken-loaded-potato-bowl": {
+      "created_at_utc": "2026-08-21T18:40:11.308843+00:00",
+      "updated_at_utc": "2026-08-21T18:40:11.308861+00:00",
+      "steps": {
+        "pinterest": {
+          "complete": true,
+          "completed_at_utc": "2026-08-21T18:40:11.308861+00:00",
+          "details": {
+            "destination_url": "https://40400meals.com/recipes/crispy-buffalo-chicken-loaded-potato-bowl.html",
+            "image_url": "https://40400meals.com/outputs/images/pinterest/crispy-buffalo-chicken-loaded-potato-bowl-pinterest-pin.png",
+            "file_name": "crispy-buffalo-chicken-loaded-potato-bowl-pinterest.json"
+          }
+        }
+      }
+    },
+    "garlic-parmesan-steak-bites-potatoes": {
+      "created_at_utc": "2026-08-21T18:40:11.787336+00:00",
+      "updated_at_utc": "2026-08-21T18:40:11.787354+00:00",
+      "steps": {
+        "pinterest": {
+          "complete": true,
+          "completed_at_utc": "2026-08-21T18:40:11.787354+00:00",
+          "details": {
+            "destination_url": "https://40400meals.com/recipes/garlic-parmesan-steak-bites-potatoes.html",
+            "image_url": "https://40400meals.com/outputs/images/pinterest/garlic-parmesan-steak-bites-potatoes-pinterest-pin.png",
+            "file_name": "garlic-parmesan-steak-bites-potatoes-pinterest.json"
+          }
+        }
+      }
+    },
+    "loaded-chicken-sausage-breakfast-potato-bowl": {
+      "created_at_utc": "2026-08-21T18:40:12.192307+00:00",
+      "updated_at_utc": "2026-08-21T18:40:12.192325+00:00",
+      "steps": {
+        "pinterest": {
+          "complete": true,
+          "completed_at_utc": "2026-08-21T18:40:12.192325+00:00",
+          "details": {
+            "destination_url": "https://40400meals.com/recipes/loaded-chicken-sausage-breakfast-potato-bowl.html",
+            "image_url": "https://40400meals.com/outputs/images/pinterest/loaded-chicken-sausage-breakfast-potato-bowl-pinterest-pin.png",
+            "file_name": "loaded-chicken-sausage-breakfast-potato-bowl-pinterest.json"
+          }
+        }
+      }
+    },
+    "strawberry-cheesecake-protein-crunch-bowl": {
+      "created_at_utc": "2026-08-21T18:40:12.581648+00:00",
+      "updated_at_utc": "2026-08-21T18:40:12.581666+00:00",
+      "steps": {
+        "pinterest": {
+          "complete": true,
+          "completed_at_utc": "2026-08-21T18:40:12.581666+00:00",
+          "details": {
+            "destination_url": "https://40400meals.com/recipes/strawberry-cheesecake-protein-crunch-bowl.html",
+            "image_url": "https://40400meals.com/outputs/images/pinterest/strawberry-cheesecake-protein-crunch-bowl-pinterest-pin.png",
+            "file_name": "strawberry-cheesecake-protein-crunch-bowl-pinterest.json"
+          }
+        }
+      }
     }
   }
 }
