@@ -1,0 +1,59 @@
+{
+  "recipe_id": "sheet-pan-taco-chicken-veggies-mexican-rice",
+  "platform": "pinterest",
+  "title": "Sheet-Pan Taco Chicken & Mexican Rice | 44g Protein",
+  "description": "Taco-seasoned chicken, roasted peppers and onions, and Knorr-style Mexican rice cooked with chicken bone broth make this family dinner with approximately 44 grams of protein per serving.",
+  "destination_url": "https://40400meals.com/recipes/sheet-pan-taco-chicken-veggies-mexican-rice.html",
+  "hashtags": [
+    "#SheetPanChicken",
+    "#HighProteinDinner",
+    "#MexicanRice",
+    "#40400Meals"
+  ],
+  "image_prompt": "A realistic high-protein dinner bowl with sliced taco-seasoned chicken breast, roasted red and green bell peppers, and yellow onion with lightly browned caramelized edges. Serve beside approximately 1/2 cup Mexican-style seasoned rice made from long-grain rice and thin vermicelli. IMPORTANT: the rice must visually resemble the rice shown on a classic Knorr Mexican Rice package: warm golden-orange to tan seasoned rice, distinct long-grain rice mixed with visible short toasted vermicelli pieces, and tiny flecks of tomato, red pepper, parsley, and seasoning. The rice should look moist, fluffy, and lightly glossy. It must not look like plain brown rice, white rice, or Spanish rice with large tomato chunks. No avocado, cheese, sour cream, tortillas, or other unlisted ingredients.",
+  "image_alt_text": "Sheet-pan taco chicken with roasted red and green peppers and golden Mexican rice with vermicelli.",
+  "pin_filename": "sheet-pan-taco-chicken-veggies-mexican-rice-pinterest-pin.png",
+  "image_filename": "sheet-pan-taco-chicken-veggies-mexican-rice-pinterest-pin.png",
+  "image_path": "outputs/images/pinterest/sheet-pan-taco-chicken-veggies-mexican-rice-pinterest-pin.png",
+  "image_mime_type": "image/png",
+  "design_brain": {
+    "template_name": "P01 Classic Recipe v1.0",
+    "template_type": "evergreen",
+    "season": "summer",
+    "month": 8,
+    "recipe_category": "general",
+    "image_style": "soft indirect premium food-blog window light",
+    "photo_composition": "tight premium food-blog editorial angle",
+    "color_mood": "warm rich premium recipe-blog color with natural variation",
+    "accent_colors": [
+      "#FFFFFF",
+      "#FFD166",
+      "#06AED5",
+      "#10B981"
+    ],
+    "text_style": "clean and modern",
+    "overlay_style": "minimal",
+    "icon_style": "minimal",
+    "layout_recommendation": "P01 classic layout",
+    "optimization": {
+      "visual_appeal": "high",
+      "save_potential": "high",
+      "click_potential": "high"
+    },
+    "version": "2.5",
+    "status": "design_strategy_ready"
+  },
+  "canva_text_overlay": {
+    "headline": "Sheet-Pan Taco Chicken & Veggies with Bone Broth Mexican Rice",
+    "subheadline": "44g Protein \u2022 405 Calories",
+    "brand": "40/400 Meals"
+  },
+  "seo_keywords": [
+    "sheet pan taco chicken",
+    "Mexican rice chicken bowl",
+    "high protein sheet pan dinner",
+    "bone broth Mexican rice",
+    "40 400 meals"
+  ],
+  "status": "ready_for_make"
+}
