@@ -2,6 +2,31 @@
   "brand": "40/400 Meals",
   "visual_goal": "Premium food-blog editorial photography with indirect natural light, intentional food architecture, craveable close-up texture, and believable human variation.",
   "prompt_version": "2.5",
+  "presentation_rotation": {
+    "enabled": true,
+    "apply_to_recipes_published_on_or_after": "2026-08-22",
+    "description": "Deterministic serving-vessel rotation for new recipes. Existing approved photos keep their legacy composition unless a recipe explicitly sets images.presentation_template.",
+    "templates": {
+      "wide_ceramic_plate": "Serve the food on a wide matte ceramic dinner plate with relaxed, off-center plating and some visible plate surface.",
+      "shallow_pasta_bowl": "Serve the food in a broad shallow pasta bowl with a low rim, using natural layered plating rather than separated sections.",
+      "deep_stoneware_bowl": "Serve the food in a deep handmade stoneware bowl with the ingredients naturally overlapping and built with believable height.",
+      "wood_serving_board": "Present the finished handheld food on a clean warm wooden serving board, optionally over one simple piece of neutral parchment, with no extra food or garnish.",
+      "cast_iron_skillet": "Present the finished recipe in a small well-seasoned cast-iron skillet on a plain heat-safe surface, with no extra ingredients added for styling.",
+      "oval_baking_dish": "Present the finished baked recipe in a small oval ceramic baking dish with realistic browned edges and a naturally served portion.",
+      "dessert_glass": "Serve the finished yogurt, parfait, pudding, or chilled dessert in a simple clear dessert glass or low coupe so its natural layers and texture are visible.",
+      "ramekin": "Serve the finished small baked dessert or snack in a simple ceramic ramekin with a believable homemade surface and edge texture."
+    },
+    "groups": {
+      "soup_or_chili": ["deep_stoneware_bowl", "shallow_pasta_bowl"],
+      "bowl": ["deep_stoneware_bowl", "shallow_pasta_bowl", "wide_ceramic_plate"],
+      "pasta": ["shallow_pasta_bowl", "wide_ceramic_plate"],
+      "handheld": ["wood_serving_board", "wide_ceramic_plate"],
+      "skillet": ["cast_iron_skillet", "shallow_pasta_bowl", "wide_ceramic_plate"],
+      "baked": ["oval_baking_dish", "wide_ceramic_plate"],
+      "dessert": ["dessert_glass", "ramekin", "shallow_pasta_bowl"],
+      "general": ["wide_ceramic_plate", "shallow_pasta_bowl", "deep_stoneware_bowl", "cast_iron_skillet"]
+    }
+  },
   "required_style": [
     "Use soft directional restaurant window light with shaped, believable shadows rather than flat even illumination.",
     "Use intentional premium food-blog styling with subtle human variation.",
