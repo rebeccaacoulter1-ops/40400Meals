@@ -1,0 +1,19 @@
+{
+  "recipe_id": "creamy-pumpkin-chicken-protein-pasta",
+  "recipe": {
+    "slug": "creamy-pumpkin-chicken-protein-pasta", "title": "Creamy Pumpkin Chicken Protein Pasta",
+    "summary": "Savory pumpkin-Parmesan protein pasta topped with juicy sliced chicken breast.",
+    "story": "Pumpkin, Greek yogurt, and Parmesan create a creamy fall sauce without heavy cream, while the chicken cooks whole to stay juicy.",
+    "category": "High-Protein Dinner", "cuisine": "American", "date_published": "2026-08-22", "servings": 1,
+    "serving_size": "the full pasta mixture with 4 ounces cooked sliced chicken",
+    "times": {"prep_minutes": 5, "cook_minutes": 18, "total_minutes": 28},
+    "macros": {"calories": 405, "protein_g": 45, "carbs_g": 42, "sugar_g": 5, "fiber_g": 6, "fat_g": 8},
+    "ingredients": ["6 ounces raw boneless skinless chicken breast", "1 teaspoon olive oil, divided", "1/2 teaspoon garlic powder", "1/2 teaspoon onion powder", "Salt and pepper to taste", "1 1/4 ounces dry Barilla Protein+ penne", "3/4 cup Simple Truth Chicken Bone Broth", "1/3 cup pure pumpkin purée", "1/4 cup Chobani Nonfat Plain Greek Yogurt", "1 tablespoon grated Parmesan cheese", "1/4 teaspoon rubbed sage"],
+    "instructions": ["Preheat the air fryer to 375°F.", "Rub the whole chicken breast with 1/2 teaspoon olive oil, garlic powder, onion powder, salt, and pepper. Air-fry for 10 to 14 minutes, turning halfway, until the thickest part reaches 165°F. Rest for 5 minutes before slicing.", "While the chicken cooks, add the dry pasta, bone broth, and remaining 1/2 teaspoon olive oil to a small saucepan. Bring to a gentle boil and cook uncovered, stirring often, until the pasta is tender and only a few tablespoons of liquid remain.", "Reduce the heat to low. Stir in the pumpkin, Greek yogurt, Parmesan, and sage until smooth and warmed through. Do not boil after adding the yogurt.", "Transfer the full pasta mixture to a shallow bowl or wide plate and top with exactly 4 ounces sliced cooked chicken."],
+    "tips": ["Cook the chicken breast whole and slice it only after the five-minute rest.", "Add 1 to 2 tablespoons water if the pasta needs more liquid before it becomes tender.", "Pumpkin should taste savory here; do not add cinnamon or sweetener."]
+  },
+  "seo": {"meta_title": "Creamy Pumpkin Chicken Protein Pasta | 45g Protein", "meta_description": "Savory pumpkin Parmesan protein pasta with juicy air-fried chicken and complete macros.", "keywords": ["pumpkin chicken pasta", "high protein pumpkin pasta", "fall chicken dinner", "protein pasta recipe", "40 400 meals"]},
+  "images": {"presentation_template": "shallow_pasta_bowl", "hero_image_url": "https://40400meals.com/outputs/images/food_photos/creamy-pumpkin-chicken-protein-pasta-food-photo.png", "image_prompt": "Premium food-blog editorial shallow pasta bowl with savory creamy pumpkin-coated penne and four ounces of juicy sliced chicken breast on top, with a restrained Parmesan finish. Large food hero with soft fall atmosphere.", "alt_text": "Creamy pumpkin protein penne topped with sliced chicken breast."},
+  "social": {"pinterest": {"title": "Creamy Pumpkin Chicken Protein Pasta | 45g Protein", "description": "Savory pumpkin-Parmesan protein pasta with juicy sliced chicken breast.", "destination_url": "https://40400meals.com/recipes/creamy-pumpkin-chicken-protein-pasta.html", "hashtags": ["#PumpkinPasta", "#ProteinPasta", "#FallDinner", "#40400Meals"]}},
+  "homepage": {"hidden": false, "priority": 57, "published_at": "2026-08-22T11:00:00-05:00", "summary": "Savory pumpkin-Parmesan protein pasta with sliced chicken.", "image_path": "outputs/images/pinterest/creamy-pumpkin-chicken-protein-pasta-pinterest-pin.png"}
+}
