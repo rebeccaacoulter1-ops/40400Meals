@@ -1,0 +1,61 @@
+{
+  "recipe_id": "creamy-salsa-taco-salad-bowl",
+  "platform": "pinterest",
+  "title": "Creamy Salsa Taco Salad Bowl | 40g Protein",
+  "description": "Skip the ranch packet and turn a Costco Chipotle Ranch salad kit into a high-protein taco salad with lean ground beef and a creamy cottage cheese salsa dressing for approximately 40 grams of protein and 405 calories.",
+  "destination_url": "https://40400meals.com/recipes/creamy-salsa-taco-salad-bowl.html",
+  "hashtags": [
+    "#TacoSalad",
+    "#HighProteinMeals",
+    "#CottageCheeseRecipes",
+    "#CostcoMeals",
+    "#40400Meals"
+  ],
+  "image_prompt": "A realistic taco salad bowl with chopped salad greens, lean taco-seasoned ground beef, tomatoes, red onion, a small amount of diced avocado, cilantro, and creamy pale-orange cottage cheese salsa dressing. Natural home-kitchen food photography, no tortilla strips, ranch dressing, sour cream, lime wedges, jalapenos, packaging, or readable logos.",
+  "image_alt_text": "Creamy salsa taco salad bowl with lean ground beef, tomatoes, red onion, avocado, cilantro, and cottage cheese salsa dressing.",
+  "pin_filename": "creamy-salsa-taco-salad-bowl-pinterest-pin.png",
+  "image_filename": "creamy-salsa-taco-salad-bowl-pinterest-pin.png",
+  "image_path": "outputs/images/pinterest/creamy-salsa-taco-salad-bowl-pinterest-pin.png",
+  "image_mime_type": "image/png",
+  "design_brain": {
+    "template_name": "P01 Classic Recipe v1.0",
+    "template_type": "evergreen",
+    "season": "summer",
+    "month": 8,
+    "recipe_category": "general",
+    "image_style": "soft indirect premium food-blog window light",
+    "photo_composition": "tight premium food-blog editorial angle",
+    "color_mood": "warm rich premium recipe-blog color with natural variation",
+    "accent_colors": [
+      "#FFFFFF",
+      "#FFD166",
+      "#06AED5",
+      "#10B981"
+    ],
+    "text_style": "clean and modern",
+    "overlay_style": "minimal",
+    "icon_style": "minimal",
+    "layout_recommendation": "P01 classic layout",
+    "optimization": {
+      "visual_appeal": "high",
+      "save_potential": "high",
+      "click_potential": "high"
+    },
+    "version": "2.5",
+    "status": "design_strategy_ready"
+  },
+  "canva_text_overlay": {
+    "headline": "Creamy Salsa Taco Salad Bowl",
+    "subheadline": "40g Protein \u2022 405 Calories",
+    "brand": "40/400 Meals"
+  },
+  "seo_keywords": [
+    "high protein taco salad",
+    "creamy salsa taco salad",
+    "cottage cheese salsa dressing",
+    "Costco Chipotle Ranch salad kit",
+    "ground beef taco bowl",
+    "40 400 meals"
+  ],
+  "status": "ready_for_make"
+}
