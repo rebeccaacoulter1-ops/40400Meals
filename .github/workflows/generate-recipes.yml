@@ -166,8 +166,8 @@ jobs:
         env:
           GOOGLE_SERVICE_ACCOUNT_JSON: ${{ secrets.GOOGLE_SERVICE_ACCOUNT_JSON }}
           GOOGLE_SHEET_ID: ${{ secrets.GOOGLE_SHEET_ID }}
-          GOOGLE_SHEET_NAME: 40/400 Growth Dashboard
-          GOOGLE_WORKSHEET_NAME: Daily Tracking
+          GOOGLE_SHEET_NAME: 40/400 Meals Accountability Dashboard
+          GOOGLE_WORKSHEET_NAME: Daily Tracker
 
       - name: Commit Bear publishing state
         if: always()
