@@ -1,0 +1,59 @@
+{
+  "recipe_id": "chicken-parmesan-protein-pasta",
+  "platform": "pinterest",
+  "title": "Crispy Chicken Parmesan Spaghetti | 41g Protein",
+  "description": "Crispy Realgood chicken with melted cheese over tomato-basil protein spaghetti. 41g protein and 455 calories per serving.",
+  "destination_url": "https://40400meals.com/recipes/chicken-parmesan-protein-pasta.html",
+  "hashtags": [
+    "#HighProteinPasta",
+    "#ChickenParmesan",
+    "#EasyDinner",
+    "#40400Meals"
+  ],
+  "image_prompt": "A premium food-blog editorial photograph of one whole crispy lightly breaded chicken breast fillet topped directly with melted mozzarella and grated Parmesan, resting over Barilla Protein+ Spaghetti coated in red tomato-basil sauce. Keep the red sauce on the spaghetti and off the crisp chicken breading. The golden chicken cutlet and melted cheese are the hero textures. One believable restaurant-style serving in a shallow pasta bowl.",
+  "image_alt_text": "Crispy cheese-topped chicken Parmesan fillet over tomato-basil protein spaghetti.",
+  "pin_filename": "chicken-parmesan-protein-pasta-pinterest-pin.png",
+  "image_filename": "chicken-parmesan-protein-pasta-pinterest-pin.png",
+  "image_path": "outputs/images/pinterest/chicken-parmesan-protein-pasta-pinterest-pin.png",
+  "image_mime_type": "image/png",
+  "design_brain": {
+    "template_name": "P01 Classic Recipe v1.0",
+    "template_type": "evergreen",
+    "season": "summer",
+    "month": 8,
+    "recipe_category": "general",
+    "image_style": "soft indirect premium food-blog window light",
+    "photo_composition": "tight premium food-blog editorial angle",
+    "color_mood": "warm rich premium recipe-blog color with natural variation",
+    "accent_colors": [
+      "#FFFFFF",
+      "#FFD166",
+      "#06AED5",
+      "#10B981"
+    ],
+    "text_style": "clean and modern",
+    "overlay_style": "minimal",
+    "icon_style": "minimal",
+    "layout_recommendation": "P01 classic layout",
+    "optimization": {
+      "visual_appeal": "high",
+      "save_potential": "high",
+      "click_potential": "high"
+    },
+    "version": "2.5",
+    "status": "design_strategy_ready"
+  },
+  "canva_text_overlay": {
+    "headline": "Crispy Chicken Parmesan Protein Spaghetti",
+    "subheadline": "41g Protein \u2022 455 Calories",
+    "brand": "40/400 Meals"
+  },
+  "seo_keywords": [
+    "chicken parmesan protein spaghetti",
+    "high protein chicken parmesan",
+    "Barilla Protein Plus spaghetti recipe",
+    "Realgood chicken fillet recipe",
+    "40 400 meals"
+  ],
+  "status": "ready_for_make"
+}
