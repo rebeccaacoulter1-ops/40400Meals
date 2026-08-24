@@ -7,6 +7,7 @@ from textwrap import shorten
 
 RECIPES_DIR = Path("recipes")
 INDEX_FILE = Path("index.html")
+SITE_URL = "https://40400meals.com/"
 
 START_MARKER = "        <!-- BEAR:RECIPE-CARDS:START -->"
 END_MARKER = "        <!-- BEAR:RECIPE-CARDS:END -->"
@@ -28,6 +29,21 @@ def format_number(value):
     if isinstance(value, float) and value.is_integer():
         return str(int(value))
     return str(value)
+
+
+def homepage_food_image(data, homepage, slug):
+    images = data.get("images", {}) or {}
+    image_path = clean_text(
+        images.get("hero_image_url")
+        or homepage.get("food_image_path")
+        or homepage.get("image_path")
+        or f"outputs/images/food_photos/{slug}-food-photo.png"
+    )
+
+    if image_path.startswith(SITE_URL):
+        return image_path[len(SITE_URL):]
+
+    return image_path
 
 
 def recipe_sort_value(data, recipe, homepage):
@@ -90,10 +106,7 @@ def load_homepage_recipes():
             minute_label = "Minute" if str(minutes) == "1" else "Minutes"
             tags.append(f"{format_number(minutes)} {minute_label}")
 
-        image_path = clean_text(
-            homepage.get("image_path")
-            or f"outputs/images/pinterest/{slug}-pinterest-pin.png"
-        )
+        image_path = homepage_food_image(data, homepage, slug)
 
         cards.append(
             {
