@@ -1,0 +1,44 @@
+{
+  "recipe_id": "creamy-white-bean-pumpkin-turkey-chili",
+  "recipe": {
+    "slug": "creamy-white-bean-pumpkin-turkey-chili",
+    "title": "Creamy White Bean Pumpkin Turkey Chili",
+    "summary": "A smoky one-pot turkey chili with white beans, pumpkin, green chiles, Greek yogurt, and fresh jalapeños.",
+    "story": "Pumpkin makes the broth thick and creamy without turning the chili sweet, while Kinder's Woodfired Chili Seasoning keeps the ingredient list short.",
+    "category": "High-Protein Dinner",
+    "cuisine": "American",
+    "date_published": "2026-08-22",
+    "servings": 8,
+    "serving_size": "2 cups chili, 2 tablespoons Greek yogurt, and 1 tablespoon sliced jalapeños",
+    "times": {"prep_minutes": 10, "cook_minutes": 35, "total_minutes": 45},
+    "macros": {"calories": 395, "protein_g": 41, "carbs_g": 43, "sugar_g": 8, "fiber_g": 9, "fat_g": 11},
+    "ingredients": [
+      "2 1/2 pounds 93% lean ground turkey",
+      "1 medium yellow onion, diced",
+      "1 packet Kinder's Woodfired Chili Seasoning",
+      "1 can (15 ounces) pure pumpkin purée",
+      "2 cans (15 ounces each) Great Northern or cannellini beans, drained and rinsed",
+      "1 can (4 ounces) mild diced green chiles",
+      "4 cups Simple Truth Chicken Bone Broth, plus more only if needed",
+      "1 cup Chobani Nonfat Plain Greek Yogurt",
+      "1/2 cup thinly sliced fresh jalapeños"
+    ],
+    "instructions": [
+      "Heat a large Dutch oven over medium-high heat. Add the ground turkey and onion and cook for 8 to 10 minutes, breaking the turkey apart, until no pink remains and the turkey reaches 165°F.",
+      "Sprinkle the Kinder's seasoning over the turkey and stir for 30 seconds.",
+      "Add the pumpkin and 1 cup bone broth. Stir until the pumpkin is smooth and fully incorporated.",
+      "Add the beans, green chiles, and remaining bone broth. Bring to a gentle boil, reduce the heat to medium-low, and simmer uncovered for 20 to 25 minutes, stirring occasionally.",
+      "Measure the finished chili. Continue simmering if the yield is more than 16 cups, or add a small amount of bone broth if needed, until the total batch equals 16 cups.",
+      "For each serving, ladle 2 cups chili into a bowl and top with 2 tablespoons Greek yogurt and 1 tablespoon thinly sliced jalapeños."
+    ],
+    "tips": [
+      "The total batch must equal 16 cups for the listed serving size and macros.",
+      "Refrigerate the chili separately from the yogurt and jalapeños for up to four days.",
+      "Reheat each chili portion to 165°F before adding the cold toppings."
+    ]
+  },
+  "seo": {"meta_title": "White Bean Pumpkin Turkey Chili | 41g Protein", "meta_description": "Creamy white bean pumpkin turkey chili with Kinder's Woodfired seasoning, Greek yogurt, and jalapeños.", "keywords": ["white bean pumpkin turkey chili", "high protein turkey chili", "pumpkin chili", "fall dinner recipe", "40 400 meals"]},
+  "images": {"hero_image_url": "https://40400meals.com/outputs/images/food_photos/creamy-white-bean-pumpkin-turkey-chili-food-photo.png", "image_prompt": "Premium food-blog editorial deep stoneware bowl of thick creamy pale-orange turkey chili with visible white beans, topped only with a measured dollop of Greek yogurt and thin fresh jalapeño slices. Large food hero and softly blurred cozy fall background.", "alt_text": "Creamy white bean pumpkin turkey chili topped with Greek yogurt and sliced jalapeños."},
+  "social": {"pinterest": {"title": "Creamy White Bean Pumpkin Turkey Chili | 41g Protein", "description": "Smoky turkey chili with white beans, pumpkin, Greek yogurt, and fresh jalapeños.", "destination_url": "https://40400meals.com/recipes/creamy-white-bean-pumpkin-turkey-chili.html", "hashtags": ["#TurkeyChili", "#PumpkinRecipes", "#HighProteinDinner", "#40400Meals"]}},
+  "homepage": {"hidden": false, "priority": 56, "published_at": "2026-08-22T10:00:00-05:00", "summary": "Smoky white bean pumpkin turkey chili with Greek yogurt and jalapeños.", "image_path": "outputs/images/pinterest/creamy-white-bean-pumpkin-turkey-chili-pinterest-pin.png"}
+}

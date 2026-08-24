@@ -1,0 +1,54 @@
+{
+  "recipe_id": "warm-cinnamon-apple-cheesecake-protein-parfait",
+  "recipe": {
+    "slug": "warm-cinnamon-apple-cheesecake-protein-parfait",
+    "title": "Warm Cinnamon Apple Cheesecake Protein Parfait",
+    "summary": "Warm cinnamon apples layered with thick vanilla cheesecake protein yogurt and almond butter in a clear dessert glass.",
+    "story": "This fall parfait gives warm apple-cheesecake flavor while keeping the layers simple, measurable, and protein-forward.",
+    "category": "High-Protein Dessert",
+    "cuisine": "American",
+    "date_published": "2026-08-22",
+    "servings": 1,
+    "serving_size": "1 clear glass dessert dish, about 1 1/2 cups",
+    "times": {"prep_minutes": 5, "cook_minutes": 6, "total_minutes": 11},
+    "macros": {"calories": 410, "protein_g": 43, "carbs_g": 24, "sugar_g": 9, "fiber_g": 4, "fat_g": 18},
+    "ingredients": [
+      "2 ounces apple, cored and finely diced",
+      "1/2 teaspoon ground cinnamon",
+      "1/4 teaspoon apple pie spice",
+      "1/2 teaspoon vanilla extract",
+      "Pinch of salt",
+      "1 tablespoon water",
+      "1 cup Chobani Zero Sugar Vanilla Greek Yogurt",
+      "1 scoop Clean Simple Eats Vanilla Protein Powder",
+      "2 tablespoons almond butter, divided",
+      "2 tablespoons water, plus more only if needed"
+    ],
+    "instructions": [
+      "Add the diced apple, cinnamon, apple pie spice, vanilla, salt, and 1 tablespoon water to a small skillet over medium heat.",
+      "Cook for 5 to 6 minutes, stirring occasionally, until the apple is warm and fork-tender but still holds its shape. Remove from the heat and cool for 3 minutes.",
+      "Stir the Greek yogurt, protein powder, 1 1/2 tablespoons almond butter, and 2 tablespoons water until completely smooth and thick. Add only enough extra water to reach a cheesecake-like consistency.",
+      "Spoon half of the cheesecake mixture into a clear glass dessert dish and add half of the warm apples.",
+      "Repeat the layers, then drizzle the remaining 1/2 tablespoon almond butter over the top.",
+      "Serve immediately while the apples are warm."
+    ],
+    "tips": [
+      "Use a clear glass dessert dish so the cheesecake and apple layers remain visible.",
+      "For meal prep, refrigerate the yogurt mixture and cooked apples separately and assemble immediately before serving.",
+      "Weigh the edible apple portion to 2 ounces to keep the listed sugar and macros consistent."
+    ]
+  },
+  "seo": {
+    "meta_title": "Warm Apple Cheesecake Protein Parfait | 43g Protein",
+    "meta_description": "Warm cinnamon apples, vanilla cheesecake protein yogurt, and almond butter layered in a glass dessert dish. Complete macros included.",
+    "keywords": ["apple cheesecake protein parfait", "high protein apple dessert", "cinnamon apple parfait", "fall protein dessert", "40 400 meals"]
+  },
+  "images": {
+    "presentation_template": "dessert_glass",
+    "hero_image_url": "https://40400meals.com/outputs/images/food_photos/warm-cinnamon-apple-cheesecake-protein-parfait-food-photo.png",
+    "image_prompt": "Premium food-blog editorial clear glass dessert dish with visible layers of thick vanilla cheesecake protein yogurt, warm finely diced cinnamon apples, and a restrained almond butter drizzle. Large food hero with a soft cozy fall background.",
+    "alt_text": "Warm cinnamon apple cheesecake protein parfait layered in a clear glass dessert dish."
+  },
+  "social": {"pinterest": {"title": "Warm Apple Cheesecake Protein Parfait | 43g Protein", "description": "Warm cinnamon apples layered with vanilla cheesecake protein yogurt and almond butter in a glass dessert dish.", "destination_url": "https://40400meals.com/recipes/warm-cinnamon-apple-cheesecake-protein-parfait.html", "hashtags": ["#ProteinParfait", "#AppleDessert", "#FallRecipes", "#40400Meals"]}},
+  "homepage": {"hidden": false, "priority": 55, "published_at": "2026-08-22T09:00:00-05:00", "summary": "Warm cinnamon apples layered with cheesecake protein yogurt and almond butter.", "image_path": "outputs/images/pinterest/warm-cinnamon-apple-cheesecake-protein-parfait-pinterest-pin.png"}
+}
