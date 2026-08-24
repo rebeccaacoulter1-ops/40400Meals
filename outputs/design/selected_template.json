@@ -1,18 +1,17 @@
 {
   "platform": "pinterest",
-  "template_name": "P01 Classic Recipe v1.0",
-  "template_type": "evergreen",
-  "season": "summer",
+  "template_name": "P07 Fall",
+  "template_type": "seasonal",
+  "season": "fall",
   "month": 8,
   "recipe_category": "general",
   "image_style": "soft indirect premium food-blog window light",
   "photo_composition": "tight premium food-blog editorial angle",
   "color_mood": "warm rich premium recipe-blog color with natural variation",
   "accent_colors": [
-    "#FFFFFF",
-    "#FFD166",
-    "#06AED5",
-    "#10B981"
+    "#FFF7ED",
+    "#F97316",
+    "#7C2D12"
   ],
   "text_style": "clean and modern",
   "overlay_style": "minimal",
