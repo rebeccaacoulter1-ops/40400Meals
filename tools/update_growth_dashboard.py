@@ -6,8 +6,8 @@ import os
 from datetime import date
 
 
-DEFAULT_SHEET_NAME = "40/400 Growth Dashboard"
-DEFAULT_WORKSHEET = "Daily Tracking"
+DEFAULT_SHEET_NAME = "40/400 Meals Accountability Dashboard"
+DEFAULT_WORKSHEET = "Daily Tracker"
 HEADERS = ["Date", "Recipes Published", "Pins Published"]
 
 
