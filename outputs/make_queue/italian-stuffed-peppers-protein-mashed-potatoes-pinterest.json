@@ -1,0 +1,58 @@
+{
+  "recipe_id": "italian-stuffed-peppers-protein-mashed-potatoes",
+  "platform": "pinterest",
+  "title": "Italian Stuffed Peppers + Mashed Potatoes | 45g Protein",
+  "description": "These Italian stuffed peppers combine lean beef and ground chicken with tomato basil sauce and mozzarella, plus creamy Greek-yogurt mashed potatoes for approximately 45 grams of protein and 380 calories.",
+  "destination_url": "https://40400meals.com/recipes/italian-stuffed-peppers-protein-mashed-potatoes.html",
+  "hashtags": [
+    "#StuffedPeppers",
+    "#HighProteinDinner",
+    "#ComfortFood",
+    "#40400Meals"
+  ],
+  "image_prompt": "A realistic single-serving comfort-food dinner on a warm neutral stoneware plate in a bright home kitchen. Show exactly two stuffed bell pepper halves total and no additional pepper halves anywhere in the image: exactly one red bell pepper half and exactly one green bell pepper half. Each pepper half is generously filled with the saucy ground beef-and-chicken Italian tomato filling and topped with melted, lightly browned mozzarella. Beside the two peppers is exactly one realistic single-serving scoop of creamy mashed gold potatoes. The mashed potatoes should look homemade, creamy, and naturally spooned onto the plate. The peppers should look roasted and tender but still hold their shape. The image must visually represent one recipe serving only. No extra peppers in the background, no family-size platter, no rice, breadcrumbs, corn, beans, pasta, salad, bread, vegetables, garnish, branded packaging, text, or logos. Natural window light, realistic portions, casual homemade presentation, slightly imperfect and not overly styled.",
+  "image_alt_text": "One red and one green Italian stuffed pepper half with melted mozzarella and a serving of creamy protein mashed potatoes.",
+  "pin_filename": "italian-stuffed-peppers-protein-mashed-potatoes-pinterest-pin.png",
+  "image_filename": "italian-stuffed-peppers-protein-mashed-potatoes-pinterest-pin.png",
+  "image_path": "outputs/images/pinterest/italian-stuffed-peppers-protein-mashed-potatoes-pinterest-pin.png",
+  "image_mime_type": "image/png",
+  "design_brain": {
+    "template_name": "P07 Fall",
+    "template_type": "seasonal",
+    "season": "fall",
+    "month": 8,
+    "recipe_category": "general",
+    "image_style": "soft indirect premium food-blog window light",
+    "photo_composition": "tight premium food-blog editorial angle",
+    "color_mood": "warm rich premium recipe-blog color with natural variation",
+    "accent_colors": [
+      "#FFF7ED",
+      "#F97316",
+      "#7C2D12"
+    ],
+    "text_style": "clean and modern",
+    "overlay_style": "minimal",
+    "icon_style": "minimal",
+    "layout_recommendation": "P01 classic layout",
+    "optimization": {
+      "visual_appeal": "high",
+      "save_potential": "high",
+      "click_potential": "high"
+    },
+    "version": "2.5",
+    "status": "design_strategy_ready"
+  },
+  "canva_text_overlay": {
+    "headline": "Italian Stuffed Peppers with Creamy Protein Mashed Potatoes",
+    "subheadline": "45g Protein \u2022 380 Calories",
+    "brand": "40/400 Meals"
+  },
+  "seo_keywords": [
+    "Italian stuffed peppers",
+    "high protein stuffed peppers",
+    "protein mashed potatoes",
+    "beef chicken stuffed peppers",
+    "40 400 meals"
+  ],
+  "status": "ready_for_make"
+}
