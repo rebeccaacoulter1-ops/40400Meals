@@ -2,6 +2,20 @@
   "brand": "40/400 Meals",
   "visual_goal": "Premium food-blog editorial photography with indirect natural light, intentional food architecture, craveable close-up texture, and believable human variation.",
   "prompt_version": "2.5",
+  "seasonal_rotation": {
+    "enabled": true,
+    "apply_to_recipes_published_on_or_after": "2026-08-22",
+    "composition_rule": "Make the finished food the large foreground hero, roughly 65-75 percent of the frame. Communicate the season mainly through a softly blurred background and at most one restrained textile or accent. Never add decorative food or unlisted ingredients.",
+    "scenes": {
+      "winter": "Use a calm white, silver, and soft gold winter atmosphere with a softly blurred snowy or frosted window and optional distant fireplace glow.",
+      "valentines": "Use a warm pink, red, and soft silver atmosphere with one softly blurred rose vase, candle, or heart-shaped non-food serving piece in the background.",
+      "spring": "Use fresh natural greens and gentle florals with softly blurred outdoor garden light and at most one small flower vase.",
+      "easter": "Use a fresh pastel Easter atmosphere with softly blurred eggs, carrots, or one simple ceramic bunny in the background; keep novelty shaping appropriate to the written food only.",
+      "summer": "Use a bright outdoor entertaining atmosphere with a softly blurred pool, lake, grill, or picnic setting and one fresh gingham or striped napkin.",
+      "fall": "Use warm amber, rust, brown, and mustard tones with softly blurred leaves, one small gourd, or distant football-night warmth and one cozy plaid napkin.",
+      "christmas": "Use a magical red, green, silver, or gold atmosphere with sparse softly blurred multicolor Christmas lights and one restrained holiday napkin or evergreen accent."
+    }
+  },
   "presentation_rotation": {
     "enabled": true,
     "apply_to_recipes_published_on_or_after": "2026-08-22",
