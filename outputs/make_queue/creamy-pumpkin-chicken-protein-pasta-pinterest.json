@@ -1,0 +1,59 @@
+{
+  "recipe_id": "creamy-pumpkin-chicken-protein-pasta",
+  "platform": "pinterest",
+  "title": "Creamy Pumpkin Chicken Protein Pasta | 45g Protein",
+  "description": "Savory pumpkin-Parmesan protein pasta with juicy sliced chicken breast.",
+  "destination_url": "https://40400meals.com/recipes/creamy-pumpkin-chicken-protein-pasta.html",
+  "hashtags": [
+    "#PumpkinPasta",
+    "#ProteinPasta",
+    "#FallDinner",
+    "#40400Meals"
+  ],
+  "image_prompt": "Premium food-blog editorial shallow pasta bowl with savory creamy pumpkin-coated penne and four ounces of juicy sliced chicken breast on top, with a restrained Parmesan finish. Large food hero with soft fall atmosphere.",
+  "image_alt_text": "Creamy pumpkin protein penne topped with sliced chicken breast.",
+  "pin_filename": "creamy-pumpkin-chicken-protein-pasta-pinterest-pin.png",
+  "image_filename": "creamy-pumpkin-chicken-protein-pasta-pinterest-pin.png",
+  "image_path": "outputs/images/pinterest/creamy-pumpkin-chicken-protein-pasta-pinterest-pin.png",
+  "image_mime_type": "image/png",
+  "design_brain": {
+    "template_name": "P01 Classic Recipe v1.0",
+    "template_type": "evergreen",
+    "season": "summer",
+    "month": 8,
+    "recipe_category": "general",
+    "image_style": "soft indirect premium food-blog window light",
+    "photo_composition": "tight premium food-blog editorial angle",
+    "color_mood": "warm rich premium recipe-blog color with natural variation",
+    "accent_colors": [
+      "#FFFFFF",
+      "#FFD166",
+      "#06AED5",
+      "#10B981"
+    ],
+    "text_style": "clean and modern",
+    "overlay_style": "minimal",
+    "icon_style": "minimal",
+    "layout_recommendation": "P01 classic layout",
+    "optimization": {
+      "visual_appeal": "high",
+      "save_potential": "high",
+      "click_potential": "high"
+    },
+    "version": "2.5",
+    "status": "design_strategy_ready"
+  },
+  "canva_text_overlay": {
+    "headline": "Creamy Pumpkin Chicken Protein Pasta",
+    "subheadline": "45g Protein \u2022 405 Calories",
+    "brand": "40/400 Meals"
+  },
+  "seo_keywords": [
+    "pumpkin chicken pasta",
+    "high protein pumpkin pasta",
+    "fall chicken dinner",
+    "protein pasta recipe",
+    "40 400 meals"
+  ],
+  "status": "ready_for_make"
+}
