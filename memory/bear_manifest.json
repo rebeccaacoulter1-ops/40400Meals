@@ -506,6 +506,81 @@
           }
         }
       }
+    },
+    "apple-cider-dijon-chicken-harvest-bowl": {
+      "created_at_utc": "2026-08-24T16:50:14.385690+00:00",
+      "updated_at_utc": "2026-08-24T16:50:14.385703+00:00",
+      "steps": {
+        "pinterest": {
+          "complete": true,
+          "completed_at_utc": "2026-08-24T16:50:14.385703+00:00",
+          "details": {
+            "destination_url": "https://40400meals.com/recipes/apple-cider-dijon-chicken-harvest-bowl.html",
+            "image_url": "https://40400meals.com/outputs/images/pinterest/apple-cider-dijon-chicken-harvest-bowl-pinterest-pin.png",
+            "file_name": "apple-cider-dijon-chicken-harvest-bowl-pinterest.json"
+          }
+        }
+      }
+    },
+    "creamy-chicken-wild-rice-soup": {
+      "created_at_utc": "2026-08-24T16:50:15.232044+00:00",
+      "updated_at_utc": "2026-08-24T16:50:15.232052+00:00",
+      "steps": {
+        "pinterest": {
+          "complete": true,
+          "completed_at_utc": "2026-08-24T16:50:15.232052+00:00",
+          "details": {
+            "destination_url": "https://40400meals.com/recipes/creamy-chicken-wild-rice-soup.html",
+            "image_url": "https://40400meals.com/outputs/images/pinterest/creamy-chicken-wild-rice-soup-pinterest-pin.png",
+            "file_name": "creamy-chicken-wild-rice-soup-pinterest.json"
+          }
+        }
+      }
+    },
+    "creamy-pumpkin-chicken-protein-pasta": {
+      "created_at_utc": "2026-08-24T16:50:16.020435+00:00",
+      "updated_at_utc": "2026-08-24T16:50:16.020443+00:00",
+      "steps": {
+        "pinterest": {
+          "complete": true,
+          "completed_at_utc": "2026-08-24T16:50:16.020443+00:00",
+          "details": {
+            "destination_url": "https://40400meals.com/recipes/creamy-pumpkin-chicken-protein-pasta.html",
+            "image_url": "https://40400meals.com/outputs/images/pinterest/creamy-pumpkin-chicken-protein-pasta-pinterest-pin.png",
+            "file_name": "creamy-pumpkin-chicken-protein-pasta-pinterest.json"
+          }
+        }
+      }
+    },
+    "creamy-white-bean-pumpkin-turkey-chili": {
+      "created_at_utc": "2026-08-24T16:50:16.647026+00:00",
+      "updated_at_utc": "2026-08-24T16:50:16.647033+00:00",
+      "steps": {
+        "pinterest": {
+          "complete": true,
+          "completed_at_utc": "2026-08-24T16:50:16.647033+00:00",
+          "details": {
+            "destination_url": "https://40400meals.com/recipes/creamy-white-bean-pumpkin-turkey-chili.html",
+            "image_url": "https://40400meals.com/outputs/images/pinterest/creamy-white-bean-pumpkin-turkey-chili-pinterest-pin.png",
+            "file_name": "creamy-white-bean-pumpkin-turkey-chili-pinterest.json"
+          }
+        }
+      }
+    },
+    "warm-cinnamon-apple-cheesecake-protein-parfait": {
+      "created_at_utc": "2026-08-24T16:50:18.244921+00:00",
+      "updated_at_utc": "2026-08-24T16:50:18.244929+00:00",
+      "steps": {
+        "pinterest": {
+          "complete": true,
+          "completed_at_utc": "2026-08-24T16:50:18.244929+00:00",
+          "details": {
+            "destination_url": "https://40400meals.com/recipes/warm-cinnamon-apple-cheesecake-protein-parfait.html",
+            "image_url": "https://40400meals.com/outputs/images/pinterest/warm-cinnamon-apple-cheesecake-protein-parfait-pinterest-pin.png",
+            "file_name": "warm-cinnamon-apple-cheesecake-protein-parfait-pinterest.json"
+          }
+        }
+      }
     }
   }
 }
