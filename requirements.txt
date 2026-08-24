@@ -1,2 +1,5 @@
 Pillow
 openai
+gspread>=6.0,<7
+google-auth>=2.0,<3
+pytest>=8.0,<9

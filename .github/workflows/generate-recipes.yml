@@ -59,6 +59,9 @@ jobs:
           python -m pip install --upgrade pip
           pip install -r requirements.txt
 
+      - name: Run automation tests
+        run: python -m pytest -q
+
       - name: Generate Bear OS content
         run: python tools/run_bear_os.py
         env:
@@ -149,11 +152,22 @@ jobs:
         with:
           python-version: "3.11"
 
+      - name: Count verified publish queue
+        run: echo "BEAR_PUBLISH_COUNT=$(find outputs/make_queue -type f -name \'*.json\' | wc -l)" >> "$GITHUB_ENV"
+
       - name: Publish ready Pinterest pins
         run: python tools/send_to_make.py
         env:
           MAKE_WEBHOOK_URL: ${{ secrets.MAKE_WEBHOOK_URL }}
           SITE_BASE_URL: https://40400meals.com
+
+      - name: Update Google growth dashboard
+        run: python tools/update_growth_dashboard.py --recipes "$BEAR_PUBLISH_COUNT" --pins "$BEAR_PUBLISH_COUNT"
+        env:
+          GOOGLE_SERVICE_ACCOUNT_JSON: ${{ secrets.GOOGLE_SERVICE_ACCOUNT_JSON }}
+          GOOGLE_SHEET_ID: ${{ secrets.GOOGLE_SHEET_ID }}
+          GOOGLE_SHEET_NAME: 40/400 Growth Dashboard
+          GOOGLE_WORKSHEET_NAME: Daily Tracking
 
       - name: Commit Bear publishing state
         if: always()

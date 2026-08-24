@@ -1,0 +1,21 @@
+{
+  "daily_recipe_target": 6,
+  "weekly_recipe_target": 30,
+  "weekly_minimum_pin_target": 30,
+  "monthly_recipe_target": 120,
+  "monthly_minimum_pin_target": 120,
+  "twenty_workday_category_targets": {
+    "breakfast": 30,
+    "lunch": 30,
+    "dinner": 30,
+    "snack": 30
+  },
+  "category_rotation": {
+    "odd_days": {"breakfast": 2, "lunch": 1, "dinner": 2, "snack": 1},
+    "even_days": {"breakfast": 1, "lunch": 2, "dinner": 1, "snack": 2}
+  },
+  "batch_recipe_seasoning_rule": {
+    "garlic_powder": "1-2 tablespoons",
+    "onion_powder": "1-2 tablespoons"
+  }
+}
