@@ -53,14 +53,24 @@ def main():
     parser.add_argument("--date", default=date.today().isoformat())
     args = parser.parse_args()
 
-    credentials = os.environ.get("GOOGLE_SERVICE_ACCOUNT_JSON", "").strip()
-    if not credentials:
-        print("Google Sheet update skipped: GOOGLE_SERVICE_ACCOUNT_JSON is not configured.")
+    credentials_json = os.environ.get("GOOGLE_SERVICE_ACCOUNT_JSON", "").strip()
+    application_credentials = os.environ.get("GOOGLE_APPLICATION_CREDENTIALS", "").strip()
+    if not credentials_json and not application_credentials:
+        print("Google Sheet update skipped: Google authentication is not configured.")
         return
 
     import gspread
 
-    client = gspread.service_account_from_dict(json.loads(credentials))
+    if credentials_json:
+        client = gspread.service_account_from_dict(json.loads(credentials_json))
+    else:
+        import google.auth
+
+        credentials, _ = google.auth.default(scopes=[
+            "https://www.googleapis.com/auth/spreadsheets",
+            "https://www.googleapis.com/auth/drive.file",
+        ])
+        client = gspread.authorize(credentials)
     sheet_id = os.environ.get("GOOGLE_SHEET_ID", "").strip()
     spreadsheet = (
         client.open_by_key(sheet_id)
