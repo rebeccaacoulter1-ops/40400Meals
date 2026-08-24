@@ -1,0 +1,19 @@
+{
+  "recipe_id": "creamy-chicken-wild-rice-soup",
+  "recipe": {
+    "slug": "creamy-chicken-wild-rice-soup", "title": "Creamy Chicken and Wild Rice Soup",
+    "summary": "A cozy chicken and wild rice soup made creamy with Greek yogurt instead of heavy cream.",
+    "story": "This batch-cook soup keeps the chicken juicy, the vegetables familiar, and the broth creamy without turning dinner into a multi-pan project.",
+    "category": "High-Protein Dinner", "cuisine": "American", "date_published": "2026-08-22", "servings": 6,
+    "serving_size": "2 cups soup with 4 ounces cooked chicken",
+    "times": {"prep_minutes": 15, "cook_minutes": 40, "total_minutes": 55},
+    "macros": {"calories": 390, "protein_g": 48, "carbs_g": 40, "sugar_g": 6, "fiber_g": 4, "fat_g": 6},
+    "ingredients": ["2 pounds boneless skinless chicken breasts, approximately 4 chicken breasts", "1 teaspoon olive oil", "1 teaspoon garlic powder", "1 teaspoon onion powder", "Salt and pepper to taste", "1 medium yellow onion, diced", "2 cups diced carrots", "2 cups diced celery", "1 cup dry wild rice blend", "6 cups Simple Truth Chicken Bone Broth", "1 teaspoon dried thyme", "1 1/2 cups Chobani Nonfat Plain Greek Yogurt"],
+    "instructions": ["Preheat the air fryer to 375°F.", "Rub the whole chicken breasts with the olive oil, garlic powder, onion powder, salt, and pepper. Air-fry for 10 to 14 minutes, turning halfway, until each breast reaches 165°F. Rest for 5 minutes, then slice or dice.", "While the chicken cooks, add the onion, carrots, celery, wild rice, bone broth, thyme, salt, and pepper to a large soup pot.", "Bring to a boil, reduce to a gentle simmer, cover, and cook according to the wild rice package directions, approximately 35 to 40 minutes, until the rice and vegetables are tender.", "Remove the pot from the heat. Place the Greek yogurt in a bowl and slowly whisk in 1 cup of hot broth. Stir the tempered yogurt mixture back into the soup without boiling.", "Stir in the cooked chicken. Measure the finished soup and adjust with additional hot broth if needed so the total yield equals 12 cups.", "Divide into six servings of 2 cups each, confirming that each portion contains 4 ounces cooked chicken."],
+    "tips": ["Keep the chicken breasts whole during cooking and slice only after resting.", "Do not boil the soup after adding Greek yogurt or it may separate.", "The final batch must equal 12 cups for the listed serving size and macros."]
+  },
+  "seo": {"meta_title": "Creamy Chicken Wild Rice Soup | 48g Protein", "meta_description": "Cozy chicken and wild rice soup made creamy with Greek yogurt and complete macros.", "keywords": ["creamy chicken wild rice soup", "high protein soup", "healthy chicken soup", "fall soup recipe", "40 400 meals"]},
+  "images": {"presentation_template": "deep_stoneware_bowl", "hero_image_url": "https://40400meals.com/outputs/images/food_photos/creamy-chicken-wild-rice-soup-food-photo.png", "image_prompt": "Premium food-blog editorial deep stoneware bowl of creamy chicken and wild rice soup with visible diced chicken, wild rice, carrots, celery, and a naturally creamy broth. Large food hero with a softly blurred cozy fall background.", "alt_text": "Creamy chicken and wild rice soup with carrots and celery."},
+  "social": {"pinterest": {"title": "Creamy Chicken and Wild Rice Soup | 48g Protein", "description": "Cozy chicken and wild rice soup made creamy with Greek yogurt instead of heavy cream.", "destination_url": "https://40400meals.com/recipes/creamy-chicken-wild-rice-soup.html", "hashtags": ["#ChickenSoup", "#WildRiceSoup", "#HighProteinDinner", "#40400Meals"]}},
+  "homepage": {"hidden": false, "priority": 58, "published_at": "2026-08-22T12:00:00-05:00", "summary": "Cozy chicken and wild rice soup made creamy with Greek yogurt.", "image_path": "outputs/images/pinterest/creamy-chicken-wild-rice-soup-pinterest-pin.png"}
+}
