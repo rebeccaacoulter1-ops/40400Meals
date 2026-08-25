@@ -1,0 +1,57 @@
+{
+  "recipe_id": "air-fryer-buffalo-chicken-wrap",
+  "platform": "pinterest",
+  "title": "Air Fryer Buffalo Chicken Wrap",
+  "description": "Quick buffalo chicken wrap with cottage-cheese ranch, celery, and protein chips.",
+  "destination_url": "https://40400meals.com/recipes/air-fryer-buffalo-chicken-wrap.html",
+  "hashtags": [
+    "#BuffaloChickenWrap",
+    "#AirFryerLunch",
+    "#HighProteinLunch",
+    "#40400Meals"
+  ],
+  "image_prompt": "Premium food-blog editorial photo of one neatly cut buffalo chicken wrap showing grilled buffalo chicken, romaine and blue cheese, with celery sticks, a small cup of creamy cottage-cheese ranch and one opened serving of nacho cheese protein chips. Warm early-fall game-day mood, realistic homemade food, no extra garnish.",
+  "image_alt_text": "Air fryer buffalo chicken wrap with celery, ranch, and nacho protein chips.",
+  "pin_filename": "air-fryer-buffalo-chicken-wrap-pinterest-pin.png",
+  "image_filename": "air-fryer-buffalo-chicken-wrap-pinterest-pin.png",
+  "image_path": "outputs/images/pinterest/air-fryer-buffalo-chicken-wrap-pinterest-pin.png",
+  "image_mime_type": "image/png",
+  "design_brain": {
+    "template_name": "P07 Fall",
+    "template_type": "seasonal",
+    "season": "fall",
+    "month": 8,
+    "recipe_category": "general",
+    "image_style": "soft indirect premium food-blog window light",
+    "photo_composition": "tight premium food-blog editorial angle",
+    "color_mood": "warm rich premium recipe-blog color with natural variation",
+    "accent_colors": [
+      "#FFF7ED",
+      "#F97316",
+      "#7C2D12"
+    ],
+    "text_style": "clean and modern",
+    "overlay_style": "minimal",
+    "icon_style": "minimal",
+    "layout_recommendation": "P01 classic layout",
+    "optimization": {
+      "visual_appeal": "high",
+      "save_potential": "high",
+      "click_potential": "high"
+    },
+    "version": "2.5",
+    "status": "design_strategy_ready"
+  },
+  "canva_text_overlay": {
+    "headline": "Air Fryer Buffalo Chicken Wrap",
+    "subheadline": "45g Protein \u2022 400 Calories",
+    "brand": "40/400 Meals"
+  },
+  "seo_keywords": [
+    "air fryer buffalo chicken wrap",
+    "high protein wrap",
+    "cottage cheese ranch",
+    "quick lunch"
+  ],
+  "status": "ready_for_make"
+}
