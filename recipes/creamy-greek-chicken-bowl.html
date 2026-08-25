@@ -258,11 +258,11 @@
       color: #40543e;
     }
 
-    .nutrition-grid {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      gap: 14px;
-    }
+    .nutrition-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 14px; }
+
+    .recipe-facts { margin: 24px 0; padding: 20px; background: var(--cream); border-radius: 18px; }
+    .recipe-facts p { margin: 7px 0; }
+    .macro-line { color: var(--orange); font-weight: 800; }
 
     .nutrition {
       background: var(--cream);
@@ -400,6 +400,8 @@
           <div class="nutrition"><strong>44g</strong>Protein</div>
           <div class="nutrition"><strong>20g</strong>Carbs</div>
           <div class="nutrition"><strong>16g</strong>Fat</div>
+          <div class="nutrition"><strong>g</strong>Sugar</div>
+          <div class="nutrition"><strong>g</strong>Fiber</div>
         </div>
 
         <div class="button-row">
@@ -409,10 +411,13 @@
 
       <article class="card" id="recipe">
         <h2>Creamy Greek Chicken Bowl</h2>
-        <p><strong>Prep Time:</strong> 10 minutes</p>
-        <p><strong>Cook Time:</strong> 0 minutes</p>
-        <p><strong>Total Time:</strong> 10 minutes</p>
-        <p><strong>Servings:</strong> 1</p>
+        <div class="recipe-facts">
+          <p><strong>Prep Time:</strong> 10 minutes</p>
+          
+          <p><strong>Servings:</strong> 1</p>
+          <p><strong>Serving Size:</strong> </p>
+          <p class="macro-line"><strong>Macros Per Serving:</strong> 400 calories | 44g protein | 20g carbohydrates | g sugar | g fiber | 16g fat</p>
+        </div>
 
         <div class="recipe-card story-card">
   <h2>Behind the Recipe</h2>
@@ -421,8 +426,7 @@
 
         <div class="recipe-card">
           <h2>Ingredients</h2>
-          <ul>
-            <li>1 Fresh Additions fully cooked chicken breast bites pack, 100 grams</li>
+          <ul><li>1 Fresh Additions fully cooked chicken breast bites pack, 100 grams</li>
 <li>2 cups leafy green lettuce</li>
 <li>1/2 cup chopped cucumber</li>
 <li>1/2 cup chopped tomatoes</li>
@@ -433,8 +437,7 @@
 <li>2 teaspoons red wine vinegar</li>
 <li>1/2 teaspoon olive oil</li>
 <li>1/2 teaspoon Cavender&#x27;s All Purpose Greek Seasoning</li>
-<li>1 to 2 teaspoons water, as needed to thin the dressing</li>
-          </ul>
+<li>1 to 2 teaspoons water, as needed to thin the dressing</li></ul>
         </div>
 
         <div class="recipe-card">
@@ -446,6 +449,12 @@
 <li id="step-4">Spoon the creamy Greek dressing over the bowl, toss lightly, and serve.</li>
           </ol>
         </div>
+
+        
+
+        
+
+        
 
         <div class="recipe-card">
           <h2>40/400 Notes</h2>

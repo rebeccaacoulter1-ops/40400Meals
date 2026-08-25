@@ -302,11 +302,11 @@
       color: #40543e;
     }
 
-    .nutrition-grid {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      gap: 14px;
-    }
+    .nutrition-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 14px; }
+
+    .recipe-facts { margin: 24px 0; padding: 20px; background: var(--cream); border-radius: 18px; }
+    .recipe-facts p { margin: 7px 0; }
+    .macro-line { color: var(--orange); font-weight: 800; }
 
     .nutrition {
       background: var(--cream);
@@ -444,6 +444,8 @@
           <div class="nutrition"><strong>44g</strong>Protein</div>
           <div class="nutrition"><strong>35g</strong>Carbs</div>
           <div class="nutrition"><strong>10g</strong>Fat</div>
+          <div class="nutrition"><strong>g</strong>Sugar</div>
+          <div class="nutrition"><strong>g</strong>Fiber</div>
         </div>
 
         <div class="button-row">
@@ -453,10 +455,13 @@
 
       <article class="card" id="recipe">
         <h2>Creamy Tuscan Chicken Protein Pasta</h2>
-        <p><strong>Prep Time:</strong> 5 minutes</p>
-        <p><strong>Cook Time:</strong> 480 minutes</p>
-        <p><strong>Total Time:</strong> 495 minutes</p>
-        <p><strong>Servings:</strong> 6</p>
+        <div class="recipe-facts">
+          <p><strong>Prep Time:</strong> 5 minutes</p>
+          <p><strong>Cook Time:</strong> 480 minutes</p>
+          <p><strong>Servings:</strong> 6</p>
+          <p><strong>Serving Size:</strong> 11 ounces</p>
+          <p class="macro-line"><strong>Macros Per Serving:</strong> 395 calories | 44g protein | 35g carbohydrates | g sugar | g fiber | 10g fat</p>
+        </div>
 
         <div class="recipe-card story-card">
   <h2>Behind the Recipe</h2>
@@ -465,8 +470,7 @@
 
         <div class="recipe-card">
           <h2>Ingredients</h2>
-          <ul>
-            <li>2 pounds raw boneless skinless chicken breast</li>
+          <ul><li>2 pounds raw boneless skinless chicken breast</li>
 <li>3/4 cup Daisy 4% Cottage Cheese</li>
 <li>2 ounces Philadelphia 1/3 Less Fat Cream Cheese, cut into small pieces</li>
 <li>3 cups Simple Truth Organic Chicken Bone Broth, divided</li>
@@ -478,8 +482,7 @@
 <li>1/4 teaspoon black pepper</li>
 <li>8 ounces dry Barilla Protein+ Penne</li>
 <li>5 ounces baby spinach</li>
-<li>1/4 cup BelGioioso Freshly Grated Parmesan Cheese</li>
-          </ul>
+<li>1/4 cup BelGioioso Freshly Grated Parmesan Cheese</li></ul>
         </div>
 
         <div class="recipe-card">
@@ -498,6 +501,12 @@
 <li id="step-11">Divide the finished meal into six 11-ounce servings.</li>
           </ol>
         </div>
+
+        
+
+        
+
+        
 
         <div class="recipe-card">
           <h2>40/400 Notes</h2>

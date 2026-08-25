@@ -96,7 +96,9 @@
     "calories": "405 calories",
     "proteinContent": "43 g",
     "carbohydrateContent": "42 g",
-    "fatContent": "8 g"
+    "fatContent": "8 g",
+    "sugarContent": "10 g",
+    "fiberContent": "6 g"
   }
 }
   </script>
@@ -277,11 +279,11 @@
       color: #40543e;
     }
 
-    .nutrition-grid {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      gap: 14px;
-    }
+    .nutrition-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 14px; }
+
+    .recipe-facts { margin: 24px 0; padding: 20px; background: var(--cream); border-radius: 18px; }
+    .recipe-facts p { margin: 7px 0; }
+    .macro-line { color: var(--orange); font-weight: 800; }
 
     .nutrition {
       background: var(--cream);
@@ -419,6 +421,8 @@
           <div class="nutrition"><strong>43g</strong>Protein</div>
           <div class="nutrition"><strong>42g</strong>Carbs</div>
           <div class="nutrition"><strong>8g</strong>Fat</div>
+          <div class="nutrition"><strong>10g</strong>Sugar</div>
+          <div class="nutrition"><strong>6g</strong>Fiber</div>
         </div>
 
         <div class="button-row">
@@ -428,10 +432,13 @@
 
       <article class="card" id="recipe">
         <h2>Apple Cider Dijon Chicken Harvest Bowl</h2>
-        <p><strong>Prep Time:</strong> 12 minutes</p>
-        <p><strong>Cook Time:</strong> 25 minutes</p>
-        <p><strong>Total Time:</strong> 42 minutes</p>
-        <p><strong>Servings:</strong> 4</p>
+        <div class="recipe-facts">
+          <p><strong>Prep Time:</strong> 12 minutes</p>
+          <p><strong>Cook Time:</strong> 25 minutes</p>
+          <p><strong>Servings:</strong> 4</p>
+          <p><strong>Serving Size:</strong> 4.5 ounces cooked chicken, 7 ounces roasted harvest mixture, and 2 tablespoons sauce</p>
+          <p class="macro-line"><strong>Macros Per Serving:</strong> 405 calories | 43g protein | 42g carbohydrates | 10g sugar | 6g fiber | 8g fat</p>
+        </div>
 
         <div class="recipe-card story-card">
   <h2>Behind the Recipe</h2>
@@ -440,8 +447,7 @@
 
         <div class="recipe-card">
           <h2>Ingredients</h2>
-          <ul>
-            <li>1 1/2 pounds boneless skinless chicken breasts, approximately 3 chicken breasts</li>
+          <ul><li>1 1/2 pounds boneless skinless chicken breasts, approximately 3 chicken breasts</li>
 <li>2 teaspoons olive oil, divided</li>
 <li>1 teaspoon garlic powder</li>
 <li>1 teaspoon onion powder</li>
@@ -452,8 +458,7 @@
 <li>1/2 cup apple cider</li>
 <li>2 tablespoons Dijon mustard</li>
 <li>1 tablespoon sugar-free maple syrup</li>
-<li>1 teaspoon apple cider vinegar</li>
-          </ul>
+<li>1 teaspoon apple cider vinegar</li></ul>
         </div>
 
         <div class="recipe-card">
@@ -468,6 +473,12 @@
 <li id="step-7">For each bowl, serve 7 ounces roasted harvest mixture with 4.5 ounces sliced cooked chicken and 2 tablespoons apple-cider Dijon sauce.</li>
           </ol>
         </div>
+
+        
+
+        
+
+        
 
         <div class="recipe-card">
           <h2>40/400 Notes</h2>

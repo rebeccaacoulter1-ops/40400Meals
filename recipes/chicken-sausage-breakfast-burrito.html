@@ -265,11 +265,11 @@
       color: #40543e;
     }
 
-    .nutrition-grid {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      gap: 14px;
-    }
+    .nutrition-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 14px; }
+
+    .recipe-facts { margin: 24px 0; padding: 20px; background: var(--cream); border-radius: 18px; }
+    .recipe-facts p { margin: 7px 0; }
+    .macro-line { color: var(--orange); font-weight: 800; }
 
     .nutrition {
       background: var(--cream);
@@ -407,6 +407,8 @@
           <div class="nutrition"><strong>42g</strong>Protein</div>
           <div class="nutrition"><strong>24g</strong>Carbs</div>
           <div class="nutrition"><strong>17g</strong>Fat</div>
+          <div class="nutrition"><strong>g</strong>Sugar</div>
+          <div class="nutrition"><strong>g</strong>Fiber</div>
         </div>
 
         <div class="button-row">
@@ -416,10 +418,13 @@
 
       <article class="card" id="recipe">
         <h2>Chicken Sausage Breakfast Burrito</h2>
-        <p><strong>Prep Time:</strong> 5 minutes</p>
-        <p><strong>Cook Time:</strong> 8 minutes</p>
-        <p><strong>Total Time:</strong> 13 minutes</p>
-        <p><strong>Servings:</strong> 1</p>
+        <div class="recipe-facts">
+          <p><strong>Prep Time:</strong> 5 minutes</p>
+          <p><strong>Cook Time:</strong> 8 minutes</p>
+          <p><strong>Servings:</strong> 1</p>
+          <p><strong>Serving Size:</strong> </p>
+          <p class="macro-line"><strong>Macros Per Serving:</strong> 375 calories | 42g protein | 24g carbohydrates | g sugar | g fiber | 17g fat</p>
+        </div>
 
         <div class="recipe-card story-card">
   <h2>Behind the Recipe</h2>
@@ -428,14 +433,12 @@
 
         <div class="recipe-card">
           <h2>Ingredients</h2>
-          <ul>
-            <li>1 Mission Carb Balance Soft Taco Flour Tortilla</li>
+          <ul><li>1 Mission Carb Balance Soft Taco Flour Tortilla</li>
 <li>3/4 cup Simple Truth Liquid Egg Whites</li>
 <li>3 Amylu Breakfast Time Mini Chicken Sausage Links, sliced</li>
 <li>2 tablespoons reduced-fat shredded cheddar cheese</li>
 <li>1 Kirkland Signature guacamole mini cup, 70 grams</li>
-<li>Salt and black pepper, to taste</li>
-          </ul>
+<li>Salt and black pepper, to taste</li></ul>
         </div>
 
         <div class="recipe-card">
@@ -449,6 +452,12 @@
 <li id="step-6">Fill the tortilla with the sausage-and-egg mixture, add the full guacamole cup, fold into a burrito, and serve immediately.</li>
           </ol>
         </div>
+
+        
+
+        
+
+        
 
         <div class="recipe-card">
           <h2>40/400 Notes</h2>

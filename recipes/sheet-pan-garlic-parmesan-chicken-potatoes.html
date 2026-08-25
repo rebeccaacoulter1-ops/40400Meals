@@ -283,11 +283,11 @@
       color: #40543e;
     }
 
-    .nutrition-grid {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      gap: 14px;
-    }
+    .nutrition-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 14px; }
+
+    .recipe-facts { margin: 24px 0; padding: 20px; background: var(--cream); border-radius: 18px; }
+    .recipe-facts p { margin: 7px 0; }
+    .macro-line { color: var(--orange); font-weight: 800; }
 
     .nutrition {
       background: var(--cream);
@@ -425,6 +425,8 @@
           <div class="nutrition"><strong>45g</strong>Protein</div>
           <div class="nutrition"><strong>35g</strong>Carbs</div>
           <div class="nutrition"><strong>10g</strong>Fat</div>
+          <div class="nutrition"><strong>g</strong>Sugar</div>
+          <div class="nutrition"><strong>g</strong>Fiber</div>
         </div>
 
         <div class="button-row">
@@ -434,10 +436,13 @@
 
       <article class="card" id="recipe">
         <h2>Sheet-Pan Garlic Parmesan Chicken &amp; Potatoes</h2>
-        <p><strong>Prep Time:</strong> 10 minutes</p>
-        <p><strong>Cook Time:</strong> 30 minutes</p>
-        <p><strong>Total Time:</strong> 40 minutes</p>
-        <p><strong>Servings:</strong> 4</p>
+        <div class="recipe-facts">
+          <p><strong>Prep Time:</strong> 10 minutes</p>
+          <p><strong>Cook Time:</strong> 30 minutes</p>
+          <p><strong>Servings:</strong> 4</p>
+          <p><strong>Serving Size:</strong> 4.5 ounces cooked chicken, 4 ounces potatoes, 3 ounces squash, and 1.5 tablespoons Parmesan</p>
+          <p class="macro-line"><strong>Macros Per Serving:</strong> 400 calories | 45g protein | 35g carbohydrates | g sugar | g fiber | 10g fat</p>
+        </div>
 
         <div class="recipe-card story-card">
   <h2>Behind the Recipe</h2>
@@ -446,8 +451,7 @@
 
         <div class="recipe-card">
           <h2>Ingredients</h2>
-          <ul>
-            <li>1 1/2 pounds raw boneless skinless chicken breast, cut into large bite-size pieces</li>
+          <ul><li>1 1/2 pounds raw boneless skinless chicken breast, cut into large bite-size pieces</li>
 <li>1 pound baby gold potatoes, quartered</li>
 <li>6 ounces zucchini, cut into 3/4-inch half-moons</li>
 <li>6 ounces yellow squash, cut into 3/4-inch half-moons</li>
@@ -458,8 +462,7 @@
 <li>1/2 tablespoon Italian seasoning</li>
 <li>1 teaspoon salt</li>
 <li>1 teaspoon black pepper</li>
-<li>Nonstick cooking spray</li>
-          </ul>
+<li>Nonstick cooking spray</li></ul>
         </div>
 
         <div class="recipe-card">
@@ -475,6 +478,12 @@
 <li id="step-8">Divide into four servings, with 4.5 ounces cooked chicken, 4 ounces potatoes, 3 ounces squash, and 1.5 tablespoons Parmesan in each serving.</li>
           </ol>
         </div>
+
+        
+
+        
+
+        
 
         <div class="recipe-card">
           <h2>40/400 Notes</h2>

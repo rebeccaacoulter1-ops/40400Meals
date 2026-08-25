@@ -275,11 +275,11 @@
       color: #40543e;
     }
 
-    .nutrition-grid {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      gap: 14px;
-    }
+    .nutrition-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 14px; }
+
+    .recipe-facts { margin: 24px 0; padding: 20px; background: var(--cream); border-radius: 18px; }
+    .recipe-facts p { margin: 7px 0; }
+    .macro-line { color: var(--orange); font-weight: 800; }
 
     .nutrition {
       background: var(--cream);
@@ -417,6 +417,8 @@
           <div class="nutrition"><strong>41g</strong>Protein</div>
           <div class="nutrition"><strong>30g</strong>Carbs</div>
           <div class="nutrition"><strong>16g</strong>Fat</div>
+          <div class="nutrition"><strong>g</strong>Sugar</div>
+          <div class="nutrition"><strong>g</strong>Fiber</div>
         </div>
 
         <div class="button-row">
@@ -426,10 +428,13 @@
 
       <article class="card" id="recipe">
         <h2>Loaded Chicken Sausage Breakfast Potato Bowl</h2>
-        <p><strong>Prep Time:</strong> 5 minutes</p>
-        <p><strong>Cook Time:</strong> 15 minutes</p>
-        <p><strong>Total Time:</strong> 20 minutes</p>
-        <p><strong>Servings:</strong> 1</p>
+        <div class="recipe-facts">
+          <p><strong>Prep Time:</strong> 5 minutes</p>
+          <p><strong>Cook Time:</strong> 15 minutes</p>
+          <p><strong>Servings:</strong> 1</p>
+          <p><strong>Serving Size:</strong> 1 breakfast bowl</p>
+          <p class="macro-line"><strong>Macros Per Serving:</strong> 395 calories | 41g protein | 30g carbohydrates | g sugar | g fiber | 16g fat</p>
+        </div>
 
         <div class="recipe-card story-card">
   <h2>Behind the Recipe</h2>
@@ -438,8 +443,7 @@
 
         <div class="recipe-card">
           <h2>Ingredients</h2>
-          <ul>
-            <li>1/2 cup Simply Potatoes Diced Potatoes</li>
+          <ul><li>1/2 cup Simply Potatoes Diced Potatoes</li>
 <li>2 Amylu Breakfast Time Chicken Sausage Links, sliced</li>
 <li>1 large egg</li>
 <li>2/3 cup liquid egg whites</li>
@@ -448,8 +452,7 @@
 <li>2 tablespoons salsa</li>
 <li>1 tablespoon sliced green onion</li>
 <li>Nonstick cooking spray</li>
-<li>Salt and pepper to taste</li>
-          </ul>
+<li>Salt and pepper to taste</li></ul>
         </div>
 
         <div class="recipe-card">
@@ -464,6 +467,12 @@
 <li id="step-7">Top with the salsa and sliced green onion. Add additional salt and pepper to taste.</li>
           </ol>
         </div>
+
+        
+
+        
+
+        
 
         <div class="recipe-card">
           <h2>40/400 Notes</h2>

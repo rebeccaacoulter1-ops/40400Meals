@@ -290,11 +290,11 @@
       color: #40543e;
     }
 
-    .nutrition-grid {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      gap: 14px;
-    }
+    .nutrition-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 14px; }
+
+    .recipe-facts { margin: 24px 0; padding: 20px; background: var(--cream); border-radius: 18px; }
+    .recipe-facts p { margin: 7px 0; }
+    .macro-line { color: var(--orange); font-weight: 800; }
 
     .nutrition {
       background: var(--cream);
@@ -432,6 +432,8 @@
           <div class="nutrition"><strong>45g</strong>Protein</div>
           <div class="nutrition"><strong>28g</strong>Carbs</div>
           <div class="nutrition"><strong>12g</strong>Fat</div>
+          <div class="nutrition"><strong>g</strong>Sugar</div>
+          <div class="nutrition"><strong>g</strong>Fiber</div>
         </div>
 
         <div class="button-row">
@@ -441,10 +443,13 @@
 
       <article class="card" id="recipe">
         <h2>Italian Stuffed Peppers with Creamy Protein Mashed Potatoes</h2>
-        <p><strong>Prep Time:</strong> 20 minutes</p>
-        <p><strong>Cook Time:</strong> 40 minutes</p>
-        <p><strong>Total Time:</strong> 60 minutes</p>
-        <p><strong>Servings:</strong> 4</p>
+        <div class="recipe-facts">
+          <p><strong>Prep Time:</strong> 20 minutes</p>
+          <p><strong>Cook Time:</strong> 40 minutes</p>
+          <p><strong>Servings:</strong> 4</p>
+          <p><strong>Serving Size:</strong> </p>
+          <p class="macro-line"><strong>Macros Per Serving:</strong> 380 calories | 45g protein | 28g carbohydrates | g sugar | g fiber | 12g fat</p>
+        </div>
 
         <div class="recipe-card story-card">
   <h2>Behind the Recipe</h2>
@@ -453,8 +458,7 @@
 
         <div class="recipe-card">
           <h2>Ingredients</h2>
-          <ul>
-            <li>2 large red bell peppers</li>
+          <ul><li>2 large red bell peppers</li>
 <li>2 large green bell peppers</li>
 <li>12 ounces 96% lean ground beef</li>
 <li>12 ounces Perdue Ground Chicken Breast</li>
@@ -466,8 +470,7 @@
 <li>2 medium Kroger Gold potatoes, about 296 grams total, peeled if desired and cubed</li>
 <li>1/2 cup Oikos Triple Zero Plain Greek Yogurt</li>
 <li>1/4 to 1/2 cup chicken bone broth</li>
-<li>1 teaspoon minced garlic for the mashed potatoes</li>
-          </ul>
+<li>1 teaspoon minced garlic for the mashed potatoes</li></ul>
         </div>
 
         <div class="recipe-card">
@@ -484,6 +487,12 @@
 <li id="step-9">For each serving, plate one red stuffed pepper half, one green stuffed pepper half, and one-quarter of the creamy mashed potatoes.</li>
           </ol>
         </div>
+
+        
+
+        
+
+        
 
         <div class="recipe-card">
           <h2>40/400 Notes</h2>

@@ -288,11 +288,11 @@
       color: #40543e;
     }
 
-    .nutrition-grid {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      gap: 14px;
-    }
+    .nutrition-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 14px; }
+
+    .recipe-facts { margin: 24px 0; padding: 20px; background: var(--cream); border-radius: 18px; }
+    .recipe-facts p { margin: 7px 0; }
+    .macro-line { color: var(--orange); font-weight: 800; }
 
     .nutrition {
       background: var(--cream);
@@ -430,6 +430,8 @@
           <div class="nutrition"><strong>43g</strong>Protein</div>
           <div class="nutrition"><strong>35g</strong>Carbs</div>
           <div class="nutrition"><strong>10g</strong>Fat</div>
+          <div class="nutrition"><strong>g</strong>Sugar</div>
+          <div class="nutrition"><strong>g</strong>Fiber</div>
         </div>
 
         <div class="button-row">
@@ -439,10 +441,13 @@
 
       <article class="card" id="recipe">
         <h2>One-Pot Chicken Broccoli Alfredo Protein Penne</h2>
-        <p><strong>Prep Time:</strong> 10 minutes</p>
-        <p><strong>Cook Time:</strong> 25 minutes</p>
-        <p><strong>Total Time:</strong> 35 minutes</p>
-        <p><strong>Servings:</strong> 5</p>
+        <div class="recipe-facts">
+          <p><strong>Prep Time:</strong> 10 minutes</p>
+          <p><strong>Cook Time:</strong> 25 minutes</p>
+          <p><strong>Servings:</strong> 5</p>
+          <p><strong>Serving Size:</strong> </p>
+          <p class="macro-line"><strong>Macros Per Serving:</strong> 390 calories | 43g protein | 35g carbohydrates | g sugar | g fiber | 10g fat</p>
+        </div>
 
         <div class="recipe-card story-card">
   <h2>Behind the Recipe</h2>
@@ -451,8 +456,7 @@
 
         <div class="recipe-card">
           <h2>Ingredients</h2>
-          <ul>
-            <li>20 ounces raw boneless skinless chicken breast, cut into bite-size pieces</li>
+          <ul><li>20 ounces raw boneless skinless chicken breast, cut into bite-size pieces</li>
 <li>Nonstick cooking spray</li>
 <li>8 ounces dry protein penne, such as Barilla Protein+</li>
 <li>3 cups chicken bone broth, such as Kirkland Signature</li>
@@ -462,8 +466,7 @@
 <li>1 teaspoon minced garlic</li>
 <li>1/2 teaspoon granulated garlic</li>
 <li>1/2 teaspoon salt, plus more to taste</li>
-<li>1/2 teaspoon black pepper, plus more to taste</li>
-          </ul>
+<li>1/2 teaspoon black pepper, plus more to taste</li></ul>
         </div>
 
         <div class="recipe-card">
@@ -480,6 +483,12 @@
 <li id="step-9">Remove the pot from the heat and let the pasta rest for 2 to 3 minutes before dividing it into 5 equal servings.</li>
           </ol>
         </div>
+
+        
+
+        
+
+        
 
         <div class="recipe-card">
           <h2>40/400 Notes</h2>

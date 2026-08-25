@@ -256,11 +256,11 @@
       color: #40543e;
     }
 
-    .nutrition-grid {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      gap: 14px;
-    }
+    .nutrition-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 14px; }
+
+    .recipe-facts { margin: 24px 0; padding: 20px; background: var(--cream); border-radius: 18px; }
+    .recipe-facts p { margin: 7px 0; }
+    .macro-line { color: var(--orange); font-weight: 800; }
 
     .nutrition {
       background: var(--cream);
@@ -398,6 +398,8 @@
           <div class="nutrition"><strong>52g</strong>Protein</div>
           <div class="nutrition"><strong>24g</strong>Carbs</div>
           <div class="nutrition"><strong>10g</strong>Fat</div>
+          <div class="nutrition"><strong>g</strong>Sugar</div>
+          <div class="nutrition"><strong>g</strong>Fiber</div>
         </div>
 
         <div class="button-row">
@@ -407,23 +409,24 @@
 
       <article class="card" id="recipe">
         <h2>High-Protein Chicken Caesar Wrap</h2>
-        <p><strong>Prep Time:</strong> 8 minutes</p>
-        <p><strong>Cook Time:</strong> 0 minutes</p>
-        <p><strong>Total Time:</strong> 8 minutes</p>
-        <p><strong>Servings:</strong> 1</p>
+        <div class="recipe-facts">
+          <p><strong>Prep Time:</strong> 8 minutes</p>
+          
+          <p><strong>Servings:</strong> 1</p>
+          <p><strong>Serving Size:</strong> </p>
+          <p class="macro-line"><strong>Macros Per Serving:</strong> 380 calories | 52g protein | 24g carbohydrates | g sugar | g fiber | 10g fat</p>
+        </div>
 
         
 
         <div class="recipe-card">
           <h2>Ingredients</h2>
-          <ul>
-            <li>5 oz cooked chicken breast, sliced</li>
+          <ul><li>5 oz cooked chicken breast, sliced</li>
 <li>1 high-fiber low-carb tortilla</li>
 <li>1 cup chopped romaine lettuce</li>
 <li>2 tablespoons light Caesar dressing</li>
 <li>1 tablespoon grated Parmesan cheese</li>
-<li>1/4 teaspoon black pepper</li>
-          </ul>
+<li>1/4 teaspoon black pepper</li></ul>
         </div>
 
         <div class="recipe-card">
@@ -436,6 +439,12 @@
 <li id="step-5">Fold in the sides, roll the tortilla tightly, and slice the wrap in half.</li>
           </ol>
         </div>
+
+        
+
+        
+
+        
 
         <div class="recipe-card">
           <h2>40/400 Notes</h2>

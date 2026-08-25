@@ -87,7 +87,9 @@
     "calories": "395 calories",
     "proteinContent": "41 g",
     "carbohydrateContent": "43 g",
-    "fatContent": "11 g"
+    "fatContent": "11 g",
+    "sugarContent": "8 g",
+    "fiberContent": "9 g"
   }
 }
   </script>
@@ -268,11 +270,11 @@
       color: #40543e;
     }
 
-    .nutrition-grid {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      gap: 14px;
-    }
+    .nutrition-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 14px; }
+
+    .recipe-facts { margin: 24px 0; padding: 20px; background: var(--cream); border-radius: 18px; }
+    .recipe-facts p { margin: 7px 0; }
+    .macro-line { color: var(--orange); font-weight: 800; }
 
     .nutrition {
       background: var(--cream);
@@ -410,6 +412,8 @@
           <div class="nutrition"><strong>41g</strong>Protein</div>
           <div class="nutrition"><strong>43g</strong>Carbs</div>
           <div class="nutrition"><strong>11g</strong>Fat</div>
+          <div class="nutrition"><strong>8g</strong>Sugar</div>
+          <div class="nutrition"><strong>9g</strong>Fiber</div>
         </div>
 
         <div class="button-row">
@@ -419,10 +423,13 @@
 
       <article class="card" id="recipe">
         <h2>Creamy White Bean Pumpkin Turkey Chili</h2>
-        <p><strong>Prep Time:</strong> 10 minutes</p>
-        <p><strong>Cook Time:</strong> 35 minutes</p>
-        <p><strong>Total Time:</strong> 45 minutes</p>
-        <p><strong>Servings:</strong> 8</p>
+        <div class="recipe-facts">
+          <p><strong>Prep Time:</strong> 10 minutes</p>
+          <p><strong>Cook Time:</strong> 35 minutes</p>
+          <p><strong>Servings:</strong> 8</p>
+          <p><strong>Serving Size:</strong> 2 cups chili, 2 tablespoons Greek yogurt, and 1 tablespoon sliced jalapeños</p>
+          <p class="macro-line"><strong>Macros Per Serving:</strong> 395 calories | 41g protein | 43g carbohydrates | 8g sugar | 9g fiber | 11g fat</p>
+        </div>
 
         <div class="recipe-card story-card">
   <h2>Behind the Recipe</h2>
@@ -431,8 +438,7 @@
 
         <div class="recipe-card">
           <h2>Ingredients</h2>
-          <ul>
-            <li>2 1/2 pounds 93% lean ground turkey</li>
+          <ul><li>2 1/2 pounds 93% lean ground turkey</li>
 <li>1 medium yellow onion, diced</li>
 <li>1 packet Kinder&#x27;s Woodfired Chili Seasoning</li>
 <li>1 can (15 ounces) pure pumpkin purée</li>
@@ -440,8 +446,7 @@
 <li>1 can (4 ounces) mild diced green chiles</li>
 <li>4 cups Simple Truth Chicken Bone Broth, plus more only if needed</li>
 <li>1 cup Chobani Nonfat Plain Greek Yogurt</li>
-<li>1/2 cup thinly sliced fresh jalapeños</li>
-          </ul>
+<li>1/2 cup thinly sliced fresh jalapeños</li></ul>
         </div>
 
         <div class="recipe-card">
@@ -455,6 +460,12 @@
 <li id="step-6">For each serving, ladle 2 cups chili into a bowl and top with 2 tablespoons Greek yogurt and 1 tablespoon thinly sliced jalapeños.</li>
           </ol>
         </div>
+
+        
+
+        
+
+        
 
         <div class="recipe-card">
           <h2>40/400 Notes</h2>

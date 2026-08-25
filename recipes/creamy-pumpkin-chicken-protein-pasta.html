@@ -83,7 +83,9 @@
     "calories": "405 calories",
     "proteinContent": "45 g",
     "carbohydrateContent": "42 g",
-    "fatContent": "8 g"
+    "fatContent": "8 g",
+    "sugarContent": "5 g",
+    "fiberContent": "6 g"
   }
 }
   </script>
@@ -264,11 +266,11 @@
       color: #40543e;
     }
 
-    .nutrition-grid {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      gap: 14px;
-    }
+    .nutrition-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 14px; }
+
+    .recipe-facts { margin: 24px 0; padding: 20px; background: var(--cream); border-radius: 18px; }
+    .recipe-facts p { margin: 7px 0; }
+    .macro-line { color: var(--orange); font-weight: 800; }
 
     .nutrition {
       background: var(--cream);
@@ -406,6 +408,8 @@
           <div class="nutrition"><strong>45g</strong>Protein</div>
           <div class="nutrition"><strong>42g</strong>Carbs</div>
           <div class="nutrition"><strong>8g</strong>Fat</div>
+          <div class="nutrition"><strong>5g</strong>Sugar</div>
+          <div class="nutrition"><strong>6g</strong>Fiber</div>
         </div>
 
         <div class="button-row">
@@ -415,10 +419,13 @@
 
       <article class="card" id="recipe">
         <h2>Creamy Pumpkin Chicken Protein Pasta</h2>
-        <p><strong>Prep Time:</strong> 5 minutes</p>
-        <p><strong>Cook Time:</strong> 18 minutes</p>
-        <p><strong>Total Time:</strong> 28 minutes</p>
-        <p><strong>Servings:</strong> 1</p>
+        <div class="recipe-facts">
+          <p><strong>Prep Time:</strong> 5 minutes</p>
+          <p><strong>Cook Time:</strong> 18 minutes</p>
+          <p><strong>Servings:</strong> 1</p>
+          <p><strong>Serving Size:</strong> the full pasta mixture with 4 ounces cooked sliced chicken</p>
+          <p class="macro-line"><strong>Macros Per Serving:</strong> 405 calories | 45g protein | 42g carbohydrates | 5g sugar | 6g fiber | 8g fat</p>
+        </div>
 
         <div class="recipe-card story-card">
   <h2>Behind the Recipe</h2>
@@ -427,8 +434,7 @@
 
         <div class="recipe-card">
           <h2>Ingredients</h2>
-          <ul>
-            <li>6 ounces raw boneless skinless chicken breast</li>
+          <ul><li>6 ounces raw boneless skinless chicken breast</li>
 <li>1 teaspoon olive oil, divided</li>
 <li>1/2 teaspoon garlic powder</li>
 <li>1/2 teaspoon onion powder</li>
@@ -438,8 +444,7 @@
 <li>1/3 cup pure pumpkin purée</li>
 <li>1/4 cup Chobani Nonfat Plain Greek Yogurt</li>
 <li>1 tablespoon grated Parmesan cheese</li>
-<li>1/4 teaspoon rubbed sage</li>
-          </ul>
+<li>1/4 teaspoon rubbed sage</li></ul>
         </div>
 
         <div class="recipe-card">
@@ -452,6 +457,12 @@
 <li id="step-5">Transfer the full pasta mixture to a shallow bowl or wide plate and top with exactly 4 ounces sliced cooked chicken.</li>
           </ol>
         </div>
+
+        
+
+        
+
+        
 
         <div class="recipe-card">
           <h2>40/400 Notes</h2>

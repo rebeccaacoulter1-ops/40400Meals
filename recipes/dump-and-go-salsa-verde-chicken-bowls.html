@@ -284,11 +284,11 @@
       color: #40543e;
     }
 
-    .nutrition-grid {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      gap: 14px;
-    }
+    .nutrition-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 14px; }
+
+    .recipe-facts { margin: 24px 0; padding: 20px; background: var(--cream); border-radius: 18px; }
+    .recipe-facts p { margin: 7px 0; }
+    .macro-line { color: var(--orange); font-weight: 800; }
 
     .nutrition {
       background: var(--cream);
@@ -426,6 +426,8 @@
           <div class="nutrition"><strong>42g</strong>Protein</div>
           <div class="nutrition"><strong>34g</strong>Carbs</div>
           <div class="nutrition"><strong>9g</strong>Fat</div>
+          <div class="nutrition"><strong>g</strong>Sugar</div>
+          <div class="nutrition"><strong>g</strong>Fiber</div>
         </div>
 
         <div class="button-row">
@@ -435,10 +437,13 @@
 
       <article class="card" id="recipe">
         <h2>Dump-and-Go Crockpot Salsa Verde Chicken Bowls</h2>
-        <p><strong>Prep Time:</strong> 5 minutes</p>
-        <p><strong>Cook Time:</strong> 480 minutes</p>
-        <p><strong>Total Time:</strong> 495 minutes</p>
-        <p><strong>Servings:</strong> 6</p>
+        <div class="recipe-facts">
+          <p><strong>Prep Time:</strong> 5 minutes</p>
+          <p><strong>Cook Time:</strong> 480 minutes</p>
+          <p><strong>Servings:</strong> 6</p>
+          <p><strong>Serving Size:</strong> 10 ounces chicken mixture with 3/4 cup cauliflower rice, 1/8 avocado, cilantro, and a lime wedge</p>
+          <p class="macro-line"><strong>Macros Per Serving:</strong> 375 calories | 42g protein | 34g carbohydrates | g sugar | g fiber | 9g fat</p>
+        </div>
 
         <div class="recipe-card story-card">
   <h2>Behind the Recipe</h2>
@@ -447,8 +452,7 @@
 
         <div class="recipe-card">
           <h2>Ingredients</h2>
-          <ul>
-            <li>2 pounds raw boneless skinless chicken breast</li>
+          <ul><li>2 pounds raw boneless skinless chicken breast</li>
 <li>3/4 cup Daisy 4% Cottage Cheese</li>
 <li>1 (16-ounce) jar Herdez Salsa Verde</li>
 <li>1 (15-ounce) can black beans, drained and rinsed</li>
@@ -460,8 +464,7 @@
 <li>2 (10-ounce) bags Birds Eye Steamfresh Original Riced Cauliflower</li>
 <li>3/4 medium avocado, divided into six equal portions</li>
 <li>6 tablespoons chopped fresh cilantro</li>
-<li>1 lime, cut into 6 wedges</li>
-          </ul>
+<li>1 lime, cut into 6 wedges</li></ul>
         </div>
 
         <div class="recipe-card">
@@ -477,6 +480,12 @@
 <li id="step-8">Garnish each bowl with 1/8 avocado, 1 tablespoon cilantro, and 1 lime wedge.</li>
           </ol>
         </div>
+
+        
+
+        
+
+        
 
         <div class="recipe-card">
           <h2>40/400 Notes</h2>

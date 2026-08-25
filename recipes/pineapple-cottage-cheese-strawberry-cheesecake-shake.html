@@ -245,11 +245,11 @@
       color: #40543e;
     }
 
-    .nutrition-grid {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      gap: 14px;
-    }
+    .nutrition-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 14px; }
+
+    .recipe-facts { margin: 24px 0; padding: 20px; background: var(--cream); border-radius: 18px; }
+    .recipe-facts p { margin: 7px 0; }
+    .macro-line { color: var(--orange); font-weight: 800; }
 
     .nutrition {
       background: var(--cream);
@@ -387,6 +387,8 @@
           <div class="nutrition"><strong>42g</strong>Protein</div>
           <div class="nutrition"><strong>29g</strong>Carbs</div>
           <div class="nutrition"><strong>12g</strong>Fat</div>
+          <div class="nutrition"><strong>g</strong>Sugar</div>
+          <div class="nutrition"><strong>g</strong>Fiber</div>
         </div>
 
         <div class="button-row">
@@ -396,10 +398,13 @@
 
       <article class="card" id="recipe">
         <h2>Pineapple Cottage Cheese Bowl + Strawberry Cheesecake Shake</h2>
-        <p><strong>Prep Time:</strong> 5 minutes</p>
-        <p><strong>Cook Time:</strong> 0 minutes</p>
-        <p><strong>Total Time:</strong> 5 minutes</p>
-        <p><strong>Servings:</strong> 1</p>
+        <div class="recipe-facts">
+          <p><strong>Prep Time:</strong> 5 minutes</p>
+          
+          <p><strong>Servings:</strong> 1</p>
+          <p><strong>Serving Size:</strong> </p>
+          <p class="macro-line"><strong>Macros Per Serving:</strong> 355 calories | 42g protein | 29g carbohydrates | g sugar | g fiber | 12g fat</p>
+        </div>
 
         <div class="recipe-card story-card">
   <h2>Behind the Recipe</h2>
@@ -408,13 +413,11 @@
 
         <div class="recipe-card">
           <h2>Ingredients</h2>
-          <ul>
-            <li>3/4 cup Daisy 4% Cottage Cheese</li>
+          <ul><li>3/4 cup Daisy 4% Cottage Cheese</li>
 <li>1/2 cup Dole pineapple, drained</li>
 <li>1 scoop Clean Simple Eats Strawberry Cheesecake Protein Powder</li>
 <li>1 cup unsweetened almond milk</li>
-<li>Ice, as needed</li>
-          </ul>
+<li>Ice, as needed</li></ul>
         </div>
 
         <div class="recipe-card">
@@ -425,6 +428,12 @@
 <li id="step-3">Serve the cottage cheese bowl and protein shake together.</li>
           </ol>
         </div>
+
+        
+
+        
+
+        
 
         <div class="recipe-card">
           <h2>40/400 Notes</h2>

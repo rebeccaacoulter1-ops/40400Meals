@@ -292,11 +292,11 @@
       color: #40543e;
     }
 
-    .nutrition-grid {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      gap: 14px;
-    }
+    .nutrition-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 14px; }
+
+    .recipe-facts { margin: 24px 0; padding: 20px; background: var(--cream); border-radius: 18px; }
+    .recipe-facts p { margin: 7px 0; }
+    .macro-line { color: var(--orange); font-weight: 800; }
 
     .nutrition {
       background: var(--cream);
@@ -434,6 +434,8 @@
           <div class="nutrition"><strong>44g</strong>Protein</div>
           <div class="nutrition"><strong>33g</strong>Carbs</div>
           <div class="nutrition"><strong>8g</strong>Fat</div>
+          <div class="nutrition"><strong>g</strong>Sugar</div>
+          <div class="nutrition"><strong>g</strong>Fiber</div>
         </div>
 
         <div class="button-row">
@@ -443,10 +445,13 @@
 
       <article class="card" id="recipe">
         <h2>Dump-and-Go Crockpot White Chicken Chili</h2>
-        <p><strong>Prep Time:</strong> 5 minutes</p>
-        <p><strong>Cook Time:</strong> 480 minutes</p>
-        <p><strong>Total Time:</strong> 495 minutes</p>
-        <p><strong>Servings:</strong> 6</p>
+        <div class="recipe-facts">
+          <p><strong>Prep Time:</strong> 5 minutes</p>
+          <p><strong>Cook Time:</strong> 480 minutes</p>
+          <p><strong>Servings:</strong> 6</p>
+          <p><strong>Serving Size:</strong> 12 ounces chili with 2 tablespoons tortilla strips, 2 tablespoons Greek yogurt, and 2 to 3 jalapeño slices</p>
+          <p class="macro-line"><strong>Macros Per Serving:</strong> 365 calories | 44g protein | 33g carbohydrates | g sugar | g fiber | 8g fat</p>
+        </div>
 
         <div class="recipe-card story-card">
   <h2>Behind the Recipe</h2>
@@ -455,8 +460,7 @@
 
         <div class="recipe-card">
           <h2>Ingredients</h2>
-          <ul>
-            <li>2 pounds raw boneless skinless chicken breast</li>
+          <ul><li>2 pounds raw boneless skinless chicken breast</li>
 <li>1 cup Chobani Nonfat Plain Greek Yogurt, plus 3/4 cup for serving</li>
 <li>2 ounces Philadelphia 1/3 Less Fat Cream Cheese, cut into small pieces</li>
 <li>1 (15-ounce) can cannellini beans, drained and rinsed</li>
@@ -470,8 +474,7 @@
 <li>1/2 teaspoon salt</li>
 <li>1/4 teaspoon black pepper</li>
 <li>3/4 cup tortilla strips, measured as 2 tablespoons per serving</li>
-<li>1 fresh jalapeño, thinly sliced</li>
-          </ul>
+<li>1 fresh jalapeño, thinly sliced</li></ul>
         </div>
 
         <div class="recipe-card">
@@ -488,6 +491,12 @@
 <li id="step-9">Top each bowl with 2 tablespoons tortilla strips, 2 tablespoons Chobani Greek yogurt, and 2 to 3 thin jalapeño slices, if desired.</li>
           </ol>
         </div>
+
+        
+
+        
+
+        
 
         <div class="recipe-card">
           <h2>40/400 Notes</h2>

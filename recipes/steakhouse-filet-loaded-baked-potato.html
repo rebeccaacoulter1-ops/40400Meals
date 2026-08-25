@@ -267,11 +267,11 @@
       color: #40543e;
     }
 
-    .nutrition-grid {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      gap: 14px;
-    }
+    .nutrition-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 14px; }
+
+    .recipe-facts { margin: 24px 0; padding: 20px; background: var(--cream); border-radius: 18px; }
+    .recipe-facts p { margin: 7px 0; }
+    .macro-line { color: var(--orange); font-weight: 800; }
 
     .nutrition {
       background: var(--cream);
@@ -409,6 +409,8 @@
           <div class="nutrition"><strong>42g</strong>Protein</div>
           <div class="nutrition"><strong>30g</strong>Carbs</div>
           <div class="nutrition"><strong>11g</strong>Fat</div>
+          <div class="nutrition"><strong>g</strong>Sugar</div>
+          <div class="nutrition"><strong>g</strong>Fiber</div>
         </div>
 
         <div class="button-row">
@@ -418,10 +420,13 @@
 
       <article class="card" id="recipe">
         <h2>Steakhouse Filet &amp; Loaded Baked Potato</h2>
-        <p><strong>Prep Time:</strong> 10 minutes</p>
-        <p><strong>Cook Time:</strong> 25 minutes</p>
-        <p><strong>Total Time:</strong> 35 minutes</p>
-        <p><strong>Servings:</strong> 1</p>
+        <div class="recipe-facts">
+          <p><strong>Prep Time:</strong> 10 minutes</p>
+          <p><strong>Cook Time:</strong> 25 minutes</p>
+          <p><strong>Servings:</strong> 1</p>
+          <p><strong>Serving Size:</strong> </p>
+          <p class="macro-line"><strong>Macros Per Serving:</strong> 400 calories | 42g protein | 30g carbohydrates | g sugar | g fiber | 11g fat</p>
+        </div>
 
         <div class="recipe-card story-card">
   <h2>Behind the Recipe</h2>
@@ -430,16 +435,14 @@
 
         <div class="recipe-card">
           <h2>Ingredients</h2>
-          <ul>
-            <li>3.5 ounces cooked filet mignon</li>
+          <ul><li>3.5 ounces cooked filet mignon</li>
 <li>1 tablespoon soy sauce</li>
 <li>Kinder&#x27;s steak seasoning, to taste</li>
 <li>100 grams baked potato</li>
 <li>1/4 cup plain nonfat Greek yogurt, such as Kirkland or Chobani</li>
 <li>1/2 teaspoon butter</li>
 <li>100 grams broccoli florets, about 1 heaping cup</li>
-<li>Salt and black pepper, to taste</li>
-          </ul>
+<li>Salt and black pepper, to taste</li></ul>
         </div>
 
         <div class="recipe-card">
@@ -453,6 +456,12 @@
 <li id="step-6">Serve the filet with the loaded baked potato and broccoli.</li>
           </ol>
         </div>
+
+        
+
+        
+
+        
 
         <div class="recipe-card">
           <h2>40/400 Notes</h2>

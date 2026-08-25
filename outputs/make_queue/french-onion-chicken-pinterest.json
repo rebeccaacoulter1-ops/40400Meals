@@ -1,0 +1,57 @@
+{
+  "recipe_id": "french-onion-chicken",
+  "platform": "pinterest",
+  "title": "French Onion Chicken",
+  "description": "Cozy French onion chicken with creamy high-protein mashed potatoes.",
+  "destination_url": "https://40400meals.com/recipes/french-onion-chicken.html",
+  "hashtags": [
+    "#FrenchOnionChicken",
+    "#FallDinner",
+    "#HighProteinMeals",
+    "#40400Meals"
+  ],
+  "image_prompt": "Premium food-blog editorial plate of baked chicken covered with deeply golden caramelized onions and melted mozzarella beside creamy mashed potatoes. Warm autumn dinner atmosphere, amber window light, realistic homemade family meal, no extra garnish or side dishes.",
+  "image_alt_text": "French onion chicken with protein mashed potatoes.",
+  "pin_filename": "french-onion-chicken-pinterest-pin.png",
+  "image_filename": "french-onion-chicken-pinterest-pin.png",
+  "image_path": "outputs/images/pinterest/french-onion-chicken-pinterest-pin.png",
+  "image_mime_type": "image/png",
+  "design_brain": {
+    "template_name": "P07 Fall",
+    "template_type": "seasonal",
+    "season": "fall",
+    "month": 8,
+    "recipe_category": "general",
+    "image_style": "soft indirect premium food-blog window light",
+    "photo_composition": "tight premium food-blog editorial angle",
+    "color_mood": "warm rich premium recipe-blog color with natural variation",
+    "accent_colors": [
+      "#FFF7ED",
+      "#F97316",
+      "#7C2D12"
+    ],
+    "text_style": "clean and modern",
+    "overlay_style": "minimal",
+    "icon_style": "minimal",
+    "layout_recommendation": "P01 classic layout",
+    "optimization": {
+      "visual_appeal": "high",
+      "save_potential": "high",
+      "click_potential": "high"
+    },
+    "version": "2.5",
+    "status": "design_strategy_ready"
+  },
+  "canva_text_overlay": {
+    "headline": "French Onion Chicken",
+    "subheadline": "44g Protein \u2022 400 Calories",
+    "brand": "40/400 Meals"
+  },
+  "seo_keywords": [
+    "french onion chicken",
+    "protein mashed potatoes",
+    "high protein fall dinner",
+    "family chicken dinner"
+  ],
+  "status": "ready_for_make"
+}

@@ -261,11 +261,11 @@
       color: #40543e;
     }
 
-    .nutrition-grid {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      gap: 14px;
-    }
+    .nutrition-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 14px; }
+
+    .recipe-facts { margin: 24px 0; padding: 20px; background: var(--cream); border-radius: 18px; }
+    .recipe-facts p { margin: 7px 0; }
+    .macro-line { color: var(--orange); font-weight: 800; }
 
     .nutrition {
       background: var(--cream);
@@ -403,6 +403,8 @@
           <div class="nutrition"><strong>44g</strong>Protein</div>
           <div class="nutrition"><strong>33g</strong>Carbs</div>
           <div class="nutrition"><strong>12g</strong>Fat</div>
+          <div class="nutrition"><strong>g</strong>Sugar</div>
+          <div class="nutrition"><strong>g</strong>Fiber</div>
         </div>
 
         <div class="button-row">
@@ -412,10 +414,13 @@
 
       <article class="card" id="recipe">
         <h2>Honey Mustard BBQ Chicken Crunch Wrap</h2>
-        <p><strong>Prep Time:</strong> 10 minutes</p>
-        <p><strong>Cook Time:</strong> 0 minutes</p>
-        <p><strong>Total Time:</strong> 10 minutes</p>
-        <p><strong>Servings:</strong> 1</p>
+        <div class="recipe-facts">
+          <p><strong>Prep Time:</strong> 10 minutes</p>
+          
+          <p><strong>Servings:</strong> 1</p>
+          <p><strong>Serving Size:</strong> 1 large wrap</p>
+          <p class="macro-line"><strong>Macros Per Serving:</strong> 400 calories | 44g protein | 33g carbohydrates | g sugar | g fiber | 12g fat</p>
+        </div>
 
         <div class="recipe-card story-card">
   <h2>Behind the Recipe</h2>
@@ -424,8 +429,7 @@
 
         <div class="recipe-card">
           <h2>Ingredients</h2>
-          <ul>
-            <li>4 ounces Realgood Foods Lightly Breaded Chicken Breast Nuggets, cooked according to package directions and chopped</li>
+          <ul><li>4 ounces Realgood Foods Lightly Breaded Chicken Breast Nuggets, cooked according to package directions and chopped</li>
 <li>1 Ole Xtreme Wellness High Fiber Large Wrap</li>
 <li>1 cup chopped romaine lettuce</li>
 <li>1/2 bag Quest Original Style BBQ Protein Chips, lightly crushed</li>
@@ -433,8 +437,7 @@
 <li>2 teaspoons yellow mustard</li>
 <li>1/2 teaspoon honey</li>
 <li>1/4 teaspoon garlic powder</li>
-<li>Pinch of salt and black pepper</li>
-          </ul>
+<li>Pinch of salt and black pepper</li></ul>
         </div>
 
         <div class="recipe-card">
@@ -447,6 +450,12 @@
 <li id="step-5">Fold in the sides, roll tightly, and slice in half.</li>
           </ol>
         </div>
+
+        
+
+        
+
+        
 
         <div class="recipe-card">
           <h2>40/400 Notes</h2>

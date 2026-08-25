@@ -96,7 +96,9 @@
     "calories": "390 calories",
     "proteinContent": "48 g",
     "carbohydrateContent": "40 g",
-    "fatContent": "6 g"
+    "fatContent": "6 g",
+    "sugarContent": "6 g",
+    "fiberContent": "4 g"
   }
 }
   </script>
@@ -277,11 +279,11 @@
       color: #40543e;
     }
 
-    .nutrition-grid {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      gap: 14px;
-    }
+    .nutrition-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 14px; }
+
+    .recipe-facts { margin: 24px 0; padding: 20px; background: var(--cream); border-radius: 18px; }
+    .recipe-facts p { margin: 7px 0; }
+    .macro-line { color: var(--orange); font-weight: 800; }
 
     .nutrition {
       background: var(--cream);
@@ -419,6 +421,8 @@
           <div class="nutrition"><strong>48g</strong>Protein</div>
           <div class="nutrition"><strong>40g</strong>Carbs</div>
           <div class="nutrition"><strong>6g</strong>Fat</div>
+          <div class="nutrition"><strong>6g</strong>Sugar</div>
+          <div class="nutrition"><strong>4g</strong>Fiber</div>
         </div>
 
         <div class="button-row">
@@ -428,10 +432,13 @@
 
       <article class="card" id="recipe">
         <h2>Creamy Chicken and Wild Rice Soup</h2>
-        <p><strong>Prep Time:</strong> 15 minutes</p>
-        <p><strong>Cook Time:</strong> 40 minutes</p>
-        <p><strong>Total Time:</strong> 55 minutes</p>
-        <p><strong>Servings:</strong> 6</p>
+        <div class="recipe-facts">
+          <p><strong>Prep Time:</strong> 15 minutes</p>
+          <p><strong>Cook Time:</strong> 40 minutes</p>
+          <p><strong>Servings:</strong> 6</p>
+          <p><strong>Serving Size:</strong> 2 cups soup with 4 ounces cooked chicken</p>
+          <p class="macro-line"><strong>Macros Per Serving:</strong> 390 calories | 48g protein | 40g carbohydrates | 6g sugar | 4g fiber | 6g fat</p>
+        </div>
 
         <div class="recipe-card story-card">
   <h2>Behind the Recipe</h2>
@@ -440,8 +447,7 @@
 
         <div class="recipe-card">
           <h2>Ingredients</h2>
-          <ul>
-            <li>2 pounds boneless skinless chicken breasts, approximately 4 chicken breasts</li>
+          <ul><li>2 pounds boneless skinless chicken breasts, approximately 4 chicken breasts</li>
 <li>1 teaspoon olive oil</li>
 <li>1 teaspoon garlic powder</li>
 <li>1 teaspoon onion powder</li>
@@ -452,8 +458,7 @@
 <li>1 cup dry wild rice blend</li>
 <li>6 cups Simple Truth Chicken Bone Broth</li>
 <li>1 teaspoon dried thyme</li>
-<li>1 1/2 cups Chobani Nonfat Plain Greek Yogurt</li>
-          </ul>
+<li>1 1/2 cups Chobani Nonfat Plain Greek Yogurt</li></ul>
         </div>
 
         <div class="recipe-card">
@@ -468,6 +473,12 @@
 <li id="step-7">Divide into six servings of 2 cups each, confirming that each portion contains 4 ounces cooked chicken.</li>
           </ol>
         </div>
+
+        
+
+        
+
+        
 
         <div class="recipe-card">
           <h2>40/400 Notes</h2>
