@@ -188,11 +188,11 @@
       color: #40543e;
     }
 
-    .nutrition-grid {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      gap: 14px;
-    }
+    .nutrition-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 14px; }
+
+    .recipe-facts { margin: 24px 0; padding: 20px; background: var(--cream); border-radius: 18px; }
+    .recipe-facts p { margin: 7px 0; }
+    .macro-line { color: var(--orange); font-weight: 800; }
 
     .nutrition {
       background: var(--cream);
@@ -330,6 +330,8 @@
           <div class="nutrition"><strong>{{recipe.macros.protein_g}}g</strong>Protein</div>
           <div class="nutrition"><strong>{{recipe.macros.carbs_g}}g</strong>Carbs</div>
           <div class="nutrition"><strong>{{recipe.macros.fat_g}}g</strong>Fat</div>
+          <div class="nutrition"><strong>{{recipe.macros.sugar_g}}g</strong>Sugar</div>
+          <div class="nutrition"><strong>{{recipe.macros.fiber_g}}g</strong>Fiber</div>
         </div>
 
         <div class="button-row">
@@ -339,18 +341,19 @@
 
       <article class="card" id="recipe">
         <h2>{{recipe.title}}</h2>
-        <p><strong>Prep Time:</strong> {{recipe.times.prep_minutes}} minutes</p>
-        <p><strong>Cook Time:</strong> {{recipe.times.cook_minutes}} minutes</p>
-        <p><strong>Total Time:</strong> {{recipe.times.total_minutes}} minutes</p>
-        <p><strong>Servings:</strong> {{recipe.servings}}</p>
+        <div class="recipe-facts">
+          <p><strong>Prep Time:</strong> {{recipe.times.prep_minutes}} minutes</p>
+          {{cook_time_line}}
+          <p><strong>Servings:</strong> {{recipe.servings}}</p>
+          <p><strong>Serving Size:</strong> {{recipe.serving_size}}</p>
+          <p class="macro-line"><strong>Macros Per Serving:</strong> {{recipe.macros.calories}} calories | {{recipe.macros.protein_g}}g protein | {{recipe.macros.carbs_g}}g carbohydrates | {{recipe.macros.sugar_g}}g sugar | {{recipe.macros.fiber_g}}g fiber | {{recipe.macros.fat_g}}g fat</p>
+        </div>
 
         {{story_section}}
 
         <div class="recipe-card">
           <h2>Ingredients</h2>
-          <ul>
-            {{ingredients_list}}
-          </ul>
+          {{ingredient_sections}}
         </div>
 
         <div class="recipe-card">
@@ -359,6 +362,12 @@
             {{instructions_list}}
           </ol>
         </div>
+
+        {{freezer_storage_section}}
+
+        {{reheating_section}}
+
+        {{optional_sections}}
 
         <div class="recipe-card">
           <h2>40/400 Notes</h2>

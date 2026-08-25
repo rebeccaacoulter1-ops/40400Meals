@@ -1,0 +1,33 @@
+{
+  "recipe_id": "crockpot-garlic-chicken",
+  "recipe": {
+    "slug": "crockpot-garlic-chicken",
+    "title": "Crockpot Garlic Chicken",
+    "summary": "Dump-and-go garlic chicken with tender broccoli and a separate cauliflower-jasmine rice mixture.",
+    "story": "A family-friendly set-it-and-forget-it dinner built for busy days, with familiar garlic chicken, broccoli, and rice.",
+    "category": "Quick & Easy Family Dinner",
+    "cuisine": "American Asian-Inspired",
+    "date_published": "2026-08-25",
+    "servings": 6,
+    "serving_size": "4.5 ounces cooked chicken with broccoli, garlic sauce, and cauliflower-jasmine rice",
+    "times": {"prep_minutes": 10, "cook_minutes": null, "total_minutes": 420},
+    "macros": {"calories": 390, "protein_g": 40, "carbs_g": 37, "sugar_g": 4, "fiber_g": 5, "fat_g": 9},
+    "ingredients": [
+      "2 1/4 pounds raw boneless, skinless chicken breast", "1/2 cup Simple Truth Organic Chicken Bone Broth", "1/3 cup Kikkoman Less Sodium Soy Sauce", "1 tablespoon Shirakiku 100% Pure Sesame Oil", "1 tablespoon Marukan Rice Vinegar", "1 tablespoon stevia brown-sugar substitute", "1 tablespoon minced garlic", "1 teaspoon granulated garlic", "1/2 teaspoon onion powder", "1/4 teaspoon black pepper", "4 cups frozen broccoli florets", "2 10-ounce pouches Kroger Classic Grains Jasmine Rice from the freezer section", "2 10-ounce bags Birds Eye Steamfresh Original Riced Cauliflower"
+    ],
+    "ingredient_sections": [
+      {"title": "Crockpot Garlic Chicken", "items": ["2 1/4 pounds raw boneless, skinless chicken breast", "1/2 cup Simple Truth Organic Chicken Bone Broth", "1/3 cup Kikkoman Less Sodium Soy Sauce", "1 tablespoon Shirakiku 100% Pure Sesame Oil", "1 tablespoon Marukan Rice Vinegar", "1 tablespoon stevia brown-sugar substitute", "1 tablespoon minced garlic", "1 teaspoon granulated garlic", "1/2 teaspoon onion powder", "1/4 teaspoon black pepper", "4 cups frozen broccoli florets"]},
+      {"title": "Cauliflower-Jasmine Rice Mixture", "items": ["2 10-ounce pouches Kroger Classic Grains Jasmine Rice from the freezer section", "2 10-ounce bags Birds Eye Steamfresh Original Riced Cauliflower"]}
+    ],
+    "instructions": [
+      "Place the chicken breasts in the bottom of a 6-quart crockpot.", "Pour the chicken bone broth, soy sauce, sesame oil, and rice vinegar over the chicken.", "Add the stevia brown sugar, minced garlic, granulated garlic, onion powder, and black pepper.", "Turn the chicken once to coat it in the sauce.", "Cover and cook on LOW for 6 to 7 hours. Leave the crockpot covered until the chicken reaches 165°F and shreds easily.", "During the final 20 to 30 minutes, add the frozen broccoli florets to the crockpot and replace the lid.", "Shred the chicken directly in the crockpot. Stir the chicken and broccoli into the garlic sauce and let rest for 5 minutes.", "Microwave the jasmine rice and cauliflower rice separately according to their package directions, then combine thoroughly.", "Divide the rice mixture evenly between six servings. Add 4.5 ounces cooked garlic chicken, broccoli, and one-sixth of the sauce to each serving."
+    ],
+    "freezer_storage": ["Allow the chicken, broccoli, sauce, and rice mixture to cool completely.", "If four servings remain, use a gallon-size freezer bag. If fewer than four servings remain, use a quart-size freezer bag.", "Portion the chicken, broccoli, sauce, and rice mixture together.", "Remove as much air as possible, seal, and freeze flat for up to 3 months."],
+    "reheating_instructions": ["Thaw overnight in the refrigerator.", "Transfer one serving to a microwave-safe bowl and add 1 tablespoon chicken bone broth or water.", "Cover loosely and microwave for 90 seconds. Stir, then continue heating in 30-second intervals until hot throughout."],
+    "tips": ["Keep the rice mixture out of the crockpot and prepare it just before serving.", "Add the broccoli only during the final 20 to 30 minutes so it stays tender instead of mushy."]
+  },
+  "seo": {"meta_title": "Crockpot Garlic Chicken | Easy High-Protein Dinner", "meta_description": "Easy dump-and-go garlic chicken with broccoli and cauliflower-jasmine rice. A family-friendly high-protein dinner.", "keywords": ["crockpot garlic chicken", "easy family dinner", "high protein crockpot meal", "busy mom dinner"]},
+  "images": {"presentation_template": "warm_family_dinner", "hero_image_url": "https://40400meals.com/outputs/images/food_photos/crockpot-garlic-chicken-food-photo.png", "image_prompt": "Premium food-blog editorial photo of glossy shredded garlic chicken with bright tender broccoli beside a clearly separate mixture of jasmine rice and cauliflower rice. Warm early-fall family dinner mood, amber natural window light, cozy neutral linen, realistic homemade texture, no garnish or extra foods.", "alt_text": "Crockpot garlic chicken with broccoli and cauliflower-jasmine rice."},
+  "social": {"pinterest": {"title": "Crockpot Garlic Chicken", "description": "Dump, set, and come back to a family-friendly high-protein garlic chicken dinner.", "destination_url": "https://40400meals.com/recipes/crockpot-garlic-chicken.html", "hashtags": ["#CrockpotChicken", "#EasyFamilyDinner", "#HighProteinMeals", "#40400Meals"]}},
+  "homepage": {"hidden": false, "priority": 106, "published_at": "2026-08-25T09:00:00-05:00", "summary": "Dump-and-go garlic chicken with broccoli and cauliflower-jasmine rice.", "image_path": "outputs/images/pinterest/crockpot-garlic-chicken-pinterest-pin.png"}
+}
