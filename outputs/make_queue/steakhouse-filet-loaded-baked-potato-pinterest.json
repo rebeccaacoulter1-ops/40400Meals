@@ -1,0 +1,60 @@
+{
+  "recipe_id": "steakhouse-filet-loaded-baked-potato",
+  "platform": "pinterest",
+  "title": "Filet & Loaded Baked Potato | 42g Protein",
+  "description": "A steakhouse-style filet dinner with a Greek-yogurt loaded baked potato and broccoli for approximately 42 grams of protein and 400 calories.",
+  "destination_url": "https://40400meals.com/recipes/steakhouse-filet-loaded-baked-potato.html",
+  "hashtags": [
+    "#FiletMignon",
+    "#HighProteinDinner",
+    "#SteakDinner",
+    "#MacroFriendlyMeals",
+    "#40400Meals"
+  ],
+  "image_prompt": "A realistic steakhouse-style dinner plate with a small tender filet mignon, a modest baked potato split and topped with a little butter and plain Greek yogurt, and a generous serving of seasoned broccoli. Natural window light, warm home dining table, appetizing but realistic portions. No extra sauces, bread, herbs, onions, bacon, shredded cheese, or garnish.",
+  "image_alt_text": "Filet mignon served with a Greek-yogurt loaded baked potato and broccoli.",
+  "pin_filename": "steakhouse-filet-loaded-baked-potato-pinterest-pin.png",
+  "image_filename": "steakhouse-filet-loaded-baked-potato-pinterest-pin.png",
+  "image_path": "outputs/images/pinterest/steakhouse-filet-loaded-baked-potato-pinterest-pin.png",
+  "image_mime_type": "image/png",
+  "design_brain": {
+    "template_name": "P07 Fall",
+    "template_type": "seasonal",
+    "season": "fall",
+    "month": 8,
+    "recipe_category": "general",
+    "image_style": "soft indirect premium food-blog window light",
+    "photo_composition": "tight premium food-blog editorial angle",
+    "color_mood": "warm rich premium recipe-blog color with natural variation",
+    "accent_colors": [
+      "#FFF7ED",
+      "#F97316",
+      "#7C2D12"
+    ],
+    "text_style": "clean and modern",
+    "overlay_style": "minimal",
+    "icon_style": "minimal",
+    "layout_recommendation": "P01 classic layout",
+    "optimization": {
+      "visual_appeal": "high",
+      "save_potential": "high",
+      "click_potential": "high"
+    },
+    "version": "2.5",
+    "status": "design_strategy_ready"
+  },
+  "canva_text_overlay": {
+    "headline": "Steakhouse Filet & Loaded Baked Potato",
+    "subheadline": "42g Protein \u2022 400 Calories",
+    "brand": "40/400 Meals"
+  },
+  "seo_keywords": [
+    "high protein filet dinner",
+    "filet mignon baked potato",
+    "400 calorie steak dinner",
+    "healthy steakhouse dinner",
+    "Greek yogurt baked potato",
+    "40 400 meals"
+  ],
+  "status": "ready_for_make"
+}
