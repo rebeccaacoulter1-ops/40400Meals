@@ -2,6 +2,7 @@ import json
 import re
 from html import escape
 from pathlib import Path
+from urllib.parse import quote_plus
 
 
 # -----------------------------
@@ -11,6 +12,65 @@ from pathlib import Path
 SITE_URL = "https://40400meals.com"
 RECIPES_DIR = Path("recipes")
 TEMPLATE_FILE = Path("templates/recipe-template.html")
+
+# -----------------------------
+# Amazon affiliate ingredient links
+# -----------------------------
+# Every branded product named in an ingredient line gets auto-linked to an
+# Amazon search for that product, tagged with the 40/400 Meals Associate ID.
+# To add a new brand: add one line below. No other code changes needed —
+# every recipe (past and future) picks it up the next time pages render.
+
+AMAZON_ASSOCIATE_TAG = "40400meals-20"
+
+# Ordered longest-phrase-first so a specific match (e.g. "Frank's RedHot")
+# is found before a shorter one that might also appear in the same line.
+BRAND_LINKS = {
+    "Frank's RedHot": "Frank's RedHot buffalo wings sauce",
+    "Member's Mark": "Member's Mark grilled chicken bites",
+    "Realgood Foods": "Real Good Foods chicken",
+    "Clean Simple Eats": "Clean Simple Eats protein powder",
+    "The Only Bean": "The Only Bean butter beans",
+    "Ocean Spray": "Ocean Spray Craisins dried cranberries",
+    "Birds Eye": "Birds Eye Steamfresh riced cauliflower",
+    "Kikkoman": "Kikkoman less sodium soy sauce",
+    "Philadelphia": "Philadelphia cream cheese",
+    "Chobani": "Chobani nonfat plain Greek yogurt",
+    "Marukan": "Marukan rice vinegar",
+    "Barilla": "Barilla protein pasta",
+    "Kinder's": "Kinder's seasoning",
+    "Whisps": "Whisps parmesan crisps",
+    "Shirakiku": "Shirakiku",
+    "Mission": "Mission Carb Balance tortillas",
+    "Quest": "Quest Nutrition protein chips",
+    "Daisy": "Daisy cottage cheese",
+}
+
+
+def amazon_search_url(query):
+    return f"https://www.amazon.com/s?k={quote_plus(query)}&tag={AMAZON_ASSOCIATE_TAG}"
+
+
+def linkify_ingredient(raw_text):
+    """Wrap the first recognized brand mention in an ingredient line with
+    an Amazon affiliate search link. Leaves everything else untouched."""
+    for brand, query in BRAND_LINKS.items():
+        idx = raw_text.find(brand)
+        if idx == -1:
+            continue
+
+        before = raw_text[:idx]
+        matched = raw_text[idx:idx + len(brand)]
+        after = raw_text[idx + len(brand):]
+
+        return (
+            escape(before)
+            + f'<a href="{amazon_search_url(query)}" target="_blank" '
+              f'rel="nofollow sponsored noopener">{escape(matched)}</a>'
+            + escape(after)
+        )
+
+    return escape(raw_text)
 
 
 # Image-generation directions should never appear in reader-facing recipe copy.
@@ -223,7 +283,7 @@ def ingredient_to_text(ingredient):
 
 def build_ingredients_html(ingredients):
     return "\n".join(
-        f"<li>{escape(ingredient_to_text(ingredient))}</li>"
+        f"<li>{linkify_ingredient(ingredient_to_text(ingredient))}</li>"
         for ingredient in ingredients
     )
 
