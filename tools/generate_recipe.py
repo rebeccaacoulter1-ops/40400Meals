@@ -65,13 +65,49 @@ BRAND_LINKS = {
 }
 
 
+# 2026-08-25 update: linking only the ~18 brands above left most of an
+# ingredient list unclickable (plain staples like "almond flour" or
+# "chia seeds" never mention a brand name at all). GENERIC_UNIT_PREFIX
+# strips the leading amount/unit off an ingredient line so the rest of
+# it — the actual product — can be linked to an Amazon search too, even
+# when no specific brand is named. This makes the whole ingredients
+# list shoppable, not just the branded lines.
+GENERIC_UNIT_PREFIX = re.compile(
+    r"^\s*(?:[\d¼-¾⅐-⅞./\-]+\s*"
+    r"(?:to\s+[\d¼-¾⅐-⅞./\-]+\s*)?)?"
+    r"(?:cups?|tablespoons?|tbsp\.?|teaspoons?|tsp\.?|ounces?|oz\.?|"
+    r"pounds?|lbs?\.?|lb\.?|grams?|g\.?|cloves?|slices?|cans?|"
+    r"packages?|bags?|scoops?|pinch(?:es)?|dash(?:es)?|"
+    r"individual bags?|servings?|pieces?)?\s*",
+    re.IGNORECASE,
+)
+
+
 def amazon_search_url(query):
     return f"https://www.amazon.com/s?k={quote_plus(query)}&tag={AMAZON_ASSOCIATE_TAG}"
 
 
+def _amazon_link(query, anchor_text):
+    return (
+        f'<a href="{amazon_search_url(query)}" target="_blank" '
+        f'rel="nofollow sponsored noopener">{escape(anchor_text)}</a>'
+    )
+
+
 def linkify_ingredient(raw_text):
-    """Wrap the first recognized brand mention in an ingredient line with
-    an Amazon affiliate search link. Leaves everything else untouched."""
+    """Turn an ingredient line into a shoppable Amazon affiliate link.
+
+    Two passes:
+    1. If a known brand (BRAND_LINKS) appears in the line, link just that
+       brand name to a curated, specific search query — this is the most
+       accurate match, so it takes priority.
+    2. Otherwise, strip the leading amount/unit (GENERIC_UNIT_PREFIX) and
+       link whatever's left — the actual product — to an Amazon search
+       for that product. This is what makes staple ingredients (no brand
+       named) shoppable too, not just the ~18 branded products.
+    Falls through to plain escaped text only when neither pass finds
+    enough real content to link (e.g. a line that's just "to taste").
+    """
     for brand, query in BRAND_LINKS.items():
         idx = raw_text.find(brand)
         if idx == -1:
@@ -81,12 +117,17 @@ def linkify_ingredient(raw_text):
         matched = raw_text[idx:idx + len(brand)]
         after = raw_text[idx + len(brand):]
 
-        return (
-            escape(before)
-            + f'<a href="{amazon_search_url(query)}" target="_blank" '
-              f'rel="nofollow sponsored noopener">{escape(matched)}</a>'
-            + escape(after)
-        )
+        return escape(before) + _amazon_link(query, matched) + escape(after)
+
+    match = GENERIC_UNIT_PREFIX.match(raw_text)
+    prefix_end = match.end() if match else 0
+    prefix = raw_text[:prefix_end]
+    rest = raw_text[prefix_end:]
+    leading_ws = len(rest) - len(rest.lstrip())
+    core = rest[leading_ws:]
+
+    if len(core.strip()) >= 3:
+        return escape(prefix + rest[:leading_ws]) + _amazon_link(core.strip(), core)
 
     return escape(raw_text)
 
