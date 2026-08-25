@@ -1,3 +1,21 @@
+"""Renders each recipes/*.json file into a static recipe page using
+templates/recipe-template.html. This is the script the Bear OS pipeline
+actually calls (via run_bear_os.py) on every push — it is the single
+source of truth for what recipe pages look like.
+
+2026-08-25: added Amazon affiliate ingredient links (see BRAND_LINKS
+and linkify_ingredient below). Note for future edits to this file: a
+push here re-triggers "Generate Recipe Pages", which checks out the
+exact commit that triggered it — not necessarily the latest main. If
+another commit lands on main moments later and its own run finishes
+first, the workflow's "git pull -X ours" merge step can silently keep
+whichever run's regenerated pages happened to look "changed" to git,
+even if it's the older code's output. Practical takeaway: avoid pushing
+back-to-back commits that both touch generator-triggering paths
+(recipes/*.json, templates/, tools/**) within the same few minutes —
+let one run finish before pushing the next.
+"""
+
 import json
 import re
 from html import escape
