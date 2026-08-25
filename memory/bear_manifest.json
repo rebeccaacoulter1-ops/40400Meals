@@ -581,6 +581,96 @@
           }
         }
       }
+    },
+    "air-fryer-buffalo-chicken-wrap": {
+      "created_at_utc": "2026-08-25T16:32:59.035549+00:00",
+      "updated_at_utc": "2026-08-25T16:32:59.035564+00:00",
+      "steps": {
+        "pinterest": {
+          "complete": true,
+          "completed_at_utc": "2026-08-25T16:32:59.035564+00:00",
+          "details": {
+            "destination_url": "https://40400meals.com/recipes/air-fryer-buffalo-chicken-wrap.html",
+            "image_url": "https://40400meals.com/outputs/images/pinterest/air-fryer-buffalo-chicken-wrap-pinterest-pin.png",
+            "file_name": "air-fryer-buffalo-chicken-wrap-pinterest.json"
+          }
+        }
+      }
+    },
+    "crockpot-garlic-chicken": {
+      "created_at_utc": "2026-08-25T16:32:59.329712+00:00",
+      "updated_at_utc": "2026-08-25T16:32:59.329729+00:00",
+      "steps": {
+        "pinterest": {
+          "complete": true,
+          "completed_at_utc": "2026-08-25T16:32:59.329729+00:00",
+          "details": {
+            "destination_url": "https://40400meals.com/recipes/crockpot-garlic-chicken.html",
+            "image_url": "https://40400meals.com/outputs/images/pinterest/crockpot-garlic-chicken-pinterest-pin.png",
+            "file_name": "crockpot-garlic-chicken-pinterest.json"
+          }
+        }
+      }
+    },
+    "french-onion-chicken": {
+      "created_at_utc": "2026-08-25T16:32:59.600546+00:00",
+      "updated_at_utc": "2026-08-25T16:32:59.600563+00:00",
+      "steps": {
+        "pinterest": {
+          "complete": true,
+          "completed_at_utc": "2026-08-25T16:32:59.600563+00:00",
+          "details": {
+            "destination_url": "https://40400meals.com/recipes/french-onion-chicken.html",
+            "image_url": "https://40400meals.com/outputs/images/pinterest/french-onion-chicken-pinterest-pin.png",
+            "file_name": "french-onion-chicken-pinterest.json"
+          }
+        }
+      }
+    },
+    "high-protein-chicken-pot-pie": {
+      "created_at_utc": "2026-08-25T16:33:00.202042+00:00",
+      "updated_at_utc": "2026-08-25T16:33:00.202060+00:00",
+      "steps": {
+        "pinterest": {
+          "complete": true,
+          "completed_at_utc": "2026-08-25T16:33:00.202060+00:00",
+          "details": {
+            "destination_url": "https://40400meals.com/recipes/high-protein-chicken-pot-pie.html",
+            "image_url": "https://40400meals.com/outputs/images/pinterest/high-protein-chicken-pot-pie-pinterest-pin.png",
+            "file_name": "high-protein-chicken-pot-pie-pinterest.json"
+          }
+        }
+      }
+    },
+    "skillet-beef-stroganoff-protein-pasta": {
+      "created_at_utc": "2026-08-25T16:33:00.604502+00:00",
+      "updated_at_utc": "2026-08-25T16:33:00.604521+00:00",
+      "steps": {
+        "pinterest": {
+          "complete": true,
+          "completed_at_utc": "2026-08-25T16:33:00.604521+00:00",
+          "details": {
+            "destination_url": "https://40400meals.com/recipes/skillet-beef-stroganoff-protein-pasta.html",
+            "image_url": "https://40400meals.com/outputs/images/pinterest/skillet-beef-stroganoff-protein-pasta-pinterest-pin.png",
+            "file_name": "skillet-beef-stroganoff-protein-pasta-pinterest.json"
+          }
+        }
+      }
+    },
+    "sweet-potato-cranberry-protein-muffins": {
+      "created_at_utc": "2026-08-25T16:33:00.850436+00:00",
+      "updated_at_utc": "2026-08-25T16:33:00.850454+00:00",
+      "steps": {
+        "pinterest": {
+          "complete": true,
+          "completed_at_utc": "2026-08-25T16:33:00.850454+00:00",
+          "details": {
+            "destination_url": "https://40400meals.com/recipes/sweet-potato-cranberry-protein-muffins.html",
+            "image_url": "https://40400meals.com/outputs/images/pinterest/sweet-potato-cranberry-protein-muffins-pinterest-pin.png",
+            "file_name": "sweet-potato-cranberry-protein-muffins-pinterest.json"
+          }
+        }
+      }
     }
   }
 }
