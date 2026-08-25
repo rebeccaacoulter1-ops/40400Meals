@@ -106,12 +106,19 @@ def normalize_recipe(data, recipe_file):
             "calories": recipe.get("macros", {}).get("calories", ""),
             "carbs": recipe.get("macros", {}).get("carbs_g", ""),
             "fat": recipe.get("macros", {}).get("fat_g", ""),
+            "sugar": recipe.get("macros", {}).get("sugar_g", ""),
+            "fiber": recipe.get("macros", {}).get("fiber_g", ""),
             "prep_minutes": recipe.get("times", {}).get("prep_minutes", ""),
             "cook_minutes": recipe.get("times", {}).get("cook_minutes", ""),
             "total_minutes": recipe.get("times", {}).get("total_minutes", ""),
             "servings": recipe.get("servings", ""),
+            "serving_size": recipe.get("serving_size", ""),
             "ingredients": recipe.get("ingredients", []),
+            "ingredient_sections": recipe.get("ingredient_sections", []),
             "instructions": recipe.get("instructions", []),
+            "freezer_storage": recipe.get("freezer_storage", []),
+            "reheating_instructions": recipe.get("reheating_instructions", []),
+            "optional_sections": recipe.get("optional_sections", []),
             "tips": recipe.get("tips", []),
             "hero_image_url": absolute_site_url(images.get("hero_image_url", "")),
             "alt_text": images.get("alt_text", recipe.get("title", "")),
@@ -143,12 +150,19 @@ def normalize_recipe(data, recipe_file):
         "calories": data.get("calories", ""),
         "carbs": data.get("carbs", ""),
         "fat": data.get("fat", ""),
+        "sugar": data.get("sugar", ""),
+        "fiber": data.get("fiber", ""),
         "prep_minutes": str(data.get("prep_time", "")).replace(" minutes", ""),
         "cook_minutes": str(data.get("cook_time", "")).replace(" minutes", ""),
         "total_minutes": str(data.get("total_time", "")).replace(" minutes", ""),
         "servings": data.get("servings", ""),
+        "serving_size": data.get("serving_size", ""),
         "ingredients": data.get("ingredients", []),
+        "ingredient_sections": data.get("ingredient_sections", []),
         "instructions": data.get("instructions", []),
+        "freezer_storage": data.get("freezer_storage", []),
+        "reheating_instructions": data.get("reheating_instructions", []),
+        "optional_sections": data.get("optional_sections", []),
         "tips": data.get("tips", [
             "Adjust seasoning to taste.",
             "Prep ingredients ahead to make this recipe even faster.",
@@ -212,6 +226,44 @@ def build_ingredients_html(ingredients):
         f"<li>{escape(ingredient_to_text(ingredient))}</li>"
         for ingredient in ingredients
     )
+
+
+def build_ingredient_sections_html(recipe):
+    sections = recipe.get("ingredient_sections") or []
+    if not sections:
+        return f"<ul>{build_ingredients_html(recipe.get('ingredients', []))}</ul>"
+
+    blocks = []
+    for section in sections:
+        title = escape(str(section.get("title", "Ingredients")))
+        items = build_ingredients_html(section.get("items", []))
+        blocks.append(f"<h3>{title}</h3>\n<ul>{items}</ul>")
+    return "\n".join(blocks)
+
+
+def build_ordered_card(title, items):
+    if not items:
+        return ""
+    return (
+        '<div class="recipe-card">\n'
+        f'  <h2>{escape(title)}</h2>\n'
+        f'  <ol>{build_instructions_html(items)}</ol>\n'
+        '</div>'
+    )
+
+
+def build_optional_sections_html(sections):
+    blocks = []
+    for section in sections or []:
+        title = escape(str(section.get("title", "Optional Pairing")))
+        intro = escape(str(section.get("intro", "")))
+        items = build_list_html(section.get("items", []))
+        macros = escape(str(section.get("macros", "")))
+        body = f"<p>{intro}</p>" if intro else ""
+        body += f"<ul>{items}</ul>" if items else ""
+        body += f"<p><strong>{macros}</strong></p>" if macros else ""
+        blocks.append(f'<div class="recipe-card"><h2>{title}</h2>{body}</div>')
+    return "\n".join(blocks)
 
 
 def build_instructions_html(instructions):
@@ -355,6 +407,8 @@ def build_recipe_schema(recipe, recipe_file):
         "proteinContent": nutrition_value(recipe.get("protein"), "g"),
         "carbohydrateContent": nutrition_value(recipe.get("carbs"), "g"),
         "fatContent": nutrition_value(recipe.get("fat"), "g"),
+        "sugarContent": nutrition_value(recipe.get("sugar"), "g"),
+        "fiberContent": nutrition_value(recipe.get("fiber"), "g"),
     }
 
     nutrition = {
@@ -397,6 +451,8 @@ def generate_recipe_page(recipe_file):
         "{{recipe.macros.calories}}": escape(str(recipe["calories"])),
         "{{recipe.macros.carbs_g}}": escape(str(recipe["carbs"])),
         "{{recipe.macros.fat_g}}": escape(str(recipe["fat"])),
+        "{{recipe.macros.sugar_g}}": escape(str(recipe["sugar"])),
+        "{{recipe.macros.fiber_g}}": escape(str(recipe["fiber"])),
         "{{recipe.times.prep_minutes}}": escape(
             str(recipe["prep_minutes"])
         ),
@@ -407,6 +463,7 @@ def generate_recipe_page(recipe_file):
             str(recipe["total_minutes"])
         ),
         "{{recipe.servings}}": escape(str(recipe["servings"])),
+        "{{recipe.serving_size}}": escape(str(recipe["serving_size"])),
         "{{images.hero_image_url}}": escape(
             recipe["hero_image_url"],
             quote=True
@@ -423,8 +480,22 @@ def generate_recipe_page(recipe_file):
         "{{ingredients_list}}": build_ingredients_html(
             recipe["ingredients"]
         ),
+        "{{ingredient_sections}}": build_ingredient_sections_html(recipe),
         "{{instructions_list}}": build_instructions_html(
             recipe["instructions"]
+        ),
+        "{{freezer_storage_section}}": build_ordered_card(
+            "Freezer Storage", recipe["freezer_storage"]
+        ),
+        "{{reheating_section}}": build_ordered_card(
+            "Reheating Instructions", recipe["reheating_instructions"]
+        ),
+        "{{optional_sections}}": build_optional_sections_html(
+            recipe["optional_sections"]
+        ),
+        "{{cook_time_line}}": (
+            f'<p><strong>Cook Time:</strong> {escape(str(recipe["cook_minutes"]))} minutes</p>'
+            if recipe["cook_minutes"] not in (None, "", 0) else ""
         ),
         "{{tips_list}}": build_list_html(recipe["tips"]),
     }
