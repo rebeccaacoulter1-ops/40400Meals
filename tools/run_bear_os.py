@@ -6,6 +6,7 @@ GENERATORS = [
     "tools/generate_recipe.py",
     "tools/generate_social_content.py",
     "tools/design_engine.py",
+    "tools/generate_seasonal_theme.py",
     "tools/image_engine.py",
     "tools/generate_pinterest.py",
     "tools/generate_homepage.py",
