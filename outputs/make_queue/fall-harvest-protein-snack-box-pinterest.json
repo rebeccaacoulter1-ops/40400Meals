@@ -1,0 +1,58 @@
+{
+  "recipe_id": "fall-harvest-protein-snack-box",
+  "platform": "pinterest",
+  "title": "Fall Harvest Protein Snack Box | 40g Protein",
+  "description": "A no-cook snack box with a Chomps meat stick, green apple, cheese, and pumpkin seeds for 40g of protein on the go.",
+  "destination_url": "https://40400meals.com/recipes/fall-harvest-protein-snack-box.html",
+  "hashtags": [
+    "#SnackBox",
+    "#ProteinSnack",
+    "#FallSnack",
+    "#40400Meals"
+  ],
+  "image_prompt": "Premium food-blog photo of a divided snack box with a meat stick, fanned green apple slices, a cheese stick, and pumpkin seeds, small dip cup of almond butter. Warm amber fall light, rust linen napkin, natural wood surface.",
+  "image_alt_text": "Fall harvest protein snack box with meat stick, apple, cheese, and pumpkin seeds.",
+  "pin_filename": "fall-harvest-protein-snack-box-pinterest-pin.png",
+  "image_filename": "fall-harvest-protein-snack-box-pinterest-pin.png",
+  "image_path": "outputs/images/pinterest/fall-harvest-protein-snack-box-pinterest-pin.png",
+  "image_mime_type": "image/png",
+  "design_brain": {
+    "template_name": "P07 Fall",
+    "template_type": "seasonal",
+    "season": "fall",
+    "month": 8,
+    "recipe_category": "general",
+    "image_style": "soft indirect premium food-blog window light",
+    "photo_composition": "tight premium food-blog editorial angle",
+    "color_mood": "warm rich premium recipe-blog color with natural variation",
+    "accent_colors": [
+      "#FFF7ED",
+      "#F97316",
+      "#7C2D12"
+    ],
+    "text_style": "clean and modern",
+    "overlay_style": "minimal",
+    "icon_style": "minimal",
+    "layout_recommendation": "P01 classic layout",
+    "optimization": {
+      "visual_appeal": "high",
+      "save_potential": "high",
+      "click_potential": "high"
+    },
+    "version": "2.5",
+    "status": "design_strategy_ready"
+  },
+  "canva_text_overlay": {
+    "headline": "Fall Harvest Protein Snack Box",
+    "subheadline": "40g Protein \u2022 400 Calories",
+    "brand": "40/400 Meals"
+  },
+  "seo_keywords": [
+    "protein snack box",
+    "no cook fall snack",
+    "chomps meat stick snack",
+    "kid friendly protein snack",
+    "40 400 meals"
+  ],
+  "status": "ready_for_make"
+}
