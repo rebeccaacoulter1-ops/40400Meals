@@ -1,0 +1,78 @@
+{
+  "recipe_id": "fall-harvest-protein-snack-box",
+  "recipe": {
+    "slug": "fall-harvest-protein-snack-box",
+    "title": "Fall Harvest Protein Snack Box",
+    "summary": "A no-cook snack box with a Chomps meat stick, green apple, cheese, and pumpkin seeds for 40g of protein on the go.",
+    "story": "No cooking, no dishes — just a quick assembly of grab-and-go staples that hits 40g of protein for a school or work snack box.",
+    "category": "High-Protein Snack",
+    "cuisine": "American",
+    "date_published": "2026-08-27",
+    "servings": 1,
+    "serving_size": "1 snack box",
+    "times": {
+      "prep_minutes": 5,
+      "cook_minutes": 0,
+      "total_minutes": 5
+    },
+    "macros": {
+      "calories": 400,
+      "protein_g": 40,
+      "carbs_g": 30,
+      "sugar_g": 14,
+      "fiber_g": 5,
+      "fat_g": 16
+    },
+    "ingredients": [
+      "1 Chomps Original meat stick",
+      "1 small green apple, sliced",
+      "1 part-skim mozzarella cheese stick",
+      "2 tablespoons roasted pumpkin seeds",
+      "1 tablespoon almond butter, for dipping"
+    ],
+    "instructions": [
+      "Slice the green apple just before packing so it stays fresh and crisp.",
+      "Arrange the Chomps meat stick, apple slices, cheese stick, and pumpkin seeds in a snack box or divided container.",
+      "Add the almond butter in a small dip container or resealable bag for dipping.",
+      "Keep chilled until ready to eat."
+    ],
+    "tips": [
+      "Toss the apple slices with a squeeze of lemon juice if packing more than a couple hours ahead to keep them from browning.",
+      "Swap the cheese stick for 1/4 cup cottage cheese if you want an even creamier, higher-protein option.",
+      "This box travels well in a lunch bag with an ice pack for school or work."
+    ]
+  },
+  "seo": {
+    "meta_title": "Fall Harvest Protein Snack Box | 40g Protein",
+    "meta_description": "No-cook fall protein snack box with a Chomps meat stick, green apple, and pumpkin seeds, ready in 5 minutes.",
+    "keywords": [
+      "protein snack box",
+      "no cook fall snack",
+      "chomps meat stick snack",
+      "kid friendly protein snack",
+      "40 400 meals"
+    ]
+  },
+  "images": {
+    "presentation_template": "snack_bowl",
+    "pin_template": "editorial",
+    "hero_image_url": "https://40400meals.com/outputs/images/food_photos/fall-harvest-protein-snack-box-food-photo.png",
+    "image_prompt": "Premium food-blog photo of a divided snack box with a meat stick, fanned green apple slices, a cheese stick, and pumpkin seeds, small dip cup of almond butter. Warm amber fall light, rust linen napkin, natural wood surface.",
+    "alt_text": "Fall harvest protein snack box with meat stick, apple, cheese, and pumpkin seeds."
+  },
+  "social": {
+    "pinterest": {
+      "title": "Fall Harvest Protein Snack Box | 40g Protein",
+      "description": "A no-cook snack box with a Chomps meat stick, green apple, cheese, and pumpkin seeds for 40g of protein on the go.",
+      "destination_url": "https://40400meals.com/recipes/fall-harvest-protein-snack-box.html",
+      "hashtags": ["#SnackBox", "#ProteinSnack", "#FallSnack", "#40400Meals"]
+    }
+  },
+  "homepage": {
+    "hidden": false,
+    "priority": 90,
+    "published_at": "2026-08-27T10:15:00-05:00",
+    "summary": "A no-cook snack box with a Chomps meat stick, green apple, cheese, and pumpkin seeds for 40g of protein on the go.",
+    "image_path": "outputs/images/pinterest/fall-harvest-protein-snack-box-pinterest-pin.png"
+  }
+}

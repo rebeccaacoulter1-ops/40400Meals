@@ -1,0 +1,81 @@
+{
+  "recipe_id": "pumpkin-spice-protein-mug-cake",
+  "recipe": {
+    "slug": "pumpkin-spice-protein-mug-cake",
+    "title": "Pumpkin Spice Protein Mug Cake",
+    "summary": "A fluffy pumpkin spice mug cake with 40g of protein, mixed in one mug and ready in 5 minutes.",
+    "story": "One bowl, one mug, and a microwave turn pantry staples into a warm pumpkin spice dessert that fits the 40/400 method without any real baking.",
+    "category": "High-Protein Dessert",
+    "cuisine": "American",
+    "date_published": "2026-08-27",
+    "servings": 1,
+    "serving_size": "1 mug cake",
+    "times": {
+      "prep_minutes": 3,
+      "cook_minutes": 2,
+      "total_minutes": 5
+    },
+    "macros": {
+      "calories": 400,
+      "protein_g": 40,
+      "carbs_g": 38,
+      "sugar_g": 9,
+      "fiber_g": 5,
+      "fat_g": 10
+    },
+    "ingredients": [
+      "1 scoop vanilla protein powder",
+      "1/4 cup canned pumpkin puree",
+      "2 tablespoons liquid egg whites",
+      "2 tablespoons unsweetened almond milk",
+      "1 teaspoon pumpkin pie spice",
+      "1/2 teaspoon baking powder",
+      "1 tablespoon sugar-free maple syrup",
+      "Pinch of salt"
+    ],
+    "instructions": [
+      "Whisk the protein powder, pumpkin puree, egg whites, almond milk, pumpkin pie spice, baking powder, maple syrup, and salt directly in a large microwave-safe mug until smooth.",
+      "Microwave on high for 70 to 90 seconds, until the center is just set.",
+      "Let the mug cake rest for 1 minute before eating; it keeps cooking a little as it cools.",
+      "Top with a spoonful of Greek yogurt and an extra dash of cinnamon if desired."
+    ],
+    "tips": [
+      "Whisk the pumpkin and egg whites together first so the batter goes smooth without lumps.",
+      "Microwaves vary — start at 70 seconds and add time in 10-second bursts if the center still looks wet.",
+      "Use pure pumpkin puree, not pumpkin pie filling, to keep the added sugar low."
+    ]
+  },
+  "seo": {
+    "meta_title": "Pumpkin Spice Protein Mug Cake | 40g Protein",
+    "meta_description": "One-mug pumpkin spice protein cake ready in 5 minutes with 8 ingredients and 40g of protein.",
+    "keywords": [
+      "pumpkin spice protein mug cake",
+      "protein mug cake",
+      "5 minute pumpkin dessert",
+      "high protein pumpkin dessert",
+      "40 400 meals"
+    ]
+  },
+  "images": {
+    "presentation_template": "mug_series",
+    "pin_template": "editorial",
+    "hero_image_url": "https://40400meals.com/outputs/images/food_photos/pumpkin-spice-protein-mug-cake-food-photo.png",
+    "image_prompt": "Premium food-blog photo of a warm pumpkin spice mug cake in a simple ceramic mug, small crack across the top showing a fluffy tender crumb, light dusting of cinnamon. Cozy amber fall light, rust linen napkin, natural wood surface, no fruit or garnish.",
+    "alt_text": "Pumpkin spice protein mug cake in a ceramic mug."
+  },
+  "social": {
+    "pinterest": {
+      "title": "Pumpkin Spice Protein Mug Cake | 5 Minutes",
+      "description": "A fluffy pumpkin spice mug cake with 40g of protein, mixed in one mug and ready in 5 minutes.",
+      "destination_url": "https://40400meals.com/recipes/pumpkin-spice-protein-mug-cake.html",
+      "hashtags": ["#PumpkinSpice", "#ProteinMugCake", "#FallDessert", "#40400Meals"]
+    }
+  },
+  "homepage": {
+    "hidden": false,
+    "priority": 95,
+    "published_at": "2026-08-27T09:00:00-05:00",
+    "summary": "A fluffy pumpkin spice mug cake with 40g of protein, mixed in one mug and ready in 5 minutes.",
+    "image_path": "outputs/images/pinterest/pumpkin-spice-protein-mug-cake-pinterest-pin.png"
+  }
+}

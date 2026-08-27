@@ -1,0 +1,81 @@
+{
+  "recipe_id": "maple-cinnamon-chicken-sweet-potato-bowl",
+  "recipe": {
+    "slug": "maple-cinnamon-chicken-sweet-potato-bowl",
+    "title": "Maple Cinnamon Chicken & Sweet Potato Bowl",
+    "summary": "Seared chicken and sweet potato finished with a maple-cinnamon glaze, ready in 15 minutes.",
+    "story": "A quick skillet glaze of sugar-free maple syrup and cinnamon turns simple chicken and sweet potato into a warm fall bowl without any oven time.",
+    "category": "High-Protein Dinner",
+    "cuisine": "American",
+    "date_published": "2026-08-27",
+    "servings": 2,
+    "serving_size": "About 2 cups",
+    "times": {
+      "prep_minutes": 5,
+      "cook_minutes": 10,
+      "total_minutes": 15
+    },
+    "macros": {
+      "calories": 400,
+      "protein_g": 40,
+      "carbs_g": 38,
+      "sugar_g": 8,
+      "fiber_g": 5,
+      "fat_g": 9
+    },
+    "ingredients": [
+      "2 boneless skinless chicken breasts, cut into bite-size pieces",
+      "2 cups frozen diced sweet potato",
+      "1 tablespoon sugar-free maple syrup",
+      "1/2 teaspoon ground cinnamon",
+      "1/2 teaspoon garlic powder",
+      "1 tablespoon olive oil",
+      "Salt and pepper, to taste"
+    ],
+    "instructions": [
+      "Microwave the frozen sweet potato according to the package directions until fork-tender, about 5 minutes.",
+      "While the sweet potato cooks, heat the olive oil in a large skillet over medium-high heat and cook the chicken with the garlic powder, salt, and pepper until browned and cooked through, 6 to 8 minutes.",
+      "Add the cooked sweet potato to the skillet with the chicken.",
+      "Drizzle with the sugar-free maple syrup and sprinkle with cinnamon, tossing to coat everything evenly.",
+      "Cook for 1 more minute to let the glaze warm through, then serve."
+    ],
+    "tips": [
+      "Swap in 2 cups of shredded rotisserie chicken to cut this down to about 10 minutes total.",
+      "Steam-in-bag frozen sweet potato is the fastest route to soft, glaze-ready cubes.",
+      "A pinch of cayenne is a nice contrast if you like a little heat with the sweetness."
+    ]
+  },
+  "seo": {
+    "meta_title": "Maple Cinnamon Chicken & Sweet Potato Bowl | 40g Protein",
+    "meta_description": "Maple cinnamon chicken and sweet potato bowl ready in 15 minutes with 40g of protein and 7 ingredients.",
+    "keywords": [
+      "maple cinnamon chicken",
+      "chicken sweet potato bowl",
+      "high protein fall dinner",
+      "quick chicken skillet",
+      "40 400 meals"
+    ]
+  },
+  "images": {
+    "presentation_template": "dinner_bowl",
+    "pin_template": "editorial",
+    "hero_image_url": "https://40400meals.com/outputs/images/food_photos/maple-cinnamon-chicken-sweet-potato-bowl-food-photo.png",
+    "image_prompt": "Premium food-blog bowl of glazed chicken pieces and diced sweet potato with a glossy maple-cinnamon sheen. Warm amber fall light, rust linen napkin, natural wood surface, no fruit or extra garnish.",
+    "alt_text": "Maple cinnamon chicken and sweet potato bowl."
+  },
+  "social": {
+    "pinterest": {
+      "title": "Maple Cinnamon Chicken & Sweet Potato Bowl",
+      "description": "Seared chicken and sweet potato finished with a maple-cinnamon glaze, ready in 15 minutes with 40g of protein.",
+      "destination_url": "https://40400meals.com/recipes/maple-cinnamon-chicken-sweet-potato-bowl.html",
+      "hashtags": ["#MapleCinnamon", "#ChickenBowl", "#FallDinner", "#40400Meals"]
+    }
+  },
+  "homepage": {
+    "hidden": false,
+    "priority": 91,
+    "published_at": "2026-08-27T10:00:00-05:00",
+    "summary": "Seared chicken and sweet potato finished with a maple-cinnamon glaze, ready in 15 minutes.",
+    "image_path": "outputs/images/pinterest/maple-cinnamon-chicken-sweet-potato-bowl-pinterest-pin.png"
+  }
+}
