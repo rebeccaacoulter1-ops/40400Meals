@@ -38,7 +38,7 @@
       "Serve right away for the best crunch."
     ],
     "tips": [
-      "Short on time? Skip the candying step — plain chopped pecans still taste great here.",
+      "Short on time? Skip the candying step \u2014 plain chopped pecans still taste great here.",
       "Cut the Built Puff bar into chunks just before serving so the white chocolate coating stays crisp instead of softening in the fridge.",
       "Warm the caramel sauce for about 10 seconds if you want it extra drizzly."
     ]
@@ -59,15 +59,19 @@
     "pin_template": "editorial",
     "hero_image_url": "https://40400meals.com/outputs/images/food_photos/caramel-pecan-cottage-cheese-bowl-food-photo.png",
     "image_prompt": "Premium food-blog photo of a bowl of plain creamy white cottage cheese. On one side of the bowl, a small pile of dark caramel-glazed candied pecan pieces, deep amber-brown in color. On the other side of the bowl, separate and not touching the caramel or pecans, 4 to 5 irregular cut chunks of a protein bar. CRITICAL: the outside surface of every bar chunk is coated in solid, opaque, bright WHITE chocolate -- like a white candy shell, the color of white chocolate or white icing. The white coating must stay completely clean, matte, and pale -- it must NOT be brown, tan, toasted, golden, glazed, or caramel-colored, and must NOT resemble a crouton, a cube of bread, granola, or a toasted cookie. One bar chunk lies on its side to reveal a freshly cut cross-section: the interior is a solid, deeply saturated pumpkin-orange color, like pureed pumpkin or sweet potato, fudgy and moist-looking, with tiny darker brown flecks of cinnamon cookie dough mixed through it. The contrast between the white outer shell and the orange interior must be obvious and high-contrast, like a white-shelled candy with orange filling. A light drizzle of sugar-free caramel sauce touches only the cottage cheese and pecans, never the white bar chunks. Warm amber fall light, rust linen napkin, natural wood surface, no fruit or extra garnish, no text overlay.",
-    "alt_text": "Caramel pecan cottage cheese bowl with white chocolate-coated Built Puff pumpkin cookie bar chunks showing a pumpkin-orange fudgy center.",
-    "regenerate_image": true
+    "alt_text": "Caramel pecan cottage cheese bowl with white chocolate-coated Built Puff pumpkin cookie bar chunks showing a pumpkin-orange fudgy center."
   },
   "social": {
     "pinterest": {
       "title": "Caramel Pecan Cottage Cheese Bowl | 42g Protein",
       "description": "Creamy cottage cheese topped with candied pecans, sugar-free caramel, and chunks of a white chocolate-coated pumpkin cookie protein bar. Ready in 6 minutes.",
       "destination_url": "https://40400meals.com/recipes/caramel-pecan-cottage-cheese-bowl.html",
-      "hashtags": ["#CottageCheeseBowl", "#CaramelPecan", "#FallSnack", "#40400Meals"]
+      "hashtags": [
+        "#CottageCheeseBowl",
+        "#CaramelPecan",
+        "#FallSnack",
+        "#40400Meals"
+      ]
     }
   },
   "homepage": {
