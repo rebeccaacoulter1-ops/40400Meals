@@ -3,7 +3,7 @@
   "recipe": {
     "slug": "caramel-pecan-cottage-cheese-bowl",
     "title": "Caramel Pecan Cottage Cheese Bowl",
-    "summary": "Creamy cottage cheese topped with candied pecans and sugar-free caramel, served with a Built Puff pumpkin cookie protein bar.",
+    "summary": "Creamy cottage cheese topped with candied pecans and a caramel zigzag, served with a Built Puff pumpkin cookie protein bar.",
     "story": "Savory cottage cheese and sweet caramel play off each other here, with a Built Puff bar on the side adding crunch and pumpkin-cookie flavor for the season.",
     "category": "High-Protein Snack",
     "cuisine": "American",
@@ -34,11 +34,11 @@
     "instructions": [
       "Optional upgrade: toss the chopped pecans with the Splenda brown sugar blend in a small microwave-safe bowl and microwave for 30 to 45 seconds, stirring halfway, until fragrant. Let cool for 1 minute so they crisp up.",
       "Scoop the cottage cheese into a bowl and sprinkle with the cinnamon.",
-      "Top with the pecans (candied or plain) and drizzle with the sugar-free caramel sauce.",
+      "Top with the pecans (candied or plain) and drizzle the sugar-free caramel sauce back and forth in a zigzag over the top.",
       "Serve with the Built Puff bar on the side, or break it up and stir it in if you'd like extra crunch."
     ],
     "tips": [
-      "Short on time? Skip the candying step \u2014 plain chopped pecans still taste great here.",
+      "Short on time? Skip the candying step — plain chopped pecans still taste great here.",
       "Keep the Built Puff bar whole and serve it alongside for the cleanest presentation, or break it up right before eating for extra crunch in the bowl.",
       "Warm the caramel sauce for about 10 seconds if you want it extra drizzly."
     ]
@@ -59,27 +59,23 @@
     "pin_template": "editorial",
     "image_mode": "packaged_snack",
     "hero_image_url": "https://40400meals.com/outputs/images/food_photos/caramel-pecan-cottage-cheese-bowl-food-photo.png",
-    "image_prompt": "Two items styled together in one photo. Item one: a bowl of creamy plain cottage cheese topped with a small pile of dark caramel-glazed candied pecan pieces and a light drizzle of caramel sauce. The cottage cheese and pecans are the only things in the bowl -- no bar pieces, no cubes, no crumbs, no crumble of any kind on top of or inside the bowl. Item two, placed on the wood surface right next to the bowl: one full Built Puff Pumpkin Cookie Chunk protein bar, whole and fully sealed inside its original printed retail wrapper. Do not open, unwrap, cut, or crumble this bar -- show it exactly as a sealed packaged snack bar, wrapper fully intact, brand packaging and readable label visible. The two items sit side by side as one styled scene. Warm amber fall light, rust linen napkin, natural wood surface, no fruit or extra garnish.",
-    "alt_text": "Caramel pecan cottage cheese bowl served with a whole Built Puff pumpkin cookie protein bar in its wrapper."
+    "image_prompt": "Two items styled together in one photo, shot from a slight overhead angle. Item one, on the left: a bowl of creamy plain cottage cheese topped with a small pile of dark caramel-glazed candied pecan pieces, with sugar-free caramel sauce drizzled back and forth in a loose zigzag pattern across the top of the cottage cheese -- the caramel is a thin zigzag drizzle, not a pooled puddle. The cottage cheese, pecans, and caramel zigzag are the only things in the bowl -- no bar pieces, no cubes, no crumbs. Item two, on the right, standing upright on the wood surface next to the bowl: one Built Puff Pumpkin Cookie Chunk protein bar, whole and fully sealed in its retail wrapper, wrapper facing the camera so the label is fully readable. Render the wrapper exactly like this real snack-bar packaging: a solid burnt-orange wrapper with crimped serrated edges top and bottom; near the top, a white rounded rectangle badge containing the word BUILT in bold black capital letters; directly below that badge, the word PUFF in large bold white capital letters printed on the orange background; below PUFF, the words PUMPKIN COOKIE CHUNK in white capital letters on two lines; small white italic text below that reading FLAVORED WITH NATURAL FLAVORS; along the right edge of the wrapper, three small white circular badges stacked vertically with black text reading 15G PROTEIN, then PLUS COLLAGEN, then 160 CALORIES; near the bottom of the wrapper, a small illustration of a swirl of soft cream-colored icing with a few small brown cookie crumb pieces scattered on top -- this is packaging artwork, not a photo of an unwrapped bar. Do not open, cut, or unwrap the bar. The two items sit together on a rust-orange linen napkin over a natural wood surface, warm amber fall light, no fruit or extra garnish.",
+    "alt_text": "Caramel pecan cottage cheese bowl with a caramel zigzag, served with a whole Built Puff pumpkin cookie protein bar in its wrapper.",
+    "regenerate_image": true
   },
   "social": {
     "pinterest": {
       "title": "Caramel Pecan Cottage Cheese Bowl | 42g Protein",
-      "description": "Creamy cottage cheese topped with candied pecans and sugar-free caramel, served with a Built Puff pumpkin cookie protein bar. Ready in 6 minutes.",
+      "description": "Creamy cottage cheese topped with candied pecans and a caramel zigzag, served with a Built Puff pumpkin cookie protein bar. Ready in 6 minutes.",
       "destination_url": "https://40400meals.com/recipes/caramel-pecan-cottage-cheese-bowl.html",
-      "hashtags": [
-        "#CottageCheeseBowl",
-        "#CaramelPecan",
-        "#FallSnack",
-        "#40400Meals"
-      ]
+      "hashtags": ["#CottageCheeseBowl", "#CaramelPecan", "#FallSnack", "#40400Meals"]
     }
   },
   "homepage": {
     "hidden": false,
     "priority": 94,
     "published_at": "2026-08-27T09:15:00-05:00",
-    "summary": "Creamy cottage cheese topped with candied pecans and sugar-free caramel, served with a Built Puff pumpkin cookie protein bar.",
+    "summary": "Creamy cottage cheese topped with candied pecans and a caramel zigzag, served with a Built Puff pumpkin cookie protein bar.",
     "image_path": "outputs/images/pinterest/caramel-pecan-cottage-cheese-bowl-pinterest-pin.png"
   }
 }
