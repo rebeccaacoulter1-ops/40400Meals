@@ -671,6 +671,96 @@
           }
         }
       }
+    },
+    "caramel-pecan-cottage-cheese-bowl": {
+      "created_at_utc": "2026-08-27T18:41:17.461583+00:00",
+      "updated_at_utc": "2026-08-27T18:41:17.461599+00:00",
+      "steps": {
+        "pinterest": {
+          "complete": true,
+          "completed_at_utc": "2026-08-27T18:41:17.461599+00:00",
+          "details": {
+            "destination_url": "https://40400meals.com/recipes/caramel-pecan-cottage-cheese-bowl.html",
+            "image_url": "https://40400meals.com/outputs/images/pinterest/caramel-pecan-cottage-cheese-bowl-pinterest-pin.png",
+            "file_name": "caramel-pecan-cottage-cheese-bowl-pinterest.json"
+          }
+        }
+      }
+    },
+    "fall-harvest-protein-snack-box": {
+      "created_at_utc": "2026-08-27T18:41:18.490534+00:00",
+      "updated_at_utc": "2026-08-27T18:41:18.490551+00:00",
+      "steps": {
+        "pinterest": {
+          "complete": true,
+          "completed_at_utc": "2026-08-27T18:41:18.490551+00:00",
+          "details": {
+            "destination_url": "https://40400meals.com/recipes/fall-harvest-protein-snack-box.html",
+            "image_url": "https://40400meals.com/outputs/images/pinterest/fall-harvest-protein-snack-box-pinterest-pin.png",
+            "file_name": "fall-harvest-protein-snack-box-pinterest.json"
+          }
+        }
+      }
+    },
+    "maple-cinnamon-chicken-sweet-potato-bowl": {
+      "created_at_utc": "2026-08-27T18:41:19.336677+00:00",
+      "updated_at_utc": "2026-08-27T18:41:19.336694+00:00",
+      "steps": {
+        "pinterest": {
+          "complete": true,
+          "completed_at_utc": "2026-08-27T18:41:19.336694+00:00",
+          "details": {
+            "destination_url": "https://40400meals.com/recipes/maple-cinnamon-chicken-sweet-potato-bowl.html",
+            "image_url": "https://40400meals.com/outputs/images/pinterest/maple-cinnamon-chicken-sweet-potato-bowl-pinterest-pin.png",
+            "file_name": "maple-cinnamon-chicken-sweet-potato-bowl-pinterest.json"
+          }
+        }
+      }
+    },
+    "pumpkin-chili-turkey-skillet": {
+      "created_at_utc": "2026-08-27T18:41:20.079289+00:00",
+      "updated_at_utc": "2026-08-27T18:41:20.079306+00:00",
+      "steps": {
+        "pinterest": {
+          "complete": true,
+          "completed_at_utc": "2026-08-27T18:41:20.079306+00:00",
+          "details": {
+            "destination_url": "https://40400meals.com/recipes/pumpkin-chili-turkey-skillet.html",
+            "image_url": "https://40400meals.com/outputs/images/pinterest/pumpkin-chili-turkey-skillet-pinterest-pin.png",
+            "file_name": "pumpkin-chili-turkey-skillet-pinterest.json"
+          }
+        }
+      }
+    },
+    "pumpkin-spice-protein-mug-cake": {
+      "created_at_utc": "2026-08-27T18:41:20.789841+00:00",
+      "updated_at_utc": "2026-08-27T18:41:20.789859+00:00",
+      "steps": {
+        "pinterest": {
+          "complete": true,
+          "completed_at_utc": "2026-08-27T18:41:20.789859+00:00",
+          "details": {
+            "destination_url": "https://40400meals.com/recipes/pumpkin-spice-protein-mug-cake.html",
+            "image_url": "https://40400meals.com/outputs/images/pinterest/pumpkin-spice-protein-mug-cake-pinterest-pin.png",
+            "file_name": "pumpkin-spice-protein-mug-cake-pinterest.json"
+          }
+        }
+      }
+    },
+    "rotisserie-chicken-butternut-mac-skillet": {
+      "created_at_utc": "2026-08-27T18:41:21.508736+00:00",
+      "updated_at_utc": "2026-08-27T18:41:21.508753+00:00",
+      "steps": {
+        "pinterest": {
+          "complete": true,
+          "completed_at_utc": "2026-08-27T18:41:21.508753+00:00",
+          "details": {
+            "destination_url": "https://40400meals.com/recipes/rotisserie-chicken-butternut-mac-skillet.html",
+            "image_url": "https://40400meals.com/outputs/images/pinterest/rotisserie-chicken-butternut-mac-skillet-pinterest-pin.png",
+            "file_name": "rotisserie-chicken-butternut-mac-skillet-pinterest.json"
+          }
+        }
+      }
     }
   }
 }
