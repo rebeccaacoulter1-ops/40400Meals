@@ -1,8 +1,8 @@
 {
   "slug": "caramel-pecan-cottage-cheese-bowl",
   "recipe_title": "Caramel Pecan Cottage Cheese Bowl",
-  "image_mode": "prepared_recipe",
+  "image_mode": "packaged_snack",
   "prompt_version": "2.5-premium-food-blog-editorial",
-  "source_hash": "prompt:13f0a542242fff40f9aa8f0df83769af17c70e789eba66617f0a010d10456061",
+  "source_hash": "prompt:a5a772058affbe2aa09ff44fac74fb36c8adfa390541e00d4da958a1114d6a70",
   "photo_file": "outputs/images/food_photos/caramel-pecan-cottage-cheese-bowl-food-photo.png"
 }
