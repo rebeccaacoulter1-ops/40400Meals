@@ -1,0 +1,58 @@
+{
+  "recipe_id": "rotisserie-chicken-butternut-mac-skillet",
+  "platform": "pinterest",
+  "title": "Rotisserie Chicken & Butternut Mac Skillet",
+  "description": "A creamy one-pot pasta skillet with shredded rotisserie chicken and butternut squash, ready in 15 minutes with 41g of protein.",
+  "destination_url": "https://40400meals.com/recipes/rotisserie-chicken-butternut-mac-skillet.html",
+  "hashtags": [
+    "#OnePotPasta",
+    "#ButternutSquash",
+    "#FallDinner",
+    "#40400Meals"
+  ],
+  "image_prompt": "Premium food-blog photo of a cast iron skillet filled with creamy orange butternut mac and cheese studded with shredded chicken, gentle steam rising. Warm amber fall light, rust linen napkin, natural wood surface, no fruit or garnish.",
+  "image_alt_text": "Rotisserie chicken and butternut squash mac and cheese skillet.",
+  "pin_filename": "rotisserie-chicken-butternut-mac-skillet-pinterest-pin.png",
+  "image_filename": "rotisserie-chicken-butternut-mac-skillet-pinterest-pin.png",
+  "image_path": "outputs/images/pinterest/rotisserie-chicken-butternut-mac-skillet-pinterest-pin.png",
+  "image_mime_type": "image/png",
+  "design_brain": {
+    "template_name": "P07 Fall",
+    "template_type": "seasonal",
+    "season": "fall",
+    "month": 8,
+    "recipe_category": "general",
+    "image_style": "soft indirect premium food-blog window light",
+    "photo_composition": "tight premium food-blog editorial angle",
+    "color_mood": "warm rich premium recipe-blog color with natural variation",
+    "accent_colors": [
+      "#FFF7ED",
+      "#F97316",
+      "#7C2D12"
+    ],
+    "text_style": "clean and modern",
+    "overlay_style": "minimal",
+    "icon_style": "minimal",
+    "layout_recommendation": "P01 classic layout",
+    "optimization": {
+      "visual_appeal": "high",
+      "save_potential": "high",
+      "click_potential": "high"
+    },
+    "version": "2.5",
+    "status": "design_strategy_ready"
+  },
+  "canva_text_overlay": {
+    "headline": "Rotisserie Chicken & Butternut Mac Skillet",
+    "subheadline": "41g Protein \u2022 410 Calories",
+    "brand": "40/400 Meals"
+  },
+  "seo_keywords": [
+    "rotisserie chicken butternut mac",
+    "one pot pasta skillet",
+    "high protein pasta dinner",
+    "fall pasta recipe",
+    "40 400 meals"
+  ],
+  "status": "ready_for_make"
+}
