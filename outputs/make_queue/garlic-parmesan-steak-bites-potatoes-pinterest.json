@@ -1,0 +1,58 @@
+{
+  "recipe_id": "garlic-parmesan-steak-bites-potatoes",
+  "platform": "pinterest",
+  "title": "Garlic Parmesan Steak Bites & Potatoes | 41g Protein",
+  "description": "Tender garlic-butter steak bites, crispy potatoes, green beans, and Parmesan in one easy skillet.",
+  "destination_url": "https://40400meals.com/recipes/garlic-parmesan-steak-bites-potatoes.html",
+  "hashtags": [
+    "#SteakBites",
+    "#HighProteinDinner",
+    "#SkilletDinner",
+    "#40400Meals"
+  ],
+  "image_prompt": "Premium food-blog editorial skillet serving of browned lean sirloin steak bites, crisp golden diced potatoes, bright green beans, visible minced garlic, and a light dusting of grated Parmesan. Realistic steakhouse-style homemade food in warm natural light.",
+  "image_alt_text": "Garlic Parmesan steak bites with crispy diced potatoes and green beans.",
+  "pin_filename": "garlic-parmesan-steak-bites-potatoes-pinterest-pin.png",
+  "image_filename": "garlic-parmesan-steak-bites-potatoes-pinterest-pin.png",
+  "image_path": "outputs/images/pinterest/garlic-parmesan-steak-bites-potatoes-pinterest-pin.png",
+  "image_mime_type": "image/png",
+  "design_brain": {
+    "template_name": "P07 Fall",
+    "template_type": "seasonal",
+    "season": "fall",
+    "month": 8,
+    "recipe_category": "general",
+    "image_style": "soft indirect premium food-blog window light",
+    "photo_composition": "tight premium food-blog editorial angle",
+    "color_mood": "warm rich premium recipe-blog color with natural variation",
+    "accent_colors": [
+      "#FFF7ED",
+      "#F97316",
+      "#7C2D12"
+    ],
+    "text_style": "clean and modern",
+    "overlay_style": "minimal",
+    "icon_style": "minimal",
+    "layout_recommendation": "P01 classic layout",
+    "optimization": {
+      "visual_appeal": "high",
+      "save_potential": "high",
+      "click_potential": "high"
+    },
+    "version": "2.5",
+    "status": "design_strategy_ready"
+  },
+  "canva_text_overlay": {
+    "headline": "Garlic Parmesan Steak Bites and Potatoes",
+    "subheadline": "41g Protein \u2022 405 Calories",
+    "brand": "40/400 Meals"
+  },
+  "seo_keywords": [
+    "garlic parmesan steak bites",
+    "steak bites and potatoes",
+    "high protein steak dinner",
+    "easy skillet meal",
+    "40 400 meals"
+  ],
+  "status": "ready_for_make"
+}
