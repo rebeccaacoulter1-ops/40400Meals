@@ -1,0 +1,29 @@
+{
+  "recipe_id": "maple-glazed-salmon",
+  "recipe": {
+    "slug": "maple-glazed-salmon",
+    "title": "Maple Glazed Salmon",
+    "summary": "Maple glazed salmon with green beans and a satisfying cauliflower-jasmine rice blend.",
+    "story": "A simple sheet-pan salmon dinner with a sweet-savory maple Dijon glaze, crisp-tender green beans, and an easy rice blend that keeps the meal balanced.",
+    "category": "Quick & Easy Dinner",
+    "cuisine": "American",
+    "date_published": "2026-08-31",
+    "servings": 4,
+    "serving_size": "1 salmon fillet with 1/2 cup green beans and 1 cup cauliflower-jasmine rice blend",
+    "times": {"prep_minutes": 10, "cook_minutes": 18, "total_minutes": 28},
+    "macros": {"calories": 400, "protein_g": 40, "carbs_g": 26, "sugar_g": 6, "fiber_g": 3, "fat_g": 19},
+    "ingredients": ["4 salmon fillets, 6 ounces each raw", "2 cups fresh or frozen green beans", "2 cups Birds Eye Steamfresh Riced Cauliflower", "2 cups cooked Kroger Classic Grains Jasmine Rice", "1 tablespoon olive oil", "1 teaspoon garlic powder", "1 teaspoon onion powder", "1 teaspoon kosher salt", "1/2 teaspoon black pepper", "2 tablespoons sugar-free maple syrup", "2 teaspoons real maple syrup", "2 tablespoons Dijon mustard", "1 tablespoon low-sodium soy sauce", "2 cloves garlic, minced", "1 teaspoon apple cider vinegar"],
+    "ingredient_sections": [
+      {"title": "Salmon, Green Beans & Rice", "items": ["4 salmon fillets, 6 ounces each raw", "2 cups fresh or frozen green beans", "2 cups Birds Eye Steamfresh Riced Cauliflower", "2 cups cooked Kroger Classic Grains Jasmine Rice", "1 tablespoon olive oil", "1 teaspoon garlic powder", "1 teaspoon onion powder", "1 teaspoon kosher salt", "1/2 teaspoon black pepper"]},
+      {"title": "Maple Glaze", "items": ["2 tablespoons sugar-free maple syrup", "2 teaspoons real maple syrup", "2 tablespoons Dijon mustard", "1 tablespoon low-sodium soy sauce", "2 cloves garlic, minced", "1 teaspoon apple cider vinegar"]}
+    ],
+    "instructions": ["Preheat the oven to 400°F. Line a sheet pan with parchment paper.", "Place the salmon fillets on one side of the sheet pan and the green beans on the other side.", "Toss the green beans with the olive oil, garlic powder, onion powder, 1/2 teaspoon salt, and black pepper.", "Season the salmon with the remaining 1/2 teaspoon salt and black pepper.", "Whisk together the sugar-free maple syrup, real maple syrup, Dijon mustard, soy sauce, minced garlic, and apple cider vinegar.", "Spoon the glaze evenly over the salmon fillets.", "Bake for 14 to 18 minutes, or until the salmon flakes easily with a fork and the green beans are tender.", "While the salmon bakes, cook the cauliflower rice according to package directions and heat the jasmine rice.", "Mix the cauliflower rice and jasmine rice together.", "Serve each plate with 1 salmon fillet, 1/2 cup green beans, and 1 cup cauliflower-jasmine rice blend. Spoon any extra glaze from the pan over the salmon before serving."],
+    "freezer_storage": ["Let the salmon, green beans, and rice cool completely.", "Portion into individual freezer-safe containers.", "Freeze for up to 2 months.", "For best texture, keep the salmon on top of the rice instead of underneath it."],
+    "reheating_instructions": ["Thaw overnight in the refrigerator if possible.", "Microwave for 2 to 3 minutes until warmed through.", "Add 30-second intervals if needed.", "Do not overheat the salmon or it can dry out."],
+    "tips": ["Using a mix of cauliflower rice and jasmine rice keeps the meal satisfying without pushing calories too high.", "A small amount of real maple syrup gives the glaze true maple flavor."]
+  },
+  "seo": {"meta_title": "Maple Glazed Salmon | High-Protein 40/400 Meal", "meta_description": "Maple glazed salmon with green beans and a satisfying cauliflower-jasmine rice blend.", "keywords": ["maple glazed salmon", "high protein salmon", "sheet pan salmon", "40/400 meals"]},
+  "images": {"hero_image_url": "https://40400meals.com/outputs/images/food_photos/maple-glazed-salmon-food-photo.png", "image_prompt": "Premium food-blog editorial photo of glossy maple glazed salmon with roasted green beans and a cauliflower-jasmine rice blend. Warm natural window light, realistic sheet-pan dinner plating, no extra garnish or side dishes.", "alt_text": "Maple glazed salmon with green beans and cauliflower-jasmine rice."},
+  "social": {"pinterest": {"title": "Maple Glazed Salmon", "description": "Maple glazed salmon with green beans and a satisfying cauliflower-jasmine rice blend.", "destination_url": "https://40400meals.com/recipes/maple-glazed-salmon.html", "hashtags": ["#HighProteinMeals", "#40400Meals", "#MapleGlazedSalmon"]}},
+  "homepage": {"hidden": false, "priority": 110, "published_at": "2026-08-31T13:45:00-05:00", "summary": "Maple glazed salmon with green beans and cauliflower-jasmine rice.", "image_path": "outputs/images/pinterest/maple-glazed-salmon-pinterest-pin.png"}
+}
