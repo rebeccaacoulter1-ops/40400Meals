@@ -1,0 +1,26 @@
+{
+  "recipe_id": "albacore-tuna-melt-wrap",
+  "recipe": {
+    "slug": "albacore-tuna-melt-wrap",
+    "title": "Albacore Tuna Melt Wrap",
+    "summary": "A crispy tuna melt wrap made with StarKist albacore, Hellmann's Light mayo, Grey Poupon Dijon, Claussen dill pickles, and melty reduced-fat cheddar.",
+    "story": "A quick high-protein lunch with the comfort of a tuna melt, the crunch of a toasted wrap, and enough tang from Dijon and dill pickles to keep the filling bright.",
+    "category": "Quick & Easy Lunch",
+    "cuisine": "American",
+    "date_published": "2026-08-31",
+    "servings": 4,
+    "serving_size": "1 tuna melt wrap",
+    "times": {"prep_minutes": 10, "cook_minutes": 6, "total_minutes": 16},
+    "macros": {"calories": 400, "protein_g": 45, "carbs_g": 28, "sugar_g": 3, "fiber_g": 15, "fat_g": 15},
+    "ingredients": ["16 ounces StarKist Solid White Albacore Tuna in Water, drained", "4 Mission Carb Balance Burrito Flour Tortillas", "6 ounces reduced-fat shredded cheddar cheese", "1/2 cup Chobani Nonfat Plain Greek Yogurt", "1/4 cup Hellmann's Light Mayonnaise", "1/2 cup finely diced celery", "1/3 cup finely chopped Claussen dill pickles", "2 tablespoons Grey Poupon Dijon Mustard", "1 tablespoon Claussen pickle juice", "1 teaspoon garlic powder", "1 teaspoon onion powder", "1/2 teaspoon salt", "1/2 teaspoon black pepper"],
+    "ingredient_sections": [{"title": "Albacore Tuna Melt Wraps", "items": ["16 ounces StarKist Solid White Albacore Tuna in Water, drained", "4 Mission Carb Balance Burrito Flour Tortillas", "6 ounces reduced-fat shredded cheddar cheese", "1/2 cup Chobani Nonfat Plain Greek Yogurt", "1/4 cup Hellmann's Light Mayonnaise", "1/2 cup finely diced celery", "1/3 cup finely chopped Claussen dill pickles", "2 tablespoons Grey Poupon Dijon Mustard", "1 tablespoon Claussen pickle juice", "1 teaspoon garlic powder", "1 teaspoon onion powder", "1/2 teaspoon salt", "1/2 teaspoon black pepper"]}],
+    "instructions": ["Add the drained albacore tuna to a medium bowl and break it apart with a fork.", "Add the Greek yogurt, light mayonnaise, celery, dill pickles, Dijon mustard, pickle juice, garlic powder, onion powder, salt, and black pepper.", "Stir until everything is evenly combined.", "Divide the tuna mixture evenly between the 4 Mission Carb Balance tortillas.", "Top each wrap with 1 1/2 ounces reduced-fat shredded cheddar cheese.", "Fold the sides of each tortilla inward and roll tightly into a wrap.", "Heat a large nonstick skillet over medium heat.", "Place the wraps seam-side down and cook for 2 to 3 minutes per side, until the tortilla is golden and crisp and the cheese is melted.", "For an air-fryer option, cook at 375°F for 5 to 7 minutes, flipping halfway through, until golden and the cheese is melted.", "Slice in half and serve warm."],
+    "freezer_storage": ["Assemble the wraps but do not cook them.", "Wrap each tuna melt tightly in parchment paper and then foil.", "Place all four in a gallon freezer bag.", "Freeze for up to 1 month."],
+    "reheating_instructions": ["For best texture, thaw overnight in the refrigerator.", "Air fry at 350°F for 6 to 8 minutes, or heat in a skillet over medium-low heat for 3 to 4 minutes per side.", "For a microwave option, heat for 60 to 90 seconds, then crisp briefly in a skillet if desired."],
+    "tips": ["Greek yogurt keeps the tuna filling creamy while adding protein.", "Pickle juice adds acidity so the filling stays flavorful without relying on a large amount of mayonnaise."]
+  },
+  "seo": {"meta_title": "Albacore Tuna Melt Wrap | 45g Protein", "meta_description": "Crispy high-protein tuna melt wrap with StarKist albacore, Claussen dill pickles, Dijon, and cheddar.", "keywords": ["albacore tuna melt wrap", "StarKist albacore tuna", "high protein tuna wrap", "quick high protein lunch"]},
+  "images": {"hero_image_url": "https://40400meals.com/outputs/images/food_photos/albacore-tuna-melt-wrap-food-photo.png", "image_prompt": "Premium food-blog editorial photo of a golden crisp tuna melt wrap cut in half to show creamy albacore tuna filling and melted cheddar. Natural window light, realistic toasted tortilla texture, no extra garnish or side dishes.", "alt_text": "Albacore tuna melt wrap with melted cheddar."},
+  "social": {"pinterest": {"title": "Albacore Tuna Melt Wrap", "description": "Crispy high-protein tuna melt wrap with cheddar and dill pickle.", "destination_url": "https://40400meals.com/recipes/albacore-tuna-melt-wrap.html", "hashtags": ["#TunaMelt", "#HighProteinLunch", "#40400Meals"]}},
+  "homepage": {"hidden": false, "priority": 112, "published_at": "2026-08-31T13:47:00-05:00", "summary": "Crispy albacore tuna melt wrap with cheddar and dill pickle.", "image_path": "outputs/images/pinterest/albacore-tuna-melt-wrap-pinterest-pin.png"}
+}
