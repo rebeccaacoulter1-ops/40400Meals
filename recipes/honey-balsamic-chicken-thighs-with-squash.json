@@ -1,0 +1,29 @@
+{
+  "recipe_id": "honey-balsamic-chicken-thighs-with-squash",
+  "recipe": {
+    "slug": "honey-balsamic-chicken-thighs-with-squash",
+    "title": "Honey Balsamic Chicken Thighs with Squash",
+    "summary": "Juicy boneless chicken thighs with honey balsamic glaze, roasted zucchini and yellow squash, and cauliflower-jasmine rice.",
+    "story": "A sheet-pan chicken thigh dinner with enough real honey for true sweet-savory flavor, plus roasted squash and a satisfying rice blend.",
+    "category": "Quick & Easy Dinner",
+    "cuisine": "American",
+    "date_published": "2026-08-31",
+    "servings": 4,
+    "serving_size": "5 ounces cooked chicken thighs with roasted squash and cauliflower-jasmine rice",
+    "times": {"prep_minutes": 10, "cook_minutes": 25, "total_minutes": 35},
+    "macros": {"calories": 400, "protein_g": 40, "carbs_g": 32, "sugar_g": 10, "fiber_g": 4, "fat_g": 15},
+    "ingredients": ["1 1/2 pounds boneless skinless chicken thighs, trimmed", "2 medium zucchini, sliced into half-moons", "2 medium yellow squash, sliced into half-moons", "2 cups Birds Eye Steamfresh Riced Cauliflower", "1 1/2 cups cooked Kroger Classic Grains Jasmine Rice", "1 tablespoon avocado oil", "1 tablespoon minced garlic", "1 tablespoon garlic powder", "1 tablespoon onion powder", "1 teaspoon salt", "1 teaspoon black pepper", "2 tablespoons honey", "1/4 cup balsamic vinegar", "1 tablespoon low-sodium soy sauce", "1 tablespoon Dijon mustard", "1 teaspoon minced garlic"],
+    "ingredient_sections": [
+      {"title": "Chicken, Squash & Rice", "items": ["1 1/2 pounds boneless skinless chicken thighs, trimmed", "2 medium zucchini, sliced into half-moons", "2 medium yellow squash, sliced into half-moons", "2 cups Birds Eye Steamfresh Riced Cauliflower", "1 1/2 cups cooked Kroger Classic Grains Jasmine Rice", "1 tablespoon avocado oil", "1 tablespoon minced garlic", "1 tablespoon garlic powder", "1 tablespoon onion powder", "1 teaspoon salt", "1 teaspoon black pepper"]},
+      {"title": "Honey Balsamic Glaze", "items": ["2 tablespoons honey", "1/4 cup balsamic vinegar", "1 tablespoon low-sodium soy sauce", "1 tablespoon Dijon mustard", "1 teaspoon minced garlic"]}
+    ],
+    "instructions": ["Preheat the oven to 425°F and line a large sheet pan with parchment paper.", "Pat the chicken thighs dry and trim away any excess fat.", "Season the chicken with garlic powder, onion powder, salt, and black pepper.", "Add the zucchini and yellow squash to the sheet pan. Toss with the avocado oil and minced garlic.", "Arrange the chicken thighs among the vegetables.", "Whisk together the honey, balsamic vinegar, soy sauce, Dijon mustard, and minced garlic.", "Brush about half of the glaze over the chicken thighs.", "Roast for 15 minutes.", "Remove the pan from the oven, brush the chicken with the remaining glaze, and gently toss the squash.", "Return to the oven for another 8 to 10 minutes, or until the chicken reaches 165°F and the edges are browned.", "While the chicken finishes, cook the cauliflower rice according to package directions and heat the jasmine rice.", "Mix the cauliflower rice and jasmine rice together.", "Divide into four servings with 5 ounces cooked chicken, roasted zucchini and squash, and the cauliflower-jasmine rice blend.", "Spoon any thickened honey balsamic juices from the pan over the chicken before serving."],
+    "freezer_storage": ["Allow everything to cool completely.", "Divide into four individual freezer-safe containers.", "Freeze for up to 2 months.", "Keep the chicken on top of the rice and vegetables for better reheating texture."],
+    "reheating_instructions": ["Thaw overnight when possible.", "Microwave for 2 minutes, stir the rice and vegetables, then continue heating in 30-second intervals until hot.", "For better chicken texture, reheat the chicken in an air fryer at 350°F for 4 to 6 minutes and microwave the rice and vegetables separately."],
+    "tips": ["Chicken thighs give this meal a juicier texture than chicken breast while still fitting the 40/400 framework.", "The honey is intentionally modest so the glaze tastes real without turning into a sugar-heavy sauce."]
+  },
+  "seo": {"meta_title": "Honey Balsamic Chicken Thighs with Squash | 40g Protein", "meta_description": "Juicy honey balsamic chicken thighs with roasted squash and cauliflower-jasmine rice.", "keywords": ["honey balsamic chicken thighs", "sheet pan chicken thighs", "high protein chicken thigh dinner", "roasted squash dinner"]},
+  "images": {"hero_image_url": "https://40400meals.com/outputs/images/food_photos/honey-balsamic-chicken-thighs-with-squash-food-photo.png", "image_prompt": "Premium food-blog editorial photo of glossy honey balsamic chicken thighs with roasted zucchini and yellow squash beside cauliflower-jasmine rice. Warm natural window light, browned edges, realistic homemade sheet-pan dinner, no extra garnish.", "alt_text": "Honey balsamic chicken thighs with roasted squash and cauliflower-jasmine rice."},
+  "social": {"pinterest": {"title": "Honey Balsamic Chicken Thighs with Squash", "description": "Juicy honey balsamic chicken thighs with roasted squash and rice.", "destination_url": "https://40400meals.com/recipes/honey-balsamic-chicken-thighs-with-squash.html", "hashtags": ["#ChickenThighs", "#SheetPanDinner", "#HighProteinMeals", "#40400Meals"]}},
+  "homepage": {"hidden": false, "priority": 115, "published_at": "2026-08-31T13:50:00-05:00", "summary": "Honey balsamic chicken thighs with roasted squash and rice.", "image_path": "outputs/images/pinterest/honey-balsamic-chicken-thighs-with-squash-pinterest-pin.png"}
+}
