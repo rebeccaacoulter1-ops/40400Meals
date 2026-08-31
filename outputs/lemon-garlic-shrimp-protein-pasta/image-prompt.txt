@@ -1,8 +1,8 @@
 MASTER IMAGE PROMPT:
-Premium food-blog editorial photo of lemon garlic shrimp tangled with spaghetti, wilted spinach and Parmesan. Bright natural window light, realistic glossy pasta texture, no extra garnish or side dishes.
+Premium food-blog editorial photo of lemon garlic shrimp tangled with spaghetti, wilted spinach and Parmesan. Every shrimp must be fully peeled and deveined with the tails completely removed. No shrimp tails, tail shells, or shell pieces visible anywhere in the dish. Bright natural window light, realistic glossy pasta texture, no extra garnish or side dishes.
 
 ALT TEXT:
-Lemon garlic shrimp protein pasta with spinach and Parmesan.
+Lemon garlic shrimp protein pasta with tail-off shrimp, spinach and Parmesan.
 
 SEO META TITLE:
 Lemon Garlic Shrimp Protein Pasta | 42g Protein
