@@ -761,6 +761,96 @@
           }
         }
       }
+    },
+    "albacore-tuna-melt-wrap": {
+      "created_at_utc": "2026-08-31T19:23:52.149148+00:00",
+      "updated_at_utc": "2026-08-31T19:23:52.149171+00:00",
+      "steps": {
+        "pinterest": {
+          "complete": true,
+          "completed_at_utc": "2026-08-31T19:23:52.149171+00:00",
+          "details": {
+            "destination_url": "https://40400meals.com/recipes/albacore-tuna-melt-wrap.html",
+            "image_url": "https://40400meals.com/outputs/images/pinterest/albacore-tuna-melt-wrap-pinterest-pin.png",
+            "file_name": "albacore-tuna-melt-wrap-pinterest.json"
+          }
+        }
+      }
+    },
+    "herb-turkey-breast-roasted-sweet-potatoes": {
+      "created_at_utc": "2026-08-31T19:23:52.962420+00:00",
+      "updated_at_utc": "2026-08-31T19:23:52.962454+00:00",
+      "steps": {
+        "pinterest": {
+          "complete": true,
+          "completed_at_utc": "2026-08-31T19:23:52.962454+00:00",
+          "details": {
+            "destination_url": "https://40400meals.com/recipes/herb-turkey-breast-roasted-sweet-potatoes.html",
+            "image_url": "https://40400meals.com/outputs/images/pinterest/herb-turkey-breast-roasted-sweet-potatoes-pinterest-pin.png",
+            "file_name": "herb-turkey-breast-roasted-sweet-potatoes-pinterest.json"
+          }
+        }
+      }
+    },
+    "honey-balsamic-chicken-thighs-with-squash": {
+      "created_at_utc": "2026-08-31T19:23:53.430695+00:00",
+      "updated_at_utc": "2026-08-31T19:23:53.430715+00:00",
+      "steps": {
+        "pinterest": {
+          "complete": true,
+          "completed_at_utc": "2026-08-31T19:23:53.430715+00:00",
+          "details": {
+            "destination_url": "https://40400meals.com/recipes/honey-balsamic-chicken-thighs-with-squash.html",
+            "image_url": "https://40400meals.com/outputs/images/pinterest/honey-balsamic-chicken-thighs-with-squash-pinterest-pin.png",
+            "file_name": "honey-balsamic-chicken-thighs-with-squash-pinterest.json"
+          }
+        }
+      }
+    },
+    "italian-sausage-and-peppers-skillet": {
+      "created_at_utc": "2026-08-31T19:23:53.943108+00:00",
+      "updated_at_utc": "2026-08-31T19:23:53.943131+00:00",
+      "steps": {
+        "pinterest": {
+          "complete": true,
+          "completed_at_utc": "2026-08-31T19:23:53.943131+00:00",
+          "details": {
+            "destination_url": "https://40400meals.com/recipes/italian-sausage-and-peppers-skillet.html",
+            "image_url": "https://40400meals.com/outputs/images/pinterest/italian-sausage-and-peppers-skillet-pinterest-pin.png",
+            "file_name": "italian-sausage-and-peppers-skillet-pinterest.json"
+          }
+        }
+      }
+    },
+    "lemon-garlic-shrimp-protein-pasta": {
+      "created_at_utc": "2026-08-31T19:23:54.328847+00:00",
+      "updated_at_utc": "2026-08-31T19:23:54.328865+00:00",
+      "steps": {
+        "pinterest": {
+          "complete": true,
+          "completed_at_utc": "2026-08-31T19:23:54.328865+00:00",
+          "details": {
+            "destination_url": "https://40400meals.com/recipes/lemon-garlic-shrimp-protein-pasta.html",
+            "image_url": "https://40400meals.com/outputs/images/pinterest/lemon-garlic-shrimp-protein-pasta-pinterest-pin.png",
+            "file_name": "lemon-garlic-shrimp-protein-pasta-pinterest.json"
+          }
+        }
+      }
+    },
+    "maple-glazed-salmon": {
+      "created_at_utc": "2026-08-31T19:23:54.770089+00:00",
+      "updated_at_utc": "2026-08-31T19:23:54.770110+00:00",
+      "steps": {
+        "pinterest": {
+          "complete": true,
+          "completed_at_utc": "2026-08-31T19:23:54.770110+00:00",
+          "details": {
+            "destination_url": "https://40400meals.com/recipes/maple-glazed-salmon.html",
+            "image_url": "https://40400meals.com/outputs/images/pinterest/maple-glazed-salmon-pinterest-pin.png",
+            "file_name": "maple-glazed-salmon-pinterest.json"
+          }
+        }
+      }
     }
   }
 }
