@@ -1,0 +1,29 @@
+{
+  "recipe_id": "herb-turkey-breast-roasted-sweet-potatoes",
+  "recipe": {
+    "slug": "herb-turkey-breast-roasted-sweet-potatoes",
+    "title": "Herb Turkey Breast with Roasted Sweet Potatoes",
+    "summary": "Herb-roasted turkey breast with sweet potatoes, green beans, and a cranberry Dijon drizzle.",
+    "story": "A fall-forward sheet-pan dinner that keeps turkey breast juicy and gives it a bright cranberry Dijon finish without turning the meal into full Thanksgiving dinner.",
+    "category": "Fall Family Dinner",
+    "cuisine": "American",
+    "date_published": "2026-08-31",
+    "servings": 4,
+    "serving_size": "5 ounces cooked turkey breast with roasted sweet potatoes and green beans",
+    "times": {"prep_minutes": 10, "cook_minutes": 25, "total_minutes": 35},
+    "macros": {"calories": 400, "protein_g": 45, "carbs_g": 38, "sugar_g": 9, "fiber_g": 6, "fat_g": 8},
+    "ingredients": ["1 1/2 pounds boneless skinless turkey breast, raw", "20 ounces sweet potatoes, peeled and cut into 1-inch cubes", "16 ounces fresh green beans, trimmed", "1 tablespoon avocado oil", "1 tablespoon minced garlic", "1 tablespoon garlic powder", "1 tablespoon onion powder", "2 teaspoons Italian seasoning", "1 teaspoon salt", "1 teaspoon black pepper", "1/4 cup Ocean Spray Whole Berry Cranberry Sauce", "2 tablespoons Grey Poupon Dijon Mustard", "2 tablespoons water", "1 teaspoon apple cider vinegar"],
+    "ingredient_sections": [
+      {"title": "Herb Turkey & Vegetables", "items": ["1 1/2 pounds boneless skinless turkey breast, raw", "20 ounces sweet potatoes, peeled and cut into 1-inch cubes", "16 ounces fresh green beans, trimmed", "1 tablespoon avocado oil", "1 tablespoon minced garlic", "1 tablespoon garlic powder", "1 tablespoon onion powder", "2 teaspoons Italian seasoning", "1 teaspoon salt", "1 teaspoon black pepper"]},
+      {"title": "Cranberry Dijon Drizzle", "items": ["1/4 cup Ocean Spray Whole Berry Cranberry Sauce", "2 tablespoons Grey Poupon Dijon Mustard", "2 tablespoons water", "1 teaspoon apple cider vinegar"]}
+    ],
+    "instructions": ["Preheat the oven to 425°F and line a large sheet pan with parchment paper.", "Add the sweet potatoes to one side of the sheet pan. Toss with 2 teaspoons avocado oil, half of the garlic powder, half of the onion powder, 1 teaspoon Italian seasoning, and a little of the salt and pepper.", "Roast the sweet potatoes for 10 minutes.", "Meanwhile, cut the turkey breast into large, evenly sized pieces.", "Toss the turkey with the remaining avocado oil, minced garlic, remaining garlic powder, onion powder, Italian seasoning, salt, and pepper.", "Remove the sheet pan from the oven. Add the turkey and green beans alongside the sweet potatoes.", "Return to the oven and roast for another 15 to 18 minutes, or until the turkey reaches 165°F and the sweet potatoes are tender and browned.", "Whisk together the cranberry sauce, Grey Poupon, water, and apple cider vinegar.", "Divide the turkey, sweet potatoes, and green beans evenly among four servings.", "Drizzle each serving with one-fourth of the cranberry Dijon sauce."],
+    "freezer_storage": ["Cool everything completely.", "Divide into four individual freezer containers.", "Freeze for up to 2 months.", "Freeze the cranberry Dijon sauce separately when possible so the vegetables keep their texture."],
+    "reheating_instructions": ["Thaw overnight in the refrigerator when possible.", "Microwave for 2 minutes, stir or rearrange the food, then continue in 30-second increments until heated through.", "Add the cranberry Dijon drizzle after reheating."],
+    "tips": ["The cranberry Dijon sauce gives lean turkey breast a distinct fall flavor without overwhelming it.", "Use an instant-read thermometer and cook turkey to 165°F."]
+  },
+  "seo": {"meta_title": "Herb Turkey Breast with Roasted Sweet Potatoes | 45g Protein", "meta_description": "Herb-roasted turkey breast with sweet potatoes, green beans, and cranberry Dijon drizzle.", "keywords": ["herb turkey breast", "turkey sweet potato dinner", "cranberry Dijon turkey", "high protein fall dinner"]},
+  "images": {"hero_image_url": "https://40400meals.com/outputs/images/food_photos/herb-turkey-breast-roasted-sweet-potatoes-food-photo.png", "image_prompt": "Premium food-blog editorial photo of herb-roasted turkey breast with caramelized sweet potato cubes and green beans, finished with cranberry Dijon drizzle. Warm fall window light, realistic sheet-pan dinner, no extra garnish.", "alt_text": "Herb turkey breast with roasted sweet potatoes, green beans, and cranberry Dijon drizzle."},
+  "social": {"pinterest": {"title": "Herb Turkey Breast with Roasted Sweet Potatoes", "description": "Fall-forward turkey breast with sweet potatoes and cranberry Dijon drizzle.", "destination_url": "https://40400meals.com/recipes/herb-turkey-breast-roasted-sweet-potatoes.html", "hashtags": ["#TurkeyDinner", "#FallDinner", "#HighProteinMeals", "#40400Meals"]}},
+  "homepage": {"hidden": false, "priority": 114, "published_at": "2026-08-31T13:49:00-05:00", "summary": "Herb turkey breast with sweet potatoes and cranberry Dijon drizzle.", "image_path": "outputs/images/pinterest/herb-turkey-breast-roasted-sweet-potatoes-pinterest-pin.png"}
+}
