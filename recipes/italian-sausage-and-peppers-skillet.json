@@ -1,0 +1,26 @@
+{
+  "recipe_id": "italian-sausage-and-peppers-skillet",
+  "recipe": {
+    "slug": "italian-sausage-and-peppers-skillet",
+    "title": "Italian Sausage and Peppers Skillet",
+    "summary": "Lean Italian chicken sausage, peppers, and onions in a creamy Rao's tomato sauce finished with Parmesan.",
+    "story": "A cozy skillet dinner with browned sausage, colorful peppers, and a creamy tomato sauce that gets extra protein from blended cottage cheese.",
+    "category": "Quick & Easy Dinner",
+    "cuisine": "Italian-Inspired",
+    "date_published": "2026-08-31",
+    "servings": 4,
+    "serving_size": "2 sliced sausage links with peppers, onions, and creamy tomato sauce",
+    "times": {"prep_minutes": 10, "cook_minutes": 15, "total_minutes": 25},
+    "macros": {"calories": 400, "protein_g": 42, "carbs_g": 17, "sugar_g": 9, "fiber_g": 3, "fat_g": 19},
+    "ingredients": ["8 Al Fresco Sweet Italian Style Chicken Sausage links, sliced into rounds", "1 large red bell pepper, sliced", "1 large yellow bell pepper, sliced", "1 small yellow onion, sliced", "2 cups Daisy 4% Cottage Cheese", "1 cup Rao's Marinara Sauce", "4 tablespoons grated Parmesan cheese", "1 tablespoon minced garlic", "1 teaspoon Italian seasoning", "1 teaspoon garlic powder", "1/2 teaspoon salt", "1/2 teaspoon black pepper", "Nonstick cooking spray"],
+    "ingredient_sections": [{"title": "Italian Sausage and Peppers Skillet", "items": ["8 Al Fresco Sweet Italian Style Chicken Sausage links, sliced into rounds", "1 large red bell pepper, sliced", "1 large yellow bell pepper, sliced", "1 small yellow onion, sliced", "2 cups Daisy 4% Cottage Cheese", "1 cup Rao's Marinara Sauce", "4 tablespoons grated Parmesan cheese", "1 tablespoon minced garlic", "1 teaspoon Italian seasoning", "1 teaspoon garlic powder", "1/2 teaspoon salt", "1/2 teaspoon black pepper", "Nonstick cooking spray"]}],
+    "instructions": ["Heat a large skillet over medium-high heat and lightly coat with nonstick cooking spray.", "Add the sliced Italian chicken sausage. Cook for 4 to 5 minutes, stirring occasionally, until browned around the edges.", "Remove the sausage from the skillet and set aside.", "Add the bell peppers and onion to the same skillet. Cook for 5 to 6 minutes until softened but still slightly crisp.", "Add the minced garlic, Italian seasoning, garlic powder, salt, and black pepper. Cook for 30 seconds.", "Blend the Daisy cottage cheese and Rao's marinara sauce until completely smooth.", "Reduce the skillet to medium-low heat and return the sausage to the pan.", "Pour the creamy tomato sauce over the sausage and peppers and stir everything together.", "Cook for another 2 to 3 minutes, just until the sauce is heated through. Do not boil the sauce.", "Divide evenly among four servings and top each serving with 1 tablespoon Parmesan."],
+    "freezer_storage": ["Cool completely and divide into four freezer-safe containers.", "Freeze for up to 2 months."],
+    "reheating_instructions": ["Thaw overnight when possible.", "Microwave for 1 1/2 to 2 minutes, stir, then heat in 30-second increments until hot.", "Alternatively, reheat gently in a covered skillet over medium-low heat."],
+    "tips": ["Blend the cottage cheese completely smooth before adding it to the skillet.", "Keep the sauce below a boil so it stays creamy."]
+  },
+  "seo": {"meta_title": "Italian Sausage and Peppers Skillet | 42g Protein", "meta_description": "High-protein Italian chicken sausage and peppers in creamy Rao's marinara with Parmesan.", "keywords": ["Italian sausage and peppers", "high protein sausage skillet", "Rao's marinara", "chicken sausage dinner"]},
+  "images": {"hero_image_url": "https://40400meals.com/outputs/images/food_photos/italian-sausage-and-peppers-skillet-food-photo.png", "image_prompt": "Premium food-blog editorial skillet photo of browned sliced Italian chicken sausage with red and yellow peppers and onions coated in creamy tomato sauce with Parmesan. Warm natural light, realistic family dinner, no extra garnish.", "alt_text": "Italian sausage and peppers skillet in creamy tomato sauce."},
+  "social": {"pinterest": {"title": "Italian Sausage and Peppers Skillet", "description": "Cozy high-protein sausage and peppers skillet with creamy Rao's marinara.", "destination_url": "https://40400meals.com/recipes/italian-sausage-and-peppers-skillet.html", "hashtags": ["#SausageAndPeppers", "#HighProteinDinner", "#40400Meals"]}},
+  "homepage": {"hidden": false, "priority": 113, "published_at": "2026-08-31T13:48:00-05:00", "summary": "Italian chicken sausage and peppers in creamy Rao's tomato sauce.", "image_path": "outputs/images/pinterest/italian-sausage-and-peppers-skillet-pinterest-pin.png"}
+}
