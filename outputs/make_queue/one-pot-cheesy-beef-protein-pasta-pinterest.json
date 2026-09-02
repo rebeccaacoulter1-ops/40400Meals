@@ -1,0 +1,57 @@
+{
+  "recipe_id": "one-pot-cheesy-beef-protein-pasta",
+  "platform": "pinterest",
+  "title": "One-Pot Cheesy Beef Protein Pasta",
+  "description": "A family-friendly one-pot red-sauce pasta with lean beef, bone broth, and 44g protein for 396 calories.",
+  "destination_url": "https://40400meals.com/recipes/one-pot-cheesy-beef-protein-pasta.html",
+  "hashtags": [
+    "#ProteinPasta",
+    "#OnePotDinner",
+    "#FamilyFriendlyMeals",
+    "#40400Meals"
+  ],
+  "image_prompt": "Premium food-blog editorial photo of cheesy beef penne in rich red tomato sauce, visible lean crumbled beef, a light melted mozzarella and Parmesan finish, served in a shallow family-style pasta bowl. Realistic homemade texture, warm early-fall dinner light, no bread and no extra garnish.",
+  "image_alt_text": "Cheesy beef protein penne in tomato sauce.",
+  "pin_filename": "one-pot-cheesy-beef-protein-pasta-pinterest-pin.png",
+  "image_filename": "one-pot-cheesy-beef-protein-pasta-pinterest-pin.png",
+  "image_path": "outputs/images/pinterest/one-pot-cheesy-beef-protein-pasta-pinterest-pin.png",
+  "image_mime_type": "image/png",
+  "design_brain": {
+    "template_name": "P07 Fall",
+    "template_type": "seasonal",
+    "season": "fall",
+    "month": 9,
+    "recipe_category": "general",
+    "image_style": "soft indirect premium food-blog window light",
+    "photo_composition": "tight premium food-blog editorial angle",
+    "color_mood": "warm rich premium recipe-blog color with natural variation",
+    "accent_colors": [
+      "#FFF7ED",
+      "#F97316",
+      "#7C2D12"
+    ],
+    "text_style": "clean and modern",
+    "overlay_style": "minimal",
+    "icon_style": "minimal",
+    "layout_recommendation": "P01 classic layout",
+    "optimization": {
+      "visual_appeal": "high",
+      "save_potential": "high",
+      "click_potential": "high"
+    },
+    "version": "2.5",
+    "status": "design_strategy_ready"
+  },
+  "canva_text_overlay": {
+    "headline": "One-Pot Cheesy Beef Protein Pasta",
+    "subheadline": "44g Protein \u2022 396 Calories",
+    "brand": "40/400 Meals"
+  },
+  "seo_keywords": [
+    "beef protein pasta",
+    "one pot protein pasta",
+    "family friendly high protein dinner",
+    "40 400 meals"
+  ],
+  "status": "ready_for_make"
+}
