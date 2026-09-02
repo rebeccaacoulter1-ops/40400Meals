@@ -1,0 +1,1468 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>All High-Protein Recipes | 40/400 Meals</title>
+  <meta name="description" content="Browse every 40/400 Meals recipe in one place: practical high-protein meals built around roughly 40 grams of protein and about 400 calories." />
+  <link rel="canonical" href="https://40400meals.com/recipes.html" />
+  <style>
+    :root {
+      --cream: #faf7f2;
+      --chocolate: #2b2118;
+      --orange: #a4571b;
+      --soft-sage: #eef4ea;
+      --white: #ffffff;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      background: var(--cream);
+      color: var(--chocolate);
+      line-height: 1.6;
+    }
+    header {
+      background: var(--white);
+      padding: 22px 8%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      box-shadow: 0 4px 20px rgba(43, 33, 24, 0.08);
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+    .logo {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      color: var(--chocolate);
+      font-size: 26px;
+      font-weight: 800;
+      letter-spacing: -1px;
+      text-decoration: none;
+    }
+    .logo-mark {
+      display: grid;
+      width: 52px;
+      height: 52px;
+      place-items: center;
+      border: 2px solid #c98046;
+      border-radius: 50%;
+      background: var(--cream);
+      font-size: 13px;
+      line-height: 1;
+      letter-spacing: -0.8px;
+    }
+    nav a {
+      margin-left: 28px;
+      text-decoration: none;
+      color: var(--chocolate);
+      font-weight: 700;
+    }
+    .intro {
+      padding: 74px 8% 42px;
+      text-align: center;
+      max-width: 920px;
+      margin: auto;
+    }
+    .eyebrow {
+      display: inline-block;
+      background: var(--soft-sage);
+      color: #4f674d;
+      padding: 9px 16px;
+      border-radius: 999px;
+      font-weight: 800;
+      margin-bottom: 18px;
+    }
+    h1 {
+      font-size: clamp(44px, 7vw, 72px);
+      line-height: 1;
+      letter-spacing: -2.5px;
+      margin: 0 0 20px;
+    }
+    .intro p {
+      color: #6b5d52;
+      font-size: 19px;
+      margin: 0 auto;
+      max-width: 720px;
+    }
+    .library { padding: 26px 8% 80px; }
+    .library-count {
+      text-align: center;
+      font-weight: 800;
+      color: #6b5d52;
+      margin-bottom: 30px;
+    }
+    .recipes {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 26px;
+      max-width: 1400px;
+      margin: auto;
+    }
+    .recipe-card {
+      background: white;
+      border-radius: 28px;
+      overflow: hidden;
+      box-shadow: 0 14px 35px rgba(43, 33, 24, 0.10);
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+    .recipe-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 20px 44px rgba(43, 33, 24, 0.15);
+    }
+    .recipe-card > a { color: inherit; text-decoration: none; }
+    .recipe-img {
+      display: block;
+      width: 100%;
+      aspect-ratio: 2 / 3;
+      object-fit: cover;
+      object-position: top;
+    }
+    .recipe-body { padding: 24px; }
+    .recipe-body h3 { margin: 0 0 12px; font-size: 24px; line-height: 1.15; }
+    .recipe-body p { color: #6b5d52; }
+    .tags { display: flex; gap: 8px; flex-wrap: wrap; margin-top: 16px; }
+    .tag {
+      background: var(--soft-sage);
+      color: #4d634a;
+      padding: 7px 11px;
+      border-radius: 999px;
+      font-size: 13px;
+      font-weight: 800;
+    }
+    .planner-cta {
+      max-width: 920px;
+      margin: 0 auto 80px;
+      padding: 42px 28px;
+      text-align: center;
+      background: #fbf1df;
+      border: 1px solid #ead8c9;
+      border-radius: 30px;
+    }
+    .planner-cta h2 { margin: 0 0 10px; font-size: 34px; }
+    .planner-cta p { color: #6b5d52; margin-bottom: 24px; }
+    .btn {
+      display: inline-block;
+      padding: 15px 28px;
+      border-radius: 999px;
+      text-decoration: none;
+      font-weight: 800;
+      background: var(--orange);
+      color: white;
+    }
+    footer { text-align: center; padding: 45px 8%; color: #76675c; }
+    footer a { color: #76675c; font-weight: 700; margin: 0 8px; text-decoration: none; }
+    @media (max-width: 850px) {
+      header { flex-direction: column; gap: 12px; }
+      nav { text-align: center; }
+      nav a { margin: 0 9px; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <a class="logo" href="index.html">
+      <span class="logo-mark">40/400</span>
+      <span>40/400 Meals</span>
+    </a>
+    <nav>
+      <a href="recipes.html">Recipes</a>
+      <a href="index.html#method">Start Here</a>
+      <a href="index.html#weekly-planner">Weekly Planner</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="intro">
+      <div class="eyebrow">The complete 40/400 recipe library</div>
+      <h1>All Recipes</h1>
+      <p>Browse every published 40/400 meal in one place. High-protein, practical recipes designed for real schedules, real families, and food you actually want to eat.</p>
+    </section>
+
+    <section class="library">
+      <div class="library-count">63 recipes and growing</div>
+      <div class="recipes">
+      <article class="recipe-card">
+        <a href="recipes/barebells-berry-breakfast-to-go.html">
+          <img
+            class="recipe-img"
+            src="outputs/images/food_photos/barebells-berry-breakfast-to-go-food-photo.png"
+            alt="Barebells Berry Breakfast To Go"
+            loading="lazy"
+          />
+          <div class="recipe-body">
+            <h3>Barebells Berry Breakfast To Go</h3>
+            <p>A true three-item, no-cook breakfast with 40 grams of protein.</p>
+            <div class="tags">
+              <span class="tag">40g Protein</span>
+              <span class="tag">395 Calories</span>
+              <span class="tag">2 Minutes</span>
+            </div>
+          </div>
+        </a>
+      </article>
+
+      <article class="recipe-card">
+        <a href="recipes/chicken-ranch-quest-chip-lunch-box.html">
+          <img
+            class="recipe-img"
+            src="outputs/images/food_photos/chicken-ranch-quest-chip-lunch-box-food-photo.png"
+            alt="Chicken Lunch Box"
+            loading="lazy"
+          />
+          <div class="recipe-body">
+            <h3>Chicken Lunch Box</h3>
+            <p>Portable chicken ranch lunch box with fruit, vegetables, and protein chips.</p>
+            <div class="tags">
+              <span class="tag">49g Protein</span>
+              <span class="tag">390 Calories</span>
+              <span class="tag">10 Minutes</span>
+            </div>
+          </div>
+        </a>
+      </article>
+
+      <article class="recipe-card">
+        <a href="recipes/overnight-crockpot-protein-french-toast.html">
+          <img
+            class="recipe-img"
+            src="outputs/images/food_photos/overnight-crockpot-protein-french-toast-food-photo.png"
+            alt="Overnight Crockpot Protein French Toast"
+            loading="lazy"
+          />
+          <div class="recipe-body">
+            <h3>Overnight Crockpot Protein French Toast</h3>
+            <p>Overnight cinnamon protein French toast casserole with berries.</p>
+            <div class="tags">
+              <span class="tag">40g Protein</span>
+              <span class="tag">382 Calories</span>
+              <span class="tag">375 Minutes</span>
+            </div>
+          </div>
+        </a>
+      </article>
+
+      <article class="recipe-card">
+        <a href="recipes/parmesan-ranch-cod-crispy-potatoes.html">
+          <img
+            class="recipe-img"
+            src="outputs/images/food_photos/parmesan-ranch-cod-crispy-potatoes-food-photo.png"
+            alt="Parmesan Ranch Cod with Crispy Potatoes"
+            loading="lazy"
+          />
+          <div class="recipe-body">
+            <h3>Parmesan Ranch Cod with Crispy Potatoes</h3>
+            <p>Mild Parmesan ranch cod with crispy potatoes and green beans.</p>
+            <div class="tags">
+              <span class="tag">43g Protein</span>
+              <span class="tag">400 Calories</span>
+              <span class="tag">45 Minutes</span>
+            </div>
+          </div>
+        </a>
+      </article>
+
+      <article class="recipe-card">
+        <a href="recipes/sticky-teriyaki-chicken-rice-bowls.html">
+          <img
+            class="recipe-img"
+            src="outputs/images/food_photos/sticky-teriyaki-chicken-rice-bowls-food-photo.png"
+            alt="Sticky Teriyaki Chicken Rice Bowls"
+            loading="lazy"
+          />
+          <div class="recipe-body">
+            <h3>Sticky Teriyaki Chicken Rice Bowls</h3>
+            <p>Sweet teriyaki chicken with broccoli, pineapple, and blended rice.</p>
+            <div class="tags">
+              <span class="tag">42g Protein</span>
+              <span class="tag">394 Calories</span>
+              <span class="tag">30 Minutes</span>
+            </div>
+          </div>
+        </a>
+      </article>
+
+      <article class="recipe-card">
+        <a href="recipes/one-pot-cheesy-beef-protein-pasta.html">
+          <img
+            class="recipe-img"
+            src="outputs/images/food_photos/one-pot-cheesy-beef-protein-pasta-food-photo.png"
+            alt="One-Pot Cheesy Beef Protein Pasta"
+            loading="lazy"
+          />
+          <div class="recipe-body">
+            <h3>One-Pot Cheesy Beef Protein Pasta</h3>
+            <p>Cheesy red-sauce protein pasta with lean beef and bone broth.</p>
+            <div class="tags">
+              <span class="tag">44g Protein</span>
+              <span class="tag">396 Calories</span>
+              <span class="tag">35 Minutes</span>
+            </div>
+          </div>
+        </a>
+      </article>
+
+      <article class="recipe-card">
+        <a href="recipes/honey-balsamic-chicken-thighs-with-squash.html">
+          <img
+            class="recipe-img"
+            src="outputs/images/food_photos/honey-balsamic-chicken-thighs-with-squash-food-photo.png"
+            alt="Honey Balsamic Chicken Thighs with Squash"
+            loading="lazy"
+          />
+          <div class="recipe-body">
+            <h3>Honey Balsamic Chicken Thighs with Squash</h3>
+            <p>Honey balsamic chicken thighs with roasted squash and rice.</p>
+            <div class="tags">
+              <span class="tag">40g Protein</span>
+              <span class="tag">400 Calories</span>
+              <span class="tag">35 Minutes</span>
+            </div>
+          </div>
+        </a>
+      </article>
+
+      <article class="recipe-card">
+        <a href="recipes/herb-turkey-breast-roasted-sweet-potatoes.html">
+          <img
+            class="recipe-img"
+            src="outputs/images/food_photos/herb-turkey-breast-roasted-sweet-potatoes-food-photo.png"
+            alt="Herb Turkey Breast with Roasted Sweet Potatoes"
+            loading="lazy"
+          />
+          <div class="recipe-body">
+            <h3>Herb Turkey Breast with Roasted Sweet Potatoes</h3>
+            <p>Herb turkey breast with sweet potatoes and cranberry Dijon drizzle.</p>
+            <div class="tags">
+              <span class="tag">45g Protein</span>
+              <span class="tag">400 Calories</span>
+              <span class="tag">35 Minutes</span>
+            </div>
+          </div>
+        </a>
+      </article>
+
+      <article class="recipe-card">
+        <a href="recipes/italian-sausage-and-peppers-skillet.html">
+          <img
+            class="recipe-img"
+            src="outputs/images/food_photos/italian-sausage-and-peppers-skillet-food-photo.png"
+            alt="Italian Sausage and Peppers Skillet"
+            loading="lazy"
+          />
+          <div class="recipe-body">
+            <h3>Italian Sausage and Peppers Skillet</h3>
+            <p>Italian chicken sausage and peppers in creamy Rao&#x27;s tomato sauce.</p>
+            <div class="tags">
+              <span class="tag">42g Protein</span>
+              <span class="tag">400 Calories</span>
+              <span class="tag">25 Minutes</span>
+            </div>
+          </div>
+        </a>
+      </article>
+
+      <article class="recipe-card">
+        <a href="recipes/albacore-tuna-melt-wrap.html">
+          <img
+            class="recipe-img"
+            src="outputs/images/food_photos/albacore-tuna-melt-wrap-food-photo.png"
+            alt="Albacore Tuna Melt Wrap"
+            loading="lazy"
+          />
+          <div class="recipe-body">
+            <h3>Albacore Tuna Melt Wrap</h3>
+            <p>Crispy albacore tuna melt wrap with cheddar and dill pickle.</p>
+            <div class="tags">
+              <span class="tag">45g Protein</span>
+              <span class="tag">400 Calories</span>
+              <span class="tag">16 Minutes</span>
+            </div>
+          </div>
+        </a>
+      </article>
+
+      <article class="recipe-card">
+        <a href="recipes/lemon-garlic-shrimp-protein-pasta.html">
+          <img
+            class="recipe-img"
+            src="outputs/images/food_photos/lemon-garlic-shrimp-protein-pasta-food-photo.png"
+            alt="Lemon Garlic Shrimp Protein Pasta"
+            loading="lazy"
+          />
+          <div class="recipe-body">
+            <h3>Lemon Garlic Shrimp Protein Pasta</h3>
+            <p>Lemon garlic shrimp protein pasta with spinach and Parmesan.</p>
+            <div class="tags">
+              <span class="tag">42g Protein</span>
+              <span class="tag">395 Calories</span>
+              <span class="tag">25 Minutes</span>
+            </div>
+          </div>
+        </a>
+      </article>
+
+      <article class="recipe-card">
+        <a href="recipes/maple-glazed-salmon.html">
+          <img
+            class="recipe-img"
+            src="outputs/images/food_photos/maple-glazed-salmon-food-photo.png"
+            alt="Maple Glazed Salmon"
+            loading="lazy"
+          />
+          <div class="recipe-body">
+            <h3>Maple Glazed Salmon</h3>
+            <p>Maple glazed salmon with green beans and cauliflower-jasmine rice.</p>
+            <div class="tags">
+              <span class="tag">40g Protein</span>
+              <span class="tag">400 Calories</span>
+              <span class="tag">28 Minutes</span>
+            </div>
+          </div>
+        </a>
+      </article>
+
+      <article class="recipe-card">
+        <a href="recipes/fall-harvest-protein-snack-box.html">
+          <img
+            class="recipe-img"
+            src="outputs/images/food_photos/fall-harvest-protein-snack-box-food-photo.png"
+            alt="Fall Harvest Protein Snack Box"
+            loading="lazy"
+          />
+          <div class="recipe-body">
+            <h3>Fall Harvest Protein Snack Box</h3>
+            <p>A no-cook snack box with a Chomps meat stick, green apple, cheese, and pumpkin seeds for 40g of protein on the go.</p>
+            <div class="tags">
+              <span class="tag">40g Protein</span>
+              <span class="tag">400 Calories</span>
+              <span class="tag">5 Minutes</span>
+            </div>
+          </div>
+        </a>
+      </article>
+
+      <article class="recipe-card">
+        <a href="recipes/maple-cinnamon-chicken-sweet-potato-bowl.html">
+          <img
+            class="recipe-img"
+            src="outputs/images/food_photos/maple-cinnamon-chicken-sweet-potato-bowl-food-photo.png"
+            alt="Maple Cinnamon Chicken &amp; Sweet Potato Bowl"
+            loading="lazy"
+          />
+          <div class="recipe-body">
+            <h3>Maple Cinnamon Chicken &amp; Sweet Potato Bowl</h3>
+            <p>Seared chicken and sweet potato finished with a maple-cinnamon glaze, ready in 15 minutes.</p>
+            <div class="tags">
+              <span class="tag">40g Protein</span>
+              <span class="tag">400 Calories</span>
+              <span class="tag">15 Minutes</span>
+            </div>
+          </div>
+        </a>
+      </article>
+
+      <article class="recipe-card">
+        <a href="recipes/pumpkin-chili-turkey-skillet.html">
+          <img
+            class="recipe-img"
+            src="outputs/images/food_photos/pumpkin-chili-turkey-skillet-food-photo.png"
+            alt="Pumpkin Chili Turkey Skillet"
+            loading="lazy"
+          />
+          <div class="recipe-body">
+            <h3>Pumpkin Chili Turkey Skillet</h3>
+            <p>A cozy one-skillet turkey chili with pumpkin puree, warm chili seasoning, and a cooling Greek yogurt topping.</p>
+            <div class="tags">
+              <span class="tag">40g Protein</span>
+              <span class="tag">400 Calories</span>
+              <span class="tag">15 Minutes</span>
+            </div>
+          </div>
+        </a>
+      </article>
+
+      <article class="recipe-card">
+        <a href="recipes/rotisserie-chicken-butternut-mac-skillet.html">
+          <img
+            class="recipe-img"
+            src="outputs/images/food_photos/rotisserie-chicken-butternut-mac-skillet-food-photo.png"
+            alt="Rotisserie Chicken &amp; Butternut Mac Skillet"
+            loading="lazy"
+          />
+          <div class="recipe-body">
+            <h3>Rotisserie Chicken &amp; Butternut Mac Skillet</h3>
+            <p>A creamy one-pot pasta skillet with shredded rotisserie chicken and butternut squash, ready in 15 minutes.</p>
+            <div class="tags">
+              <span class="tag">41g Protein</span>
+              <span class="tag">410 Calories</span>
+              <span class="tag">15 Minutes</span>
+            </div>
+          </div>
+        </a>
+      </article>
+
+      <article class="recipe-card">
+        <a href="recipes/caramel-pecan-cottage-cheese-bowl.html">
+          <img
+            class="recipe-img"
+            src="outputs/images/food_photos/caramel-pecan-cottage-cheese-bowl-food-photo.png"
+            alt="Caramel Pecan Cottage Cheese Bowl"
+            loading="lazy"
+          />
+          <div class="recipe-body">
+            <h3>Caramel Pecan Cottage Cheese Bowl</h3>
+            <p>Creamy cottage cheese topped with candied pecans and a caramel zigzag, served with a Built Puff pumpkin cookie protein bar.</p>
+            <div class="tags">
+              <span class="tag">42g Protein</span>
+              <span class="tag">400 Calories</span>
+              <span class="tag">6 Minutes</span>
+            </div>
+          </div>
+        </a>
+      </article>
+
+      <article class="recipe-card">
+        <a href="recipes/pumpkin-spice-protein-mug-cake.html">
+          <img
+            class="recipe-img"
+            src="outputs/images/food_photos/pumpkin-spice-protein-mug-cake-food-photo.png"
+            alt="Pumpkin Spice Protein Mug Cake"
+            loading="lazy"
+          />
+          <div class="recipe-body">
+            <h3>Pumpkin Spice Protein Mug Cake</h3>
+            <p>A fluffy pumpkin spice mug cake with 40g of protein, mixed in one mug and ready in 5 minutes.</p>
+            <div class="tags">
+              <span class="tag">40g Protein</span>
+              <span class="tag">400 Calories</span>
+              <span class="tag">5 Minutes</span>
+            </div>
+          </div>
+        </a>
+      </article>
+
+      <article class="recipe-card">
+        <a href="recipes/air-fryer-buffalo-chicken-wrap.html">
+          <img
+            class="recipe-img"
+            src="outputs/images/food_photos/air-fryer-buffalo-chicken-wrap-food-photo.png"
+            alt="Air Fryer Buffalo Chicken Wrap"
+            loading="lazy"
+          />
+          <div class="recipe-body">
+            <h3>Air Fryer Buffalo Chicken Wrap</h3>
+            <p>Buffalo chicken wrap with ranch, celery, and protein chips.</p>
+            <div class="tags">
+              <span class="tag">45g Protein</span>
+              <span class="tag">400 Calories</span>
+              <span class="tag">23 Minutes</span>
+            </div>
+          </div>
+        </a>
+      </article>
+
+      <article class="recipe-card">
+        <a href="recipes/sweet-potato-cranberry-protein-muffins.html">
+          <img
+            class="recipe-img"
+            src="outputs/images/food_photos/sweet-potato-cranberry-protein-muffins-food-photo.png"
+            alt="Sweet Potato Cranberry Protein Muffins"
+            loading="lazy"
+          />
+          <div class="recipe-body">
+            <h3>Sweet Potato Cranberry Protein Muffins</h3>
+            <p>Moist fall muffins with sweet potato, Craisins, chia, and warm spices.</p>
+            <div class="tags">
+              <span class="tag">41g Protein</span>
+              <span class="tag">400 Calories</span>
+              <span class="tag">35 Minutes</span>
+            </div>
+          </div>
+        </a>
+      </article>
+
+      <article class="recipe-card">
+        <a href="recipes/skillet-beef-stroganoff-protein-pasta.html">
+          <img
+            class="recipe-img"
+            src="outputs/images/food_photos/skillet-beef-stroganoff-protein-pasta-food-photo.png"
+            alt="Skillet Beef Stroganoff Protein Pasta"
+            loading="lazy"
+          />
+          <div class="recipe-body">
+            <h3>Skillet Beef Stroganoff Protein Pasta</h3>
+            <p>One-skillet beef, mushrooms, and protein pasta in a creamy sauce.</p>
+            <div class="tags">
+              <span class="tag">42g Protein</span>
+              <span class="tag">405 Calories</span>
+              <span class="tag">45 Minutes</span>
+            </div>
+          </div>
+        </a>
+      </article>
+
+      <article class="recipe-card">
+        <a href="recipes/french-onion-chicken.html">
+          <img
+            class="recipe-img"
+            src="outputs/images/food_photos/french-onion-chicken-food-photo.png"
+            alt="French Onion Chicken"
+            loading="lazy"
+          />
+          <div class="recipe-body">
+            <h3>French Onion Chicken</h3>
+            <p>Caramelized-onion chicken with creamy protein mashed potatoes.</p>
+            <div class="tags">
+              <span class="tag">44g Protein</span>
+              <span class="tag">400 Calories</span>
+              <span class="tag">60 Minutes</span>
+            </div>
+          </div>
+        </a>
+      </article>
+
+      <article class="recipe-card">
+        <a href="recipes/high-protein-chicken-pot-pie.html">
+          <img
+            class="recipe-img"
+            src="outputs/images/food_photos/high-protein-chicken-pot-pie-food-photo.png"
+            alt="High-Protein Chicken Pot Pie"
+            loading="lazy"
+          />
+          <div class="recipe-body">
+            <h3>High-Protein Chicken Pot Pie</h3>
+            <p>Creamy chicken and vegetables baked with protein drop biscuits.</p>
+            <div class="tags">
+              <span class="tag">48g Protein</span>
+              <span class="tag">395 Calories</span>
+              <span class="tag">50 Minutes</span>
+            </div>
+          </div>
+        </a>
+      </article>
+
+      <article class="recipe-card">
+        <a href="recipes/crockpot-garlic-chicken.html">
+          <img
+            class="recipe-img"
+            src="outputs/images/food_photos/crockpot-garlic-chicken-food-photo.png"
+            alt="Crockpot Garlic Chicken"
+            loading="lazy"
+          />
+          <div class="recipe-body">
+            <h3>Crockpot Garlic Chicken</h3>
+            <p>Dump-and-go garlic chicken with broccoli and cauliflower-jasmine rice.</p>
+            <div class="tags">
+              <span class="tag">40g Protein</span>
+              <span class="tag">390 Calories</span>
+              <span class="tag">420 Minutes</span>
+            </div>
+          </div>
+        </a>
+      </article>
+
+      <article class="recipe-card">
+        <a href="recipes/apple-cider-dijon-chicken-harvest-bowl.html">
+          <img
+            class="recipe-img"
+            src="outputs/images/food_photos/apple-cider-dijon-chicken-harvest-bowl-food-photo.png"
+            alt="Apple Cider Dijon Chicken Harvest Bowl"
+            loading="lazy"
+          />
+          <div class="recipe-body">
+            <h3>Apple Cider Dijon Chicken Harvest Bowl</h3>
+            <p>Apple cider Dijon chicken with roasted potatoes, green beans, and apples.</p>
+            <div class="tags">
+              <span class="tag">43g Protein</span>
+              <span class="tag">405 Calories</span>
+              <span class="tag">42 Minutes</span>
+            </div>
+          </div>
+        </a>
+      </article>
+
+      <article class="recipe-card">
+        <a href="recipes/creamy-chicken-wild-rice-soup.html">
+          <img
+            class="recipe-img"
+            src="outputs/images/food_photos/creamy-chicken-wild-rice-soup-food-photo.png"
+            alt="Creamy Chicken and Wild Rice Soup"
+            loading="lazy"
+          />
+          <div class="recipe-body">
+            <h3>Creamy Chicken and Wild Rice Soup</h3>
+            <p>Cozy chicken and wild rice soup made creamy with Greek yogurt.</p>
+            <div class="tags">
+              <span class="tag">48g Protein</span>
+              <span class="tag">390 Calories</span>
+              <span class="tag">55 Minutes</span>
+            </div>
+          </div>
+        </a>
+      </article>
+
+      <article class="recipe-card">
+        <a href="recipes/creamy-pumpkin-chicken-protein-pasta.html">
+          <img
+            class="recipe-img"
+            src="outputs/images/food_photos/creamy-pumpkin-chicken-protein-pasta-food-photo.png"
+            alt="Creamy Pumpkin Chicken Protein Pasta"
+            loading="lazy"
+          />
+          <div class="recipe-body">
+            <h3>Creamy Pumpkin Chicken Protein Pasta</h3>
+            <p>Savory pumpkin-Parmesan protein pasta with sliced chicken.</p>
+            <div class="tags">
+              <span class="tag">45g Protein</span>
+              <span class="tag">405 Calories</span>
+              <span class="tag">28 Minutes</span>
+            </div>
+          </div>
+        </a>
+      </article>
+
+      <article class="recipe-card">
+        <a href="recipes/creamy-white-bean-pumpkin-turkey-chili.html">
+          <img
+            class="recipe-img"
+            src="outputs/images/food_photos/creamy-white-bean-pumpkin-turkey-chili-food-photo.png"
+            alt="Creamy White Bean Pumpkin Turkey Chili"
+            loading="lazy"
+          />
+          <div class="recipe-body">
+            <h3>Creamy White Bean Pumpkin Turkey Chili</h3>
+            <p>Smoky white bean pumpkin turkey chili with Greek yogurt and jalapeños.</p>
+            <div class="tags">
+              <span class="tag">41g Protein</span>
+              <span class="tag">395 Calories</span>
+              <span class="tag">45 Minutes</span>
+            </div>
+          </div>
+        </a>
+      </article>
+
+      <article class="recipe-card">
+        <a href="recipes/warm-cinnamon-apple-cheesecake-protein-parfait.html">
+          <img
+            class="recipe-img"
+            src="outputs/images/food_photos/warm-cinnamon-apple-cheesecake-protein-parfait-food-photo.png"
+            alt="Warm Cinnamon Apple Cheesecake Protein Parfait"
+            loading="lazy"
+          />
+          <div class="recipe-body">
+            <h3>Warm Cinnamon Apple Cheesecake Protein Parfait</h3>
+            <p>Warm cinnamon apples layered with cheesecake protein yogurt and almond butter.</p>
+            <div class="tags">
+              <span class="tag">43g Protein</span>
+              <span class="tag">410 Calories</span>
+              <span class="tag">11 Minutes</span>
+            </div>
+          </div>
+        </a>
+      </article>
+
+      <article class="recipe-card">
+        <a href="recipes/strawberry-cheesecake-protein-crunch-bowl.html">
+          <img
+            class="recipe-img"
+            src="outputs/images/food_photos/strawberry-cheesecake-protein-crunch-bowl-food-photo.png"
+            alt="Strawberry Cheesecake Protein Crunch Bowl"
+            loading="lazy"
+          />
+          <div class="recipe-body">
+            <h3>Strawberry Cheesecake Protein Crunch Bowl</h3>
+            <p>Strawberry cheesecake protein yogurt with berries and graham cracker crunch.</p>
+            <div class="tags">
+              <span class="tag">42g Protein</span>
+              <span class="tag">340 Calories</span>
+              <span class="tag">5 Minutes</span>
+            </div>
+          </div>
+        </a>
+      </article>
+
+      <article class="recipe-card">
+        <a href="recipes/creamy-chicken-poblano-skillet.html">
+          <img
+            class="recipe-img"
+            src="outputs/images/food_photos/creamy-chicken-poblano-skillet-food-photo.png"
+            alt="Creamy Chicken Poblano Skillet"
+            loading="lazy"
+          />
+          <div class="recipe-body">
+            <h3>Creamy Chicken Poblano Skillet</h3>
+            <p>Juicy air-fried chicken with creamy poblano sauce and salsa verde protein chips.</p>
+            <div class="tags">
+              <span class="tag">44g Protein</span>
+              <span class="tag">410 Calories</span>
+              <span class="tag">29 Minutes</span>
+            </div>
+          </div>
+        </a>
+      </article>
+
+      <article class="recipe-card">
+        <a href="recipes/garlic-parmesan-steak-bites-potatoes.html">
+          <img
+            class="recipe-img"
+            src="outputs/images/food_photos/garlic-parmesan-steak-bites-potatoes-food-photo.png"
+            alt="Garlic Parmesan Steak Bites and Potatoes"
+            loading="lazy"
+          />
+          <div class="recipe-body">
+            <h3>Garlic Parmesan Steak Bites and Potatoes</h3>
+            <p>Tender garlic-Parmesan sirloin bites with crispy potatoes and green beans.</p>
+            <div class="tags">
+              <span class="tag">41g Protein</span>
+              <span class="tag">405 Calories</span>
+              <span class="tag">25 Minutes</span>
+            </div>
+          </div>
+        </a>
+      </article>
+
+      <article class="recipe-card">
+        <a href="recipes/loaded-chicken-sausage-breakfast-potato-bowl.html">
+          <img
+            class="recipe-img"
+            src="outputs/images/food_photos/loaded-chicken-sausage-breakfast-potato-bowl-food-photo.png"
+            alt="Loaded Chicken Sausage Breakfast Potato Bowl"
+            loading="lazy"
+          />
+          <div class="recipe-body">
+            <h3>Loaded Chicken Sausage Breakfast Potato Bowl</h3>
+            <p>Crispy potatoes, chicken sausage, and creamy eggs with cheddar and salsa.</p>
+            <div class="tags">
+              <span class="tag">41g Protein</span>
+              <span class="tag">395 Calories</span>
+              <span class="tag">20 Minutes</span>
+            </div>
+          </div>
+        </a>
+      </article>
+
+      <article class="recipe-card">
+        <a href="recipes/crispy-buffalo-chicken-loaded-potato-bowl.html">
+          <img
+            class="recipe-img"
+            src="outputs/images/food_photos/crispy-buffalo-chicken-loaded-potato-bowl-food-photo.png"
+            alt="Crispy Buffalo Chicken Loaded Potato Bowl"
+            loading="lazy"
+          />
+          <div class="recipe-body">
+            <h3>Crispy Buffalo Chicken Loaded Potato Bowl</h3>
+            <p>Crispy buffalo chicken and potatoes with blended cottage-cheese ranch.</p>
+            <div class="tags">
+              <span class="tag">42g Protein</span>
+              <span class="tag">400 Calories</span>
+              <span class="tag">20 Minutes</span>
+            </div>
+          </div>
+        </a>
+      </article>
+
+      <article class="recipe-card">
+        <a href="recipes/sheet-pan-garlic-parmesan-chicken-potatoes.html">
+          <img
+            class="recipe-img"
+            src="outputs/images/food_photos/sheet-pan-garlic-parmesan-chicken-potatoes-food-photo.png"
+            alt="Sheet-Pan Garlic Parmesan Chicken &amp; Potatoes"
+            loading="lazy"
+          />
+          <div class="recipe-body">
+            <h3>Sheet-Pan Garlic Parmesan Chicken &amp; Potatoes</h3>
+            <p>Roasted garlic-Parmesan chicken, baby potatoes, zucchini, and yellow squash with 45 grams of protein and 400 calories.</p>
+            <div class="tags">
+              <span class="tag">45g Protein</span>
+              <span class="tag">400 Calories</span>
+              <span class="tag">40 Minutes</span>
+            </div>
+          </div>
+        </a>
+      </article>
+
+      <article class="recipe-card">
+        <a href="recipes/chicken-parmesan-protein-pasta.html">
+          <img
+            class="recipe-img"
+            src="outputs/images/food_photos/chicken-parmesan-protein-pasta-food-photo.png"
+            alt="Crispy Chicken Parmesan Protein Spaghetti"
+            loading="lazy"
+          />
+          <div class="recipe-body">
+            <h3>Crispy Chicken Parmesan Protein Spaghetti</h3>
+            <p>Crispy cheese-topped chicken Parmesan over tomato-basil protein spaghetti with 41 grams of protein.</p>
+            <div class="tags">
+              <span class="tag">41g Protein</span>
+              <span class="tag">455 Calories</span>
+              <span class="tag">35 Minutes</span>
+            </div>
+          </div>
+        </a>
+      </article>
+
+      <article class="recipe-card">
+        <a href="recipes/loaded-cheeseburger-protein-bowl.html">
+          <img
+            class="recipe-img"
+            src="outputs/images/food_photos/loaded-cheeseburger-protein-bowl-food-photo.png"
+            alt="Loaded Cheeseburger Protein Bowl"
+            loading="lazy"
+          />
+          <div class="recipe-body">
+            <h3>Loaded Cheeseburger Protein Bowl</h3>
+            <p>Lean beef, crispy crinkle fries, cheddar, pickles, lettuce, tomato, and burger sauce for approximately 42 grams of protein.</p>
+            <div class="tags">
+              <span class="tag">42g Protein</span>
+              <span class="tag">405 Calories</span>
+              <span class="tag">30 Minutes</span>
+            </div>
+          </div>
+        </a>
+      </article>
+
+      <article class="recipe-card">
+        <a href="recipes/honey-mustard-chicken-crunch-wrap.html">
+          <img
+            class="recipe-img"
+            src="outputs/images/food_photos/honey-mustard-chicken-crunch-wrap-food-photo.png"
+            alt="Honey Mustard BBQ Chicken Crunch Wrap"
+            loading="lazy"
+          />
+          <div class="recipe-body">
+            <h3>Honey Mustard BBQ Chicken Crunch Wrap</h3>
+            <p>Crispy Realgood chicken, romaine, creamy honey mustard, and smoky Quest BBQ chips for approximately 44 grams of protein.</p>
+            <div class="tags">
+              <span class="tag">44g Protein</span>
+              <span class="tag">400 Calories</span>
+              <span class="tag">10 Minutes</span>
+            </div>
+          </div>
+        </a>
+      </article>
+
+      <article class="recipe-card">
+        <a href="recipes/high-protein-breakfast-quesadilla.html">
+          <img
+            class="recipe-img"
+            src="outputs/images/food_photos/high-protein-breakfast-quesadilla-food-photo.png"
+            alt="High-Protein Breakfast Quesadilla"
+            loading="lazy"
+          />
+          <div class="recipe-body">
+            <h3>High-Protein Breakfast Quesadilla</h3>
+            <p>Crisp breakfast quesadilla with eggs, Amylu chicken sausage, Daisy cottage cheese, and cheddar for approximately 44 grams of protein.</p>
+            <div class="tags">
+              <span class="tag">44g Protein</span>
+              <span class="tag">395 Calories</span>
+              <span class="tag">15 Minutes</span>
+            </div>
+          </div>
+        </a>
+      </article>
+
+      <article class="recipe-card">
+        <a href="recipes/dump-and-go-bbq-chicken-sweet-potatoes.html">
+          <img
+            class="recipe-img"
+            src="outputs/images/food_photos/dump-and-go-bbq-chicken-sweet-potatoes-food-photo.png"
+            alt="Dump-and-Go Crockpot BBQ Chicken Sweet Potatoes"
+            loading="lazy"
+          />
+          <div class="recipe-body">
+            <h3>Dump-and-Go Crockpot BBQ Chicken Sweet Potatoes</h3>
+            <p>Pulled sweet-and-smoky BBQ chicken served over a crockpot sweet potato with tangy Greek-yogurt slaw for approximately 42 grams of protein and…</p>
+            <div class="tags">
+              <span class="tag">42g Protein</span>
+              <span class="tag">380 Calories</span>
+              <span class="tag">495 Minutes</span>
+            </div>
+          </div>
+        </a>
+      </article>
+
+      <article class="recipe-card">
+        <a href="recipes/dump-and-go-white-chicken-chili.html">
+          <img
+            class="recipe-img"
+            src="outputs/images/food_photos/dump-and-go-white-chicken-chili-food-photo.png"
+            alt="Dump-and-Go Crockpot White Chicken Chili"
+            loading="lazy"
+          />
+          <div class="recipe-body">
+            <h3>Dump-and-Go Crockpot White Chicken Chili</h3>
+            <p>Creamy white chicken chili with beans, corn, green chiles, tortilla strips, Greek yogurt, and jalapeño for approximately 44 grams of protein and…</p>
+            <div class="tags">
+              <span class="tag">44g Protein</span>
+              <span class="tag">365 Calories</span>
+              <span class="tag">495 Minutes</span>
+            </div>
+          </div>
+        </a>
+      </article>
+
+      <article class="recipe-card">
+        <a href="recipes/dump-and-go-crockpot-beef-and-broccoli.html">
+          <img
+            class="recipe-img"
+            src="outputs/images/food_photos/dump-and-go-crockpot-beef-and-broccoli-food-photo.png"
+            alt="Dump-and-Go Crockpot Beef and Broccoli"
+            loading="lazy"
+          />
+          <div class="recipe-body">
+            <h3>Dump-and-Go Crockpot Beef and Broccoli</h3>
+            <p>Tender crockpot beef and broccoli with a savory garlic-ginger sauce and a jasmine-rice cauliflower medley for approximately 40 grams of protein…</p>
+            <div class="tags">
+              <span class="tag">40g Protein</span>
+              <span class="tag">380 Calories</span>
+              <span class="tag">495 Minutes</span>
+            </div>
+          </div>
+        </a>
+      </article>
+
+      <article class="recipe-card">
+        <a href="recipes/dump-and-go-creamy-tuscan-chicken.html">
+          <img
+            class="recipe-img"
+            src="outputs/images/food_photos/dump-and-go-creamy-tuscan-chicken-food-photo.png"
+            alt="Creamy Tuscan Chicken Protein Pasta"
+            loading="lazy"
+          />
+          <div class="recipe-body">
+            <h3>Creamy Tuscan Chicken Protein Pasta</h3>
+            <p>Dump-and-go Tuscan chicken with cottage cheese, cream cheese, spinach, Parmesan, sun-dried tomatoes, and protein penne for approximately 44…</p>
+            <div class="tags">
+              <span class="tag">44g Protein</span>
+              <span class="tag">395 Calories</span>
+              <span class="tag">495 Minutes</span>
+            </div>
+          </div>
+        </a>
+      </article>
+
+      <article class="recipe-card">
+        <a href="recipes/dump-and-go-salsa-verde-chicken-bowls.html">
+          <img
+            class="recipe-img"
+            src="outputs/images/food_photos/dump-and-go-salsa-verde-chicken-bowls-food-photo.png"
+            alt="Dump-and-Go Crockpot Salsa Verde Chicken Bowls"
+            loading="lazy"
+          />
+          <div class="recipe-body">
+            <h3>Dump-and-Go Crockpot Salsa Verde Chicken Bowls</h3>
+            <p>Creamy salsa verde chicken with black beans and corn served over cauliflower rice with avocado, cilantro, and lime for approximately 42 grams of…</p>
+            <div class="tags">
+              <span class="tag">42g Protein</span>
+              <span class="tag">375 Calories</span>
+              <span class="tag">495 Minutes</span>
+            </div>
+          </div>
+        </a>
+      </article>
+
+      <article class="recipe-card">
+        <a href="recipes/italian-stuffed-peppers-protein-mashed-potatoes.html">
+          <img
+            class="recipe-img"
+            src="outputs/images/food_photos/italian-stuffed-peppers-protein-mashed-potatoes-food-photo.png"
+            alt="Italian Stuffed Peppers with Creamy Protein Mashed Potatoes"
+            loading="lazy"
+          />
+          <div class="recipe-body">
+            <h3>Italian Stuffed Peppers with Creamy Protein Mashed Potatoes</h3>
+            <p>Italian stuffed red and green peppers with creamy high-protein mashed potatoes.</p>
+            <div class="tags">
+              <span class="tag">45g Protein</span>
+              <span class="tag">380 Calories</span>
+              <span class="tag">60 Minutes</span>
+            </div>
+          </div>
+        </a>
+      </article>
+
+      <article class="recipe-card">
+        <a href="recipes/sheet-pan-taco-chicken-veggies-mexican-rice.html">
+          <img
+            class="recipe-img"
+            src="outputs/images/food_photos/sheet-pan-taco-chicken-veggies-mexican-rice-food-photo.png"
+            alt="Sheet-Pan Taco Chicken &amp; Veggies with Bone Broth Mexican Rice"
+            loading="lazy"
+          />
+          <div class="recipe-body">
+            <h3>Sheet-Pan Taco Chicken &amp; Veggies with Bone Broth Mexican Rice</h3>
+            <p>Sheet-pan taco chicken and roasted vegetables with flavorful bone-broth Mexican rice.</p>
+            <div class="tags">
+              <span class="tag">44g Protein</span>
+              <span class="tag">405 Calories</span>
+              <span class="tag">37 Minutes</span>
+            </div>
+          </div>
+        </a>
+      </article>
+
+      <article class="recipe-card">
+        <a href="recipes/pineapple-cottage-cheese-strawberry-cheesecake-shake.html">
+          <img
+            class="recipe-img"
+            src="outputs/images/food_photos/pineapple-cottage-cheese-strawberry-cheesecake-shake-food-photo.png"
+            alt="Pineapple Cottage Cheese Bowl + Strawberry Cheesecake Shake"
+            loading="lazy"
+          />
+          <div class="recipe-body">
+            <h3>Pineapple Cottage Cheese Bowl + Strawberry Cheesecake Shake</h3>
+            <p>Pineapple cottage cheese paired with a creamy strawberry cheesecake protein shake.</p>
+            <div class="tags">
+              <span class="tag">42g Protein</span>
+              <span class="tag">355 Calories</span>
+              <span class="tag">5 Minutes</span>
+            </div>
+          </div>
+        </a>
+      </article>
+
+      <article class="recipe-card">
+        <a href="recipes/vanilla-berry-protein-waffle-bowl.html">
+          <img
+            class="recipe-img"
+            src="outputs/images/food_photos/vanilla-berry-protein-waffle-bowl-food-photo.png"
+            alt="Vanilla Berry Protein Waffle Bowl"
+            loading="lazy"
+          />
+          <div class="recipe-body">
+            <h3>Vanilla Berry Protein Waffle Bowl</h3>
+            <p>Vanilla protein yogurt with strawberries and two warm whole protein waffles.</p>
+            <div class="tags">
+              <span class="tag">43g Protein</span>
+              <span class="tag">383 Calories</span>
+              <span class="tag">8 Minutes</span>
+            </div>
+          </div>
+        </a>
+      </article>
+
+      <article class="recipe-card">
+        <a href="recipes/chicken-sausage-breakfast-burrito.html">
+          <img
+            class="recipe-img"
+            src="outputs/images/food_photos/chicken-sausage-breakfast-burrito-food-photo.png"
+            alt="Chicken Sausage Breakfast Burrito"
+            loading="lazy"
+          />
+          <div class="recipe-body">
+            <h3>Chicken Sausage Breakfast Burrito</h3>
+            <p>A quick breakfast burrito with egg whites, chicken sausage, cheddar, and guacamole.</p>
+            <div class="tags">
+              <span class="tag">42g Protein</span>
+              <span class="tag">375 Calories</span>
+              <span class="tag">13 Minutes</span>
+            </div>
+          </div>
+        </a>
+      </article>
+
+      <article class="recipe-card">
+        <a href="recipes/creamy-salsa-taco-salad-bowl.html">
+          <img
+            class="recipe-img"
+            src="outputs/images/food_photos/creamy-salsa-taco-salad-bowl-food-photo.png"
+            alt="Creamy Salsa Taco Salad Bowl"
+            loading="lazy"
+          />
+          <div class="recipe-body">
+            <h3>Creamy Salsa Taco Salad Bowl</h3>
+            <p>Lean taco beef, a Costco salad shortcut, fresh toppings, and creamy cottage cheese salsa dressing in one high-protein bowl.</p>
+            <div class="tags">
+              <span class="tag">40g Protein</span>
+              <span class="tag">405 Calories</span>
+              <span class="tag">18 Minutes</span>
+            </div>
+          </div>
+        </a>
+      </article>
+
+      <article class="recipe-card">
+        <a href="recipes/creamy-greek-chicken-bowl.html">
+          <img
+            class="recipe-img"
+            src="outputs/images/food_photos/creamy-greek-chicken-bowl-food-photo.png"
+            alt="Creamy Greek Chicken Bowl"
+            loading="lazy"
+          />
+          <div class="recipe-body">
+            <h3>Creamy Greek Chicken Bowl</h3>
+            <p>Costco grilled chicken, crisp vegetables, feta, olives, and a creamy Greek yogurt dressing in one fast high-protein bowl.</p>
+            <div class="tags">
+              <span class="tag">44g Protein</span>
+              <span class="tag">400 Calories</span>
+              <span class="tag">10 Minutes</span>
+            </div>
+          </div>
+        </a>
+      </article>
+
+      <article class="recipe-card">
+        <a href="recipes/one-pot-chicken-broccoli-alfredo-protein-penne.html">
+          <img
+            class="recipe-img"
+            src="outputs/images/food_photos/one-pot-chicken-broccoli-alfredo-protein-penne-food-photo.png"
+            alt="One-Pot Chicken Broccoli Alfredo Protein Penne"
+            loading="lazy"
+          />
+          <div class="recipe-body">
+            <h3>One-Pot Chicken Broccoli Alfredo Protein Penne</h3>
+            <p>Creamy one-pot protein penne with chicken, broccoli, bone broth, Parmesan, and garlic.</p>
+            <div class="tags">
+              <span class="tag">43g Protein</span>
+              <span class="tag">390 Calories</span>
+              <span class="tag">35 Minutes</span>
+            </div>
+          </div>
+        </a>
+      </article>
+
+      <article class="recipe-card">
+        <a href="recipes/steakhouse-filet-loaded-baked-potato.html">
+          <img
+            class="recipe-img"
+            src="outputs/images/food_photos/steakhouse-filet-loaded-baked-potato-food-photo.png"
+            alt="Steakhouse Filet &amp; Loaded Baked Potato"
+            loading="lazy"
+          />
+          <div class="recipe-body">
+            <h3>Steakhouse Filet &amp; Loaded Baked Potato</h3>
+            <p>A steakhouse-style filet plate with a Greek-yogurt loaded baked potato and broccoli.</p>
+            <div class="tags">
+              <span class="tag">42g Protein</span>
+              <span class="tag">400 Calories</span>
+              <span class="tag">35 Minutes</span>
+            </div>
+          </div>
+        </a>
+      </article>
+
+      <article class="recipe-card">
+        <a href="recipes/crunchy-high-protein-costco-chicken-caesar-salad.html">
+          <img
+            class="recipe-img"
+            src="outputs/images/food_photos/crunchy-high-protein-costco-chicken-caesar-salad-food-photo.png"
+            alt="Crunchy High-Protein Costco Chicken Caesar Salad"
+            loading="lazy"
+          />
+          <div class="recipe-body">
+            <h3>Crunchy High-Protein Costco Chicken Caesar Salad</h3>
+            <p>A five-minute Costco Caesar upgrade with chicken, Parmesan crisps, and crunchy roasted edamame.</p>
+            <div class="tags">
+              <span class="tag">41g Protein</span>
+              <span class="tag">390 Calories</span>
+              <span class="tag">5 Minutes</span>
+            </div>
+          </div>
+        </a>
+      </article>
+
+      <article class="recipe-card">
+        <a href="recipes/quick-costco-salmon-dinner.html">
+          <img
+            class="recipe-img"
+            src="outputs/images/food_photos/quick-costco-salmon-dinner-food-photo.png"
+            alt="Quick Costco Salmon Dinner"
+            loading="lazy"
+          />
+          <div class="recipe-body">
+            <h3>Quick Costco Salmon Dinner</h3>
+            <p>A fast Costco salmon plate with rice, green beans, and salad for approximately 40g protein.</p>
+            <div class="tags">
+              <span class="tag">40g Protein</span>
+              <span class="tag">405 Calories</span>
+              <span class="tag">10 Minutes</span>
+            </div>
+          </div>
+        </a>
+      </article>
+
+      <article class="recipe-card">
+        <a href="recipes/sour-peach-orange-protein-snack.html">
+          <img
+            class="recipe-img"
+            src="outputs/images/food_photos/sour-peach-orange-protein-snack-food-photo.png"
+            alt="Sour Peach &amp; Peachy Ring Protein Snack"
+            loading="lazy"
+          />
+          <div class="recipe-body">
+            <h3>Sour Peach &amp; Peachy Ring Protein Snack</h3>
+            <p>A candy-like sour peach protein puff, refreshing Peachy Ring clear protein, and a hard-boiled egg make an easy two-minute snack with…</p>
+            <div class="tags">
+              <span class="tag">42g Protein</span>
+              <span class="tag">320 Calories</span>
+              <span class="tag">2 Minutes</span>
+            </div>
+          </div>
+        </a>
+      </article>
+
+      <article class="recipe-card">
+        <a href="recipes/chili-lime-chips-guac-protein-snack.html">
+          <img
+            class="recipe-img"
+            src="outputs/images/food_photos/chili-lime-chips-guac-protein-snack-food-photo.png"
+            alt="Chili Lime Chips, Guac &amp; Protein Snack"
+            loading="lazy"
+          />
+          <div class="recipe-body">
+            <h3>Chili Lime Chips, Guac &amp; Protein Snack</h3>
+            <p>Chili lime protein chips, a single-serve guacamole cup, and strawberry piña colada clear protein make a crunchy two-minute snack with…</p>
+            <div class="tags">
+              <span class="tag">41g Protein</span>
+              <span class="tag">330 Calories</span>
+              <span class="tag">2 Minutes</span>
+            </div>
+          </div>
+        </a>
+      </article>
+
+      <article class="recipe-card">
+        <a href="recipes/high-protein-pizza-bowl.html">
+          <img
+            class="recipe-img"
+            src="outputs/images/food_photos/high-protein-pizza-bowl-food-photo.png"
+            alt="High Protein Pizza Bowl"
+            loading="lazy"
+          />
+          <div class="recipe-body">
+            <h3>High Protein Pizza Bowl</h3>
+            <p>A simple high-protein 40/400 recipe.</p>
+            <div class="tags">
+
+            </div>
+          </div>
+        </a>
+      </article>
+
+      <article class="recipe-card">
+        <a href="recipes/high-protein-chicken-caesar-wrap.html">
+          <img
+            class="recipe-img"
+            src="outputs/images/food_photos/high-protein-chicken-caesar-wrap-food-photo.png"
+            alt="High-Protein Chicken Caesar Wrap"
+            loading="lazy"
+          />
+          <div class="recipe-body">
+            <h3>High-Protein Chicken Caesar Wrap</h3>
+            <p>A quick chicken Caesar wrap with crisp romaine, Parmesan, and more than 40 grams of protein for under 400 calories.</p>
+            <div class="tags">
+              <span class="tag">52g Protein</span>
+              <span class="tag">380 Calories</span>
+              <span class="tag">8 Minutes</span>
+            </div>
+          </div>
+        </a>
+      </article>
+
+      <article class="recipe-card">
+        <a href="recipes/ground-beef-sweet-potato-bowl.html">
+          <img
+            class="recipe-img"
+            src="outputs/images/food_photos/ground-beef-sweet-potato-bowl-food-photo.png"
+            alt="High-Protein Ground Beef Sweet Potato Bowl"
+            loading="lazy"
+          />
+          <div class="recipe-body">
+            <h3>High-Protein Ground Beef Sweet Potato Bowl</h3>
+            <p>A sweet and savory bowl with seasoned lean ground beef, air-fried sweet potato, creamy cottage cheese, avocado, and a tangy sprinkle of Tajín.</p>
+            <div class="tags">
+              <span class="tag">41g Protein</span>
+              <span class="tag">390 Calories</span>
+              <span class="tag">25 Minutes</span>
+            </div>
+          </div>
+        </a>
+      </article>
+
+      <article class="recipe-card">
+        <a href="recipes/chocolate-protein-mug-cake.html">
+          <img
+            class="recipe-img"
+            src="outputs/images/food_photos/chocolate-protein-mug-cake-food-photo-pinterest-v1.png"
+            alt="Chocolate Protein Mug Cake"
+            loading="lazy"
+          />
+          <div class="recipe-body">
+            <h3>Chocolate Protein Mug Cake</h3>
+            <p>A warm, chocolatey, high-protein mug cake made in the microwave. It tastes like dessert, fits the 40/400 method, and is ready in minutes.</p>
+            <div class="tags">
+              <span class="tag">40g Protein</span>
+              <span class="tag">400 Calories</span>
+              <span class="tag">3 Minutes</span>
+            </div>
+          </div>
+        </a>
+      </article>
+
+      <article class="recipe-card">
+        <a href="recipes/chicken-taco-soup.html">
+          <img
+            class="recipe-img"
+            src="outputs/images/food_photos/chicken-taco-soup-food-photo.png"
+            alt="High-Protein Chicken Taco Soup"
+            loading="lazy"
+          />
+          <div class="recipe-body">
+            <h3>High-Protein Chicken Taco Soup</h3>
+            <p>A hearty chicken taco soup made with rotisserie chicken, bone broth, pinto beans, corn, cilantro, and avocado for more than 40 grams of protein…</p>
+            <div class="tags">
+              <span class="tag">48g Protein</span>
+              <span class="tag">390 Calories</span>
+              <span class="tag">25 Minutes</span>
+            </div>
+          </div>
+        </a>
+      </article>
+
+      <article class="recipe-card">
+        <a href="recipes/buffalo-chicken-cottage-cheese-bowl.html">
+          <img
+            class="recipe-img"
+            src="outputs/images/food_photos/buffalo-chicken-cottage-cheese-bowl-food-photo.png"
+            alt="Buffalo Chicken Cottage Cheese Bowl"
+            loading="lazy"
+          />
+          <div class="recipe-body">
+            <h3>Buffalo Chicken Cottage Cheese Bowl</h3>
+            <p>A fast, spicy, high-protein bowl with chicken, cottage cheese, buffalo sauce, and crunchy veggies.</p>
+            <div class="tags">
+              <span class="tag">42g Protein</span>
+              <span class="tag">400 Calories</span>
+              <span class="tag">8 Minutes</span>
+            </div>
+          </div>
+        </a>
+      </article>
+      </div>
+    </section>
+
+    <section class="planner-cta">
+      <h2>Want the week planned for you?</h2>
+      <p>Get seven complete high-protein meals, a grocery list, and a simple prep plan in the 40/400 Weekly Planner.</p>
+      <a class="btn" href="index.html#weekly-planner">See the Weekly Planner</a>
+    </section>
+  </main>
+
+  <footer>
+    <p>
+      <a href="recipes.html">All Recipes</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+      <a href="privacy.html">Privacy</a>
+      <a href="affiliate-disclosure.html">Affiliate Disclosure</a>
+    </p>
+    <p>© 2026 40/400 Meals • Powered by Bear OS</p>
+  </footer>
+</body>
+</html>
