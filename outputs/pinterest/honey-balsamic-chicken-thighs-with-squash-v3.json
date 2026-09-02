@@ -1,0 +1,62 @@
+{
+  "recipe_id": "honey-balsamic-chicken-thighs-with-squash",
+  "platform": "pinterest",
+  "title": "40g Protein \u2022 400 Calories",
+  "description": "Juicy honey balsamic chicken thighs with roasted squash and rice.",
+  "destination_url": "https://40400meals.com/recipes/honey-balsamic-chicken-thighs-with-squash.html?utm_source=pinterest&utm_medium=organic_social&utm_campaign=recipe_variations&utm_content=v3-food_first",
+  "hashtags": [
+    "#ChickenThighs",
+    "#SheetPanDinner",
+    "#HighProteinMeals",
+    "#40400Meals"
+  ],
+  "image_prompt": "Premium food-blog editorial photo of glossy honey balsamic chicken thighs with roasted zucchini and yellow squash beside cauliflower-jasmine rice. Warm natural window light, browned edges, realistic homemade sheet-pan dinner, no extra garnish.",
+  "image_alt_text": "Honey balsamic chicken thighs with roasted squash and cauliflower-jasmine rice.",
+  "variant_id": "v3",
+  "variant_number": 3,
+  "scheduled_at": "2026-09-07T13:50:00-05:00",
+  "pin_template": "food_first",
+  "pin_headline": "40g Protein \u2022 400 Calories",
+  "pin_filename": "honey-balsamic-chicken-thighs-with-squash-pinterest-v3.png",
+  "image_filename": "honey-balsamic-chicken-thighs-with-squash-pinterest-v3.png",
+  "image_path": "outputs/images/pinterest/honey-balsamic-chicken-thighs-with-squash-pinterest-v3.png",
+  "image_mime_type": "image/png",
+  "design_brain": {
+    "template_name": "P07 Fall",
+    "template_type": "seasonal",
+    "season": "fall",
+    "month": 9,
+    "recipe_category": "dinner",
+    "image_style": "warm realistic food photography",
+    "photo_composition": "45-degree angle",
+    "color_mood": "warm rich premium recipe-blog color with natural variation",
+    "accent_colors": [
+      "#FFF7ED",
+      "#F97316",
+      "#7C2D12"
+    ],
+    "text_style": "clean and modern",
+    "overlay_style": "minimal",
+    "icon_style": "minimal",
+    "layout_recommendation": "food_first",
+    "optimization": {
+      "visual_appeal": "high",
+      "save_potential": "high",
+      "click_potential": "high"
+    },
+    "version": "2.5",
+    "status": "design_strategy_ready"
+  },
+  "canva_text_overlay": {
+    "headline": "40g Protein \u2022 400 Calories",
+    "subheadline": "40g Protein \u2022 400 Calories",
+    "brand": "40/400 Meals"
+  },
+  "seo_keywords": [
+    "honey balsamic chicken thighs",
+    "sheet pan chicken thighs",
+    "high protein chicken thigh dinner",
+    "roasted squash dinner"
+  ],
+  "status": "ready_for_make"
+}

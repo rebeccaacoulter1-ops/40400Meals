@@ -1,0 +1,63 @@
+{
+  "recipe_id": "fall-harvest-protein-snack-box",
+  "platform": "pinterest",
+  "title": "Save This Easy Snack Recipe",
+  "description": "A no-cook snack box with a Chomps meat stick, green apple, cheese, and pumpkin seeds for 40g of protein on the go.",
+  "destination_url": "https://40400meals.com/recipes/fall-harvest-protein-snack-box.html?utm_source=pinterest&utm_medium=organic_social&utm_campaign=recipe_variations&utm_content=v4-benefit",
+  "hashtags": [
+    "#SnackBox",
+    "#ProteinSnack",
+    "#FallSnack",
+    "#40400Meals"
+  ],
+  "image_prompt": "Premium food-blog photo of a divided snack box with a meat stick, fanned green apple slices, a cheese stick, and pumpkin seeds, small dip cup of almond butter. Warm amber fall light, rust linen napkin, natural wood surface.",
+  "image_alt_text": "Fall harvest protein snack box with meat stick, apple, cheese, and pumpkin seeds.",
+  "variant_id": "v4",
+  "variant_number": 4,
+  "scheduled_at": "2026-09-07T10:15:00-05:00",
+  "pin_template": "benefit",
+  "pin_headline": "Save This Easy Snack Recipe",
+  "pin_filename": "fall-harvest-protein-snack-box-pinterest-v4.png",
+  "image_filename": "fall-harvest-protein-snack-box-pinterest-v4.png",
+  "image_path": "outputs/images/pinterest/fall-harvest-protein-snack-box-pinterest-v4.png",
+  "image_mime_type": "image/png",
+  "design_brain": {
+    "template_name": "P07 Fall",
+    "template_type": "seasonal",
+    "season": "fall",
+    "month": 9,
+    "recipe_category": "snack",
+    "image_style": "bright simple food photography",
+    "photo_composition": "close-up",
+    "color_mood": "warm rich premium recipe-blog color with natural variation",
+    "accent_colors": [
+      "#FFF7ED",
+      "#F97316",
+      "#7C2D12"
+    ],
+    "text_style": "clean and modern",
+    "overlay_style": "minimal",
+    "icon_style": "minimal",
+    "layout_recommendation": "benefit",
+    "optimization": {
+      "visual_appeal": "high",
+      "save_potential": "high",
+      "click_potential": "high"
+    },
+    "version": "2.5",
+    "status": "design_strategy_ready"
+  },
+  "canva_text_overlay": {
+    "headline": "Save This Easy Snack Recipe",
+    "subheadline": "40g Protein \u2022 400 Calories",
+    "brand": "40/400 Meals"
+  },
+  "seo_keywords": [
+    "protein snack box",
+    "no cook fall snack",
+    "chomps meat stick snack",
+    "kid friendly protein snack",
+    "40 400 meals"
+  ],
+  "status": "ready_for_make"
+}

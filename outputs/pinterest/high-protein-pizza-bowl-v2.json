@@ -1,0 +1,61 @@
+{
+  "recipe_id": "high-protein-pizza-bowl",
+  "platform": "pinterest",
+  "title": "Easy High-Protein General",
+  "description": "This High Protein Pizza Bowl delivers over 40 grams of protein in about 400 calories. A quick dinner that satisfies pizza cravings while supporting your goals.",
+  "destination_url": "https://40400meals.com/recipes/high-protein-pizza-bowl.html?utm_source=pinterest&utm_medium=organic_social&utm_campaign=recipe_variations&utm_content=v2-editorial",
+  "hashtags": [
+    "#HighProteinRecipes",
+    "#LowSugarRecipes",
+    "#EasyDinner",
+    "#40400Meals"
+  ],
+  "image_prompt": "Premium food blog photography of High Protein Pizza Bowl, bright natural light, clean neutral styling.",
+  "image_alt_text": "High Protein Pizza Bowl",
+  "variant_id": "v2",
+  "variant_number": 2,
+  "scheduled_at": "2026-09-05T18:09:00.368772+00:00",
+  "pin_template": "editorial",
+  "pin_headline": "Easy High-Protein General",
+  "pin_filename": "high-protein-pizza-bowl-pinterest-v2.png",
+  "image_filename": "high-protein-pizza-bowl-pinterest-v2.png",
+  "image_path": "outputs/images/pinterest/high-protein-pizza-bowl-pinterest-v2.png",
+  "image_mime_type": "image/png",
+  "design_brain": {
+    "template_name": "P07 Fall",
+    "template_type": "seasonal",
+    "season": "fall",
+    "month": 9,
+    "recipe_category": "general",
+    "image_style": "soft indirect premium food-blog window light",
+    "photo_composition": "tight premium food-blog editorial angle",
+    "color_mood": "warm rich premium recipe-blog color with natural variation",
+    "accent_colors": [
+      "#FFF7ED",
+      "#F97316",
+      "#7C2D12"
+    ],
+    "text_style": "clean and modern",
+    "overlay_style": "minimal",
+    "icon_style": "minimal",
+    "layout_recommendation": "editorial",
+    "optimization": {
+      "visual_appeal": "high",
+      "save_potential": "high",
+      "click_potential": "high"
+    },
+    "version": "2.5",
+    "status": "design_strategy_ready"
+  },
+  "canva_text_overlay": {
+    "headline": "Easy High-Protein General",
+    "subheadline": "42g Protein \u2022 405 Calories",
+    "brand": "40/400 Meals"
+  },
+  "seo_keywords": [
+    "high protein recipes",
+    "low sugar recipes",
+    "macro friendly meals"
+  ],
+  "status": "ready_for_make"
+}

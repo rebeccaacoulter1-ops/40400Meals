@@ -1,0 +1,61 @@
+{
+  "recipe_id": "albacore-tuna-melt-wrap",
+  "platform": "pinterest",
+  "title": "Save This Easy Lunch Recipe",
+  "description": "Crispy high-protein tuna melt wrap with cheddar and dill pickle.",
+  "destination_url": "https://40400meals.com/recipes/albacore-tuna-melt-wrap.html?utm_source=pinterest&utm_medium=organic_social&utm_campaign=recipe_variations&utm_content=v4-benefit",
+  "hashtags": [
+    "#TunaMelt",
+    "#HighProteinLunch",
+    "#40400Meals"
+  ],
+  "image_prompt": "Premium food-blog editorial photo of a golden crisp tuna melt wrap cut in half to show creamy albacore tuna filling and melted cheddar. Natural window light, realistic toasted tortilla texture, no extra garnish or side dishes.",
+  "image_alt_text": "Albacore tuna melt wrap with melted cheddar.",
+  "variant_id": "v4",
+  "variant_number": 4,
+  "scheduled_at": "2026-09-11T13:47:00-05:00",
+  "pin_template": "benefit",
+  "pin_headline": "Save This Easy Lunch Recipe",
+  "pin_filename": "albacore-tuna-melt-wrap-pinterest-v4.png",
+  "image_filename": "albacore-tuna-melt-wrap-pinterest-v4.png",
+  "image_path": "outputs/images/pinterest/albacore-tuna-melt-wrap-pinterest-v4.png",
+  "image_mime_type": "image/png",
+  "design_brain": {
+    "template_name": "P07 Fall",
+    "template_type": "seasonal",
+    "season": "fall",
+    "month": 9,
+    "recipe_category": "lunch",
+    "image_style": "bright realistic food photography",
+    "photo_composition": "45-degree angle",
+    "color_mood": "warm rich premium recipe-blog color with natural variation",
+    "accent_colors": [
+      "#FFF7ED",
+      "#F97316",
+      "#7C2D12"
+    ],
+    "text_style": "clean and modern",
+    "overlay_style": "minimal",
+    "icon_style": "minimal",
+    "layout_recommendation": "benefit",
+    "optimization": {
+      "visual_appeal": "high",
+      "save_potential": "high",
+      "click_potential": "high"
+    },
+    "version": "2.5",
+    "status": "design_strategy_ready"
+  },
+  "canva_text_overlay": {
+    "headline": "Save This Easy Lunch Recipe",
+    "subheadline": "45g Protein \u2022 400 Calories",
+    "brand": "40/400 Meals"
+  },
+  "seo_keywords": [
+    "albacore tuna melt wrap",
+    "StarKist albacore tuna",
+    "high protein tuna wrap",
+    "quick high protein lunch"
+  ],
+  "status": "ready_for_make"
+}

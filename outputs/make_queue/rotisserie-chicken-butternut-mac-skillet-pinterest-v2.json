@@ -1,0 +1,63 @@
+{
+  "recipe_id": "rotisserie-chicken-butternut-mac-skillet",
+  "platform": "pinterest",
+  "title": "Easy High-Protein Dinner",
+  "description": "A creamy one-pot pasta skillet with shredded rotisserie chicken and butternut squash, ready in 15 minutes with 41g of protein.",
+  "destination_url": "https://40400meals.com/recipes/rotisserie-chicken-butternut-mac-skillet.html?utm_source=pinterest&utm_medium=organic_social&utm_campaign=recipe_variations&utm_content=v2-editorial",
+  "hashtags": [
+    "#OnePotPasta",
+    "#ButternutSquash",
+    "#FallDinner",
+    "#40400Meals"
+  ],
+  "image_prompt": "Premium food-blog photo of a cast iron skillet filled with creamy orange butternut mac and cheese studded with shredded chicken, gentle steam rising. Warm amber fall light, rust linen napkin, natural wood surface, no fruit or garnish.",
+  "image_alt_text": "Rotisserie chicken and butternut squash mac and cheese skillet.",
+  "variant_id": "v2",
+  "variant_number": 2,
+  "scheduled_at": "2026-08-30T09:30:00-05:00",
+  "pin_template": "editorial",
+  "pin_headline": "Easy High-Protein Dinner",
+  "pin_filename": "rotisserie-chicken-butternut-mac-skillet-pinterest-v2.png",
+  "image_filename": "rotisserie-chicken-butternut-mac-skillet-pinterest-v2.png",
+  "image_path": "outputs/images/pinterest/rotisserie-chicken-butternut-mac-skillet-pinterest-v2.png",
+  "image_mime_type": "image/png",
+  "design_brain": {
+    "template_name": "P07 Fall",
+    "template_type": "seasonal",
+    "season": "fall",
+    "month": 9,
+    "recipe_category": "dinner",
+    "image_style": "warm realistic food photography",
+    "photo_composition": "45-degree angle",
+    "color_mood": "warm rich premium recipe-blog color with natural variation",
+    "accent_colors": [
+      "#FFF7ED",
+      "#F97316",
+      "#7C2D12"
+    ],
+    "text_style": "clean and modern",
+    "overlay_style": "minimal",
+    "icon_style": "minimal",
+    "layout_recommendation": "editorial",
+    "optimization": {
+      "visual_appeal": "high",
+      "save_potential": "high",
+      "click_potential": "high"
+    },
+    "version": "2.5",
+    "status": "design_strategy_ready"
+  },
+  "canva_text_overlay": {
+    "headline": "Easy High-Protein Dinner",
+    "subheadline": "41g Protein \u2022 410 Calories",
+    "brand": "40/400 Meals"
+  },
+  "seo_keywords": [
+    "rotisserie chicken butternut mac",
+    "one pot pasta skillet",
+    "high protein pasta dinner",
+    "fall pasta recipe",
+    "40 400 meals"
+  ],
+  "status": "ready_for_make"
+}

@@ -1,0 +1,62 @@
+{
+  "recipe_id": "barebells-berry-breakfast-to-go",
+  "platform": "pinterest",
+  "title": "Easy High-Protein Breakfast",
+  "description": "Three items, two minutes, no cooking: a Barebells bar, Chobani Complete drink, and strawberries for 40g protein and 395 calories.",
+  "destination_url": "https://40400meals.com/recipes/barebells-berry-breakfast-to-go.html?utm_source=pinterest&utm_medium=organic_social&utm_campaign=recipe_variations&utm_content=v2-editorial",
+  "hashtags": [
+    "#GrabAndGoBreakfast",
+    "#Barebells",
+    "#HighProteinBreakfast",
+    "#40400Meals"
+  ],
+  "image_prompt": "Premium natural food-blog photo of exactly three grab-and-go items: fresh strawberries in a clear portable container, one unopened Chobani Complete Mixed Berry Vanilla yogurt drink, and one fully wrapped Barebells Cookies & Cream protein bar beside the container. No yogurt bowl, loose yogurt, granola, cookie dough, or unwrapped bar pieces. Soft natural morning light and realistic proportions.",
+  "image_alt_text": "Wrapped protein bar, Chobani yogurt drink, and strawberries for breakfast.",
+  "variant_id": "v2",
+  "variant_number": 2,
+  "scheduled_at": "2026-09-04T10:25:00-05:00",
+  "pin_template": "editorial",
+  "pin_headline": "Easy High-Protein Breakfast",
+  "pin_filename": "barebells-berry-breakfast-to-go-pinterest-v2.png",
+  "image_filename": "barebells-berry-breakfast-to-go-pinterest-v2.png",
+  "image_path": "outputs/images/pinterest/barebells-berry-breakfast-to-go-pinterest-v2.png",
+  "image_mime_type": "image/png",
+  "design_brain": {
+    "template_name": "P07 Fall",
+    "template_type": "seasonal",
+    "season": "fall",
+    "month": 9,
+    "recipe_category": "breakfast",
+    "image_style": "bright natural light",
+    "photo_composition": "top-down",
+    "color_mood": "warm rich premium recipe-blog color with natural variation",
+    "accent_colors": [
+      "#FFF7ED",
+      "#F97316",
+      "#7C2D12"
+    ],
+    "text_style": "clean and modern",
+    "overlay_style": "minimal",
+    "icon_style": "minimal",
+    "layout_recommendation": "editorial",
+    "optimization": {
+      "visual_appeal": "high",
+      "save_potential": "high",
+      "click_potential": "high"
+    },
+    "version": "2.5",
+    "status": "design_strategy_ready"
+  },
+  "canva_text_overlay": {
+    "headline": "Easy High-Protein Breakfast",
+    "subheadline": "40g Protein \u2022 395 Calories",
+    "brand": "40/400 Meals"
+  },
+  "seo_keywords": [
+    "Barebells breakfast",
+    "grab and go protein breakfast",
+    "no cook high protein breakfast",
+    "40 400 meals"
+  ],
+  "status": "ready_for_make"
+}

@@ -1,0 +1,62 @@
+{
+  "recipe_id": "buffalo-chicken-cottage-cheese-bowl",
+  "platform": "pinterest",
+  "title": "Save This Easy Lunch Recipe",
+  "description": "This buffalo chicken cottage cheese bowl is spicy, crunchy, creamy, and packed with over 40 grams of protein.",
+  "destination_url": "https://40400meals.com/recipes/buffalo-chicken-cottage-cheese-bowl.html?utm_source=pinterest&utm_medium=organic_social&utm_campaign=recipe_variations&utm_content=v4-benefit",
+  "hashtags": [
+    "#HighProteinMeals",
+    "#BuffaloChicken",
+    "#CottageCheeseRecipes",
+    "#40400Meals"
+  ],
+  "image_prompt": "Premium food blog photography of Buffalo Chicken Cottage Cheese Bowl",
+  "image_alt_text": "Buffalo chicken cottage cheese bowl with celery, cucumber, carrots, and buffalo sauce.",
+  "variant_id": "v4",
+  "variant_number": 4,
+  "scheduled_at": "2026-09-13T18:09:00.331707+00:00",
+  "pin_template": "benefit",
+  "pin_headline": "Save This Easy Lunch Recipe",
+  "pin_filename": "buffalo-chicken-cottage-cheese-bowl-pinterest-v4.png",
+  "image_filename": "buffalo-chicken-cottage-cheese-bowl-pinterest-v4.png",
+  "image_path": "outputs/images/pinterest/buffalo-chicken-cottage-cheese-bowl-pinterest-v4.png",
+  "image_mime_type": "image/png",
+  "design_brain": {
+    "template_name": "P07 Fall",
+    "template_type": "seasonal",
+    "season": "fall",
+    "month": 9,
+    "recipe_category": "lunch",
+    "image_style": "bright realistic food photography",
+    "photo_composition": "45-degree angle",
+    "color_mood": "warm rich premium recipe-blog color with natural variation",
+    "accent_colors": [
+      "#FFF7ED",
+      "#F97316",
+      "#7C2D12"
+    ],
+    "text_style": "clean and modern",
+    "overlay_style": "minimal",
+    "icon_style": "minimal",
+    "layout_recommendation": "benefit",
+    "optimization": {
+      "visual_appeal": "high",
+      "save_potential": "high",
+      "click_potential": "high"
+    },
+    "version": "2.5",
+    "status": "design_strategy_ready"
+  },
+  "canva_text_overlay": {
+    "headline": "Save This Easy Lunch Recipe",
+    "subheadline": "42g Protein \u2022 400 Calories",
+    "brand": "40/400 Meals"
+  },
+  "seo_keywords": [
+    "buffalo chicken cottage cheese bowl",
+    "high protein lunch",
+    "40 400 meals",
+    "high protein buffalo chicken"
+  ],
+  "status": "ready_for_make"
+}

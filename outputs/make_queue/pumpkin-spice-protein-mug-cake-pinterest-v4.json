@@ -1,0 +1,63 @@
+{
+  "recipe_id": "pumpkin-spice-protein-mug-cake",
+  "platform": "pinterest",
+  "title": "Save This Easy Dessert Recipe",
+  "description": "A fluffy pumpkin spice mug cake with 40g of protein, mixed in one mug and ready in 5 minutes.",
+  "destination_url": "https://40400meals.com/recipes/pumpkin-spice-protein-mug-cake.html?utm_source=pinterest&utm_medium=organic_social&utm_campaign=recipe_variations&utm_content=v4-benefit",
+  "hashtags": [
+    "#PumpkinSpice",
+    "#ProteinMugCake",
+    "#FallDessert",
+    "#40400Meals"
+  ],
+  "image_prompt": "Premium food-blog photo of a warm pumpkin spice mug cake in a simple ceramic mug, small crack across the top showing a fluffy tender crumb, light dusting of cinnamon. Cozy amber fall light, rust linen napkin, natural wood surface, no fruit or garnish.",
+  "image_alt_text": "Pumpkin spice protein mug cake in a ceramic mug.",
+  "variant_id": "v4",
+  "variant_number": 4,
+  "scheduled_at": "2026-09-07T09:00:00-05:00",
+  "pin_template": "benefit",
+  "pin_headline": "Save This Easy Dessert Recipe",
+  "pin_filename": "pumpkin-spice-protein-mug-cake-pinterest-v4.png",
+  "image_filename": "pumpkin-spice-protein-mug-cake-pinterest-v4.png",
+  "image_path": "outputs/images/pinterest/pumpkin-spice-protein-mug-cake-pinterest-v4.png",
+  "image_mime_type": "image/png",
+  "design_brain": {
+    "template_name": "P07 Fall",
+    "template_type": "seasonal",
+    "season": "fall",
+    "month": 9,
+    "recipe_category": "dessert",
+    "image_style": "cozy realistic food photography",
+    "photo_composition": "close-up",
+    "color_mood": "warm rich premium recipe-blog color with natural variation",
+    "accent_colors": [
+      "#FFF7ED",
+      "#F97316",
+      "#7C2D12"
+    ],
+    "text_style": "clean and modern",
+    "overlay_style": "minimal",
+    "icon_style": "minimal",
+    "layout_recommendation": "benefit",
+    "optimization": {
+      "visual_appeal": "high",
+      "save_potential": "high",
+      "click_potential": "high"
+    },
+    "version": "2.5",
+    "status": "design_strategy_ready"
+  },
+  "canva_text_overlay": {
+    "headline": "Save This Easy Dessert Recipe",
+    "subheadline": "40g Protein \u2022 400 Calories",
+    "brand": "40/400 Meals"
+  },
+  "seo_keywords": [
+    "pumpkin spice protein mug cake",
+    "protein mug cake",
+    "5 minute pumpkin dessert",
+    "high protein pumpkin dessert",
+    "40 400 meals"
+  ],
+  "status": "ready_for_make"
+}

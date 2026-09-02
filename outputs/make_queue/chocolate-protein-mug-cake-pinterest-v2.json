@@ -1,0 +1,64 @@
+{
+  "recipe_id": "0001",
+  "platform": "pinterest",
+  "title": "Easy High-Protein Dessert",
+  "description": "This chocolate protein mug cake is warm, rich, high-protein, and ready in minutes. Around 40g protein, around 400 calories, and perfect for sweet cravings.",
+  "destination_url": "https://40400meals.com/recipes/chocolate-protein-mug-cake.html?utm_source=pinterest&utm_medium=organic_social&utm_campaign=recipe_variations&utm_content=v2-editorial",
+  "hashtags": [
+    "#40400Meals",
+    "#HighProtein",
+    "#ProteinDessert",
+    "#MugCake"
+  ],
+  "image_prompt": "A warm, realistic chocolate protein mug cake in a white ceramic mug on a clean cream marble countertop, soft natural window light, minimal styling, premium food photography, cozy but clean, 45 degree angle, shallow depth of field, no text on image.",
+  "image_alt_text": "Chocolate protein mug cake in a white mug with a rich chocolate texture.",
+  "variant_id": "v2",
+  "variant_number": 2,
+  "scheduled_at": "2026-09-05T18:09:00.339516+00:00",
+  "pin_template": "editorial",
+  "pin_headline": "Easy High-Protein Dessert",
+  "pin_filename": "chocolate-protein-mug-cake-pinterest-v2.png",
+  "image_filename": "chocolate-protein-mug-cake-pinterest-v2.png",
+  "image_path": "outputs/images/pinterest/chocolate-protein-mug-cake-pinterest-v2.png",
+  "image_mime_type": "image/png",
+  "design_brain": {
+    "template_name": "P07 Fall",
+    "template_type": "seasonal",
+    "season": "fall",
+    "month": 9,
+    "recipe_category": "dessert",
+    "image_style": "cozy realistic food photography",
+    "photo_composition": "close-up",
+    "color_mood": "warm rich premium recipe-blog color with natural variation",
+    "accent_colors": [
+      "#FFF7ED",
+      "#F97316",
+      "#7C2D12"
+    ],
+    "text_style": "clean and modern",
+    "overlay_style": "minimal",
+    "icon_style": "minimal",
+    "layout_recommendation": "editorial",
+    "optimization": {
+      "visual_appeal": "high",
+      "save_potential": "high",
+      "click_potential": "high"
+    },
+    "version": "2.5",
+    "status": "design_strategy_ready"
+  },
+  "canva_text_overlay": {
+    "headline": "Easy High-Protein Dessert",
+    "subheadline": "40g Protein \u2022 400 Calories",
+    "brand": "40/400 Meals"
+  },
+  "seo_keywords": [
+    "chocolate protein mug cake",
+    "high protein dessert",
+    "protein mug cake",
+    "40g protein recipe",
+    "400 calorie dessert",
+    "healthy chocolate mug cake"
+  ],
+  "status": "ready_for_make"
+}

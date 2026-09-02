@@ -1,0 +1,62 @@
+{
+  "recipe_id": "skillet-beef-stroganoff-protein-pasta",
+  "platform": "pinterest",
+  "title": "Easy High-Protein Dinner",
+  "description": "A cozy one-skillet stroganoff with 42 grams of protein per serving.",
+  "destination_url": "https://40400meals.com/recipes/skillet-beef-stroganoff-protein-pasta.html?utm_source=pinterest&utm_medium=organic_social&utm_campaign=recipe_variations&utm_content=v2-editorial",
+  "hashtags": [
+    "#BeefStroganoff",
+    "#ProteinPasta",
+    "#OneSkilletDinner",
+    "#40400Meals"
+  ],
+  "image_prompt": "Premium food-blog editorial photo of creamy beef stroganoff with browned beef strips, baby bella mushrooms, diced onion and penne pasta together in one wide skillet. Cozy warm fall lighting, realistic homemade creamy sauce, no garnish and no separate sauce vessel.",
+  "image_alt_text": "Skillet beef stroganoff with protein penne pasta and mushrooms.",
+  "variant_id": "v2",
+  "variant_number": 2,
+  "scheduled_at": "2026-08-28T09:15:00-05:00",
+  "pin_template": "editorial",
+  "pin_headline": "Easy High-Protein Dinner",
+  "pin_filename": "skillet-beef-stroganoff-protein-pasta-pinterest-v2.png",
+  "image_filename": "skillet-beef-stroganoff-protein-pasta-pinterest-v2.png",
+  "image_path": "outputs/images/pinterest/skillet-beef-stroganoff-protein-pasta-pinterest-v2.png",
+  "image_mime_type": "image/png",
+  "design_brain": {
+    "template_name": "P07 Fall",
+    "template_type": "seasonal",
+    "season": "fall",
+    "month": 9,
+    "recipe_category": "dinner",
+    "image_style": "warm realistic food photography",
+    "photo_composition": "45-degree angle",
+    "color_mood": "warm rich premium recipe-blog color with natural variation",
+    "accent_colors": [
+      "#FFF7ED",
+      "#F97316",
+      "#7C2D12"
+    ],
+    "text_style": "clean and modern",
+    "overlay_style": "minimal",
+    "icon_style": "minimal",
+    "layout_recommendation": "editorial",
+    "optimization": {
+      "visual_appeal": "high",
+      "save_potential": "high",
+      "click_potential": "high"
+    },
+    "version": "2.5",
+    "status": "design_strategy_ready"
+  },
+  "canva_text_overlay": {
+    "headline": "Easy High-Protein Dinner",
+    "subheadline": "42g Protein \u2022 405 Calories",
+    "brand": "40/400 Meals"
+  },
+  "seo_keywords": [
+    "beef stroganoff protein pasta",
+    "one skillet dinner",
+    "high protein pasta",
+    "easy family dinner"
+  ],
+  "status": "ready_for_make"
+}
