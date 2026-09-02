@@ -1,8 +1,8 @@
 MASTER IMAGE PROMPT:
-Premium food-blog editorial photo of a simple grab-and-go breakfast arranged naturally: one unwrapped cookies-and-cream protein bar broken once to show its center, one small berry yogurt drink in a plain unbranded bottle, and a half cup of fresh strawberries in a portable cup. Bright morning light, realistic proportions, no extra food and no visible brand text.
+Premium natural food-blog photo of exactly three grab-and-go items: fresh strawberries in a clear portable container, one unopened Chobani Complete Mixed Berry Vanilla yogurt drink, and one fully wrapped Barebells Cookies & Cream protein bar beside the container. No yogurt bowl, loose yogurt, granola, cookie dough, or unwrapped bar pieces. Soft natural morning light and realistic proportions.
 
 ALT TEXT:
-Protein bar, berry yogurt drink, and strawberries for breakfast.
+Wrapped protein bar, Chobani yogurt drink, and strawberries for breakfast.
 
 SEO META TITLE:
 Barebells Berry Breakfast To Go | 40g Protein

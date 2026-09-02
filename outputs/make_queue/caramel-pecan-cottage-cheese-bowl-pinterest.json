@@ -1,0 +1,58 @@
+{
+  "recipe_id": "caramel-pecan-cottage-cheese-bowl",
+  "platform": "pinterest",
+  "title": "Caramel Pecan Cottage Cheese Bowl | 42g Protein",
+  "description": "Creamy cottage cheese topped with candied pecans and a caramel zigzag, served with a Built Puff pumpkin cookie protein bar. Ready in 6 minutes.",
+  "destination_url": "https://40400meals.com/recipes/caramel-pecan-cottage-cheese-bowl.html",
+  "hashtags": [
+    "#CottageCheeseBowl",
+    "#CaramelPecan",
+    "#FallSnack",
+    "#40400Meals"
+  ],
+  "image_prompt": "Two items styled together in one photo, shot from a slight overhead angle. Item one, on the left: a bowl of creamy plain cottage cheese topped with a small pile of dark caramel-glazed candied pecan pieces, with sugar-free caramel sauce drizzled back and forth in a loose zigzag pattern across the top of the cottage cheese -- the caramel is a thin zigzag drizzle, not a pooled puddle. The cottage cheese, pecans, and caramel zigzag are the only things in the bowl -- no bar pieces, no cubes, no crumbs. Item two, on the right, standing upright on the wood surface next to the bowl: one Built Puff Pumpkin Cookie Chunk protein bar, whole and fully sealed in its retail wrapper, wrapper facing the camera so the label is fully readable. Render the wrapper exactly like this real snack-bar packaging: a solid burnt-orange wrapper with crimped serrated edges top and bottom; near the top, a white rounded rectangle badge containing the word BUILT in bold black capital letters; directly below that badge, the word PUFF in large bold white capital letters printed on the orange background; below PUFF, the words PUMPKIN COOKIE CHUNK in white capital letters on two lines; small white italic text below that reading FLAVORED WITH NATURAL FLAVORS; along the right edge of the wrapper, three small white circular badges stacked vertically with black text reading 15G PROTEIN, then PLUS COLLAGEN, then 160 CALORIES; near the bottom of the wrapper, a small illustration of a swirl of soft cream-colored icing with a few small brown cookie crumb pieces scattered on top -- this is packaging artwork, not a photo of an unwrapped bar. Do not open, cut, or unwrap the bar. The two items sit together on a rust-orange linen napkin over a natural wood surface, warm amber fall light, no fruit or extra garnish.",
+  "image_alt_text": "Caramel pecan cottage cheese bowl with a caramel zigzag, served with a whole Built Puff pumpkin cookie protein bar in its wrapper.",
+  "pin_filename": "caramel-pecan-cottage-cheese-bowl-pinterest-pin.png",
+  "image_filename": "caramel-pecan-cottage-cheese-bowl-pinterest-pin.png",
+  "image_path": "outputs/images/pinterest/caramel-pecan-cottage-cheese-bowl-pinterest-pin.png",
+  "image_mime_type": "image/png",
+  "design_brain": {
+    "template_name": "P07 Fall",
+    "template_type": "seasonal",
+    "season": "fall",
+    "month": 9,
+    "recipe_category": "general",
+    "image_style": "soft indirect premium food-blog window light",
+    "photo_composition": "tight premium food-blog editorial angle",
+    "color_mood": "warm rich premium recipe-blog color with natural variation",
+    "accent_colors": [
+      "#FFF7ED",
+      "#F97316",
+      "#7C2D12"
+    ],
+    "text_style": "clean and modern",
+    "overlay_style": "minimal",
+    "icon_style": "minimal",
+    "layout_recommendation": "P01 classic layout",
+    "optimization": {
+      "visual_appeal": "high",
+      "save_potential": "high",
+      "click_potential": "high"
+    },
+    "version": "2.5",
+    "status": "design_strategy_ready"
+  },
+  "canva_text_overlay": {
+    "headline": "Caramel Pecan Cottage Cheese Bowl",
+    "subheadline": "42g Protein \u2022 400 Calories",
+    "brand": "40/400 Meals"
+  },
+  "seo_keywords": [
+    "caramel pecan cottage cheese bowl",
+    "cottage cheese dessert",
+    "fall protein snack",
+    "built puff recipe",
+    "40 400 meals"
+  ],
+  "status": "ready_for_make"
+}

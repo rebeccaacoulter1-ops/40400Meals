@@ -1,8 +1,8 @@
 YOUTUBE SHORT HOOK:
-Need a high protein meal fast? Try this Chicken Ranch Quest Chip Lunch Box.
+Need a high protein meal fast? Try this Chicken Lunch Box.
 
 SCRIPT:
-- Start with Chicken Ranch Quest Chip Lunch Box.
+- Start with Chicken Lunch Box.
 - Build it around protein first.
 - Keep it simple, satisfying, and realistic for busy days.
 
