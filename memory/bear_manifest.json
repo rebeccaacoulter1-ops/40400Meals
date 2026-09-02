@@ -1061,6 +1061,66 @@
           }
         }
       }
+    },
+    "steakhouse-filet-loaded-baked-potato-v2-pinterest-v2": {
+      "created_at_utc": "2026-09-02T20:27:48.510248+00:00",
+      "updated_at_utc": "2026-09-02T20:27:48.510264+00:00",
+      "steps": {
+        "pinterest": {
+          "complete": true,
+          "completed_at_utc": "2026-09-02T20:27:48.510264+00:00",
+          "details": {
+            "destination_url": "https://40400meals.com/recipes/steakhouse-filet-loaded-baked-potato.html?utm_source=pinterest&utm_medium=organic_social&utm_campaign=recipe_variations&utm_content=v2-editorial",
+            "image_url": "https://40400meals.com/outputs/images/pinterest/steakhouse-filet-loaded-baked-potato-pinterest-v2.png",
+            "file_name": "steakhouse-filet-loaded-baked-potato-pinterest-v2.json"
+          }
+        }
+      }
+    },
+    "one-pot-chicken-broccoli-alfredo-protein-penne-v2-pinterest-v2": {
+      "created_at_utc": "2026-09-02T20:27:49.057178+00:00",
+      "updated_at_utc": "2026-09-02T20:27:49.057194+00:00",
+      "steps": {
+        "pinterest": {
+          "complete": true,
+          "completed_at_utc": "2026-09-02T20:27:49.057194+00:00",
+          "details": {
+            "destination_url": "https://40400meals.com/recipes/one-pot-chicken-broccoli-alfredo-protein-penne.html?utm_source=pinterest&utm_medium=organic_social&utm_campaign=recipe_variations&utm_content=v2-editorial",
+            "image_url": "https://40400meals.com/outputs/images/pinterest/one-pot-chicken-broccoli-alfredo-protein-penne-pinterest-v2.png",
+            "file_name": "one-pot-chicken-broccoli-alfredo-protein-penne-pinterest-v2.json"
+          }
+        }
+      }
+    },
+    "quick-costco-salmon-dinner-v3-pinterest-v3": {
+      "created_at_utc": "2026-09-02T20:27:49.542372+00:00",
+      "updated_at_utc": "2026-09-02T20:27:49.542389+00:00",
+      "steps": {
+        "pinterest": {
+          "complete": true,
+          "completed_at_utc": "2026-09-02T20:27:49.542389+00:00",
+          "details": {
+            "destination_url": "https://40400meals.com/recipes/quick-costco-salmon-dinner.html?utm_source=pinterest&utm_medium=organic_social&utm_campaign=recipe_variations&utm_content=v3-food_first",
+            "image_url": "https://40400meals.com/outputs/images/pinterest/quick-costco-salmon-dinner-pinterest-v3.png",
+            "file_name": "quick-costco-salmon-dinner-pinterest-v3.json"
+          }
+        }
+      }
+    },
+    "crunchy-high-protein-costco-chicken-caesar-salad-v3-pinterest-v3": {
+      "created_at_utc": "2026-09-02T20:27:50.156293+00:00",
+      "updated_at_utc": "2026-09-02T20:27:50.156310+00:00",
+      "steps": {
+        "pinterest": {
+          "complete": true,
+          "completed_at_utc": "2026-09-02T20:27:50.156310+00:00",
+          "details": {
+            "destination_url": "https://40400meals.com/recipes/crunchy-high-protein-costco-chicken-caesar-salad.html?utm_source=pinterest&utm_medium=organic_social&utm_campaign=recipe_variations&utm_content=v3-food_first",
+            "image_url": "https://40400meals.com/outputs/images/pinterest/crunchy-high-protein-costco-chicken-caesar-salad-pinterest-v3.png",
+            "file_name": "crunchy-high-protein-costco-chicken-caesar-salad-pinterest-v3.json"
+          }
+        }
+      }
     }
   }
 }
