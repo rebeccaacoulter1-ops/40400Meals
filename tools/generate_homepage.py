@@ -7,12 +7,12 @@ from textwrap import shorten
 
 RECIPES_DIR = Path("recipes")
 INDEX_FILE = Path("index.html")
+RECIPES_INDEX_FILE = Path("recipes.html")
+SITEMAP_FILE = Path("sitemap.xml")
 SITE_URL = "https://40400meals.com/"
 
 START_MARKER = "        <!-- BEAR:RECIPE-CARDS:START -->"
 END_MARKER = "        <!-- BEAR:RECIPE-CARDS:END -->"
-
-# Show all current recipes, then cap the homepage as the library grows.
 MAX_HOMEPAGE_RECIPES = 12
 
 
@@ -31,7 +31,7 @@ def format_number(value):
     return str(value)
 
 
-def homepage_food_image(data, homepage, slug):
+def food_image(data, homepage, slug):
     images = data.get("images", {}) or {}
     image_path = clean_text(
         images.get("hero_image_url")
@@ -56,7 +56,7 @@ def recipe_sort_value(data, recipe, homepage):
     )
 
 
-def load_homepage_recipes():
+def load_publishable_recipes():
     cards = []
 
     for recipe_file in sorted(RECIPES_DIR.glob("*.json")):
@@ -106,7 +106,7 @@ def load_homepage_recipes():
             minute_label = "Minute" if str(minutes) == "1" else "Minutes"
             tags.append(f"{format_number(minutes)} {minute_label}")
 
-        image_path = homepage_food_image(data, homepage, slug)
+        published_at = recipe_sort_value(data, recipe, homepage)
 
         cards.append(
             {
@@ -114,8 +114,9 @@ def load_homepage_recipes():
                 "title": title,
                 "summary": summary,
                 "tags": tags[:3],
-                "image_path": image_path,
-                "published_at": recipe_sort_value(data, recipe, homepage),
+                "image_path": food_image(data, homepage, slug),
+                "published_at": published_at,
+                "lastmod": published_at[:10] if published_at else "",
                 "priority": int(homepage.get("priority", 0) or 0),
             }
         )
@@ -129,36 +130,37 @@ def load_homepage_recipes():
         reverse=True,
     )
 
-    return cards[:MAX_HOMEPAGE_RECIPES]
+    return cards
 
 
-def render_card(card):
+def render_card(card, indent="        "):
     slug = html.escape(card["slug"], quote=True)
     title = html.escape(card["title"])
     summary = html.escape(card["summary"])
     image_path = html.escape(card["image_path"], quote=True)
 
     tag_lines = "\n".join(
-        f'                <span class="tag">{html.escape(tag)}</span>'
+        f'{indent}        <span class="tag">{html.escape(tag)}</span>'
         for tag in card["tags"]
     )
 
-    return f'''        <article class="recipe-card">
-          <a href="recipes/{slug}.html">
-            <img
-              class="recipe-img"
-              src="{image_path}"
-              alt="{title}"
-            />
-            <div class="recipe-body">
-              <h3>{title}</h3>
-              <p>{summary}</p>
-              <div class="tags">
+    return f'''{indent}<article class="recipe-card">
+{indent}  <a href="recipes/{slug}.html">
+{indent}    <img
+{indent}      class="recipe-img"
+{indent}      src="{image_path}"
+{indent}      alt="{title}"
+{indent}      loading="lazy"
+{indent}    />
+{indent}    <div class="recipe-body">
+{indent}      <h3>{title}</h3>
+{indent}      <p>{summary}</p>
+{indent}      <div class="tags">
 {tag_lines}
-              </div>
-            </div>
-          </a>
-        </article>'''
+{indent}      </div>
+{indent}    </div>
+{indent}  </a>
+{indent}</article>'''
 
 
 def replace_marked_cards(index_html, rendered_cards):
@@ -167,14 +169,7 @@ def replace_marked_cards(index_html, rendered_cards):
         flags=re.DOTALL,
     )
 
-    replacement = (
-        START_MARKER
-        + "\n"
-        + rendered_cards
-        + "\n"
-        + END_MARKER
-    )
-
+    replacement = START_MARKER + "\n" + rendered_cards + "\n" + END_MARKER
     updated_html, replacements = pattern.subn(
         lambda _: replacement,
         index_html,
@@ -182,9 +177,7 @@ def replace_marked_cards(index_html, rendered_cards):
     )
 
     if replacements != 1:
-        raise ValueError(
-            "Bear homepage markers were not found exactly once."
-        )
+        raise ValueError("Bear homepage markers were not found exactly once.")
 
     return updated_html
 
@@ -197,75 +190,338 @@ def install_markers_and_cards(index_html, rendered_cards):
     method_index = index_html.find(method_section)
 
     if open_index == -1 or method_index == -1:
-        raise ValueError(
-            "Could not locate the homepage recipe grid or method section."
-        )
+        raise ValueError("Could not locate the homepage recipe grid or method section.")
 
     content_start = index_html.find("\n", open_index)
     if content_start == -1:
         raise ValueError("Could not locate the recipe-grid opening line.")
-
     content_start += 1
 
-    # The recipe grid's closing div is the final six-space-indented closing
-    # div before the method section.
     content_end = index_html.rfind("      </div>", content_start, method_index)
-
     if content_end == -1:
-        raise ValueError(
-            "Could not locate the closing div for the homepage recipe grid."
+        raise ValueError("Could not locate the closing div for the homepage recipe grid.")
+
+    managed_block = START_MARKER + "\n" + rendered_cards + "\n" + END_MARKER + "\n"
+    return index_html[:content_start] + managed_block + index_html[content_end:]
+
+
+def update_homepage(cards):
+    homepage_cards = cards[:MAX_HOMEPAGE_RECIPES]
+    rendered_cards = "\n\n".join(render_card(card) for card in homepage_cards)
+    index_html = INDEX_FILE.read_text(encoding="utf-8")
+
+    if START_MARKER in index_html or END_MARKER in index_html:
+        if index_html.count(START_MARKER) != 1 or index_html.count(END_MARKER) != 1:
+            raise ValueError("Homepage has invalid Bear recipe marker counts.")
+        updated_html = replace_marked_cards(index_html, rendered_cards)
+    else:
+        updated_html = install_markers_and_cards(index_html, rendered_cards)
+
+    # The homepage shows the newest recipes. These links take visitors to the
+    # complete, automatically generated recipe library.
+    updated_html = updated_html.replace(
+        '<a href="#recipes">Recipes</a>',
+        '<a href="recipes.html">Recipes</a>',
+    )
+    updated_html = updated_html.replace(
+        '<a href="#recipes" class="btn btn-primary">Browse Recipes</a>',
+        '<a href="recipes.html" class="btn btn-primary">Browse All Recipes</a>',
+    )
+
+    view_all = '''\n      <div style="text-align:center; margin-top:34px;">\n        <a href="recipes.html" class="btn btn-primary">View All Recipes</a>\n      </div>'''
+    recipes_section_end = '      </div>\n    </section>\n\n    <section id="method">'
+    if 'href="recipes.html" class="btn btn-primary">View All Recipes</a>' not in updated_html:
+        updated_html = updated_html.replace(
+            recipes_section_end,
+            '      </div>' + view_all + '\n    </section>\n\n    <section id="method">',
+            1,
         )
 
-    managed_block = (
-        START_MARKER
-        + "\n"
-        + rendered_cards
-        + "\n"
-        + END_MARKER
-        + "\n"
+    if updated_html != index_html:
+        INDEX_FILE.write_text(updated_html, encoding="utf-8")
+        print(f"Homepage updated with {len(homepage_cards)} latest recipe cards.")
+    else:
+        print("Homepage recipe cards and recipe-library links are already current.")
+
+
+def render_recipes_index(cards):
+    rendered_cards = "\n\n".join(render_card(card, indent="      ") for card in cards)
+
+    return f'''<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>All High-Protein Recipes | 40/400 Meals</title>
+  <meta name="description" content="Browse every 40/400 Meals recipe in one place: practical high-protein meals built around roughly 40 grams of protein and about 400 calories." />
+  <link rel="canonical" href="https://40400meals.com/recipes.html" />
+  <style>
+    :root {{
+      --cream: #faf7f2;
+      --chocolate: #2b2118;
+      --orange: #a4571b;
+      --soft-sage: #eef4ea;
+      --white: #ffffff;
+    }}
+    * {{ box-sizing: border-box; }}
+    body {{
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      background: var(--cream);
+      color: var(--chocolate);
+      line-height: 1.6;
+    }}
+    header {{
+      background: var(--white);
+      padding: 22px 8%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      box-shadow: 0 4px 20px rgba(43, 33, 24, 0.08);
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }}
+    .logo {{
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      color: var(--chocolate);
+      font-size: 26px;
+      font-weight: 800;
+      letter-spacing: -1px;
+      text-decoration: none;
+    }}
+    .logo-mark {{
+      display: grid;
+      width: 52px;
+      height: 52px;
+      place-items: center;
+      border: 2px solid #c98046;
+      border-radius: 50%;
+      background: var(--cream);
+      font-size: 13px;
+      line-height: 1;
+      letter-spacing: -0.8px;
+    }}
+    nav a {{
+      margin-left: 28px;
+      text-decoration: none;
+      color: var(--chocolate);
+      font-weight: 700;
+    }}
+    .intro {{
+      padding: 74px 8% 42px;
+      text-align: center;
+      max-width: 920px;
+      margin: auto;
+    }}
+    .eyebrow {{
+      display: inline-block;
+      background: var(--soft-sage);
+      color: #4f674d;
+      padding: 9px 16px;
+      border-radius: 999px;
+      font-weight: 800;
+      margin-bottom: 18px;
+    }}
+    h1 {{
+      font-size: clamp(44px, 7vw, 72px);
+      line-height: 1;
+      letter-spacing: -2.5px;
+      margin: 0 0 20px;
+    }}
+    .intro p {{
+      color: #6b5d52;
+      font-size: 19px;
+      margin: 0 auto;
+      max-width: 720px;
+    }}
+    .library {{ padding: 26px 8% 80px; }}
+    .library-count {{
+      text-align: center;
+      font-weight: 800;
+      color: #6b5d52;
+      margin-bottom: 30px;
+    }}
+    .recipes {{
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 26px;
+      max-width: 1400px;
+      margin: auto;
+    }}
+    .recipe-card {{
+      background: white;
+      border-radius: 28px;
+      overflow: hidden;
+      box-shadow: 0 14px 35px rgba(43, 33, 24, 0.10);
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }}
+    .recipe-card:hover {{
+      transform: translateY(-5px);
+      box-shadow: 0 20px 44px rgba(43, 33, 24, 0.15);
+    }}
+    .recipe-card > a {{ color: inherit; text-decoration: none; }}
+    .recipe-img {{
+      display: block;
+      width: 100%;
+      aspect-ratio: 2 / 3;
+      object-fit: cover;
+      object-position: top;
+    }}
+    .recipe-body {{ padding: 24px; }}
+    .recipe-body h3 {{ margin: 0 0 12px; font-size: 24px; line-height: 1.15; }}
+    .recipe-body p {{ color: #6b5d52; }}
+    .tags {{ display: flex; gap: 8px; flex-wrap: wrap; margin-top: 16px; }}
+    .tag {{
+      background: var(--soft-sage);
+      color: #4d634a;
+      padding: 7px 11px;
+      border-radius: 999px;
+      font-size: 13px;
+      font-weight: 800;
+    }}
+    .planner-cta {{
+      max-width: 920px;
+      margin: 0 auto 80px;
+      padding: 42px 28px;
+      text-align: center;
+      background: #fbf1df;
+      border: 1px solid #ead8c9;
+      border-radius: 30px;
+    }}
+    .planner-cta h2 {{ margin: 0 0 10px; font-size: 34px; }}
+    .planner-cta p {{ color: #6b5d52; margin-bottom: 24px; }}
+    .btn {{
+      display: inline-block;
+      padding: 15px 28px;
+      border-radius: 999px;
+      text-decoration: none;
+      font-weight: 800;
+      background: var(--orange);
+      color: white;
+    }}
+    footer {{ text-align: center; padding: 45px 8%; color: #76675c; }}
+    footer a {{ color: #76675c; font-weight: 700; margin: 0 8px; text-decoration: none; }}
+    @media (max-width: 850px) {{
+      header {{ flex-direction: column; gap: 12px; }}
+      nav {{ text-align: center; }}
+      nav a {{ margin: 0 9px; }}
+    }}
+  </style>
+</head>
+<body>
+  <header>
+    <a class="logo" href="index.html">
+      <span class="logo-mark">40/400</span>
+      <span>40/400 Meals</span>
+    </a>
+    <nav>
+      <a href="recipes.html">Recipes</a>
+      <a href="index.html#method">Start Here</a>
+      <a href="index.html#weekly-planner">Weekly Planner</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="intro">
+      <div class="eyebrow">The complete 40/400 recipe library</div>
+      <h1>All Recipes</h1>
+      <p>Browse every published 40/400 meal in one place. High-protein, practical recipes designed for real schedules, real families, and food you actually want to eat.</p>
+    </section>
+
+    <section class="library">
+      <div class="library-count">{len(cards)} recipes and growing</div>
+      <div class="recipes">
+{rendered_cards}
+      </div>
+    </section>
+
+    <section class="planner-cta">
+      <h2>Want the week planned for you?</h2>
+      <p>Get seven complete high-protein meals, a grocery list, and a simple prep plan in the 40/400 Weekly Planner.</p>
+      <a class="btn" href="index.html#weekly-planner">See the Weekly Planner</a>
+    </section>
+  </main>
+
+  <footer>
+    <p>
+      <a href="recipes.html">All Recipes</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+      <a href="privacy.html">Privacy</a>
+      <a href="affiliate-disclosure.html">Affiliate Disclosure</a>
+    </p>
+    <p>© 2026 40/400 Meals • Powered by Bear OS</p>
+  </footer>
+</body>
+</html>
+'''
+
+
+def update_recipes_index(cards):
+    content = render_recipes_index(cards)
+    if RECIPES_INDEX_FILE.exists() and RECIPES_INDEX_FILE.read_text(encoding="utf-8") == content:
+        print("All Recipes page is already current.")
+        return
+    RECIPES_INDEX_FILE.write_text(content, encoding="utf-8")
+    print(f"All Recipes page updated with {len(cards)} recipes.")
+
+
+def sitemap_entry(location, lastmod=""):
+    line = f"    <loc>{html.escape(location)}</loc>"
+    if lastmod:
+        line += f"\n    <lastmod>{html.escape(lastmod)}</lastmod>"
+    return f"  <url>\n{line}\n  </url>"
+
+
+def update_sitemap(cards):
+    entries = [
+        sitemap_entry(SITE_URL, "2026-09-02"),
+        sitemap_entry(f"{SITE_URL}recipes.html", "2026-09-02"),
+        sitemap_entry(f"{SITE_URL}about.html"),
+        sitemap_entry(f"{SITE_URL}contact.html"),
+        sitemap_entry(f"{SITE_URL}privacy.html"),
+        sitemap_entry(f"{SITE_URL}affiliate-disclosure.html"),
+    ]
+
+    entries.extend(
+        sitemap_entry(
+            f"{SITE_URL}recipes/{card['slug']}.html",
+            card.get("lastmod", ""),
+        )
+        for card in cards
     )
 
-    return (
-        index_html[:content_start]
-        + managed_block
-        + index_html[content_end:]
+    sitemap = (
+        '<?xml version="1.0" encoding="UTF-8"?>\n'
+        '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n'
+        + "\n".join(entries)
+        + "\n</urlset>\n"
     )
+
+    if SITEMAP_FILE.exists() and SITEMAP_FILE.read_text(encoding="utf-8") == sitemap:
+        print("Sitemap is already current.")
+        return
+
+    SITEMAP_FILE.write_text(sitemap, encoding="utf-8")
+    print(f"Sitemap updated with {len(cards)} recipe URLs plus site pages.")
 
 
 def main():
     if not INDEX_FILE.exists():
         raise FileNotFoundError(f"Homepage not found: {INDEX_FILE}")
 
-    cards = load_homepage_recipes()
-
+    cards = load_publishable_recipes()
     if not cards:
         raise ValueError("No publishable recipe JSON files were found.")
 
-    rendered_cards = "\n\n".join(render_card(card) for card in cards)
-    index_html = INDEX_FILE.read_text(encoding="utf-8")
-
-    if START_MARKER in index_html or END_MARKER in index_html:
-        if index_html.count(START_MARKER) != 1:
-            raise ValueError("Homepage has an invalid Bear start marker count.")
-        if index_html.count(END_MARKER) != 1:
-            raise ValueError("Homepage has an invalid Bear end marker count.")
-
-        updated_html = replace_marked_cards(index_html, rendered_cards)
-    else:
-        updated_html = install_markers_and_cards(
-            index_html,
-            rendered_cards,
-        )
-
-    if updated_html == index_html:
-        print("Homepage recipe cards are already current.")
-        return
-
-    INDEX_FILE.write_text(updated_html, encoding="utf-8")
-    print(
-        f"Homepage updated with {len(cards)} recipe card"
-        f"{'' if len(cards) == 1 else 's'}."
-    )
+    update_homepage(cards)
+    update_recipes_index(cards)
+    update_sitemap(cards)
 
 
 if __name__ == "__main__":
