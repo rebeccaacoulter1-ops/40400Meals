@@ -2,7 +2,7 @@
   "recipe_id": "chicken-ranch-quest-chip-lunch-box",
   "recipe": {
     "slug": "chicken-ranch-quest-chip-lunch-box",
-    "title": "Chicken Ranch Quest Chip Lunch Box",
+    "title": "Chicken Lunch Box",
     "summary": "A portable chicken lunch box with cottage-cheese ranch, crunchy cucumbers, grapes, and Quest Nacho Cheese Protein Chips.",
     "story": "Pack it the night before and grab it on the way out. It has the crunchy chips and ranch-dip feeling of a snack lunch, but enough protein to count as an actual meal.",
     "category": "Grab-and-Go Lunch",
@@ -22,8 +22,8 @@
     "reheating_instructions": ["This meal is designed to be eaten cold.", "If preferred, microwave the chicken separately for 45 to 60 seconds until it reaches 165°F, then return it to the lunch box."],
     "tips": ["Leave the chips in their original sealed bag so they stay crunchy.", "Use a frozen lunch-pack insert if the box will be away from a refrigerator."]
   },
-  "seo": {"meta_title": "Chicken Ranch Quest Chip Lunch Box | 49g Protein", "meta_description": "Portable chicken ranch protein lunch box with cucumbers, grapes, and Quest chips for 390 calories.", "keywords": ["Quest chips lunch", "high protein lunch box", "grab and go chicken lunch", "40 400 meals"]},
-  "images": {"presentation_template": "snack_box", "hero_image_url": "https://40400meals.com/outputs/images/food_photos/chicken-ranch-quest-chip-lunch-box-food-photo.png", "image_prompt": "Premium food-blog editorial overhead photo of a divided grab-and-go lunch box with realistic sliced chicken breast bites, cucumber rounds, red and green grapes, a small cup of creamy ranch, and one opened serving of triangular nacho protein chips. Bright practical meal-prep styling, clean natural light, no extra food and no brand packaging.", "alt_text": "Chicken ranch lunch box with cucumbers, grapes, and protein chips."},
-  "social": {"pinterest": {"title": "Chicken Ranch Quest Chip Lunch Box", "description": "A real grab-and-go lunch with chicken, cottage-cheese ranch, fruit, vegetables, and Quest chips. 49g protein for 390 calories.", "destination_url": "https://40400meals.com/recipes/chicken-ranch-quest-chip-lunch-box.html", "hashtags": ["#LunchBoxIdeas", "#QuestChips", "#GrabAndGoLunch", "#40400Meals"]}},
+  "seo": {"meta_title": "Chicken Lunch Box | 49g Protein", "meta_description": "Portable chicken ranch protein lunch box with cucumbers, grapes, and Quest chips for 390 calories.", "keywords": ["Quest chips lunch", "high protein lunch box", "grab and go chicken lunch", "40 400 meals"]},
+  "images": {"presentation_template": "snack_box", "hero_image_url": "https://40400meals.com/outputs/images/food_photos/chicken-ranch-quest-chip-lunch-box-food-photo.png", "image_prompt": "Premium natural food-blog photo of a clear grab-and-go lunch container holding grilled chicken bites, cucumber rounds, red grapes, and a separate small cup of cottage-cheese ranch. Place one sealed single-serving bag of Quest Nacho Cheese Protein Chips beside the container. Keep all chips sealed inside the bag with no loose chips in the container. Bright practical meal-prep styling and clean natural light.", "alt_text": "Chicken lunch box with cucumbers, grapes, ranch, and a sealed bag of Quest protein chips."},
+  "social": {"pinterest": {"title": "Chicken Lunch Box", "description": "A real grab-and-go lunch with chicken, cottage-cheese ranch, fruit, vegetables, and Quest chips. 49g protein for 390 calories.", "destination_url": "https://40400meals.com/recipes/chicken-ranch-quest-chip-lunch-box.html", "hashtags": ["#LunchBoxIdeas", "#QuestChips", "#GrabAndGoLunch", "#40400Meals"]}},
   "homepage": {"hidden": false, "priority": 102, "published_at": "2026-09-01T10:20:00-05:00", "summary": "Portable chicken ranch lunch box with fruit, vegetables, and protein chips.", "image_path": "outputs/images/pinterest/chicken-ranch-quest-chip-lunch-box-pinterest-pin.png"}
 }
