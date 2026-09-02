@@ -1001,6 +1001,66 @@
           }
         }
       }
+    },
+    "barebells-berry-breakfast-to-go-pinterest-photo-correction-v1": {
+      "created_at_utc": "2026-09-02T18:22:02.678734+00:00",
+      "updated_at_utc": "2026-09-02T18:22:02.678767+00:00",
+      "steps": {
+        "pinterest": {
+          "complete": true,
+          "completed_at_utc": "2026-09-02T18:22:02.678767+00:00",
+          "details": {
+            "destination_url": "https://40400meals.com/recipes/barebells-berry-breakfast-to-go.html?utm_source=pinterest&utm_medium=organic_social&utm_campaign=corrected_recipe_photos&utm_content=barebells-correction",
+            "image_url": "https://40400meals.com/outputs/images/pinterest/barebells-berry-breakfast-to-go-pinterest-pin.png",
+            "file_name": "barebells-berry-breakfast-to-go-pinterest-correction.json"
+          }
+        }
+      }
+    },
+    "chicken-ranch-quest-chip-lunch-box-pinterest-photo-correction-v1": {
+      "created_at_utc": "2026-09-02T18:22:03.083944+00:00",
+      "updated_at_utc": "2026-09-02T18:22:03.083962+00:00",
+      "steps": {
+        "pinterest": {
+          "complete": true,
+          "completed_at_utc": "2026-09-02T18:22:03.083962+00:00",
+          "details": {
+            "destination_url": "https://40400meals.com/recipes/chicken-ranch-quest-chip-lunch-box.html?utm_source=pinterest&utm_medium=organic_social&utm_campaign=corrected_recipe_photos&utm_content=chicken-lunch-box-correction",
+            "image_url": "https://40400meals.com/outputs/images/pinterest/chicken-ranch-quest-chip-lunch-box-pinterest-pin.png",
+            "file_name": "chicken-ranch-quest-chip-lunch-box-pinterest-correction.json"
+          }
+        }
+      }
+    },
+    "chili-lime-chips-guac-protein-snack-v3-pinterest-v3": {
+      "created_at_utc": "2026-09-02T18:22:03.552351+00:00",
+      "updated_at_utc": "2026-09-02T18:22:03.552369+00:00",
+      "steps": {
+        "pinterest": {
+          "complete": true,
+          "completed_at_utc": "2026-09-02T18:22:03.552369+00:00",
+          "details": {
+            "destination_url": "https://40400meals.com/recipes/chili-lime-chips-guac-protein-snack.html?utm_source=pinterest&utm_medium=organic_social&utm_campaign=recipe_variations&utm_content=v3-food_first",
+            "image_url": "https://40400meals.com/outputs/images/pinterest/chili-lime-chips-guac-protein-snack-pinterest-v3.png",
+            "file_name": "chili-lime-chips-guac-protein-snack-pinterest-v3.json"
+          }
+        }
+      }
+    },
+    "sour-peach-orange-protein-snack-v3-pinterest-v3": {
+      "created_at_utc": "2026-09-02T18:22:04.127631+00:00",
+      "updated_at_utc": "2026-09-02T18:22:04.127649+00:00",
+      "steps": {
+        "pinterest": {
+          "complete": true,
+          "completed_at_utc": "2026-09-02T18:22:04.127649+00:00",
+          "details": {
+            "destination_url": "https://40400meals.com/recipes/sour-peach-orange-protein-snack.html?utm_source=pinterest&utm_medium=organic_social&utm_campaign=recipe_variations&utm_content=v3-food_first",
+            "image_url": "https://40400meals.com/outputs/images/pinterest/sour-peach-orange-protein-snack-pinterest-v3.png",
+            "file_name": "sour-peach-orange-protein-snack-pinterest-v3.json"
+          }
+        }
+      }
     }
   }
 }
