@@ -1,0 +1,29 @@
+{
+  "recipe_id": "parmesan-ranch-cod-crispy-potatoes",
+  "recipe": {
+    "slug": "parmesan-ranch-cod-crispy-potatoes",
+    "title": "Parmesan Ranch Cod with Crispy Potatoes",
+    "summary": "Mild flaky cod with a Parmesan ranch topping, crispy baby potatoes, green beans, and creamy ranch dip.",
+    "story": "Cod is mild enough for a family fish night, and the ranch-Parmesan topping gives it a familiar flavor without burying it under breading.",
+    "category": "Family-Friendly Dinner",
+    "cuisine": "American",
+    "date_published": "2026-09-01",
+    "servings": 6,
+    "serving_size": "7 ounces cooked cod | 6 ounces roasted baby potatoes | 1 cup green beans | 2 tablespoons cottage-cheese ranch",
+    "times": {"prep_minutes": 15, "cook_minutes": 30, "total_minutes": 45},
+    "macros": {"calories": 400, "protein_g": 43, "carbs_g": 36, "sugar_g": 5, "fiber_g": 6, "fat_g": 9},
+    "ingredients": ["3 pounds cod fillets, cut into 6 equal portions", "2 1/4 pounds baby potatoes, halved", "6 cups fresh or frozen green beans", "1 tablespoon garlic powder", "1 tablespoon onion powder", "1 teaspoon salt, divided", "1 teaspoon black pepper, divided", "2 tablespoons ranch seasoning, divided", "6 tablespoons grated Parmesan cheese", "Chosen Foods Avocado Oil Spray", "1 cup Daisy 4% Cottage Cheese", "1/4 cup 2% milk"],
+    "ingredient_sections": [
+      {"title": "Cod and Vegetables", "items": ["3 pounds cod fillets, cut into 6 equal portions", "2 1/4 pounds baby potatoes, halved", "6 cups fresh or frozen green beans", "1 tablespoon garlic powder", "1 tablespoon onion powder", "1 teaspoon salt, divided", "1 teaspoon black pepper, divided", "1 tablespoon ranch seasoning", "6 tablespoons grated Parmesan cheese", "Chosen Foods Avocado Oil Spray"]},
+      {"title": "Cottage-Cheese Ranch", "items": ["1 cup Daisy 4% Cottage Cheese", "1/4 cup 2% milk", "1 tablespoon ranch seasoning"]}
+    ],
+    "instructions": ["Preheat the oven to 425°F. Line a large sheet pan with parchment paper.", "Place the halved potatoes on the pan. Lightly spray with avocado oil and season with half of the garlic powder, onion powder, salt, and pepper.", "Roast the potatoes for 15 minutes.", "Pat the cod dry. Mix the remaining garlic powder, onion powder, salt, pepper, 1 tablespoon ranch seasoning, and Parmesan. Press the mixture evenly over the top of each fillet.", "Turn the potatoes and move them to one side of the pan. Add the cod and green beans. Lightly spray the green beans with avocado oil.", "Roast for 12 to 15 minutes, until the cod flakes easily and reaches 145°F and the potatoes are browned.", "Blend the cottage cheese, milk, and remaining ranch seasoning until completely smooth.", "Serve each portion with 7 ounces cooked cod, 6 ounces potatoes, 1 cup green beans, and 2 tablespoons cottage-cheese ranch."],
+    "freezer_storage": ["Freeze only the cooked cod. Potatoes, green beans, and ranch have better texture when prepared fresh.", "Cool the cod completely. If four servings remain, use a gallon-size freezer bag. If fewer than four servings remain, use a quart-size freezer bag.", "Separate portions with parchment, remove excess air, and freeze for up to 2 months."],
+    "reheating_instructions": ["Thaw the cod overnight in the refrigerator.", "Reheat in a 350°F oven for 8 to 10 minutes, just until hot. Do not overheat or the cod will dry out.", "Serve with freshly roasted vegetables and fresh cottage-cheese ranch."],
+    "tips": ["Pat the cod very dry so the Parmesan ranch topping stays in place.", "Start the potatoes first because the cod cooks quickly."]
+  },
+  "seo": {"meta_title": "Parmesan Ranch Cod and Crispy Potatoes | 43g Protein", "meta_description": "Easy family-friendly cod with Parmesan ranch topping, crispy potatoes, green beans, and 43 grams of protein.", "keywords": ["parmesan ranch cod", "family friendly cod recipe", "high protein fish dinner", "40 400 meals"]},
+  "images": {"presentation_template": "dinner_plate", "hero_image_url": "https://40400meals.com/outputs/images/food_photos/parmesan-ranch-cod-crispy-potatoes-food-photo.png", "image_prompt": "Premium food-blog editorial photo of one flaky white cod fillet with a light golden Parmesan ranch topping, crispy halved baby potatoes, green beans, and a small ramekin of creamy ranch. Realistic family dinner plate, warm natural light, no lemon wedges and no extra garnish.", "alt_text": "Parmesan ranch cod with roasted potatoes and green beans."},
+  "social": {"pinterest": {"title": "Parmesan Ranch Cod with Crispy Potatoes", "description": "Mild flaky cod with Parmesan ranch topping, crispy potatoes, green beans, and 43g protein for 400 calories.", "destination_url": "https://40400meals.com/recipes/parmesan-ranch-cod-crispy-potatoes.html", "hashtags": ["#CodRecipe", "#FishDinner", "#HighProteinDinner", "#40400Meals"]}},
+  "homepage": {"hidden": false, "priority": 104, "published_at": "2026-09-01T10:10:00-05:00", "summary": "Mild Parmesan ranch cod with crispy potatoes and green beans.", "image_path": "outputs/images/pinterest/parmesan-ranch-cod-crispy-potatoes-pinterest-pin.png"}
+}

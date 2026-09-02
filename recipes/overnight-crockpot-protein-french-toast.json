@@ -1,0 +1,29 @@
+{
+  "recipe_id": "overnight-crockpot-protein-french-toast",
+  "recipe": {
+    "slug": "overnight-crockpot-protein-french-toast",
+    "title": "Overnight Crockpot Protein French Toast",
+    "summary": "Warm cinnamon French toast casserole with eggs, cottage cheese, vanilla protein, and berries, ready when the family wakes up.",
+    "story": "Load the slow cooker before bed, set the timer, and wake up to a hot family breakfast with enough protein to actually keep everyone full.",
+    "category": "Family-Friendly Breakfast",
+    "cuisine": "American",
+    "date_published": "2026-09-01",
+    "servings": 6,
+    "serving_size": "1/6 of the French toast casserole | 1/2 cup berries",
+    "times": {"prep_minutes": 15, "cook_minutes": 360, "total_minutes": 375},
+    "macros": {"calories": 382, "protein_g": 40, "carbs_g": 38, "sugar_g": 10, "fiber_g": 7, "fat_g": 9},
+    "ingredients": ["12 slices Sara Lee Delightful White Made with Whole Grain Bread, cubed", "6 large eggs", "1 cup liquid egg whites", "3 cups Daisy 4% Cottage Cheese", "3 scoops Clean Simple Eats Simply Vanilla Protein Powder", "1 cup unsweetened vanilla almond milk", "2 teaspoons vanilla extract", "2 teaspoons ground cinnamon", "1/4 teaspoon salt", "3 cups mixed berries", "Chosen Foods Avocado Oil Spray", "Sugar-free maple syrup, optional"],
+    "ingredient_sections": [
+      {"title": "French Toast Casserole", "items": ["12 slices Sara Lee Delightful White Made with Whole Grain Bread, cubed", "6 large eggs", "1 cup liquid egg whites", "3 cups Daisy 4% Cottage Cheese", "3 scoops Clean Simple Eats Simply Vanilla Protein Powder", "1 cup unsweetened vanilla almond milk", "2 teaspoons vanilla extract", "2 teaspoons ground cinnamon", "1/4 teaspoon salt", "Chosen Foods Avocado Oil Spray"]},
+      {"title": "For Serving", "items": ["3 cups mixed berries", "Sugar-free maple syrup, optional"]}
+    ],
+    "instructions": ["Lightly spray the insert of a 6-quart slow cooker with avocado oil.", "Add the bread cubes in an even layer.", "Blend the eggs, egg whites, cottage cheese, protein powder, almond milk, vanilla, cinnamon, and salt until completely smooth.", "Pour the mixture evenly over the bread. Gently press the bread down so every piece is coated.", "Cover and refrigerate the slow-cooker insert for up to 8 hours, or place it directly in the slow cooker if cooking immediately.", "Set the slow cooker to LOW for 6 hours. Use a programmable slow cooker so it automatically switches to WARM when cooking is complete.", "Turn off the slow cooker after no more than 2 hours on WARM. Divide the casserole into 6 equal portions.", "Serve each portion with 1/2 cup berries and optional sugar-free maple syrup."],
+    "freezer_storage": ["Cool the cooked casserole completely and divide into individual portions.", "If four servings remain, use a gallon-size freezer bag. If fewer than four servings remain, use quart-size freezer bags.", "Separate portions with parchment, remove excess air, and freeze for up to 2 months. Freeze the berries separately."],
+    "reheating_instructions": ["Thaw overnight in the refrigerator.", "Microwave one portion for 60 seconds, then continue in 20-second intervals until hot.", "Add fresh or thawed berries after reheating."],
+    "tips": ["A programmable slow cooker is required for a true overnight cook so the edges do not overcook.", "Do not leave the casserole on WARM longer than 2 hours."]
+  },
+  "seo": {"meta_title": "Overnight Crockpot Protein French Toast | 40g Protein", "meta_description": "Easy overnight slow-cooker French toast casserole with eggs, cottage cheese, vanilla protein, and berries.", "keywords": ["overnight crockpot French toast", "protein French toast casserole", "high protein family breakfast", "40 400 meals"]},
+  "images": {"presentation_template": "baked_casserole", "hero_image_url": "https://40400meals.com/outputs/images/food_photos/overnight-crockpot-protein-french-toast-food-photo.png", "image_prompt": "Premium food-blog editorial photo of a thick square serving of cinnamon French toast casserole with a custardy center and lightly golden top, served with mixed berries and a very light sugar-free syrup drizzle. Cozy realistic family breakfast, warm morning window light, no powdered sugar and no extra garnish.", "alt_text": "Crockpot protein French toast casserole with berries."},
+  "social": {"pinterest": {"title": "Overnight Crockpot Protein French Toast", "description": "Prep it before bed and wake up to warm protein French toast with berries. 40g protein and 382 calories per serving.", "destination_url": "https://40400meals.com/recipes/overnight-crockpot-protein-french-toast.html", "hashtags": ["#CrockpotBreakfast", "#ProteinFrenchToast", "#OvernightBreakfast", "#40400Meals"]}},
+  "homepage": {"hidden": false, "priority": 103, "published_at": "2026-09-01T10:15:00-05:00", "summary": "Overnight cinnamon protein French toast casserole with berries.", "image_path": "outputs/images/pinterest/overnight-crockpot-protein-french-toast-pinterest-pin.png"}
+}

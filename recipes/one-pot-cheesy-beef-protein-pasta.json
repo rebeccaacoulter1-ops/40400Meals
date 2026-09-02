@@ -1,0 +1,49 @@
+{
+  "recipe_id": "one-pot-cheesy-beef-protein-pasta",
+  "recipe": {
+    "slug": "one-pot-cheesy-beef-protein-pasta",
+    "title": "One-Pot Cheesy Beef Protein Pasta",
+    "summary": "Family-friendly protein pasta with lean beef, tomato sauce, chicken bone broth, mozzarella, and Parmesan.",
+    "story": "This is the red-sauce pasta dinner everyone recognizes, made more filling with lean beef, protein pasta, and bone broth without making dinner feel like diet food.",
+    "category": "Family-Friendly Dinner",
+    "cuisine": "Italian-American",
+    "date_published": "2026-09-01",
+    "servings": 6,
+    "serving_size": "1 1/2 cups",
+    "times": {"prep_minutes": 10, "cook_minutes": 25, "total_minutes": 35},
+    "macros": {"calories": 396, "protein_g": 44, "carbs_g": 44, "sugar_g": 5, "fiber_g": 5, "fat_g": 8},
+    "ingredients": [
+      "24 ounces 96% lean ground beef",
+      "1 tablespoon garlic powder",
+      "1 tablespoon onion powder",
+      "1 teaspoon salt",
+      "1 teaspoon black pepper",
+      "2 teaspoons Italian seasoning",
+      "3 cups Simple Truth Organic Chicken Bone Broth",
+      "1 can (15 ounces) Kroger Tomato Sauce",
+      "12 ounces Barilla Protein+ Penne",
+      "2 ounces shredded part-skim mozzarella cheese",
+      "3 tablespoons grated Parmesan cheese"
+    ],
+    "ingredient_sections": [
+      {"title": "Beef and Seasoning", "items": ["24 ounces 96% lean ground beef", "1 tablespoon garlic powder", "1 tablespoon onion powder", "1 teaspoon salt", "1 teaspoon black pepper", "2 teaspoons Italian seasoning"]},
+      {"title": "Pasta and Sauce", "items": ["3 cups Simple Truth Organic Chicken Bone Broth", "1 can (15 ounces) Kroger Tomato Sauce", "12 ounces Barilla Protein+ Penne", "2 ounces shredded part-skim mozzarella cheese", "3 tablespoons grated Parmesan cheese"]}
+    ],
+    "instructions": [
+      "Heat a large deep skillet or Dutch oven over medium-high heat.",
+      "Add the ground beef, garlic powder, onion powder, salt, pepper, and Italian seasoning. Cook for 6 to 8 minutes, breaking the beef into small pieces, until no pink remains.",
+      "Add the chicken bone broth and tomato sauce. Stir and bring to a gentle boil.",
+      "Stir in the dry penne. Reduce the heat to medium-low, cover, and cook for 12 to 14 minutes, stirring every 3 to 4 minutes so the pasta does not stick.",
+      "Remove the lid when the pasta is tender. Simmer uncovered for 2 to 3 minutes if extra liquid remains.",
+      "Turn off the heat. Stir in the mozzarella and Parmesan until melted.",
+      "Divide evenly into 6 servings of 1 1/2 cups each."
+    ],
+    "freezer_storage": ["Cool completely before freezing.", "Divide into individual portions. If four servings remain, use a gallon-size freezer bag. If fewer than four servings remain, use quart-size freezer bags.", "Remove as much air as possible, seal, label, and freeze flat for up to 3 months."],
+    "reheating_instructions": ["Thaw overnight in the refrigerator.", "Add 1 tablespoon chicken bone broth per serving and microwave for 90 seconds. Stir, then heat in 30-second intervals until the center reaches 165°F."],
+    "tips": ["Keep the heat at a gentle simmer after adding the pasta so the sauce stays in the pan instead of on the stove.", "Measure each serving after the cheese is stirred through so the beef and pasta stay evenly distributed."]
+  },
+  "seo": {"meta_title": "One-Pot Cheesy Beef Protein Pasta | 44g Protein", "meta_description": "Easy family-friendly beef protein pasta cooked in tomato sauce and chicken bone broth with 44 grams of protein.", "keywords": ["beef protein pasta", "one pot protein pasta", "family friendly high protein dinner", "40 400 meals"]},
+  "images": {"presentation_template": "pasta_shallow_bowl", "hero_image_url": "https://40400meals.com/outputs/images/food_photos/one-pot-cheesy-beef-protein-pasta-food-photo.png", "image_prompt": "Premium food-blog editorial photo of cheesy beef penne in rich red tomato sauce, visible lean crumbled beef, a light melted mozzarella and Parmesan finish, served in a shallow family-style pasta bowl. Realistic homemade texture, warm early-fall dinner light, no bread and no extra garnish.", "alt_text": "Cheesy beef protein penne in tomato sauce."},
+  "social": {"pinterest": {"title": "One-Pot Cheesy Beef Protein Pasta", "description": "A family-friendly one-pot red-sauce pasta with lean beef, bone broth, and 44g protein for 396 calories.", "destination_url": "https://40400meals.com/recipes/one-pot-cheesy-beef-protein-pasta.html", "hashtags": ["#ProteinPasta", "#OnePotDinner", "#FamilyFriendlyMeals", "#40400Meals"]}},
+  "homepage": {"hidden": false, "priority": 106, "published_at": "2026-09-01T10:00:00-05:00", "summary": "Cheesy red-sauce protein pasta with lean beef and bone broth.", "image_path": "outputs/images/pinterest/one-pot-cheesy-beef-protein-pasta-pinterest-pin.png"}
+}

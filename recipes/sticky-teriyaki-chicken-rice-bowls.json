@@ -1,0 +1,29 @@
+{
+  "recipe_id": "sticky-teriyaki-chicken-rice-bowls",
+  "recipe": {
+    "slug": "sticky-teriyaki-chicken-rice-bowls",
+    "title": "Sticky Teriyaki Chicken Rice Bowls",
+    "summary": "Sweet and savory teriyaki chicken with broccoli, pineapple, and a jasmine-cauliflower rice blend.",
+    "story": "This bowl keeps the familiar sweet teriyaki flavor kids like while stretching the rice with cauliflower rice in a way that does not announce itself at the dinner table.",
+    "category": "Family-Friendly Dinner",
+    "cuisine": "Asian-Inspired",
+    "date_published": "2026-09-01",
+    "servings": 6,
+    "serving_size": "4.5 ounces cooked teriyaki chicken | 1/2 cup jasmine-cauliflower rice | 1/2 cup broccoli | 1/3 cup pineapple",
+    "times": {"prep_minutes": 10, "cook_minutes": 20, "total_minutes": 30},
+    "macros": {"calories": 394, "protein_g": 42, "carbs_g": 39, "sugar_g": 12, "fiber_g": 4, "fat_g": 8},
+    "ingredients": ["2 pounds boneless skinless chicken breast", "1 tablespoon garlic powder", "1 tablespoon onion powder", "1/2 teaspoon salt", "1/2 teaspoon black pepper", "6 tablespoons Kikkoman Less Sodium Teriyaki Marinade & Sauce", "2 teaspoons Shirakiku Sesame Oil", "3 cups broccoli florets", "1 1/2 cups cooked Kroger Classic Grains Jasmine Rice", "1 1/2 cups cooked Birds Eye Riced Cauliflower", "2 cups pineapple chunks in juice, drained", "Chosen Foods Avocado Oil Spray"],
+    "ingredient_sections": [
+      {"title": "Teriyaki Chicken", "items": ["2 pounds boneless skinless chicken breast", "1 tablespoon garlic powder", "1 tablespoon onion powder", "1/2 teaspoon salt", "1/2 teaspoon black pepper", "6 tablespoons Kikkoman Less Sodium Teriyaki Marinade & Sauce", "2 teaspoons Shirakiku Sesame Oil", "Chosen Foods Avocado Oil Spray"]},
+      {"title": "Bowls", "items": ["3 cups broccoli florets", "1 1/2 cups cooked Kroger Classic Grains Jasmine Rice", "1 1/2 cups cooked Birds Eye Riced Cauliflower", "2 cups pineapple chunks in juice, drained"]}
+    ],
+    "instructions": ["Cut the chicken into 1-inch pieces and season with garlic powder, onion powder, salt, and pepper.", "Lightly spray a large skillet with avocado oil and heat over medium-high heat.", "Add the chicken in a single layer. Cook for 7 to 9 minutes, stirring occasionally, until browned and the center reaches 165°F.", "Reduce the heat to medium. Add the teriyaki sauce and sesame oil. Stir for 1 to 2 minutes until the sauce coats the chicken.", "Steam the broccoli until bright green and fork-tender.", "Stir the cooked jasmine rice and cooked cauliflower rice together until evenly combined.", "Build each bowl with 1/2 cup rice blend, 1/2 cup broccoli, 1/3 cup drained pineapple, and 4.5 ounces cooked teriyaki chicken."],
+    "freezer_storage": ["Cool the chicken and rice blend completely. Freeze them in separate bags from the broccoli and pineapple.", "If four servings remain, use gallon-size freezer bags. If fewer than four servings remain, use quart-size freezer bags.", "Remove as much air as possible and freeze flat for up to 3 months. Add fresh pineapple after reheating."],
+    "reheating_instructions": ["Thaw overnight in the refrigerator.", "Microwave the chicken, rice blend, and broccoli for 90 seconds. Stir and continue in 30-second intervals until the chicken reaches 165°F.", "Add the cold drained pineapple after reheating."],
+    "tips": ["Drain the pineapple well so the bowl stays saucy instead of watery.", "Mix the two rices before measuring each serving so every bowl gets the same ratio."]
+  },
+  "seo": {"meta_title": "Sticky Teriyaki Chicken Rice Bowls | 42g Protein", "meta_description": "Family-friendly teriyaki chicken bowls with broccoli, pineapple, and jasmine-cauliflower rice for 394 calories.", "keywords": ["teriyaki chicken rice bowl", "high protein Asian inspired dinner", "family friendly chicken bowl", "40 400 meals"]},
+  "images": {"presentation_template": "bowl_neutral", "hero_image_url": "https://40400meals.com/outputs/images/food_photos/sticky-teriyaki-chicken-rice-bowls-food-photo.png", "image_prompt": "Premium food-blog editorial photo of a realistic teriyaki chicken rice bowl with glossy bite-size chicken, broccoli florets, small pineapple chunks, and a visible jasmine and cauliflower rice blend. Family-friendly homemade presentation in a neutral bowl, warm natural light, no chopsticks and no extra garnish.", "alt_text": "Teriyaki chicken bowl with broccoli, pineapple, and rice."},
+  "social": {"pinterest": {"title": "Sticky Teriyaki Chicken Rice Bowls", "description": "Sweet, family-friendly teriyaki chicken with broccoli, pineapple, and a hidden cauliflower-jasmine rice blend. 42g protein and 394 calories.", "destination_url": "https://40400meals.com/recipes/sticky-teriyaki-chicken-rice-bowls.html", "hashtags": ["#TeriyakiChicken", "#ChickenRiceBowl", "#FamilyFriendlyDinner", "#40400Meals"]}},
+  "homepage": {"hidden": false, "priority": 105, "published_at": "2026-09-01T10:05:00-05:00", "summary": "Sweet teriyaki chicken with broccoli, pineapple, and blended rice.", "image_path": "outputs/images/pinterest/sticky-teriyaki-chicken-rice-bowls-pinterest-pin.png"}
+}

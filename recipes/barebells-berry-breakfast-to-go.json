@@ -1,0 +1,25 @@
+{
+  "recipe_id": "barebells-berry-breakfast-to-go",
+  "recipe": {
+    "slug": "barebells-berry-breakfast-to-go",
+    "title": "Barebells Berry Breakfast To Go",
+    "summary": "A no-prep breakfast built from a Barebells protein bar, a Chobani Complete yogurt drink, and fresh strawberries.",
+    "story": "There are mornings when cooking is not happening. This is the keep-it-moving breakfast: three things, 40 grams of protein, and no fork required.",
+    "category": "Grab-and-Go Breakfast",
+    "cuisine": "American",
+    "date_published": "2026-09-01",
+    "servings": 1,
+    "serving_size": "1 Barebells Cookies & Cream Protein Bar | 1 Chobani Complete Mixed Berry Yogurt Drink | 1/2 cup strawberries",
+    "times": {"prep_minutes": 2, "cook_minutes": 0, "total_minutes": 2},
+    "macros": {"calories": 395, "protein_g": 40, "carbs_g": 44, "sugar_g": 18, "fiber_g": 5, "fat_g": 9},
+    "ingredients": ["1 Barebells Cookies & Cream Protein Bar", "1 bottle Chobani Complete Mixed Berry Yogurt Drink", "1/2 cup fresh strawberries"],
+    "instructions": ["Wash and dry the strawberries. Place them in a small sealed container.", "Refrigerate the yogurt drink until cold.", "Grab the protein bar, yogurt drink, and strawberries on the way out.", "Keep the yogurt drink and strawberries cold until ready to eat."],
+    "freezer_storage": ["Do not freeze the assembled breakfast, yogurt drink, or protein bar.", "Strawberries may be washed, dried thoroughly, and frozen in a quart-size freezer bag for smoothies, but thawed berries will not have the same grab-and-go texture."],
+    "reheating_instructions": ["No reheating is needed. Serve the yogurt drink and strawberries cold."],
+    "tips": ["Store the protein bars beside your keys and the yogurt drinks at eye level in the refrigerator.", "Use an insulated lunch bag with an ice pack when a refrigerator is not available."]
+  },
+  "seo": {"meta_title": "Barebells Berry Breakfast To Go | 40g Protein", "meta_description": "A two-minute grab-and-go breakfast with a Barebells bar, Chobani Complete yogurt drink, strawberries, and 40g protein.", "keywords": ["Barebells breakfast", "grab and go protein breakfast", "no cook high protein breakfast", "40 400 meals"]},
+  "images": {"presentation_template": "snack_box", "hero_image_url": "https://40400meals.com/outputs/images/food_photos/barebells-berry-breakfast-to-go-food-photo.png", "image_prompt": "Premium food-blog editorial photo of a simple grab-and-go breakfast arranged naturally: one unwrapped cookies-and-cream protein bar broken once to show its center, one small berry yogurt drink in a plain unbranded bottle, and a half cup of fresh strawberries in a portable cup. Bright morning light, realistic proportions, no extra food and no visible brand text.", "alt_text": "Protein bar, berry yogurt drink, and strawberries for breakfast."},
+  "social": {"pinterest": {"title": "Barebells Berry Breakfast To Go", "description": "Three items, two minutes, no cooking: a Barebells bar, Chobani Complete drink, and strawberries for 40g protein and 395 calories.", "destination_url": "https://40400meals.com/recipes/barebells-berry-breakfast-to-go.html", "hashtags": ["#GrabAndGoBreakfast", "#Barebells", "#HighProteinBreakfast", "#40400Meals"]}},
+  "homepage": {"hidden": false, "priority": 101, "published_at": "2026-09-01T10:25:00-05:00", "summary": "A true three-item, no-cook breakfast with 40 grams of protein.", "image_path": "outputs/images/pinterest/barebells-berry-breakfast-to-go-pinterest-pin.png"}
+}
