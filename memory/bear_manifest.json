@@ -941,6 +941,66 @@
           }
         }
       }
+    },
+    "chili-lime-chips-guac-protein-snack-v2-pinterest-v2": {
+      "created_at_utc": "2026-09-02T18:13:09.338698+00:00",
+      "updated_at_utc": "2026-09-02T18:13:09.338715+00:00",
+      "steps": {
+        "pinterest": {
+          "complete": true,
+          "completed_at_utc": "2026-09-02T18:13:09.338715+00:00",
+          "details": {
+            "destination_url": "https://40400meals.com/recipes/chili-lime-chips-guac-protein-snack.html?utm_source=pinterest&utm_medium=organic_social&utm_campaign=recipe_variations&utm_content=v2-editorial",
+            "image_url": "https://40400meals.com/outputs/images/pinterest/chili-lime-chips-guac-protein-snack-pinterest-v2.png",
+            "file_name": "chili-lime-chips-guac-protein-snack-pinterest-v2.json"
+          }
+        }
+      }
+    },
+    "sour-peach-orange-protein-snack-v2-pinterest-v2": {
+      "created_at_utc": "2026-09-02T18:13:10.105352+00:00",
+      "updated_at_utc": "2026-09-02T18:13:10.105371+00:00",
+      "steps": {
+        "pinterest": {
+          "complete": true,
+          "completed_at_utc": "2026-09-02T18:13:10.105371+00:00",
+          "details": {
+            "destination_url": "https://40400meals.com/recipes/sour-peach-orange-protein-snack.html?utm_source=pinterest&utm_medium=organic_social&utm_campaign=recipe_variations&utm_content=v2-editorial",
+            "image_url": "https://40400meals.com/outputs/images/pinterest/sour-peach-orange-protein-snack-pinterest-v2.png",
+            "file_name": "sour-peach-orange-protein-snack-pinterest-v2.json"
+          }
+        }
+      }
+    },
+    "quick-costco-salmon-dinner-v2-pinterest-v2": {
+      "created_at_utc": "2026-09-02T18:13:10.860275+00:00",
+      "updated_at_utc": "2026-09-02T18:13:10.860293+00:00",
+      "steps": {
+        "pinterest": {
+          "complete": true,
+          "completed_at_utc": "2026-09-02T18:13:10.860293+00:00",
+          "details": {
+            "destination_url": "https://40400meals.com/recipes/quick-costco-salmon-dinner.html?utm_source=pinterest&utm_medium=organic_social&utm_campaign=recipe_variations&utm_content=v2-editorial",
+            "image_url": "https://40400meals.com/outputs/images/pinterest/quick-costco-salmon-dinner-pinterest-v2.png",
+            "file_name": "quick-costco-salmon-dinner-pinterest-v2.json"
+          }
+        }
+      }
+    },
+    "crunchy-high-protein-costco-chicken-caesar-salad-v2-pinterest-v2": {
+      "created_at_utc": "2026-09-02T18:13:11.594210+00:00",
+      "updated_at_utc": "2026-09-02T18:13:11.594227+00:00",
+      "steps": {
+        "pinterest": {
+          "complete": true,
+          "completed_at_utc": "2026-09-02T18:13:11.594227+00:00",
+          "details": {
+            "destination_url": "https://40400meals.com/recipes/crunchy-high-protein-costco-chicken-caesar-salad.html?utm_source=pinterest&utm_medium=organic_social&utm_campaign=recipe_variations&utm_content=v2-editorial",
+            "image_url": "https://40400meals.com/outputs/images/pinterest/crunchy-high-protein-costco-chicken-caesar-salad-pinterest-v2.png",
+            "file_name": "crunchy-high-protein-costco-chicken-caesar-salad-pinterest-v2.json"
+          }
+        }
+      }
     }
   }
 }
