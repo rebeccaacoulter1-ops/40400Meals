@@ -1,0 +1,17 @@
+{
+  "recipe_id": "chicken-ranch-quest-chip-lunch-box",
+  "slug": "chicken-ranch-quest-chip-lunch-box",
+  "platform": "pinterest",
+  "title": "Chicken Lunch Box",
+  "description": "A real grab-and-go lunch with chicken, cottage-cheese ranch, grapes, cucumbers, and a sealed bag of Quest chips. 49g protein for 390 calories.",
+  "destination_url": "https://40400meals.com/recipes/chicken-ranch-quest-chip-lunch-box.html?utm_source=pinterest&utm_medium=organic_social&utm_campaign=corrected_recipe_photos&utm_content=chicken-lunch-box-correction",
+  "hashtags": ["#LunchBoxIdeas", "#QuestChips", "#GrabAndGoLunch", "#40400Meals"],
+  "variant_id": "photo-correction-v1",
+  "priority": 100,
+  "scheduled_at": "2000-01-01T00:00:00+00:00",
+  "pin_filename": "chicken-ranch-quest-chip-lunch-box-pinterest-pin.png",
+  "image_filename": "chicken-ranch-quest-chip-lunch-box-pinterest-pin.png",
+  "image_path": "outputs/images/pinterest/chicken-ranch-quest-chip-lunch-box-pinterest-pin.png",
+  "image_mime_type": "image/png",
+  "image_alt_text": "Chicken lunch box with cucumbers, grapes, ranch, and a sealed bag of Quest protein chips."
+}

@@ -55,6 +55,15 @@ def publishing_key(payload, slug):
     return f"{slug}-pinterest-{variant}"
 
 
+def queue_sort_key(path):
+    payload = load_json(path, default={})
+    try:
+        priority = int(payload.get("priority", 0))
+    except (TypeError, ValueError):
+        priority = 0
+    return (-priority, scheduled_time(payload), path.name)
+
+
 def find_pinterest_image(payload, slug):
     candidates = []
 
@@ -206,7 +215,7 @@ def main():
 
     files = sorted(
         QUEUE.glob("*.json"),
-        key=lambda path: scheduled_time(load_json(path, default={})),
+        key=queue_sort_key,
     )
 
     if not files:
