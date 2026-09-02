@@ -93,17 +93,32 @@ CATEGORY_STYLES = {
 }
 
 
-def get_recipe_category():
+def normalize_recipe_category(value):
+    """Map human-facing category labels to a stable design category."""
+    text = str(value or "").strip().lower()
+
+    keyword_groups = (
+        ("dessert", ("dessert", "sweet", "cheesecake", "cake", "parfait")),
+        ("breakfast", ("breakfast", "brunch", "morning")),
+        ("snack", ("snack", "bite", "treat")),
+        ("lunch", ("lunch", "midday")),
+        ("dinner", ("dinner", "supper", "entree", "main")),
+    )
+
+    for category, keywords in keyword_groups:
+        if any(keyword in text for keyword in keywords):
+            return category
+
     return "general"
 
 
-def choose_design_strategy(platform="pinterest"):
+def choose_design_strategy(platform="pinterest", category="general"):
     today = datetime.now()
     month = today.month
 
     season = SEASON_NAMES.get(month, "evergreen")
     template_name = SEASON_TEMPLATES.get(month, "P01 Classic Recipe v1.0")
-    recipe_category = get_recipe_category()
+    recipe_category = normalize_recipe_category(category)
     category_style = CATEGORY_STYLES.get(recipe_category, CATEGORY_STYLES["general"])
     palette = SEASON_PALETTES.get(season, ["#FFFFFF", "#10B981", "#1F2937"])
 

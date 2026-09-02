@@ -16,11 +16,19 @@ from PIL import Image, ImageDraw, ImageFont, ImageOps
 # OpenAI client
 # -----------------------------
 
-client = OpenAI(
-    api_key=os.environ["OPENAI_API_KEY"],
-    timeout=300.0,
-    max_retries=1,
-)
+client = None
+
+
+def get_openai_client():
+    """Create the image client only when a photo actually needs generation."""
+    global client
+    if client is None:
+        client = OpenAI(
+            api_key=os.environ["OPENAI_API_KEY"],
+            timeout=300.0,
+            max_retries=1,
+        )
+    return client
 
 
 # -----------------------------
@@ -67,29 +75,36 @@ def load_photo_style():
     return load_json(STYLE_FILE)
 
 
-def choose_human_photo_direction(slug):
+def choose_human_photo_direction(slug, style=None):
     """Vary repeatable photo details so the recipe grid does not look cloned."""
     digest = hashlib.sha256(slug.encode("utf-8")).digest()
 
-    camera_angles = [
+    scene = (style or {}).get("scene_rotation", {}) or {}
+    camera_angles = scene.get("camera_angles") or [
         "polished 45-degree editorial food-photography angle",
         "refined overhead editorial angle with natural asymmetry",
         "low three-quarter restaurant-table angle",
     ]
-    light_directions = [
+    light_directions = scene.get("light_directions") or [
         "soft diffused restaurant window light entering from the left",
         "warm directional window light entering from the right",
         "diffused backlight from a restaurant window with gentle side fill",
     ]
-    surfaces = [
+    surfaces = scene.get("surfaces") or [
         "a clean medium-tone restaurant wood table",
         "a refined warm neutral tabletop",
         "a matte neutral stone restaurant table",
     ]
-    framing = [
+    framing = scene.get("framing") or [
         "plate slightly left of center with intentional negative space",
         "bowl slightly right of center with balanced breathing room",
         "close editorial framing with the dish subtly angled to the camera",
+    ]
+
+    styling_elements = scene.get("styling_elements") or [
+        "no utensil or linen",
+        "one simple fork placed partly out of focus",
+        "one softly folded neutral linen napkin",
     ]
 
     return {
@@ -97,6 +112,7 @@ def choose_human_photo_direction(slug):
         "lighting": light_directions[digest[1] % len(light_directions)],
         "surface": surfaces[digest[2] % len(surfaces)],
         "framing": framing[digest[3] % len(framing)],
+        "styling_element": styling_elements[digest[5] % len(styling_elements)],
     }
 
 
@@ -134,6 +150,8 @@ def choose_presentation_template(recipe, style):
 
     if any(word in text for word in ("soup", "chili", "stew")):
         group_name = "soup_or_chili"
+    elif any(word in text for word in ("lunch box", "lunchbox", "snack box")):
+        group_name = "lunch_box"
     elif any(word in text for word in ("wrap", "burrito", "quesadilla", "sandwich")):
         group_name = "handheld"
     elif any(word in text for word in ("pasta", "spaghetti", "penne", "alfredo")):
@@ -450,7 +468,7 @@ def build_prepared_recipe_prompt(recipe, design):
     instruction_text = get_instruction_text(recipe["instructions"])
 
     style = load_photo_style()
-    direction = choose_human_photo_direction(recipe["slug"])
+    direction = choose_human_photo_direction(recipe["slug"], style)
     presentation = choose_presentation_template(recipe, style)
     presentation_direction = (
         f'- Serving vessel and presentation: {presentation}'
@@ -518,9 +536,8 @@ PHOTOREALISM REQUIREMENTS:
   gentle optical depth of field. Do not apply HDR, excessive clarity, edge
   sharpening, plastic smoothing, or heavy advertising-style retouching.
 - Background surface: {direction["surface"]}.
-- Allow at most one restrained neutral styling element, such as a softly folded
-  linen napkin or simple utensil, placed partly out of focus and never covering
-  the food. Do not add styling props when they make the scene feel crowded.
+- Styling element: {direction["styling_element"]}. Use no other styling prop,
+  and never let it cover the food.
 
 PHOTOGRAPHY DIRECTION:
 - Lighting: {direction["lighting"]}; avoid even front lighting.
@@ -698,7 +715,7 @@ def generate_ai_food_photo(recipe, design):
         flush=True,
     )
 
-    response = client.images.generate(
+    response = get_openai_client().images.generate(
         model="gpt-image-1",
         prompt=prompt,
         size="1024x1024",
@@ -940,7 +957,7 @@ def render_classic_pin(food_image, recipe):
 
     draw = ImageDraw.Draw(background)
     title_font, title_lines = fit_title(
-        recipe["title"],
+        recipe.get("pin_headline", recipe["title"]),
         max_width=880,
         max_lines=4,
         start_size=82,
@@ -1065,7 +1082,7 @@ def render_food_first_pin(food_image, recipe):
     )
 
     title_font, title_lines = fit_title(
-        recipe["title"],
+        recipe.get("pin_headline", recipe["title"]),
         max_width=875,
         max_lines=3,
         start_size=72,
@@ -1138,7 +1155,7 @@ def render_editorial_pin(food_image, recipe, mug_series=False):
     )
 
     title_font, title_lines = fit_title(
-        recipe["title"],
+        recipe.get("pin_headline", recipe["title"]),
         max_width=810,
         max_lines=3,
         start_size=76,
@@ -1192,38 +1209,135 @@ def render_editorial_pin(food_image, recipe, mug_series=False):
     return background.convert("RGB")
 
 
+def render_benefit_pin(food_image, recipe):
+    """Render a save-oriented layout that is distinct from photo-first pins."""
+    width = 1000
+    height = 1500
+    background = Image.new("RGB", (width, height), BRAND_COLORS["paper"])
+    draw = ImageDraw.Draw(background)
+
+    eyebrow_font = get_font(25, bold=True)
+    draw.text(
+        (72, 72),
+        "SAVE THIS RECIPE",
+        font=eyebrow_font,
+        fill=BRAND_COLORS["terracotta"],
+    )
+
+    title_font, title_lines = fit_title(
+        recipe.get("pin_headline", recipe["title"]),
+        max_width=856,
+        max_lines=3,
+        start_size=78,
+        min_size=50,
+    )
+    title_end_y = draw_left_lines(
+        draw,
+        title_lines,
+        title_font,
+        72,
+        125,
+        BRAND_COLORS["ink"],
+        line_gap=10,
+    )
+
+    macro_y = title_end_y + 30
+    draw_macro_pill(
+        draw,
+        (72, macro_y, 440, macro_y + 102),
+        "PROTEIN",
+        f'{recipe["protein"]}g',
+        BRAND_COLORS["sage"],
+        BRAND_COLORS["ink"],
+    )
+    draw_macro_pill(
+        draw,
+        (462, macro_y, 850, macro_y + 102),
+        "CALORIES",
+        str(recipe["calories"]),
+        BRAND_COLORS["sand"],
+        BRAND_COLORS["ink"],
+    )
+
+    photo_top = min(macro_y + 145, 560)
+    fitted_photo = ImageOps.fit(
+        food_image,
+        (856, 1500 - photo_top - 115),
+        method=Image.Resampling.LANCZOS,
+        centering=(0.5, 0.5),
+    )
+    mask = Image.new("L", fitted_photo.size, 0)
+    mask_draw = ImageDraw.Draw(mask)
+    mask_draw.rounded_rectangle(
+        (0, 0, fitted_photo.width, fitted_photo.height),
+        radius=46,
+        fill=255,
+    )
+    background.paste(fitted_photo, (72, photo_top), mask)
+
+    brand_font = get_font(28, bold=True)
+    draw.text(
+        (72, 1435),
+        "40/400 Meals",
+        font=brand_font,
+        fill=BRAND_COLORS["sage_dark"],
+    )
+    return background
+
+
+def normalize_category_for_pin(value):
+    text = str(value or "").lower()
+    for category, keywords in (
+        ("dessert", ("dessert", "sweet", "cake", "cheesecake", "parfait")),
+        ("breakfast", ("breakfast", "brunch", "morning")),
+        ("snack", ("snack", "bite", "treat")),
+        ("lunch", ("lunch", "midday")),
+        ("dinner", ("dinner", "supper", "entree", "main")),
+    ):
+        if any(keyword in text for keyword in keywords):
+            return category
+    return "meal"
+
+
+def build_pin_variants(recipe):
+    category = normalize_category_for_pin(recipe.get("category"))
+    return (
+        (1, "classic", recipe["title"]),
+        (2, "editorial", f"Easy High-Protein {category.title()}"),
+        (3, "food_first", f'{recipe["protein"]}g Protein • {recipe["calories"]} Calories'),
+        (4, "benefit", f"Save This Easy {category.title()} Recipe"),
+    )
+
+
 def create_pinterest_pin(recipe, design):
     slug = recipe["slug"]
 
     OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
-    output_file = OUTPUT_DIR / f"{slug}-pinterest-pin.png"
-
     food_image = generate_ai_food_photo(recipe, design)
-    template = choose_pin_template(recipe, design)
 
-    if template == "food_first":
-        background = render_food_first_pin(food_image, recipe)
-    elif template == "editorial":
-        background = render_editorial_pin(
-            food_image,
-            recipe,
-            mug_series=False,
+    for number, template, headline in build_pin_variants(recipe):
+        variant_recipe = dict(recipe)
+        variant_recipe["pin_headline"] = headline
+        output_file = (
+            OUTPUT_DIR / f"{slug}-pinterest-pin.png"
+            if number == 1
+            else OUTPUT_DIR / f"{slug}-pinterest-v{number}.png"
         )
-    elif template == "mug_series":
-        background = render_editorial_pin(
-            food_image,
-            recipe,
-            mug_series=True,
+
+        if template == "food_first":
+            background = render_food_first_pin(food_image, variant_recipe)
+        elif template == "editorial":
+            background = render_editorial_pin(food_image, variant_recipe)
+        elif template == "benefit":
+            background = render_benefit_pin(food_image, variant_recipe)
+        else:
+            background = render_classic_pin(food_image, variant_recipe)
+
+        background.save(output_file)
+        print(
+            f"Pinterest image created or refreshed: {output_file} "
+            f"(variant: v{number}, template: {template})"
         )
-    else:
-        background = render_classic_pin(food_image, recipe)
-
-    background.save(output_file)
-
-    print(
-        f"Pinterest image created or refreshed: {output_file} "
-        f"(template: {template})"
-    )
 
 
 # -----------------------------

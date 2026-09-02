@@ -1,6 +1,8 @@
 name: Generate Recipe Pages
 
 on:
+  schedule:
+    - cron: "0 14 * * *"
   push:
     branches:
       - main
@@ -227,6 +229,7 @@ jobs:
         env:
           MAKE_WEBHOOK_URL: ${{ secrets.MAKE_WEBHOOK_URL }}
           SITE_BASE_URL: https://40400meals.com
+          BEAR_MAX_PINS_PER_RUN: "4"
 
       - name: Update Google growth dashboard
         run: python tools/update_growth_dashboard.py --recipes "$BEAR_PUBLISH_COUNT" --pins "$BEAR_PUBLISH_COUNT"

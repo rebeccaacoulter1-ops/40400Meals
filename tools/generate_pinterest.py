@@ -1,8 +1,11 @@
 import json
 import shutil
+from datetime import datetime, timedelta
 from pathlib import Path
+from urllib.parse import parse_qsl, urlencode, urlsplit, urlunsplit
 
 from drive_config import PLATFORM_FOLDERS
+from design_engine import CATEGORY_STYLES, normalize_recipe_category
 
 
 # -----------------------------
@@ -96,6 +99,11 @@ def normalize_recipe(data, recipe_file):
                 "keywords",
                 ["high protein recipes", "low sugar recipes", "40400 meals"]
             ),
+            "category": recipe.get("category", ""),
+            "published_at": data.get("homepage", {}).get(
+                "published_at",
+                recipe.get("date_published", ""),
+            ),
         }
 
     title = data.get("title", slug.replace("-", " ").title())
@@ -123,6 +131,8 @@ def normalize_recipe(data, recipe_file):
             "seo_keywords",
             ["high protein recipes", "low sugar recipes", "macro friendly meals"]
         ),
+        "category": data.get("category", ""),
+        "published_at": data.get("published_at", data.get("date_published", "")),
     }
 
 
@@ -130,21 +140,78 @@ def normalize_recipe(data, recipe_file):
 # Pinterest data builder
 # -----------------------------
 
-def build_pin_data(recipe, design_template):
+PIN_VARIANTS = (
+    {"number": 1, "template": "classic", "offset_days": 0, "hook": "recipe"},
+    {"number": 2, "template": "editorial", "offset_days": 3, "hook": "benefit"},
+    {"number": 3, "template": "food_first", "offset_days": 7, "hook": "macros"},
+    {"number": 4, "template": "benefit", "offset_days": 11, "hook": "save"},
+)
+
+
+def parse_published_at(value):
+    text = str(value or "").strip()
+    if not text:
+        return datetime.now().astimezone()
+    try:
+        return datetime.fromisoformat(text.replace("Z", "+00:00"))
+    except ValueError:
+        return datetime.now().astimezone()
+
+
+def add_variant_tracking(url, variant_number, template):
+    parts = urlsplit(url)
+    query = dict(parse_qsl(parts.query, keep_blank_values=True))
+    query.update({
+        "utm_source": "pinterest",
+        "utm_medium": "organic_social",
+        "utm_campaign": "recipe_variations",
+        "utm_content": f"v{variant_number}-{template}",
+    })
+    return urlunsplit((parts.scheme, parts.netloc, parts.path, urlencode(query), parts.fragment))
+
+
+def variant_headline(recipe, hook):
+    category = normalize_recipe_category(recipe.get("category"))
+    if hook == "macros":
+        return f'{recipe["protein"]}g Protein • {recipe["calories"]} Calories'
+    if hook == "save":
+        return f'Save This Easy {category.title()} Recipe'
+    if hook == "benefit":
+        return f'Easy High-Protein {category.title()}'
+    return recipe["title"]
+
+
+def build_pin_data(recipe, design_template, variant):
     slug = recipe["slug"]
+    number = variant["number"]
+    template = variant["template"]
+    category = normalize_recipe_category(recipe.get("category"))
+    category_style = CATEGORY_STYLES.get(category, CATEGORY_STYLES["general"])
+    legacy = number == 1
+    file_stem = f"{slug}-pinterest-pin" if legacy else f"{slug}-pinterest-v{number}"
+    scheduled_at = parse_published_at(recipe.get("published_at")) + timedelta(
+        days=variant["offset_days"]
+    )
 
     return {
         "recipe_id": recipe["recipe_id"],
         "platform": "pinterest",
-        "title": recipe["pinterest_title"],
+        "title": variant_headline(recipe, variant["hook"]),
         "description": recipe["pinterest_description"],
-        "destination_url": recipe["destination_url"],
+        "destination_url": add_variant_tracking(
+            recipe["destination_url"], number, template
+        ),
         "hashtags": recipe["hashtags"],
         "image_prompt": recipe["image_prompt"],
         "image_alt_text": recipe["image_alt_text"],
-        "pin_filename": f"{slug}-pinterest-pin.png",
-        "image_filename": f"{slug}-pinterest-pin.png",
-        "image_path": f"outputs/images/pinterest/{slug}-pinterest-pin.png",
+        "variant_id": f"v{number}",
+        "variant_number": number,
+        "scheduled_at": scheduled_at.isoformat(),
+        "pin_template": template,
+        "pin_headline": variant_headline(recipe, variant["hook"]),
+        "pin_filename": f"{file_stem}.png",
+        "image_filename": f"{file_stem}.png",
+        "image_path": f"outputs/images/pinterest/{file_stem}.png",
         "image_mime_type": "image/png",
 
         "design_brain": {
@@ -152,22 +219,22 @@ def build_pin_data(recipe, design_template):
             "template_type": design_template.get("template_type"),
             "season": design_template.get("season"),
             "month": design_template.get("month"),
-            "recipe_category": design_template.get("recipe_category"),
-            "image_style": design_template.get("image_style"),
-            "photo_composition": design_template.get("photo_composition"),
+            "recipe_category": category,
+            "image_style": category_style["image_style"],
+            "photo_composition": category_style["photo_composition"],
             "color_mood": design_template.get("color_mood"),
             "accent_colors": design_template.get("accent_colors"),
             "text_style": design_template.get("text_style"),
             "overlay_style": design_template.get("overlay_style"),
             "icon_style": design_template.get("icon_style"),
-            "layout_recommendation": design_template.get("layout_recommendation"),
+            "layout_recommendation": template,
             "optimization": design_template.get("optimization"),
             "version": design_template.get("version"),
             "status": design_template.get("status")
         },
 
         "canva_text_overlay": {
-            "headline": recipe["title"],
+            "headline": variant_headline(recipe, variant["hook"]),
             "subheadline": f'{recipe["protein"]}g Protein • {recipe["calories"]} Calories',
             "brand": "40/400 Meals"
         },
@@ -182,24 +249,31 @@ def process_recipe(recipe_file, design_template):
     recipe = normalize_recipe(data, recipe_file)
     slug = recipe["slug"]
 
-    pin_data = build_pin_data(recipe, design_template)
-
     pinterest_dir = PLATFORM_FOLDERS["pinterest"]
     make_queue_dir = PLATFORM_FOLDERS["make_queue"]
 
     pinterest_dir.mkdir(parents=True, exist_ok=True)
     make_queue_dir.mkdir(parents=True, exist_ok=True)
 
-    pinterest_file = pinterest_dir / f"{slug}.json"
-    make_queue_file = make_queue_dir / f"{slug}-pinterest.json"
+    for variant in PIN_VARIANTS:
+        pin_data = build_pin_data(recipe, design_template, variant)
+        number = variant["number"]
+        legacy = number == 1
+        metadata_name = f"{slug}.json" if legacy else f"{slug}-v{number}.json"
+        queue_name = (
+            f"{slug}-pinterest.json"
+            if legacy
+            else f"{slug}-pinterest-v{number}.json"
+        )
+        pinterest_file = pinterest_dir / metadata_name
+        make_queue_file = make_queue_dir / queue_name
 
-    with open(pinterest_file, "w", encoding="utf-8") as f:
-        json.dump(pin_data, f, indent=2)
+        with open(pinterest_file, "w", encoding="utf-8") as f:
+            json.dump(pin_data, f, indent=2)
 
-    shutil.copyfile(pinterest_file, make_queue_file)
-
-    print(f"Pinterest file created: {pinterest_file}")
-    print(f"Make queue file created: {make_queue_file}")
+        shutil.copyfile(pinterest_file, make_queue_file)
+        print(f"Pinterest variant created: {pinterest_file}")
+        print(f"Make queue variant created: {make_queue_file}")
 
 
 # -----------------------------

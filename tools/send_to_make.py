@@ -3,6 +3,7 @@ import os
 import time
 import uuid
 import urllib.request
+from datetime import datetime, timezone
 from pathlib import Path
 
 from bear_memory import (
@@ -23,6 +24,7 @@ PINTEREST_IMAGE_DIR = Path("outputs/images/pinterest")
 
 PUBLIC_IMAGE_WAIT_SECONDS = 180
 PUBLIC_IMAGE_RETRY_SECONDS = 10
+MAX_PINS_PER_RUN = int(os.environ.get("BEAR_MAX_PINS_PER_RUN", "4"))
 
 
 def load_json(path, default=None):
@@ -31,6 +33,26 @@ def load_json(path, default=None):
 
     with open(path, "r", encoding="utf-8") as file:
         return json.load(file)
+
+
+def scheduled_time(payload):
+    value = str(payload.get("scheduled_at", "")).strip()
+    if not value:
+        return datetime.min.replace(tzinfo=timezone.utc)
+    try:
+        parsed = datetime.fromisoformat(value.replace("Z", "+00:00"))
+    except ValueError:
+        return datetime.min.replace(tzinfo=timezone.utc)
+    if parsed.tzinfo is None:
+        parsed = parsed.replace(tzinfo=timezone.utc)
+    return parsed.astimezone(timezone.utc)
+
+
+def publishing_key(payload, slug):
+    variant = str(payload.get("variant_id", "")).strip()
+    if not variant or variant == "v1":
+        return slug
+    return f"{slug}-pinterest-{variant}"
 
 
 def find_pinterest_image(payload, slug):
@@ -182,13 +204,17 @@ def main():
         print("No make_queue folder found.")
         return
 
-    files = sorted(QUEUE.glob("*.json"))
+    files = sorted(
+        QUEUE.glob("*.json"),
+        key=lambda path: scheduled_time(load_json(path, default={})),
+    )
 
     if not files:
         print("No queue files to send.")
         return
 
     failures = []
+    published_count = 0
 
     for file in files:
         print(f"Preparing {file.name}", flush=True)
@@ -200,7 +226,9 @@ def main():
             slug = file.stem.replace("-pinterest", "")
             payload["slug"] = slug
 
-        if is_step_complete(slug, "pinterest"):
+        publish_key = publishing_key(payload, slug)
+
+        if is_step_complete(publish_key, "pinterest"):
             print(
                 f"Pinterest already completed for {slug}",
                 flush=True,
@@ -208,6 +236,22 @@ def main():
             file.unlink()
             print(
                 f"Removed duplicate queue file: {file.name}",
+                flush=True,
+            )
+            continue
+
+        if scheduled_time(payload) > datetime.now(timezone.utc):
+            print(
+                f"Pinterest variant is not due yet: {file.name} "
+                f"({payload.get('scheduled_at')})",
+                flush=True,
+            )
+            continue
+
+        if published_count >= MAX_PINS_PER_RUN:
+            print(
+                f"Pinterest run cap reached ({MAX_PINS_PER_RUN}); "
+                f"leaving {file.name} queued",
                 flush=True,
             )
             continue
@@ -240,7 +284,7 @@ def main():
                 )
 
             mark_step_complete(
-                slug,
+                publish_key,
                 "pinterest",
                 {
                     "destination_url": payload.get(
@@ -252,6 +296,7 @@ def main():
             )
 
             file.unlink()
+            published_count += 1
 
             print(
                 f"Recorded Pinterest completion for {slug}",
@@ -269,7 +314,7 @@ def main():
                 flush=True,
             )
             mark_step_failed(
-                slug,
+                publish_key,
                 "pinterest",
                 str(error),
             )

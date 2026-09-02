@@ -15,6 +15,8 @@
       "oval_baking_dish": "Present the finished baked recipe in a small oval ceramic baking dish with realistic browned edges and a naturally served portion.",
       "dessert_glass": "Serve the finished yogurt, parfait, pudding, or chilled dessert in a simple clear dessert glass or low coupe so its natural layers and texture are visible.",
       "ramekin": "Serve the finished small baked dessert or snack in a simple ceramic ramekin with a believable homemade surface and edge texture."
+      ,"divided_lunch_container": "Pack the meal in a practical clear divided lunch container with only the written ingredients and any sealed packaged side placed beside it."
+      ,"rimmed_sheet_pan": "Present the finished sheet-pan meal naturally on a dark rimmed baking sheet with one serving disturbed as if just plated."
     },
     "groups": {
       "soup_or_chili": ["deep_stoneware_bowl", "shallow_pasta_bowl"],
@@ -24,8 +26,43 @@
       "skillet": ["cast_iron_skillet", "shallow_pasta_bowl", "wide_ceramic_plate"],
       "baked": ["oval_baking_dish", "wide_ceramic_plate"],
       "dessert": ["dessert_glass", "ramekin", "shallow_pasta_bowl"],
-      "general": ["wide_ceramic_plate", "shallow_pasta_bowl", "deep_stoneware_bowl", "cast_iron_skillet"]
+      "lunch_box": ["divided_lunch_container"],
+      "general": ["wide_ceramic_plate", "shallow_pasta_bowl", "deep_stoneware_bowl", "cast_iron_skillet", "oval_baking_dish"]
     }
+  },
+  "scene_rotation": {
+    "camera_angles": [
+      "polished 45-degree editorial food-photography angle",
+      "refined overhead editorial angle with natural asymmetry",
+      "low three-quarter restaurant-table angle",
+      "tight table-level detail angle focused on the most appetizing texture"
+    ],
+    "light_directions": [
+      "soft diffused restaurant window light entering from the left",
+      "warm directional window light entering from the right",
+      "diffused backlight from a restaurant window with gentle side fill",
+      "soft morning window light from behind the camera-right shoulder"
+    ],
+    "surfaces": [
+      "a clean medium-tone restaurant wood table",
+      "a matte neutral stone restaurant table",
+      "a pale honed marble counter with restrained veining",
+      "a warm cream linen-covered tabletop",
+      "a dark walnut table with a soft natural grain"
+    ],
+    "framing": [
+      "dish slightly left of center with intentional negative space",
+      "dish slightly right of center with balanced breathing room",
+      "close editorial framing with the dish subtly angled to the camera",
+      "casual overhead crop with one edge of the serving vessel naturally outside frame"
+    ],
+    "styling_elements": [
+      "no utensil or linen",
+      "one simple brushed-metal fork placed partly out of focus",
+      "one simple spoon placed partly out of focus",
+      "one softly folded solid-color linen napkin",
+      "one subtle seasonal printed towel appropriate to the recipe month"
+    ]
   },
   "required_style": [
     "Use soft directional restaurant window light with shaped, believable shadows rather than flat even illumination.",
