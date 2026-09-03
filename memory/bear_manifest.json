@@ -1121,6 +1121,66 @@
           }
         }
       }
+    },
+    "chili-lime-chips-guac-protein-snack-v4-pinterest-v4": {
+      "created_at_utc": "2026-09-03T17:37:43.102050+00:00",
+      "updated_at_utc": "2026-09-03T17:37:43.102070+00:00",
+      "steps": {
+        "pinterest": {
+          "complete": true,
+          "completed_at_utc": "2026-09-03T17:37:43.102070+00:00",
+          "details": {
+            "destination_url": "https://40400meals.com/recipes/chili-lime-chips-guac-protein-snack.html?utm_source=pinterest&utm_medium=organic_social&utm_campaign=recipe_variations&utm_content=v4-benefit",
+            "image_url": "https://40400meals.com/outputs/images/pinterest/chili-lime-chips-guac-protein-snack-pinterest-v4.png",
+            "file_name": "chili-lime-chips-guac-protein-snack-pinterest-v4.json"
+          }
+        }
+      }
+    },
+    "sour-peach-orange-protein-snack-v4-pinterest-v4": {
+      "created_at_utc": "2026-09-03T17:37:43.595442+00:00",
+      "updated_at_utc": "2026-09-03T17:37:43.595464+00:00",
+      "steps": {
+        "pinterest": {
+          "complete": true,
+          "completed_at_utc": "2026-09-03T17:37:43.595464+00:00",
+          "details": {
+            "destination_url": "https://40400meals.com/recipes/sour-peach-orange-protein-snack.html?utm_source=pinterest&utm_medium=organic_social&utm_campaign=recipe_variations&utm_content=v4-benefit",
+            "image_url": "https://40400meals.com/outputs/images/pinterest/sour-peach-orange-protein-snack-pinterest-v4.png",
+            "file_name": "sour-peach-orange-protein-snack-pinterest-v4.json"
+          }
+        }
+      }
+    },
+    "creamy-greek-chicken-bowl-v2-pinterest-v2": {
+      "created_at_utc": "2026-09-03T17:37:44.145273+00:00",
+      "updated_at_utc": "2026-09-03T17:37:44.145294+00:00",
+      "steps": {
+        "pinterest": {
+          "complete": true,
+          "completed_at_utc": "2026-09-03T17:37:44.145294+00:00",
+          "details": {
+            "destination_url": "https://40400meals.com/recipes/creamy-greek-chicken-bowl.html?utm_source=pinterest&utm_medium=organic_social&utm_campaign=recipe_variations&utm_content=v2-editorial",
+            "image_url": "https://40400meals.com/outputs/images/pinterest/creamy-greek-chicken-bowl-pinterest-v2.png",
+            "file_name": "creamy-greek-chicken-bowl-pinterest-v2.json"
+          }
+        }
+      }
+    },
+    "creamy-salsa-taco-salad-bowl-v2-pinterest-v2": {
+      "created_at_utc": "2026-09-03T17:37:46.971893+00:00",
+      "updated_at_utc": "2026-09-03T17:37:46.971912+00:00",
+      "steps": {
+        "pinterest": {
+          "complete": true,
+          "completed_at_utc": "2026-09-03T17:37:46.971912+00:00",
+          "details": {
+            "destination_url": "https://40400meals.com/recipes/creamy-salsa-taco-salad-bowl.html?utm_source=pinterest&utm_medium=organic_social&utm_campaign=recipe_variations&utm_content=v2-editorial",
+            "image_url": "https://40400meals.com/outputs/images/pinterest/creamy-salsa-taco-salad-bowl-pinterest-v2.png",
+            "file_name": "creamy-salsa-taco-salad-bowl-pinterest-v2.json"
+          }
+        }
+      }
     }
   }
 }
