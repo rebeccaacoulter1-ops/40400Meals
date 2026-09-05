@@ -1,0 +1,63 @@
+{
+  "recipe_id": "creamy-chicken-poblano-skillet",
+  "platform": "pinterest",
+  "title": "Creamy Chicken Poblano Skillet",
+  "description": "Juicy air-fried chicken, cauliflower rice, black beans, creamy poblano sauce, and crunchy salsa verde protein chips.",
+  "destination_url": "https://40400meals.com/recipes/creamy-chicken-poblano-skillet.html?utm_source=pinterest&utm_medium=organic_social&utm_campaign=recipe_variations&utm_content=v1-classic",
+  "hashtags": [
+    "#PoblanoChicken",
+    "#HighProteinDinner",
+    "#AirFryerChicken",
+    "#40400Meals"
+  ],
+  "image_prompt": "Premium food-blog editorial bowl with sliced juicy air-fried chicken breast beside cauliflower rice, black beans, and corn, topped with pale green creamy roasted poblano sauce and crushed salsa verde protein tortilla chips. Realistic homemade texture and warm natural light.",
+  "image_alt_text": "Creamy chicken poblano skillet with cauliflower rice, black beans, corn, and salsa verde protein chips.",
+  "variant_id": "v1",
+  "variant_number": 1,
+  "scheduled_at": "2026-08-21T12:00:00-05:00",
+  "pin_template": "classic",
+  "pin_headline": "Creamy Chicken Poblano Skillet",
+  "pin_filename": "creamy-chicken-poblano-skillet-pinterest-pin.png",
+  "image_filename": "creamy-chicken-poblano-skillet-pinterest-pin.png",
+  "image_path": "outputs/images/pinterest/creamy-chicken-poblano-skillet-pinterest-pin.png",
+  "image_mime_type": "image/png",
+  "design_brain": {
+    "template_name": "P07 Fall",
+    "template_type": "seasonal",
+    "season": "fall",
+    "month": 9,
+    "recipe_category": "dinner",
+    "image_style": "warm realistic food photography",
+    "photo_composition": "45-degree angle",
+    "color_mood": "warm rich premium recipe-blog color with natural variation",
+    "accent_colors": [
+      "#FFF7ED",
+      "#F97316",
+      "#7C2D12"
+    ],
+    "text_style": "clean and modern",
+    "overlay_style": "minimal",
+    "icon_style": "minimal",
+    "layout_recommendation": "classic",
+    "optimization": {
+      "visual_appeal": "high",
+      "save_potential": "high",
+      "click_potential": "high"
+    },
+    "version": "2.5",
+    "status": "design_strategy_ready"
+  },
+  "canva_text_overlay": {
+    "headline": "Creamy Chicken Poblano Skillet",
+    "subheadline": "44g Protein \u2022 410 Calories",
+    "brand": "40/400 Meals"
+  },
+  "seo_keywords": [
+    "creamy chicken poblano skillet",
+    "high protein chicken skillet",
+    "air fryer chicken breast",
+    "poblano chicken bowl",
+    "40 400 meals"
+  ],
+  "status": "ready_for_make"
+}

@@ -1,0 +1,62 @@
+{
+  "recipe_id": "sticky-teriyaki-chicken-rice-bowls",
+  "platform": "pinterest",
+  "title": "Sticky Teriyaki Chicken Rice Bowls",
+  "description": "Sweet, family-friendly teriyaki chicken with broccoli, pineapple, and a hidden cauliflower-jasmine rice blend. 42g protein and 394 calories.",
+  "destination_url": "https://40400meals.com/recipes/sticky-teriyaki-chicken-rice-bowls.html?utm_source=pinterest&utm_medium=organic_social&utm_campaign=recipe_variations&utm_content=v1-classic",
+  "hashtags": [
+    "#TeriyakiChicken",
+    "#ChickenRiceBowl",
+    "#FamilyFriendlyDinner",
+    "#40400Meals"
+  ],
+  "image_prompt": "Premium food-blog editorial photo of a realistic teriyaki chicken rice bowl with glossy bite-size chicken, broccoli florets, small pineapple chunks, and a visible jasmine and cauliflower rice blend. Family-friendly homemade presentation in a neutral bowl, warm natural light, no chopsticks and no extra garnish.",
+  "image_alt_text": "Teriyaki chicken bowl with broccoli, pineapple, and rice.",
+  "variant_id": "v1",
+  "variant_number": 1,
+  "scheduled_at": "2026-09-01T10:05:00-05:00",
+  "pin_template": "classic",
+  "pin_headline": "Sticky Teriyaki Chicken Rice Bowls",
+  "pin_filename": "sticky-teriyaki-chicken-rice-bowls-pinterest-pin.png",
+  "image_filename": "sticky-teriyaki-chicken-rice-bowls-pinterest-pin.png",
+  "image_path": "outputs/images/pinterest/sticky-teriyaki-chicken-rice-bowls-pinterest-pin.png",
+  "image_mime_type": "image/png",
+  "design_brain": {
+    "template_name": "P07 Fall",
+    "template_type": "seasonal",
+    "season": "fall",
+    "month": 9,
+    "recipe_category": "dinner",
+    "image_style": "warm realistic food photography",
+    "photo_composition": "45-degree angle",
+    "color_mood": "warm rich premium recipe-blog color with natural variation",
+    "accent_colors": [
+      "#FFF7ED",
+      "#F97316",
+      "#7C2D12"
+    ],
+    "text_style": "clean and modern",
+    "overlay_style": "minimal",
+    "icon_style": "minimal",
+    "layout_recommendation": "classic",
+    "optimization": {
+      "visual_appeal": "high",
+      "save_potential": "high",
+      "click_potential": "high"
+    },
+    "version": "2.5",
+    "status": "design_strategy_ready"
+  },
+  "canva_text_overlay": {
+    "headline": "Sticky Teriyaki Chicken Rice Bowls",
+    "subheadline": "42g Protein \u2022 394 Calories",
+    "brand": "40/400 Meals"
+  },
+  "seo_keywords": [
+    "teriyaki chicken rice bowl",
+    "high protein Asian inspired dinner",
+    "family friendly chicken bowl",
+    "40 400 meals"
+  ],
+  "status": "ready_for_make"
+}
