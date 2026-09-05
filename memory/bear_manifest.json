@@ -1241,6 +1241,66 @@
           }
         }
       }
+    },
+    "creamy-greek-chicken-bowl-v3-pinterest-v3": {
+      "created_at_utc": "2026-09-05T16:37:36.755746+00:00",
+      "updated_at_utc": "2026-09-05T16:37:36.755759+00:00",
+      "steps": {
+        "pinterest": {
+          "complete": true,
+          "completed_at_utc": "2026-09-05T16:37:36.755759+00:00",
+          "details": {
+            "destination_url": "https://40400meals.com/recipes/creamy-greek-chicken-bowl.html?utm_source=pinterest&utm_medium=organic_social&utm_campaign=recipe_variations&utm_content=v3-food_first",
+            "image_url": "https://40400meals.com/outputs/images/pinterest/creamy-greek-chicken-bowl-pinterest-v3.png",
+            "file_name": "creamy-greek-chicken-bowl-pinterest-v3.json"
+          }
+        }
+      }
+    },
+    "creamy-salsa-taco-salad-bowl-v3-pinterest-v3": {
+      "created_at_utc": "2026-09-05T16:37:37.879645+00:00",
+      "updated_at_utc": "2026-09-05T16:37:37.879660+00:00",
+      "steps": {
+        "pinterest": {
+          "complete": true,
+          "completed_at_utc": "2026-09-05T16:37:37.879660+00:00",
+          "details": {
+            "destination_url": "https://40400meals.com/recipes/creamy-salsa-taco-salad-bowl.html?utm_source=pinterest&utm_medium=organic_social&utm_campaign=recipe_variations&utm_content=v3-food_first",
+            "image_url": "https://40400meals.com/outputs/images/pinterest/creamy-salsa-taco-salad-bowl-pinterest-v3.png",
+            "file_name": "creamy-salsa-taco-salad-bowl-pinterest-v3.json"
+          }
+        }
+      }
+    },
+    "steakhouse-filet-loaded-baked-potato-v4-pinterest-v4": {
+      "created_at_utc": "2026-09-05T16:37:39.086984+00:00",
+      "updated_at_utc": "2026-09-05T16:37:39.087003+00:00",
+      "steps": {
+        "pinterest": {
+          "complete": true,
+          "completed_at_utc": "2026-09-05T16:37:39.087003+00:00",
+          "details": {
+            "destination_url": "https://40400meals.com/recipes/steakhouse-filet-loaded-baked-potato.html?utm_source=pinterest&utm_medium=organic_social&utm_campaign=recipe_variations&utm_content=v4-benefit",
+            "image_url": "https://40400meals.com/outputs/images/pinterest/steakhouse-filet-loaded-baked-potato-pinterest-v4.png",
+            "file_name": "steakhouse-filet-loaded-baked-potato-pinterest-v4.json"
+          }
+        }
+      }
+    },
+    "one-pot-chicken-broccoli-alfredo-protein-penne-v4-pinterest-v4": {
+      "created_at_utc": "2026-09-05T16:37:39.917852+00:00",
+      "updated_at_utc": "2026-09-05T16:37:39.917873+00:00",
+      "steps": {
+        "pinterest": {
+          "complete": true,
+          "completed_at_utc": "2026-09-05T16:37:39.917873+00:00",
+          "details": {
+            "destination_url": "https://40400meals.com/recipes/one-pot-chicken-broccoli-alfredo-protein-penne.html?utm_source=pinterest&utm_medium=organic_social&utm_campaign=recipe_variations&utm_content=v4-benefit",
+            "image_url": "https://40400meals.com/outputs/images/pinterest/one-pot-chicken-broccoli-alfredo-protein-penne-pinterest-v4.png",
+            "file_name": "one-pot-chicken-broccoli-alfredo-protein-penne-pinterest-v4.json"
+          }
+        }
+      }
     }
   }
 }
