@@ -1361,6 +1361,66 @@
           }
         }
       }
+    },
+    "pineapple-cottage-cheese-strawberry-cheesecake-shake-v2-pinterest-v2": {
+      "created_at_utc": "2026-09-07T18:40:10.773804+00:00",
+      "updated_at_utc": "2026-09-07T18:40:10.773825+00:00",
+      "steps": {
+        "pinterest": {
+          "complete": true,
+          "completed_at_utc": "2026-09-07T18:40:10.773825+00:00",
+          "details": {
+            "destination_url": "https://40400meals.com/recipes/pineapple-cottage-cheese-strawberry-cheesecake-shake.html?utm_source=pinterest&utm_medium=organic_social&utm_campaign=recipe_variations&utm_content=v2-editorial",
+            "image_url": "https://40400meals.com/outputs/images/pinterest/pineapple-cottage-cheese-strawberry-cheesecake-shake-pinterest-v2.png",
+            "file_name": "pineapple-cottage-cheese-strawberry-cheesecake-shake-pinterest-v2.json"
+          }
+        }
+      }
+    },
+    "sheet-pan-taco-chicken-veggies-mexican-rice-v2-pinterest-v2": {
+      "created_at_utc": "2026-09-07T18:40:11.343293+00:00",
+      "updated_at_utc": "2026-09-07T18:40:11.343312+00:00",
+      "steps": {
+        "pinterest": {
+          "complete": true,
+          "completed_at_utc": "2026-09-07T18:40:11.343312+00:00",
+          "details": {
+            "destination_url": "https://40400meals.com/recipes/sheet-pan-taco-chicken-veggies-mexican-rice.html?utm_source=pinterest&utm_medium=organic_social&utm_campaign=recipe_variations&utm_content=v2-editorial",
+            "image_url": "https://40400meals.com/outputs/images/pinterest/sheet-pan-taco-chicken-veggies-mexican-rice-pinterest-v2.png",
+            "file_name": "sheet-pan-taco-chicken-veggies-mexican-rice-pinterest-v2.json"
+          }
+        }
+      }
+    },
+    "vanilla-berry-protein-waffle-bowl-v2-pinterest-v2": {
+      "created_at_utc": "2026-09-07T18:40:11.809272+00:00",
+      "updated_at_utc": "2026-09-07T18:40:11.809291+00:00",
+      "steps": {
+        "pinterest": {
+          "complete": true,
+          "completed_at_utc": "2026-09-07T18:40:11.809291+00:00",
+          "details": {
+            "destination_url": "https://40400meals.com/recipes/vanilla-berry-protein-waffle-bowl.html?utm_source=pinterest&utm_medium=organic_social&utm_campaign=recipe_variations&utm_content=v2-editorial",
+            "image_url": "https://40400meals.com/outputs/images/pinterest/vanilla-berry-protein-waffle-bowl-pinterest-v2.png",
+            "file_name": "vanilla-berry-protein-waffle-bowl-pinterest-v2.json"
+          }
+        }
+      }
+    },
+    "dump-and-go-salsa-verde-chicken-bowls-v2-pinterest-v2": {
+      "created_at_utc": "2026-09-07T18:40:12.408623+00:00",
+      "updated_at_utc": "2026-09-07T18:40:12.408642+00:00",
+      "steps": {
+        "pinterest": {
+          "complete": true,
+          "completed_at_utc": "2026-09-07T18:40:12.408642+00:00",
+          "details": {
+            "destination_url": "https://40400meals.com/recipes/dump-and-go-salsa-verde-chicken-bowls.html?utm_source=pinterest&utm_medium=organic_social&utm_campaign=recipe_variations&utm_content=v2-editorial",
+            "image_url": "https://40400meals.com/outputs/images/pinterest/dump-and-go-salsa-verde-chicken-bowls-pinterest-v2.png",
+            "file_name": "dump-and-go-salsa-verde-chicken-bowls-pinterest-v2.json"
+          }
+        }
+      }
     }
   }
 }
