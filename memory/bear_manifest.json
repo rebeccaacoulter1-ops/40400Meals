@@ -1421,6 +1421,66 @@
           }
         }
       }
+    },
+    "dump-and-go-creamy-tuscan-chicken-v2-pinterest-v2": {
+      "created_at_utc": "2026-09-08T17:50:07.256083+00:00",
+      "updated_at_utc": "2026-09-08T17:50:07.256098+00:00",
+      "steps": {
+        "pinterest": {
+          "complete": true,
+          "completed_at_utc": "2026-09-08T17:50:07.256098+00:00",
+          "details": {
+            "destination_url": "https://40400meals.com/recipes/dump-and-go-creamy-tuscan-chicken.html?utm_source=pinterest&utm_medium=organic_social&utm_campaign=recipe_variations&utm_content=v2-editorial",
+            "image_url": "https://40400meals.com/outputs/images/pinterest/dump-and-go-creamy-tuscan-chicken-pinterest-v2.png",
+            "file_name": "dump-and-go-creamy-tuscan-chicken-pinterest-v2.json"
+          }
+        }
+      }
+    },
+    "dump-and-go-crockpot-beef-and-broccoli-v2-pinterest-v2": {
+      "created_at_utc": "2026-09-08T17:50:07.733009+00:00",
+      "updated_at_utc": "2026-09-08T17:50:07.733026+00:00",
+      "steps": {
+        "pinterest": {
+          "complete": true,
+          "completed_at_utc": "2026-09-08T17:50:07.733026+00:00",
+          "details": {
+            "destination_url": "https://40400meals.com/recipes/dump-and-go-crockpot-beef-and-broccoli.html?utm_source=pinterest&utm_medium=organic_social&utm_campaign=recipe_variations&utm_content=v2-editorial",
+            "image_url": "https://40400meals.com/outputs/images/pinterest/dump-and-go-crockpot-beef-and-broccoli-pinterest-v2.png",
+            "file_name": "dump-and-go-crockpot-beef-and-broccoli-pinterest-v2.json"
+          }
+        }
+      }
+    },
+    "dump-and-go-white-chicken-chili-v2-pinterest-v2": {
+      "created_at_utc": "2026-09-08T17:50:08.293642+00:00",
+      "updated_at_utc": "2026-09-08T17:50:08.293660+00:00",
+      "steps": {
+        "pinterest": {
+          "complete": true,
+          "completed_at_utc": "2026-09-08T17:50:08.293660+00:00",
+          "details": {
+            "destination_url": "https://40400meals.com/recipes/dump-and-go-white-chicken-chili.html?utm_source=pinterest&utm_medium=organic_social&utm_campaign=recipe_variations&utm_content=v2-editorial",
+            "image_url": "https://40400meals.com/outputs/images/pinterest/dump-and-go-white-chicken-chili-pinterest-v2.png",
+            "file_name": "dump-and-go-white-chicken-chili-pinterest-v2.json"
+          }
+        }
+      }
+    },
+    "dump-and-go-bbq-chicken-sweet-potatoes-v2-pinterest-v2": {
+      "created_at_utc": "2026-09-08T17:50:08.776371+00:00",
+      "updated_at_utc": "2026-09-08T17:50:08.776388+00:00",
+      "steps": {
+        "pinterest": {
+          "complete": true,
+          "completed_at_utc": "2026-09-08T17:50:08.776388+00:00",
+          "details": {
+            "destination_url": "https://40400meals.com/recipes/dump-and-go-bbq-chicken-sweet-potatoes.html?utm_source=pinterest&utm_medium=organic_social&utm_campaign=recipe_variations&utm_content=v2-editorial",
+            "image_url": "https://40400meals.com/outputs/images/pinterest/dump-and-go-bbq-chicken-sweet-potatoes-pinterest-v2.png",
+            "file_name": "dump-and-go-bbq-chicken-sweet-potatoes-pinterest-v2.json"
+          }
+        }
+      }
     }
   }
 }
