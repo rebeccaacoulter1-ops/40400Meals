@@ -1481,6 +1481,66 @@
           }
         }
       }
+    },
+    "high-protein-breakfast-quesadilla-v2-pinterest-v2": {
+      "created_at_utc": "2026-09-09T17:40:49.093463+00:00",
+      "updated_at_utc": "2026-09-09T17:40:49.093504+00:00",
+      "steps": {
+        "pinterest": {
+          "complete": true,
+          "completed_at_utc": "2026-09-09T17:40:49.093504+00:00",
+          "details": {
+            "destination_url": "https://40400meals.com/recipes/high-protein-breakfast-quesadilla.html?utm_source=pinterest&utm_medium=organic_social&utm_campaign=recipe_variations&utm_content=v2-editorial",
+            "image_url": "https://40400meals.com/outputs/images/pinterest/high-protein-breakfast-quesadilla-pinterest-v2.png",
+            "file_name": "high-protein-breakfast-quesadilla-pinterest-v2.json"
+          }
+        }
+      }
+    },
+    "honey-mustard-chicken-crunch-wrap-v2-pinterest-v2": {
+      "created_at_utc": "2026-09-09T17:40:49.692861+00:00",
+      "updated_at_utc": "2026-09-09T17:40:49.692872+00:00",
+      "steps": {
+        "pinterest": {
+          "complete": true,
+          "completed_at_utc": "2026-09-09T17:40:49.692872+00:00",
+          "details": {
+            "destination_url": "https://40400meals.com/recipes/honey-mustard-chicken-crunch-wrap.html?utm_source=pinterest&utm_medium=organic_social&utm_campaign=recipe_variations&utm_content=v2-editorial",
+            "image_url": "https://40400meals.com/outputs/images/pinterest/honey-mustard-chicken-crunch-wrap-pinterest-v2.png",
+            "file_name": "honey-mustard-chicken-crunch-wrap-pinterest-v2.json"
+          }
+        }
+      }
+    },
+    "loaded-cheeseburger-protein-bowl-v2-pinterest-v2": {
+      "created_at_utc": "2026-09-09T17:40:50.364966+00:00",
+      "updated_at_utc": "2026-09-09T17:40:50.364976+00:00",
+      "steps": {
+        "pinterest": {
+          "complete": true,
+          "completed_at_utc": "2026-09-09T17:40:50.364976+00:00",
+          "details": {
+            "destination_url": "https://40400meals.com/recipes/loaded-cheeseburger-protein-bowl.html?utm_source=pinterest&utm_medium=organic_social&utm_campaign=recipe_variations&utm_content=v2-editorial",
+            "image_url": "https://40400meals.com/outputs/images/pinterest/loaded-cheeseburger-protein-bowl-pinterest-v2.png",
+            "file_name": "loaded-cheeseburger-protein-bowl-pinterest-v2.json"
+          }
+        }
+      }
+    },
+    "chicken-parmesan-protein-pasta-v2-pinterest-v2": {
+      "created_at_utc": "2026-09-09T17:40:51.331385+00:00",
+      "updated_at_utc": "2026-09-09T17:40:51.331396+00:00",
+      "steps": {
+        "pinterest": {
+          "complete": true,
+          "completed_at_utc": "2026-09-09T17:40:51.331396+00:00",
+          "details": {
+            "destination_url": "https://40400meals.com/recipes/chicken-parmesan-protein-pasta.html?utm_source=pinterest&utm_medium=organic_social&utm_campaign=recipe_variations&utm_content=v2-editorial",
+            "image_url": "https://40400meals.com/outputs/images/pinterest/chicken-parmesan-protein-pasta-pinterest-v2.png",
+            "file_name": "chicken-parmesan-protein-pasta-pinterest-v2.json"
+          }
+        }
+      }
     }
   }
 }
