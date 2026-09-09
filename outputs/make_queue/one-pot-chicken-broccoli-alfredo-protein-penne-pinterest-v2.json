@@ -1,0 +1,66 @@
+{
+  "recipe_id": "one-pot-chicken-broccoli-alfredo-protein-penne",
+  "platform": "pinterest",
+  "title": "Easy High-Protein Dinner",
+  "description": "Creamy chicken broccoli Alfredo made with protein penne and chicken bone broth in one pot. Each serving has approximately 43 grams of protein and 390 calories.",
+  "destination_url": "https://40400meals.com/recipes/one-pot-chicken-broccoli-alfredo-protein-penne.html?utm_source=pinterest&utm_medium=organic_social&utm_campaign=recipe_variations&utm_content=v2-editorial",
+  "hashtags": [
+    "#OnePotPasta",
+    "#ChickenAlfredo",
+    "#HighProteinDinner",
+    "#FamilyDinner",
+    "#40400Meals"
+  ],
+  "image_prompt": "A realistic shallow bowl of creamy penne Alfredo with bite-size chicken breast and broccoli mixed throughout. The sauce lightly coats the pasta and looks creamy from Parmesan and a small amount of heavy cream. Natural window light, casual family dinner presentation, believable portions. No parsley, red pepper flakes, bread, extra cheese garnish, lemon, tomatoes, or unrelated ingredients.",
+  "image_alt_text": "Creamy one-pot chicken broccoli Alfredo protein penne.",
+  "variant_id": "v2",
+  "variant_number": 2,
+  "scheduled_at": "2026-08-06T13:00:00-05:00",
+  "pin_template": "editorial",
+  "pin_headline": "Easy High-Protein Dinner",
+  "pin_filename": "one-pot-chicken-broccoli-alfredo-protein-penne-pinterest-v2.png",
+  "image_filename": "one-pot-chicken-broccoli-alfredo-protein-penne-pinterest-v2.png",
+  "image_path": "outputs/images/pinterest/one-pot-chicken-broccoli-alfredo-protein-penne-pinterest-v2.png",
+  "image_mime_type": "image/png",
+  "design_brain": {
+    "template_name": "P07 Fall",
+    "template_type": "seasonal",
+    "season": "fall",
+    "month": 9,
+    "recipe_category": "dinner",
+    "image_style": "warm realistic food photography",
+    "photo_composition": "45-degree angle",
+    "color_mood": "warm rich premium recipe-blog color with natural variation",
+    "accent_colors": [
+      "#FFF7ED",
+      "#F97316",
+      "#7C2D12"
+    ],
+    "text_style": "clean and modern",
+    "overlay_style": "minimal",
+    "icon_style": "minimal",
+    "layout_recommendation": "editorial",
+    "optimization": {
+      "visual_appeal": "high",
+      "save_potential": "high",
+      "click_potential": "high"
+    },
+    "version": "2.5",
+    "status": "design_strategy_ready"
+  },
+  "canva_text_overlay": {
+    "headline": "Easy High-Protein Dinner",
+    "subheadline": "43g Protein \u2022 390 Calories",
+    "brand": "40/400 Meals"
+  },
+  "seo_keywords": [
+    "high protein chicken Alfredo",
+    "one pot protein pasta",
+    "chicken broccoli Alfredo",
+    "bone broth pasta",
+    "protein penne recipe",
+    "family friendly high protein dinner",
+    "40 400 meals"
+  ],
+  "status": "ready_for_make"
+}
