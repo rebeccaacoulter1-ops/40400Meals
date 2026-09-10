@@ -1541,6 +1541,66 @@
           }
         }
       }
+    },
+    "sheet-pan-garlic-parmesan-chicken-potatoes-v2-pinterest-v2": {
+      "created_at_utc": "2026-09-10T17:33:12.501659+00:00",
+      "updated_at_utc": "2026-09-10T17:33:12.501674+00:00",
+      "steps": {
+        "pinterest": {
+          "complete": true,
+          "completed_at_utc": "2026-09-10T17:33:12.501674+00:00",
+          "details": {
+            "destination_url": "https://40400meals.com/recipes/sheet-pan-garlic-parmesan-chicken-potatoes.html?utm_source=pinterest&utm_medium=organic_social&utm_campaign=recipe_variations&utm_content=v2-editorial",
+            "image_url": "https://40400meals.com/outputs/images/pinterest/sheet-pan-garlic-parmesan-chicken-potatoes-pinterest-v2.png",
+            "file_name": "sheet-pan-garlic-parmesan-chicken-potatoes-pinterest-v2.json"
+          }
+        }
+      }
+    },
+    "crispy-buffalo-chicken-loaded-potato-bowl-v2-pinterest-v2": {
+      "created_at_utc": "2026-09-10T17:33:13.265547+00:00",
+      "updated_at_utc": "2026-09-10T17:33:13.265559+00:00",
+      "steps": {
+        "pinterest": {
+          "complete": true,
+          "completed_at_utc": "2026-09-10T17:33:13.265559+00:00",
+          "details": {
+            "destination_url": "https://40400meals.com/recipes/crispy-buffalo-chicken-loaded-potato-bowl.html?utm_source=pinterest&utm_medium=organic_social&utm_campaign=recipe_variations&utm_content=v2-editorial",
+            "image_url": "https://40400meals.com/outputs/images/pinterest/crispy-buffalo-chicken-loaded-potato-bowl-pinterest-v2.png",
+            "file_name": "crispy-buffalo-chicken-loaded-potato-bowl-pinterest-v2.json"
+          }
+        }
+      }
+    },
+    "loaded-chicken-sausage-breakfast-potato-bowl-v2-pinterest-v2": {
+      "created_at_utc": "2026-09-10T17:33:14.159119+00:00",
+      "updated_at_utc": "2026-09-10T17:33:14.159132+00:00",
+      "steps": {
+        "pinterest": {
+          "complete": true,
+          "completed_at_utc": "2026-09-10T17:33:14.159132+00:00",
+          "details": {
+            "destination_url": "https://40400meals.com/recipes/loaded-chicken-sausage-breakfast-potato-bowl.html?utm_source=pinterest&utm_medium=organic_social&utm_campaign=recipe_variations&utm_content=v2-editorial",
+            "image_url": "https://40400meals.com/outputs/images/pinterest/loaded-chicken-sausage-breakfast-potato-bowl-pinterest-v2.png",
+            "file_name": "loaded-chicken-sausage-breakfast-potato-bowl-pinterest-v2.json"
+          }
+        }
+      }
+    },
+    "garlic-parmesan-steak-bites-potatoes-v2-pinterest-v2": {
+      "created_at_utc": "2026-09-10T17:33:15.124009+00:00",
+      "updated_at_utc": "2026-09-10T17:33:15.124022+00:00",
+      "steps": {
+        "pinterest": {
+          "complete": true,
+          "completed_at_utc": "2026-09-10T17:33:15.124022+00:00",
+          "details": {
+            "destination_url": "https://40400meals.com/recipes/garlic-parmesan-steak-bites-potatoes.html?utm_source=pinterest&utm_medium=organic_social&utm_campaign=recipe_variations&utm_content=v2-editorial",
+            "image_url": "https://40400meals.com/outputs/images/pinterest/garlic-parmesan-steak-bites-potatoes-pinterest-v2.png",
+            "file_name": "garlic-parmesan-steak-bites-potatoes-pinterest-v2.json"
+          }
+        }
+      }
     }
   }
 }
