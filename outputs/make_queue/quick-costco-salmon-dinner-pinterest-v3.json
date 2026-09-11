@@ -1,0 +1,65 @@
+{
+  "recipe_id": "quick-costco-salmon-dinner",
+  "platform": "pinterest",
+  "title": "40g Protein \u2022 405 Calories",
+  "description": "This easy Costco salmon dinner uses simple premade sides and measured portions for approximately 40 grams of protein and 405 calories.",
+  "destination_url": "https://40400meals.com/recipes/quick-costco-salmon-dinner.html?utm_source=pinterest&utm_medium=organic_social&utm_campaign=recipe_variations&utm_content=v3-food_first",
+  "hashtags": [
+    "#CostcoMeals",
+    "#HighProteinDinner",
+    "#QuickDinner",
+    "#SalmonDinner",
+    "#40400Meals"
+  ],
+  "image_prompt": "A realistic casual dinner plate in a bright home kitchen with one cooked salmon fillet, a small portion of chicken-flavored rice, a generous serving of green beans, and a simple side salad with a very light vinaigrette sheen. Everyday home presentation, natural window light, appetizing but not professionally styled. Show only the listed foods. No lemon, herbs, sauces, bread, extra vegetables, branded packaging, or readable logos.",
+  "image_alt_text": "Quick salmon dinner with chicken rice, green beans, and a lightly dressed side salad.",
+  "variant_id": "v3",
+  "variant_number": 3,
+  "scheduled_at": "2026-08-07T16:45:00-05:00",
+  "pin_template": "food_first",
+  "pin_headline": "40g Protein \u2022 405 Calories",
+  "pin_filename": "quick-costco-salmon-dinner-pinterest-v3.png",
+  "image_filename": "quick-costco-salmon-dinner-pinterest-v3.png",
+  "image_path": "outputs/images/pinterest/quick-costco-salmon-dinner-pinterest-v3.png",
+  "image_mime_type": "image/png",
+  "design_brain": {
+    "template_name": "P07 Fall",
+    "template_type": "seasonal",
+    "season": "fall",
+    "month": 9,
+    "recipe_category": "general",
+    "image_style": "soft indirect premium food-blog window light",
+    "photo_composition": "tight premium food-blog editorial angle",
+    "color_mood": "warm rich premium recipe-blog color with natural variation",
+    "accent_colors": [
+      "#FFF7ED",
+      "#F97316",
+      "#7C2D12"
+    ],
+    "text_style": "clean and modern",
+    "overlay_style": "minimal",
+    "icon_style": "minimal",
+    "layout_recommendation": "food_first",
+    "optimization": {
+      "visual_appeal": "high",
+      "save_potential": "high",
+      "click_potential": "high"
+    },
+    "version": "2.5",
+    "status": "design_strategy_ready"
+  },
+  "canva_text_overlay": {
+    "headline": "40g Protein \u2022 405 Calories",
+    "subheadline": "40g Protein \u2022 405 Calories",
+    "brand": "40/400 Meals"
+  },
+  "seo_keywords": [
+    "quick Costco salmon dinner",
+    "high protein salmon dinner",
+    "salmon dinner around 400 calories",
+    "premade mix meal",
+    "easy Costco dinner",
+    "40 400 meals"
+  ],
+  "status": "ready_for_make"
+}
