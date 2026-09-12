@@ -1,0 +1,63 @@
+{
+  "recipe_id": "creamy-white-bean-pumpkin-turkey-chili",
+  "platform": "pinterest",
+  "title": "Easy High-Protein Dinner",
+  "description": "Smoky turkey chili with white beans, pumpkin, Greek yogurt, and fresh jalape\u00f1os.",
+  "destination_url": "https://40400meals.com/recipes/creamy-white-bean-pumpkin-turkey-chili.html?utm_source=pinterest&utm_medium=organic_social&utm_campaign=recipe_variations&utm_content=v2-editorial",
+  "hashtags": [
+    "#TurkeyChili",
+    "#PumpkinRecipes",
+    "#HighProteinDinner",
+    "#40400Meals"
+  ],
+  "image_prompt": "Premium food-blog editorial deep stoneware bowl of thick creamy pale-orange turkey chili with visible white beans, topped only with a measured dollop of Greek yogurt and thin fresh jalape\u00f1o slices. Large food hero and softly blurred cozy fall background.",
+  "image_alt_text": "Creamy white bean pumpkin turkey chili topped with Greek yogurt and sliced jalape\u00f1os.",
+  "variant_id": "v2",
+  "variant_number": 2,
+  "scheduled_at": "2026-08-25T10:00:00-05:00",
+  "pin_template": "editorial",
+  "pin_headline": "Easy High-Protein Dinner",
+  "pin_filename": "creamy-white-bean-pumpkin-turkey-chili-pinterest-v2.png",
+  "image_filename": "creamy-white-bean-pumpkin-turkey-chili-pinterest-v2.png",
+  "image_path": "outputs/images/pinterest/creamy-white-bean-pumpkin-turkey-chili-pinterest-v2.png",
+  "image_mime_type": "image/png",
+  "design_brain": {
+    "template_name": "P07 Fall",
+    "template_type": "seasonal",
+    "season": "fall",
+    "month": 9,
+    "recipe_category": "dinner",
+    "image_style": "warm realistic food photography",
+    "photo_composition": "45-degree angle",
+    "color_mood": "warm rich premium recipe-blog color with natural variation",
+    "accent_colors": [
+      "#FFF7ED",
+      "#F97316",
+      "#7C2D12"
+    ],
+    "text_style": "clean and modern",
+    "overlay_style": "minimal",
+    "icon_style": "minimal",
+    "layout_recommendation": "editorial",
+    "optimization": {
+      "visual_appeal": "high",
+      "save_potential": "high",
+      "click_potential": "high"
+    },
+    "version": "2.5",
+    "status": "design_strategy_ready"
+  },
+  "canva_text_overlay": {
+    "headline": "Easy High-Protein Dinner",
+    "subheadline": "41g Protein \u2022 395 Calories",
+    "brand": "40/400 Meals"
+  },
+  "seo_keywords": [
+    "white bean pumpkin turkey chili",
+    "high protein turkey chili",
+    "pumpkin chili",
+    "fall dinner recipe",
+    "40 400 meals"
+  ],
+  "status": "ready_for_make"
+}
