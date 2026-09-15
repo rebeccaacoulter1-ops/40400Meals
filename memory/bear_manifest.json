@@ -1841,6 +1841,66 @@
           }
         }
       }
+    },
+    "dump-and-go-bbq-chicken-sweet-potatoes-v3-pinterest-v3": {
+      "created_at_utc": "2026-09-15T18:09:01.679465+00:00",
+      "updated_at_utc": "2026-09-15T18:09:01.679482+00:00",
+      "steps": {
+        "pinterest": {
+          "complete": true,
+          "completed_at_utc": "2026-09-15T18:09:01.679482+00:00",
+          "details": {
+            "destination_url": "https://40400meals.com/recipes/dump-and-go-bbq-chicken-sweet-potatoes.html?utm_source=pinterest&utm_medium=organic_social&utm_campaign=recipe_variations&utm_content=v3-food_first",
+            "image_url": "https://40400meals.com/outputs/images/pinterest/dump-and-go-bbq-chicken-sweet-potatoes-pinterest-v3.png",
+            "file_name": "dump-and-go-bbq-chicken-sweet-potatoes-pinterest-v3.json"
+          }
+        }
+      }
+    },
+    "high-protein-breakfast-quesadilla-v3-pinterest-v3": {
+      "created_at_utc": "2026-09-15T18:09:02.215223+00:00",
+      "updated_at_utc": "2026-09-15T18:09:02.215238+00:00",
+      "steps": {
+        "pinterest": {
+          "complete": true,
+          "completed_at_utc": "2026-09-15T18:09:02.215238+00:00",
+          "details": {
+            "destination_url": "https://40400meals.com/recipes/high-protein-breakfast-quesadilla.html?utm_source=pinterest&utm_medium=organic_social&utm_campaign=recipe_variations&utm_content=v3-food_first",
+            "image_url": "https://40400meals.com/outputs/images/pinterest/high-protein-breakfast-quesadilla-pinterest-v3.png",
+            "file_name": "high-protein-breakfast-quesadilla-pinterest-v3.json"
+          }
+        }
+      }
+    },
+    "honey-mustard-chicken-crunch-wrap-v3-pinterest-v3": {
+      "created_at_utc": "2026-09-15T18:09:02.876392+00:00",
+      "updated_at_utc": "2026-09-15T18:09:02.876410+00:00",
+      "steps": {
+        "pinterest": {
+          "complete": true,
+          "completed_at_utc": "2026-09-15T18:09:02.876410+00:00",
+          "details": {
+            "destination_url": "https://40400meals.com/recipes/honey-mustard-chicken-crunch-wrap.html?utm_source=pinterest&utm_medium=organic_social&utm_campaign=recipe_variations&utm_content=v3-food_first",
+            "image_url": "https://40400meals.com/outputs/images/pinterest/honey-mustard-chicken-crunch-wrap-pinterest-v3.png",
+            "file_name": "honey-mustard-chicken-crunch-wrap-pinterest-v3.json"
+          }
+        }
+      }
+    },
+    "loaded-cheeseburger-protein-bowl-v3-pinterest-v3": {
+      "created_at_utc": "2026-09-15T18:09:03.447676+00:00",
+      "updated_at_utc": "2026-09-15T18:09:03.447694+00:00",
+      "steps": {
+        "pinterest": {
+          "complete": true,
+          "completed_at_utc": "2026-09-15T18:09:03.447694+00:00",
+          "details": {
+            "destination_url": "https://40400meals.com/recipes/loaded-cheeseburger-protein-bowl.html?utm_source=pinterest&utm_medium=organic_social&utm_campaign=recipe_variations&utm_content=v3-food_first",
+            "image_url": "https://40400meals.com/outputs/images/pinterest/loaded-cheeseburger-protein-bowl-pinterest-v3.png",
+            "file_name": "loaded-cheeseburger-protein-bowl-pinterest-v3.json"
+          }
+        }
+      }
     }
   }
 }
