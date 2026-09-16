@@ -1901,6 +1901,66 @@
           }
         }
       }
+    },
+    "chicken-parmesan-protein-pasta-v3-pinterest-v3": {
+      "created_at_utc": "2026-09-16T18:04:24.301515+00:00",
+      "updated_at_utc": "2026-09-16T18:04:24.301533+00:00",
+      "steps": {
+        "pinterest": {
+          "complete": true,
+          "completed_at_utc": "2026-09-16T18:04:24.301533+00:00",
+          "details": {
+            "destination_url": "https://40400meals.com/recipes/chicken-parmesan-protein-pasta.html?utm_source=pinterest&utm_medium=organic_social&utm_campaign=recipe_variations&utm_content=v3-food_first",
+            "image_url": "https://40400meals.com/outputs/images/pinterest/chicken-parmesan-protein-pasta-pinterest-v3.png",
+            "file_name": "chicken-parmesan-protein-pasta-pinterest-v3.json"
+          }
+        }
+      }
+    },
+    "sheet-pan-garlic-parmesan-chicken-potatoes-v3-pinterest-v3": {
+      "created_at_utc": "2026-09-16T18:04:25.257256+00:00",
+      "updated_at_utc": "2026-09-16T18:04:25.257274+00:00",
+      "steps": {
+        "pinterest": {
+          "complete": true,
+          "completed_at_utc": "2026-09-16T18:04:25.257274+00:00",
+          "details": {
+            "destination_url": "https://40400meals.com/recipes/sheet-pan-garlic-parmesan-chicken-potatoes.html?utm_source=pinterest&utm_medium=organic_social&utm_campaign=recipe_variations&utm_content=v3-food_first",
+            "image_url": "https://40400meals.com/outputs/images/pinterest/sheet-pan-garlic-parmesan-chicken-potatoes-pinterest-v3.png",
+            "file_name": "sheet-pan-garlic-parmesan-chicken-potatoes-pinterest-v3.json"
+          }
+        }
+      }
+    },
+    "crispy-buffalo-chicken-loaded-potato-bowl-v3-pinterest-v3": {
+      "created_at_utc": "2026-09-16T18:04:26.077075+00:00",
+      "updated_at_utc": "2026-09-16T18:04:26.077093+00:00",
+      "steps": {
+        "pinterest": {
+          "complete": true,
+          "completed_at_utc": "2026-09-16T18:04:26.077093+00:00",
+          "details": {
+            "destination_url": "https://40400meals.com/recipes/crispy-buffalo-chicken-loaded-potato-bowl.html?utm_source=pinterest&utm_medium=organic_social&utm_campaign=recipe_variations&utm_content=v3-food_first",
+            "image_url": "https://40400meals.com/outputs/images/pinterest/crispy-buffalo-chicken-loaded-potato-bowl-pinterest-v3.png",
+            "file_name": "crispy-buffalo-chicken-loaded-potato-bowl-pinterest-v3.json"
+          }
+        }
+      }
+    },
+    "crockpot-garlic-chicken-v2-pinterest-v2": {
+      "created_at_utc": "2026-09-16T18:04:26.855607+00:00",
+      "updated_at_utc": "2026-09-16T18:04:26.855625+00:00",
+      "steps": {
+        "pinterest": {
+          "complete": true,
+          "completed_at_utc": "2026-09-16T18:04:26.855625+00:00",
+          "details": {
+            "destination_url": "https://40400meals.com/recipes/crockpot-garlic-chicken.html?utm_source=pinterest&utm_medium=organic_social&utm_campaign=recipe_variations&utm_content=v2-editorial",
+            "image_url": "https://40400meals.com/outputs/images/pinterest/crockpot-garlic-chicken-pinterest-v2.png",
+            "file_name": "crockpot-garlic-chicken-pinterest-v2.json"
+          }
+        }
+      }
     }
   }
 }
