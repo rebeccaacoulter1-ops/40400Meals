@@ -1961,6 +1961,66 @@
           }
         }
       }
+    },
+    "high-protein-chicken-pot-pie-v2-pinterest-v2": {
+      "created_at_utc": "2026-09-17T18:00:33.792357+00:00",
+      "updated_at_utc": "2026-09-17T18:00:33.792376+00:00",
+      "steps": {
+        "pinterest": {
+          "complete": true,
+          "completed_at_utc": "2026-09-17T18:00:33.792376+00:00",
+          "details": {
+            "destination_url": "https://40400meals.com/recipes/high-protein-chicken-pot-pie.html?utm_source=pinterest&utm_medium=organic_social&utm_campaign=recipe_variations&utm_content=v2-editorial",
+            "image_url": "https://40400meals.com/outputs/images/pinterest/high-protein-chicken-pot-pie-pinterest-v2.png",
+            "file_name": "high-protein-chicken-pot-pie-pinterest-v2.json"
+          }
+        }
+      }
+    },
+    "french-onion-chicken-v2-pinterest-v2": {
+      "created_at_utc": "2026-09-17T18:00:35.153637+00:00",
+      "updated_at_utc": "2026-09-17T18:00:35.153657+00:00",
+      "steps": {
+        "pinterest": {
+          "complete": true,
+          "completed_at_utc": "2026-09-17T18:00:35.153657+00:00",
+          "details": {
+            "destination_url": "https://40400meals.com/recipes/french-onion-chicken.html?utm_source=pinterest&utm_medium=organic_social&utm_campaign=recipe_variations&utm_content=v2-editorial",
+            "image_url": "https://40400meals.com/outputs/images/pinterest/french-onion-chicken-pinterest-v2.png",
+            "file_name": "french-onion-chicken-pinterest-v2.json"
+          }
+        }
+      }
+    },
+    "skillet-beef-stroganoff-protein-pasta-v2-pinterest-v2": {
+      "created_at_utc": "2026-09-17T18:00:36.450757+00:00",
+      "updated_at_utc": "2026-09-17T18:00:36.450775+00:00",
+      "steps": {
+        "pinterest": {
+          "complete": true,
+          "completed_at_utc": "2026-09-17T18:00:36.450775+00:00",
+          "details": {
+            "destination_url": "https://40400meals.com/recipes/skillet-beef-stroganoff-protein-pasta.html?utm_source=pinterest&utm_medium=organic_social&utm_campaign=recipe_variations&utm_content=v2-editorial",
+            "image_url": "https://40400meals.com/outputs/images/pinterest/skillet-beef-stroganoff-protein-pasta-pinterest-v2.png",
+            "file_name": "skillet-beef-stroganoff-protein-pasta-pinterest-v2.json"
+          }
+        }
+      }
+    },
+    "sweet-potato-cranberry-protein-muffins-v2-pinterest-v2": {
+      "created_at_utc": "2026-09-17T18:00:37.093269+00:00",
+      "updated_at_utc": "2026-09-17T18:00:37.093289+00:00",
+      "steps": {
+        "pinterest": {
+          "complete": true,
+          "completed_at_utc": "2026-09-17T18:00:37.093289+00:00",
+          "details": {
+            "destination_url": "https://40400meals.com/recipes/sweet-potato-cranberry-protein-muffins.html?utm_source=pinterest&utm_medium=organic_social&utm_campaign=recipe_variations&utm_content=v2-editorial",
+            "image_url": "https://40400meals.com/outputs/images/pinterest/sweet-potato-cranberry-protein-muffins-pinterest-v2.png",
+            "file_name": "sweet-potato-cranberry-protein-muffins-pinterest-v2.json"
+          }
+        }
+      }
     }
   }
 }
