@@ -2081,6 +2081,66 @@
           }
         }
       }
+    },
+    "strawberry-cheesecake-protein-crunch-bowl-v3-pinterest-v3": {
+      "created_at_utc": "2026-09-19T17:04:17.711073+00:00",
+      "updated_at_utc": "2026-09-19T17:04:17.711091+00:00",
+      "steps": {
+        "pinterest": {
+          "complete": true,
+          "completed_at_utc": "2026-09-19T17:04:17.711091+00:00",
+          "details": {
+            "destination_url": "https://40400meals.com/recipes/strawberry-cheesecake-protein-crunch-bowl.html?utm_source=pinterest&utm_medium=organic_social&utm_campaign=recipe_variations&utm_content=v3-food_first",
+            "image_url": "https://40400meals.com/outputs/images/pinterest/strawberry-cheesecake-protein-crunch-bowl-pinterest-v3.png",
+            "file_name": "strawberry-cheesecake-protein-crunch-bowl-pinterest-v3.json"
+          }
+        }
+      }
+    },
+    "warm-cinnamon-apple-cheesecake-protein-parfait-v3-pinterest-v3": {
+      "created_at_utc": "2026-09-19T17:04:19.061922+00:00",
+      "updated_at_utc": "2026-09-19T17:04:19.061938+00:00",
+      "steps": {
+        "pinterest": {
+          "complete": true,
+          "completed_at_utc": "2026-09-19T17:04:19.061938+00:00",
+          "details": {
+            "destination_url": "https://40400meals.com/recipes/warm-cinnamon-apple-cheesecake-protein-parfait.html?utm_source=pinterest&utm_medium=organic_social&utm_campaign=recipe_variations&utm_content=v3-food_first",
+            "image_url": "https://40400meals.com/outputs/images/pinterest/warm-cinnamon-apple-cheesecake-protein-parfait-pinterest-v3.png",
+            "file_name": "warm-cinnamon-apple-cheesecake-protein-parfait-pinterest-v3.json"
+          }
+        }
+      }
+    },
+    "creamy-white-bean-pumpkin-turkey-chili-v3-pinterest-v3": {
+      "created_at_utc": "2026-09-19T17:04:20.301052+00:00",
+      "updated_at_utc": "2026-09-19T17:04:20.301070+00:00",
+      "steps": {
+        "pinterest": {
+          "complete": true,
+          "completed_at_utc": "2026-09-19T17:04:20.301070+00:00",
+          "details": {
+            "destination_url": "https://40400meals.com/recipes/creamy-white-bean-pumpkin-turkey-chili.html?utm_source=pinterest&utm_medium=organic_social&utm_campaign=recipe_variations&utm_content=v3-food_first",
+            "image_url": "https://40400meals.com/outputs/images/pinterest/creamy-white-bean-pumpkin-turkey-chili-pinterest-v3.png",
+            "file_name": "creamy-white-bean-pumpkin-turkey-chili-pinterest-v3.json"
+          }
+        }
+      }
+    },
+    "creamy-pumpkin-chicken-protein-pasta-v3-pinterest-v3": {
+      "created_at_utc": "2026-09-19T17:04:20.903017+00:00",
+      "updated_at_utc": "2026-09-19T17:04:20.903034+00:00",
+      "steps": {
+        "pinterest": {
+          "complete": true,
+          "completed_at_utc": "2026-09-19T17:04:20.903034+00:00",
+          "details": {
+            "destination_url": "https://40400meals.com/recipes/creamy-pumpkin-chicken-protein-pasta.html?utm_source=pinterest&utm_medium=organic_social&utm_campaign=recipe_variations&utm_content=v3-food_first",
+            "image_url": "https://40400meals.com/outputs/images/pinterest/creamy-pumpkin-chicken-protein-pasta-pinterest-v3.png",
+            "file_name": "creamy-pumpkin-chicken-protein-pasta-pinterest-v3.json"
+          }
+        }
+      }
     }
   }
 }
