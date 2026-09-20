@@ -2141,6 +2141,66 @@
           }
         }
       }
+    },
+    "creamy-chicken-wild-rice-soup-v3-pinterest-v3": {
+      "created_at_utc": "2026-09-20T17:21:57.086633+00:00",
+      "updated_at_utc": "2026-09-20T17:21:57.086652+00:00",
+      "steps": {
+        "pinterest": {
+          "complete": true,
+          "completed_at_utc": "2026-09-20T17:21:57.086652+00:00",
+          "details": {
+            "destination_url": "https://40400meals.com/recipes/creamy-chicken-wild-rice-soup.html?utm_source=pinterest&utm_medium=organic_social&utm_campaign=recipe_variations&utm_content=v3-food_first",
+            "image_url": "https://40400meals.com/outputs/images/pinterest/creamy-chicken-wild-rice-soup-pinterest-v3.png",
+            "file_name": "creamy-chicken-wild-rice-soup-pinterest-v3.json"
+          }
+        }
+      }
+    },
+    "apple-cider-dijon-chicken-harvest-bowl-v3-pinterest-v3": {
+      "created_at_utc": "2026-09-20T17:21:57.765605+00:00",
+      "updated_at_utc": "2026-09-20T17:21:57.765625+00:00",
+      "steps": {
+        "pinterest": {
+          "complete": true,
+          "completed_at_utc": "2026-09-20T17:21:57.765625+00:00",
+          "details": {
+            "destination_url": "https://40400meals.com/recipes/apple-cider-dijon-chicken-harvest-bowl.html?utm_source=pinterest&utm_medium=organic_social&utm_campaign=recipe_variations&utm_content=v3-food_first",
+            "image_url": "https://40400meals.com/outputs/images/pinterest/apple-cider-dijon-chicken-harvest-bowl-pinterest-v3.png",
+            "file_name": "apple-cider-dijon-chicken-harvest-bowl-pinterest-v3.json"
+          }
+        }
+      }
+    },
+    "chicken-sausage-breakfast-burrito-v4-pinterest-v4": {
+      "created_at_utc": "2026-09-20T17:21:58.284168+00:00",
+      "updated_at_utc": "2026-09-20T17:21:58.284188+00:00",
+      "steps": {
+        "pinterest": {
+          "complete": true,
+          "completed_at_utc": "2026-09-20T17:21:58.284188+00:00",
+          "details": {
+            "destination_url": "https://40400meals.com/recipes/chicken-sausage-breakfast-burrito.html?utm_source=pinterest&utm_medium=organic_social&utm_campaign=recipe_variations&utm_content=v4-benefit",
+            "image_url": "https://40400meals.com/outputs/images/pinterest/chicken-sausage-breakfast-burrito-pinterest-v4.png",
+            "file_name": "chicken-sausage-breakfast-burrito-pinterest-v4.json"
+          }
+        }
+      }
+    },
+    "italian-stuffed-peppers-protein-mashed-potatoes-v4-pinterest-v4": {
+      "created_at_utc": "2026-09-20T17:21:58.983439+00:00",
+      "updated_at_utc": "2026-09-20T17:21:58.983455+00:00",
+      "steps": {
+        "pinterest": {
+          "complete": true,
+          "completed_at_utc": "2026-09-20T17:21:58.983455+00:00",
+          "details": {
+            "destination_url": "https://40400meals.com/recipes/italian-stuffed-peppers-protein-mashed-potatoes.html?utm_source=pinterest&utm_medium=organic_social&utm_campaign=recipe_variations&utm_content=v4-benefit",
+            "image_url": "https://40400meals.com/outputs/images/pinterest/italian-stuffed-peppers-protein-mashed-potatoes-pinterest-v4.png",
+            "file_name": "italian-stuffed-peppers-protein-mashed-potatoes-pinterest-v4.json"
+          }
+        }
+      }
     }
   }
 }
