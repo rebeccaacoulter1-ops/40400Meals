@@ -1,0 +1,63 @@
+{
+  "recipe_id": "warm-cinnamon-apple-cheesecake-protein-parfait",
+  "platform": "pinterest",
+  "title": "Easy High-Protein Dessert",
+  "description": "Warm cinnamon apples layered with vanilla cheesecake protein yogurt and almond butter in a glass dessert dish.",
+  "destination_url": "https://40400meals.com/recipes/warm-cinnamon-apple-cheesecake-protein-parfait.html?utm_source=pinterest&utm_medium=organic_social&utm_campaign=recipe_variations&utm_content=v2-editorial",
+  "hashtags": [
+    "#ProteinParfait",
+    "#AppleDessert",
+    "#FallRecipes",
+    "#40400Meals"
+  ],
+  "image_prompt": "Premium food-blog editorial clear glass dessert dish with visible layers of thick vanilla cheesecake protein yogurt, warm finely diced cinnamon apples, and a restrained almond butter drizzle. Large food hero with a soft cozy fall background.",
+  "image_alt_text": "Warm cinnamon apple cheesecake protein parfait layered in a clear glass dessert dish.",
+  "variant_id": "v2",
+  "variant_number": 2,
+  "scheduled_at": "2026-08-25T09:00:00-05:00",
+  "pin_template": "editorial",
+  "pin_headline": "Easy High-Protein Dessert",
+  "pin_filename": "warm-cinnamon-apple-cheesecake-protein-parfait-pinterest-v2.png",
+  "image_filename": "warm-cinnamon-apple-cheesecake-protein-parfait-pinterest-v2.png",
+  "image_path": "outputs/images/pinterest/warm-cinnamon-apple-cheesecake-protein-parfait-pinterest-v2.png",
+  "image_mime_type": "image/png",
+  "design_brain": {
+    "template_name": "P07 Fall",
+    "template_type": "seasonal",
+    "season": "fall",
+    "month": 9,
+    "recipe_category": "dessert",
+    "image_style": "cozy realistic food photography",
+    "photo_composition": "close-up",
+    "color_mood": "warm rich premium recipe-blog color with natural variation",
+    "accent_colors": [
+      "#FFF7ED",
+      "#F97316",
+      "#7C2D12"
+    ],
+    "text_style": "clean and modern",
+    "overlay_style": "minimal",
+    "icon_style": "minimal",
+    "layout_recommendation": "editorial",
+    "optimization": {
+      "visual_appeal": "high",
+      "save_potential": "high",
+      "click_potential": "high"
+    },
+    "version": "2.5",
+    "status": "design_strategy_ready"
+  },
+  "canva_text_overlay": {
+    "headline": "Easy High-Protein Dessert",
+    "subheadline": "43g Protein \u2022 410 Calories",
+    "brand": "40/400 Meals"
+  },
+  "seo_keywords": [
+    "apple cheesecake protein parfait",
+    "high protein apple dessert",
+    "cinnamon apple parfait",
+    "fall protein dessert",
+    "40 400 meals"
+  ],
+  "status": "ready_for_make"
+}
