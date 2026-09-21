@@ -2201,6 +2201,66 @@
           }
         }
       }
+    },
+    "pineapple-cottage-cheese-strawberry-cheesecake-shake-v4-pinterest-v4": {
+      "created_at_utc": "2026-09-21T19:09:21.772449+00:00",
+      "updated_at_utc": "2026-09-21T19:09:21.772466+00:00",
+      "steps": {
+        "pinterest": {
+          "complete": true,
+          "completed_at_utc": "2026-09-21T19:09:21.772466+00:00",
+          "details": {
+            "destination_url": "https://40400meals.com/recipes/pineapple-cottage-cheese-strawberry-cheesecake-shake.html?utm_source=pinterest&utm_medium=organic_social&utm_campaign=recipe_variations&utm_content=v4-benefit",
+            "image_url": "https://40400meals.com/outputs/images/pinterest/pineapple-cottage-cheese-strawberry-cheesecake-shake-pinterest-v4.png",
+            "file_name": "pineapple-cottage-cheese-strawberry-cheesecake-shake-pinterest-v4.json"
+          }
+        }
+      }
+    },
+    "sheet-pan-taco-chicken-veggies-mexican-rice-v4-pinterest-v4": {
+      "created_at_utc": "2026-09-21T19:09:22.526915+00:00",
+      "updated_at_utc": "2026-09-21T19:09:22.526931+00:00",
+      "steps": {
+        "pinterest": {
+          "complete": true,
+          "completed_at_utc": "2026-09-21T19:09:22.526931+00:00",
+          "details": {
+            "destination_url": "https://40400meals.com/recipes/sheet-pan-taco-chicken-veggies-mexican-rice.html?utm_source=pinterest&utm_medium=organic_social&utm_campaign=recipe_variations&utm_content=v4-benefit",
+            "image_url": "https://40400meals.com/outputs/images/pinterest/sheet-pan-taco-chicken-veggies-mexican-rice-pinterest-v4.png",
+            "file_name": "sheet-pan-taco-chicken-veggies-mexican-rice-pinterest-v4.json"
+          }
+        }
+      }
+    },
+    "vanilla-berry-protein-waffle-bowl-v4-pinterest-v4": {
+      "created_at_utc": "2026-09-21T19:09:23.225056+00:00",
+      "updated_at_utc": "2026-09-21T19:09:23.225073+00:00",
+      "steps": {
+        "pinterest": {
+          "complete": true,
+          "completed_at_utc": "2026-09-21T19:09:23.225073+00:00",
+          "details": {
+            "destination_url": "https://40400meals.com/recipes/vanilla-berry-protein-waffle-bowl.html?utm_source=pinterest&utm_medium=organic_social&utm_campaign=recipe_variations&utm_content=v4-benefit",
+            "image_url": "https://40400meals.com/outputs/images/pinterest/vanilla-berry-protein-waffle-bowl-pinterest-v4.png",
+            "file_name": "vanilla-berry-protein-waffle-bowl-pinterest-v4.json"
+          }
+        }
+      }
+    },
+    "pumpkin-spice-protein-mug-cake-v2-pinterest-v2": {
+      "created_at_utc": "2026-09-21T19:09:23.844719+00:00",
+      "updated_at_utc": "2026-09-21T19:09:23.844736+00:00",
+      "steps": {
+        "pinterest": {
+          "complete": true,
+          "completed_at_utc": "2026-09-21T19:09:23.844736+00:00",
+          "details": {
+            "destination_url": "https://40400meals.com/recipes/pumpkin-spice-protein-mug-cake.html?utm_source=pinterest&utm_medium=organic_social&utm_campaign=recipe_variations&utm_content=v2-editorial",
+            "image_url": "https://40400meals.com/outputs/images/pinterest/pumpkin-spice-protein-mug-cake-pinterest-v2.png",
+            "file_name": "pumpkin-spice-protein-mug-cake-pinterest-v2.json"
+          }
+        }
+      }
     }
   }
 }
