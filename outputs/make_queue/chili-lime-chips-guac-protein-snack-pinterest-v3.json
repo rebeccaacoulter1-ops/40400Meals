@@ -1,0 +1,64 @@
+{
+  "recipe_id": "chili-lime-chips-guac-protein-snack",
+  "platform": "pinterest",
+  "title": "41g Protein \u2022 330 Calories",
+  "description": "Quest Chili Lime protein chips, a single-serve guacamole cup, and strawberry pi\u00f1a colada clear protein make an easy crunchy snack with approximately 41 grams of protein and 330 calories.",
+  "destination_url": "https://40400meals.com/recipes/chili-lime-chips-guac-protein-snack.html?utm_source=pinterest&utm_medium=organic_social&utm_campaign=recipe_variations&utm_content=v3-food_first",
+  "hashtags": [
+    "#HighProteinSnack",
+    "#QuestChips",
+    "#GuacamoleSnack",
+    "#40400Meals"
+  ],
+  "image_prompt": "A realistic grab-and-go snack on a kitchen counter: a small opened bag of unbranded chili-lime tortilla-style protein chips tipped beside a single-serve cup of chunky guacamole, plus a cold glass of translucent pale pink strawberry coconut clear protein drink with ice. Casual everyday presentation, natural lighting, a few chip crumbs, no readable logos, no lime wedges, no berries, no garnish, and no additional food.",
+  "image_alt_text": "Chili lime protein chips with a single-serve guacamole cup and strawberry clear protein drink.",
+  "variant_id": "v3",
+  "variant_number": 3,
+  "scheduled_at": "2026-08-05T00:00:00",
+  "pin_template": "food_first",
+  "pin_headline": "41g Protein \u2022 330 Calories",
+  "pin_filename": "chili-lime-chips-guac-protein-snack-pinterest-v3.png",
+  "image_filename": "chili-lime-chips-guac-protein-snack-pinterest-v3.png",
+  "image_path": "outputs/images/pinterest/chili-lime-chips-guac-protein-snack-pinterest-v3.png",
+  "image_mime_type": "image/png",
+  "design_brain": {
+    "template_name": "P07 Fall",
+    "template_type": "seasonal",
+    "season": "fall",
+    "month": 9,
+    "recipe_category": "snack",
+    "image_style": "bright simple food photography",
+    "photo_composition": "close-up",
+    "color_mood": "warm rich premium recipe-blog color with natural variation",
+    "accent_colors": [
+      "#FFF7ED",
+      "#F97316",
+      "#7C2D12"
+    ],
+    "text_style": "clean and modern",
+    "overlay_style": "minimal",
+    "icon_style": "minimal",
+    "layout_recommendation": "food_first",
+    "optimization": {
+      "visual_appeal": "high",
+      "save_potential": "high",
+      "click_potential": "high"
+    },
+    "version": "2.5",
+    "status": "design_strategy_ready"
+  },
+  "canva_text_overlay": {
+    "headline": "41g Protein \u2022 330 Calories",
+    "subheadline": "41g Protein \u2022 330 Calories",
+    "brand": "40/400 Meals"
+  },
+  "seo_keywords": [
+    "chili lime protein chips and guacamole",
+    "quest chips guacamole snack",
+    "high protein chips and dip",
+    "no think protein snack",
+    "high protein snack under 400 calories",
+    "40 400 snacks"
+  ],
+  "status": "ready_for_make"
+}
