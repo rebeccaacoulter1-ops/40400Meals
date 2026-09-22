@@ -2261,6 +2261,66 @@
           }
         }
       }
+    },
+    "caramel-pecan-cottage-cheese-bowl-v2-pinterest-v2": {
+      "created_at_utc": "2026-09-22T18:02:04.415396+00:00",
+      "updated_at_utc": "2026-09-22T18:02:04.415415+00:00",
+      "steps": {
+        "pinterest": {
+          "complete": true,
+          "completed_at_utc": "2026-09-22T18:02:04.415415+00:00",
+          "details": {
+            "destination_url": "https://40400meals.com/recipes/caramel-pecan-cottage-cheese-bowl.html?utm_source=pinterest&utm_medium=organic_social&utm_campaign=recipe_variations&utm_content=v2-editorial",
+            "image_url": "https://40400meals.com/outputs/images/pinterest/caramel-pecan-cottage-cheese-bowl-pinterest-v2.png",
+            "file_name": "caramel-pecan-cottage-cheese-bowl-pinterest-v2.json"
+          }
+        }
+      }
+    },
+    "rotisserie-chicken-butternut-mac-skillet-v2-pinterest-v2": {
+      "created_at_utc": "2026-09-22T18:02:05.246483+00:00",
+      "updated_at_utc": "2026-09-22T18:02:05.246504+00:00",
+      "steps": {
+        "pinterest": {
+          "complete": true,
+          "completed_at_utc": "2026-09-22T18:02:05.246504+00:00",
+          "details": {
+            "destination_url": "https://40400meals.com/recipes/rotisserie-chicken-butternut-mac-skillet.html?utm_source=pinterest&utm_medium=organic_social&utm_campaign=recipe_variations&utm_content=v2-editorial",
+            "image_url": "https://40400meals.com/outputs/images/pinterest/rotisserie-chicken-butternut-mac-skillet-pinterest-v2.png",
+            "file_name": "rotisserie-chicken-butternut-mac-skillet-pinterest-v2.json"
+          }
+        }
+      }
+    },
+    "pumpkin-chili-turkey-skillet-v2-pinterest-v2": {
+      "created_at_utc": "2026-09-22T18:02:05.716597+00:00",
+      "updated_at_utc": "2026-09-22T18:02:05.716617+00:00",
+      "steps": {
+        "pinterest": {
+          "complete": true,
+          "completed_at_utc": "2026-09-22T18:02:05.716617+00:00",
+          "details": {
+            "destination_url": "https://40400meals.com/recipes/pumpkin-chili-turkey-skillet.html?utm_source=pinterest&utm_medium=organic_social&utm_campaign=recipe_variations&utm_content=v2-editorial",
+            "image_url": "https://40400meals.com/outputs/images/pinterest/pumpkin-chili-turkey-skillet-pinterest-v2.png",
+            "file_name": "pumpkin-chili-turkey-skillet-pinterest-v2.json"
+          }
+        }
+      }
+    },
+    "maple-cinnamon-chicken-sweet-potato-bowl-v2-pinterest-v2": {
+      "created_at_utc": "2026-09-22T18:02:06.292715+00:00",
+      "updated_at_utc": "2026-09-22T18:02:06.292735+00:00",
+      "steps": {
+        "pinterest": {
+          "complete": true,
+          "completed_at_utc": "2026-09-22T18:02:06.292735+00:00",
+          "details": {
+            "destination_url": "https://40400meals.com/recipes/maple-cinnamon-chicken-sweet-potato-bowl.html?utm_source=pinterest&utm_medium=organic_social&utm_campaign=recipe_variations&utm_content=v2-editorial",
+            "image_url": "https://40400meals.com/outputs/images/pinterest/maple-cinnamon-chicken-sweet-potato-bowl-pinterest-v2.png",
+            "file_name": "maple-cinnamon-chicken-sweet-potato-bowl-pinterest-v2.json"
+          }
+        }
+      }
     }
   }
 }
