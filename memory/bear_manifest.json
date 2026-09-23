@@ -2321,6 +2321,66 @@
           }
         }
       }
+    },
+    "fall-harvest-protein-snack-box-v2-pinterest-v2": {
+      "created_at_utc": "2026-09-23T18:24:20.092348+00:00",
+      "updated_at_utc": "2026-09-23T18:24:20.092365+00:00",
+      "steps": {
+        "pinterest": {
+          "complete": true,
+          "completed_at_utc": "2026-09-23T18:24:20.092365+00:00",
+          "details": {
+            "destination_url": "https://40400meals.com/recipes/fall-harvest-protein-snack-box.html?utm_source=pinterest&utm_medium=organic_social&utm_campaign=recipe_variations&utm_content=v2-editorial",
+            "image_url": "https://40400meals.com/outputs/images/pinterest/fall-harvest-protein-snack-box-pinterest-v2.png",
+            "file_name": "fall-harvest-protein-snack-box-pinterest-v2.json"
+          }
+        }
+      }
+    },
+    "dump-and-go-salsa-verde-chicken-bowls-v4-pinterest-v4": {
+      "created_at_utc": "2026-09-23T18:24:20.325385+00:00",
+      "updated_at_utc": "2026-09-23T18:24:20.325402+00:00",
+      "steps": {
+        "pinterest": {
+          "complete": true,
+          "completed_at_utc": "2026-09-23T18:24:20.325402+00:00",
+          "details": {
+            "destination_url": "https://40400meals.com/recipes/dump-and-go-salsa-verde-chicken-bowls.html?utm_source=pinterest&utm_medium=organic_social&utm_campaign=recipe_variations&utm_content=v4-benefit",
+            "image_url": "https://40400meals.com/outputs/images/pinterest/dump-and-go-salsa-verde-chicken-bowls-pinterest-v4.png",
+            "file_name": "dump-and-go-salsa-verde-chicken-bowls-pinterest-v4.json"
+          }
+        }
+      }
+    },
+    "dump-and-go-creamy-tuscan-chicken-v4-pinterest-v4": {
+      "created_at_utc": "2026-09-23T18:24:20.552587+00:00",
+      "updated_at_utc": "2026-09-23T18:24:20.552604+00:00",
+      "steps": {
+        "pinterest": {
+          "complete": true,
+          "completed_at_utc": "2026-09-23T18:24:20.552604+00:00",
+          "details": {
+            "destination_url": "https://40400meals.com/recipes/dump-and-go-creamy-tuscan-chicken.html?utm_source=pinterest&utm_medium=organic_social&utm_campaign=recipe_variations&utm_content=v4-benefit",
+            "image_url": "https://40400meals.com/outputs/images/pinterest/dump-and-go-creamy-tuscan-chicken-pinterest-v4.png",
+            "file_name": "dump-and-go-creamy-tuscan-chicken-pinterest-v4.json"
+          }
+        }
+      }
+    },
+    "dump-and-go-crockpot-beef-and-broccoli-v4-pinterest-v4": {
+      "created_at_utc": "2026-09-23T18:24:20.876424+00:00",
+      "updated_at_utc": "2026-09-23T18:24:20.876439+00:00",
+      "steps": {
+        "pinterest": {
+          "complete": true,
+          "completed_at_utc": "2026-09-23T18:24:20.876439+00:00",
+          "details": {
+            "destination_url": "https://40400meals.com/recipes/dump-and-go-crockpot-beef-and-broccoli.html?utm_source=pinterest&utm_medium=organic_social&utm_campaign=recipe_variations&utm_content=v4-benefit",
+            "image_url": "https://40400meals.com/outputs/images/pinterest/dump-and-go-crockpot-beef-and-broccoli-pinterest-v4.png",
+            "file_name": "dump-and-go-crockpot-beef-and-broccoli-pinterest-v4.json"
+          }
+        }
+      }
     }
   }
 }
