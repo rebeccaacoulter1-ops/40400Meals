@@ -2561,6 +2561,66 @@
           }
         }
       }
+    },
+    "sweet-potato-cranberry-protein-muffins-v3-pinterest-v3": {
+      "created_at_utc": "2026-09-27T18:06:42.448307+00:00",
+      "updated_at_utc": "2026-09-27T18:06:42.448326+00:00",
+      "steps": {
+        "pinterest": {
+          "complete": true,
+          "completed_at_utc": "2026-09-27T18:06:42.448326+00:00",
+          "details": {
+            "destination_url": "https://40400meals.com/recipes/sweet-potato-cranberry-protein-muffins.html?utm_source=pinterest&utm_medium=organic_social&utm_campaign=recipe_variations&utm_content=v3-food_first",
+            "image_url": "https://40400meals.com/outputs/images/pinterest/sweet-potato-cranberry-protein-muffins-pinterest-v3.png",
+            "file_name": "sweet-potato-cranberry-protein-muffins-pinterest-v3.json"
+          }
+        }
+      }
+    },
+    "air-fryer-buffalo-chicken-wrap-v3-pinterest-v3": {
+      "created_at_utc": "2026-09-27T18:06:43.482795+00:00",
+      "updated_at_utc": "2026-09-27T18:06:43.482815+00:00",
+      "steps": {
+        "pinterest": {
+          "complete": true,
+          "completed_at_utc": "2026-09-27T18:06:43.482815+00:00",
+          "details": {
+            "destination_url": "https://40400meals.com/recipes/air-fryer-buffalo-chicken-wrap.html?utm_source=pinterest&utm_medium=organic_social&utm_campaign=recipe_variations&utm_content=v3-food_first",
+            "image_url": "https://40400meals.com/outputs/images/pinterest/air-fryer-buffalo-chicken-wrap-pinterest-v3.png",
+            "file_name": "air-fryer-buffalo-chicken-wrap-pinterest-v3.json"
+          }
+        }
+      }
+    },
+    "loaded-chicken-sausage-breakfast-potato-bowl-v4-pinterest-v4": {
+      "created_at_utc": "2026-09-27T18:06:44.583979+00:00",
+      "updated_at_utc": "2026-09-27T18:06:44.583997+00:00",
+      "steps": {
+        "pinterest": {
+          "complete": true,
+          "completed_at_utc": "2026-09-27T18:06:44.583997+00:00",
+          "details": {
+            "destination_url": "https://40400meals.com/recipes/loaded-chicken-sausage-breakfast-potato-bowl.html?utm_source=pinterest&utm_medium=organic_social&utm_campaign=recipe_variations&utm_content=v4-benefit",
+            "image_url": "https://40400meals.com/outputs/images/pinterest/loaded-chicken-sausage-breakfast-potato-bowl-pinterest-v4.png",
+            "file_name": "loaded-chicken-sausage-breakfast-potato-bowl-pinterest-v4.json"
+          }
+        }
+      }
+    },
+    "garlic-parmesan-steak-bites-potatoes-v4-pinterest-v4": {
+      "created_at_utc": "2026-09-27T18:06:45.525068+00:00",
+      "updated_at_utc": "2026-09-27T18:06:45.525086+00:00",
+      "steps": {
+        "pinterest": {
+          "complete": true,
+          "completed_at_utc": "2026-09-27T18:06:45.525086+00:00",
+          "details": {
+            "destination_url": "https://40400meals.com/recipes/garlic-parmesan-steak-bites-potatoes.html?utm_source=pinterest&utm_medium=organic_social&utm_campaign=recipe_variations&utm_content=v4-benefit",
+            "image_url": "https://40400meals.com/outputs/images/pinterest/garlic-parmesan-steak-bites-potatoes-pinterest-v4.png",
+            "file_name": "garlic-parmesan-steak-bites-potatoes-pinterest-v4.json"
+          }
+        }
+      }
     }
   }
 }
