@@ -1,0 +1,63 @@
+{
+  "recipe_id": "apple-cider-dijon-chicken-harvest-bowl",
+  "platform": "pinterest",
+  "title": "Apple Cider Dijon Chicken Harvest Bowl",
+  "description": "Juicy chicken with roasted potatoes, green beans, apples, and warm cider-Dijon sauce.",
+  "destination_url": "https://40400meals.com/recipes/apple-cider-dijon-chicken-harvest-bowl.html?utm_source=pinterest&utm_medium=organic_social&utm_campaign=recipe_variations&utm_content=v1-classic",
+  "hashtags": [
+    "#HarvestBowl",
+    "#AppleCiderChicken",
+    "#FallDinner",
+    "#40400Meals"
+  ],
+  "image_prompt": "Premium food-blog editorial wide ceramic bowl or plate with juicy sliced chicken breast, roasted diced potatoes, green beans, and softened apple pieces, finished with a restrained glossy apple-cider Dijon sauce. Large food hero with softly blurred cozy fall atmosphere.",
+  "image_alt_text": "Apple cider Dijon chicken harvest bowl with roasted potatoes, green beans, and apples.",
+  "variant_id": "v1",
+  "variant_number": 1,
+  "scheduled_at": "2026-08-22T13:00:00-05:00",
+  "pin_template": "classic",
+  "pin_headline": "Apple Cider Dijon Chicken Harvest Bowl",
+  "pin_filename": "apple-cider-dijon-chicken-harvest-bowl-pinterest-pin.png",
+  "image_filename": "apple-cider-dijon-chicken-harvest-bowl-pinterest-pin.png",
+  "image_path": "outputs/images/pinterest/apple-cider-dijon-chicken-harvest-bowl-pinterest-pin.png",
+  "image_mime_type": "image/png",
+  "design_brain": {
+    "template_name": "P07 Fall",
+    "template_type": "seasonal",
+    "season": "fall",
+    "month": 9,
+    "recipe_category": "dinner",
+    "image_style": "warm realistic food photography",
+    "photo_composition": "45-degree angle",
+    "color_mood": "warm rich premium recipe-blog color with natural variation",
+    "accent_colors": [
+      "#FFF7ED",
+      "#F97316",
+      "#7C2D12"
+    ],
+    "text_style": "clean and modern",
+    "overlay_style": "minimal",
+    "icon_style": "minimal",
+    "layout_recommendation": "classic",
+    "optimization": {
+      "visual_appeal": "high",
+      "save_potential": "high",
+      "click_potential": "high"
+    },
+    "version": "2.5",
+    "status": "design_strategy_ready"
+  },
+  "canva_text_overlay": {
+    "headline": "Apple Cider Dijon Chicken Harvest Bowl",
+    "subheadline": "43g Protein \u2022 405 Calories",
+    "brand": "40/400 Meals"
+  },
+  "seo_keywords": [
+    "apple cider Dijon chicken",
+    "chicken harvest bowl",
+    "fall chicken dinner",
+    "high protein chicken bowl",
+    "40 400 meals"
+  ],
+  "status": "ready_for_make"
+}
