@@ -1,0 +1,64 @@
+{
+  "recipe_id": "dump-and-go-white-chicken-chili",
+  "platform": "pinterest",
+  "title": "Dump-and-Go Crockpot White Chicken Chili",
+  "description": "Everything goes into the crockpot in the morning. Shred and stir at night, then top this creamy white chicken chili with tortilla strips, Greek yogurt, and jalape\u00f1o.",
+  "destination_url": "https://40400meals.com/recipes/dump-and-go-white-chicken-chili.html?utm_source=pinterest&utm_medium=organic_social&utm_campaign=recipe_variations&utm_content=v1-classic",
+  "hashtags": [
+    "#CrockpotMeals",
+    "#HighProteinDinner",
+    "#DumpAndGoMeals",
+    "#40400Meals"
+  ],
+  "image_prompt": "A realistic bowl containing exactly 12 ounces of thick creamy white chicken chili with visible shredded chicken, cannellini beans, golden corn, and mild green chiles. Top with a small dollop equal to 2 tablespoons of plain Greek yogurt, 2 tablespoons of crunchy tortilla strips, and 2 to 3 thin fresh jalape\u00f1o slices. Natural window light and cozy family-dinner presentation. No shredded cheese, avocado, cilantro, lime, onions, extra tortilla chips, or unlisted garnishes.",
+  "image_alt_text": "Creamy white chicken chili topped with tortilla strips, Greek yogurt, and thin jalape\u00f1o slices.",
+  "variant_id": "v1",
+  "variant_number": 1,
+  "scheduled_at": "2026-08-19T16:00:00-05:00",
+  "pin_template": "classic",
+  "pin_headline": "Dump-and-Go Crockpot White Chicken Chili",
+  "pin_filename": "dump-and-go-white-chicken-chili-pinterest-pin.png",
+  "image_filename": "dump-and-go-white-chicken-chili-pinterest-pin.png",
+  "image_path": "outputs/images/pinterest/dump-and-go-white-chicken-chili-pinterest-pin.png",
+  "image_mime_type": "image/png",
+  "design_brain": {
+    "template_name": "P07 Fall",
+    "template_type": "seasonal",
+    "season": "fall",
+    "month": 9,
+    "recipe_category": "dinner",
+    "image_style": "warm realistic food photography",
+    "photo_composition": "45-degree angle",
+    "color_mood": "warm rich premium recipe-blog color with natural variation",
+    "accent_colors": [
+      "#FFF7ED",
+      "#F97316",
+      "#7C2D12"
+    ],
+    "text_style": "clean and modern",
+    "overlay_style": "minimal",
+    "icon_style": "minimal",
+    "layout_recommendation": "classic",
+    "optimization": {
+      "visual_appeal": "high",
+      "save_potential": "high",
+      "click_potential": "high"
+    },
+    "version": "2.5",
+    "status": "design_strategy_ready"
+  },
+  "canva_text_overlay": {
+    "headline": "Dump-and-Go Crockpot White Chicken Chili",
+    "subheadline": "44g Protein \u2022 365 Calories",
+    "brand": "40/400 Meals"
+  },
+  "seo_keywords": [
+    "dump and go white chicken chili",
+    "creamy crockpot chicken chili",
+    "high protein slow cooker chili",
+    "white chicken chili under 400 calories",
+    "easy family crockpot dinner",
+    "40 400 meals"
+  ],
+  "status": "ready_for_make"
+}
