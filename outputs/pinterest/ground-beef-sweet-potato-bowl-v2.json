@@ -14,7 +14,7 @@
   "image_alt_text": "High-protein ground beef and roasted sweet potato bowl with cottage cheese, avocado, and Taj\u00edn.",
   "variant_id": "v2",
   "variant_number": 2,
-  "scheduled_at": "2026-10-03T18:52:35.753363+00:00",
+  "scheduled_at": "2026-10-04T19:19:19.320298+00:00",
   "pin_template": "editorial",
   "pin_headline": "Easy High-Protein Lunch",
   "pin_filename": "ground-beef-sweet-potato-bowl-pinterest-v2.png",
@@ -22,18 +22,18 @@
   "image_path": "outputs/images/pinterest/ground-beef-sweet-potato-bowl-pinterest-v2.png",
   "image_mime_type": "image/png",
   "design_brain": {
-    "template_name": "P07 Fall",
+    "template_name": "P08 Halloween",
     "template_type": "seasonal",
-    "season": "fall",
-    "month": 9,
+    "season": "halloween",
+    "month": 10,
     "recipe_category": "lunch",
     "image_style": "bright realistic food photography",
     "photo_composition": "45-degree angle",
     "color_mood": "warm rich premium recipe-blog color with natural variation",
     "accent_colors": [
-      "#FFF7ED",
+      "#111827",
       "#F97316",
-      "#7C2D12"
+      "#FFFFFF"
     ],
     "text_style": "clean and modern",
     "overlay_style": "minimal",
