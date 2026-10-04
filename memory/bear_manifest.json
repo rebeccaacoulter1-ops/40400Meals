@@ -2981,6 +2981,66 @@
           }
         }
       }
+    },
+    "barebells-berry-breakfast-to-go-v2-pinterest-v2": {
+      "created_at_utc": "2026-10-04T18:02:55.834698+00:00",
+      "updated_at_utc": "2026-10-04T18:02:55.834716+00:00",
+      "steps": {
+        "pinterest": {
+          "complete": true,
+          "completed_at_utc": "2026-10-04T18:02:55.834716+00:00",
+          "details": {
+            "destination_url": "https://40400meals.com/recipes/barebells-berry-breakfast-to-go.html?utm_source=pinterest&utm_medium=organic_social&utm_campaign=recipe_variations&utm_content=v2-editorial",
+            "image_url": "https://40400meals.com/outputs/images/pinterest/barebells-berry-breakfast-to-go-pinterest-v2.png",
+            "file_name": "barebells-berry-breakfast-to-go-pinterest-v2.json"
+          }
+        }
+      }
+    },
+    "crockpot-garlic-chicken-v4-pinterest-v4": {
+      "created_at_utc": "2026-10-04T18:02:56.803946+00:00",
+      "updated_at_utc": "2026-10-04T18:02:56.803963+00:00",
+      "steps": {
+        "pinterest": {
+          "complete": true,
+          "completed_at_utc": "2026-10-04T18:02:56.803963+00:00",
+          "details": {
+            "destination_url": "https://40400meals.com/recipes/crockpot-garlic-chicken.html?utm_source=pinterest&utm_medium=organic_social&utm_campaign=recipe_variations&utm_content=v4-benefit",
+            "image_url": "https://40400meals.com/outputs/images/pinterest/crockpot-garlic-chicken-pinterest-v4.png",
+            "file_name": "crockpot-garlic-chicken-pinterest-v4.json"
+          }
+        }
+      }
+    },
+    "high-protein-chicken-pot-pie-v4-pinterest-v4": {
+      "created_at_utc": "2026-10-04T18:02:57.661351+00:00",
+      "updated_at_utc": "2026-10-04T18:02:57.661371+00:00",
+      "steps": {
+        "pinterest": {
+          "complete": true,
+          "completed_at_utc": "2026-10-04T18:02:57.661371+00:00",
+          "details": {
+            "destination_url": "https://40400meals.com/recipes/high-protein-chicken-pot-pie.html?utm_source=pinterest&utm_medium=organic_social&utm_campaign=recipe_variations&utm_content=v4-benefit",
+            "image_url": "https://40400meals.com/outputs/images/pinterest/high-protein-chicken-pot-pie-pinterest-v4.png",
+            "file_name": "high-protein-chicken-pot-pie-pinterest-v4.json"
+          }
+        }
+      }
+    },
+    "french-onion-chicken-v4-pinterest-v4": {
+      "created_at_utc": "2026-10-04T18:02:58.708913+00:00",
+      "updated_at_utc": "2026-10-04T18:02:58.708930+00:00",
+      "steps": {
+        "pinterest": {
+          "complete": true,
+          "completed_at_utc": "2026-10-04T18:02:58.708930+00:00",
+          "details": {
+            "destination_url": "https://40400meals.com/recipes/french-onion-chicken.html?utm_source=pinterest&utm_medium=organic_social&utm_campaign=recipe_variations&utm_content=v4-benefit",
+            "image_url": "https://40400meals.com/outputs/images/pinterest/french-onion-chicken-pinterest-v4.png",
+            "file_name": "french-onion-chicken-pinterest-v4.json"
+          }
+        }
+      }
     }
   }
 }
