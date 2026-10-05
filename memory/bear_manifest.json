@@ -3041,6 +3041,66 @@
           }
         }
       }
+    },
+    "skillet-beef-stroganoff-protein-pasta-v4-pinterest-v4": {
+      "created_at_utc": "2026-10-05T21:38:39.003250+00:00",
+      "updated_at_utc": "2026-10-05T21:38:39.003270+00:00",
+      "steps": {
+        "pinterest": {
+          "complete": true,
+          "completed_at_utc": "2026-10-05T21:38:39.003270+00:00",
+          "details": {
+            "destination_url": "https://40400meals.com/recipes/skillet-beef-stroganoff-protein-pasta.html?utm_source=pinterest&utm_medium=organic_social&utm_campaign=recipe_variations&utm_content=v4-benefit",
+            "image_url": "https://40400meals.com/outputs/images/pinterest/skillet-beef-stroganoff-protein-pasta-pinterest-v4.png",
+            "file_name": "skillet-beef-stroganoff-protein-pasta-pinterest-v4.json"
+          }
+        }
+      }
+    },
+    "sweet-potato-cranberry-protein-muffins-v4-pinterest-v4": {
+      "created_at_utc": "2026-10-05T21:38:39.292591+00:00",
+      "updated_at_utc": "2026-10-05T21:38:39.292608+00:00",
+      "steps": {
+        "pinterest": {
+          "complete": true,
+          "completed_at_utc": "2026-10-05T21:38:39.292608+00:00",
+          "details": {
+            "destination_url": "https://40400meals.com/recipes/sweet-potato-cranberry-protein-muffins.html?utm_source=pinterest&utm_medium=organic_social&utm_campaign=recipe_variations&utm_content=v4-benefit",
+            "image_url": "https://40400meals.com/outputs/images/pinterest/sweet-potato-cranberry-protein-muffins-pinterest-v4.png",
+            "file_name": "sweet-potato-cranberry-protein-muffins-pinterest-v4.json"
+          }
+        }
+      }
+    },
+    "air-fryer-buffalo-chicken-wrap-v4-pinterest-v4": {
+      "created_at_utc": "2026-10-05T21:38:39.581774+00:00",
+      "updated_at_utc": "2026-10-05T21:38:39.581791+00:00",
+      "steps": {
+        "pinterest": {
+          "complete": true,
+          "completed_at_utc": "2026-10-05T21:38:39.581791+00:00",
+          "details": {
+            "destination_url": "https://40400meals.com/recipes/air-fryer-buffalo-chicken-wrap.html?utm_source=pinterest&utm_medium=organic_social&utm_campaign=recipe_variations&utm_content=v4-benefit",
+            "image_url": "https://40400meals.com/outputs/images/pinterest/air-fryer-buffalo-chicken-wrap-pinterest-v4.png",
+            "file_name": "air-fryer-buffalo-chicken-wrap-pinterest-v4.json"
+          }
+        }
+      }
+    },
+    "pumpkin-spice-protein-mug-cake-v4-pinterest-v4": {
+      "created_at_utc": "2026-10-05T21:38:39.792843+00:00",
+      "updated_at_utc": "2026-10-05T21:38:39.792861+00:00",
+      "steps": {
+        "pinterest": {
+          "complete": true,
+          "completed_at_utc": "2026-10-05T21:38:39.792861+00:00",
+          "details": {
+            "destination_url": "https://40400meals.com/recipes/pumpkin-spice-protein-mug-cake.html?utm_source=pinterest&utm_medium=organic_social&utm_campaign=recipe_variations&utm_content=v4-benefit",
+            "image_url": "https://40400meals.com/outputs/images/pinterest/pumpkin-spice-protein-mug-cake-pinterest-v4.png",
+            "file_name": "pumpkin-spice-protein-mug-cake-pinterest-v4.json"
+          }
+        }
+      }
     }
   }
 }
