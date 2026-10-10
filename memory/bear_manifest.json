@@ -3341,6 +3341,66 @@
           }
         }
       }
+    },
+    "barebells-berry-breakfast-to-go-v3-pinterest-v3": {
+      "created_at_utc": "2026-10-10T18:17:09.099480+00:00",
+      "updated_at_utc": "2026-10-10T18:17:09.099499+00:00",
+      "steps": {
+        "pinterest": {
+          "complete": true,
+          "completed_at_utc": "2026-10-10T18:17:09.099499+00:00",
+          "details": {
+            "destination_url": "https://40400meals.com/recipes/barebells-berry-breakfast-to-go.html?utm_source=pinterest&utm_medium=organic_social&utm_campaign=recipe_variations&utm_content=v3-food_first",
+            "image_url": "https://40400meals.com/outputs/images/pinterest/barebells-berry-breakfast-to-go-pinterest-v3.png",
+            "file_name": "barebells-berry-breakfast-to-go-pinterest-v3.json"
+          }
+        }
+      }
+    },
+    "maple-glazed-salmon-v4-pinterest-v4": {
+      "created_at_utc": "2026-10-10T18:17:09.632056+00:00",
+      "updated_at_utc": "2026-10-10T18:17:09.632074+00:00",
+      "steps": {
+        "pinterest": {
+          "complete": true,
+          "completed_at_utc": "2026-10-10T18:17:09.632074+00:00",
+          "details": {
+            "destination_url": "https://40400meals.com/recipes/maple-glazed-salmon.html?utm_source=pinterest&utm_medium=organic_social&utm_campaign=recipe_variations&utm_content=v4-benefit",
+            "image_url": "https://40400meals.com/outputs/images/pinterest/maple-glazed-salmon-pinterest-v4.png",
+            "file_name": "maple-glazed-salmon-pinterest-v4.json"
+          }
+        }
+      }
+    },
+    "lemon-garlic-shrimp-protein-pasta-v4-pinterest-v4": {
+      "created_at_utc": "2026-10-10T18:17:10.166924+00:00",
+      "updated_at_utc": "2026-10-10T18:17:10.166942+00:00",
+      "steps": {
+        "pinterest": {
+          "complete": true,
+          "completed_at_utc": "2026-10-10T18:17:10.166942+00:00",
+          "details": {
+            "destination_url": "https://40400meals.com/recipes/lemon-garlic-shrimp-protein-pasta.html?utm_source=pinterest&utm_medium=organic_social&utm_campaign=recipe_variations&utm_content=v4-benefit",
+            "image_url": "https://40400meals.com/outputs/images/pinterest/lemon-garlic-shrimp-protein-pasta-pinterest-v4.png",
+            "file_name": "lemon-garlic-shrimp-protein-pasta-pinterest-v4.json"
+          }
+        }
+      }
+    },
+    "albacore-tuna-melt-wrap-v4-pinterest-v4": {
+      "created_at_utc": "2026-10-10T18:17:10.805764+00:00",
+      "updated_at_utc": "2026-10-10T18:17:10.805783+00:00",
+      "steps": {
+        "pinterest": {
+          "complete": true,
+          "completed_at_utc": "2026-10-10T18:17:10.805783+00:00",
+          "details": {
+            "destination_url": "https://40400meals.com/recipes/albacore-tuna-melt-wrap.html?utm_source=pinterest&utm_medium=organic_social&utm_campaign=recipe_variations&utm_content=v4-benefit",
+            "image_url": "https://40400meals.com/outputs/images/pinterest/albacore-tuna-melt-wrap-pinterest-v4.png",
+            "file_name": "albacore-tuna-melt-wrap-pinterest-v4.json"
+          }
+        }
+      }
     }
   }
 }
