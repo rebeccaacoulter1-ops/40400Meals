@@ -3461,6 +3461,66 @@
           }
         }
       }
+    },
+    "sticky-teriyaki-chicken-rice-bowls-v4-pinterest-v4": {
+      "created_at_utc": "2026-10-12T22:02:07.471183+00:00",
+      "updated_at_utc": "2026-10-12T22:02:07.471199+00:00",
+      "steps": {
+        "pinterest": {
+          "complete": true,
+          "completed_at_utc": "2026-10-12T22:02:07.471199+00:00",
+          "details": {
+            "destination_url": "https://40400meals.com/recipes/sticky-teriyaki-chicken-rice-bowls.html?utm_source=pinterest&utm_medium=organic_social&utm_campaign=recipe_variations&utm_content=v4-benefit",
+            "image_url": "https://40400meals.com/outputs/images/pinterest/sticky-teriyaki-chicken-rice-bowls-pinterest-v4.png",
+            "file_name": "sticky-teriyaki-chicken-rice-bowls-pinterest-v4.json"
+          }
+        }
+      }
+    },
+    "parmesan-ranch-cod-crispy-potatoes-v4-pinterest-v4": {
+      "created_at_utc": "2026-10-12T22:02:07.960215+00:00",
+      "updated_at_utc": "2026-10-12T22:02:07.960230+00:00",
+      "steps": {
+        "pinterest": {
+          "complete": true,
+          "completed_at_utc": "2026-10-12T22:02:07.960230+00:00",
+          "details": {
+            "destination_url": "https://40400meals.com/recipes/parmesan-ranch-cod-crispy-potatoes.html?utm_source=pinterest&utm_medium=organic_social&utm_campaign=recipe_variations&utm_content=v4-benefit",
+            "image_url": "https://40400meals.com/outputs/images/pinterest/parmesan-ranch-cod-crispy-potatoes-pinterest-v4.png",
+            "file_name": "parmesan-ranch-cod-crispy-potatoes-pinterest-v4.json"
+          }
+        }
+      }
+    },
+    "overnight-crockpot-protein-french-toast-v4-pinterest-v4": {
+      "created_at_utc": "2026-10-12T22:02:08.415803+00:00",
+      "updated_at_utc": "2026-10-12T22:02:08.415819+00:00",
+      "steps": {
+        "pinterest": {
+          "complete": true,
+          "completed_at_utc": "2026-10-12T22:02:08.415819+00:00",
+          "details": {
+            "destination_url": "https://40400meals.com/recipes/overnight-crockpot-protein-french-toast.html?utm_source=pinterest&utm_medium=organic_social&utm_campaign=recipe_variations&utm_content=v4-benefit",
+            "image_url": "https://40400meals.com/outputs/images/pinterest/overnight-crockpot-protein-french-toast-pinterest-v4.png",
+            "file_name": "overnight-crockpot-protein-french-toast-pinterest-v4.json"
+          }
+        }
+      }
+    },
+    "chicken-ranch-quest-chip-lunch-box-v4-pinterest-v4": {
+      "created_at_utc": "2026-10-12T22:02:08.974949+00:00",
+      "updated_at_utc": "2026-10-12T22:02:08.974963+00:00",
+      "steps": {
+        "pinterest": {
+          "complete": true,
+          "completed_at_utc": "2026-10-12T22:02:08.974963+00:00",
+          "details": {
+            "destination_url": "https://40400meals.com/recipes/chicken-ranch-quest-chip-lunch-box.html?utm_source=pinterest&utm_medium=organic_social&utm_campaign=recipe_variations&utm_content=v4-benefit",
+            "image_url": "https://40400meals.com/outputs/images/pinterest/chicken-ranch-quest-chip-lunch-box-pinterest-v4.png",
+            "file_name": "chicken-ranch-quest-chip-lunch-box-pinterest-v4.json"
+          }
+        }
+      }
     }
   }
 }
