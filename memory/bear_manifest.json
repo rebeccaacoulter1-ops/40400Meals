@@ -3521,6 +3521,21 @@
           }
         }
       }
+    },
+    "barebells-berry-breakfast-to-go-v4-pinterest-v4": {
+      "created_at_utc": "2026-10-13T20:09:20.281505+00:00",
+      "updated_at_utc": "2026-10-13T20:09:20.281521+00:00",
+      "steps": {
+        "pinterest": {
+          "complete": true,
+          "completed_at_utc": "2026-10-13T20:09:20.281521+00:00",
+          "details": {
+            "destination_url": "https://40400meals.com/recipes/barebells-berry-breakfast-to-go.html?utm_source=pinterest&utm_medium=organic_social&utm_campaign=recipe_variations&utm_content=v4-benefit",
+            "image_url": "https://40400meals.com/outputs/images/pinterest/barebells-berry-breakfast-to-go-pinterest-v4.png",
+            "file_name": "barebells-berry-breakfast-to-go-pinterest-v4.json"
+          }
+        }
+      }
     }
   }
 }
