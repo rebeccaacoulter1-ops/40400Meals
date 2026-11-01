@@ -14,7 +14,7 @@
   "image_alt_text": "High-protein chicken taco soup with shredded chicken, pinto beans, corn, cilantro, and avocado.",
   "variant_id": "v2",
   "variant_number": 2,
-  "scheduled_at": "2026-11-03T18:17:14.407566+00:00",
+  "scheduled_at": "2026-11-04T18:47:24.806590+00:00",
   "pin_template": "editorial",
   "pin_headline": "Easy High-Protein Lunch",
   "pin_filename": "chicken-taco-soup-pinterest-v2.png",
@@ -22,18 +22,18 @@
   "image_path": "outputs/images/pinterest/chicken-taco-soup-pinterest-v2.png",
   "image_mime_type": "image/png",
   "design_brain": {
-    "template_name": "P08 Halloween",
+    "template_name": "P09 Thanksgiving",
     "template_type": "seasonal",
-    "season": "halloween",
-    "month": 10,
+    "season": "thanksgiving",
+    "month": 11,
     "recipe_category": "lunch",
     "image_style": "bright realistic food photography",
     "photo_composition": "45-degree angle",
     "color_mood": "warm rich premium recipe-blog color with natural variation",
     "accent_colors": [
-      "#111827",
-      "#F97316",
-      "#FFFFFF"
+      "#FFFBEB",
+      "#B45309",
+      "#78350F"
     ],
     "text_style": "clean and modern",
     "overlay_style": "minimal",

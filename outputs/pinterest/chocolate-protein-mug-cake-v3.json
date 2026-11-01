@@ -14,7 +14,7 @@
   "image_alt_text": "Chocolate protein mug cake in a white mug with a rich chocolate texture.",
   "variant_id": "v3",
   "variant_number": 3,
-  "scheduled_at": "2026-11-07T18:17:14.411033+00:00",
+  "scheduled_at": "2026-11-08T18:47:24.811417+00:00",
   "pin_template": "food_first",
   "pin_headline": "40g Protein \u2022 400 Calories",
   "pin_filename": "chocolate-protein-mug-cake-pinterest-v3.png",
@@ -22,18 +22,18 @@
   "image_path": "outputs/images/pinterest/chocolate-protein-mug-cake-pinterest-v3.png",
   "image_mime_type": "image/png",
   "design_brain": {
-    "template_name": "P08 Halloween",
+    "template_name": "P09 Thanksgiving",
     "template_type": "seasonal",
-    "season": "halloween",
-    "month": 10,
+    "season": "thanksgiving",
+    "month": 11,
     "recipe_category": "dessert",
     "image_style": "cozy realistic food photography",
     "photo_composition": "close-up",
     "color_mood": "warm rich premium recipe-blog color with natural variation",
     "accent_colors": [
-      "#111827",
-      "#F97316",
-      "#FFFFFF"
+      "#FFFBEB",
+      "#B45309",
+      "#78350F"
     ],
     "text_style": "clean and modern",
     "overlay_style": "minimal",

@@ -23,18 +23,18 @@
   "image_path": "outputs/images/pinterest/sour-peach-orange-protein-snack-pinterest-v2.png",
   "image_mime_type": "image/png",
   "design_brain": {
-    "template_name": "P08 Halloween",
+    "template_name": "P09 Thanksgiving",
     "template_type": "seasonal",
-    "season": "halloween",
-    "month": 10,
+    "season": "thanksgiving",
+    "month": 11,
     "recipe_category": "snack",
     "image_style": "bright simple food photography",
     "photo_composition": "close-up",
     "color_mood": "warm rich premium recipe-blog color with natural variation",
     "accent_colors": [
-      "#111827",
-      "#F97316",
-      "#FFFFFF"
+      "#FFFBEB",
+      "#B45309",
+      "#78350F"
     ],
     "text_style": "clean and modern",
     "overlay_style": "minimal",
